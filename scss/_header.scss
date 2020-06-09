@@ -1,0 +1,127 @@
+header {
+  background-color: $eig;
+  #header_logo {
+    display: flex;
+    justify-content: center;
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  #header_nav {
+    padding-top: 2.4rem;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        border-right: 1px dashed $blue-s7;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        list-style: none;
+        &:last-of-type {
+          border-right: 0;
+        }
+        a {
+          color: $eig-t9;
+          font-size: 1.6rem;
+          padding: 2rem 0;
+          text-decoration: none;
+          text-transform: uppercase;
+          width: 100%;
+          &:hover {
+            background-color: $blue-b;
+            color: $eig;
+          }
+        }
+      }
+    }
+  }
+  #header_hero-text {
+    p {
+      color: $eig-t9;
+      font-size: 1.6rem;
+      line-height: 6.4rem;
+      padding: 1.6rem 0;
+      span {
+        color: $green-b;
+        font-size: inherit;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    display: grid;
+    grid-template-areas:
+      "hl hn"
+      "ht ht";
+    > * {
+      display: flex;
+    }
+    #header_logo {
+      grid-area: hl;
+      justify-content: flex-start;
+    }
+    #header_hero-text {
+      background-image: url("../images/carets/hero-carets.png");
+      background-origin: border-box;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      justify-content: center;
+      grid-area: ht;
+      padding: 4.8rem 0;
+      p {
+        border: 0;
+        font-size: 3rem;
+        text-shadow: 2px 2px 0 $blue-s9;
+        span {
+          display: block;
+          font-size: 6.4rem;
+          letter-spacing: 0.3rem;
+        }
+      }
+    }
+    #header_nav {
+      grid-area: hn;
+      justify-content: flex-end;
+      padding-top: 2.4rem;
+      ul {
+        display: flex;
+        flex-direction: row;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: none;
+          a {
+            border-radius: 1rem;
+            font-size: 1.6rem;
+            margin-left: 1rem;
+            padding: 2rem;
+            transition: all 1s ease-in-out;
+            text-transform: initial;
+            &#header_cta {
+              border: 2px dashed $blue-b;
+            }
+            &.active-a {
+              border-radius: 0;
+              color: $blue-b;
+              &:hover {
+                border-radius: 0.8rem;
+                border: none;
+                color: $eig;
+                transition: 1s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

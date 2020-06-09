@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+/** Globally set base font size, font family and weight **/
+* {
+  font-size: 10px;
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: 400;
+}
+
+/** Globally set paragraph tag font size **/
+p {
+  color: $eig;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+  a {
+    border-bottom: 1px dashed $eig-t3;
+    color: $eig;
+    font-size: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      background-color: $blue-t1;
+    }
+  }
+}
+
+.main-content {
+  /** Headings **/
+  h1,
+  h2,
+  h3 {
+    width: fit-content;
+    &.heading_standard {
+      align-self: center;
+      border-bottom: 2px dashed $blue-s1;
+      color: $eig;
+      display: flex;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      margin-bottom: 4rem;
+      text-transform: uppercase;
+    }
+    &.heading_big-green {
+      align-self: center;
+      background-color: $green-b;
+      border-bottom: 4px solid $green-s1;
+      font-size: 3.2rem;
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+      margin-bottom: 4.8rem;
+      padding: 1rem 2rem;
+    }
+    &.heading_card {
+      border-bottom: 2px dashed $blue-s3;
+      color: $blue-s7;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 2.4rem auto;
+      padding: 0.8rem 0;
+      text-transform: uppercase;
+    }
+    &.heading_skill {
+      align-self: flex-start;
+      color: $eig-t1;
+      display: flex;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 0;
+    }
+    &.heading_portfolio-example {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    h1,
+    h2,
+    h3 {
+      &.heading_standard {
+        font-size: 2.4rem;
+        &.example_heading {
+          margin: 0 auto 2.4rem auto;
+        }
+        align-self: center;
+      }
+      &.heading_big-green {
+        align-self: flex-start;
+        font-size: 4.8rem;
+      }
+      /** &.heading_card {} **/
+      /**&.heading_skill {}**/
+    }
+  }
+}

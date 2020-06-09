@@ -1,0 +1,464 @@
+/** Global - Main Content **/
+.main-content {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 0;
+}
+
+/** Start HOME page **/
+
+.no-js .card-image#card_website-design_image {
+  background: url(../images/home-page-cards/website-design.png);
+}
+.no-js .card-image#card_website-development_image {
+  background: url(../images/home-page-cards/website-development.png);
+}
+.no-js .card-image#card_mobile-app-development_image {
+  background: url(../images/home-page-cards/mobile-app-development.png);
+}
+#home-page {
+  #home-page_cards {
+    .card {
+      align-items: center;
+      justify-content: start;
+      display: flex;
+      flex: 1 1 0;
+      flex-direction: column;
+      margin: 0 3.2rem 3.2rem 3.2rem;
+      padding: 0 1.6rem 6.4rem 1.6rem;
+      h2 {
+        border: none;
+        color: $eig;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        margin-bottom: 0.8rem;
+        &:before,
+        &:after {
+          color: $blue-s3;
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: inherit;
+        }
+        &:before {
+          content: "<";
+          padding-right: 0.4rem;
+        }
+        &:after {
+          content: ">";
+          padding-left: 0.4rem;
+        }
+      }
+      .card_image {
+        border: 4px solid $green-b;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 5%;
+        height: 200px;
+        width: 200px;
+      }
+      #card_website-design_image {
+        background: url(../images/home-page-cards/website-design.webp);
+      }
+      #card_website-development_image {
+        background: url(../images/home-page-cards/website-development.webp);
+      }
+      #card_mobile-app-development_image {
+        background: url(../images/home-page-cards/mobile-app-development.webp);
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  #home-page {
+    #home-page-cards {
+      .card {
+        .card_image {
+          height: 225px;
+          width: 225px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #home-page {
+    #home-page_cards {
+      display: flex;
+      .card {
+        margin: 0;
+        display: flex;
+        &:hover img {
+          border-radius: 50%;
+          opacity: 1;
+          transition: 1s;
+        }
+        .card_image {
+          height: 225px;
+          width: 225px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  #home-page {
+    #home-page_cards {
+      .card {
+        .card_image {
+          height: 250px;
+          width: 250px;
+        }
+        p {
+          margin: 0 3.2rem;
+        }
+      }
+    }
+  }
+}
+/** End HOME page **/
+
+/** Start ABOUT page **/
+#about-page {
+  #about-page_upper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.4rem;
+    #about-page_intro {
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      a {
+        transition: 1s;
+      }
+    }
+    #about-page_photo {
+      img {
+        border-radius: 50%;
+        border: 20px solid $blue-b;
+        max-height: 200px;
+        max-width: 200px;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  #about-page_skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.6rem 3.2rem 1.6rem;
+    #skill-bars {
+      column-gap: 3.2rem;
+      display: inline-grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      .skill-bar {
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.6rem;
+        letter-spacing: 0.2rem;
+        padding: 8.8rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        p {
+          font-size: 1.6rem;
+          letter-spacing: 0.1rem;
+          font-weight: 300;
+          margin: 0;
+          text-transform: uppercase;
+        }
+        &#skill-html,
+        &#skill-js {
+          background-color: $green-t7;
+          border: 20px solid $green-b;
+        }
+        &#skill-css,
+        &#skill-php {
+          background-color: $blue-t7;
+          border: 20px solid $blue-b;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #about-page {
+    #about-page_upper {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      #about-page_photo {
+        order: 1;
+        img {
+          max-height: 300px;
+          max-width: 300px;
+        }
+      }
+      #about-page_intro {
+        order: 0;
+        p {
+          margin-right: 8rem;
+          text-align: left;
+        }
+      }
+    }
+    #about-page_skills {
+      #skill-bars {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        .skill-bar {
+          transition: 0.8s ease all;
+          &:hover {
+            margin-bottom: 0.8rem;
+            margin-top: -0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1140px) {
+  #about-page {
+    #about-page_upper {
+      #about-page_intro {
+        p {
+          margin-right: 16rem;
+          a {
+            padding: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+/** End ABOUT page **/
+
+/** Start PORTFOLIO page **/
+#portfolio-page {
+  h1 {
+    margin-bottom: 6.4rem;
+  }
+  #past-work_examples {
+    display: grid;
+    grid-template-areas:
+      "egh"
+      "egi"
+      "egd";
+    hr {
+      border: 2px solid $blue-s7;
+      color: transparent;
+      margin: 2.4rem auto 4.8rem auto;
+      width: 10rem;
+    }
+    .example {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        grid-area: egh;
+        padding: 0.8rem;
+        border: none;
+      }
+      > * {
+        display: flex;
+        justify-content: center;
+      }
+      .example_image {
+        grid-area: egi;
+        padding: 0 3.2rem;
+        img {
+          border: 10px solid $blue-s1;
+          border-radius: 6.4rem;
+          margin-bottom: 3.2rem;
+          max-width: 100%;
+          height: auto;
+          transition: 1s ease-in-out;
+        }
+      }
+      .example_detail {
+        align-items: center;
+        grid-area: egd;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          align-items: center;
+          color: $eig-t2;
+          display: flex;
+          letter-spacing: 0.2rem;
+          line-height: 4rem;
+          text-transform: initial;
+          &:before,
+          &:after {
+            color: $blue-b;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 3.2rem;
+          }
+          &:before {
+            content: "<";
+            padding-right: 0.4rem;
+          }
+          &:after {
+            content: ">";
+            padding-left: 0.4rem;
+          }
+        }
+        p {
+          margin-bottom: 3.6rem;
+          a {
+            color: inherit;
+            font-weight: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #portfolio-page {
+    #past-work_examples {
+      hr {
+        border: 1px solid $green-s3;
+        color: transparent;
+        margin: 4.8rem auto 8rem auto;
+        width: 50rem;
+      }
+      .example {
+        display: grid;
+        grid-template-areas:
+          "egh egh egh egh egh egh"
+          "egi egi egi . . egd";
+        padding: 0;
+        &:hover {
+          img {
+            border-radius: 0.8rem;
+          }
+        }
+        h2 {
+          grid-area: egh;
+          letter-spacing: 0.3rem;
+          margin-bottom: 3.2rem;
+          text-transform: uppercase;
+        }
+        .example_image {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: row;
+          grid-area: egi;
+          justify-content: flex-start;
+          margin: 0 3.2rem 0 0;
+          padding: 0;
+          img {
+            border-radius: 8rem;
+          }
+        }
+        .example_detail {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          grid-area: egd;
+          justify-content: start;
+          padding: 0 1.6rem 0 3.2rem;
+
+          p {
+            font-size: 1.4rem;
+            line-height: calc(1.4rem * 1.5);
+            text-align: left;
+            &.example-p {
+              margin-top: -1.8rem;
+            }
+          }
+        }
+        &.flipped {
+          display: grid;
+          grid-template-areas:
+            "egh egh egh egh egh egh"
+            "egd . . egi egi egi";
+          .example_image {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0 0 0 3.2rem;
+          }
+          .example_detail {
+            display: flex;
+            align-items: flex-start;
+            padding: 0 3.2rem 0 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+/** End PORTFOLIO page **/
+
+/** Start CONTACT page **/
+#contact-page {
+  p {
+    &:last-of-type {
+      margin-bottom: 5.6rem;
+    }
+  }
+  #contact-page_socials {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 0;
+    ul {
+      align-content: center;
+      display: grid;
+      grid-gap: 1.6rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: stretch;
+      li {
+        align-items: stretch;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        a {
+          align-items: center;
+          background-color: transparent;
+          border-radius: 2.4rem;
+          color: $blue-s7;
+          display: flex;
+          flex-direction: column;
+          font-size: 3.2rem;
+          padding: 2.4rem 0;
+          text-decoration: none;
+          transition: 2s;
+          &:hover {
+            background-color: $eig;
+            color: $blue-t7;
+            .social_name {
+              background: transparent;
+              color: $blue-t7;
+              margin-top: 0;
+            }
+          }
+          .social_name {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            margin-top: 1.6em;
+            padding: 1rem;
+            text-transform: uppercase;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #contact-page {
+    text-align: left;
+    #contact-page_socials {
+      ul {
+        li {
+          a {
+            font-size: 5.6rem;
+          }
+        }
+      }
+    }
+  }
+}
