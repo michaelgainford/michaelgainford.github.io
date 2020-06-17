@@ -155,9 +155,7 @@ body {
 
 body .sw_container#header_container {
   background: #16161d;
-  border: 1px solid red;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  border-bottom: 6px solid #669aa0;
   min-height: 10vh;
   padding-bottom: 4.8rem;
   width: 100%;
