@@ -1,11 +1,10 @@
 footer {
-  background-color: $eig;
   display: grid;
   grid-template-areas:
     "fi"
     "fl"
     "fc";
-  padding: 4.8rem 0 0.8rem 0;
+  padding: 0 0 0.8rem 0;
   > * {
     display: flex;
   }

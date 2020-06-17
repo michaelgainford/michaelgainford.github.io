@@ -147,7 +147,6 @@ p a:hover {
 }
 
 body {
-  background-color: #16161d;
   border-bottom: 6px solid #669aa0;
   min-height: 100vh;
   text-align: center;
@@ -155,9 +154,10 @@ body {
 
 body .sw_container#header_container {
   background: #16161d;
-  border-bottom: 6px solid #669aa0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
   min-height: 10vh;
-  padding-bottom: 4.8rem;
+  position: absolute;
   width: 100%;
 }
 
@@ -171,13 +171,18 @@ body .sw_container#main-content_container {
 
 body .sw_container#footer_container {
   background-color: #16161d;
-  border-top: 6px solid #a2a2a5;
   min-height: 20vh;
+  position: relative;
+  margin-top: -16rem;
+  padding-top: 20rem;
+  clip-path: polygon(0% 6vw, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 6vw, 100% 0, 100% 100%, 0% 100%);
 }
 
 body .sw_container .cw_container {
   margin: auto;
   max-width: 1140px;
+  padding-bottom: 3.2rem;
 }
 
 ::-moz-selection {
@@ -190,8 +195,36 @@ body .sw_container .cw_container {
   color: #def5f7;
 }
 
-header {
-  background-color: #16161d;
+body#body_home {
+  border-bottom: 6px solid #669aa0;
+  min-height: 100vh;
+  text-align: center;
+}
+
+body#body_home .sw_container#header_container {
+  background: #16161d;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  padding-bottom: 4.8rem;
+  width: 100%;
+}
+
+body#body_home .sw_container#main-content_container {
+  padding-bottom: 6.4rem;
+  padding-top: 44rem;
+}
+
+body#body_contact .sw_container#header_container,
+body#body_about .sw_container#header_container,
+body#body_portfolio .sw_container#header_container {
+  padding-bottom: 9.6rem;
+}
+
+body#body_contact .sw_container#main-content_container,
+body#body_about .sw_container#main-content_container,
+body#body_portfolio .sw_container#main-content_container {
+  padding-bottom: 12rem;
+  padding-top: 20rem;
 }
 
 header #header_logo {
@@ -637,6 +670,7 @@ header #header_hero-text p span {
     transition: 0.8s ease all;
   }
   #about-page #about-page_skills #skill-bars .skill-bar:hover {
+    border-radius: 50%;
     margin-bottom: 0.8rem;
     margin-top: -0.8rem;
   }
@@ -975,11 +1009,10 @@ header #header_hero-text p span {
 }
 
 footer {
-  background-color: #16161d;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "fi" "fl" "fc";
-  padding: 4.8rem 0 0.8rem 0;
+  padding: 0 0 0.8rem 0;
 }
 
 footer > * {

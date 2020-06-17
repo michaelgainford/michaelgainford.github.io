@@ -208,6 +208,7 @@
         .skill-bar {
           transition: 0.8s ease all;
           &:hover {
+            border-radius: 50%;
             margin-bottom: 0.8rem;
             margin-top: -0.8rem;
           }
