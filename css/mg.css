@@ -174,7 +174,7 @@ body .sw_container#footer_container {
   min-height: 20vh;
   position: relative;
   margin-top: -16rem;
-  padding-top: 20rem;
+  padding-top: 8rem;
   clip-path: polygon(0% 6vw, 100% 0, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 6vw, 100% 0, 100% 100%, 0% 100%);
 }
@@ -193,6 +193,12 @@ body .sw_container .cw_container {
 ::selection {
   background-color: #16161d;
   color: #def5f7;
+}
+
+@media (min-width: 768px) {
+  body .sw_container#footer_container {
+    padding-top: 16rem;
+  }
 }
 
 body#body_home {
