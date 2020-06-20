@@ -479,6 +479,15 @@ header #header_hero-text p span {
   }
 }
 
+@media (min-width: 900px) {
+  header #header_hero-text p {
+    border: 0;
+  }
+  header #header_hero-text p #span-hero {
+    font-size: 6.4rem;
+  }
+}
+
 /** Start HOME page **/
 /*
 .no-js .card-image#card_website-design_image {

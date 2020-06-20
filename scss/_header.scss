@@ -124,3 +124,16 @@ header {
     }
   }
 }
+
+@media (min-width: 900px) {
+  header {
+    #header_hero-text {
+      p {
+        border: 0;
+        #span-hero {
+          font-size: 6.4rem;
+        }
+      }
+    }
+  }
+}
