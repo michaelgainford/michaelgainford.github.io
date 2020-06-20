@@ -1,0 +1,113 @@
+/** Start ABOUT page **/
+#about-page {
+  #about-page_upper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.4rem;
+    #about-page_intro {
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      a {
+        transition: 1s;
+      }
+    }
+    #about-page_photo {
+      img {
+        border-radius: 50%;
+        border: 20px solid $blue-b;
+        max-height: 200px;
+        max-width: 200px;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  #about-page_skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.6rem 3.2rem 1.6rem;
+    #skill-bars {
+      column-gap: 3.2rem;
+      display: inline-grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      .skill-bar {
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.6rem;
+        letter-spacing: 0.2rem;
+        padding: 8.8rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        p {
+          font-size: 1.6rem;
+          letter-spacing: 0.1rem;
+          font-weight: 300;
+          margin: 0;
+          text-transform: uppercase;
+        }
+        &#skill-html,
+        &#skill-js {
+          background-color: $green-t7;
+          border: 20px solid $green-b;
+        }
+        &#skill-css,
+        &#skill-php {
+          background-color: $blue-t7;
+          border: 20px solid $blue-b;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #about-page {
+    #about-page_upper {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      #about-page_photo {
+        order: 1;
+        img {
+          max-height: 300px;
+          max-width: 300px;
+        }
+      }
+      #about-page_intro {
+        order: 0;
+        p {
+          margin-right: 8rem;
+          text-align: left;
+        }
+      }
+    }
+    #about-page_skills {
+      #skill-bars {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        .skill-bar {
+          transition: 0.8s ease all;
+          &:hover {
+            border-radius: 50%;
+            margin-bottom: 0.8rem;
+            margin-top: -0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1140px) {
+  #about-page {
+    #about-page_upper {
+      #about-page_intro {
+        p {
+          margin-right: 16rem;
+          a {
+            padding: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+/** End ABOUT page **/

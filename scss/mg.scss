@@ -1,7 +1,13 @@
-@import "resets";
 @import "colours";
+@import "resets";
 @import "typography";
-@import "global";
+@import "containers";
+
 @import "header";
-@import "content";
+
+@import "home";
+@import "about";
+@import "portfolio";
+@import "contact";
+
 @import "footer";

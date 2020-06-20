@@ -25,76 +25,123 @@ p {
   }
 }
 
-.main-content {
-  /** Headings **/
-  h1,
-  h2,
-  h3 {
-    width: fit-content;
-    &.heading_standard {
-      align-self: center;
-      border-bottom: 2px dashed $blue-s1;
-      color: $eig;
-      display: flex;
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 0.2rem;
-      margin-bottom: 4rem;
-      text-transform: uppercase;
-    }
-    &.heading_big-green {
-      align-self: center;
-      background-color: $green-b;
-      border-bottom: 4px solid $green-s1;
+/** Headings **/
+h1,
+h2,
+h3 {
+  &.heading_standard {
+    align-self: center;
+    background-color: $blue-t2;
+    border-bottom: 10px solid $blue-s1;
+    color: $eig;
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    margin-bottom: 4rem;
+    padding: 2.4rem;
+  }
+  &.heading_big-green {
+    align-self: center;
+    background-color: $green-b;
+    border-bottom: 4px solid $green-s1;
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4.8rem;
+    padding: 1rem 2rem;
+  }
+  &.heading_card {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: $eig-t2;
+    /** Added this flex to ensure that letters and arrows are vertically centred **/
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+    text-transform: uppercase;
+    width: 100%;
+    &:before,
+    &:after {
+      color: $green-b;
       font-size: 3.2rem;
-      font-weight: 300;
-      letter-spacing: 0.1rem;
-      margin-bottom: 4.8rem;
-      padding: 1rem 2rem;
-    }
-    &.heading_card {
-      border-bottom: 2px dashed $blue-s3;
-      color: $blue-s7;
-      font-size: 1.6rem;
       font-weight: 700;
-      margin: 2.4rem auto;
-      padding: 0.8rem 0;
-      text-transform: uppercase;
     }
-    &.heading_skill {
-      align-self: flex-start;
-      color: $eig-t1;
-      display: flex;
-      font-size: 1.4rem;
-      font-weight: 700;
-      padding: 0;
+    &:before {
+      content: "<";
+      padding-right: 0.8rem;
     }
-    &.heading_portfolio-example {
-      font-size: 1.4rem;
-      font-weight: 700;
-      text-transform: uppercase;
+    &:after {
+      content: ">";
+      padding-left: 0.8rem;
     }
+    &.hc_inverted {
+      &:before,
+      &:after {
+        color: $blue-b;
+      }
+    }
+  }
+  &.heading_skill {
+    align-self: flex-start;
+    color: $eig-t1;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0;
+  }
+  &.heading_portfolio-example {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 768px) {
-  .main-content {
-    h1,
-    h2,
-    h3 {
-      &.heading_standard {
-        font-size: 2.4rem;
-        &.example_heading {
-          margin: 0 auto 2.4rem auto;
-        }
-        align-self: center;
+  h1,
+  h2,
+  h3 {
+    &.heading_standard {
+      align-self: start;
+      text-transform: inherit;
+      &.example_heading {
+        margin: 0 auto 2.4rem auto;
       }
-      &.heading_big-green {
-        align-self: flex-start;
-        font-size: 4.8rem;
+    }
+    &.heading_card {
+      font-size: 2.4rem;
+      font-weight: 700;
+      justify-content: flex-start;
+      letter-spacing: -0.2rem;
+      margin-top: 0;
+      &:before,
+      &:after {
+        font-size: 2em;
+        font-weight: 700;
       }
-      /** &.heading_card {} **/
-      /**&.heading_skill {}**/
+      &:before {
+        padding-right: 0.8rem;
+      }
+      &:after {
+        padding-left: 0.8rem;
+      }
+    }
+    &.heading_big-green {
+      align-self: flex-start;
+      font-size: 4.8rem;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  h1,
+  h2,
+  h3 {
+    &.heading_card {
+      font-size: 4rem;
+      letter-spacing: 0;
+      font-weight: 700;
     }
   }
 }

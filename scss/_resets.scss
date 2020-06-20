@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *:before,
 *:after {
@@ -6,6 +10,7 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+::selection {
+  background-color: $eig;
+  color: $green-b;
 }
