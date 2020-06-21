@@ -15,7 +15,7 @@
 /** Start Home page card **/
 .card {
   background-color: $eig-t9;
-  border: 1px dashed $eig-t8;
+  border: 2px dashed $eig-t8;
   border-radius: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@
   /** Start :hover state for Home page card **/
   &:hover {
     background-color: $eig-t1;
+    border: 2px dashed $green-b;
     transition: all ease-in 1s;
     .card_details {
       h2 {
@@ -50,10 +51,11 @@
   .card_image {
     img {
       display: flex;
-      border: 16px solid $green-b;
+      border: 8px solid $green-b;
       border-radius: 1.6rem;
       height: auto;
       max-width: 100%;
+      padding: 0.8rem;
       transition: 500ms ease-in-out;
     }
   }
@@ -106,7 +108,7 @@
 .card_inverted {
   /** Start :hover state for inverted Home page card **/
   &:hover {
-    border-color: $blue-s5;
+    border: 2px dashed $blue-b;
     .card_details {
       .card_cta {
         color: $blue-b;
@@ -119,7 +121,8 @@
   }
   .card_image {
     img {
-      border: 16px solid $blue-b;
+      border: 8px solid $blue-b;
+      padding: 0.4rem;
     }
   }
   .card_details {
@@ -142,6 +145,7 @@
   .card {
     display: grid;
     grid-template-areas: "ci cd";
+    padding: 5.6rem;
     &:hover {
       transform: translateX(2rem);
     }
@@ -155,7 +159,6 @@
         display: flex;
         justify-self: flex-start;
         flex-direction: row;
-        padding: 0.8rem;
       }
     }
     .card_details {
@@ -163,6 +166,7 @@
       display: flex;
       grid-area: cd;
       flex-direction: column;
+      margin-left: 4.8rem;
       margin-right: 0;
       text-align: left;
       .card_cta {
@@ -188,6 +192,7 @@
     }
     .card_details {
       margin-left: 0;
+      margin-right: 8rem;
     }
   }
 }

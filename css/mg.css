@@ -59,7 +59,7 @@ h3.heading_standard {
   background-color: #a8e3ea;
   border-bottom: 10px solid #83c6ce;
   color: #16161d;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   margin-bottom: 4rem;
@@ -92,12 +92,12 @@ h3.heading_card {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
-  color: #45454a;
+  color: #5c5c61;
   /** Added this flex to ensure that letters and arrows are vertically centred **/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-top: 1.6rem;
   text-transform: uppercase;
@@ -165,6 +165,8 @@ h3.heading_portfolio-example {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
+    font-size: 2.4rem;
+    margin-left: 3.2rem;
     text-transform: inherit;
   }
   h1.heading_standard.example_heading,
@@ -172,16 +174,26 @@ h3.heading_portfolio-example {
   h3.heading_standard.example_heading {
     margin: 0 auto 2.4rem auto;
   }
+  h1.heading_big-green,
+  h2.heading_big-green,
+  h3.heading_big-green {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 4.8rem;
+    margin-top: 3.2rem;
+  }
   h1.heading_card,
   h2.heading_card,
   h3.heading_card {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
     font-size: 2.4rem;
     font-weight: 700;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     letter-spacing: -0.2rem;
-    margin-top: 0;
+    margin-top: -4.8rem;
   }
   h1.heading_card:before, h1.heading_card:after,
   h2.heading_card:before,
@@ -200,14 +212,6 @@ h3.heading_portfolio-example {
   h2.heading_card:after,
   h3.heading_card:after {
     padding-left: 0.8rem;
-  }
-  h1.heading_big-green,
-  h2.heading_big-green,
-  h3.heading_big-green {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    font-size: 4.8rem;
-    margin-top: 3.2rem;
   }
 }
 
@@ -252,7 +256,7 @@ body .sw_container#main-content_container .main-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 4.8rem 0;
+  padding: 0 0 4.8rem 0;
 }
 
 body .sw_container#footer_container {
@@ -421,10 +425,10 @@ header #header_hero-text p span {
     font-size: 2.4rem;
     text-shadow: 2px 2px 0 #0f1617;
   }
-  header #header_hero-text p span {
+  header #header_hero-text p #span-hero {
     display: block;
-    font-size: 4.8rem;
-    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    letter-spacing: 0.08em;
   }
   header #header_nav {
     -ms-grid-row: 1;
@@ -505,7 +509,7 @@ header #header_hero-text p span {
 /** Start Home page card **/
 .card {
   background-color: #e8e8e8;
-  border: 1px dashed #d0d0d2;
+  border: 2px dashed #d0d0d2;
   border-radius: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,6 +544,7 @@ header #header_hero-text p span {
 
 .card:hover {
   background-color: #2d2d34;
+  border: 2px dashed #bad129;
   -webkit-transition: all ease-in 1s;
   transition: all ease-in 1s;
 }
@@ -560,10 +565,11 @@ header #header_hero-text p span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 16px solid #bad129;
+  border: 8px solid #bad129;
   border-radius: 1.6rem;
   height: auto;
   max-width: 100%;
+  padding: 0.8rem;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
 }
@@ -639,7 +645,7 @@ header #header_hero-text p span {
 }
 
 .card_inverted:hover {
-  border-color: #496e73;
+  border: 2px dashed #92dce5;
   /** End :hover state for inverted Home page card **/
 }
 
@@ -652,7 +658,8 @@ header #header_hero-text p span {
 }
 
 .card_inverted .card_image img {
-  border: 16px solid #92dce5;
+  border: 8px solid #92dce5;
+  padding: 0.4rem;
 }
 
 .card_inverted .card_details .card_cta {
@@ -676,6 +683,7 @@ header #header_hero-text p span {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "ci cd";
+    padding: 5.6rem;
   }
   .card:hover {
     -webkit-transform: translateX(2rem);
@@ -702,7 +710,6 @@ header #header_hero-text p span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0.8rem;
   }
   .card .card_details {
     -webkit-box-align: end;
@@ -718,6 +725,7 @@ header #header_hero-text p span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 4.8rem;
     margin-right: 0;
     text-align: left;
   }
@@ -756,6 +764,7 @@ header #header_hero-text p span {
   }
   .card_inverted .card_details {
     margin-left: 0;
+    margin-right: 8rem;
   }
 }
 

@@ -79,10 +79,10 @@ header {
         border: 0;
         font-size: 2.4rem;
         text-shadow: 2px 2px 0 $blue-s9;
-        span {
+        #span-hero {
           display: block;
-          font-size: 4.8rem;
-          letter-spacing: 0.3rem;
+          font-size: 4rem;
+          letter-spacing: 0.08em;
         }
       }
     }

@@ -4,8 +4,8 @@ function heroSwitcher() {
   var heroText = document.getElementById("span-hero");
   var heroArray = [
     "a web developer ⌨️",
-    "a biggg fan of coffee ☕",
-    "in love with pixels 💻",
+    "a big fan of coffee ☕",
+    "a lover of pixels 💻",
     "for hire! 🧑🏻‍",
     "ready to go 🚀",
   ];

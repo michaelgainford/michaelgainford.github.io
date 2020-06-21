@@ -34,7 +34,7 @@ h3 {
     background-color: $blue-t2;
     border-bottom: 10px solid $blue-s1;
     color: $eig;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
     margin-bottom: 4rem;
@@ -55,10 +55,10 @@ h3 {
     align-items: center;
     justify-content: center;
     border: none;
-    color: $eig-t2;
+    color: $eig-t3;
     /** Added this flex to ensure that letters and arrows are vertically centred **/
     display: flex;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-top: 1.6rem;
     text-transform: uppercase;
@@ -105,17 +105,25 @@ h3 {
   h3 {
     &.heading_standard {
       align-self: start;
+      font-size: 2.4rem;
+      margin-left: 3.2rem;
       text-transform: inherit;
       &.example_heading {
         margin: 0 auto 2.4rem auto;
       }
     }
+    &.heading_big-green {
+      align-self: flex-start;
+      font-size: 4.8rem;
+      margin-top: 3.2rem;
+    }
     &.heading_card {
+      align-content: flex-start;
       font-size: 2.4rem;
       font-weight: 700;
       justify-content: flex-start;
       letter-spacing: -0.2rem;
-      margin-top: 0;
+      margin-top: -4.8rem;
       &:before,
       &:after {
         font-size: 2em;
@@ -127,11 +135,6 @@ h3 {
       &:after {
         padding-left: 0.8rem;
       }
-    }
-    &.heading_big-green {
-      align-self: flex-start;
-      font-size: 4.8rem;
-      margin-top: 3.2rem;
     }
   }
 }
