@@ -78,6 +78,7 @@ h3.heading_big-green {
   font-weight: 300;
   letter-spacing: 0.1rem;
   margin-bottom: 4.8rem;
+  margin-top: 12rem;
   padding: 1rem 2rem;
 }
 
@@ -206,6 +207,7 @@ h3.heading_portfolio-example {
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-size: 4.8rem;
+    margin-top: 3.2rem;
   }
 }
 
