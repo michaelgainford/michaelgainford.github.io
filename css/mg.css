@@ -1226,6 +1226,7 @@ header #header_hero-text p span {
 #contact-page #contact-page_socials ul li a:hover {
   background-color: #16161d;
   color: #bad129;
+  padding-top: 6.4rem;
 }
 
 #contact-page #contact-page_socials ul li a:hover .social_name {
