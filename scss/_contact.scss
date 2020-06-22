@@ -2,19 +2,18 @@
 #contact-page {
   p {
     &:last-of-type {
-      margin-bottom: 5.6rem;
+      margin-bottom: 12rem;
     }
   }
   #contact-page_socials {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 8rem 0;
     ul {
       align-content: center;
       display: grid;
       grid-gap: 1.6rem;
       grid-template-columns: repeat(4, 1fr);
-      justify-items: stretch;
       li {
         align-items: stretch;
         list-style: none;
@@ -38,7 +37,7 @@
             .social_name {
               background: transparent;
               color: $green-b;
-              margin-top: 0;
+              transform: translateY(-1.6em);
             }
           }
           .social_name {

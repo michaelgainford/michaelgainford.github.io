@@ -11,7 +11,7 @@
 p {
   color: $eig;
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 1.6em;
   margin-bottom: 1.6rem;
   a {
     border-bottom: 1px dashed $eig-t3;
@@ -34,12 +34,13 @@ h3 {
     align-self: center;
     background-color: $blue-t2;
     border-bottom: 10px solid $blue-s1;
-    color: $eig;
-    font-size: 2.4rem;
-    font-weight: 300;
+    color: $blue-s7;
+    font-size: 1.6rem;
+    font-weight: 700;
     letter-spacing: 0.2rem;
     margin-bottom: 4rem;
     padding: 2.4rem;
+    text-transform: uppercase;
   }
   &.heading_big-green {
     align-self: center;
