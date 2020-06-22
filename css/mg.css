@@ -282,6 +282,10 @@ body .sw_container#footer_container {
   -webkit-clip-path: polygon(0 6vw, 100% 0, 100% 100%, 0% 100%);
 }
 
+body .sw_container#footer_container .cw_container {
+  padding-bottom: 0;
+}
+
 body .sw_container .cw_container {
   margin: auto;
   max-width: 1140px;
