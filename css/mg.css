@@ -74,32 +74,26 @@ h3.heading_big-green {
       align-self: center;
   background-color: #bad129;
   border-bottom: 4px solid #a7bc25;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
   margin-bottom: 4.8rem;
-  margin-top: 12rem;
-  padding: 1rem 2rem;
+  margin-top: 16rem;
+  padding: 1.6rem 2.4rem;
+  text-transform: uppercase;
 }
 
 h1.heading_card,
 h2.heading_card,
 h3.heading_card {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border: none;
-  color: #5c5c61;
-  /** Added this flex to ensure that letters and arrows are vertically centred **/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #2d2d34;
   font-size: 1.6rem;
   font-weight: 700;
-  margin-top: 1.6rem;
+  /* Set line height to 1em to allow arrows to vertically align with text */
+  line-height: 1em;
+  margin-bottom: 2.4rem;
+  margin-top: 0.8rem;
   text-transform: uppercase;
   width: 100%;
 }
@@ -179,21 +173,22 @@ h3.heading_portfolio-example {
   h3.heading_big-green {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    font-size: 4.8rem;
-    margin-top: 3.2rem;
+    font-size: 4rem;
+    margin-top: 6rem;
   }
   h1.heading_card,
   h2.heading_card,
   h3.heading_card {
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: 2.4rem;
     font-weight: 700;
+    /* The below moves the heading to the start of the main axis */
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     letter-spacing: -0.2rem;
-    margin-top: -4.8rem;
   }
   h1.heading_card:before, h1.heading_card:after,
   h2.heading_card:before,
@@ -233,8 +228,8 @@ body {
 
 body .sw_container#header_container {
   background: #16161d;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
   min-height: 10vh;
   position: absolute;
   width: 100%;
@@ -508,6 +503,9 @@ header #header_hero-text p span {
 */
 /** Start Home page card **/
 .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e8e8e8;
   border: 2px dashed #d0d0d2;
   border-radius: 1.6rem;
@@ -518,14 +516,11 @@ header #header_hero-text p span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 2 0px;
           flex: 1 2 0;
   margin: 0 3.2rem 4.8rem 3.2rem;
-  padding: 4rem 1.6rem;
+  padding: 2.4rem;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
   /** Start :hover state for Home page card **/
@@ -562,13 +557,20 @@ header #header_hero-text p span {
 }
 
 .card .card_image img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border: 8px solid #bad129;
+  border-radius: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 8px solid #bad129;
-  border-radius: 1.6rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: auto;
+  max-height: 250px;
   max-width: 100%;
+  margin-bottom: 2.4rem;
   padding: 0.8rem;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
@@ -582,9 +584,9 @@ header #header_hero-text p span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /** Start formatting of card link **/
 }
 
@@ -604,9 +606,9 @@ header #header_hero-text p span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  line-height: 2.4rem;
-  margin-top: 3.2rem;
-  padding: 2.4rem 4rem;
+  line-height: 1em;
+  margin-top: 1.6rem;
+  padding: 2.4rem 3.2rem;
   text-decoration: none;
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
@@ -680,10 +682,13 @@ header #header_hero-text p span {
 @media (min-width: 768px) {
   /** Start .card @ 768px **/
   .card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "ci cd";
-    padding: 5.6rem;
+    padding: 4.8rem;
   }
   .card:hover {
     -webkit-transform: translateX(2rem);
@@ -692,41 +697,36 @@ header #header_hero-text p span {
   .card .card_image {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: ci;
-    padding-right: 2.4rem;
   }
   .card .card_image img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-self: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    margin-bottom: 0;
   }
   .card .card_details {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: cd;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 4.8rem;
-    margin-right: 0;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cd;
+    padding-left: 3.2rem;
+    padding-right: 0;
     text-align: left;
   }
   .card .card_details .card_cta {
@@ -757,14 +757,10 @@ header #header_hero-text p span {
     display: -ms-flexbox;
     display: flex;
     justify-self: flex-end;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .card_inverted .card_details {
-    margin-left: 0;
-    margin-right: 8rem;
+    padding-left: 0;
+    padding-right: 3.2rem;
   }
 }
 

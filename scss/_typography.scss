@@ -44,23 +44,23 @@ h3 {
     align-self: center;
     background-color: $green-b;
     border-bottom: 4px solid $green-s1;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
     margin-bottom: 4.8rem;
-    margin-top: 12rem;
-    padding: 1rem 2rem;
+    margin-top: 16rem;
+    padding: 1.6rem 2.4rem;
+    text-transform: uppercase;
   }
   &.heading_card {
-    align-items: center;
-    justify-content: center;
     border: none;
-    color: $eig-t3;
-    /** Added this flex to ensure that letters and arrows are vertically centred **/
-    display: flex;
+    color: $eig-t1;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 1.6rem;
+    /* Set line height to 1em to allow arrows to vertically align with text */
+    line-height: 1em;
+    margin-bottom: 2.4rem;
+    margin-top: 0.8rem;
     text-transform: uppercase;
     width: 100%;
     &:before,
@@ -114,16 +114,16 @@ h3 {
     }
     &.heading_big-green {
       align-self: flex-start;
-      font-size: 4.8rem;
-      margin-top: 3.2rem;
+      font-size: 4rem;
+      margin-top: 6rem;
     }
     &.heading_card {
-      align-content: flex-start;
+      display: flex;
       font-size: 2.4rem;
       font-weight: 700;
+      /* The below moves the heading to the start of the main axis */
       justify-content: flex-start;
       letter-spacing: -0.2rem;
-      margin-top: -4.8rem;
       &:before,
       &:after {
         font-size: 2em;

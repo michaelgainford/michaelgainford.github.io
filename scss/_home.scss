@@ -14,15 +14,15 @@
 
 /** Start Home page card **/
 .card {
+  align-items: center;
   background-color: $eig-t9;
   border: 2px dashed $eig-t8;
   border-radius: 1.6rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1 2 0;
   margin: 0 3.2rem 4.8rem 3.2rem;
-  padding: 4rem 1.6rem;
+  padding: 2.4rem;
   transition: 1s all ease;
   &:first-of-type {
     margin-top: 4rem;
@@ -50,11 +50,15 @@
   /** End :hover state for Home page card **/
   .card_image {
     img {
-      display: flex;
+      align-self: flex-start;
       border: 8px solid $green-b;
       border-radius: 1.6rem;
+      display: flex;
+      flex-grow: 1;
       height: auto;
+      max-height: 250px;
       max-width: 100%;
+      margin-bottom: 2.4rem;
       padding: 0.8rem;
       transition: 500ms ease-in-out;
     }
@@ -63,7 +67,7 @@
   .card_details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     /** Start formatting of card link **/
     .card_cta {
       align-self: center;
@@ -75,9 +79,9 @@
       display: flex;
       font-size: 1.6rem;
       justify-content: center;
-      line-height: 2.4rem;
-      margin-top: 3.2rem;
-      padding: 2.4rem 4rem;
+      line-height: 1em;
+      margin-top: 1.6rem;
+      padding: 2.4rem 3.2rem;
       text-decoration: none;
       transition: 1s all ease-in-out;
       .arrows {
@@ -143,31 +147,30 @@
 @media (min-width: 768px) {
   /** Start .card @ 768px **/
   .card {
+    align-items: center;
     display: grid;
     grid-template-areas: "ci cd";
-    padding: 5.6rem;
+    padding: 4.8rem;
     &:hover {
       transform: translateX(2rem);
     }
     .card_image {
       align-self: flex-start;
-      border-radius: 50%;
       display: flex;
       grid-area: ci;
-      padding-right: 2.4rem;
       img {
         display: flex;
         justify-self: flex-start;
-        flex-direction: row;
+        margin-bottom: 0;
       }
     }
     .card_details {
-      align-items: flex-end;
+      justify-content: flex-start;
       display: flex;
-      grid-area: cd;
       flex-direction: column;
-      margin-left: 4.8rem;
-      margin-right: 0;
+      grid-area: cd;
+      padding-left: 3.2rem;
+      padding-right: 0;
       text-align: left;
       .card_cta {
         align-self: flex-start;
@@ -187,12 +190,11 @@
       img {
         display: flex;
         justify-self: flex-end;
-        flex-direction: row;
       }
     }
     .card_details {
-      margin-left: 0;
-      margin-right: 8rem;
+      padding-left: 0;
+      padding-right: 3.2rem;
     }
   }
 }
