@@ -22,6 +22,11 @@ html {
   color: #bad129;
 }
 
+hr {
+  border-bottom: 2px dashed #8b8b8e;
+  border-top: 0;
+}
+
 /** Globally set base font size, font family and weight **/
 * {
   font-size: 10px;
@@ -43,6 +48,8 @@ p a {
   font-size: inherit;
   font-weight: 700;
   text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 p a:hover {
@@ -173,7 +180,7 @@ h3.heading_portfolio-example {
   h3.heading_big-green {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    font-size: 4rem;
+    font-size: 3.2rem;
     margin-top: 6rem;
   }
   h1.heading_card,
@@ -906,9 +913,6 @@ header #header_hero-text p span {
   #about-page #about-page_upper #about-page_intro p {
     margin-right: 16rem;
   }
-  #about-page #about-page_upper #about-page_intro p a {
-    padding: 0.4rem;
-  }
 }
 
 /** End ABOUT page **/
@@ -1154,7 +1158,7 @@ header #header_hero-text p span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3.2rem 0;
+  padding: 0;
 }
 
 #contact-page #contact-page_socials ul {
@@ -1163,8 +1167,8 @@ header #header_hero-text p span {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.6rem;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   justify-items: stretch;
 }
 
@@ -1188,6 +1192,7 @@ header #header_hero-text p span {
           align-items: center;
   background-color: transparent;
   border-radius: 2.4rem;
+  border: 1px dashed #8b8b8e;
   color: #2c4245;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1205,12 +1210,12 @@ header #header_hero-text p span {
 
 #contact-page #contact-page_socials ul li a:hover {
   background-color: #16161d;
-  color: #def5f7;
+  color: #bad129;
 }
 
 #contact-page #contact-page_socials ul li a:hover .social_name {
   background: transparent;
-  color: #def5f7;
+  color: #bad129;
   margin-top: 0;
 }
 

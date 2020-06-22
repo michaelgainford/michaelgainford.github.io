@@ -8,12 +8,12 @@
   #contact-page_socials {
     display: flex;
     flex-direction: column;
-    padding: 3.2rem 0;
+    padding: 0;
     ul {
       align-content: center;
       display: grid;
       grid-gap: 1.6rem;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
       justify-items: stretch;
       li {
         align-items: stretch;
@@ -24,6 +24,7 @@
           align-items: center;
           background-color: transparent;
           border-radius: 2.4rem;
+          border: 1px dashed $eig-t5;
           color: $blue-s7;
           display: flex;
           flex-direction: column;
@@ -33,10 +34,10 @@
           transition: 2s;
           &:hover {
             background-color: $eig;
-            color: $blue-t7;
+            color: $green-b;
             .social_name {
               background: transparent;
-              color: $blue-t7;
+              color: $green-b;
               margin-top: 0;
             }
           }

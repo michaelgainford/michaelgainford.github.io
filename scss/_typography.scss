@@ -19,6 +19,7 @@ p {
     font-size: inherit;
     font-weight: 700;
     text-decoration: none;
+    transition: 1s;
     &:hover {
       background-color: $blue-t1;
     }
@@ -114,7 +115,7 @@ h3 {
     }
     &.heading_big-green {
       align-self: flex-start;
-      font-size: 4rem;
+      font-size: 3.2rem;
       margin-top: 6rem;
     }
     &.heading_card {
