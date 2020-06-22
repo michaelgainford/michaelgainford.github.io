@@ -160,6 +160,14 @@ h3.heading_portfolio-example {
   text-transform: uppercase;
 }
 
+@media (min-width: 600px) {
+  h1.heading_standard#heading_standard_home,
+  h2.heading_standard#heading_standard_home,
+  h3.heading_standard#heading_standard_home {
+    margin-top: 5.6rem;
+  }
+}
+
 @media (min-width: 768px) {
   h1.heading_standard,
   h2.heading_standard,
@@ -167,6 +175,11 @@ h3.heading_portfolio-example {
     font-size: 2.4rem;
     margin-left: 3.2rem;
     text-transform: inherit;
+  }
+  h1.heading_standard#heading_standard_home,
+  h2.heading_standard#heading_standard_home,
+  h3.heading_standard#heading_standard_home {
+    margin-top: 4.8rem;
   }
   h1.heading_standard.example_heading,
   h2.heading_standard.example_heading,
