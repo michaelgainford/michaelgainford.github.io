@@ -155,12 +155,10 @@
       transform: translateX(2rem);
     }
     .card_image {
-      align-self: flex-start;
-      display: flex;
+      display: grid;
       grid-area: ci;
       img {
-        display: flex;
-        justify-self: flex-start;
+        align-self: start;
         margin-bottom: 0;
       }
     }
@@ -169,8 +167,8 @@
       display: flex;
       flex-direction: column;
       grid-area: cd;
-      padding-left: 3.2rem;
-      padding-right: 0;
+      margin-left: 3.2rem;
+      margin-right: 0;
       text-align: left;
       .card_cta {
         align-self: flex-start;
@@ -193,8 +191,8 @@
       }
     }
     .card_details {
-      padding-left: 0;
-      padding-right: 3.2rem;
+      margin-left: 0;
+      margin-right: 3.2rem;
     }
   }
 }

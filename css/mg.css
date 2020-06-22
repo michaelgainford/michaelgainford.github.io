@@ -717,20 +717,16 @@ header #header_hero-text p span {
             transform: translateX(2rem);
   }
   .card .card_image {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: ci;
   }
   .card .card_image img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: flex-start;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     margin-bottom: 0;
   }
   .card .card_details {
@@ -747,8 +743,8 @@ header #header_hero-text p span {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: cd;
-    padding-left: 3.2rem;
-    padding-right: 0;
+    margin-left: 3.2rem;
+    margin-right: 0;
     text-align: left;
   }
   .card .card_details .card_cta {
@@ -781,8 +777,8 @@ header #header_hero-text p span {
     justify-self: flex-end;
   }
   .card_inverted .card_details {
-    padding-left: 0;
-    padding-right: 3.2rem;
+    margin-left: 0;
+    margin-right: 3.2rem;
   }
 }
 
