@@ -6,7 +6,7 @@ function heroSwitcher() {
     "a web developer ⌨️",
     "a big fan of coffee  ☕",
     "a lover of pixels 💻",
-    "for hire ???",
+    "for hire 😃",
     "ready to go 🚀",
   ];
   heroText.innerText = heroArray[i];
