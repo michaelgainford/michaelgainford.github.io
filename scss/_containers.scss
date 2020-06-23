@@ -86,3 +86,15 @@ body#body_portfolio {
     }
   }
 }
+
+@media (min-width: 1040px) {
+  body#body_home {
+    .sw_container {
+      &#header_container {
+        background: $eig;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4w));
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw));
+      }
+    }
+  }
+}
