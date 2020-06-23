@@ -95,6 +95,9 @@
           "egh egh egh egh egh egh"
           "egi egi egi . . egd";
         padding: 0;
+        img {
+          filter: grayscale(100%);
+        }
         &:hover {
           img {
             border-radius: 0.8rem;

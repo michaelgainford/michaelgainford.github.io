@@ -1083,6 +1083,10 @@ header #header_hero-text p span {
         grid-template-areas: "egh egh egh egh egh egh" "egi egi egi . . egd";
     padding: 0;
   }
+  #portfolio-page #past-work_examples .example img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
   #portfolio-page #past-work_examples .example:hover img {
     border-radius: 0.8rem;
   }
