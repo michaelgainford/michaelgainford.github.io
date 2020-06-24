@@ -6,8 +6,8 @@ body {
   .sw_container {
     &#header_container {
       background: $eig;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
       min-height: 10vh;
       position: absolute;
       width: 100%;

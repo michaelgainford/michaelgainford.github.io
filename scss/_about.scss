@@ -19,6 +19,7 @@
         max-height: 200px;
         max-width: 200px;
         margin-bottom: 2.4rem;
+        transform: scaleX(-1);
       }
     }
   }
@@ -27,9 +28,10 @@
     flex-direction: column;
     padding: 0 1.6rem 3.2rem 1.6rem;
     #skill-bars {
-      column-gap: 3.2rem;
+      column-gap: 1.6rem;
       display: inline-grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 1.6rem;
       .skill-bar {
         align-items: center;
         border-radius: 1.6rem;
@@ -38,12 +40,26 @@
         letter-spacing: 0.2rem;
         padding: 4.8rem 2.4rem;
         text-align: center;
+        &:hover {
+          p {
+            &.skill-name {
+              font-weight: 300;
+              font-style: italic;
+              text-transform: initial;
+              visibility: visible;
+            }
+          }
+        }
         p {
           font-size: 6.4rem;
           letter-spacing: 0.1rem;
           font-weight: 300;
           margin: 0;
           text-transform: uppercase;
+          &.skill-name {
+            font-size: 1.6rem;
+            visibility: hidden;
+          }
         }
         &:nth-child(odd) {
           background-color: $green-t7;
@@ -66,9 +82,11 @@
 @media (min-width: 768px) {
   #about-page {
     #about-page_upper {
+      align-content: flex-start;
+      border-bottom: 2px dashed $eig-t7;
       display: flex;
       flex-direction: row;
-      align-content: flex-start;
+      padding-bottom: 2.4rem;
       #about-page_photo {
         order: 1;
         img {
@@ -95,8 +113,10 @@
             margin-bottom: 0.8rem;
             margin-top: -0.8rem;
             p {
-              transform: rotate(360deg);
-              transition: 2s all ease-in;
+              &.spinning-icon {
+                transform: rotate(360deg);
+                transition: 2s all ease-in-out;
+              }
             }
           }
         }

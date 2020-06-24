@@ -13,3 +13,9 @@ function heroSwitcher() {
   i = (i + 1) % heroArray.length;
 }
 setInterval(heroSwitcher, 3000);
+
+// Get browser's inner width and height for resolution specific code
+//var txt = "";
+//txt += "<p>Width: " + window.innerWidth + " </p>";
+//txt += " <p>Height: " + window.innerHeight + "</p>";
+//document.getElementById("footer_copyright").innerHTML = txt;

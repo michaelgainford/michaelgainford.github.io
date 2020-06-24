@@ -12,8 +12,8 @@
     ul {
       align-content: center;
       display: grid;
-      grid-gap: 1.6rem;
-      grid-template-columns: repeat(4, 1fr);
+      gap: 1.6rem 1.6rem;
+      grid-template-columns: repeat(3, 1fr);
       li {
         align-items: stretch;
         list-style: none;
@@ -31,6 +31,9 @@
           padding: 2.4rem 0;
           text-decoration: none;
           transition: 2s;
+          .social_name {
+            color: $blue-s7;
+          }
           &:hover {
             background-color: $eig;
             color: $green-b;
