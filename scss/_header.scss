@@ -1,5 +1,5 @@
 header {
-  #header_logo {
+  #header__logo {
     display: flex;
     justify-content: center;
     img {
@@ -7,7 +7,7 @@ header {
       max-width: 100%;
     }
   }
-  #header_nav {
+  #header__nav {
     padding-top: 2.4rem;
     ul {
       display: flex;
@@ -36,13 +36,13 @@ header {
       }
     }
   }
-  #header_hero-text {
+  #header__hero-text {
     p {
       color: $eig-t9;
       font-size: 1.6rem;
       line-height: 6.4rem;
       padding: 1.6rem 0;
-      span {
+      #header__hero-text__span {
         color: $green-b;
         font-size: inherit;
         font-weight: 700;
@@ -61,11 +61,11 @@ header {
     > * {
       display: flex;
     }
-    #header_logo {
+    #header__logo {
       grid-area: hl;
       justify-content: flex-start;
     }
-    #header_hero-text {
+    #header__hero-text {
       background-image: url("../images/carets/hero-carets.png");
       background-origin: border-box;
       background-position: center;
@@ -79,14 +79,14 @@ header {
         border: 0;
         font-size: 2.4rem;
         text-shadow: 2px 2px 0 $blue-s9;
-        #span-hero {
+        #header__hero-text__span {
           display: block;
           font-size: 4rem;
           letter-spacing: 0.08em;
         }
       }
     }
-    #header_nav {
+    #header__nav {
       grid-area: hn;
       justify-content: flex-end;
       padding-top: 2.4rem;
@@ -105,7 +105,7 @@ header {
             padding: 2rem;
             transition: all 1s ease-in-out;
             text-transform: initial;
-            &#header_cta {
+            &#header__cta {
               border: 2px dashed $blue-b;
             }
             &.active-a {
@@ -127,10 +127,10 @@ header {
 
 @media (min-width: 900px) {
   header {
-    #header_hero-text {
+    #header__hero-text {
       p {
         border: 0;
-        #span-hero {
+        #header__hero-text__span {
           font-size: 6.4rem;
         }
       }

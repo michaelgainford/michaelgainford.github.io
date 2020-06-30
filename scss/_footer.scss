@@ -8,7 +8,7 @@ footer {
   > * {
     display: flex;
   }
-  #footer_social-icons {
+  #footer__social-icons {
     align-content: center;
     grid-area: fi;
     justify-content: space-around;
@@ -26,15 +26,15 @@ footer {
       }
     }
   }
-  #footer_logo {
-    grid-area: fl;
+  #footer__logo {
     align-content: center;
+    grid-area: fl;
     justify-content: center;
     img {
       margin-bottom: -0.8rem;
     }
   }
-  #footer_copyright {
+  #footer__copyright {
     align-content: center;
     grid-area: fc;
     justify-content: center;

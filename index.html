@@ -41,28 +41,31 @@
     <meta name="msapplication-TileColor" content="#ff0000" />
     <meta name="theme-color" content="#496e73" />
   </head>
-  <body id="body_home">
+  <body id="home__body">
     <!-- START header_container -->
-    <div class="sw_container" id="header_container">
-      <div class="cw_container">
+    <div class="container__sw" id="container__header">
+      <div class="container__cw">
         <!-- START header -->
         <header>
-          <div id="header_logo">
-            <a href="./">
+          <div id="header__logo">
+            <a href="/">
               <img
                 src="images/logos/michael-gainford-logo.webp"
                 alt="Michael Gainford &dash; Web Developer"
               />
             </a>
           </div>
-          <div id="header_hero-text">
-            <p>I am... <span id="span-hero">a web developer ⌨️</span></p>
+          <div id="header__hero-text">
+            <p>
+              I am...
+              <span id="header__hero-text__span">a web developer ⌨️</span>
+            </p>
           </div>
-          <nav id="header_nav">
+          <nav id="header__nav">
             <ul>
-              <li><a href="./about.html" aria-label="about">About</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
-              <li><a id="header_cta" href="./contact.html">Contact</a></li>
+              <li><a href="about.html" aria-label="about">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a id="header__cta" href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -72,45 +75,45 @@
     <!-- END header_container -->
 
     <!-- START main-content_container -->
-    <div class="sw_container" id="main-content_container">
-      <div class="cw_container">
+    <div class="container__sw" id="container__content__main">
+      <div class="container__cw">
         <!-- START main content -->
-        <section class="main-content" id="home-page">
-          <h1 class="heading_standard" id="heading_standard_home">What I do</h1>
-          <div id="home-page_cards">
-            <!-- Start Website design card -->
+        <section class="content__main" id="home__content">
+          <h1 class="heading__main-blue">
+            What I do
+          </h1>
+          <div id="home__cards">
             <div class="card">
-              <div class="card_image">
+              <div class="card__image">
                 <img
                   src="images/home-page-cards/website-design.webp"
                   alt="Website Design"
                 />
               </div>
-              <div class="card_details">
-                <h2 class="heading_card">Website Design</h2>
+              <div class="card__text">
+                <h2 class="heading__home__card heading__arrows-blue">
+                  Website Design
+                </h2>
                 <p>
                   Using good old&dash;fashioned pen and paper, I initially
                   sketch ideas for the layout of the website or application. I
                   then use Figma, to create a visual layout.
                 </p>
 
-                <a class="card_cta" href="about.html">
-                  Read More<span class="arrows">>></span>
+                <a class="card__cta" href="about.html">
+                  Read More<span class="card__cta__arrows">>></span>
                 </a>
               </div>
             </div>
-            <!-- End Website design card -->
-
-            <!-- Start Website dev card -->
-            <div class="card card_inverted">
-              <div class="card_image">
+            <div class="card">
+              <div class="card__image">
                 <img
                   src="images/home-page-cards/website-development.webp"
                   alt="Website Development"
                 />
               </div>
-              <div class="card_details">
-                <h2 class="heading_card hc_inverted">
+              <div class="card__text">
+                <h2 class="heading__home__card heading__arrows-green">
                   Website Development
                 </h2>
                 <p>
@@ -118,34 +121,31 @@
                   final design into a viewport-based responsive design, using a
                   combination of HTML, CSS and JavaScript.
                 </p>
-                <a class="card_cta" href="about.html">
-                  Read More<span class="arrows">>></span>
+                <a class="card__cta" href="about.html">
+                  Read More<span class="card__cta__arrows">>></span>
                 </a>
               </div>
             </div>
-            <!-- End Website dev card -->
-            <!-- Start Mobile app card -->
             <div class="card">
-              <div class="card_image">
+              <div class="card__image">
                 <img
                   src="images/home-page-cards/mobile-app-development.webp"
                   alt="Mobile App Development"
                 />
               </div>
-              <div class="card_details">
-                <h2 class="heading_card">
+              <div class="card__text">
+                <h2 class="heading__home__card heading__arrows-blue">
                   App Development
                 </h2>
                 <p>
                   I can't currently build mobile apps, but when I learn, then I
                   can do this using languages such as Flutter, Kotlin et al 😛.
                 </p>
-                <a class="card_cta" href="about.html">
-                  Read More<span class="arrows">>></span>
+                <a class="card__cta" href="about.html">
+                  Read More<span class="card__cta__arrows">>></span>
                 </a>
               </div>
             </div>
-            <!-- End Mobile app card -->
           </div>
         </section>
         <!-- END main-content -->
@@ -154,11 +154,11 @@
     <!-- END main-content_container -->
 
     <!-- START footer_container -->
-    <div class="sw_container" id="footer_container">
-      <div class="cw_container">
+    <div class="container__sw" id="container__footer">
+      <div class="container__cw">
         <!-- START footer -->
         <footer>
-          <div id="footer_social-icons">
+          <div id="footer__social-icons">
             <a
               target="_blank"
               href="https://www.freecodecamp.org/magn3s1um"
@@ -196,13 +196,13 @@
               ><i class="fab fa-twitter"></i
             ></a>
           </div>
-          <div id="footer_logo">
+          <div id="footer__logo">
             <img
               src="images/logos/michael-gainford-footer-logo-small.webp"
               alt="Michael Gainford - Web Developer"
             />
           </div>
-          <div id="footer_copyright">
+          <div id="footer__copyright">
             <p>Michael Gainford &copy; 2020</p>
           </div>
         </footer>

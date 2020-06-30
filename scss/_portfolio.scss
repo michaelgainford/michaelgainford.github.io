@@ -1,66 +1,84 @@
 /** Start PORTFOLIO page **/
-#portfolio-page {
+#portfolio__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.8rem;
   h1 {
     margin-bottom: 6.4rem;
   }
-  #past-work_examples {
-    display: grid;
-    grid-template-areas:
-      "egh"
-      "egi"
-      "egd";
-    hr {
-      border: 1px dashed $green-s5;
-      color: transparent;
-      margin: 2.4rem auto 4.8rem auto;
-      width: calc(50vw);
-    }
-    .example {
-      border-bottom: 2px dashed $eig-t5;
+  #portfolio__past-work-collection {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    .portfolio__case-study {
+      background-color: $eig-t9;
+      border-radius: 0.8rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin-bottom: 6.4rem;
-      padding-bottom: 6.4rem;
+      flex: 1 1 0;
+      margin: 0 1.6rem 1.6rem 1.6rem;
+      padding: 1.6rem;
       &:last-of-type {
         border-bottom: 0;
-        padding-bottom: 2.4rem;
-      }
-      h2 {
-        border: none;
-        grid-area: egh;
-        padding: 0.8rem;
+        padding-bottom: 4rem;
       }
       > * {
         display: flex;
-        justify-content: center;
       }
-      .example_image {
-        grid-area: egi;
-        padding: 0 3.2rem;
-        img {
-          border: 8px solid $blue-s1;
-          border-radius: 1.6rem;
-          margin-bottom: 3.2rem;
-          max-width: 100%;
-          transition: 1s ease-in-out;
+      h2 {
+        align-self: start;
+      }
+      .portfolio__image {
+        padding: 4rem;
+        figure {
+          align-content: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 1.6rem;
+          padding: 0;
+          width: 100%;
+          img {
+            border: 16px solid $blue-b;
+            height: auto;
+            margin: 0 0 0 0;
+            padding: 0;
+            transition: 1s ease-in-out;
+            width: 100%;
+          }
+          figcaption {
+            align-self: center;
+            align-items: center;
+            border-bottom: 4px solid $eig-t7;
+            color: $eig-t2;
+            display: flex;
+            font-size: calc((1.6rem * (3 / 4)));
+            font-weight: 400;
+            justify-content: center;
+            letter-spacing: 0.16rem;
+            padding: 0.8rem;
+            text-transform: uppercase;
+            width: fit-content;
+          }
         }
       }
-      .example_detail {
-        align-items: center;
-        grid-area: egd;
+      .portfolio__case-study-details {
         display: flex;
         flex-direction: column;
+        padding: 0 0.8rem;
         h3 {
           align-items: center;
+          align-self: center;
           color: $eig-t2;
           display: flex;
+          font-size: 1.6rem;
+          font-weight: 700;
           letter-spacing: 0.2rem;
           line-height: 4rem;
           text-transform: initial;
           &:before,
           &:after {
-            color: $blue-b;
+            color: $green-b;
             font-size: 3.2rem;
             font-weight: 700;
             line-height: 3.2rem;
@@ -75,80 +93,71 @@
           }
         }
         p {
+          font-size: 1.2rem;
           margin-bottom: 3.6rem;
+          text-align: center;
           a {
+            border: none;
             color: inherit;
             font-weight: inherit;
+            padding: 0.8rem;
+            .portolio__case-study__url {
+              font-size: inherit;
+              margin-left: 0.4rem;
+            }
           }
         }
       }
     }
   }
 }
-@media (min-width: 768px) {
-  #portfolio-page {
-    #past-work_examples {
-      .example {
-        display: grid;
-        grid-template-areas:
-          "egh egh egh egh egh egh"
-          "egi egi egi . . egd";
 
+@media (min-width: 768px) {
+  #portfolio__content {
+    #portfolio__past-work-collection {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      .portfolio__case-study {
+        display: flex;
+        flex-direction: row;
+        padding: 3.2rem;
         h2 {
-          grid-area: egh;
-          letter-spacing: 0.3rem;
+          font-size: 1.6rem;
+          letter-spacing: 0;
           margin-bottom: 3.2rem;
           text-transform: uppercase;
         }
-        .example_image {
+        .portfolio__image {
           align-items: flex-start;
           display: flex;
           flex-direction: row;
-          grid-area: egi;
           justify-content: flex-start;
-          margin: 0 3.2rem 0 0;
           padding: 0;
-          img {
-            border-radius: 1.6rem;
-          }
         }
-        .example_detail {
+        .portfolio__case-study-details {
           align-items: flex-start;
           display: flex;
           flex-direction: column;
-          grid-area: egd;
-          justify-content: start;
-          padding: 0 1.6rem 0 3.2rem;
-
+          flex: 1 1 0;
+          justify-content: flex-start;
+          margin-left: 4.8rem;
+          padding: 1.6rem;
+          text-align: left;
+          h3 {
+            align-self: flex-start;
+            display: flex;
+            justify-content: flex-start;
+          }
           p {
             font-size: 1.4rem;
             line-height: calc(1.4rem * 1.5);
             text-align: left;
-            &.example-p {
-              margin-top: -1.8rem;
-            }
-          }
-        }
-        &.flipped {
-          display: grid;
-          grid-template-areas:
-            "egh egh egh egh egh egh"
-            "egd . . egi egi egi";
-          .example_image {
-            align-items: flex-start;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin: 0 0 0 3.2rem;
-          }
-          .example_detail {
-            display: flex;
-            align-items: flex-start;
-            padding: 0 3.2rem 0 0.8rem;
           }
         }
       }
     }
   }
 }
+
 /** End PORTFOLIO page **/
