@@ -1455,13 +1455,21 @@ header #header__hero-text p #header__hero-text__span {
   transition: 1s all ease-in-out;
 }
 
-#contact__content #contact__methods #contact__by-email a:hover .contact__by-email__icon {
+#contact__content #contact__methods #contact__by-email a:hover .contact__by-email__icon,
+#contact__content #contact__methods #contact__by-email a:hover p {
+  background-color: transparent;
   color: #bad129;
 }
 
 #contact__content #contact__methods #contact__by-email a .contact__by-email__icon {
   color: #8b8b8e;
   font-size: 24rem;
+}
+
+#contact__content #contact__methods #contact__by-email a p {
+  color: eig-t3;
+  margin-top: -8rem;
+  margin-bottom: 8rem;
 }
 
 #contact__content #contact__methods #contact__by-social {
@@ -1484,7 +1492,6 @@ header #header__hero-text p #header__hero-text__span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.8rem 0;
 }
 
 #contact__content #contact__methods #contact__by-social ul li {
@@ -1544,12 +1551,30 @@ header #header__hero-text p #header__hero-text__span {
   #contact__content #contact__methods #contact__by-social {
     margin-left: 4rem;
     width: 50%;
-  }
-  #contact__content #contact__methods #contact__by-social ul {
-    margin-top: 8rem;
-  }
-  #contact__content #contact__methods #contact__by-social ul li a:hover {
-    font-size: 3rem;
+    /*         ul {
+          margin-top: 8rem;
+          li {
+            a {
+              p {
+                color: $eig-t3;
+              }
+              span {
+                color: $eig;
+              }
+              &:hover {
+                font-size: 3rem;
+                a {
+                  p {
+                    color: $green-b;
+                  }
+                  span {
+                    color: $green-b;
+                  }
+                }
+              }
+            }
+          }
+        } */
   }
 }
 

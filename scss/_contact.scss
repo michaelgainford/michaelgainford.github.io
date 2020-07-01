@@ -25,13 +25,20 @@
         &:hover {
           background-color: $eig;
           transition: 1s all ease-in-out;
-          .contact__by-email__icon {
+          .contact__by-email__icon,
+          p {
+            background-color: transparent;
             color: $green-b;
           }
         }
         .contact__by-email__icon {
           color: $eig-t5;
           font-size: 24rem;
+        }
+        p {
+          color: eig-t3;
+          margin-top: -8rem;
+          margin-bottom: 8rem;
         }
       }
     }
@@ -43,7 +50,6 @@
       ul {
         display: flex;
         flex-direction: column;
-        padding: 0.8rem 0;
         li {
           display: flex;
           flex-direction: column;
@@ -64,6 +70,8 @@
             span {
               font-size: inherit;
               margin-left: 0.8rem;
+            }
+            p {
             }
           }
         }
@@ -91,16 +99,31 @@
       #contact__by-social {
         margin-left: 4rem;
         width: 50%;
-        ul {
+
+        /*         ul {
           margin-top: 8rem;
           li {
             a {
+              p {
+                color: $eig-t3;
+              }
+              span {
+                color: $eig;
+              }
               &:hover {
                 font-size: 3rem;
+                a {
+                  p {
+                    color: $green-b;
+                  }
+                  span {
+                    color: $green-b;
+                  }
+                }
               }
             }
           }
-        }
+        } */
       }
     }
   }
