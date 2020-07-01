@@ -1,5 +1,5 @@
 body {
-  //background-color: $eig;
+  background-color: $eig;
   border-bottom: 6px solid $blue-s3;
   min-height: 100vh;
   text-align: center;
@@ -93,6 +93,48 @@ body#portfolio__body {
         background: $eig;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4w));
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw));
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body#home__body {
+    .container__sw {
+      &#container__header {
+        background: $eig;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2w));
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2w));
+        padding-bottom: 9.6rem;
+      }
+      &#container__content__main {
+        padding-top: 36.8rem;
+      }
+      &#container__footer {
+        clip-path: polygon(0% calc(100% -2vw), 100% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(
+          0 calc(100% -2vw),
+          100% 0,
+          100% 100%,
+          0% 100%
+        );
+        padding-top: 16rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  body#home__body {
+    .container__sw {
+      &#container__header {
+        padding-bottom: 8.8rem;
+      }
+      &#container__content__main {
+        padding-top: 48rem;
+      }
+      &#container__footer {
+        padding-top: 24rem;
       }
     }
   }

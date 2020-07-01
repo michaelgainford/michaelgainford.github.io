@@ -1,71 +1,104 @@
 /** Start CONTACT page **/
-#contact-page {
-  p {
-    &:last-of-type {
-      margin-bottom: 12rem;
-    }
-  }
-  #contact-page_socials {
+#contact__content {
+  #contact__methods {
     display: flex;
     flex-direction: column;
-    padding: 0 0 8rem 0;
-    ul {
-      align-content: center;
-      display: grid;
-      gap: 1.6rem 1.6rem;
-      grid-template-columns: repeat(3, 1fr);
-      li {
-        align-items: stretch;
-        list-style: none;
+    padding-top: 2.4rem;
+    h2 {
+      background-color: $blue-b;
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+    #contact__by-email {
+      border-radius: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.4rem;
+      width: 100%;
+      a {
+        border: none;
+        border-radius: 1.6rem;
+        color: $eig-t5;
+        font-size: 1.6rem;
+        text-decoration: none;
+        transition: 1s all ease-in-out;
+        &:hover {
+          background-color: $eig;
+          transition: 1s all ease-in-out;
+          .contact__by-email__icon {
+            color: $green-b;
+          }
+        }
+        .contact__by-email__icon {
+          color: $eig-t5;
+          font-size: 24rem;
+        }
+      }
+    }
+    #contact__by-social {
+      border-radius: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      ul {
         display: flex;
         flex-direction: column;
-        a {
-          align-items: center;
-          background-color: transparent;
-          border-radius: 2.4rem;
-          border: 1px dashed $eig-t5;
-          color: $blue-s7;
+        padding: 0.8rem 0;
+        li {
           display: flex;
           flex-direction: column;
-          font-size: 3.2rem;
-          padding: 2.4rem 0;
-          text-decoration: none;
-          transition: 2s;
-          .social_name {
-            color: $blue-s7;
-          }
-          &:hover {
-            background-color: $eig;
-            color: $green-b;
-            padding-top: 6.4rem;
-            .social_name {
-              background: transparent;
-              color: $eig-t9;
-              transform: translateY(-1.6em);
+          a {
+            border-bottom: 2px dotted $eig-t5;
+            color: $eig;
+            font-size: 1.6rem;
+            padding: 1.6rem;
+            text-decoration: none;
+            transition: 1s all ease-in-out;
+            &:hover {
+              background-color: $eig;
+              color: $green-b;
             }
-          }
-          .social_name {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.1rem;
-            margin-top: 1.6em;
-            padding: 1rem;
-            text-transform: uppercase;
-            transition: 1s;
+            &.no-border {
+              border: none;
+            }
+            span {
+              font-size: inherit;
+              margin-left: 0.8rem;
+            }
           }
         }
       }
     }
   }
 }
+
 @media (min-width: 768px) {
-  #contact-page {
-    text-align: left;
-    #contact-page_socials {
-      ul {
-        li {
-          a {
-            font-size: 5.6rem;
+  #contact__content {
+    #contact__methods {
+      align-content: stretch;
+      flex-direction: row;
+      #contact__by-email {
+        display: flex;
+        margin-right: 1.6rem;
+        width: 50%;
+        a {
+          .contact__by-email__icon {
+            color: $eig-t5;
+            font-size: 32rem;
+          }
+        }
+      }
+      #contact__by-social {
+        margin-left: 4rem;
+        width: 50%;
+        ul {
+          margin-top: 8rem;
+          li {
+            a {
+              &:hover {
+                font-size: 3rem;
+              }
+            }
           }
         }
       }
