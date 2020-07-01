@@ -332,7 +332,7 @@ body#portfolio__body .container__sw#container__content__main {
     padding-bottom: 9.6rem;
   }
   body#home__body .container__sw#container__content__main {
-    padding-top: 36.8rem;
+    padding-top: 48rem;
   }
   body#home__body .container__sw#container__footer {
     clip-path: polygon(0% calc(100% -2vw), 100% 0, 100% 100%, 0% 100%);
@@ -1551,30 +1551,9 @@ header #header__hero-text p #header__hero-text__span {
   #contact__content #contact__methods #contact__by-social {
     margin-left: 4rem;
     width: 50%;
-    /*         ul {
-          margin-top: 8rem;
-          li {
-            a {
-              p {
-                color: $eig-t3;
-              }
-              span {
-                color: $eig;
-              }
-              &:hover {
-                font-size: 3rem;
-                a {
-                  p {
-                    color: $green-b;
-                  }
-                  span {
-                    color: $green-b;
-                  }
-                }
-              }
-            }
-          }
-        } */
+  }
+  #contact__content #contact__methods #contact__by-social ul {
+    margin-top: 8rem;
   }
 }
 
