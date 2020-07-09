@@ -431,7 +431,7 @@ header #header__hero-text p #header__hero-text__span {
   header {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "hl hn" "ht ht";
+        grid-template-areas: "hl hn" "ht ht";
   }
   header > * {
     display: -webkit-box;
@@ -960,7 +960,8 @@ header #header__hero-text p #header__hero-text__span {
   transition: 1s;
 }
 
-#about__content #about__content__skills {
+#about__content .about__content__skills,
+#about__content .about__content__learning {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -971,7 +972,8 @@ header #header__hero-text p #header__hero-text__span {
   padding: 0 1.6rem 6.4rem 1.6rem;
 }
 
-#about__content #about__content__skills #skills {
+#about__content .about__content__skills .skills,
+#about__content .about__content__learning .skills {
   -webkit-column-gap: 1.6rem;
           column-gap: 1.6rem;
   display: -ms-grid;
@@ -983,7 +985,8 @@ header #header__hero-text p #header__hero-text__span {
   row-gap: 1.6rem;
 }
 
-#about__content #about__content__skills #skills .skill {
+#about__content .about__content__skills .skills .skill,
+#about__content .about__content__learning .skills .skill {
   background-color: rgba(22, 22, 29, 0.1);
   border: 5px solid rgba(22, 22, 29, 0.1);
   border-radius: 0.8rem;
@@ -998,7 +1001,8 @@ header #header__hero-text p #header__hero-text__span {
   transition: 0.8s ease-in-out all;
 }
 
-#about__content #about__content__skills #skills .skill:hover {
+#about__content .about__content__skills .skills .skill:hover,
+#about__content .about__content__learning .skills .skill:hover {
   background-color: rgba(22, 22, 29, 0.9);
   border: 5px solid #bad129;
   color: #e8e8e8;
@@ -1006,11 +1010,13 @@ header #header__hero-text p #header__hero-text__span {
   margin-top: -0.8rem;
 }
 
-#about__content #about__content__skills #skills .skill:hover p {
+#about__content .about__content__skills .skills .skill:hover p,
+#about__content .about__content__learning .skills .skill:hover p {
   color: #e8e8e8;
 }
 
-#about__content #about__content__skills #skills .skill:hover p.skill-icon {
+#about__content .about__content__skills .skills .skill:hover p.skill-icon,
+#about__content .about__content__learning .skills .skill:hover p.skill-icon {
   color: #bad129;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -1018,13 +1024,15 @@ header #header__hero-text p #header__hero-text__span {
   transition: 2s all ease-in-out;
 }
 
-#about__content #about__content__skills #skills .skill:hover p.skill-name {
+#about__content .about__content__skills .skills .skill:hover p.skill-name,
+#about__content .about__content__learning .skills .skill:hover p.skill-name {
   font-weight: 700;
   letter-spacing: 0.3rem;
   visibility: visible;
 }
 
-#about__content #about__content__skills #skills .skill p {
+#about__content .about__content__skills .skills .skill p,
+#about__content .about__content__learning .skills .skill p {
   font-size: 6.4rem;
   letter-spacing: 0.1rem;
   font-weight: 300;
@@ -1032,7 +1040,8 @@ header #header__hero-text p #header__hero-text__span {
   text-transform: uppercase;
 }
 
-#about__content #about__content__skills #skills .skill p.skill-name {
+#about__content .about__content__skills .skills .skill p.skill-name,
+#about__content .about__content__learning .skills .skill p.skill-name {
   font-size: 1.6rem;
   visibility: hidden;
 }
@@ -1135,7 +1144,8 @@ header #header__hero-text p #header__hero-text__span {
     margin-right: 8rem;
     text-align: left;
   }
-  #about__content #about__content__skills #skills {
+  #about__content .about__content__skills .skills,
+  #about__content .about__content__learning .skills {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: auto;
@@ -1560,7 +1570,7 @@ header #header__hero-text p #header__hero-text__span {
 footer {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "fi" "fl" "fc";
+      grid-template-areas: "fi" "fl" "fc";
   padding: 0 0 0.8rem 0;
 }
 

@@ -34,11 +34,12 @@
       }
     }
   }
-  #about__content__skills {
+  .about__content__skills,
+  .about__content__learning {
     display: flex;
     flex-direction: column;
     padding: 0 1.6rem 6.4rem 1.6rem;
-    #skills {
+    .skills {
       column-gap: 1.6rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -159,8 +160,9 @@
         }
       }
     }
-    #about__content__skills {
-      #skills {
+    .about__content__skills,
+    .about__content__learning {
+      .skills {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
       }
