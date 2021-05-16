@@ -1,0 +1,11 @@
+footer {
+  border-top: 2px solid #232323;
+  grid-area: footer;
+  padding: 1.2rem 0;
+  p {
+    font-size: 0.64rem;
+    a {
+      color: var(--clr-goldenrod);
+    }
+  }
+}

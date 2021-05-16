@@ -1,222 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
-    <title>Michael Gainford &dash; Web Developer</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Michael Gainford. Web Developer based on Merseyside"
-    />
-    <meta http-equiv="Cache-Control" content="no-store" />
-    <meta http-equiv="Cache-Control: max-age=31536000" />
-
-    <script>
-      document.documentElement.classList.remove("no-js")
-    </script>
-    <link rel="dns-prefetch" href="https://fontawesome.com" />
+    <title>Michael Gainford || Development Site</title>
     <script
-      src="https://kit.fontawesome.com/60dd679444.js"
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF"
       crossorigin="anonymous"
     ></script>
-    <link rel="preload" href="./css/mg.css" as="style" />
-    <link rel="preload" href="./js/scripts.js" as="script" />
-    <link rel="stylesheet" href="./css/mg.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
-    />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#ff0000" />
-    <meta name="theme-color" content="#496e73" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body id="home__body">
-    <!-- START header_container -->
-    <div class="container__sw" id="container__header">
-      <div class="container__cw">
-        <!-- START header -->
-        <header>
-          <div id="header__logo">
-            <a href="/">
-              <img
-                src="images/logos/michael-gainford-logo.webp"
-                alt="Michael Gainford &dash; Web Developer"
-              />
-            </a>
-          </div>
-          <div id="header__hero-text">
-            <p>
-              I am...
-              <span id="header__hero-text__span">a web developer ⌨️</span>
-            </p>
-          </div>
-          <nav id="header__nav">
-            <ul>
-              <li><a href="about.html" aria-label="about">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a id="header__cta" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        <!-- END header -->
-      </div>
-    </div>
-    <!-- END header_container -->
+  <body>
+    <div class="container">
+      <!-- begin .container -->
+      <header>
+        <div class="logo">
+          <a href="/">Michael's code playground </a>
+		  <p style="font-size: 0.84rem">my place, dedicated to code</p>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#my-work"
+                ><i class="fas fa-user"></i
+                ><span class="main-nav__link">My Projects</span></a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/m1cha3l_dev"
+                ><i class="fab fa-twitter"></i
+                ><span class="main-nav__link">Twitter</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- START main-content_container -->
-    <div class="container__sw" id="container__content__main">
-      <div class="container__cw">
-        <!-- START main content -->
-        <section class="content__main" id="home__content">
-          <h1 class="heading__main-blue">What I do</h1>
-          <div id="home__cards">
-            <div class="card">
-              <div class="card__image">
-                <img
-                  src="images/home-page-cards/website-design.webp"
-                  alt="Website Design"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="heading__home__card heading__arrows-blue">
-                  Website Design
-                </h2>
-                <p>
-                  Using good old&dash;fashioned pen and paper, I initially
-                  sketch ideas for the layout of the website or application. I
-                  then use Figma, to create a visual layout.
-                </p>
-
-                <a class="card__cta" href="about.html">
-                  Read More<span class="card__cta__arrows">>></span>
-                </a>
+      <main>
+        <section class="main-content">
+          <div class="my-work" id="my-work">
+            <div class="project">
+              <div class="project-inner">
+                <h1>
+                  Past Project &mdash;
+                  <span class="project-name">Fairway Golf Group Holidays</span>
+                </h1>
+                <picture
+                  ><img src="./images/fairway-screenshot.jpg" alt="Project"
+                /></picture>
+                <a href="https://fairwaygolfgroupholidays.co.uk">View live project</a>
               </div>
             </div>
-            <div class="card">
-              <div class="card__image">
-                <img
-                  src="images/home-page-cards/website-development.webp"
-                  alt="Website Development"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="heading__home__card heading__arrows-green">
-                  Website Development
-                </h2>
-                <p>
-                  Using my favourite text editor, VS Code, I then convert the
-                  final design into a viewport-based responsive design, using a
-                  combination of HTML, CSS and JavaScript.
-                </p>
-                <a class="card__cta" href="about.html">
-                  Read More<span class="card__cta__arrows">>></span>
-                </a>
+            <div class="project bg-alt">
+              <div class="project-inner">
+                <h1>
+                  Past Project &mdash;
+                  <span class="project-name">Golf Membership Northwest</span>
+                </h1>
+                <picture
+                  ><img
+                    src="./images/golf-membership-screenshot.jpg"
+                    alt="Project"
+                /></picture>
+                <a href="http://golfmembershipnorthwest.co.uk/">View live project</a>
               </div>
             </div>
-            <!--             <div class="card">
-              <div class="card__image">
-                <img
-                  src="images/home-page-cards/mobile-app-development.webp"
-                  alt="Mobile App Development"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="heading__home__card heading__arrows-blue">
-                  App Development
-                </h2>
-                <p>
-                  I can't currently build mobile apps, but when I learn, then I
-                  can do this using languages such as Flutter, Kotlin et al 😛.
-                </p>
-                <a class="card__cta" href="about.html">
-                  Read More<span class="card__cta__arrows">>></span>
-                </a>
-              </div>
-            </div> -->
           </div>
         </section>
-        <!-- END main-content -->
-      </div>
+      </main>
+      <footer>
+        <p>
+          designed, maintained and everything else, by
+          <a href="https://michaelgainford.co.uk">Michael</a>
+        </p>
+      </footer>
     </div>
-    <!-- END main-content_container -->
-
-    <!-- START footer_container -->
-    <div class="container__sw" id="container__footer">
-      <div class="container__cw">
-        <!-- START footer -->
-        <footer>
-          <div id="footer__social-icons">
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.freecodecamp.org/magn3s1um"
-              aria-label="free-code-camp"
-              ><i class="fab fa-free-code-camp"></i
-            ></a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/Magn3s1um-g"
-              aria-label="github"
-              ><i class="fab fa-github-alt"></i
-            ></a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.instagram.com/magne3s1um/"
-              aria-label="instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.linkedin.com/in/michael-gainford/"
-              aria-label="linked-in"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.pinterest.co.uk/magn3s1um/"
-              aria-label="pinterest"
-              ><i class="fab fa-pinterest"></i
-            ></a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://twitter.com/Magn3s1um"
-              aria-label="twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-          <div id="footer__logo">
-            <img
-              src="images/logos/michael-gainford-footer-logo-small.webp"
-              alt="Michael Gainford - Web Developer"
-            />
-          </div>
-          <div id="footer__copyright">
-            <p>Michael Gainford &copy; 2021</p>
-          </div>
-        </footer>
-        <!-- END footer -->
-      </div>
-    </div>
-    <!-- END footer_container -->
-    <script src="./js/scripts.js"></script>
+    <!-- end .container -->
   </body>
 </html>
