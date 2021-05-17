@@ -19,7 +19,7 @@
       <header>
         <div class="logo">
           <a href="/">Michael's code playground </a>
-		  <p style="font-size: 0.84rem">my place, dedicated to code</p>
+          <p style="font-size: 0.84rem">my place, dedicated to code</p>
         </div>
         <nav class="main-nav">
           <ul>
@@ -48,10 +48,23 @@
                   Past Project &mdash;
                   <span class="project-name">Fairway Golf Group Holidays</span>
                 </h1>
-                <picture
-                  ><img src="./images/fairway-screenshot.jpg" alt="Project"
-                /></picture>
-                <a href="https://fairwaygolfgroupholidays.co.uk">View live project</a>
+                <picture>
+                  <source
+                    srcset="./images/fairway-screenshot.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/fairway-screenshot.jpg"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/fairway-screenshot.jpg"
+                    alt="Fairway Golf Group Holidays"
+                  />
+                </picture>
+                <a href="https://fairwaygolfgroupholidays.co.uk"
+                  >View live project</a
+                >
               </div>
             </div>
             <div class="project bg-alt">
@@ -65,7 +78,9 @@
                     src="./images/golf-membership-screenshot.jpg"
                     alt="Project"
                 /></picture>
-                <a href="http://golfmembershipnorthwest.co.uk/">View live project</a>
+                <a href="http://golfmembershipnorthwest.co.uk/"
+                  >View live project</a
+                >
               </div>
             </div>
           </div>
