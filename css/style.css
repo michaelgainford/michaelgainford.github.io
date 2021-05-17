@@ -110,18 +110,23 @@ header {
 }
 .logo a {
   color: var(--clr-white);
-  font-size: 3vh;
+  font-size: 2.4vh;
   font-weight: 700;
   text-decoration: none;
   text-transform: lowercase;
 }
 @media (min-width: 600px) {
   .logo a {
-    font-size: 5vh;
+    font-size: 4vh;
   }
 }
-.logo a .light {
-  font-weight: 500;
+.logo p {
+  font-size: 1.2vh;
+}
+@media (min-width: 600px) {
+  .logo p {
+    font-size: 1.6vh;
+  }
 }
 
 .main-nav {
