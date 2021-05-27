@@ -30,8 +30,11 @@ header {
   }
   p {
     font-size: 1.2vh;
-    @media (min-width: 600px) {
+    @media (min-width: 600px) and (orientation: landscape) {
       font-size: 1.6vh;
+    }
+    @media (min-width: 600px) and (orientation: orientation) {
+      font-size: 1.2vh;
     }
   }
 }
