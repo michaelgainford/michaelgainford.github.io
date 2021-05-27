@@ -160,6 +160,9 @@ header {
 .main-nav ul li a:hover {
   background-color: var(--clr-eigengrau);
 }
+.main-nav ul li a:last-of-type {
+  border-right: 0;
+}
 @media (min-width: 600px) {
   .main-nav ul li a {
     border-bottom: 4px solid transparent;
