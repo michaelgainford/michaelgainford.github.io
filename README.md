@@ -1,4 +1,4 @@
 # magn3s1um-g.github.io
-My online portfolio.
+This is my online development website.
 
-Not particularly sure what to include in a ReadMe of a website portfolio, but hopefully these ramblings will satisfy the requirements.
+My portfolio website is located at https://michaelgainford.co.uk.
