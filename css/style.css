@@ -110,32 +110,32 @@ header {
 }
 .logo a {
   color: var(--clr-white);
-  font-size: 2.4vh;
+  font-size: calc(2.4vh + 0.5rem);
   font-weight: 700;
   text-decoration: none;
   text-transform: lowercase;
 }
 @media (min-width: 600px) {
   .logo a {
-    font-size: 3.2vh;
+    font-size: calc(3.2vh + 0.5rem);
   }
 }
 @media (min-width: 600px) and (orientation: portrait) {
   .logo a {
-    font-size: 2.4vh;
+    font-size: calc(2.4vh + 0.5rem);
   }
 }
 @media (min-width: 900px) and (orientation: portrait) {
   .logo a {
-    font-size: 2.8vh;
+    font-size: calc(2.8vh + 0.5rem);
   }
 }
 .logo p {
-  font-size: 1.2vh;
+  font-size: calc(1vh + 0.4rem);
 }
 @media (min-width: 600px) {
   .logo p {
-    font-size: 1.6vh;
+    font-size: calc(1.6vh + 0.4rem);
   }
 }
 
@@ -185,11 +185,11 @@ header {
 }
 .main-nav ul li a > * {
   margin-bottom: 0.8rem;
-  font-size: 2.4vw;
+  font-size: calc(1.2vh + 0.5rem);
 }
 @media (min-width: 600px) {
   .main-nav ul li a > * {
-    font-size: 1.2vw;
+    font-size: calc(1.4vh + 0.5rem);
   }
 }
 
