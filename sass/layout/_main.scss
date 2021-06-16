@@ -66,10 +66,13 @@ main {
       padding: 0;
     }
     img {
-      border: 10px solid var(--clr-goldenrod-dark);
+      border: 4px solid var(--clr-goldenrod-dark);
       height: auto;
       margin-bottom: 1.2rem;
       max-width: 100%;
+      @media (min-width: 900px) {
+        border: 10px solid var(--clr-goldenrod-dark);
+      }
     }
     a {
       align-self: center;
