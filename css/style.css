@@ -91,7 +91,7 @@ header {
   border-bottom: 2px solid #232323;
   grid-area: header;
   justify-content: space-around;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
   padding-top: 2vh;
 }
 
@@ -110,12 +110,13 @@ header {
 }
 .logo a {
   color: var(--clr-white);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  letter-spacing: 0.1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 @media (min-width: 600px) {
   .logo a {
@@ -130,14 +131,18 @@ header {
 .logo p {
   color: var(--clr-goldenrod);
   font-size: 0.84rem;
-  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  line-height: 1rem;
+  text-transform: lowercase;
 }
 @media (min-width: 600px) {
   .logo p {
     font-size: calc(0.2vh + 1rem);
+    letter-spacing: 0.69rem;
   }
 }
 
+/** Navigation **/
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -154,7 +159,7 @@ header {
 }
 .main-nav ul li a {
   align-items: center;
-  border-right: 1px solid var(--clr-goldenrod-dark);
+  border-right: 1px solid var(--clr-goldenrod);
   color: white;
   display: flex;
   flex-direction: column;
@@ -169,6 +174,7 @@ header {
 }
 .main-nav ul li a .goldenrod {
   color: var(--clr-goldenrod);
+  font-size: 1.25rem;
 }
 .main-nav ul li a:hover {
   background-color: var(--clr-eigengrau);
@@ -179,7 +185,7 @@ header {
 @media (min-width: 600px) {
   .main-nav ul li a {
     border-bottom: 4px solid transparent;
-    border-right: 0;
+    font-size: 1rem;
   }
   .main-nav ul li a:hover {
     background-color: #16161d;
@@ -188,7 +194,6 @@ header {
 }
 .main-nav ul li a > * {
   margin-bottom: 0.8rem;
-  font-size: 1rem;
 }
 
 .contact-btn {
