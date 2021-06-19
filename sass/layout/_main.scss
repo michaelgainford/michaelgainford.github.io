@@ -8,8 +8,7 @@ main {
     padding-bottom: 1rem;
     text-transform: lowercase;
     @media (min-width: 600px) {
-      border-bottom: 2px solid var(--clr-goldenrod-dark);
-      margin-bottom: 0.4rem;
+      padding-bottom: 0.4rem;
     }
     .project-name {
       font-size: 1.2rem;
@@ -65,13 +64,18 @@ main {
     @media (min-width: 1200px) {
       padding: 0;
     }
-    img {
-      border: 4px solid var(--clr-goldenrod-dark);
-      height: auto;
-      margin-bottom: 1.2rem;
-      max-width: 100%;
+    picture {
       @media (min-width: 900px) {
-        border: 10px solid var(--clr-goldenrod-dark);
+        padding: 2rem;
+      }
+      img {
+        border: 4px solid var(--clr-goldenrod-dark);
+        height: auto;
+        margin-bottom: 1.2rem;
+        max-width: 100%;
+        @media (min-width: 900px) {
+          border: 10px solid var(--clr-goldenrod-dark);
+        }
       }
     }
     a {

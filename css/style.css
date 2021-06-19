@@ -244,8 +244,7 @@ main h1 {
 }
 @media (min-width: 600px) {
   main h1 {
-    border-bottom: 2px solid var(--clr-goldenrod-dark);
-    margin-bottom: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 }
 main h1 .project-name {
@@ -311,14 +310,19 @@ main p {
     padding: 0;
   }
 }
-.project .project-inner img {
+@media (min-width: 900px) {
+  .project .project-inner picture {
+    padding: 2rem;
+  }
+}
+.project .project-inner picture img {
   border: 4px solid var(--clr-goldenrod-dark);
   height: auto;
   margin-bottom: 1.2rem;
   max-width: 100%;
 }
 @media (min-width: 900px) {
-  .project .project-inner img {
+  .project .project-inner picture img {
     border: 10px solid var(--clr-goldenrod-dark);
   }
 }
