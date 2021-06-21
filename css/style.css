@@ -295,7 +295,7 @@ main p {
     padding: 6rem 0;
   }
 }
-.project.bg-alt {
+.project:nth-child(even) {
   background-color: var(--clr-eigengrau-alt);
 }
 .project .project-inner {
