@@ -14,3 +14,32 @@ a,
 button {
   font-family: var(--ff-secondary);
 }
+
+h1 {
+  font-size: 1rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+  text-transform: lowercase;
+  @media (min-width: 600px) {
+    padding-bottom: 0.4rem;
+  }
+  .project-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media (min-width: 600px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 1rem 0 0.6rem 0;
+  text-transform: propercase;
+}
+p {
+  font-size: 0.84rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
