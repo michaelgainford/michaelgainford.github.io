@@ -176,11 +176,6 @@ header {
     letter-spacing: 0.29rem;
   }
 }
-@media (min-width: 900px) and (orientation: portrait) {
-  .logo p {
-    font-size: calc(2.8vh + 0.5rem);
-  }
-}
 
 /** Navigation **/
 .main-nav {
