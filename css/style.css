@@ -43,40 +43,29 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: var(--ff-secondary);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--ff-secondary);
-}
-@media (min-width: 600px) {
-  h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-align: left;
-  }
-}
-
-p,
-a,
-button {
-  font-family: var(--ff-secondary);
+  text-align: center;
 }
 
 h1 {
-  border-bottom: 3px solid var(--clr-eigengrau-alt);
   color: var(--clr-goldenrod);
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.44rem);
   font-weight: 400;
   letter-spacing: 0.64vw;
   padding-bottom: 1.6rem;
-  padding-top: 5.6rem;
+  padding-top: 5.6vh;
   text-transform: uppercase;
+  display: block;
+  width: 100%;
 }
 @media (min-width: 600px) {
   h1 {
@@ -85,18 +74,8 @@ h1 {
 }
 @media (min-width: 900px) {
   h1 {
-    font-size: 1.25rem;
-    padding-top: 0.8rem;
-  }
-}
-h1 .project-name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-@media (min-width: 600px) {
-  h1 .project-name {
-    font-size: 1.4rem;
+    padding-top: 4vh;
+    text-align: right;
   }
 }
 
@@ -109,6 +88,11 @@ h2 {
 }
 h2:first-of-type {
   margin-top: 3.2rem;
+}
+@media (min-width: 900px) {
+  h2 {
+    text-align: left;
+  }
 }
 
 p {
@@ -140,10 +124,6 @@ footer {
   flex-direction: column;
 }
 
-.main-inner {
-  padding: 0 10vw;
-}
-
 header {
   border-bottom: 2px solid #232323;
   grid-area: header;
@@ -157,8 +137,6 @@ header {
     height: 100%;
     justify-content: flex-start;
     left: 0;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
     position: fixed;
     top: 0;
     width: 300px;
@@ -171,11 +149,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.2rem 0;
+  padding: 3vh 0;
 }
 @media (min-width: 900px) {
   .logo {
-    padding: 2.4rem 0 4rem 0;
+    border-bottom: 1px solid var(--clr-eigengrau-alt);
+    padding: 10.4vh 0 4rem 0;
   }
 }
 .logo a {
@@ -202,13 +181,20 @@ header {
   justify-content: center;
   padding: 1rem 0;
 }
+@media (min-width: 900px) {
+  .main-nav {
+    height: 100%;
+    padding: 0;
+  }
+}
 .main-nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 @media (min-width: 900px) {
   .main-nav ul {
     flex-direction: column;
+    justify-content: start;
     width: 100%;
   }
 }
@@ -228,7 +214,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: 0.72rem;
+  font-size: clamp(0.72rem, 1vw, 1.2rem);
   font-weight: 400;
   letter-spacing: 0.08rem;
   padding: 0.8rem 2rem;
@@ -239,16 +225,10 @@ header {
   color: var(--clr-goldenrod);
   font-size: 1rem;
 }
-.main-nav ul li a:hover {
-  background-color: var(--clr-eigengrau);
-}
 .main-nav ul li a:last-of-type {
   border-right: 0;
 }
 @media (min-width: 600px) {
-  .main-nav ul li a {
-    font-size: 1rem;
-  }
   .main-nav ul li a:hover {
     background-color: #16161d;
   }
@@ -256,6 +236,7 @@ header {
 @media (min-width: 900px) {
   .main-nav ul li a {
     border-left: 10px solid transparent;
+    border-bottom: 1px solid var(--clr-eigengrau-alt);
     border-right: 0;
     padding: 2rem;
     transition-property: border-left;
@@ -369,31 +350,19 @@ main {
     max-width: 1200px;
   }
 }
-.projects:nth-child(even) {
-  background-color: var(--clr-eigengrau-alt);
-}
 .projects .project-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
-  padding: 0 1.2vw 1.2vw 1.2vw;
 }
-@media (min-width: 900px) {
-  .projects .project-inner picture {
-    padding: 2.4vw;
-  }
-}
-@media (min-width: 900px) {
-  .projects .project-inner picture {
-    padding: 2.4vw 4.8vw 0.8vw 4.8vw;
-  }
+.projects .project-inner picture {
+  border: 1px solid var(--clr-goldenrod-dark);
+  margin-bottom: 3.2vh;
 }
 .projects .project-inner picture img {
-  border: 1px solid var(--clr-eigengrau);
   height: auto;
   max-width: 100%;
-  margin-bottom: 1.2rem;
 }
 .projects .project-inner .tags {
   display: flex;

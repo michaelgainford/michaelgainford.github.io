@@ -44,27 +44,18 @@ main {
   @media (min-width: 1600px) {
     max-width: 1200px;
   }
-  &:nth-child(even) {
-    background-color: var(--clr-eigengrau-alt);
-  }
   .project-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1200px;
-    padding: 0 1.2vw 1.2vw 1.2vw;
     picture {
-      @media (min-width: 900px) {
-        padding: 2.4vw;
-      }
-      @media (min-width: 900px) {
-        padding: 2.4vw 4.8vw 0.8vw 4.8vw;
-      }
+      border: 1px solid var(--clr-goldenrod-dark);
+      margin-bottom: 3.2vh;
       img {
-        border: 1px solid var(--clr-eigengrau);
         height: auto;
         max-width: 100%;
-        margin-bottom: 1.2rem;
+        //qmargin-bottom: 1.2rem;
       }
     }
     .tags {
