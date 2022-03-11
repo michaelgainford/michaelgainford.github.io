@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   @media (min-width: 600px) {
     text-align: left;
   }
@@ -16,12 +16,20 @@ button {
 }
 
 h1 {
-  font-size: 1rem;
-  font-weight: 200;
-  padding-bottom: 1rem;
-  text-transform: lowercase;
+  border-bottom: 3px solid var(--clr-eigengrau-alt);
+  color: var(--clr-goldenrod);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.64vw;
+  padding-bottom: 1.6rem;
+  padding-top: 5.6rem;
+  text-transform: uppercase;
   @media (min-width: 600px) {
     padding-bottom: 0.4rem;
+  }
+  @media (min-width: 900px) {
+    font-size: 1.25rem;
+    padding-top: 0.8rem;
   }
   .project-name {
     font-size: 1.2rem;
@@ -33,13 +41,18 @@ h1 {
   }
 }
 h2 {
-  font-size: 2.4rem;
+  border-bottom: 1px solid var(--clr-eigengrau-alt);
+  font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 1.6rem;
   padding: 1rem 0 0.6rem 0;
-  text-transform: propercase;
+  &:first-of-type {
+    margin-top: 3.2rem;
+  }
 }
 p {
   font-size: 0.84rem;
   line-height: 1.2rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
