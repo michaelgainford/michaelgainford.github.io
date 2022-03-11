@@ -390,15 +390,10 @@ main {
   }
 }
 .projects .project-inner picture img {
-  border-radius: 1rem;
+  border: 1px solid var(--clr-eigengrau);
   height: auto;
   max-width: 100%;
   margin-bottom: 1.2rem;
-}
-@media (min-width: 900px) {
-  .projects .project-inner picture img {
-    border-width: 3.2vw;
-  }
 }
 .projects .project-inner .tags {
   display: flex;
