@@ -52,11 +52,16 @@ main {
     picture {
       border: 1px solid var(--clr-goldenrod-dark);
       margin-bottom: 3.2vh;
+      margin-bottom: 1.2rem;
       img {
-        height: auto;
-        max-width: 100%;
-        //qmargin-bottom: 1.2rem;
+        display: block;
       }
+    }
+    .project-name p {
+      color: var(--clr-goldenrod-dark);
+      letter-spacing: 0.25rem;
+      text-align: center;
+      text-transform: lowercase;
     }
     .tags {
       display: flex;
@@ -66,7 +71,7 @@ main {
       justify-content: center;
       padding-bottom: 1.2rem;
       text-transform: lowercase;
-      .tag {
+      .tag {display: none;
         background-color: var(--clr-eigengrau);
         border-radius: 0.4rem;
         font-size: 0.72rem;
@@ -77,6 +82,10 @@ main {
           padding: 0.6rem 1rem;
         }
       }
+    }
+    .project-links {
+      display: flex;
+      justify-content: space-evenly;
     }
     a {
       align-self: center;
@@ -96,6 +105,7 @@ main {
         color: var(--clr-eigengrau);
       }
     }
+
   }
 }
 

@@ -52,10 +52,9 @@ header {
   }
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     @media (min-width: 900px) {
       flex-direction: column;
-      justify-content: start;
       width: 100%;
     }
     li {
@@ -68,6 +67,7 @@ header {
 
       a {
         align-items: center;
+        background-color: transparent;
         border-right: 1px solid var(--clr-goldenrod);
         color: white;
         display: flex;
@@ -81,13 +81,14 @@ header {
         .goldenrod {
           color: var(--clr-goldenrod);
           font-size: 1rem;
+          margin-bottom: 0.4rem;
         }
         &:last-of-type {
           border-right: 0;
         }
         @media (min-width: 600px) {
           &:hover {
-            background-color: #16161d;
+            background-color: var(--clr-eigengrau-alt);
           }
         }
         @media (min-width: 900px) {
@@ -101,9 +102,6 @@ header {
           &:hover {
             border-left: 10px solid var(--clr-goldenrod);  
           }
-        }
-        > * {
-          margin-bottom: 0.4rem;
         }
       }
     }
