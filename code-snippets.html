@@ -18,21 +18,39 @@
     <!-- begin .container -->
     <header>
       <div class="logo">
-        <a href="/"><img src="./images/logo-white-gold.png" alt="logo" title="logo" /></a>
+        <a href="/">
+          <img
+            src="./images/logo-white-gold.png"
+            alt="Michael Gainford Dev website"
+            title="Michael Gainford Dev website logo"
+          />
+        </a>
       </div>
       <nav class="main-nav">
         <ul>
           <li>
-            <a href="/"><i class="fas fa-user goldenrod"></i><span class="main-nav__link">Home</span></a>
+            <a href="/">
+              <i class="fas fa-home goldenrod"></i>
+              <span class="main-nav__link">Home</span>
+            </a>
           </li>
           <li>
-            <a href="code-snippets.html"><i class="fas fa-user goldenrod"></i><span class="main-nav__link">
-              Code Snippets
-            </span></a>
+            <a href="code-snippets.html">
+              <i class="fas fa-user goldenrod"></i>
+              <span class="main-nav__link">Code</span>
+            </a>
           </li>
           <li>
-            <a href="https://twitter.com/m1cha3lgainford"><i class="fab fa-twitter goldenrod"></i><span
-                class="main-nav__link">Twitter</span></a>
+            <a href="https://twitter.com/m1cha3lgainford">
+              <i class="fab fa-twitter goldenrod"></i>
+              <span class="main-nav__link">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/m1cha3lgainford">
+              <i class="fab fa-twitter goldenrod"></i>
+              <span class="main-nav__link">New Link</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -48,15 +66,14 @@
             <p class="snippet__title">Collection of URLs</p>
             <p class="snippet__desc">This can act as a handy file in an includes directory, for example, for storing the urls you wish to access as variables. For one, this means that if you change the url of a page, or update your social media handle, you can simply update this file and the changes will cascade throughout your website, without having to find and replace each instance.</p>
             <code>
-              <pre>
-$url_social_facebook = "https://www.facebook.com";
-$url_social_twitter = "https://twitter.com";
-$url_social_youtube = "https://www.youtube.com";
-$url_social_linkedin = "https://uk.linkedin.com";
-$url_social_instagram = "https://www.instagram.com";
+              <pre>$url_social_facebook = "https://www.facebook.com";
+              $url_social_twitter = "https://twitter.com";
+              $url_social_youtube = "https://www.youtube.com";
+              $url_social_linkedin = "https://uk.linkedin.com";
+              $url_social_instagram = "https://www.instagram.com";
 
-echo($url_contact-us);
-              </pre>
+              echo($url_social_facebook);   
+            </pre>         
             </code>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam corrupti necessitatibus possimus
               architecto perferendis maxime nihil illum neque debitis, dignissimos consequatur expedita unde illo
