@@ -13,9 +13,9 @@
   --ff-secondary: Montserrat, sans-serif;
   --fs-initial: 10px;
   /** Debugging tools **/
-  --debug-red: 4px solid red;
-  --debug-orange: 4px solid orange;
-  --debug-green: 4px solid green;
-
-  --hello: red;
+  --debug-red: 1px solid red;
+  --debug-orange: 1px solid orange;
+  --debug-green: 1px solid green;
 }
+
+.debug { border: 1px solid red;}

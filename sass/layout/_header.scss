@@ -36,7 +36,13 @@ header {
       letter-spacing: 0.32vw;
     }
     img {
-      width: 100px;
+      width: 72px;
+      @media(min-width:900px){
+        width: 84px;
+      }
+      @media(min-width:1200px){
+        width: 100px;
+      }      
     }
   }
 }

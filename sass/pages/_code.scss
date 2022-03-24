@@ -1,5 +1,11 @@
 .my-code {
+  align-content: start;
+  display: flex;
+  flex-direction: column;
   padding: 0 12vw;
+  @media(min-width:900px){
+    padding: 0 6vw; 
+  }
   p {
     text-align: left;
   }
@@ -10,7 +16,20 @@
     font-size: 0.8rem;
     margin-top: 1.2vh;
     margin-bottom: 2.4rem;
-    padding: 2vh 3.2vw;
+    max-width: 100%;
+    padding: 2vh 0.3vw;
     text-align: left;
   }
+}
+.code-snippet {
+  align-self: start;
+  border: 2px solid var(--clr-eigengrau-alt);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.my-code-language {
+  margin-bottom: 5vh;
 }

@@ -7,14 +7,17 @@ main {
     margin-left: 300px;
   }
 }
-.main-inner {
-  padding: 0 10vw;
-}
 .main-content {
   align-items: center;
   display: flex;
   flex-direction: column;
   @media (min-width: 900px) {
     padding-top: 8.4vh;
+  }
+}
+.main-inner {
+  padding: 0 6vw;
+  @media (min-width: 900px) {
+    padding: 0 6vw;
   }
 }
