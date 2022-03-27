@@ -26,15 +26,16 @@ h1 {
 
 // h2 tags
 h2 {
-  border-left: 4px solid var(--clr-goldenrod);
-  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1.6rem;
   padding: 0 0 0 0.6rem;
   text-align: center;
-/*   &:first-of-type {
+  /*   &:first-of-type {
     margin-top: 3.2rem;
   } */
+  svg {
+    color: var(--clr-goldenrod);
+  }
   @media(min-width:900px) {
     text-align: left;
   }
@@ -43,6 +44,7 @@ h2 {
 // h3 tags
 
 h3 {
+  color: var(--clr-goldenrod);
   display: flex;
   margin-bottom: 2vh;
   font-size: 0.92rem;
