@@ -189,6 +189,11 @@ header {
     width: 100px;
   }
 }
+@media (min-width: 1500px) {
+  .logo a img {
+    width: 100px;
+  }
+}
 
 /** Navigation **/
 .main-nav {
@@ -230,17 +235,17 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: clamp(0.72rem, 1vw, 1.2rem);
+  font-size: clamp(0.72rem, 2vw, .92rem);
   font-weight: 400;
   letter-spacing: 0.08rem;
-  padding: 0.8rem 2rem;
+  padding: 1.2rem 2rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 .main-nav ul li a .goldenrod {
   color: var(--clr-goldenrod);
   font-size: 1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 .main-nav ul li a:last-of-type {
   border-right: 0;
@@ -285,10 +290,10 @@ header {
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 0.12rem;
-  padding-bottom: 2vh;
-  padding-left: 4vh;
-  padding-right: 4vh;
-  padding-top: 2vh;
+  padding-bottom: calc(1vh * 2);
+  padding-left: calc(1vh * 4);
+  padding-right: calc(1vh * 4);
+  padding-top: calc(1vh * 2);
   transition-property: padding-left, padding-right;
   transition-duration: 1s;
   text-transform: lowercase;
@@ -297,8 +302,8 @@ header {
   background-color: #dedede;
   border-bottom: 2px solid #dedede;
   color: #16161d;
-  padding-left: 8vh;
-  padding-right: 8vh;
+  padding-left: calc(1vh * 8);
+  padding-right: calc(1vh * 8);
 }
 
 main {
@@ -310,6 +315,7 @@ main {
 @media (min-width: 900px) {
   main {
     margin-left: 300px;
+    width: calc(100% - 300px);
   }
 }
 
@@ -325,11 +331,12 @@ main {
 }
 
 .main-inner {
-  padding: 0 6vw;
+  padding: 0 2vw;
 }
 @media (min-width: 900px) {
   .main-inner {
-    padding: 0 6vw;
+    padding: 0 10vw;
+    max-width: 1200px;
   }
 }
 
@@ -447,15 +454,14 @@ footer p a {
   align-content: start;
   display: flex;
   flex-direction: column;
-  padding: 0 12vw;
-}
-@media (min-width: 900px) {
-  .my-code {
-    padding: 0 6vw;
-  }
+  padding: 0 2vw;
 }
 .my-code p {
   text-align: left;
+}
+.my-code pre {
+  word-break: break-word;
+  word-wrap: break-word;
 }
 .my-code code {
   background-color: var(--clr-eigengrau-alt);
@@ -464,7 +470,8 @@ footer p a {
   font-size: 0.8rem;
   margin-top: 1.2vh;
   margin-bottom: 2.4rem;
-  max-width: 100%;
+  max-width: calc(100vw - 10px);
+  overflow: auto;
   padding: 2vh 0.3vw;
   text-align: left;
 }

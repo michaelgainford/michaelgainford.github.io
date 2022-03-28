@@ -2,12 +2,14 @@
   align-content: start;
   display: flex;
   flex-direction: column;
-  padding: 0 12vw;
-  @media(min-width:900px){
-    padding: 0 6vw; 
-  }
+  padding: 0 2vw;
+
   p {
     text-align: left;
+  }
+  pre {
+    word-break: break-word;
+    word-wrap: break-word;
   }
   code {
     background-color: var(--clr-eigengrau-alt);
@@ -16,7 +18,8 @@
     font-size: 0.8rem;
     margin-top: 1.2vh;
     margin-bottom: 2.4rem;
-    max-width: 100%;
+    max-width: calc(100vw - 10px);
+    overflow: auto;
     padding: 2vh 0.3vw;
     text-align: left;
   }

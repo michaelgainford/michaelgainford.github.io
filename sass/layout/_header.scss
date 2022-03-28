@@ -42,6 +42,9 @@ header {
       }
       @media(min-width:1200px){
         width: 100px;
+      }
+      @media(min-width:1500px){
+        width: 100px;
       }      
     }
   }
@@ -70,7 +73,6 @@ header {
       @media (min-width: 900px) {
         width: 100%;
       }
-
       a {
         align-items: center;
         background-color: transparent;
@@ -78,16 +80,16 @@ header {
         color: white;
         display: flex;
         flex-direction: column;
-        font-size: clamp(0.72rem, 1vw, 1.2rem);
+        font-size: clamp(0.72rem, 2vw, .92rem);
         font-weight: 400;
         letter-spacing: 0.08rem;
-        padding: 0.8rem 2rem;
+        padding: 1.2rem 2rem;
         text-decoration: none;
         text-transform: uppercase;
         .goldenrod {
           color: var(--clr-goldenrod);
           font-size: 1rem;
-          margin-bottom: 0.4rem;
+          margin-bottom: 1rem;
         }
         &:last-of-type {
           border-right: 0;
