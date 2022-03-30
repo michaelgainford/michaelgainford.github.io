@@ -7,7 +7,7 @@
   width: 100%;
   @media(min-width: 900px) {
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "header main" "footer footer";
+    grid-template-areas: "header main main" "footer footer footer";
   }
 }
 

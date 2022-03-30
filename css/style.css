@@ -119,7 +119,7 @@ p {
 @media (min-width: 900px) {
   .container {
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "header main" "footer footer";
+    grid-template-areas: "header main main" "footer footer footer";
   }
 }
 
@@ -235,7 +235,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: clamp(0.72rem, 2vw, .92rem);
+  font-size: clamp(0.72rem, 2vw, 0.92rem);
   font-weight: 400;
   letter-spacing: 0.08rem;
   padding: 1.2rem 2rem;
@@ -290,10 +290,10 @@ header {
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 0.12rem;
-  padding-bottom: calc(1vh * 2);
-  padding-left: calc(1vh * 4);
-  padding-right: calc(1vh * 4);
-  padding-top: calc(1vh * 2);
+  padding-bottom: 2vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  padding-top: 2vh;
   transition-property: padding-left, padding-right;
   transition-duration: 1s;
   text-transform: lowercase;
@@ -302,8 +302,8 @@ header {
   background-color: #dedede;
   border-bottom: 2px solid #dedede;
   color: #16161d;
-  padding-left: calc(1vh * 8);
-  padding-right: calc(1vh * 8);
+  padding-left: 8vh;
+  padding-right: 8vh;
 }
 
 main {
@@ -391,9 +391,13 @@ footer p a {
   max-width: 1200px;
 }
 .projects .project-inner picture {
-  border: 1px solid var(--clr-goldenrod-dark);
   margin-bottom: 3.2vh;
   margin-bottom: 1.2rem;
+}
+@media (min-width: 1200px) {
+  .projects .project-inner picture {
+    border-bottom: 3px sold var(--clr-goldenrod-dark);
+  }
 }
 .projects .project-inner picture img {
   display: block;
