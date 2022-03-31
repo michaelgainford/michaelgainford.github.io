@@ -22,7 +22,9 @@
   border: 1px solid red;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -53,14 +55,14 @@ body {
 
 h1 {
   color: var(--clr-goldenrod);
-  font-size: clamp(1rem, 2vw, 1.44rem);
-  font-weight: 400;
-  letter-spacing: 0.64vw;
-  padding-bottom: 1.6vh;
-  padding-top: 1.6vh;
-  text-align: center;
-  text-transform: lowercase;
   display: block;
+  font-size: clamp(1rem, 2vw, 1.44rem);
+  font-weight: 700;
+  letter-spacing: 0.64vw;
+  padding-bottom: 6.4vh;
+  padding-top: 6.4vh;
+  text-align: center;
+  text-transform: uppercase;
   width: 100%;
 }
 @media (min-width: 600px) {
@@ -77,11 +79,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1rem;
+  border-bottom: 2px solid var(--clr-eigengrau-alt);
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
-  padding: 0 0 0 0.6rem;
+  margin-bottom: 0.64rem;
+  padding: 0 0 0.64rem 0;
   text-align: left;
+  text-transform: lowercase;
   /*   &:first-of-type {
     margin-top: 3.2rem;
   } */
@@ -138,7 +142,7 @@ footer {
 }
 
 header {
-  border-bottom: 2px solid #232323;
+  border-bottom: 1px solid var(--clr-eigengrau-alt);
   grid-area: header;
   justify-content: space-around;
   padding-bottom: 0.6vh;
@@ -212,7 +216,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 @media (min-width: 900px) {
   .main-nav {
@@ -247,7 +251,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: clamp(0.72rem, 2vw, 0.92rem);
+  font-size: clamp(0.68rem, 2vw, 0.92rem);
   font-weight: 400;
   letter-spacing: 0.08rem;
   padding: 1.2rem 1.2rem;
@@ -256,7 +260,7 @@ header {
 }
 .main-nav ul li a .goldenrod {
   color: var(--clr-goldenrod);
-  font-size: 1rem;
+  font-size: clamp(0.72rem, 2.2vw, 1rem);
   margin-bottom: 0.25rem;
 }
 .main-nav ul li a:last-of-type {
@@ -341,6 +345,7 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 0 2vw;
 }
 @media (min-width: 900px) {
   .main-content {
@@ -487,6 +492,8 @@ footer p a {
   text-align: left;
 }
 .my-code pre {
+  margin: 0;
+  padding: 0 2vw;
   word-break: break-word;
   word-wrap: break-word;
 }
@@ -494,7 +501,7 @@ footer p a {
   background-color: var(--clr-eigengrau);
   border-radius: 0.4rem;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.64rem;
   margin-top: 0;
   margin-bottom: 2.4rem;
   max-width: calc(100vw - 10px);
@@ -512,7 +519,7 @@ footer p a {
   justify-content: start;
   margin-bottom: 1rem;
   padding: 1rem;
-  max-width: 98vw;
+  max-width: 90vw;
 }
 
 .my-code-language {

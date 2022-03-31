@@ -16,6 +16,7 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 0 2vw;
   @media (min-width: 900px) {
     padding-top: 8.4vh;
   }

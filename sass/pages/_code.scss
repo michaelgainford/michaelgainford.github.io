@@ -11,6 +11,8 @@
     text-align: left;
   }
   pre {
+    margin: 0;
+    padding: 0 2vw;
     word-break: break-word;
     word-wrap: break-word;
   }
@@ -18,7 +20,7 @@
     background-color: var(--clr-eigengrau);
     border-radius: 0.4rem;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.64rem;
     margin-top: 0;
     margin-bottom: 2.4rem;
     max-width: calc(100vw - 10px);
@@ -36,7 +38,7 @@
   justify-content: start;
   margin-bottom: 1rem;
   padding: 1rem;
-  max-width: 98vw;
+  max-width: 90vw;
 }
 .my-code-language {
   margin-bottom: 5vh;

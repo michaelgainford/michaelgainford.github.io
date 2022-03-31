@@ -1,5 +1,5 @@
 header {
-  border-bottom: 2px solid #232323;
+  border-bottom: 1px solid var(--clr-eigengrau-alt);
   grid-area: header;
   justify-content: space-around;
   padding-bottom: 0.6vh;
@@ -57,7 +57,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
   @media(min-width:900px){
     height: 100%;
     padding:0;
@@ -83,7 +83,7 @@ header {
         color: white;
         display: flex;
         flex-direction: column;
-        font-size: clamp(0.72rem, 2vw, .92rem);
+        font-size: clamp(0.68rem, 2vw, .92rem);
         font-weight: 400;
         letter-spacing: 0.08rem;
         padding: 1.2rem 1.2rem;
@@ -91,7 +91,7 @@ header {
         text-transform: lowercase;
         .goldenrod {
           color: var(--clr-goldenrod);
-          font-size: 1rem;
+          font-size: clamp(0.72rem, 2.2vw, 1rem);
           margin-bottom: 0.25rem;
         }
         &:last-of-type {
