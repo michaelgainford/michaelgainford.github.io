@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Source+Sans+Pro:wght@200;400;700&display=swap");
 :root {
   /** Colours **/
@@ -56,7 +57,7 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.64vw;
   padding-bottom: 1.6vh;
-  padding-top: 4vh;
+  padding-top: 1.6vh;
   text-align: center;
   text-transform: lowercase;
   display: block;
@@ -64,25 +65,31 @@ h1 {
 }
 @media (min-width: 600px) {
   h1 {
-    padding-bottom: 0.4rem;
+    padding-bottom: 1rem;
   }
 }
 @media (min-width: 900px) {
   h1 {
-    padding-top: 4vh;
+    padding-top: 1.6vh;
     margin-bottom: 6.4vh;
     text-align: right;
   }
 }
 
 h2 {
+  font-size: 1.1rem;
   font-weight: 400;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   padding: 0 0 0 0.6rem;
-  text-align: center;
+  text-align: left;
   /*   &:first-of-type {
     margin-top: 3.2rem;
   } */
+}
+@media (min-width: 900px) {
+  h2 {
+    text-align: center;
+  }
 }
 h2 svg {
   color: var(--clr-goldenrod);
@@ -145,6 +152,11 @@ header {
     left: 0;
     position: fixed;
     top: 0;
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
     width: 300px;
   }
 }
@@ -155,7 +167,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3vh 0;
+  padding: 3vh 0 0 0;
 }
 @media (min-width: 900px) {
   .logo {
@@ -238,14 +250,14 @@ header {
   font-size: clamp(0.72rem, 2vw, 0.92rem);
   font-weight: 400;
   letter-spacing: 0.08rem;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1.2rem;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 .main-nav ul li a .goldenrod {
   color: var(--clr-goldenrod);
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 .main-nav ul li a:last-of-type {
   border-right: 0;
@@ -314,8 +326,14 @@ main {
 }
 @media (min-width: 900px) {
   main {
+    margin-left: 200px;
+    width: calc(100vw - 200px);
+  }
+}
+@media (min-width: 1200px) {
+  main {
     margin-left: 300px;
-    width: calc(100% - 300px);
+    width: calc(100vw - 300px);
   }
 }
 
@@ -331,7 +349,7 @@ main {
 }
 
 .main-inner {
-  padding: 0 2vw;
+  padding: 0 0;
 }
 @media (min-width: 900px) {
   .main-inner {
@@ -458,7 +476,12 @@ footer p a {
   align-content: start;
   display: flex;
   flex-direction: column;
-  padding: 0 2vw;
+  padding: 0;
+}
+@media (min-width: 900px) {
+  .my-code {
+    padding: 0 5vw;
+  }
 }
 .my-code p {
   text-align: left;
@@ -468,11 +491,11 @@ footer p a {
   word-wrap: break-word;
 }
 .my-code code {
-  background-color: var(--clr-eigengrau-alt);
+  background-color: var(--clr-eigengrau);
   border-radius: 0.4rem;
   display: block;
   font-size: 0.8rem;
-  margin-top: 1.2vh;
+  margin-top: 0;
   margin-bottom: 2.4rem;
   max-width: calc(100vw - 10px);
   overflow: auto;
@@ -482,12 +505,14 @@ footer p a {
 
 .code-snippet {
   align-self: start;
+  background-color: var(--clr-eigengrau-alt);
   border: 2px solid var(--clr-eigengrau-alt);
   display: flex;
   flex-direction: column;
   justify-content: start;
   margin-bottom: 1rem;
   padding: 1rem;
+  max-width: 98vw;
 }
 
 .my-code-language {
@@ -497,6 +522,45 @@ footer p a {
 .my-code-language-icon {
   font-size: 2rem;
   margin-right: 0.5rem;
+}
+
+.accordion {
+  background-color: var(--clr-eigengrau-alt);
+  border: none;
+  color: var(--clr-goldenrod);
+  cursor: pointer;
+  font-size: 0.875rem;
+  outline: none;
+  padding: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.active, .accordion:hover {
+  background-color: var(--clr-eigengrau-alt);
+  color: var(--clr-goldenrod);
+}
+
+.accordion::after {
+  content: "+";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 1rem;
+}
+
+.active::after {
+  content: "−";
+}
+
+.panel {
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0;
+  transition: max-height 0.5s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

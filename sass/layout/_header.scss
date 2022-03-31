@@ -11,6 +11,9 @@ header {
     left: 0;
     position: fixed;
     top: 0;
+    width: 200px;
+  }
+  @media(min-width: 1200px){
     width: 300px;
   }
 }
@@ -20,7 +23,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3vh 0;
+  padding: 3vh 0 0 0;
   @media(min-width:900px) {
     border-bottom: 1px solid var(--clr-eigengrau-alt);
     padding: 10.4vh 0 4rem 0;
@@ -83,13 +86,13 @@ header {
         font-size: clamp(0.72rem, 2vw, .92rem);
         font-weight: 400;
         letter-spacing: 0.08rem;
-        padding: 1.2rem 2rem;
+        padding: 1.2rem 1.2rem;
         text-decoration: none;
-        text-transform: uppercase;
+        text-transform: lowercase;
         .goldenrod {
           color: var(--clr-goldenrod);
           font-size: 1rem;
-          margin-bottom: 1rem;
+          margin-bottom: 0.25rem;
         }
         &:last-of-type {
           border-right: 0;

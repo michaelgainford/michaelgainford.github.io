@@ -4,8 +4,12 @@ main {
   grid-area: main;
   padding: 0;
   @media (min-width: 900px) {
+    margin-left: 200px;
+    width: calc(100vw - 200px);
+  }
+  @media (min-width: 1200px) {
     margin-left: 300px;
-    width: calc(100% - 300px);
+    width: calc(100vw - 300px);
   }
 }
 .main-content {
@@ -17,7 +21,7 @@ main {
   }
 }
 .main-inner {
-  padding: 0 2vw;
+  padding: 0 0;
   @media (min-width: 900px) {
     padding: 0 10vw;
     max-width: 1200px;

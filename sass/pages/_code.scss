@@ -2,7 +2,10 @@
   align-content: start;
   display: flex;
   flex-direction: column;
-  padding: 0 2vw;
+  padding: 0;
+  @media(min-width:900px) {
+    padding: 0 5vw;
+  }
 
   p {
     text-align: left;
@@ -12,11 +15,11 @@
     word-wrap: break-word;
   }
   code {
-    background-color: var(--clr-eigengrau-alt);
+    background-color: var(--clr-eigengrau);
     border-radius: 0.4rem;
     display: block;
     font-size: 0.8rem;
-    margin-top: 1.2vh;
+    margin-top: 0;
     margin-bottom: 2.4rem;
     max-width: calc(100vw - 10px);
     overflow: auto;
@@ -26,12 +29,14 @@
 }
 .code-snippet {
   align-self: start;
+  background-color: var(--clr-eigengrau-alt);
   border: 2px solid var(--clr-eigengrau-alt);
   display: flex;
   flex-direction: column;
   justify-content: start;
   margin-bottom: 1rem;
   padding: 1rem;
+  max-width: 98vw;
 }
 .my-code-language {
   margin-bottom: 5vh;
@@ -40,4 +45,43 @@
 .my-code-language-icon {
   font-size: 2rem;
   margin-right: 0.5rem;
+}
+
+.accordion {
+  background-color: var(--clr-eigengrau-alt);
+  border: none;
+  color:  var(--clr-goldenrod);
+  cursor: pointer;
+  font-size: 0.875rem;
+  outline: none;
+  padding: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.active, .accordion:hover {
+  background-color: var(--clr-eigengrau-alt);
+  color: var(--clr-goldenrod);
+}
+
+.accordion::after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 1rem;
+}
+
+.active::after {
+  content: '\2212';
+}
+
+.panel {
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0;
+  transition: max-height 0.5s ease-out;
 }
