@@ -482,6 +482,7 @@ footer p a {
   display: flex;
   flex-direction: column;
   padding: 0;
+  width: 90%;
 }
 @media (min-width: 900px) {
   .my-code {
