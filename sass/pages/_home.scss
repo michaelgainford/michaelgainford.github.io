@@ -1,40 +1,48 @@
 .my-work {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media (min-width: 900px) {
-      justify-content: flex-start;
-    }
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 900px) {
+    justify-content: flex-start;
   }
+}
 
 .projects {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 3.6rem 0 0 0;
-    width: 100%;
-    @media (min-width: 900px) {
-      padding: 1.2rem 0 2.4rem 0;
-      grid-template-columns: repeat(1, auto);
-    }
-    @media (min-width: 1200px) {
-      max-width: 1200px;
-    }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 3.6rem 0 0 0;
+  width: 100%;
+  @media (min-width: 900px) {
+    padding: 1.2rem 0 2.4rem 0;
+    grid-template-columns: repeat(1, auto);
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, auto);
+    max-width: 1200px;
+  }
+  .project {
+    margin-bottom: 4.8rem;
     .project-inner {
       display: flex;
       flex-direction: column;
       justify-content: center;
       max-width: 1200px;
       picture {
-        margin-bottom: 3.2vh;
-        margin-bottom: 1.2rem;
-        @media(min-width: 1200px) {
+        @media (min-width: 900px) {
           border-bottom: 3px sold var(--clr-goldenrod-dark);
+          margin-bottom: 0;
         }
         img {
+          border-radius: 0.6rem;
           display: block;
+          opacity: 0.8;
+          transition: 0.4s ease;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
       .project-name p {
@@ -43,48 +51,59 @@
         text-align: center;
         text-transform: lowercase;
       }
-      .tags {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.2rem;
-        justify-content: center;
-        padding-bottom: 1.2rem;
-        text-transform: lowercase;
-        .tag {display: none;
-          background-color: var(--clr-eigengrau);
-          border-radius: 0.4rem;
-          font-size: 0.72rem;
-          letter-spacing: 0.08rem;
-          padding: 0.4rem;
-          @media (min-width: 900px) {
-            border: 2px solid var(--clr-eigengrau-alt);
-            padding: 0.6rem 1rem;
-          }
-        }
-      }
       .project-links {
         display: flex;
         justify-content: space-evenly;
       }
       a {
         align-self: center;
-        border: 1px solid var(--clr-goldenrod-dark);
-        border-radius: 0.4vh;
-        color: var(--clr-goldenrod);
-        display: flex;
+        border-bottom-left-radius: 0.6rem;
+        border-bottom-right-radius: 0.6rem;
+        color: var(--clr-grey-very-light);
+        display: block;
         font-size: 0.84rem;
         font-weight: 500;
-        margin-bottom: 4.8rem;
-        padding: 0.8rem 1.6rem;
+        padding: 2rem 0;
+        //margin-bottom: 4.8rem;
         text-decoration: none;
-        transition: all 1s;
+        text-align: center;
+        transition: background-color 1s, border-color 1s, color 1s;
         &:hover {
-          background-color: var(--clr-goldenrod);
+          background-color: var(--clr-eigengrau);
           border-color: var(--clr-eigengrau);
-          color: var(--clr-eigengrau);
+          color: white;
         }
       }
-  
     }
   }
+}
+.project-inner__image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+.project-inner__image-container__overlay {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  bottom: 0;
+  color: #f1f1f1;
+  color: white;
+  font-size: clamp(1vw, 0.92rem, 2vw);
+  letter-spacing: 0.08rem;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s ease;
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.project-inner__image-container:hover .project-inner__image-container__overlay {
+  opacity: 1;
+}

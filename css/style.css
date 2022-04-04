@@ -151,10 +151,12 @@ header {
 }
 @media (min-width: 900px) {
   header {
+    border-bottom: none;
     height: 100%;
     justify-content: flex-start;
     left: 0;
     position: fixed;
+    padding-bottom: 0;
     top: 0;
     width: 200px;
   }
@@ -226,11 +228,12 @@ header {
 }
 .main-nav ul {
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
 }
 @media (min-width: 900px) {
   .main-nav ul {
     flex-direction: column;
+    justify-content: start;
     width: 100%;
   }
 }
@@ -251,8 +254,9 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: clamp(0.68rem, 2vw, 0.92rem);
+  font-size: clamp(0.76rem, 2vw, 0.92rem);
   font-weight: 400;
+  justify-content: center;
   letter-spacing: 0.08rem;
   padding: 1.2rem 1.2rem;
   text-decoration: none;
@@ -274,9 +278,11 @@ header {
 @media (min-width: 900px) {
   .main-nav ul li a {
     border-left: 10px solid transparent;
-    border-bottom: 1px solid var(--clr-eigengrau-alt);
+    border-top: 1px solid var(--clr-eigengrau-alt);
     border-right: 0;
-    padding: 2rem;
+    height: 100%;
+    flex: 1 1 0px;
+    padding: clamp(1rem, 5vh, 4rem);
     transition-property: border-left;
     transition-duration: 1s;
     width: 100%;
@@ -404,77 +410,96 @@ footer p a {
 }
 @media (min-width: 1200px) {
   .projects {
+    grid-template-columns: repeat(2, auto);
     max-width: 1200px;
   }
 }
-.projects .project-inner {
+.projects .project {
+  margin-bottom: 4.8rem;
+}
+.projects .project .project-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
 }
-.projects .project-inner picture {
-  margin-bottom: 3.2vh;
-  margin-bottom: 1.2rem;
-}
-@media (min-width: 1200px) {
-  .projects .project-inner picture {
+@media (min-width: 900px) {
+  .projects .project .project-inner picture {
     border-bottom: 3px sold var(--clr-goldenrod-dark);
+    margin-bottom: 0;
   }
 }
-.projects .project-inner picture img {
+.projects .project .project-inner picture img {
+  border-radius: 0.6rem;
   display: block;
+  opacity: 0.8;
+  transition: 0.4s ease;
 }
-.projects .project-inner .project-name p {
+.projects .project .project-inner picture img:hover {
+  opacity: 1;
+}
+.projects .project .project-inner .project-name p {
   color: var(--clr-goldenrod-dark);
   letter-spacing: 0.25rem;
   text-align: center;
   text-transform: lowercase;
 }
-.projects .project-inner .tags {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.2rem;
-  justify-content: center;
-  padding-bottom: 1.2rem;
-  text-transform: lowercase;
-}
-.projects .project-inner .tags .tag {
-  display: none;
-  background-color: var(--clr-eigengrau);
-  border-radius: 0.4rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.08rem;
-  padding: 0.4rem;
-}
-@media (min-width: 900px) {
-  .projects .project-inner .tags .tag {
-    border: 2px solid var(--clr-eigengrau-alt);
-    padding: 0.6rem 1rem;
-  }
-}
-.projects .project-inner .project-links {
+.projects .project .project-inner .project-links {
   display: flex;
   justify-content: space-evenly;
 }
-.projects .project-inner a {
+.projects .project .project-inner a {
   align-self: center;
-  border: 1px solid var(--clr-goldenrod-dark);
-  border-radius: 0.4vh;
-  color: var(--clr-goldenrod);
-  display: flex;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  color: var(--clr-grey-very-light);
+  display: block;
   font-size: 0.84rem;
   font-weight: 500;
-  margin-bottom: 4.8rem;
-  padding: 0.8rem 1.6rem;
+  padding: 2rem 0;
   text-decoration: none;
-  transition: all 1s;
+  text-align: center;
+  transition: background-color 1s, border-color 1s, color 1s;
 }
-.projects .project-inner a:hover {
-  background-color: var(--clr-goldenrod);
+.projects .project .project-inner a:hover {
+  background-color: var(--clr-eigengrau);
   border-color: var(--clr-eigengrau);
-  color: var(--clr-eigengrau);
+  color: white;
+}
+
+.project-inner__image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.project-inner__image-container__overlay {
+  background: black;
+  background: rgba(0, 0, 0, 0.8);
+  /* Black see-through */
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  bottom: 0;
+  color: #f1f1f1;
+  color: white;
+  font-size: clamp(1vw, 0.92rem, 2vw);
+  letter-spacing: 0.08rem;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-inner__image-container:hover .project-inner__image-container__overlay {
+  opacity: 1;
 }
 
 .my-code {
@@ -515,6 +540,7 @@ footer p a {
   align-self: start;
   background-color: var(--clr-eigengrau-alt);
   border: 2px solid var(--clr-eigengrau-alt);
+  border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
