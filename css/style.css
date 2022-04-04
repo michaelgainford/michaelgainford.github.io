@@ -123,6 +123,7 @@ p {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "header" "main" "footer";
+  max-width: 100%;
   min-height: 100vh;
   text-align: center;
   width: 100%;
