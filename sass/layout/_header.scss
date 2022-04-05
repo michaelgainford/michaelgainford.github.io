@@ -4,7 +4,7 @@ header {
   justify-content: space-around;
   padding-bottom: 0.6vh;
   padding-top: 0.6vh;
-  width: 100%;  
+  width: 100%;
   @media (min-width: 900px) {
     border-bottom: none;
     height: 100%;
@@ -65,15 +65,14 @@ header {
   }
   ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     height: 100%;
     @media (min-width: 900px) {
       flex-direction: column;
       flex-wrap: nowrap;
+      justify-content: space-evenly;
       width: 100%;
-
-    justify-content: space-evenly;
     }
     li {
       align-items: center;
@@ -91,11 +90,11 @@ header {
         color: white;
         display: flex;
         flex-direction: column;
-        font-size: clamp(0.76rem, 2vw, 0.92rem);
+        font-size: clamp(0.64rem, 2vw, 0.92rem);
         font-weight: 400;
         justify-content: center;
         letter-spacing: 0.08rem;
-        padding: 1.2rem 1.2rem;
+        padding: 1.2rem 0.64rem;
         text-decoration: none;
         text-transform: lowercase;
         .goldenrod {
