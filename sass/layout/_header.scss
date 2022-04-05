@@ -4,7 +4,7 @@ header {
   justify-content: space-around;
   padding-bottom: 0.6vh;
   padding-top: 0.6vh;
-  width: 100%;
+  width: 100%;  
   @media (min-width: 900px) {
     border-bottom: none;
     height: 100%;
@@ -27,7 +27,6 @@ header {
   justify-content: center;
   padding: 3vh 0 0 0;
   @media (min-width: 900px) {
-    border-bottom: 1px solid var(--clr-eigengrau-alt);
     padding: 10.4vh 0 4rem 0;
   }
   a {
@@ -66,17 +65,23 @@ header {
   }
   ul {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
     @media (min-width: 900px) {
       flex-direction: column;
-      justify-content: start;
+      flex-wrap: nowrap;
       width: 100%;
+
+    justify-content: space-evenly;
     }
     li {
       align-items: center;
       display: flex;
+      justify-content: center;
       list-style-type: none;
       @media (min-width: 900px) {
+        height: 100%;
         width: 100%;
       }
       a {
