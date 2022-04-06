@@ -560,8 +560,13 @@ footer p a {
   flex-direction: column;
   justify-content: start;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0.48rem 1rem;
   max-width: 100%;
+}
+@media (min-width: 1200px) {
+  .code-snippet {
+    padding: 1rem;
+  }
 }
 
 .my-code-language {
@@ -640,8 +645,8 @@ footer p a {
 @media (min-width: 1200px) {
   .resources {
     align-content: center;
-    justify-content: center;
-    gap: 1.2rem;
+    justify-content: space-evenly;
+    gap: 2rem;
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
@@ -651,24 +656,27 @@ footer p a {
   align-items: center;
   justify-content: center;
   background-color: var(--clr-eigengrau-alt);
+  border: 1px solid var(--clr-goldenrod-dark);
   border-radius: 0.6rem;
   display: flex;
+  flex-basis: 1 1 0px;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 0.92rem;
   text-align: center;
-  width: 170px;
+  width: clamp(170px, 12vw, 300px);
 }
 .resource > * {
+  flex-basis: 1 1 0px;
   width: 100%;
 }
 @media (min-width: 1200px) {
   .resource {
     margin-bottom: 0;
-    width: 100%;
   }
 }
 .resource a {
+  border-radius: 0.6rem;
   color: var(--clr-grey-very-light);
   display: flex;
   height: 100%;
@@ -687,10 +695,13 @@ footer p a {
 }
 .resource a:hover h2 {
   background-color: var(--clr-eigengrau);
+  border-bottom: 1px solid transparent;
   color: var(--grey-very-light);
 }
 .resource .resource__title h2 {
   border-bottom: 1px solid var(--clr-goldenrod-dark);
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
   font-weight: 700;
   margin-bottom: 0;
   padding: 0.72rem 0;
@@ -715,6 +726,12 @@ footer p a {
 }
 .resource .resource__body img:hover {
   filter: none;
+}
+@media (max-width: 600px) {
+  .resource .resource__body img {
+    filter: none;
+    max-width: 72px;
+  }
 }
 .resource .resource__footer {
   align-items: center;
