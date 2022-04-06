@@ -625,7 +625,7 @@ footer p a {
 
 .resources {
   display: grid;
-  gap: 0.48rem;
+  gap: clamp(0.84rem, 2vw, 1rem);
   grid-template-columns: repeat(2, auto);
   justify-content: center;
 }
@@ -727,10 +727,18 @@ footer p a {
 .resource .resource__body img:hover {
   filter: none;
 }
+.resource .resource__body img.img__rounded {
+  border-radius: 0.6rem;
+}
 @media (max-width: 600px) {
   .resource .resource__body img {
     filter: none;
-    max-width: 72px;
+    max-width: 60px;
+  }
+}
+@media (min-width: 900px) {
+  .resource .resource__body {
+    padding-top: 1rem;
   }
 }
 .resource .resource__footer {
