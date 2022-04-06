@@ -9,18 +9,18 @@
   grid-template-columns: repeat(2, auto);
   justify-content: center;
   @media (min-width: 600px) {
-    gap: 0.6rem;
+    gap: clamp(1rem, 4vw, 1.6rem);
     grid-template-columns: repeat(2, auto);
   }
   @media (min-width: 900px) {
     display: grid;
-    gap: 1rem;
+    gap: clamp(1rem, 2vw, 1.6rem);
     grid-template-columns: repeat(3, auto);
   }
   @media (min-width: 1200px) {
     align-content: center;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: clamp(2rem, 5vw, 3rem);
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
@@ -29,7 +29,7 @@
 .resource {
   align-items: center;
   justify-content: center;
-  background-color: var(--clr-eigengrau-alt);
+  background-color: var(--clr-eigengrau);
   border: 1px solid var(--clr-goldenrod-dark);
   border-radius: 0.6rem;
   display: flex;
@@ -60,9 +60,8 @@
       color: var(--grey-very-light);
       padding: 2rem 0;
     }
-    &:hover { background-color: var(--clr-eigengrau);
+    &:hover { background-color: var(--clr-eigengrau-alt);
       h2 {
-        background-color: var(--clr-eigengrau);
         border-bottom: 1px solid transparent;
         color: var(--grey-very-light);
       }
@@ -107,9 +106,6 @@
         filter: none;
         max-width: 60px;
       }
-    }
-    @media(min-width:900px) {
-      padding-top: 1rem;
     }
   }
   .resource__footer {

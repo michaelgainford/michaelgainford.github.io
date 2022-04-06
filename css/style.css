@@ -81,6 +81,11 @@ h1 {
     text-align: right;
   }
 }
+@media (min-width: 1200px) {
+  h1 {
+    margin-bottom: 9.6vh;
+  }
+}
 
 h2 {
   border-bottom: 2px solid var(--clr-eigengrau-alt);
@@ -631,14 +636,14 @@ footer p a {
 }
 @media (min-width: 600px) {
   .resources {
-    gap: 0.6rem;
+    gap: clamp(1rem, 4vw, 1.6rem);
     grid-template-columns: repeat(2, auto);
   }
 }
 @media (min-width: 900px) {
   .resources {
     display: grid;
-    gap: 1rem;
+    gap: clamp(1rem, 2vw, 1.6rem);
     grid-template-columns: repeat(3, auto);
   }
 }
@@ -646,7 +651,7 @@ footer p a {
   .resources {
     align-content: center;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: clamp(2rem, 5vw, 3rem);
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
@@ -655,7 +660,7 @@ footer p a {
 .resource {
   align-items: center;
   justify-content: center;
-  background-color: var(--clr-eigengrau-alt);
+  background-color: var(--clr-eigengrau);
   border: 1px solid var(--clr-goldenrod-dark);
   border-radius: 0.6rem;
   display: flex;
@@ -691,10 +696,9 @@ footer p a {
   padding: 2rem 0;
 }
 .resource a:hover {
-  background-color: var(--clr-eigengrau);
+  background-color: var(--clr-eigengrau-alt);
 }
 .resource a:hover h2 {
-  background-color: var(--clr-eigengrau);
   border-bottom: 1px solid transparent;
   color: var(--grey-very-light);
 }
@@ -734,11 +738,6 @@ footer p a {
   .resource .resource__body img {
     filter: none;
     max-width: 60px;
-  }
-}
-@media (min-width: 900px) {
-  .resource .resource__body {
-    padding-top: 1rem;
   }
 }
 .resource .resource__footer {
