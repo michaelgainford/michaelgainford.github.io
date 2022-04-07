@@ -226,7 +226,7 @@ header {
 .main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenlysas;
   padding: 1rem 0 0 0;
 }
 @media (min-width: 900px) {
@@ -240,6 +240,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-evenly;
   height: 100%;
+  width: 100%;
 }
 @media (min-width: 900px) {
   .main-nav ul {
