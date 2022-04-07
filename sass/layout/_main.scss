@@ -27,6 +27,12 @@ main {
   padding: 0 0;
   @media (min-width: 900px) {
     padding: 0 10vw;
+    max-width: 900px;
+  }
+  @media(min-width:1200px){
     max-width: 1200px;
+  }
+  @media(min-width: 1600px){
+    max-width: clamp(1200px, 80vw, 2000px);
   }
 }

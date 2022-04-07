@@ -382,7 +382,17 @@ main {
 @media (min-width: 900px) {
   .main-inner {
     padding: 0 10vw;
+    max-width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-inner {
     max-width: 1200px;
+  }
+}
+@media (min-width: 1600px) {
+  .main-inner {
+    max-width: clamp(1200px, 80vw, 2000px);
   }
 }
 
@@ -421,12 +431,14 @@ footer p a {
 }
 @media (min-width: 900px) {
   .projects {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     padding: 1.2rem 0 2.4rem 0;
-    grid-template-columns: repeat(1, auto);
   }
 }
 @media (min-width: 1200px) {
   .projects {
+    display: grid;
     grid-template-columns: repeat(2, auto);
     max-width: 1200px;
   }
@@ -439,8 +451,8 @@ footer p a {
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
-  padding-left: 0.64rem;
-  padding-right: 0.64rem;
+  padding-left: clamp(0.64rem, 2vw, 1rem);
+  padding-right: clamp(0.64rem, 2vw, 1rem);
 }
 @media (min-width: 900px) {
   .projects .project .project-inner picture {
@@ -449,6 +461,7 @@ footer p a {
   }
 }
 .projects .project .project-inner picture img {
+  border: 1px solid var(--clr-goldenrod-dark);
   border-radius: 0.6rem;
   display: block;
   opacity: 0.8;
@@ -488,8 +501,8 @@ footer p a {
 
 .project-inner__image-container {
   position: relative;
-  width: 100%;
   max-width: 1000px;
+  width: 100%;
 }
 
 .project-inner__image-container__overlay {
