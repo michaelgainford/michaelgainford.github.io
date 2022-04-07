@@ -553,7 +553,7 @@ footer p a {
   background-color: var(--clr-eigengrau);
   border-radius: 0.4rem;
   display: block;
-  font-size: 0.64rem;
+  font-size: clamp(0.64rem, 2vw, 1.2rem);
   margin-top: 0;
   margin-bottom: 2.4rem;
   max-width: calc(100vw - 10px);
