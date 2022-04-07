@@ -24,7 +24,10 @@ main {
   }
 }
 .main-inner {
-  padding: 0 0;
+  padding: 0 2vw;
+  @media(min-width:600px) {
+    padding: 0 5vw;
+  }
   @media (min-width: 900px) {
     padding: 0 10vw;
     max-width: 900px;

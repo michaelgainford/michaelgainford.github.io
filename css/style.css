@@ -377,7 +377,12 @@ main {
 }
 
 .main-inner {
-  padding: 0 0;
+  padding: 0 2vw;
+}
+@media (min-width: 600px) {
+  .main-inner {
+    padding: 0 5vw;
+  }
 }
 @media (min-width: 900px) {
   .main-inner {
@@ -581,7 +586,7 @@ footer p a {
   flex-direction: column;
   justify-content: start;
   margin-bottom: 1rem;
-  padding: 0.48rem 1rem;
+  padding: 0.48rem 0;
   max-width: 100%;
 }
 @media (min-width: 1200px) {
