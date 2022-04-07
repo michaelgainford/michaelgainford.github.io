@@ -31,6 +31,8 @@
       flex-direction: column;
       justify-content: center;
       max-width: 1200px;
+      padding-left: 0.64rem;
+      padding-right: 0.64rem;
       picture {
         @media (min-width: 900px) {
           border-bottom: 3px sold var(--clr-goldenrod-dark);

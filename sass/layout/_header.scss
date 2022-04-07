@@ -91,7 +91,7 @@ header {
         color: white;
         display: flex;
         flex-direction: column;
-        font-size: clamp(0.64rem, 2vw, 0.92rem);
+        font-size: clamp(0.72rem, 2vw, 0.92rem);
         font-weight: 400;
         justify-content: center;
         letter-spacing: 0.08rem;
@@ -100,7 +100,7 @@ header {
         text-transform: lowercase;
         .goldenrod {
           color: var(--clr-goldenrod);
-          font-size: clamp(0.72rem, 2.2vw, 1rem);
+          font-size: clamp(0.84rem, 2.4vw, 1rem);
           margin-bottom: 0.25rem;
         }
         &:last-of-type {
