@@ -33,8 +33,8 @@
       flex-direction: column;
       justify-content: center;
       max-width: 1200px;
-      padding-left: clamp(0.64rem, 2vw, 1rem);
-      padding-right: clamp(0.64rem, 2vw, 1rem);
+      padding-left: clamp(0.72rem, 2vw, 1.2rem);
+      padding-right: clamp(0.72rem, 2vw, 1.2rem);
       picture {
         @media (min-width: 900px) {
           border-bottom: 3px sold var(--clr-goldenrod-dark);
@@ -94,9 +94,8 @@
   border-bottom-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
   bottom: 0;
-  color: #f1f1f1;
-  color: white;
-  font-size: clamp(1vw, 0.92rem, 2vw);
+  color: var(--clr-grey-very-light);
+  font-size: clamp(0.72rem, 2vw, 1.2rem);
   letter-spacing: 0.08rem;
   opacity: 0;
   padding: 0;
