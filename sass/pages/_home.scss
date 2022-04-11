@@ -1,12 +1,8 @@
 .my-work {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  @media (min-width: 900px) {
-    justify-content: flex-start;
-  }
 }
 
 .projects {
@@ -50,6 +46,7 @@
           display: block;
           opacity: 0.8;
           transition: 0.4s ease;
+          max-width: 80vw;
           @media(min-width:900px){
             border: 5px solid var(--clr-eigengrau);
             &:hover {
