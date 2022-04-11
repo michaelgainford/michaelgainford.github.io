@@ -473,17 +473,19 @@ footer p a {
   }
 }
 .projects .project .project-inner picture img {
-  border: 2px solid var(--clr-goldenrod-dark);
+  border: 10px solid var(--clr-eigengrau-alt);
   border-radius: 0.6rem;
   display: block;
   opacity: 0.8;
   transition: 0.4s ease;
   max-width: 80vw;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .projects .project .project-inner picture img {
-    border: 5px solid var(--clr-eigengrau);
+    max-width: 100%;
   }
+}
+@media (min-width: 900px) {
   .projects .project .project-inner picture img:hover {
     border-color: var(--clr-goldenrod);
     margin-top: -1rem;
