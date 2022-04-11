@@ -717,7 +717,7 @@ footer p a {
   font-size: 0.92rem;
   min-width: 120px;
   text-align: center;
-  width: clamp(100px, 12vw, 300px);
+  width: clamp(150px, 12vw, 300px);
 }
 .resource:hover img {
   filter: none;
