@@ -38,22 +38,20 @@ h1 {
 
 // h2 tags
 h2 {
-  border-bottom: 2px solid var(--clr-eigengrau-alt);
-  font-size: clamp(0.78rem, 2vw, 1rem);
+  //border-bottom: 2px solid var(--clr-eigengrau-alt);
+  font-size: clamp(0.84rem, 2vw, 1rem);
   font-weight: 300;
   margin-bottom: 0.32rem;
-  padding: 0 0 0.64rem 0;
+  padding: 0;
   text-align: left;
   text-transform: lowercase;
   @media (min-width: 900px) {
-    margin-bottom: 0.64rem;
+    margin-bottom: 0.48rem;
     text-align: center;
   }
-  /*   &:first-of-type {
-    margin-top: 3.2rem;
-  } */
   svg {
     color: var(--clr-goldenrod);
+    margin-right: .25rem;
   }
   @media (min-width: 900px) {
     text-align: left;
@@ -72,7 +70,7 @@ h3 {
 
 // p tags
 p {
-  font-size: 0.84rem;
+  font-size: clamp(0.84rem, 16px, 1.2rem);
   line-height: 1.2rem;
   padding-bottom: 1rem;
   text-align: center;

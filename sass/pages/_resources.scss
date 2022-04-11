@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--clr-eigengrau);
-  border: 1px solid var(--clr-goldenrod-dark);
+  border: 2px solid var(--clr-eigengrau-alt);
   border-radius: 0.6rem;
   display: flex;
   flex: 1 1 0px;
@@ -43,6 +43,9 @@
   min-width: 120px;
   text-align: center;
   width: clamp(100px, 12vw, 300px);
+  &:hover img {
+    filter: none;
+  }
   > * {
     flex-basis: 1 1 0px;
     width: 100%;
@@ -78,7 +81,7 @@
     &:hover {
       background-color: var(--clr-eigengrau-alt);
       h2 {
-        border-bottom: 1px solid transparent;
+        border-color: transparent;
         color: var(--grey-very-light);
       }
     }
@@ -86,7 +89,7 @@
 
   .resource__title {
     h2 {
-      border-bottom: 1px solid var(--clr-goldenrod-dark);
+      border-bottom: 3px solid var(--clr-eigengrau-alt);
       border-top-left-radius: 0.6rem;
       border-top-right-radius: 0.6rem;
       font-weight: 400;
@@ -108,10 +111,11 @@
     img {
       display: block;
       filter: grayscale(100%);
-      width: clamp(60px, 6vw, 200px);
-      transition: filter 0.4s ease;
+      width: clamp(60px, 8vw, 200px);
+      transition: filter 0.4s ease, margin-top 0.4s ease;
       &:hover {
         filter: none;
+        margin-top: -10px;
       }
       &.img__rounded {
         border-radius: 0.6rem;

@@ -97,25 +97,22 @@ h1 {
 }
 
 h2 {
-  border-bottom: 2px solid var(--clr-eigengrau-alt);
-  font-size: clamp(0.78rem, 2vw, 1rem);
+  font-size: clamp(0.84rem, 2vw, 1rem);
   font-weight: 300;
   margin-bottom: 0.32rem;
-  padding: 0 0 0.64rem 0;
+  padding: 0;
   text-align: left;
   text-transform: lowercase;
-  /*   &:first-of-type {
-    margin-top: 3.2rem;
-  } */
 }
 @media (min-width: 900px) {
   h2 {
-    margin-bottom: 0.64rem;
+    margin-bottom: 0.48rem;
     text-align: center;
   }
 }
 h2 svg {
   color: var(--clr-goldenrod);
+  margin-right: 0.25rem;
 }
 @media (min-width: 900px) {
   h2 {
@@ -132,7 +129,7 @@ h3 {
 }
 
 p {
-  font-size: 0.84rem;
+  font-size: clamp(0.84rem, 16px, 1.2rem);
   line-height: 1.2rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -634,6 +631,7 @@ footer p a {
   color: var(--clr-goldenrod);
   cursor: pointer;
   font-size: 0.875rem;
+  letter-spacing: 2px;
   outline: none;
   padding: 1rem;
   text-align: left;
@@ -710,7 +708,7 @@ footer p a {
   align-items: center;
   justify-content: center;
   background-color: var(--clr-eigengrau);
-  border: 1px solid var(--clr-goldenrod-dark);
+  border: 2px solid var(--clr-eigengrau-alt);
   border-radius: 0.6rem;
   display: flex;
   flex: 1 1 0px;
@@ -720,6 +718,9 @@ footer p a {
   min-width: 120px;
   text-align: center;
   width: clamp(100px, 12vw, 300px);
+}
+.resource:hover img {
+  filter: none;
 }
 .resource > * {
   flex-basis: 1 1 0px;
@@ -764,11 +765,11 @@ footer p a {
   background-color: var(--clr-eigengrau-alt);
 }
 .resource a:hover h2 {
-  border-bottom: 1px solid transparent;
+  border-color: transparent;
   color: var(--grey-very-light);
 }
 .resource .resource__title h2 {
-  border-bottom: 1px solid var(--clr-goldenrod-dark);
+  border-bottom: 3px solid var(--clr-eigengrau-alt);
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
   font-weight: 400;
@@ -790,11 +791,12 @@ footer p a {
 .resource .resource__body img {
   display: block;
   filter: grayscale(100%);
-  width: clamp(60px, 6vw, 200px);
-  transition: filter 0.4s ease;
+  width: clamp(60px, 8vw, 200px);
+  transition: filter 0.4s ease, margin-top 0.4s ease;
 }
 .resource .resource__body img:hover {
   filter: none;
+  margin-top: -10px;
 }
 .resource .resource__body img.img__rounded {
   border-radius: 0.6rem;
