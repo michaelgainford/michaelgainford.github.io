@@ -31,7 +31,7 @@
       flex-direction: column;
       justify-content: center;
       max-width: 1200px;
-      @media(min-width: 600px) {
+      @media (min-width: 600px) {
         padding-left: clamp(0.8rem, 2vw, 1.2rem);
         padding-right: clamp(0.8rem, 2vw, 1.2rem);
       }
@@ -48,10 +48,10 @@
           opacity: 0.8;
           transition: 0.4s ease;
           max-width: 80vw;
-          @media(min-width:600px){
+          @media (min-width: 600px) {
             max-width: 100%;
           }
-          @media(min-width:900px){
+          @media (min-width: 900px) {
             &:hover {
               border-color: var(--clr-goldenrod-dark);
               margin-top: -1rem;
@@ -71,56 +71,30 @@
       .project-links {
         display: flex;
         justify-content: space-evenly;
-      }
-      a {
-        align-self: center;
-        border-bottom-left-radius: 0.6rem;
-        border-bottom-right-radius: 0.6rem;
-        color: var(--clr-grey-very-light);
-        display: block;
-        font-size: 0.84rem;
-        font-weight: 500;
-        padding: 2rem 0;
-        //margin-bottom: 4.8rem;
-        text-decoration: none;
-        text-align: center;
-        transition: background-color 1s, border-color 1s, color 1s;
-        &:hover {
+
+        a {
+          align-self: center;
           background-color: var(--clr-eigengrau);
-          border-color: var(--clr-eigengrau);
-          color: white;
+          border: 3px solid transparent;
+          border-radius: 0.4rem;
+          color: var(--clr-grey-very-light);
+          display: block;
+          font-size: clamp(0.72rem, 1.5vw, 0.88rem);
+          font-weight: 500;
+          letter-spacing: 0.2rem;
+          margin-top: clamp(0.4rem, 2vh, 1rem);
+          padding: 1.2rem 2.4rem;
+          text-decoration: none;
+          text-align: center;
+          text-transform: lowercase;
+          transition: background-color 1s, border-color 1s, color 1s;
+          &:hover {
+            background-color: var(--clr-eigengrau);
+            border-color: var(--clr-eigengrau-alt);
+            color: var(--clr-goldenrod);
+          }
         }
       }
     }
   }
-}
-
-.project-inner__image-container {
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-}
-.project-inner__image-container__overlay {
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.8); /* Black see-through */
-  border-bottom-left-radius: 0.6rem;
-  border-bottom-left-radius: 0.6rem;
-  bottom: 0;
-  color: var(--clr-grey-very-light);
-  font-size: clamp(0.72rem, 2vw, 1.2rem);
-  letter-spacing: 0.08rem;
-  opacity: 0;
-  padding: 0;
-  position: absolute;
-  text-align: center;
-  transition: 0.5s ease;
-  width: 100%;
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.project-inner__image-container:hover .project-inner__image-container__overlay {
-  opacity: 1;
 }
