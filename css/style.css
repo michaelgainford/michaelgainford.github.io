@@ -91,7 +91,7 @@ h2 {
   border-bottom: 2px solid var(--clr-eigengrau-alt);
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 0.64rem;
+  margin-bottom: 0.32rem;
   padding: 0 0 0.64rem 0;
   text-align: left;
   text-transform: lowercase;
@@ -101,6 +101,7 @@ h2 {
 }
 @media (min-width: 900px) {
   h2 {
+    margin-bottom: 0.64rem;
     text-align: center;
   }
 }
@@ -368,7 +369,7 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 2vw;
+  padding: 0;
 }
 @media (min-width: 900px) {
   .main-content {
@@ -449,6 +450,7 @@ footer p a {
   }
 }
 .projects .project {
+  background-color: var(--clr-eigengrau);
   margin-bottom: 4.8rem;
 }
 .projects .project .project-inner {
@@ -456,8 +458,8 @@ footer p a {
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
-  padding-left: clamp(0.64rem, 2vw, 1rem);
-  padding-right: clamp(0.64rem, 2vw, 1rem);
+  padding-left: clamp(0.8rem, 2vw, 1.2rem);
+  padding-right: clamp(0.8rem, 2vw, 1.2rem);
 }
 @media (min-width: 900px) {
   .projects .project .project-inner picture {
@@ -578,6 +580,7 @@ footer p a {
 
 .code-snippet {
   align-self: start;
+  align-items: center;
   background-color: var(--clr-eigengrau-alt);
   border: 2px solid var(--clr-eigengrau-alt);
   border-radius: 0.4rem;
@@ -585,12 +588,12 @@ footer p a {
   flex-direction: column;
   justify-content: start;
   margin-bottom: 1rem;
-  padding: 0.48rem 0;
   max-width: 100%;
 }
 @media (min-width: 1200px) {
   .code-snippet {
     padding: 1rem;
+    width: 100%;
   }
 }
 
@@ -639,8 +642,9 @@ footer p a {
   background-color: transparent;
   max-height: 0;
   overflow: hidden;
-  padding: 0 0;
+  padding: 0 2vw;
   transition: max-height 0.5s ease-out;
+  width: 100%;
 }
 
 .my-resources {

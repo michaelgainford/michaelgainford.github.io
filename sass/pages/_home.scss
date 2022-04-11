@@ -27,14 +27,15 @@
     max-width: 1200px;
   }
   .project {
+    background-color: var(--clr-eigengrau);
     margin-bottom: 4.8rem;
     .project-inner {
       display: flex;
       flex-direction: column;
       justify-content: center;
       max-width: 1200px;
-      padding-left: clamp(0.72rem, 2vw, 1.2rem);
-      padding-right: clamp(0.72rem, 2vw, 1.2rem);
+      padding-left: clamp(0.8rem, 2vw, 1.2rem);
+      padding-right: clamp(0.8rem, 2vw, 1.2rem);
       picture {
         @media (min-width: 900px) {
           border-bottom: 3px sold var(--clr-goldenrod-dark);
@@ -83,6 +84,7 @@
     }
   }
 }
+
 .project-inner__image-container {
   position: relative;
   max-width: 1000px;

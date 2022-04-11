@@ -139,12 +139,25 @@ console.log(isEven(2));
               <div class="panel">
                 <code class="snippet__code">
                   <pre>
-const checkForDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+const checkForDarkMode = window.matchMedia 
+&& window.matchMedia
+('(prefers-color-scheme: dark)').matches
 console.log(checkForDarkMode)        
                   </pre>        
                 </code>
               </div>
             </div>
+            <div class="code-snippet">
+              <button class="accordion">Capitalise a string</button>
+              <div class="panel">
+                <code class="snippet__code">
+                  <pre>
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+capitalize("make the first letter uppercase")      
+                  </pre>        
+                </code>
+              </div>
+            </div>            
           </div>
           <!--end JS-->
           <!--PHP-->
