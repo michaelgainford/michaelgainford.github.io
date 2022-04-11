@@ -124,21 +124,23 @@ img {
           <div class="my-code-language">
             <h2><i class="fab fa-js-square"></i> JavaScript</h2>
             <div class="code-snippet">
-              <button class="accordion">Blank Snippet File</button>
+              <button class="accordion">Check if number is even</button>
               <div class="panel">
                 <code class="snippet__code">
                   <pre>
-&lt;Code snippet&gt;        
+const isEven = num => num % 2 === 0;
+console.log(isEven(2));    
                   </pre>         
                 </code>
               </div>
             </div>
             <div class="code-snippet">
-              <button class="accordion">Blank Snippet File</button>
+              <button class="accordion">Check for dark mode</button>
               <div class="panel">
                 <code class="snippet__code">
                   <pre>
-&lt;Code snippet&gt;        
+const checkForDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+console.log(checkForDarkMode)        
                   </pre>        
                 </code>
               </div>
