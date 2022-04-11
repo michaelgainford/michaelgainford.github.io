@@ -45,7 +45,7 @@
           margin-bottom: 0;
         }
         img {
-          border: 1px solid var(--clr-goldenrod-dark);
+          border: 2px solid var(--clr-goldenrod-dark);
           border-radius: 0.6rem;
           display: block;
           opacity: 0.8;
@@ -54,6 +54,7 @@
             border: 5px solid var(--clr-eigengrau);
             &:hover {
               border-color: var(--clr-goldenrod);
+              margin-top: -1rem;
             }
           }
           &:hover {

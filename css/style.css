@@ -479,7 +479,7 @@ footer p a {
   }
 }
 .projects .project .project-inner picture img {
-  border: 1px solid var(--clr-goldenrod-dark);
+  border: 2px solid var(--clr-goldenrod-dark);
   border-radius: 0.6rem;
   display: block;
   opacity: 0.8;
@@ -491,6 +491,7 @@ footer p a {
   }
   .projects .project .project-inner picture img:hover {
     border-color: var(--clr-goldenrod);
+    margin-top: -1rem;
   }
 }
 .projects .project .project-inner picture img:hover {
