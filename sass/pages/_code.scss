@@ -64,7 +64,7 @@
   border: none;
   color: var(--clr-grey-very-light);
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: clamp(0.64rem, 2vw, 1rem);
   letter-spacing: 2px;
   outline: none;
   padding: 1rem;

@@ -162,9 +162,13 @@ header {
   border-bottom: 1px solid var(--clr-eigengrau-alt);
   grid-area: header;
   justify-content: space-around;
-  padding-bottom: 0.6vh;
-  padding-top: 0.6vh;
   width: 100%;
+}
+@media (min-width: 600px) {
+  header {
+    padding-bottom: 0.6vh;
+    padding-top: 0.6vh;
+  }
 }
 @media (min-width: 900px) {
   header {
@@ -631,7 +635,7 @@ footer p a {
   border: none;
   color: var(--clr-grey-very-light);
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: clamp(0.64rem, 2vw, 1rem);
   letter-spacing: 2px;
   outline: none;
   padding: 1rem;
