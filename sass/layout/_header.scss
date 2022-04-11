@@ -121,6 +121,9 @@ header {
           transition-property: border-left;
           transition-duration: 1s;
           width: 100%;
+          &.link__active {
+            border-left: 10px solid var(--clr-eigengrau-alt);
+          }
           &:hover {
             border-left: 10px solid var(--clr-goldenrod);
           }

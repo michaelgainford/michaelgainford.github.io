@@ -309,6 +309,9 @@ header {
     transition-duration: 1s;
     width: 100%;
   }
+  .main-nav ul li a.link__active {
+    border-left: 10px solid var(--clr-eigengrau-alt);
+  }
   .main-nav ul li a:hover {
     border-left: 10px solid var(--clr-goldenrod);
   }
@@ -487,7 +490,7 @@ footer p a {
 }
 @media (min-width: 900px) {
   .projects .project .project-inner picture img:hover {
-    border-color: var(--clr-goldenrod);
+    border-color: var(--clr-goldenrod-dark);
     margin-top: -1rem;
   }
 }
@@ -783,8 +786,8 @@ footer p a {
 .resource .resource__body img {
   display: block;
   filter: grayscale(100%);
-  width: clamp(60px, 8vw, 200px);
   transition: filter 0.4s ease, margin-top 0.4s ease;
+  width: clamp(60px, 8vw, 200px);
 }
 .resource .resource__body img:hover {
   filter: none;

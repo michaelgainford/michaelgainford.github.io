@@ -105,8 +105,8 @@
     img {
       display: block;
       filter: grayscale(100%);
-      width: clamp(60px, 8vw, 200px);
       transition: filter 0.4s ease, margin-top 0.4s ease;
+      width: clamp(60px, 8vw, 200px);
       &:hover {
         filter: none;
         margin-top: -10px;
