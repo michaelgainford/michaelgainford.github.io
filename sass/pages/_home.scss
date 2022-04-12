@@ -71,7 +71,6 @@
       .project-links {
         display: flex;
         justify-content: space-evenly;
-
         a {
           align-self: center;
           background-color: var(--clr-eigengrau);
@@ -92,6 +91,18 @@
             background-color: var(--clr-eigengrau);
             border-color: var(--clr-eigengrau-alt);
             color: var(--clr-goldenrod);
+          }
+          &::after{
+            background-color: red;
+            bottom: 0;
+            content: "hello";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3 ease;
+            width: 100%;
           }
         }
       }

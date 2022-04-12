@@ -5,13 +5,14 @@ main {
   max-width: 100%;
   min-height: 100vh;
   padding: 0 0 5vh 0;
+
   @media (min-width: 900px) {
     margin-left: 200px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 200px - 50px);
   }
   @media (min-width: 1200px) {
     margin-left: 300px;
-    width: calc(100vw - 300px);
+    width: calc(100vw - 300px - 50px);
   }
 }
 .main-content {
@@ -19,6 +20,12 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0;
+  > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
   @media (min-width: 900px) {
     padding: 8.4vh 4vh 0 4vh;
   }

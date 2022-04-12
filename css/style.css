@@ -368,13 +368,13 @@ main {
 @media (min-width: 900px) {
   main {
     margin-left: 200px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 200px - 50px);
   }
 }
 @media (min-width: 1200px) {
   main {
     margin-left: 300px;
-    width: calc(100vw - 300px);
+    width: calc(100vw - 300px - 50px);
   }
 }
 
@@ -383,6 +383,12 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0;
+}
+.main-content > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 @media (min-width: 900px) {
   .main-content {
@@ -532,6 +538,18 @@ footer p a {
   background-color: var(--clr-eigengrau);
   border-color: var(--clr-eigengrau-alt);
   color: var(--clr-goldenrod);
+}
+.projects .project .project-inner .project-links a::after {
+  background-color: red;
+  bottom: 0;
+  content: "hello";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3 ease;
+  width: 100%;
 }
 
 .my-code {
