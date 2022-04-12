@@ -42,7 +42,10 @@
         }
         img {
           //border: 2px solid var(--clr-goldenrod-dark);
-          border: 10px solid var(--clr-eigengrau-alt);
+          border-color: var(--clr-eigengrau-alt);
+          border-width: clamp(5px, 1vw, 25px);
+          border-style: solid;
+          //border: 10px solid var(--clr-eigengrau-alt);
           border-radius: 0.6rem;
           display: block;
           opacity: 0.8;
