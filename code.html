@@ -16,13 +16,13 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo">
+      <div class="header__logo">
         <a href="/">
           <img src="./images/logo-white-gold.png" alt="Michael Gainford Dev website"
             title="Michael Gainford Dev website logo" />
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="header__nav">
         <ul>
           <li>
             <a href="/">
@@ -56,9 +56,9 @@
         <div class="my-code main-inner">
           <h1>Code</h1>
           <div class="my-code-language">
-            <h2><i class="fab fa-html5 goldenrod"></i> HTML</h2>
+            <!--<h2><i class="fab fa-html5 goldenrod"></i> HTML</h2>-->
             <div class="code-snippet">
-              <button class="accordion">HTML Boilerplate</button>
+              <button class="accordion"><i class="fab fa-html5 goldenrod code__icon"></i> HTML Boilerplate</button>
               <div class="panel">
                 <code class="snippet__code">
                 <pre>
@@ -81,12 +81,8 @@
               </code>
               </div>
             </div>
-
-          </div>
-          <div class="my-code-language">
-            <h2><i class="fab fa-css3-alt"></i> CSS</h2>
             <div class="code-snippet">
-              <button class="accordion">CSS Reset File</button>
+              <button class="accordion"><i class="fab fa-css3-alt code__icon"></i> CSS Reset File</button>
               <div class="panel">
                 <code class="snippet__code">
                   <pre>
@@ -102,11 +98,10 @@
               </div>
             </div>
             <div class="code-snippet">
-              <button class="accordion">Responsive images</button>
+              <button class="accordion"><i class="fab fa-css3-alt code__icon"></i> Responsive images</button>
               <div class="panel">
                 <code class="snippet__code">
                   <pre>
-                    
 img {
   height: auto;
   width: 100%;
@@ -115,52 +110,47 @@ img {
                 </code>
               </div>
             </div>
-          </div>
-          <div class="my-code-language">
-            <h2><i class="fab fa-js-square"></i> JavaScript</h2>
-            <div class="code-snippet">
-              <button class="accordion">Check if number is even</button>
-              <div class="panel">
-                <code class="snippet__code">
-                  <pre>
+              <div class="code-snippet">
+                <button class="accordion"><i class="fab fa-js-square code__icon"></i> Check if number is even</button>
+                <div class="panel">
+                  <code class="snippet__code">
+                    <pre>
 const isEven = num => num % 2 === 0;
 console.log(isEven(2));    
-                  </pre>         
+                    </pre>         
                 </code>
+                </div>
               </div>
-            </div>
-            <div class="code-snippet">
-              <button class="accordion">Check for dark mode</button>
-              <div class="panel">
-                <code class="snippet__code">
-                  <pre>
+              <div class="code-snippet">
+                <button class="accordion"><i class="fab fa-js-square code__icon"></i> Check for dark mode</button>
+                <div class="panel">
+                  <code class="snippet__code">
+                    <pre>
 const checkForDarkMode = window.matchMedia 
 && window.matchMedia
 ('(prefers-color-scheme: dark)').matches
 console.log(checkForDarkMode)        
                   </pre>        
                 </code>
+                </div>
               </div>
-            </div>
-            <div class="code-snippet">
-              <button class="accordion">Capitalise a string</button>
-              <div class="panel">
-                <code class="snippet__code">
-                  <pre>
+              <div class="code-snippet">
+                <button class="accordion"><i class="fab fa-js-square code__icon"></i> Capitalise a string</button>
+                <div class="panel">
+                  <code class="snippet__code">
+                    <pre>
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 capitalize("make the first letter uppercase")      
                   </pre>        
-                </code>
+                  </code>
+                </div>
               </div>
-            </div>            
-          </div>
-          <div class="my-code-language">
-            <h2><i class="fab fa-php"></i> PHP</h2>
-            <div class="code-snippet">
-              <button class="accordion">URLs list</button>
-              <div class="panel">
-                <code class="snippet__code">
-                  <pre>
+              <!--  <h2><i class="fab fa-php"></i> PHP</h2> -->
+              <div class="code-snippet">
+                <button class="accordion"><i class="fab fa-php code__icon"></i> URLs list</button>
+                <div class="panel">
+                  <code class="snippet__code">
+                    <pre>
 $url_social_facebook = "https://www.facebook.com";
 $url_social_twitter = "https://twitter.com";
 $url_social_youtube = "https://www.youtube.com";
@@ -169,14 +159,14 @@ $url_social_instagram = "https://www.instagram.com";
   
 echo($url_social_facebook);
                   </pre>         
-                </code>
+                  </code>
+                </div>
               </div>
-            </div>
-            <div class="code-snippet">
-              <button class="accordion">MySQL database connection</button>
-              <div class="panel">
-                <code class="snippet__code">
-                  <pre>
+              <div class="code-snippet">
+                <button class="accordion"><i class="fab fa-php code__icon"></i> MySQL database connection</button>
+                <div class="panel">
+                  <code class="snippet__code">
+                    <pre>
 $conn = mysqli_connect('localhost', 'root', 'USERNAME',
 'PASSWORD');
                   
@@ -186,14 +176,14 @@ if (mysqli_connect_errno())
     mysqli_connect_error();
   }                                  
                   </pre>         
-                </code>
+                  </code>
+                </div>
               </div>
-            </div>
-            <div class="code-snippet">
-              <button class="accordion">Time-based welcome message</button>
-              <div class="panel">
-                <code class="snippet__code">
-                  <pre>
+              <div class="code-snippet">
+                <button class="accordion"><i class="fab fa-php code__icon"></i> Time-based welcome message</button>
+                <div class="panel">
+                  <code class="snippet__code">
+                    <pre>
 function welcome_message() {
   $t = date("H")-1;
   if ($t < 12) {
@@ -205,19 +195,19 @@ function welcome_message() {
   else { echo "Good Evening"; }
 }
                   </pre>      
-                </code>
+                  </code>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
     </main>
-  <footer>
-    <p>
-      designed, maintained and everything else, by
-      <a href="https://michaelgainford.co.uk">Michael</a>
-    </p>
-  </footer>
+    <footer>
+      <p>
+        designed, maintained and everything else, by
+        <a href="https://michaelgainford.co.uk">Michael</a>
+      </p>
+    </footer>
   </div>
   <!-- end .container -->
   <script>

@@ -1,0 +1,78 @@
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenlysas;
+    padding: 1rem 0 0 0;
+    @media (min-width: 900px) {
+      height: 100%;
+      padding: 0;
+    }
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 100%;
+      @media (min-width: 900px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      li {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        @media (min-width: 900px) {
+          height: 100%;
+          width: 100%;
+        }
+        a {
+          align-items: center;
+          background-color: transparent;
+          border-right: 1px solid var(--clr-goldenrod);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          font-size: clamp(0.72rem, 2vw, 1rem);
+          font-weight: 400;
+          justify-content: center;
+          letter-spacing: 0.08rem;
+          padding: 1.2rem 0.64rem;
+          text-decoration: none;
+          text-transform: lowercase;
+          .goldenrod {
+            color: var(--clr-goldenrod);
+            font-size: clamp(0.84rem, 2.4vw, 1rem);
+            margin-bottom: 0.25rem;
+          }
+          &:last-of-type {
+            border-right: 0;
+          }
+          @media (min-width: 600px) {
+            &:hover {
+              background-color: var(--clr-eigengrau-alt);
+            }
+          }
+          @media (min-width: 900px) {
+            border-left: 10px solid transparent;
+            border-top: 1px solid var(--clr-eigengrau-alt);
+            border-right: 0;
+            height: 100%;
+            flex: 1 1 0px;
+            padding: clamp(1rem, 5vh, 4rem);
+            transition-property: border-left;
+            transition-duration: 1s;
+            width: 100%;
+            &.link__active {
+              border-left: 10px solid var(--clr-eigengrau-alt);
+            }
+            &:hover {
+              border-left: 10px solid var(--clr-goldenrod);
+            }
+          }
+        }
+      }
+    }
+  }
