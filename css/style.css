@@ -22,21 +22,16 @@
   border: 1px solid red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -264,6 +259,7 @@ header {
   }
 }
 .header__logo a img {
+  border: none;
   width: 72px;
 }
 @media (min-width: 900px) {
@@ -351,7 +347,7 @@ header {
 }
 @media (min-width: 900px) {
   .header__nav ul li a {
-    border-left: 10px solid transparent;
+    border-left: 1vw solid transparent;
     border-top: 1px solid var(--clr-eigengrau-alt);
     border-right: 0;
     height: 100%;
@@ -362,10 +358,10 @@ header {
     width: 100%;
   }
   .header__nav ul li a.link__active {
-    border-left: 10px solid var(--clr-eigengrau-alt);
+    border-left: 1vw solid var(--clr-eigengrau-alt);
   }
   .header__nav ul li a:hover {
-    border-left: 10px solid var(--clr-goldenrod);
+    border-left: 1vw solid var(--clr-goldenrod);
   }
 }
 
@@ -400,30 +396,38 @@ header {
     max-width: 1200px;
   }
 }
-.projects .project {
+
+.project {
   margin-bottom: 3.2rem;
 }
-.projects .project .project-inner {
+
+.project-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
 }
 @media (min-width: 600px) {
-  .projects .project .project-inner {
+  .project-inner {
     padding-left: clamp(0.8rem, 2vw, 1.2rem);
     padding-right: clamp(0.8rem, 2vw, 1.2rem);
   }
 }
+.project-inner a {
+  text-decoration: none;
+}
+
+.project-inner__image-container {
+  margin-bottom: 1rem;
+}
 @media (min-width: 900px) {
-  .projects .project .project-inner picture {
+  .project-inner__image-container picture {
     margin-bottom: 1rem;
   }
 }
-.projects .project .project-inner picture img {
+.project-inner__image-container picture img {
   border-color: var(--clr-eigengrau-alt);
   border-width: clamp(5px, 1vw, 25px);
-  border-style: solid;
   border-radius: 0.6rem;
   display: block;
   opacity: 0.8;
@@ -431,47 +435,37 @@ header {
   max-width: 80vw;
 }
 @media (min-width: 600px) {
-  .projects .project .project-inner picture img {
+  .project-inner__image-container picture img {
     max-width: 100%;
   }
 }
 @media (min-width: 900px) {
-  .projects .project .project-inner picture img:hover {
+  .project-inner__image-container picture img:hover {
     border-color: var(--clr-goldenrod-dark);
     margin-top: -1rem;
   }
 }
-.projects .project .project-inner picture img:hover {
+.project-inner__image-container picture img:hover {
   opacity: 1;
 }
-.projects .project .project-inner .project-name p {
-  color: var(--clr-goldenrod-dark);
-  letter-spacing: 0.25rem;
-  text-align: center;
-  text-transform: lowercase;
-}
-.projects .project .project-inner .project-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.projects .project .project-inner .project-links a {
-  align-self: center;
+
+.project-name {
   background-color: var(--clr-eigengrau);
-  border: 3px solid var(--clr-eigengrau-alt);
+  border: 2px solid var(--clr-eigengrau-alt);
   border-radius: 0.4rem;
   color: var(--clr-grey-very-light);
-  display: block;
-  font-size: clamp(0.72rem, 1.5vw, 0.88rem);
+  color: #ababab;
+  display: inline-block;
+  font-size: clamp(0.72rem, 1.5vw, 0.8rem);
   font-weight: 500;
   letter-spacing: 0.2rem;
-  padding: 1.2rem 2.4rem;
+  padding: 1rem;
   text-decoration: none;
   text-align: center;
   text-transform: lowercase;
   transition: background-color 1s, border-color 1s, color 1s;
 }
-.projects .project .project-inner .project-links a:hover {
+.project-name:hover {
   background-color: var(--clr-eigengrau);
   border-color: var(--clr-eigengrau-alt);
   color: var(--clr-goldenrod);
@@ -652,6 +646,7 @@ header {
   text-align: center;
 }
 .resource .resource__body img {
+  border: none;
   display: block;
   filter: grayscale(100%);
   transition: filter 0.4s ease, margin-top 0.4s ease;
@@ -728,6 +723,12 @@ footer p a {
   padding: 0 2vw;
   transition: max-height 0.5s ease-out;
   width: 100%;
+}
+
+img {
+  border-style: solid;
+  height: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -56,7 +56,7 @@
             }
           }
           @media (min-width: 900px) {
-            border-left: 10px solid transparent;
+            border-left: 1vw solid transparent;
             border-top: 1px solid var(--clr-eigengrau-alt);
             border-right: 0;
             height: 100%;
@@ -66,10 +66,10 @@
             transition-duration: 1s;
             width: 100%;
             &.link__active {
-              border-left: 10px solid var(--clr-eigengrau-alt);
+              border-left: 1vw solid var(--clr-eigengrau-alt);
             }
             &:hover {
-              border-left: 10px solid var(--clr-goldenrod);
+              border-left: 1vw solid var(--clr-goldenrod);
             }
           }
         }

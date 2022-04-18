@@ -1,6 +1,5 @@
 @use './global/root' as *;
-@use './global/resets';
-@use './global/body';
+@use './global/base';
 @use './global/typography';
 @use './global/structure';
 @use './header/header-1';
@@ -11,3 +10,4 @@
 @use './pages/resources';
 @use './footer/footer-1';
 @use './components/accordions';
+@use './components/images';

@@ -103,6 +103,7 @@
       text-align: center;
     }
     img {
+      border: none;
       display: block;
       filter: grayscale(100%);
       transition: filter 0.4s ease, margin-top 0.4s ease;
