@@ -44,7 +44,8 @@
     width: 100%;
   }
   .code__icon {
-    font-size: 1rem;
+    color: var(--clr-goldenrod);
+    font-size: clamp(0.64rem, 1.5vw, 2rem);
   }
 }
 .my-code-language {

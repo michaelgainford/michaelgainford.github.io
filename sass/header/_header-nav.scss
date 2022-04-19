@@ -32,10 +32,10 @@
           align-items: center;
           background-color: transparent;
           border-right: 1px solid var(--clr-goldenrod);
-          color: white;
+          color: var(--clr-eigengrau-light);
           display: flex;
           flex-direction: column;
-          font-size: clamp(0.72rem, 2vw, 1rem);
+          font-size: clamp(0.72rem, 2vw, 0.92rem);
           font-weight: 400;
           justify-content: center;
           letter-spacing: 0.08rem;
