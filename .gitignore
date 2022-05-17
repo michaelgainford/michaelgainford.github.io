@@ -1,2 +1,9 @@
 # EXCLUDE THE FOLLOWING URLS
 desktop.ini
+.DS_Store
+node_modules/*
+images/.DS_Store
+node_modules/
+images/resources-logos/.DS_Store
+node_modules/.DS_Store
+sass/.DS_Store
