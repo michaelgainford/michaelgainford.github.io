@@ -453,7 +453,7 @@ header {
   color: var(--clr-grey-very-light);
   color: var(--clr-eigengrau-light);
   display: inline-block;
-  font-size: clamp(0.72rem, 1.5vw, 0.8rem);
+  font-size: clamp(0.76rem, 1.5vw, 0.84rem);
   font-weight: 500;
   letter-spacing: 0.08rem;
   padding: 1rem;
