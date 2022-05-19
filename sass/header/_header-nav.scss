@@ -62,7 +62,7 @@
             height: 100%;
             flex: 1 1 0px;
             padding: clamp(1rem, 5vh, 4rem);
-            transition-property: border-left;
+            transition-property: border-left-color;
             transition-duration: 1s;
             width: 100%;
             &.link__active {
