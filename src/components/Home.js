@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="home w-full flex flex-col md:flex-row bg-theme">
+    <div className="home w-full flex flex-col md:flex-row">
       <Header />
-      <div className="content-and-footer px-8 w-4/5">
-        <div className="main-content flex pt-32">
+      <div className="content-and-footer px-2 md:px-16 w-full md:w-4/5">
+        <div className="main-content flex pt-8 md:pt-32">
           <MyProjects />
         </div>
         <Footer />

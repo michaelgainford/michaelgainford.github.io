@@ -9,12 +9,12 @@ import { FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="logo-nav bg-theme h-screen w-1/5 sticky top-0">
+    <div className="logo-nav bg-theme md:h-screen w-full md:w-1/5 md:sticky md:top-0 grid auto-rows-auto">
       <MainLogo />
-      <nav className="nav-main max-h-full tracking-widest text-sm text-highlight">
+      <nav className="nav-main grid grid-cols-4 md:grid-cols-1 max-h-full tracking-widest text-xs md:text-sm text-highlight grid-flow-row auto-rows-max">
         <Link
           to="/"
-          className="lowercase border-t border-theme-alt hover:bg-theme-alt text-light text-center h-1/4 px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+          className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
         >
           <span className="text-highlight">
             <FaHome />
@@ -23,7 +23,7 @@ const Header = () => {
         </Link>
         <Link
           to="/code"
-          className="lowercase border-t border-theme-alt hover:bg-theme-alt text-light text-center h-1/4 px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+          className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
         >
           <span className="text-highlight">
             <FaCode />
@@ -32,7 +32,7 @@ const Header = () => {
         </Link>
         <Link
           to="/resources"
-          className="lowercase border-t border-theme-alt hover:bg-theme-alt text-light text-center h-1/4 px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+          className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
         >
           <span className="text-highlight">
             <FaTools />
@@ -41,7 +41,7 @@ const Header = () => {
         </Link>
         <Link
           to="/"
-          className="lowercase border-t border-theme-alt hover:bg-theme-alt text-light text-center h-1/4 px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+          className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
         >
           <span className="text-highlight">
             <FaTwitter />
