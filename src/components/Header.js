@@ -4,8 +4,6 @@ import { FaHome } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-//import { FaTwitter } from "react-icons/fa";
-//import { FaEnvelope } from "react-icons/fa";
 
 const Header = () => {
   return (
