@@ -6,7 +6,6 @@ const Header = () => {
     <div className="logo-nav bg-theme md:h-screen w-full md:w-1/5 md:sticky md:top-0 grid auto-rows-auto">
       <MainLogo />
       <HeaderNav />
-
     </div>
   );
 };

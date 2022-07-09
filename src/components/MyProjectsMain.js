@@ -44,9 +44,9 @@ const MyProjectsMain = () => {
                 <img
                   src={myProjectMain.image}
                   alt="template"
-                  className="w-full h-auto border-lg rounded-lg border-[8px] border-theme-alt hover:border-highlight opacity-60 hover:opacity-100 ease-in-out duration-500"
+                  className="w-full h-auto border-lg rounded-xl border-[8px] border-theme-alt hover:border-highlight opacity-60 hover:opacity-100 ease-in-out duration-500 z-10"
                 />
-                <p className="text-center lowercase text-light tracking-widest text-sm p-4 w-full ease-in-out duration-500">
+                <p className="text-center lowercase text-light tracking-widest text-sm p-4 -mt-12 w-full ease-in-out duration-500 -z-5s0">
                   {myProjectMain.projectName}
                 </p>
               </a>
