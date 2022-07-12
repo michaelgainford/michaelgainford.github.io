@@ -3,6 +3,7 @@ import imageFCC2 from "../assets/past-projects/landing-page-screenshot.webp";
 import imageFCC3 from "../assets/past-projects/survey-form-screenshot.webp";
 import imageFCC4 from "../assets/past-projects/tech-doc-page-screenshot.webp";
 import imageFCC5 from "../assets/past-projects/tribute-page-screenshot.webp";
+//import imagePlaceholder from "../assets/global-images/image-placeholder.png";
 
 const MyProjectsSub = () => {
   const myProjectsSubInfo = [
@@ -39,16 +40,16 @@ const MyProjectsSub = () => {
   ];
 
   return (
-    <div className="sub-projects pt-24">
-      <h3 className="text-center text-theme-alt text-4xl font-bold lowercase">
+    <div className="sub-projects pt-24 pb-16">
+      <h3 className="text-center text-theme-alt text-4xl font-bold lowercase mt-4 pb-4 mb-4 border-b-4 border-theme-alt w-fit mx-auto">
         Sub Projects
       </h3>
-      <div className="projects-wrapper grid grid-cols-3">
+      <div className="projects-wrapper grid md:grid-cols-3 p-4">
         {Object.values(myProjectsSubInfo).map((myProjectSub) => {
           return (
             <div
-              key="myProjectMain.id"
-              className="project p-2 md:p-16 md:hover:p-8 flex flex-col items-center mb-0 pb-4 hover:-mb-4 md:hover:pb-0 ease-in-out duration-500 rounded-xl border-2 border-transparent hover:border-theme-alt hover:bg-theme-alt lowercase hover:uppercase hover:gap-y-4"
+              key="myProjectSub.id"
+              className="project p-4 md:p-16 md:hover:p-8 flex flex-col justify-center items-center mb-0 hover:-mb-4 md:hover:pb-0 ease-in-out duration-500 rounded-xl border-2 border-transparent hover:border-theme-alt hover:bg-theme-alt lowercase hover:uppercase hover:gap-y-4"
             >
               <a href={myProjectSub.url}>
                 <img
