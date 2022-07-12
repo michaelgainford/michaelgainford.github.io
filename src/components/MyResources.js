@@ -7,8 +7,10 @@ const MyResources = () => {
       <h1 className="text-2xl text-highlight tracking-[0.36em] mb-16 text-right uppercase">
         Resources
       </h1>
-      <div className="border-solid border-2 border-orange-500 gap-y-4">
-        <p className="text-light">Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
+      <div className="gap-y-4 px-8">
+        <p className="text-light text-sm py-12">
+          Below is a selection of my favourite resources for all things web development.
+          </p>
         <MyResourcesCollection />
       </div>
     </div>
