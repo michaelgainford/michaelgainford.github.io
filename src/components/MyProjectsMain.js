@@ -47,7 +47,7 @@ const MyProjectsMain = () => {
                 <img
                   src={myProjectMain.image}
                   alt="template"
-                  className="w-full h-auto border-lg rounded-xl object-cover border-[8px] md:border-[12px] border-theme-alt hover:border-highlight opacity-60 hover:opacity-100 ease-in-out duration-500"
+                  className="w-full h-auto border-lg rounded-xl object-cover border-[8px] md:border-[12px] border-theme-alt hover:border-highlight opacity-60 hover:opacity-100 ease-in-out duration-500 hover:filter-none"
                 />
                 <p className="text-center lowercase tracking-widest text-sm p-2 sm:p-4 md:p-8 w-full">
                   {myProjectMain.projectName}

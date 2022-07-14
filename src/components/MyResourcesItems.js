@@ -6,7 +6,7 @@ const MyResourcesCollection = () => {
       id: 1,
       resourceName: "W3 Schools",
       resourceSlug: "w3-schools",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://www.w3schools.com/",
       resourceImage:
         "../images/resources/w3-schools/w3-schools-logo-200x200.png",
       resourceTags: ["code", "tutorials"],
@@ -15,51 +15,66 @@ const MyResourcesCollection = () => {
       id: 2,
       resourceName: "Codepen",
       resourceSlug: "codepen",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://codepen.io/",
       resourceImage: "../images/resources/codepen/codepen-logo-200x200.png",
+      resourceTags: ["code"],
     },
     {
       id: 3,
       resourceName: "Font Awesome",
       resourceSlug: "font-awesome",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://fontawesome.com/",
       resourceImage:
         "../images/resources/font-awesome/font-awesome-logo-200x200.png",
+      resourceTags: ["icons"],
     },
     {
       id: 4,
       resourceName: "Free Code Camp",
       resouceSlug: "free-code-camp",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://www.freecodecamp.org/",
       resourceImage: "../images/resources/free-code-camp/free-code-camp-logo-200x200.png",
+      resourceTags: ["code", "tutorials"],
     },
     {
       id: 5,
       resourceName: "GitHub",
       resouceSlug: "github",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://github.com/",
       resourceImage: "../images/resources/github/github-logo-200x200.png",
+      resourceTags: ["code", "repo"],
     },
     {
       id: 6,
       resourceName: "Google Fonts",
       resouceSlug: "google-fonts",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://fonts.google.com/",
       resourceImage: "../images/resources/google-fonts/google-fonts-logo-200x200.png",
+      resourceTags: ["code", "fonts"],
     },
     {
       id: 7,
       resourceName: "MDN",
       resouceSlug: "mdn",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://developer.mozilla.org/en-US/",
       resourceImage: "../images/resources/mdn/mdn-logo-200x200.png",
+      resourceTags: ["code", "docs"],
     },
     {
       id: 8,
       resourceName: "Twitter",
       resouceSlug: "twitter",
-      resourceUrl: "https://google.co.uk",
+      resourceUrl: "https://twitter.com/",
       resourceImage: "../images/resources/twitter/twitter-logo-200x200.png",
+      resourceTags: ["code", "tutorials", "networking"],
+    },
+    {
+      id: 9,
+      resourceName: "ReactJS",
+      resouceSlug: "react-js",
+      resourceUrl: "https://reactjs.org",
+      resourceImage: "../images/resources/twitter/twitter-logo-200x200.png",
+      resourceTags: ["code", "tutorials", "react"],
     },
   ];
   return (
@@ -67,12 +82,12 @@ const MyResourcesCollection = () => {
       {Object.values(myResourcesCollectionInfo).map((myResource) => {
         return (
           <div
-            key="myResource.id"
+            key="{myResource.id}"
             className="resource  text-light flex flex-col w-full justify-between items-center gap-4"
           >
             <a
               href={myResource.resourceUrl}
-              className="w-full flex flex-col items-center bg-theme hover:bg-theme-alt border-2 border-theme-alt rounded-2xl duration-500 transition ease-in-out"
+              className="w-full flex flex-col grayscale hover:grayscale-0 Sitems-center bg-theme hover:bg-theme-alt border-2 border-theme-alt rounded-2xl duration-500 transition ease-in-out"
             >
               <div className="resource-name w-full">
                 <h2 className="p-4 w-full text-center text-sm border-b-2 border-theme-alt">
@@ -88,7 +103,7 @@ const MyResourcesCollection = () => {
               </div>
             </a>
             <div className="p-0 text-xs">
-              <p>{myResource.resourceTags}</p>
+              <p><span>{myResource.resourceTags}</span></p>
             </div>
           </div>
         );

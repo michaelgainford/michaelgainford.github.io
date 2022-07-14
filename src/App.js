@@ -5,7 +5,7 @@ import Home from "../src/components/Home";
 
 function App() {
   return (
-    <div className="w-screen min-h-screen mx-auto flex flex-col lg:flex-row">
+    <div className="w-screen min-h-screen mx-auto flex flex-col lg:flex-row min-w-[300px]">
       <Home />
     </div>
   );
