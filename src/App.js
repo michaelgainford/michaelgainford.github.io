@@ -1,7 +1,5 @@
 import "./index.css";
-import Home from "../src/components/Home";
-
-//const projectsList = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
+import Home from "../src/pages/Home";
 
 function App() {
   return (

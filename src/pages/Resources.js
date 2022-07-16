@@ -1,6 +1,6 @@
-import Header from "../components/Header";
+import Header from "../layout/Header";
 import MyResources from "../components/MyResources";
-import Footer from "../components/Footer";
+import Footer from "../layout/Footer";
 
 const Resources = () => {
   return (

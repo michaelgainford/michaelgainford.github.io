@@ -1,5 +1,3 @@
-//import imagePlaceholder from "../assets/global-images/image-placeholder.png";
-
 const MyResourcesCollection = () => {
   const myResourcesCollectionInfo = [
     {
@@ -103,7 +101,9 @@ const MyResourcesCollection = () => {
               </div>
             </a>
             <div className="p-0 text-xs">
-              <p><span>{myResource.resourceTags}</span></p>
+              <p>
+                
+                <span>{myResource.resourceTags}</span></p>
             </div>
           </div>
         );

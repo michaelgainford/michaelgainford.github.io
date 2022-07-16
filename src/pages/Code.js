@@ -1,6 +1,6 @@
-import Header from "../components/Header";
+import Header from "../layout/Header";
 import MyCode from "../components/MyCode";
-import Footer from "../components/Footer";
+import Footer from "../layout/Footer";
 
 const Code = () => {
   return (

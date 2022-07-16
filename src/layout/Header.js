@@ -1,4 +1,4 @@
-import MainLogo from "./Logo";
+import MainLogo from "../components/Logo";
 import HeaderNav from "./HeaderNav";
 
 const Header = () => {
