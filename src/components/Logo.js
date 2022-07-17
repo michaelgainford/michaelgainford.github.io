@@ -7,7 +7,7 @@ const MainLogo = () => {
         <img
           src={Logo}
           alt="MG logo"
-          className="mx-auto my-0 md:my-16 p-6 w-32 md:w-36 h-auto"
+          className="mx-auto my-0 md:my-8 p-6 pb-0 w-24 md:w-36 h-auto"
         />
       </a>
     </div>

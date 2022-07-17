@@ -44,11 +44,11 @@ const MyProjectsSub = () => {
       <h3 className="text-center text-theme-alt text-4xl font-bold lowercase mt-4 pb-4 mb-4 border-b-4 border-theme-alt w-fit mx-auto">
         Sub Projects
       </h3>
-      <div className="projects-wrapper grid md:grid-cols-3 md:gap-4">
+      <div className="projects-wrapper grid lg:grid-cols-3 md:gap-4">
         {Object.values(myProjectsSubInfo).map((myProjectSub) => {
           return (
             <div
-              key="myProjectSub.id"
+              key={myProjectSub.id}
               className="project flex flex-col items-center mb-4 md:mb-8 hover:bg-theme-alt border-2 border-transparent hover:border-theme-alt rounded-xl ease-in-out duration-500 lowercase hover:uppercase"
             >
               <a href={myProjectSub.url} className="p-2 sm:p-8 md:p-8 text-light hover:text-highlight ease-in-out duration-500">
