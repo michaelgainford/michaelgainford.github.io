@@ -1,6 +1,5 @@
 import MyProjectsMain from "./MyProjectsMain";
 import MyProjectsSub from "./MyProjectsSub";
-import { Link } from "react-router-dom";
 
 const MyProjects = () => {
   return (

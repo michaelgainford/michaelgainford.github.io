@@ -1,7 +1,7 @@
 import Header from "../layout/Header";
 import MyProjects from "../components/MyProjects";
 import Footer from "../layout/Footer";
-import { Link } from "react-router-dom";
+
 //const page = "home";
 
 const Home = () => {
