@@ -6,7 +6,7 @@ const MyResourcesCollection = () => {
       resourceSlug: "w3-schools",
       resourceUrl: "https://www.w3schools.com/",
       resourceImage:
-        "../images/resources/w3-schools/w3-schools-logo-200x200.png",
+        "../assets/images__resources/w3-schools/w3-schools-logo-200x200.png",
       resourceTags: ["code", "tutorials"],
     },
     {
@@ -14,7 +14,7 @@ const MyResourcesCollection = () => {
       resourceName: "Codepen",
       resourceSlug: "codepen",
       resourceUrl: "https://codepen.io/",
-      resourceImage: "../images/resources/codepen/codepen-logo-200x200.png",
+      resourceImage: "../assets/images__resources/codepen/codepen-logo-200x200.png",
       resourceTags: ["code"],
     },
     {
@@ -23,7 +23,7 @@ const MyResourcesCollection = () => {
       resourceSlug: "font-awesome",
       resourceUrl: "https://fontawesome.com/",
       resourceImage:
-        "../images/resources/font-awesome/font-awesome-logo-200x200.png",
+        "../assets/images__resources/font-awesome/font-awesome-logo-200x200.png",
       resourceTags: ["icons"],
     },
     {
@@ -31,7 +31,7 @@ const MyResourcesCollection = () => {
       resourceName: "Free Code Camp",
       resouceSlug: "free-code-camp",
       resourceUrl: "https://www.freecodecamp.org/",
-      resourceImage: "../images/resources/free-code-camp/free-code-camp-logo-200x200.png",
+      resourceImage: "../assets/images__resources/free-code-camp/free-code-camp-logo-200x200.png",
       resourceTags: ["code", "tutorials"],
     },
     {
@@ -39,7 +39,7 @@ const MyResourcesCollection = () => {
       resourceName: "GitHub",
       resouceSlug: "github",
       resourceUrl: "https://github.com/",
-      resourceImage: "../images/resources/github/github-logo-200x200.png",
+      resourceImage: "../assets/images__resources/github/github-logo-200x200.png",
       resourceTags: ["code", "repo"],
     },
     {
@@ -47,7 +47,7 @@ const MyResourcesCollection = () => {
       resourceName: "Google Fonts",
       resouceSlug: "google-fonts",
       resourceUrl: "https://fonts.google.com/",
-      resourceImage: "../images/resources/google-fonts/google-fonts-logo-200x200.png",
+      resourceImage: "../assets/images__resources/google-fonts/google-fonts-logo-200x200.png",
       resourceTags: ["code", "fonts"],
     },
     {
@@ -55,7 +55,7 @@ const MyResourcesCollection = () => {
       resourceName: "MDN",
       resouceSlug: "mdn",
       resourceUrl: "https://developer.mozilla.org/en-US/",
-      resourceImage: "../images/resources/mdn/mdn-logo-200x200.png",
+      resourceImage: "../assets/images__resources/mdn/mdn-logo-200x200.png",
       resourceTags: ["code", "docs"],
     },
     {
@@ -63,7 +63,7 @@ const MyResourcesCollection = () => {
       resourceName: "Twitter",
       resouceSlug: "twitter",
       resourceUrl: "https://twitter.com/",
-      resourceImage: "../images/resources/twitter/twitter-logo-200x200.png",
+      resourceImage: "../assets/images__resources/twitter/twitter-logo-200x200.png",
       resourceTags: ["code", "tutorials", "networking"],
     },
     {
@@ -71,7 +71,7 @@ const MyResourcesCollection = () => {
       resourceName: "ReactJS",
       resouceSlug: "react-js",
       resourceUrl: "https://reactjs.org",
-      resourceImage: "../images/resources/twitter/twitter-logo-200x200.png",
+      resourceImage: "../assets/images__resources/twitter/twitter-logo-200x200.png",
       resourceTags: ["code", "tutorials", "react"],
     },
   ];
