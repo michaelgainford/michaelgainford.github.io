@@ -1,8 +1,8 @@
-import imageFCC1 from "../assets/past-projects/fcc-portfolio-screenshot.webp";
-import imageFCC2 from "../assets/past-projects/landing-page-screenshot.webp";
-import imageFCC3 from "../assets/past-projects/survey-form-screenshot.webp";
-import imageFCC4 from "../assets/past-projects/tech-doc-page-screenshot.webp";
-import imageFCC5 from "../assets/past-projects/tribute-page-screenshot.webp";
+import imageFCC1 from "../assets/images__past-projects/fcc-portfolio-screenshot.webp";
+import imageFCC2 from "../assets/images__past-projects/landing-page-screenshot.webp";
+import imageFCC3 from "../assets/images__past-projects/survey-form-screenshot.webp";
+import imageFCC4 from "../assets/images__past-projects/tech-doc-page-screenshot.webp";
+import imageFCC5 from "../assets/images__past-projects/tribute-page-screenshot.webp";
 //import imagePlaceholder from "../assets/global-images/image-placeholder.png";
 
 const MyProjectsSub = () => {

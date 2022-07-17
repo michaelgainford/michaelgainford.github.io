@@ -1,7 +1,7 @@
-import imagePlaceholder from "../assets/global-images/image-placeholder.png";
-import imageFairway from "../assets/past-projects/fairway-screenshot.webp";
-import imageGolfMem from "../assets/past-projects/golf-membership-screenshot.webp";
-import imageMakeUp from "../assets/past-projects/make-up-by-sophie-court-screenshot.webp";
+import imagePlaceholder from "../assets/images__templates/image-placeholder.png";
+import imageFairway from "../assets/images__past-projects/fairway-screenshot.webp";
+import imageGolfMem from "../assets/images__past-projects/golf-membership-screenshot.webp";
+import imageMakeUp from "../assets/images__past-projects/make-up-by-sophie-court-screenshot.webp";
 
 const MyProjectsMain = () => {
   const myProjectsMainInfo = [

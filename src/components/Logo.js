@@ -1,4 +1,4 @@
-import Logo from "../../src/assets/global-images/logo-white-gold.png";
+import Logo from "../../src/assets/images__global/logo-white-gold.png";
 
 const MainLogo = () => {
   return (
