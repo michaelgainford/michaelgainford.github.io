@@ -14,7 +14,8 @@ const MyResourcesCollection = () => {
       resourceName: "Codepen",
       resourceSlug: "codepen",
       resourceUrl: "https://codepen.io/",
-      resourceImage: "../assets/images__resources/codepen/codepen-logo-200x200.png",
+      resourceImage:
+        "../assets/images__resources/codepen/codepen-logo-200x200.png",
       resourceTags: ["code"],
     },
     {
@@ -31,7 +32,8 @@ const MyResourcesCollection = () => {
       resourceName: "Free Code Camp",
       resouceSlug: "free-code-camp",
       resourceUrl: "https://www.freecodecamp.org/",
-      resourceImage: "../assets/images__resources/free-code-camp/free-code-camp-logo-200x200.png",
+      resourceImage:
+        "../assets/images__resources/free-code-camp/free-code-camp-logo-200x200.png",
       resourceTags: ["code", "tutorials"],
     },
     {
@@ -39,7 +41,8 @@ const MyResourcesCollection = () => {
       resourceName: "GitHub",
       resouceSlug: "github",
       resourceUrl: "https://github.com/",
-      resourceImage: "../assets/images__resources/github/github-logo-200x200.png",
+      resourceImage:
+        "../assets/images__resources/github/github-logo-200x200.png",
       resourceTags: ["code", "repo"],
     },
     {
@@ -47,7 +50,8 @@ const MyResourcesCollection = () => {
       resourceName: "Google Fonts",
       resouceSlug: "google-fonts",
       resourceUrl: "https://fonts.google.com/",
-      resourceImage: "../assets/images__resources/google-fonts/google-fonts-logo-200x200.png",
+      resourceImage:
+        "../assets/images__resources/google-fonts/google-fonts-logo-200x200.png",
       resourceTags: ["code", "fonts"],
     },
     {
@@ -63,7 +67,8 @@ const MyResourcesCollection = () => {
       resourceName: "Twitter",
       resouceSlug: "twitter",
       resourceUrl: "https://twitter.com/",
-      resourceImage: "../assets/images__resources/twitter/twitter-logo-200x200.png",
+      resourceImage:
+        "../assets/images__resources/twitter/twitter-logo-200x200.png",
       resourceTags: ["code", "tutorials", "networking"],
     },
     {
@@ -71,7 +76,8 @@ const MyResourcesCollection = () => {
       resourceName: "ReactJS",
       resouceSlug: "react-js",
       resourceUrl: "https://reactjs.org",
-      resourceImage: "../assets/images__resources/twitter/twitter-logo-200x200.png",
+      resourceImage:
+        "../assets/images__resources/twitter/twitter-logo-200x200.png",
       resourceTags: ["code", "tutorials", "react"],
     },
   ];
@@ -102,8 +108,8 @@ const MyResourcesCollection = () => {
             </a>
             <div className="p-0 text-xs">
               <p>
-                
-                <span>{myResource.resourceTags}</span></p>
+                <span>{myResource.resourceTags}</span>
+              </p>
             </div>
           </div>
         );
