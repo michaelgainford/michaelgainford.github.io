@@ -1,3 +1,5 @@
+import imageW3Schools from "../assets/images__resources/w3-schools/w3-schools-logo-200x200.png";
+
 const MyResourcesCollection = () => {
   const myResourcesCollectionInfo = [
     {
@@ -5,8 +7,7 @@ const MyResourcesCollection = () => {
       resourceName: "W3 Schools",
       resourceSlug: "w3-schools",
       resourceUrl: "https://www.w3schools.com/",
-      resourceImage:
-        "../assets/images__resources/w3-schools/w3-schools-logo-200x200.png",
+      resourceImage: imageW3Schools,
       resourceTags: ["code", "tutorials"],
     },
     {
@@ -106,7 +107,7 @@ const MyResourcesCollection = () => {
                 />
               </div>
             </a>
-            <div className="p-0 text-xs">
+            <div className="text-xs">
               <p>
                 <span>{myResource.resourceTags}</span>
               </p>
