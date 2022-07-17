@@ -1,5 +1,5 @@
 import MainLogo from "../components/Logo";
-import HeaderNav from "./HeaderNav";
+import HeaderNav from "../components/HeaderNav";
 
 const Header = () => {
   return (

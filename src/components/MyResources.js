@@ -1,4 +1,3 @@
-//import imagePlaceholder from "../assets/global-images/image-placeholder.png";
 import MyResourcesCollection from "../data/MyResourcesItems";
 
 const MyResources = () => {
