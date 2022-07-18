@@ -4,7 +4,7 @@ import ImageFCC3 from "../assets/images__past-projects/survey-form-screenshot.we
 import ImageFCC4 from "../assets/images__past-projects/tech-doc-page-screenshot.webp";
 import ImageFCC5 from "../assets/images__past-projects/tribute-page-screenshot.webp";
 
-const subProjectsData = [
+const SubProjectsData = [
   {
     id: 1,
     projectName: "Portfolio",
@@ -37,4 +37,4 @@ const subProjectsData = [
   },
 ];
 
-export default subProjectsData;
+export default SubProjectsData;

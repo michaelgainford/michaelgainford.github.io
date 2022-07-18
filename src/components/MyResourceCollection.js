@@ -1,7 +1,6 @@
 import ResourcesData from "../data/ResourcesData";
 
 const MyResourcesCollection = () => {
-
   return (
     <div className="resource-collection w-full grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-16 px-8 md:px-0">
       {Object.values(ResourcesData).map((myResource) => {
