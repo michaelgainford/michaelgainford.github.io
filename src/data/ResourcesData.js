@@ -1,24 +1,24 @@
-import imageW3Schools from "../assets/images__resources/w3-schools-logo.png";
-import imageCodepen from "../assets/images__resources/codepen-logo.png";
-import imageFontAwesome from "../assets/images__resources/font-awesome-logo.png";
-import imageFreeCodeCamp from "../assets/images__resources/free-code-camp-logo.png";
-import imageGitHub from "../assets/images__resources/github-logo.png";
-import imageGoogleFonts from "../assets/images__resources/google-fonts-logo.png";
-import imageMDN from "../assets/images__resources/mdn-logo.png";
-import imageTwitter from "../assets/images__resources/twitter-logo.png";
-import imageReactJS from "../assets/images__resources/react-js-logo.png";
-import imageYouTube from "../assets/images__resources/youtube-logo.png";
-import imageLinkedIn from "../assets/images__resources/linkedin.png";
-import imageGoogleAnalytics from "../assets/images__resources/google-analytics-logo.png";
-import imageGoogleDomains from "../assets/images__resources/google-domains-logo.png";
+import ImageW3Schools from "../assets/images__resources/w3-schools-logo.png";
+import ImageCodepen from "../assets/images__resources/codepen-logo.png";
+import ImageFontAwesome from "../assets/images__resources/font-awesome-logo.png";
+import ImageFreeCodeCamp from "../assets/images__resources/free-code-camp-logo.png";
+import ImageGitHub from "../assets/images__resources/github-logo.png";
+import ImageGoogleFonts from "../assets/images__resources/google-fonts-logo.png";
+import ImageMDN from "../assets/images__resources/mdn-logo.png";
+import ImageTwitter from "../assets/images__resources/twitter-logo.png";
+import ImageReactJS from "../assets/images__resources/react-js-logo.png";
+import ImageYouTube from "../assets/images__resources/youtube-logo.png";
+import ImageLinkedIn from "../assets/images__resources/linkedin.png";
+import ImageGoogleAnalytics from "../assets/images__resources/google-analytics-logo.png";
+import ImageGoogleDomains from "../assets/images__resources/google-domains-logo.png";
 
-const resourcesData = [
+const ResourcesData = [
     {
       id: 1,
       resourceName: "W3 Schools",
       resourceSlug: "w3-schools",
       resourceUrl: "https://www.w3schools.com/",
-      resourceImage: imageW3Schools,
+      resourceImage: ImageW3Schools,
       resourceTags: ["code", "tutorials"],
     },
     {
@@ -26,7 +26,7 @@ const resourcesData = [
       resourceName: "Codepen",
       resourceSlug: "codepen",
       resourceUrl: "https://codepen.io/",
-      resourceImage: imageCodepen,
+      resourceImage: ImageCodepen,
       resourceTags: ["code"],
     },
     {
@@ -34,7 +34,7 @@ const resourcesData = [
       resourceName: "Font Awesome",
       resourceSlug: "font-awesome",
       resourceUrl: "https://fontawesome.com/",
-      resourceImage: imageFontAwesome,
+      resourceImage: ImageFontAwesome,
       resourceTags: ["icons"],
     },
     {
@@ -42,7 +42,7 @@ const resourcesData = [
       resourceName: "Free Code Camp",
       resouceSlug: "free-code-camp",
       resourceUrl: "https://www.freecodecamp.org/",
-      resourceImage: imageFreeCodeCamp,
+      resourceImage: ImageFreeCodeCamp,
       resourceTags: ["code", "tutorials"],
     },
     {
@@ -50,7 +50,7 @@ const resourcesData = [
       resourceName: "GitHub",
       resouceSlug: "github",
       resourceUrl: "https://github.com/",
-      resourceImage: imageGitHub,
+      resourceImage: ImageGitHub,
       resourceTags: ["code", "repo"],
     },
     {
@@ -58,7 +58,7 @@ const resourcesData = [
       resourceName: "Google Fonts",
       resouceSlug: "google-fonts",
       resourceUrl: "https://fonts.google.com/",
-      resourceImage: imageGoogleFonts,
+      resourceImage: ImageGoogleFonts,
       resourceTags: ["code", "fonts"],
     },
     {
@@ -66,7 +66,7 @@ const resourcesData = [
       resourceName: "MDN",
       resouceSlug: "mdn",
       resourceUrl: "https://developer.mozilla.org/en-US/",
-      resourceImage: imageMDN,
+      resourceImage: ImageMDN,
       resourceTags: ["code", "docs"],
     },
     {
@@ -74,7 +74,7 @@ const resourcesData = [
       resourceName: "Twitter",
       resouceSlug: "twitter",
       resourceUrl: "https://twitter.com/",
-      resourceImage: imageTwitter,
+      resourceImage: ImageTwitter,
       resourceTags: ["code", "tutorials", "networking"],
     },
     {
@@ -82,7 +82,7 @@ const resourcesData = [
       resourceName: "ReactJS",
       resouceSlug: "react-js",
       resourceUrl: "https://reactjs.org",
-      resourceImage: imageReactJS,
+      resourceImage: ImageReactJS,
       resourceTags: ["code", "tutorials", "react", "docs"],
     },
     {
@@ -90,7 +90,7 @@ const resourcesData = [
       resourceName: "YouTube",
       resouceSlug: "youtube",
       resourceUrl: "https://youtube.com",
-      resourceImage: imageYouTube,
+      resourceImage: ImageYouTube,
       resourceTags: ["tutorials", "react", "docs"],
     },
     {
@@ -98,7 +98,7 @@ const resourcesData = [
       resourceName: "LinkedIn",
       resouceSlug: "linkedin",
       resourceUrl: "https://linkedin.com",
-      resourceImage: imageLinkedIn,
+      resourceImage: ImageLinkedIn,
       resourceTags: ["networking", "work"],
     },
     {
@@ -106,7 +106,7 @@ const resourcesData = [
       resourceName: "Google Analytics",
       resouceSlug: "google-analytics",
       resourceUrl: "https://analytics.google.com",
-      resourceImage: imageGoogleAnalytics,
+      resourceImage: ImageGoogleAnalytics,
       resourceTags: ["webmaster"],
     },
     {
@@ -114,9 +114,9 @@ const resourcesData = [
       resourceName: "Google Domains",
       resouceSlug: "google-domains",
       resourceUrl: "https://domains.google.com",
-      resourceImage: imageGoogleDomains,
+      resourceImage: ImageGoogleDomains,
       resourceTags: ["webmaster"],
     },    
   ];
 
-  export default resourcesData;
+  export default ResourcesData;

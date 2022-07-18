@@ -1,6 +1,6 @@
 import Logo from "../../src/assets/images__global/logo-white-gold.png";
 
-const MainLogo = () => {
+const HeaderLogo = () => {
   return (
     <div className="logo">
       <a className="mx-auto flex justify-center p-4" href="/">
@@ -14,4 +14,4 @@ const MainLogo = () => {
   );
 };
 
-export default MainLogo;
+export default HeaderLogo;

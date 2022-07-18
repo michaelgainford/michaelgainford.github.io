@@ -1,4 +1,4 @@
-const myCodeData = [
+const CodeData = [
     {
       id: 1,
       codeTitle: "HTML Boilerplate",
@@ -79,4 +79,4 @@ const myCodeData = [
     },
   ];
 
-  export default myCodeData;
+  export default CodeData;
