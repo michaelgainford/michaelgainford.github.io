@@ -1,4 +1,4 @@
-import MyResourcesCollection from "../data/MyResourcesItems";
+import MyResourcesCollection from "./MyResourceCollection";
 
 const MyResources = () => {
   return (

@@ -1,0 +1,82 @@
+const myCodeData = [
+    {
+      id: 1,
+      codeTitle: "HTML Boilerplate",
+      codeSegments: [
+        "<!DOCTYPE html>",
+        '  <html lang="en">',
+        "  <head>",
+        '    <meta charset="UTF-8">',
+        '    <meta http-equiv="X-UA-Compatible" content="IE=edge">',
+        '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        "    <title>Document</title>",
+        "  </head>",
+        "  <body>",
+        "    Body content goes here",
+        "  </body>",
+        "</html>",
+      ],
+      codeTag: "html",
+    },
+    {
+      id: 2,
+      codeTitle: "Minimal CSS Reset",
+      codeSegments: [
+        "*,",
+        "*::before,",
+        "*::after,",
+        "{",
+        " box-sizing: border-box;",
+        " margin: 0;",
+        " padding: 0;",
+        "}",
+      ],
+      codeTag: "css",
+    },
+    {
+      id: 3,
+      codeTitle: "Responsive Images (CSS)",
+      codeSegments: ["img {", "  height: auto;", "  width: 100%;", "}"],
+      codeTag: "css",
+    },
+    {
+      id: 4,
+      codeTitle: "Check if a number is even",
+      codeSegments: [
+        "const isEven = num => num % 2 === 0;",
+        " console.log(isEven(2));",
+      ],
+      codeTag: "javascript",
+    },
+    {
+      id: 5,
+      codeTitle: "Database connection",
+      codeSegments: [
+        "$conn = mysqli_connect('localhost', 'root', 'USERNAME','PASSWORD');",
+        " if (mysqli_connect_errno())",
+        " {",
+        '  "echo "Failed to connect to MYSQL: " . mysqli_connect_error();',
+        " }",
+      ],
+      codeTag: "mysql",
+    },
+    {
+      id: 6,
+      codeTitle: "Time-based welcome message",
+      codeSegments: [
+        "function welcome_message() {",
+        '$t = date("H")-1;',
+        "if ($t < 12) {",
+        'echo "Good Morning";',
+        "}",
+        "else if ($t < 17) {",
+        'echo "Good Afternoon";',
+        "}",
+        'else { echo "Good Evening"; }',
+        "}",
+      ],
+      codeTag: "php",
+    },
+  ];
+
+  export default myCodeData;

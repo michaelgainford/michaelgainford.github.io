@@ -1,5 +1,5 @@
-import MyProjectsMain from "./MyProjectsMain";
-import MyProjectsSub from "./MyProjectsSub";
+import MyProjectsMain from "../data/MainProjectsData";
+import MyProjectsSub from "../data/SubProjectsData";
 
 const MyProjects = () => {
   return (
