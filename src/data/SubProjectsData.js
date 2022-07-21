@@ -9,31 +9,31 @@ const SubProjectsData = [
     id: 1,
     projectName: "Portfolio",
     url: "https://codepen.io/michaelgainford/full/JjJKmJL",
-    Image: ImageFCC1,
+    image: ImageFCC1,
   },
   {
     id: 2,
     projectName: "Landing page",
     url: "https://codepen.io/michaelgainford/full/WNOxajv",
-    Image: ImageFCC2,
+    image: ImageFCC2,
   },
   {
     id: 3,
     projectName: "Survey form",
     url: "https://codepen.io/michaelgainford/full/vYZKVgQ",
-    Image: ImageFCC3,
+    image: ImageFCC3,
   },
   {
     id: 4,
     projectName: "Tech Doc page",
     url: "https://codepen.io/michaelgainford/full/YzQWJVJ",
-    Image: ImageFCC4,
+    image: ImageFCC4,
   },
   {
     id: 5,
     projectName: "Tribute page",
     url: "https://codepen.io/michaelgainford/full/YzQWJxR",
-    Image: ImageFCC5,
+    image: ImageFCC5,
   },
 ];
 

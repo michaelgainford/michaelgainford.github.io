@@ -34,8 +34,7 @@ const HeaderNav = () => {
         </span>
         Resources
       </Link>
-      <Link
-        to="/"
+      <Link to="/"
         className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
       >
         <span className="text-highlight">
