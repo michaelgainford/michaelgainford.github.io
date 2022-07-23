@@ -4,9 +4,9 @@ const SubProjects = () => {
   return (
     <div className="sub-projects flex flex-col">
       <div className="projects-wrapper flex flex-col">
-          <h3 className="text-center text-theme-alt text-4xl font-bold lowercase mt-4 pb-4 mb-4 border-b-4 border-theme-alt w-fit mx-auto">
+          <h2 className="text-center text-theme-alt text-4xl font-bold lowercase mt-4 pb-4 mb-4 border-b-4 border-theme-alt w-fit mx-auto">
             Sub Projects
-          </h3>
+          </h2>
           <div className="projects-wrapper grid lg:grid-cols-3 md:gap-4 sm:px-4 lg:px-0">
             {Object.values(MyProjectsSub).map((myProjectSub) => {
               return (

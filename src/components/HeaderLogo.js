@@ -2,7 +2,7 @@ import Logo from "../../src/assets/images__global/logo-white-gold.png";
 
 const HeaderLogo = () => {
   return (
-    <div className="logo">
+    <div className="logo max-h-[16rem] xl:max-h-[24rem]">
       <a className="mx-auto flex justify-center p-4" href="/">
         <img
           src={Logo}
