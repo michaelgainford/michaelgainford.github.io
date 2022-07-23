@@ -3,14 +3,14 @@ import MyCodeData from "../data/CodeData";
 const MyCode = () => {
 
   return (
-    <div className="flex flex-col gap-4 w-full border-cyan-500">
+    <div className="flex flex-col gap-4 w-full">
       <h1 className="text-base md:text-2xl text-highlight tracking-[0.24em] md:tracking-[0.36em] mb-8 md:mb-16 mt-8 text-center md:text-right uppercase">
         Code
       </h1>
       <p className="text-light text-xs md:text-sm p-4 lg: py-8 px-8 mt-8 mb-16 border border-theme-alt hover:border-highlight rounded-xl bg-theme tracking-widest leading-6 md:leading-8">
         This is a page dedicated to useful code snippets for all aspects of web development.
       </p>
-      <div className="border-solid border-orange-500 gap-y-12">
+      <div className="gap-y-12">
         <div className="code-snippets gap-4 lg:gap-x-8 lg:gap-y-8 flex flex-col md:flex-row flex-wrap w-full lg:justify-around pb-24">
           {Object.values(MyCodeData).map((myCodeSnippet) => {
             return (

@@ -2,7 +2,7 @@ import MyProjectsMain from "../data/MainProjectsData";
 
 const MainProjects = () => {
   return (
-    <div className="main-projects">
+    <div className="main-projects border-red-500 border">
       <div className="projects-wrapper grid lg:grid-cols-2 px-8 md:px-0">
         {Object.values(MyProjectsMain).map((myProjectMain) => {
           return (
