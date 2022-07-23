@@ -7,9 +7,9 @@ import ImageFCC5 from "../assets/images__past-projects/tribute-page-screenshot.w
 const SubProjectsData = [
   {
     id: 1,
-    projectName: "Portfolio Template",
-    url: "https://codepen.io/michaelgainford/full/JjJKmJL",
-    image: ImageFCC1,
+    projectName: "Tech Doc page",
+    url: "https://codepen.io/michaelgainford/full/YzQWJVJ",
+    image: ImageFCC4,
   },
   {
     id: 2,
@@ -25,15 +25,15 @@ const SubProjectsData = [
   },
   {
     id: 4,
-    projectName: "Tech Doc page",
-    url: "https://codepen.io/michaelgainford/full/YzQWJVJ",
-    image: ImageFCC4,
-  },
-  {
-    id: 5,
     projectName: "Tribute page",
     url: "https://codepen.io/michaelgainford/full/YzQWJxR",
     image: ImageFCC5,
+  },
+  {
+    id: 5,
+    projectName: "Portfolio Template",
+    url: "https://codepen.io/michaelgainford/full/JjJKmJL",
+    image: ImageFCC1,
   },
 ];
 
