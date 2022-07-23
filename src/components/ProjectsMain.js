@@ -3,7 +3,7 @@ import MyProjectsMain from "../data/MainProjectsData";
 const MainProjects = () => {
   return (
     <div className="main-project">
-      <div className="projects-wrapper grid lg:grid-cols-2 px-8 md:px-0">
+      <div className="projects-wrapper grid lg:grid-cols-2 px-4 lg:px-8 mb-8 md:px-0">
         {Object.values(MyProjectsMain).map((myProjectMain) => {
           return (
             <div
@@ -12,7 +12,7 @@ const MainProjects = () => {
             >
               <a
                 href={myProjectMain.url}
-                className="p-2 sm:p-8 md:p-16 md:pb-0 hover:md:p-8 hover:md:pb-0 text-light hover:text-highlight ease-in-out duration-500"
+                className="p-2 sm:p-4 lg:p-8 xl:p-16 md:pb-0 hover:md:p-8 hover:md:pb-0 text-light hover:text-highlight ease-in-out duration-500"
               >
                 <img
                   src={myProjectMain.image}

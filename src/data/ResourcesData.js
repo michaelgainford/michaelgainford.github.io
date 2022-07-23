@@ -11,6 +11,8 @@ import ImageYouTube from "../assets/images__resources/youtube-logo.png";
 import ImageLinkedIn from "../assets/images__resources/linkedin.png";
 import ImageGoogleAnalytics from "../assets/images__resources/google-analytics-logo.png";
 import ImageGoogleDomains from "../assets/images__resources/google-domains-logo.png";
+import ImageWebDev from "../assets/images__resources/web-dev.png";
+import ImageSmashingMagazine from "../assets/images__resources/smashing-magazine.png";
 
 const ResourcesData = [
     {
@@ -116,7 +118,23 @@ const ResourcesData = [
       resourceUrl: "https://domains.google.com",
       resourceImage: ImageGoogleDomains,
       resourceTags: ["webmaster"],
-    },    
+    },
+    {
+      id: 14,
+      resourceName: "web.dev",
+      resouceSlug: "web-dev",
+      resourceUrl: "https://web.dev/",
+      resourceImage: ImageWebDev,
+      resourceTags: ["docs"],
+    },
+    {
+      id: 15,
+      resourceName: "Smashing Magazine",
+      resouceSlug: "smashing-magazine",
+      resourceUrl: "https://www.smashingmagazine.com/",
+      resourceImage: ImageSmashingMagazine,
+      resourceTags: ["docs"],
+    },      
   ];
 
   export default ResourcesData;

@@ -7,7 +7,7 @@ import ImageFCC5 from "../assets/images__past-projects/tribute-page-screenshot.w
 const SubProjectsData = [
   {
     id: 1,
-    projectName: "Portfolio",
+    projectName: "Portfolio Template",
     url: "https://codepen.io/michaelgainford/full/JjJKmJL",
     image: ImageFCC1,
   },

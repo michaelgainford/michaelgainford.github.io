@@ -11,7 +11,7 @@ const MyResourcesCollection = () => {
           >
             <a
               href={myResource.resourceUrl}
-              className="w-full flex flex-col md:grayscale hover:grayscale-0 Sitems-center bg-theme hover:bg-theme-alt border-2 border-theme-alt rounded-2xl duration-500 transition ease-in-out text-highlight pb-8 lg:pb-0"
+              className="w-full flex flex-col md:grayscale hover:grayscale-0 items-center bg-theme hover:bg-theme-alt border-2 border-theme-alt rounded-2xl hover:rounded-none duration-500 transition ease-in-out text-highlight pb-8 lg:pb-0"
             >
               <div className="resource-name w-full">
                 <h2 className="p-4 w-full text-center text-sm text-light md:text-highlight uppercase border-b-2 border-theme-alt tracking-normal">
@@ -22,7 +22,7 @@ const MyResourcesCollection = () => {
                 <img
                   src={myResource.resourceImage}
                   alt={myResource.resourceName}
-                  className="h-20 w-20 hover:h-24 hover:w-24 mx-auto ease-in-out transition-all duration-500"
+                  className="h-20 w-20 mx-auto ease-in-out transition-all duration-500"
                 />
               </div>
             </a>
@@ -30,7 +30,7 @@ const MyResourcesCollection = () => {
               <p className="text-theme-tint flex flex-wrap justify-center items-start h-full">
                 {Object.values(myResource.resourceTags).map((resourceTag) => {
                   return (
-                    <span className="p-2 border inline-flex items-center justify-center flex-row flex-wrap border-theme-alt text-[10px] hover:text-sm transition-all duration-300 ease-in-out rounded text-light bg-theme mx-2 hover:bg-highlight hover:text-theme">
+                    <span className="p-2 border inline-flex items-center justify-center flex-row flex-wrap border-theme-alt text-[10px] hover:text-sm transition-all duration-300 mb-2 ease-in-out rounded text-light bg-theme mx-2 hover:bg-highlight hover:text-theme">
                       {resourceTag}
                     </span>
                   );

@@ -23,7 +23,7 @@ const SubProjects = () => {
                       alt="template"
                       className="w-full h-auto border-lg rounded-xl object-cover border-[4px] md:border-[6px] border-theme-alt hover:border-highlight lg:opacity-60 hover:opacity-100 ease-in-out duration-500"
                     />
-                    <p className="text-center lowercase tracking-widest text-sm p-2 sm:p-4 md:p-8 w-full">
+                    <p className="text-center lowercase tracking-widest text-sm p-2 sm:p-4 md:p-8 md:pb-0 w-full">
                       {myProjectSub.projectName}
                     </p>
                   </a>
