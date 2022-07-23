@@ -1,8 +1,7 @@
 import Header from "../layout/Header";
+import ProjectsMain from "../components/ProjectsMain";
+import ProjectsSub from "../components/ProjectsSub";
 import Footer from "../layout/Footer";
-import MainProjects from "../components/MainProjects";
-import SubProjects from "../components/SubProjects";
-
 //const page = "home";
 
 const Home = () => {
@@ -38,8 +37,8 @@ const Home = () => {
               </a>
               .
             </p>
-            <MainProjects />
-            <SubProjects />
+            <ProjectsMain />
+            <ProjectsSub />
           </div>
         </div>
         <Footer />
