@@ -6,10 +6,10 @@ import { FaTwitter } from "react-icons/fa";
 
 const HeaderNav = () => {
   return (
-    <nav className="nav-main grid grid-cols-4 md:grid-cols-1 max-h-full tracking-widest text-xs font-light lg:text-sm text-highlight md:grid-rows-4 grid-flow-row auto-rows-max">
+    <nav className="nav-main grid grid-cols-4 md:grid-cols-1 h-full tracking-widest text-xs font-light lg:text-sm text-highlight md:grid-rows-4 grid-flow-row auto-rows-max">
       <Link
         to="/"
-        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500 gap-y-1"
+        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 xxl:py-16 flex flex-col justify-center items-center ease-in-out duration-500 gap-y-1"
       >
         <span className="text-highlight">
           <FaHome />
@@ -18,7 +18,7 @@ const HeaderNav = () => {
       </Link>
       <Link
         to="/code"
-        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 xxl:py-16 flex flex-col justify-center items-center ease-in-out duration-500"
       >
         <span className="text-highlight">
           <FaCode />
@@ -27,7 +27,7 @@ const HeaderNav = () => {
       </Link>
       <Link
         to="/resources"
-        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 xxl:py-16 flex flex-col justify-center items-center ease-in-out duration-500"
       >
         <span className="text-highlight">
           <FaTools />
@@ -35,7 +35,7 @@ const HeaderNav = () => {
         Resources
       </Link>
       <Link to="/"
-        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 flex flex-col justify-center items-center ease-in-out duration-500"
+        className="lowercase md:border-t border-theme-alt hover:bg-theme-alt text-light text-center px-4 py-12 xxl:py-16 flex flex-col justify-center items-center ease-in-out duration-500"
       >
         <span className="text-highlight">
           <FaTwitter />
