@@ -3,7 +3,7 @@ import Logo from "../../src/assets/images__global/logo-white-gold.png";
 const HeaderLogo = () => {
   return (
     <div className="logo flex flex-col justify-center">
-      <a className="mx-auto flex flex-col justify-center w-full h-full" href="/">
+      <a className="mx-auto flex flex-col justify-center w-full h-full mt-4 lg:mt-0" href="/">
         <img
           src={Logo}
           alt="MG logo"
