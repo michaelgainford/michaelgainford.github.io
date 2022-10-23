@@ -26,3 +26,5 @@ package-lock.json# See https://help.github.com/articles/ignoring-files/ for more
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/next
