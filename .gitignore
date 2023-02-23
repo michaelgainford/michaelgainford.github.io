@@ -1,6 +1,0 @@
-# EXCLUDE THE FOLLOWING URLS
-desktop.ini
-.DS_Store
-node_modules
-node_modules/
-package-lock.json
