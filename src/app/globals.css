@@ -109,3 +109,8 @@ a {
     color-scheme: dark;
   }
 }
+
+.dvh-full {
+  height: 100dvh;
+  height: 100vh;
+}
