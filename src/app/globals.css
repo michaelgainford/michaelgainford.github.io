@@ -114,3 +114,9 @@ a {
   height: 100dvh;
   height: 100vh;
 }
+
+@layer components {
+  .resource-links li {
+    @apply border border-red-400;
+  }
+}
