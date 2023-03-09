@@ -1,121 +1,174 @@
-import Image from "next/image";
+//import Image from "next/image";
+import Sidebar from "./components/sidebar";
 //import { Inter } from '@next/font/google'
-
 //const inter = Inter({ subsets: ['latin'] })
+
+const ResourceData = [
+  {
+    id: 1,
+    resourceName: "GitHub",
+    resourceUrl: "https://www.github.com",
+    resourceDetails: "The world's number one code repository.",
+    resourceTags: ["git", "version control", "code"],
+  },
+  {
+    id: 2,
+    resourceName: "MDN",
+    resourceUrl: "https://mdn.dev",
+    resourceTags: ["docs", "web dev"],
+  },
+  {
+    id: 3,
+    resourceName: "W3 Schools",
+    resourceUrl: "https://www.w3schools.com",
+    resourceTags: ["docs", "web dev"],
+  },
+  {
+    id: 4,
+    resourceName: "CSS Tricks",
+    resourceUrl: "https://css-tricks.com/",
+    resourceTags: ["css", "docs", "web dev"],
+  },
+  {
+    id: 5,
+    resourceName: "CodePen",
+    resourceUrl: "https://codepen.io/",
+    resourceTags: ["code", "web dev"],
+  },
+  {
+    id: 6,
+    resourceName: "Stack Overflow",
+    resourceUrl: "https://stackoverflow.com/",
+    resourceTags: ["code", "web dev"],
+  },
+  {
+    id: 7,
+    resourceName: "Can I Use",
+    resourceUrl: "https://caniuse.com/",
+    resourceTags: ["code", "web dev"],
+  },
+  {
+    id: 8,
+    resourceName: "Google Fonts",
+    resourceUrl: "https://fonts.google.com/",
+    resourceTags: ["fonts", "web dev"],
+  },
+  {
+    id: 9,
+    resourceName: "Font Awesome",
+    resourceUrl: "https://fontawesome.com/",
+    resourceTags: ["fonts", "web dev"],
+  },
+  {
+    id: 10,
+    resourceName: "Google Analytics",
+    resourceUrl: "https://analytics.google.com/",
+    resourceTags: ["analytics", "web dev"],
+  },
+  {
+    id: 11,
+    resourceName: "Coolors",
+    resourceUrl: "https://coolors.co/",
+    resourceTags: ["colors", "web dev"],
+  },
+  {
+    id: 12,
+    resourceName: "Web.dev",
+    resourceUrl: "https://web.dev/",
+    resourceTags: ["web dev"],
+  },
+  {
+    id: 13,
+    resourceName: "Google Lighthouse",
+    resourceUrl: "https://developers.google.com/web/tools/lighthouse",
+    resourceTags: ["web dev"],
+  },
+  {
+    id: 14,
+    resourceName: "Google Search Console",
+    resourceUrl: "https://search.google.com/search-console/about",
+    resourceTags: ["web dev"],
+  },
+  {
+    id: 15,
+    resourceName: "Google PageSpeed Insights",
+    resourceUrl: "https://developers.google.com/speed/pagespeed/insights/",
+    resourceTags: ["web dev"],
+  },
+  {
+    id: 16,
+    resourceName: "Free Code Camp",
+    resourceUrl: "https://www.freecodecamp.org/",
+    resourceTags: ["code", "web dev"],
+  },
+  {
+    id: 17,
+    resourceName: "Codecademy",
+    resourceUrl: "https://www.codecademy.com/",
+    resourceTags: ["code", "web dev"],
+  },
+  {
+    id: 18,
+    resourceName: "Udemy",
+    resourceUrl: "https://www.udemy.com/",
+    resourceTags: ["code", "web dev"],
+  },
+  {
+    id: 19,
+    resourceName: "Burst",
+    resourceUrl: "https://burst.shopify.com/",
+    resourceTags: ["images", "web dev"],
+  },
+  {
+    id: 20,
+    resourceName: "Unsplash",
+    resourceUrl: "https://unsplash.com/",
+    resourceTags: ["images", "web dev"],
+  },
+];
 
 export default function Home() {
   return (
     <div className="grid grid-cols-12">
-      <div className="sidebar h-screen col-span-1">
-        <ul className="grid dvh-full">
-          <li className="flex justify-center items-center">
-            <Image
-              src="/m-grey-placeholder.png"
-              alt="Vercel Logo"
-              className="logo h-12 w-12 fill-red-500"
-              width={48}
-              height={48}
-              priority
-            />
-          </li>
-          <li className="flex justify-center items-center">
-            <Image
-              src="/m-grey-placeholder.png"
-              alt="Vercel Logo"
-              className="logo h-12 w-12 fill-red-500"
-              width={48}
-              height={48}
-              priority
-            />
-          </li>
-          <li className="flex justify-center items-center">
-            <Image
-              src="/m-grey-placeholder.png"
-              alt="Vercel Logo"
-              className="logo h-12 w-12 fill-red-500"
-              width={48}
-              height={48}
-              priority
-            />
-          </li>
-          <li className="flex justify-center items-center">
-            <Image
-              src="/m-grey-placeholder.png"
-              alt="Vercel Logo"
-              className="logo h-12 w-12 fill-red-500"
-              width={48}
-              height={48}
-              priority
-            />
-          </li>
-          <li className="flex justify-center items-center">
-            <Image
-              src="/m-grey-placeholder.png"
-              alt="Vercel Logo"
-              className="logo h-12 w-12 fill-red-500"
-              width={48}
-              height={48}
-              priority
-            />
-          </li>
-          <li className="flex justify-center items-center">
-            <Image
-              src="/m-grey-placeholder.png"
-              alt="Vercel Logo"
-              className="logo h-12 w-12 fill-red-500"
-              width={48}
-              height={48}
-              priority
-            />
-          </li>
-        </ul>
-      </div>
-      <div className="content min-h-screen border border-green-500 col-span-11">
-        <div className="header-bar w-full p-8 border border-red-500">
-          <h1 class="text-2xl text-slate-400 font-medium text-center">
-            Useful Code
+      <Sidebar />
+      <div className="content min-h-screen col-span-11 lg:px-16">
+        <div className="header-bar w-full p-8">
+          <h1 className="text-2xl text-slate-400 text-center uppercase font-light tracking-wide">
+            All things code
           </h1>
         </div>
         <div className="actual-content p-8">
           <div>
-            <ul className="resource-links grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-              <li className="bg-slate-800 rounded-lg p-4 min-h-[120px] text-white flex items-center justify-center">
-                List Item
-              </li>
-            </ul>
+            <div className="resource-links grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8">
+              {ResourceData.map((individualResource) => (
+                <a
+                  className="resource-link flex flex-col gap-4 border border-gray-700 justify-between"
+                  key={individualResource.id}
+                  href={individualResource.resourceUrl}
+                >
+                  <h2 className="text-lg lg:text-xl font-bold lg:font-light text-center">
+                    {individualResource.resourceName}
+                  </h2>
+                  <div className="tags flex flex-wrap gap-2 justify-center">
+                    {individualResource.resourceTags.map((tag) => (
+                      <span
+                        className="tag text-xs text-center px-2 py-1 rounded-md border border-gray-700"
+                        key={tag}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <details className="w-full px-4">
+                    <summary className="text-[10px] pb-2 uppercase flex flex-col items-center border-b border-gray-700">About {individualResource.resourceName}</summary>
+                    <p className="text-xs py-4">
+                      {individualResource.resourceDetails}
+                    </p>
+                  </details>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

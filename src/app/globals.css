@@ -116,7 +116,21 @@ a {
 }
 
 @layer components {
-  .resource-links li {
-    @apply border border-red-400;
+  .resource-link {
+    @apply border border-gray-800 bg-gray-900 rounded-lg p-4 min-h-[160px] text-gray-400 flex items-center justify-center transition-all hover:drop-shadow-sm;
+  }
+
+  .resource-link:hover {
+    @apply bg-gray-800;
+  }
+
+  .sidebar li { 
+    @apply divide-y divide-gray-700;
+  }
+  .sidebar svg {
+    @apply stroke-1 stroke-gray-800;
+  }
+  .sidebar img {
+    @apply h-8 w-8;
   }
 }
