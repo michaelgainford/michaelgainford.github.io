@@ -8,7 +8,8 @@ const ResourceData = [
     id: 1,
     resourceName: "GitHub",
     resourceUrl: "https://www.github.com",
-    resourceDetails: "The world's number one code repository.",
+    resourceDetails:
+      "The world's number one code repository. A place for storing all your code and super useful for collaborating with others on projects.",
     resourceTags: ["git", "version control", "code"],
   },
   {
@@ -21,6 +22,8 @@ const ResourceData = [
     id: 3,
     resourceName: "W3 Schools",
     resourceUrl: "https://www.w3schools.com",
+    resourceDetails:
+      "A great resource for learning HTML, CSS and JavaScript. It's also a great place to find code snippets for common tasks. My bible when learning web development.",
     resourceTags: ["docs", "web dev"],
   },
   {
@@ -127,43 +130,92 @@ const ResourceData = [
   },
 ];
 
+const ResourceNewsletterData = [
+  {
+    id: 1,
+    resourceName: "Frontend Focus",
+    resourceUrl: "https://google.co.uk",
+  },
+  {
+    id: 2,
+    resourceName: "CSS Weekly",
+    resourceUrl: "https://google.co.uk",
+  },
+  {
+    id: 3,
+    resourceName: "Web Designer Depot",
+    resourceUrl: "https://google.co.uk",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-col-1 lg:grid-cols-12 auto-rows-auto lg:grid-rows-2">
       <Sidebar />
-      <div className="content min-h-screen col-span-11 lg:px-16">
+      <div className="content min-h-screen lg:col-start-2 lg:col-end-12 auto-rows-auto lg:px-16">
         <div className="header-bar w-full p-8">
-          <h1 className="text-2xl text-slate-400 text-center uppercase font-light tracking-wide">
+          <h1 className="text-4xl text-slate-400 text-center uppercase font-bold tracking-wide">
             All things code
           </h1>
         </div>
         <div className="actual-content p-8">
-          <div>
-            <div className="resource-links grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8">
+          <div className="mb-16 p-8 border border-slate-800 rounded">
+            <h2 className="text-xl py-4 text-slate-500">Websites &amp; Apps</h2>
+            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8">
               {ResourceData.map((individualResource) => (
-                <a
-                  className="resource-link flex flex-col gap-4 border border-gray-700 justify-between"
-                  key={individualResource.id}
-                  href={individualResource.resourceUrl}
-                >
-                  <h2 className="text-lg lg:text-xl font-bold lg:font-light text-center">
+                <div className="resource-link" key={individualResource.id}>
+                  <h2 className="text-lg lg:text-2xl font-bold lg:font-medium text-center uppercase text-slate-400">
                     {individualResource.resourceName}
                   </h2>
-                  <div className="tags flex flex-wrap gap-2 justify-center">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-xs text-center px-2 py-1 rounded-md border border-gray-700"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
 
-                  <details className="w-full px-4">
-                    <summary className="text-[10px] pb-2 uppercase flex flex-col items-center border-b border-gray-700">About {individualResource.resourceName}</summary>
+                  <a
+                    className="btn border-2 border-slate-700 p-2"
+                    href={individualResource.resourceUrl}
+                  >
+                    Visit site
+                  </a>
+
+                  <details className="w-full">
+                    <summary className="text-[10px] pb-2 lowercase flex flex-col items-center">
+                      About {individualResource.resourceName}
+                    </summary>
                     <p className="text-xs py-4">
                       {individualResource.resourceDetails}
+                    </p>
+                    <div className="tags flex flex-wrap gap-2 justify-start mt-4 border-t border-slate-600">
+                      {individualResource.resourceTags.map((tag) => (
+                        <span
+                          className="tag text-[10px] text-center px-2 py-1 rounded-md border border-gray-700"
+                          key={tag}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="text-xl py-4">Newsletters</h2>
+            <div className="resource-links grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8">
+              {ResourceNewsletterData.map((individualNewsletterResource) => (
+                <a
+                  className="resource-link flex flex-col gap-4 border border-gray-700 justify-between"
+                  key={individualNewsletterResource.id}
+                  href={individualNewsletterResource.resourceUrl}
+                >
+                  <h2 className="text-lg lg:text-xl font-bold lg:font-light text-center">
+                    {individualNewsletterResource.resourceName}
+                  </h2>
+
+                  <details className="w-full px-4">
+                    <summary className="text-[10px] pb-2 uppercase flex flex-col items-center border-b border-gray-700">
+                      About {individualNewsletterResource.resourceName}
+                    </summary>
+                    <p className="text-xs py-4">
+                      {individualNewsletterResource.resourceDetails}
                     </p>
                   </details>
                 </a>

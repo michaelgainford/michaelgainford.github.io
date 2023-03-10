@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function Sidebar () {
   return (
-    <div className="sidebar min-h-screen h-screen max-h-screen col-span-1">
-      <ul className="grid dvh-full">
+    <div className="sidebar">
+      <ul className="grid dvh-full w-full ">
         <li className="flex justify-center items-center">
           <Image
             src="/spanner.svg"
