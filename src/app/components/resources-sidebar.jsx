@@ -27,6 +27,7 @@ const SideBarLinks = [
     icon: "/spanner.svg",
   },
   {
+    id: 5,
     name: "That Link",
     url: "/that-link",
     icon: "/spanner.svg",
@@ -38,15 +39,18 @@ export default function Sidebar() {
     <div className="lg:fixed lg:top-0 lg:h-screen lg:w-[calc(100%/12)]  col-start-1 col-span-1 hover:col-span-2 py-4 lg:py-0 bg-slate-900 transition duration-300 ">
       <ul className="grid grid-cols-5 lg:grid-cols-1 lg:h-screen w-full text-slate-300">
         {SideBarLinks.map((link) => (
-          <li key={link.id} className="flex flex-col justify-center items-center gap-y-4 px-4 lg:px-0">
+          <li
+            key={link.id}
+            className="flex flex-col justify-center items-center gap-y-4 px-4 lg:px-0"
+          >
             <Link
               href={link.url}
-              className="hover:bg-slate-800 hover:text-white h-full w-full flex flex-col justify-center items-center"
+              className="hover:bg-slate-800 hover:text-white h-full w-full flex flex-col justify-center items-center gap-4 transition duration-300 ease-in-out"
             >
               <Image
-                src="/spanner.svg"
-                alt="Vercel Logo"
-                className="logo h-6 lg:h-8 w-6 lg:w-8 fill-red-500"
+                src={link.icon}
+                alt={link.name}
+                className="logo h-6 lg:h-7 w-6 lg:w-7"
                 width={48}
                 height={48}
                 priority
@@ -56,7 +60,7 @@ export default function Sidebar() {
               </p>
             </Link>
           </li>
-          ))}
+        ))}
       </ul>
     </div>
   );
