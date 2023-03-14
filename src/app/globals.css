@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -26,7 +26,7 @@
 
 html,
 body {
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
   @apply bg-slate-900;
@@ -40,21 +40,58 @@ a {
   text-decoration: none;
 }
 
-
-
 @layer components {
+  /* Global Helper Classes */
+  .debug-red {
+    @apply border-red-500 border-2;
+  }
 
-/* Utility Class */
-.dvh-full {
-  height: 100dvh;
-  height: 100vh;
-}
+  .debug-green {
+    @apply border-green-500 border-2;
+  }
 
-  /* Resource Links */
-.resource-link {
-    @apply flex lg:flex-col items-center justify-between  rounded-lg px-4 lg:p-4 gap-4 border border-slate-800 bg-gray-900/75 text-gray-400 transition-all duration-300 ease-in-out hover:drop-shadow-sm;
+  .debug-blue {
+    @apply border-blue-500 border-2;
+  }
+
+  /* Global Utility Classes */
+  .dvh-full {
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  /* Sidebar */
+  .sidebar li {
+    @apply transition duration-300 ease-in-out;
+  }
+  .sidebar li:hover p {
+    @apply text-slate-200;
+  }
+  .sidebar li a:hover svg {
+    @apply stroke-red-500;
+  }
+  /* 
+    Resources
+  */
+  .resource-link {
+    @apply flex flex-col items-center justify-between rounded-lg px-4 py-8 gap-4 border border-slate-700 bg-gray-900/75 text-gray-400 transition-all duration-300 ease-in-out hover:drop-shadow-sm;
   }
   .resource-link:hover {
     @apply bg-gray-800;
+  }
+  .resource-link:hover img {
+    @apply grayscale-0;
+  }
+  .actual-content details {
+    @apply pb-0;
+  }
+  .actual-content details[open] {
+    @apply pb-4 transition duration-300 ease-in-out;
+  }
+  .actual-content details[open] summary:after {
+    @apply transform rotate-90 transition duration-300 ease-in-out;
+  }
+  .actual-content details[open] h2 {
+    @apply text-slate-200;
   }
 }

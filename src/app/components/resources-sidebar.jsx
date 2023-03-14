@@ -6,13 +6,13 @@ const SideBarLinks = [
     id: 1,
     name: "Resources",
     url: "/",
-    icon: "/spanner.svg",
+    icon: "/brain.svg",
   },
   {
     id: 2,
     name: "Password Generator",
     url: "/password-generator",
-    icon: "/spanner.svg",
+    icon: "/password.svg",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const SideBarLinks = [
 export default function Sidebar() {
   return (
     <div className="lg:fixed lg:top-0 lg:h-screen lg:w-[calc(100%/12)]  col-start-1 col-span-1 hover:col-span-2 py-4 lg:py-0 bg-slate-900 transition duration-300 ">
-      <ul className="grid grid-cols-5 lg:grid-cols-1 lg:h-screen w-full text-slate-300">
+      <ul className="sidebar grid grid-cols-5 lg:grid-cols-1 lg:h-screen w-full text-slate-300">
         {SideBarLinks.map((link) => (
           <li
             key={link.id}
@@ -45,7 +45,7 @@ export default function Sidebar() {
           >
             <Link
               href={link.url}
-              className="hover:bg-slate-800 hover:text-white h-full w-full flex flex-col justify-center items-center gap-4 transition duration-300 ease-in-out"
+              className="hover:bg-slate-800 hover:text-white h-full w-full flex flex-col justify-center items-center gap-2 transition duration-300 ease-in-out"
             >
               <Image
                 src={link.icon}
@@ -55,7 +55,7 @@ export default function Sidebar() {
                 height={48}
                 priority
               />
-              <p className="hidden lg:inline-block  px-4 text-[10px] text-slate-500 uppercase text-center">
+              <p className="hidden lg:inline-block  px-4 text-sm text-slate-500 capitalize text-center">
                 {link.name}
               </p>
             </Link>
