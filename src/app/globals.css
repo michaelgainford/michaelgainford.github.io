@@ -84,9 +84,19 @@ a {
   }
   .actual-content details {
     @apply pb-0;
+    transition: height 1000ms ease-in;
+  }
+  .actual-content details summary {
+    transition: margin 1000ms ease-in-out;
+  }
+  .actual-content details:not[open] {
+    height: 20px;
   }
   .actual-content details[open] {
-    @apply pb-4 transition duration-300 ease-in-out;
+    @apply pb-4 h-full transition duration-1000 ease-in-out;
+  }
+  .actual-content details[open] summary {
+    @apply mb-4;
   }
   .actual-content details[open] summary:after {
     @apply transform rotate-90 transition duration-300 ease-in-out;

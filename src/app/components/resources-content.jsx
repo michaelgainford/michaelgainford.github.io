@@ -268,7 +268,7 @@ export default function Content() {
         {/* START Accessibility & Compatibility */}
         <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
           <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
+            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2 hover:cursor-pointer">
               <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
                 Best sites for: ACCESSIBILITY &amp; COMPATIBILITY
               </h2>
