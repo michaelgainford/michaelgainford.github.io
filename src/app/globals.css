@@ -76,9 +76,7 @@ a {
   .resource-link {
     @apply flex flex-col items-center justify-between rounded-lg px-4 py-8 gap-4 border border-slate-700 bg-gray-900/75 text-gray-400 transition-all duration-300 ease-in-out hover:drop-shadow-sm;
   }
-  .resource-link:hover {
-    @apply bg-gray-800;
-  }
+
   .resource-link:hover img {
     @apply grayscale-0;
   }

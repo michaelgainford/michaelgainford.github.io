@@ -9,7 +9,7 @@ const ResourceData = [
     resourceDetails:
       "The world's number one code repository. A place for storing all your code and super useful for collaborating with others on projects.",
     resourceTags: ["git", "version control"],
-    resourceImage: "/resources-screenshots/screenshot-of-github.png",
+    resourceImage: "/image-placeholder-dark.png",
     resourceIsFavourite: true,
   },
   {
@@ -19,7 +19,8 @@ const ResourceData = [
     resourceDetails:
       "The Mozilla Developer Network is a great resource for learning about web development. It's also a great place to find code snippets for common tasks.",
     resourceTags: ["docs", "standards"],
-    resourceImage: "/mdn-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 3,
@@ -28,7 +29,8 @@ const ResourceData = [
     resourceDetails:
       "A great resource for learning HTML, CSS and JavaScript. It's also a great place to find code snippets for common tasks. My bible when learning web development.",
     resourceTags: ["docs", "tutorials"],
-    resourceImage: "/w3-schools-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 4,
@@ -36,7 +38,8 @@ const ResourceData = [
     resourceUrl: "https://css-tricks.com/",
     resourceDetails: "A great resource for learning CSS.",
     resourceTags: ["css", "docs"],
-    resourceImage: "/css-tricks-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: false,
   },
   {
     id: 5,
@@ -44,7 +47,8 @@ const ResourceData = [
     resourceUrl: "https://codepen.io/",
     resourceDetails: "A great place to test out code snippets.",
     resourceTags: ["code", "sandbox"],
-    resourceImage: "/codepen-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 6,
@@ -52,7 +56,8 @@ const ResourceData = [
     resourceUrl: "https://stackoverflow.com/",
     resourceDetails: "A great place to find answers to your coding questions.",
     resourceTags: ["questions", "answers"],
-    resourceImage: "/stack-overflow-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: false,
   },
   {
     id: 7,
@@ -61,7 +66,8 @@ const ResourceData = [
     resourceDetails:
       "A great place to find out if a feature is supported by browsers.",
     resourceTags: ["compatibility", "docs"],
-    resourceImage: "/can-i-use-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 8,
@@ -69,7 +75,8 @@ const ResourceData = [
     resourceUrl: "https://fonts.google.com/",
     resourceDetails: "A great place to find free fonts.",
     resourceTags: ["fonts"],
-    resourceImage: "/google-fonts-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 9,
@@ -77,7 +84,8 @@ const ResourceData = [
     resourceUrl: "https://fontawesome.com/",
     resourceDetails: "A great place to find free icons.",
     resourceTags: ["fonts", "icons"],
-    resourceImage: "/font-awesome-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 10,
@@ -87,6 +95,7 @@ const ResourceData = [
     resourceDetails: "Webstats for your website.",
     resourceTags: ["analytics", "site performance"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: false,
   },
   {
     id: 11,
@@ -95,6 +104,7 @@ const ResourceData = [
     resourceDetails: "A great place to find color palettes.",
     resourceTags: ["colours", "design"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 12,
@@ -103,6 +113,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["docs", "tutorials"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 13,
@@ -111,6 +122,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["site performance"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: false,
   },
   {
     id: 14,
@@ -119,6 +131,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["site performance"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: false,
   },
   {
     id: 15,
@@ -127,6 +140,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["site performance"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 16,
@@ -135,6 +149,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["tutorials"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 17,
@@ -143,6 +158,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["tutorials"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 18,
@@ -151,6 +167,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["tutorials"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 19,
@@ -158,7 +175,8 @@ const ResourceData = [
     resourceUrl: "https://burst.shopify.com/",
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["images", "shopify"],
-    resourceImage: "/burst-screenshot.png",
+    resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 20,
@@ -167,6 +185,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["images"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
   {
     id: 21,
@@ -175,6 +194,7 @@ const ResourceData = [
     resourceDetails: "A great place to find web development resources.",
     resourceTags: ["tutorials"],
     resourceImage: "/image-placeholder-dark.png",
+    resourceIsFavourite: true,
   },
 ];
 
@@ -200,13 +220,19 @@ const ResourceNewsletterData = [
   {
     id: 3,
     resourceName: "Web Designer Depot",
-    resourceUrl: "https://google.co.uk",
+    resourceUrl: "https://www.webdesignerdepot.com/",
     resourceImage: "/image-placeholder-dark.png",
   },
   {
     id: 4,
     resourceName: "Smashing Magazine",
     resourceUrl: "https://google.co.uk",
+    resourceImage: "/image-placeholder-dark.png",
+  },
+  {
+    id: 5,
+    resourceName: "Dev Tips",
+    resourceUrl: "https://umaar.com/dev-tips/",
     resourceImage: "/image-placeholder-dark.png",
   },
 ];
@@ -260,304 +286,99 @@ const bestTutorialResources = resourceDataSortedByName.filter(
     bestTutorialResource.resourceTags.includes("tutorials")
 );
 
+/* ARRAY: Categories */
+const resourceCategories = [
+  {
+    id: 1,
+    resourceCategoryName: "Accessibility & Compatibility",
+    resourceCategoryData: bestAccessibilityResources,
+  },
+  {
+    id: 2,
+    resourceCategoryName: "Assets",
+    resourceCategoryData: bestAssetsResources,
+  },
+  {
+    id: 3,
+    resourceCategoryName: "CSS",
+    resourceCategoryData: bestCSSResources,
+  },
+  {
+    id: 4,
+    resourceCategoryName: "Design",
+    resourceCategoryData: bestDesignResources,
+  },
+  {
+    id: 5,
+    resourceCategoryName: "Images",
+    resourceCategoryData: bestImageResources,
+  },
+  {
+    id: 6,
+    resourceCategoryName: "Shopify",
+    resourceCategoryData: bestShopifyResources,
+  },
+  {
+    id: 7,
+    resourceCategoryName: "Tutorials",
+    resourceCategoryData: bestTutorialResources,
+  },
+];
+/* FULL ARRAY, SORTED BY NAME */
+const resourceCategoriesSortedByName = [...resourceCategories].sort((a, b) =>
+  a.resourceCategoryName > b.resourceCategoryName ? 1 : -1
+);
 
 export default function Content() {
   return (
     <div className="content col-start-1 col-span-1 lg:col-start-3 lg:col-span-9">
-      <div className="actual-content grid grid-cols-1 gap-4 ">
-        {/* START Accessibility & Compatibility */}
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2 hover:cursor-pointer">
-              <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
-                Best sites for: ACCESSIBILITY &amp; COMPATIBILITY
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestAccessibilityResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
+      <div className="actual-content grid grid-cols-1 gap-4 lg:gap-8 xl:gap-12">
+
+        {/* START Categories */}
+        {resourceCategoriesSortedByName.map((resourceCategory) => (
+          <div className="resource-link-container mx-2 lg:mx-0 rounded-xl border border-slate-700" key={resourceCategory.id}>
+            <details className="p-4 rounded-xl">
+              <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-slate-400 after:font-light after:text-2xl gap-x-2 hover:cursor-pointer">
+                <h2 className="text-base lg:text-xl font-light py-4 text-slate-400 flex justify-start items-center hover:text-slate-200">
+                  Best sites for: {resourceCategory.resourceCategoryName}
+                </h2>
+              </summary>
+              <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 lg:gap-8 lg:pt-4">
+                {resourceCategory.resourceCategoryData.map((resource) => (
+                  <div className="resource-link " key={resource.id}>
+                    <a className="flex flex-col items-center justify-between rounded-xl pb-4 gap-4 text-gray-100 lg:text-gray-400 lg:hover:text-gray-100 transition-all duration-300 ease-in-out hover:drop-shadow-sm w-full hover:bg-red-950" href={resource.resourceUrl} target="_blank" rel="noreferrer">
+                    <div className="resource-link-image">
+                      <Image
+                        src={resource.resourceImage}
+                        alt={resource.resourceName}
+                        width={800}
+                        height={600}
+                        className="lg:grayscale lg:hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3]"
+                      />
+                    </div>
+                    <div className="resource-link-details pb-4 flex flex-col w-full gap-2">
+                      <h3 className="text-sm lg:text-lg font-light">
+                        {resource.resourceName}
+                      </h3>
+                      <div className="tags">
+                        {resource.resourceTags.map((tag) => (
+                          <span
+                            className="text-[10px] bg-slate-700 rounded-lg px-2 py-1 mr-2"
+                            key={tag}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    </a>
                   </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-        {/* END Accessibility & Compatibility */}
-        {/* START Assets */}
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700 hover:border-slate-400/75">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 hover:text-slate-200 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
-              <h2 className="text-sm lg:text-lg font-light py-4 flex justify-start hover:text-slate-200">
-                Best sites for: ASSETS
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestAssetsResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-        {/* END Accessibility & Compatibility */}
-        {/* START Best CSS */}
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
-              <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
-                Best sites for: CSS
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestCSSResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-        {/* END Best CSS */}
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
-              <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
-                Best sites for: DESIGN
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestDesignResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
-              <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
-                Best sites for: IMAGES
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestImageResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
-              <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
-                Best sites for: SHOPIFY
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestShopifyResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
-        <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
-          <details>
-            <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
-              <h2 className="text-sm lg:text-lg font-light py-4 text-slate-400 flex justify-start hover:text-slate-200">
-                Best sites for: TUTORIALS
-              </h2>
-            </summary>
-            <div className="resource-links auto-rows-fr grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8 pt-4">
-              {bestTutorialResources.map((individualResource) => (
-                <div className="resource-link" key={individualResource.id}>
-                  <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
-                    {individualResource.resourceName}
-                  </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
-                  <a
-                    className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
-                    href={individualResource.resourceUrl}
-                  >
-                    Visit site
-                  </a>
-                  <div className="tags flex flex-wrap justify-start text-[10px] divide-x divide-red-500">
-                    {individualResource.resourceTags.map((tag) => (
-                      <span
-                        className="tag text-[10px] text-center border-r border-slate-800 last-of-type:border-none px-1"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </details>
-        </div>
+                ))}      
+              </div>
+            </details>
+          </div>
+        ))}
+        {/* END Categories */}
         <div className="p-4 mx-2 lg:mx-0 rounded-xl border border-slate-700">
           <details>
             <summary className="flex justify-start items-center justify-items-start text-sm font-bold text-slate-400 after:content-['>'] after:text-base after:text-slate-400 after:font-light gap-x-2">
@@ -571,18 +392,11 @@ export default function Content() {
                   <h2 className="text-base font-bold lg:font-medium text-center uppercase text-slate-400">
                     {individualResource.resourceName}
                   </h2>
-                  <Image
-                    src={individualResource.resourceImage}
-                    alt={individualResource.resourceName}
-                    width={800}
-                    height={600}
-                    className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out aspect-[4/3] rounded-lg"
-                  />
                   <a
                     className="btn border border-slate-700 px-4 py-2 rounded-lg hover:bg-white text-xs hover:text-slate-900 transition-all duration-300 ease-in-out w-fit text-center"
                     href={individualResource.resourceUrl}
                   >
-                    Visit site
+                    Sign Up
                   </a>
                 </div>
               ))}
