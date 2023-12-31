@@ -513,7 +513,7 @@ const allMovies = [
   },
   {
     id: 83,
-    title: "diary of a wimpy kid rodrick rules",
+    title: "Diary of a Wimpy Kid: Rodrick Rules",
     image: "diary-of-a-wimpy-kid-rodrick-rules.webp",
     imdb_url: "https://www.imdb.com/title/tt1650043/",
   },
@@ -544,7 +544,7 @@ const allMovies = [
   },
   {
     id: 88,
-    title: "Back to the future",
+    title: "Back to the Future",
     image: "back-to-the-future.webp",
     imdb_url: "https://www.imdb.com/title/tt0088763/",
   },
@@ -599,7 +599,7 @@ const allMovies = [
   },
   {
     id: 97,
-    title: "GoldeneEye",
+    title: "GoldenEye",
     image: "goldeneye.webp",
     imdb_url: "https://www.imdb.com/title/tt0113189/",
   },
@@ -611,7 +611,7 @@ const allMovies = [
   },
   {
     id: 99,
-    title: "Casine Royale",
+    title: "Casino Royale",
     image: "casino-royale.webp",
     imdb_url: "https://www.imdb.com/title/tt0381061/",
   },
