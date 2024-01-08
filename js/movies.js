@@ -626,5 +626,11 @@ const allMovies = [
     title: "Die Hard 2",
     image: "die-hard-2.webp",
     imdb_url: "https://www.imdb.com/title/tt0099423/",
+  },
+  {
+    id: 102,
+    title: "Batman",
+    image: "batman.webp",
+    imdb_url: "https://www.imdb.com/title/tt0096895/",
   }
 ];
