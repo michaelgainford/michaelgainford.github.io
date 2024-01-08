@@ -8,113 +8,89 @@
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
-<body class="tracking-wide text-center text-slate-200 bg-slate-900">
+<body id="page">
 
   <!-- Wrap the entire page | Start -->
   <div class="page-wrapper min-h-[100vh]">
 
     <!-- Wrap the header | Start -->
-    <div class="header-span">
-      <div class="container flex flex-col pt-12 mx-auto border-b header-content pb-9 border-slate-700 gap-7">
-        <div class="flex items-center w-auto gap-2 text-base font-light tracking-wide max-w-fit">
+    <div class="border-b border-slate-800 header-span max-lg:p-4">
+      <div class="container flex flex-col gap-1 pt-2 mx-auto lg:border-b lg:pt-12 header-content lg:pb-9 lg:border-slate-700 lg:gap-7">
+        <!-- Logo and text | Start -->
+        <div id="logo">
           <span class="w-6 h-6 title-icon !fill-yellow-600">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="mt-[2px]">
               <path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/>
             </svg>
           </span>
-          <span class="text-xl font-medium text-left uppercase text-slate-300">My Dev Site</span>
+          <span class="text-base font-medium tracking-wider text-left uppercase lg:text-xl text-slate-300">Michael's Dev Site</span>
         </div>
+        <!-- Logo and text | End -->
+        <!-- Main Nav | Start -->
         <nav class="flex justify-start nav logo">
-          <ul class="flex justify-center py-8 text-xs tracking-wide uppercase gap-7">
-            <li>
-              <a class="px-12 py-5 transition border rounded-lg border-slate-700 hover:bg-slate-800"
+          <ul class="flex gap-2 pt-8 pb-4 overflow-x-auto text-xs tracking-wide uppercase lg:py-8 lg:justify-center lg:gap-7 no-scrollbar">
+            <li class="">
+              <a class="inline-block px-4 py-3 transition border rounded-lg lg:px-12 lg:py-5 border-slate-700 hover:bg-slate-800 min-w-max"
                 href="/">
                 Home
               </a>
             </li>
-            <li>
-              <a class="px-12 py-5 transition border border-teal-700 rounded-lg hover:bg-teal-900"
+            <li class="">
+              <a class="inline-block px-4 py-3 transition border border-teal-700 rounded-lg lg:px-12 lg:py-5 hover:bg-teal-900 min-w-max"
                 href="dev-resources.html">
                 Dev Resources
               </a>
             </li>
-            <li>
-              <a class="px-12 py-5 transition border border-blue-700 rounded-lg hover:bg-blue-900"
+            <li class="">
+              <a class="inline-block px-4 py-3 transition border border-blue-700 rounded-lg lg:px-12 lg:py-5 hover:bg-blue-900 min-w-max"
                 href="euro-2024.html">
                 Euro 2024
               </a>
             </li>
-            <li>
-              <a class="px-12 py-5 transition border rounded-lg border-violet-700 hover:bg-violet-900"
+            <li class="">
+              <a class="inline-block px-4 py-3 transition border rounded-lg lg:px-12 lg:py-5 border-violet-700 hover:bg-violet-900 min-w-max"
                 href="movies-database.html">
                 Movies DB
               </a>
             </li>
-            <li>
-              <a class="px-12 py-5 transition border rounded-lg border-rose-700 hover:bg-rose-900"
+            <li class="">
+              <a class="inline-block px-4 py-3 transition border rounded-lg lg:px-12 lg:py-5 border-rose-700 hover:bg-rose-900 min-w-max"
                 href="jokes.html">
                 Jokes
               </a>
             </li>
           </ul>
         </nav>
+        <!-- Main Nav | End -->
       </div>
     </div>
     <!-- Wrap the header | End-->
 
     <!-- Wrap the content | Start -->
-    <div class="content-span">
-      <div class="container py-24 mx-auto content-content">
-        <main class="flex flex-col gap-16">
+    <div class="content-span max-lg:p-4">
+      <div class="container py-4 mx-auto lg:py-24 content-content">
+        <main class="flex flex-col gap-10 lg:gap-16">
 
           <!-- Wrap the page intro | Start -->
-          <div class="hidden intro">
-            <div class="grid grid-cols-8 gap-24">
-              <div class="col-span-5 text-base text-left intro-left">
-                <h1 class="text-3xl font-bold text-left mb-11 text-slate-400">Intro</h1>
-                <p class="mb-4 text-sm font-light tracking-wider text-slate-300">
-                  Thank you for visiting michaelgainford.dev, a website of different projects and resources I have been working on.</p>
-                <p class="text-sm font-light tracking-wider text-slate-300">
-                  Ut dignissim nisl id enim tempor congue. Aenean id tincidunt ligula. Pellentesque ac purus vel odio
-                  finibus blandit. Maecenas in sollicitudin sapien, in aliquet massa. Donec ut semper neque. Nam
-                  consequat magna metus. Sed sit amet porttitor erat. Proin lobortis finibus ligula quis vestibulum.
-                  Etiam dignissim turpis id elit dictum, nec vestibulum nisi varius.</p>
+          <div class="intro">
+            <div class="grid grid-cols-1 gap-24 lg:grid-cols-8">
+              <div class="col-span-1 text-base text-left lg:col-span-5 intro-left">
+                <h1 class="mb-4 text-sm font-medium tracking-wide text-left lg:text-lg lg:mb-11 text-slate-300">Hi! Thank you for visiting michaelgainford.dev</h1>
+                <p class="mb-4 text-xs font-light tracking-wider lg:text-base text-slate-300 lg:max-w-[75%] leading-relaxed">
+                  Thank you for visiting my site. This is my place to share my projects and favourite resources with the world. I am a self-taught developer and I am currently working on my first project, a movie database. I am also working on a Euro 2024 project, which is a site to track the progress of the Euro 2024 football tournament. I am also working on a jokes project, which is a site to display jokes from an API. I am also working on a dev resources page, which is a page to display my favourite resources for learning web development. I hope you enjoy my site and find it useful.
+                </p>
               </div>
-              <div class="flex flex-col justify-center col-span-3 intro-right">
+              <div class="flex flex-col justify-center col-span-1 lg:col-span-3 max-lg:hidden intro-right">
                 <div
                   class="border p-12 rounded-lg min-h-[300px] flex justify-center items-center border-slate-700 bg-slate-800 hover:bg-slate-900 transition text-slate-400 uppercase tracking-wider text-xs">
-                  <?xml version="1.0" encoding="iso-8859-1"?>
-                  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                   <svg class="w-32 h-32 fill-slate-300" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297.703 297.703" xml:space="preserve">
                     <g>
-                      <path d="M40.16,77.084c0-20.462,16.646-37.108,37.108-37.108c3.313,0,6-2.687,6-6c0-3.313-2.687-6-6-6
-		c-27.078,0-49.108,22.03-49.108,49.108c0,3.313,2.687,6,6,6C37.473,83.084,40.16,80.397,40.16,77.084z" />
-                      <path d="M77.268,12c3.313,0,6-2.686,6-6c0-3.313-2.687-6-6-6C34.764,0,0.184,34.58,0.184,77.084c0,3.313,2.687,6,6,6s6-2.687,6-6
-		C12.184,41.196,41.38,12,77.268,12z" />
-                      <path d="M220.435,27.976c-3.314,0-6,2.687-6,6c0,3.313,2.686,6,6,6c20.462,0,37.108,16.646,37.108,37.108c0,3.313,2.686,6,6,6
-		s6-2.687,6-6C269.543,50.006,247.513,27.976,220.435,27.976z" />
-                      <path d="M220.435,0c-3.314,0-6,2.687-6,6c0,3.314,2.686,6,6,6c35.888,0,65.084,29.196,65.084,65.084c0,3.313,2.686,6,6,6
-		c3.313,0,6-2.687,6-6C297.519,34.58,262.939,0,220.435,0z" />
-                      <path d="M227.513,80.603c-0.985,0-1.801,0.058-2.784,0.172c-4.218,0.491-8.21,2.021-11.21,4.319v-5.199
-		c0-13.116-9.63-24.128-22.409-25.614c-0.983-0.115-1.979-0.173-2.966-0.173c-5.229-0.001-10.219,1.579-14.435,4.514
-		c-0.923-12.218-10.215-22.164-22.337-23.574c-0.983-0.114-1.971-0.137-2.957-0.137h-0.005h-0.004
-		c-6.765,0-13.136,2.607-17.938,7.409c-4.424,4.424-7.017,10.162-7.396,16.332c-3.311-2.319-7.203-3.869-11.442-4.362
-		c-0.983-0.115-1.982-0.177-2.968-0.177c-6.765-0.001-13.516,2.641-18.318,7.442c-4.801,4.802-7.827,11.169-7.827,17.934v86.04
-		l-5.524-5.577c-4.742-4.67-10.834-7.239-17.522-7.239c-6.754,0-12.998,2.621-17.757,7.379c-9.619,9.619-9.791,25.133-0.611,35.021
-		l53.878,71.029l1.16,15.265c0.687,9.139,8.409,16.297,17.573,16.297l98.471-0.078c8.805-0.011,16.306-6.598,17.452-15.323
-		l2.388-18.182c7.557-12.231,12.779-28.446,16.272-48.228c3.051-17.273,4.221-37.775,4.221-60.934v-48.976
-		C252.518,91.988,241.509,80.603,227.513,80.603z M217.74,280.739c-0.366,2.793-2.745,4.986-5.562,4.989l-98.451,0.182
-		c-0.003,0-0.005,0-0.008,0c-2.938,0-5.38-2.369-5.601-5.3l-1.411-18.831c-0.001-0.01-0.004-0.045-0.011-0.053l-56.401-74.402
-		c-5.152-5.152-5.152-13.59,0-18.741c2.576-2.576,5.972-3.868,9.367-3.868c3.396,0,6.792,1.287,9.368,3.863l15.874,14.988
-		c1.237,1.168,2.344,1.691,3.802,1.691c3.167,0,5.811-2.47,5.811-6.165V79.488c0-7.359,6.402-13.382,13.762-13.381
-		c0.521,0,0.977,0.03,1.51,0.092c6.811,0.793,11.728,6.838,11.728,13.695v68.615c0,3.562,2.897,6.449,6.46,6.449
-		c3.606,0,6.54-2.924,6.54-6.53V60.22c0-7.36,6.274-13.382,13.633-13.382c0.52,0,1.042,0.03,1.574,0.093
-		c6.811,0.792,11.793,6.838,11.793,13.694v87.796c0,3.61,2.938,6.538,6.548,6.538c3.558,0,6.452-2.885,6.452-6.442V79.488
-		c0-7.359,6.145-13.382,13.505-13.381c0.52,0,1.105,0.03,1.637,0.092c6.811,0.793,11.857,6.838,11.857,13.695v68.376
-		c0,3.694,3.005,6.64,6.698,6.64h0.111c3.413,0,6.19-2.719,6.19-6.132v-42.39c0-6.856,4.985-12.901,11.795-13.694
-		c0.532-0.062,0.681-0.092,1.202-0.092c7.359,0,13.003,6.021,13.003,13.381v48.976c0,41.828-4.698,80.477-19.716,103.867
-		c-0.456,0.711-0.57,1.506-0.68,2.344L217.74,280.739z" />
+                      <path d="M40.16,77.084c0-20.462,16.646-37.108,37.108-37.108c3.313,0,6-2.687,6-6c0-3.313-2.687-6-6-6c-27.078,0-49.108,22.03-49.108,49.108c0,3.313,2.687,6,6,6C37.473,83.084,40.16,80.397,40.16,77.084z" />
+                      <path d="M77.268,12c3.313,0,6-2.686,6-6c0-3.313-2.687-6-6-6C34.764,0,0.184,34.58,0.184,77.084c0,3.313,2.687,6,6,6s6-2.687,6-6C12.184,41.196,41.38,12,77.268,12z" />
+                      <path d="M220.435,27.976c-3.314,0-6,2.687-6,6c0,3.313,2.686,6,6,6c20.462,0,37.108,16.646,37.108,37.108c0,3.313,2.686,6,6,6s6-2.687,6-6C269.543,50.006,247.513,27.976,220.435,27.976z" />
+                      <path d="M220.435,0c-3.314,0-6,2.687-6,6c0,3.314,2.686,6,6,6c35.888,0,65.084,29.196,65.084,65.084c0,3.313,2.686,6,6,6	c3.313,0,6-2.687,6-6C297.519,34.58,262.939,0,220.435,0z" />
+                      <path d="M227.513,80.603c-0.985,0-1.801,0.058-2.784,0.172c-4.218,0.491-8.21,2.021-11.21,4.319v-5.199c0-13.116-9.63-24.128-22.409-25.614c-0.983-0.115-1.979-0.173-2.966-0.173c-5.229-0.001-10.219,1.579-14.435,4.514c-0.923-12.218-10.215-22.164-22.337-23.574c-0.983-0.114-1.971-0.137-2.957-0.137h-0.005h-0.004c-6.765,0-13.136,2.607-17.938,7.409c-4.424,4.424-7.017,10.162-7.396,16.332c-3.311-2.319-7.203-3.869-11.442-4.362c-0.983-0.115-1.982-0.177-2.968-0.177c-6.765-0.001-13.516,2.641-18.318,7.442c-4.801,4.802-7.827,11.169-7.827,17.934v86.04l-5.524-5.577c-4.742-4.67-10.834-7.239-17.522-7.239c-6.754,0-12.998,2.621-17.757,7.379c-9.619,9.619-9.791,25.133-0.611,35.021l53.878,71.029l1.16,15.265c0.687,9.139,8.409,16.297,17.573,16.297l98.471-0.078c8.805-0.011,16.306-6.598,17.452-15.323l2.388-18.182c7.557-12.231,12.779-28.446,16.272-48.228c3.051-17.273,4.221-37.775,4.221-60.934v-48.976C252.518,91.988,241.509,80.603,227.513,80.603z M217.74,280.739c-0.366,2.793-2.745,4.986-5.562,4.989l-98.451,0.182c-0.003,0-0.005,0-0.008,0c-2.938,0-5.38-2.369-5.601-5.3l-1.411-18.831c-0.001-0.01-0.004-0.045-0.011-0.053l-56.401-74.402c-5.152-5.152-5.152-13.59,0-18.741c2.576-2.576,5.972-3.868,9.367-3.868c3.396,0,6.792,1.287,9.368,3.863l15.874,14.988c1.237,1.168,2.344,1.691,3.802,1.691c3.167,0,5.811-2.47,5.811-6.165V79.488c0-7.359,6.402-13.382,13.762-13.381c0.521,0,0.977,0.03,1.51,0.092c6.811,0.793,11.728,6.838,11.728,13.695v68.615c0,3.562,2.897,6.449,6.46,6.449c3.606,0,6.54-2.924,6.54-6.53V60.22c0-7.36,6.274-13.382,13.633-13.382c0.52,0,1.042,0.03,1.574,0.093c6.811,0.792,11.793,6.838,11.793,13.694v87.796c0,3.61,2.938,6.538,6.548,6.538c3.558,0,6.452-2.885,6.452-6.442V79.488c0-7.359,6.145-13.382,13.505-13.381c0.52,0,1.105,0.03,1.637,0.092c6.811,0.793,11.857,6.838,11.857,13.695v68.376c0,3.694,3.005,6.64,6.698,6.64h0.111c3.413,0,6.19-2.719,6.19-6.132v-42.39c0-6.856,4.985-12.901,11.795-13.694c0.532-0.062,0.681-0.092,1.202-0.092c7.359,0,13.003,6.021,13.003,13.381v48.976c0,41.828-4.698,80.477-19.716,103.867c-0.456,0.711-0.57,1.506-0.68,2.344L217.74,280.739z" />
                     </g>
                   </svg>
                 </div>
@@ -123,47 +99,49 @@
           </div>
           <!-- Wrap the page intro | End -->
 
+          <!-- Wrap the projects list | Start-->
           <div class="projects-list">
-            <h2 class="text-3xl font-bold text-left mb-11 text-slate-400">Projects</h2>
-            <div class="grid grid-cols-4 gap-10 lg:gap-20">
+            <h2 class="h2">Projects</h2>
+            <div class="grid grid-cols-2 gap-4 lg:gap-6 md:grid-cols-3 lg:grid-cols-4">
               <a href="dev-resources.html"
-                class="flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border-2 rounded-lg group/resources project border-cyan-700 bg-slate-800 hover:bg-cyan-800 text-slate-400 aspect-square">
-                <span class="w-16 h-16 fill-slate-500 group-hover/resources:fill-slate-100">
-
+                class="flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border rounded-lg group/resources project border-teal-700/80 bg-slate-800 hover:bg-teal-800 text-slate-400  aspect-[3/2]">
+                <span class="w-10 h-auto lg:w-16 lg:h-auto max-lg:fill-slate-100 lg:fill-slate-500 group-hover/resources:fill-slate-100">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                  <path
-                  d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
-                </svg>
-              </span>
-                <span class="text-base uppercase tracking group-hover/resources:text-slate-100">Dev Resources</span>
+                    <path
+                    d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
+                  </svg>
+                </span>
+                <span class="text-xs uppercase lg:text-base tracking max-lg:text-slate-100 group-hover/resources:text-slate-100">Dev Resources</span>
               </a>
               <a href="movies-database.html"
-                class="flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border-2 rounded-lg group/movies hover:bg-violet-700 border-violet-700 project bg-slate-800 text-slate-400 aspect-square">
-                <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"
-                  class="w-16 h-16 fill-slate-500 group-hover/movies:fill-slate-100">
-                  <path
-                    d="M38 9.54C18.147 15.081 5.205 34.868 8.798 54.187c5.939 31.938 43.74 44.578 66.67 22.293L80 72.075V88h8.156l-.359-24.25c-.397-26.808-.864-29.173-7.724-39.144C71.435 12.051 52.849 5.395 38 9.54m-1.965 8.662c-21.065 8.087-26.757 36.207-10.6 52.363C45.55 90.68 80 76.434 80 48c0-22.531-22.743-37.945-43.965-29.798m8.286 2.987c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059m-20 20c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059m40 0c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059m-18.75 4.382C44.707 46.436 44 47.529 44 48c0 1.111 2.889 4 4 4 1.111 0 4-2.889 4-4 0-1.111-2.889-4-4-4-.471 0-1.564.707-2.429 1.571m-1.25 15.618c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059"
-                    fill-rule="evenodd" />
-                </svg>
-                <span class="text-base uppercase tracking group-hover/movies:text-slate-100">Movies Database</span>
+                class="flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border rounded-lg group/movies hover:bg-violet-700 border-violet-700/80 project bg-slate-800 text-slate-400 aspect-[3/2]">
+                <span class="w-10 h-auto lg:w-16 lg:h-auto max-lg:fill-slate-100 lg:fill-slate-500 group-hover/resources:fill-slate-100">
+                  <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M38 9.54C18.147 15.081 5.205 34.868 8.798 54.187c5.939 31.938 43.74 44.578 66.67 22.293L80 72.075V88h8.156l-.359-24.25c-.397-26.808-.864-29.173-7.724-39.144C71.435 12.051 52.849 5.395 38 9.54m-1.965 8.662c-21.065 8.087-26.757 36.207-10.6 52.363C45.55 90.68 80 76.434 80 48c0-22.531-22.743-37.945-43.965-29.798m8.286 2.987c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059m-20 20c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059m40 0c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059m-18.75 4.382C44.707 46.436 44 47.529 44 48c0 1.111 2.889 4 4 4 1.111 0 4-2.889 4-4 0-1.111-2.889-4-4-4-.471 0-1.564.707-2.429 1.571m-1.25 15.618c-5.523 2.67-5.039 11.443.765 13.847 8.905 3.688 15.066-9.912 6.299-13.906-2.957-1.348-4.175-1.338-7.064.059"
+                      fill-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs uppercase lg:text-base tracking max-lg:text-slate-100 group-hover/movies:text-slate-100">Movies Database</span>
               </a>
               <a href="euro-2024.html"
-                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border-2 border-teal-700 rounded-lg group/euros hover:bg-teal-700 project bg-slate-800 text-slate-400 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"
-                  class="w-16 h-16 fill-slate-500 group-hover/euros:fill-slate-900">
-                  <path
-                    d="M417.3 360.1l-71.6-4.8c-5.2-.3-10.3 1.1-14.5 4.2s-7.2 7.4-8.4 12.5l-17.6 69.6C289.5 445.8 273 448 256 448s-33.5-2.2-49.2-6.4L189.2 372c-1.3-5-4.3-9.4-8.4-12.5s-9.3-4.5-14.5-4.2l-71.6 4.8c-17.6-27.2-28.5-59.2-30.4-93.6L125 228.3c4.4-2.8 7.6-7 9.2-11.9s1.4-10.2-.5-15l-26.7-66.6C128 109.2 155.3 89 186.7 76.9l55.2 46c4 3.3 9 5.1 14.1 5.1s10.2-1.8 14.1-5.1l55.2-46c31.3 12.1 58.7 32.3 79.6 57.9l-26.7 66.6c-1.9 4.8-2.1 10.1-.5 15s4.9 9.1 9.2 11.9l60.7 38.2c-1.9 34.4-12.8 66.4-30.4 93.6zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm14.1-325.7c-8.4-6.1-19.8-6.1-28.2 0L194 221c-8.4 6.1-11.9 16.9-8.7 26.8l18.3 56.3c3.2 9.9 12.4 16.6 22.8 16.6h59.2c10.4 0 19.6-6.7 22.8-16.6l18.3-56.3c3.2-9.9-.3-20.7-8.7-26.8l-47.9-34.8z" />
-                </svg>
-                <span class="text-base uppercase tracking group-hover/euros:text-slate-900">Euro 2024</span>
+                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border border-blue-700/80 rounded-lg group/euros hover:bg-blue-700 project bg-slate-800 text-slate-400 aspect-[3/2]">
+                <span class="w-10 h-auto lg:w-16 lg:h-auto max-lg:fill-slate-100 lg:fill-slate-500 group-hover/resources:fill-slate-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M417.3 360.1l-71.6-4.8c-5.2-.3-10.3 1.1-14.5 4.2s-7.2 7.4-8.4 12.5l-17.6 69.6C289.5 445.8 273 448 256 448s-33.5-2.2-49.2-6.4L189.2 372c-1.3-5-4.3-9.4-8.4-12.5s-9.3-4.5-14.5-4.2l-71.6 4.8c-17.6-27.2-28.5-59.2-30.4-93.6L125 228.3c4.4-2.8 7.6-7 9.2-11.9s1.4-10.2-.5-15l-26.7-66.6C128 109.2 155.3 89 186.7 76.9l55.2 46c4 3.3 9 5.1 14.1 5.1s10.2-1.8 14.1-5.1l55.2-46c31.3 12.1 58.7 32.3 79.6 57.9l-26.7 66.6c-1.9 4.8-2.1 10.1-.5 15s4.9 9.1 9.2 11.9l60.7 38.2c-1.9 34.4-12.8 66.4-30.4 93.6zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm14.1-325.7c-8.4-6.1-19.8-6.1-28.2 0L194 221c-8.4 6.1-11.9 16.9-8.7 26.8l18.3 56.3c3.2 9.9 12.4 16.6 22.8 16.6h59.2c10.4 0 19.6-6.7 22.8-16.6l18.3-56.3c3.2-9.9-.3-20.7-8.7-26.8l-47.9-34.8z" />
+                  </svg>
+                </span>
+                <span class="text-xs uppercase lg:text-base tracking max-lg:text-slate-100 g group-hover/euros:text-slate-900">Euro 2024</span>
               </a>
               <a href="jokes.html"
-                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border-2 rounded-lg border-rose-700 group/euros hover:bg-rose-700 project bg-slate-800 text-slate-400 aspect-square">
-                <?xml version="1.0" encoding="utf-8"?>
-                <svg class="w-16 h-16 fill-slate-300 group-hover/jokes:fill-slate-100" viewBox="-8 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm141.4 389.4c-37.8 37.8-88 58.6-141.4 58.6s-103.6-20.8-141.4-58.6S48 309.4 48 256s20.8-103.6 58.6-141.4S194.6 56 248 56s103.6 20.8 141.4 58.6S448 202.6 448 256s-20.8 103.6-58.6 141.4zM343.6 196l33.6-40.3c8.6-10.3-3.8-24.8-15.4-18l-80 48c-7.8 4.7-7.8 15.9 0 20.6l80 48c11.5 6.8 24-7.6 15.4-18L343.6 196zm-209.4 58.3l80-48c7.8-4.7 7.8-15.9 0-20.6l-80-48c-11.6-6.9-24 7.7-15.4 18l33.6 40.3-33.6 40.3c-8.7 10.4 3.8 24.8 15.4 18zM362.4 288H133.6c-8.2 0-14.5 7-13.5 15 7.5 59.2 58.9 105 121.1 105h13.6c62.2 0 113.6-45.8 121.1-105 1-8-5.3-15-13.5-15z"/></svg>
-
-                <span class="text-base uppercase tracking group-hover/jokes:text-slate-100">Jokes</span>
+                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border rounded-lg border-rose-700/80 group/euros hover:bg-rose-700 project bg-slate-800 text-slate-400 aspect-[3/2]">
+                <span class="w-10 h-auto lg:w-16 lg:h-auto max-lg:fill-slate-100 lg:fill-slate-500 group-hover/jokes:fill-slate-100">
+                  <svg viewBox="-8 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm141.4 389.4c-37.8 37.8-88 58.6-141.4 58.6s-103.6-20.8-141.4-58.6S48 309.4 48 256s20.8-103.6 58.6-141.4S194.6 56 248 56s103.6 20.8 141.4 58.6S448 202.6 448 256s-20.8 103.6-58.6 141.4zM343.6 196l33.6-40.3c8.6-10.3-3.8-24.8-15.4-18l-80 48c-7.8 4.7-7.8 15.9 0 20.6l80 48c11.5 6.8 24-7.6 15.4-18L343.6 196zm-209.4 58.3l80-48c7.8-4.7 7.8-15.9 0-20.6l-80-48c-11.6-6.9-24 7.7-15.4 18l33.6 40.3-33.6 40.3c-8.7 10.4 3.8 24.8 15.4 18zM362.4 288H133.6c-8.2 0-14.5 7-13.5 15 7.5 59.2 58.9 105 121.1 105h13.6c62.2 0 113.6-45.8 121.1-105 1-8-5.3-15-13.5-15z"/></svg>
+                </span>
+                <span class="text-xs uppercase lg:text-base tracking max-lg:text-slate-100 group-hover/jokes:text-slate-100">Jokes</span>
               </a>
-              <a href="#"
+<!--               <a href="#"
                 class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border rounded-lg opacity-50 project border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400 aspect-square">
                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"
                   class="w-16 h-16 fill-slate-500">
@@ -172,101 +150,79 @@
                 </svg>
 
                 <span class="text-base uppercase tracking">Project to follow... </span>
-              </a>
-              <a href="#"
-                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border rounded-lg opacity-50 project border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"
-                  class="w-16 h-16 fill-slate-500">
-                  <path
-                    d="M640 0V400c0 61.9-50.1 112-112 112c-61 0-110.5-48.7-112-109.3L48.4 502.9c-17.1 4.6-34.6-5.4-39.3-22.5s5.4-34.6 22.5-39.3L352 353.8V64c0-35.3 28.7-64 64-64H640zM576 400a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM23.1 207.7c-4.6-17.1 5.6-34.6 22.6-39.2l46.4-12.4 20.7 77.3c2.3 8.5 11.1 13.6 19.6 11.3l30.9-8.3c8.5-2.3 13.6-11.1 11.3-19.6l-20.7-77.3 46.4-12.4c17.1-4.6 34.6 5.6 39.2 22.6l41.4 154.5c4.6 17.1-5.6 34.6-22.6 39.2L103.7 384.9c-17.1 4.6-34.6-5.6-39.2-22.6L23.1 207.7z" />
-                </svg>
-
-                <span class="text-base uppercase tracking">Project to follow... </span>
-              </a>
-              <a href="#"
-                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border rounded-lg opacity-50 project border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"
-                  class="w-16 h-16 fill-slate-500">
-                  <path
-                    d="M640 0V400c0 61.9-50.1 112-112 112c-61 0-110.5-48.7-112-109.3L48.4 502.9c-17.1 4.6-34.6-5.4-39.3-22.5s5.4-34.6 22.5-39.3L352 353.8V64c0-35.3 28.7-64 64-64H640zM576 400a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM23.1 207.7c-4.6-17.1 5.6-34.6 22.6-39.2l46.4-12.4 20.7 77.3c2.3 8.5 11.1 13.6 19.6 11.3l30.9-8.3c8.5-2.3 13.6-11.1 11.3-19.6l-20.7-77.3 46.4-12.4c17.1-4.6 34.6 5.6 39.2 22.6l41.4 154.5c4.6 17.1-5.6 34.6-22.6 39.2L103.7 384.9c-17.1 4.6-34.6-5.6-39.2-22.6L23.1 207.7z" />
-                </svg>
-
-                <span class="text-base uppercase tracking">Project to follow... </span>
-              </a>
-              <a href="#"
-                class="flex flex-col items-center justify-center gap-4 text-xl font-light tracking-wide transition border rounded-lg opacity-50 project border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400 aspect-square">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"
-                  class="w-16 h-16 fill-slate-500">
-                  <path
-                    d="M640 0V400c0 61.9-50.1 112-112 112c-61 0-110.5-48.7-112-109.3L48.4 502.9c-17.1 4.6-34.6-5.4-39.3-22.5s5.4-34.6 22.5-39.3L352 353.8V64c0-35.3 28.7-64 64-64H640zM576 400a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM23.1 207.7c-4.6-17.1 5.6-34.6 22.6-39.2l46.4-12.4 20.7 77.3c2.3 8.5 11.1 13.6 19.6 11.3l30.9-8.3c8.5-2.3 13.6-11.1 11.3-19.6l-20.7-77.3 46.4-12.4c17.1-4.6 34.6 5.6 39.2 22.6l41.4 154.5c4.6 17.1-5.6 34.6-22.6 39.2L103.7 384.9c-17.1 4.6-34.6-5.6-39.2-22.6L23.1 207.7z" />
-                </svg>
-
-                <span class="text-base uppercase tracking">Project to follow... </span>
-              </a>
+              </a> -->
             </div>
-            <div class="flex justify-center mt-16">
+            <div class="flex justify-center mt-8 lg:mt-16">
               <a href="#"
-                class="flex px-16 py-4 mx-auto font-bold tracking-wide uppercase transition border rounded-lg opacity-50 btn w-fit border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">Button</a>
+                class="main-btn">See More</a>
             </div>
           </div>
+          <!-- Wrap the projects list | End-->
+
+          <!-- Wrap the resources list | Start -->
           <div class="resources-list">
-            <h2 class="text-3xl font-bold text-left mb-11 text-slate-400">
+            <h2 class="h2">
               Dev Resources
             </h2>
-            <div class="grid grid-cols-5 gap-16">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-16 lg:grid-cols-5">
               <div
-                class="flex flex-col items-center gap-4 p-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                <div class="flex justify-center resource-logo">
-                  <img src="./images/w3-schools-logo.svg" alt="W3 Schools Logo" class="w-12 h-12">
+                class="flex items-center text-lg transition border rounded-lg md:gap-4 md:p-8 md:flex-col resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
+                <div class="flex justify-center p-4 max-md:w-1/3 max-md:border-r border-slate-700 resource-logo">
+                  <img src="./images/w3-schools-logo.svg" alt="W3 Schools Logo" class="w-8 h-8 lg:w-12 lg:h-12">
                 </div>
-                <a href="#" class="text-xs uppercase tracking">W3 Schools</a>
+                <span class="px-4 text-xs text-center uppercase lg:w-2/3 md:w-full tracking">W3 Schools</span>
               </div>
               <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
+                class="flex items-center text-lg transition border rounded-lg lg:gap-4 lg:p-8 lg:flex-col resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
+                <div class="flex justify-center p-4 max-md:w-1/3 max-md:border-r border-slate-700 resource-logo">
+                  <img src="./images/w3-schools-logo.svg" alt="W3 Schools Logo" class="w-8 h-8 md:w-12 md:h-12">
+                </div>
+                <span class="w-2/3 px-4 text-xs text-center uppercase lg:w-full tracking">W3 Schools</span>
+              </div>
               <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
+                class="flex items-center text-lg transition border rounded-lg lg:gap-4 lg:p-8 lg:flex-col resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
+                <div class="flex justify-center p-4 max-lg:w-1/3 max-lg:border-r border-slate-700 resource-logo">
+                  <img src="./images/w3-schools-logo.svg" alt="W3 Schools Logo" class="w-8 h-8 lg:w-12 lg:h-12">
+                </div>
+                <span class="w-2/3 px-4 text-xs text-center uppercase lg:w-full tracking">W3 Schools</span>
+              </div>
               <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
+                class="flex items-center text-lg transition border rounded-lg lg:gap-4 lg:p-8 lg:flex-col resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
+                <div class="flex justify-center p-4 max-lg:w-1/3 max-lg:border-r border-slate-700 resource-logo">
+                  <img src="./images/w3-schools-logo.svg" alt="W3 Schools Logo" class="w-8 h-8 lg:w-12 lg:h-12">
+                </div>
+                <span class="w-2/3 px-4 text-xs text-center uppercase lg:w-full tracking">W3 Schools</span>
+              </div>
               <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
-              <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
-              <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
-              <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
-              <div
-                class="flex items-center justify-center py-8 text-lg transition border rounded-lg resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
-                Resource</div>
+                class="flex items-center text-lg transition border rounded-lg lg:gap-4 lg:p-8 lg:flex-col resource border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">
+                <div class="flex justify-center p-4 max-lg:w-1/3 max-lg:border-r border-slate-700 resource-logo">
+                  <img src="./images/w3-schools-logo.svg" alt="W3 Schools Logo" class="w-8 h-8 lg:w-12 lg:h-12">
+                </div>
+                <span class="w-2/3 px-4 text-xs text-center uppercase lg:w-full tracking">W3 Schools</span>
+              </div>
             </div>
             <div class="flex justify-center mt-16">
-              <a href="#"
-                class="flex px-16 py-4 mx-auto font-bold tracking-wide uppercase transition border rounded-lg btn w-fit border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400">Button</a>
+              <a href="#" class="main-btn">See all</a>
             </div>
           </div>
+          <!-- Wrap the resources list | End -->
+
         </main>
       </div>
     </div>
     <!-- Wrap the content | End -->
 
     <!-- Wrap the footer | Start -->
-    <div class="container py-8 mx-auto border-t content-content border-slate-700">
-      <footer>
-        <div class="flex justify-between mb-12">
+    <div class="container py-8 mx-auto border-t content-content border-slate-700 max-lg:p-4">
+      <footer class="max-lg:mt-8">
+        <div class="flex flex-col justify-between mb-12 lg:flex-row max-lg:gap-y-8">
           <div class="footer-information">
-            <h3 class="mb-16 text-3xl font-bold text-left text-slate-400">Information</h3>
-            <div class="flex gap-16 footer-navs">
-              <div class="pr-8 footer-nav-group">
-                <h4 class="pb-4 mb-4 text-sm text-left uppercase border-b-2 border-slate-700 text-slate-400">Fun Stuff
+            <h3 class="mb-16 h3">Information</h3>
+            <div class="flex flex-col gap-16 lg:flex-row footer-navs">
+              <div class="lg:pr-8 footer-nav-group">
+                <h4 class="pb-4 mb-4 text-sm text-center uppercase border-b-2 lg:text-left border-slate-700 text-slate-400">Fun Stuff
                 </h4>
-                <ul class="w-[200px] text-left text-sm">
+                <ul class="lg:w-[200px] text-center lg:text-left text-sm">
                   <li class="py-4">Dev Resources</li>
                   <li class="py-4">Euro 2024</li>
                   <li class="py-4">Movies Database</li>
@@ -275,9 +231,9 @@
                 </ul>
               </div>
               <div class="pr-8 footer-nav-group">
-                <h4 class="pb-4 mb-4 text-sm text-left uppercase border-b-2 border-slate-700 text-slate-400">Boring
+                <h4 class="pb-4 mb-4 text-sm text-center uppercase border-b-2 lg:text-left border-slate-700 text-slate-400">Boring
                   Stuff</h4>
-                <ul class="w-[200px] text-left text-sm">
+                <ul class="lg:w-[200px] text-center lg:text-left text-sm">
                   <li class="py-4">Link</li>
                   <li class="py-4">Link</li>
                   <li class="py-4">Link</li>
@@ -288,9 +244,9 @@
             </div>
           </div>
           <div class="footer-about max-w-[500px]">
-            <h3 class="mb-16 text-3xl font-bold text-left text-slate-400">About</h3>
-            <div class="opening-paragraph flex gap-6 w-[calc(100-144px-10px)] mb-8">
-              <div class="w-2/3 text">
+            <h3 class="mb-6 h2">About</h3>
+            <div class="opening-paragraph flex flex-col lg:flex-row gap-6 lg:w-[calc(100-144px-10px)] mb-8">
+              <div class="lg:w-2/3 text">
                 <p class="text-xs text-left text-slate-400">Test, test, test, test, test, test, test, test, test, test,
                   test, test,
                   test,

@@ -9,4 +9,40 @@
   .btn-blue {
     @apply text-white bg-blue-500;
   }
+
+
+  #page {
+    @apply tracking-wide text-center text-slate-200 bg-slate-900;
+  }
+
+  #logo {
+    @apply flex items-center w-auto gap-3 text-base font-light tracking-wide max-w-fit;
+  }
+
+  .h2, .h3 {
+    @apply mb-3 text-base font-medium text-left lg:font-bold lg:text-3xl lg:mb-11 text-slate-400;
+  }
+
+  .main-btn {
+    @apply flex px-16 py-4 mx-auto font-bold tracking-wide uppercase transition border rounded-lg w-fit max-lg:text-xs border-slate-700 bg-slate-800 hover:bg-slate-900 text-slate-400;
+  }
+
+}
+
+@layer utilities {
+  /*** SCROLLBAR | Start ***/
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+  /*** SCROLLBAR | End ***/
+
+  .h2 {
+    @apply mb-3 text-base font-medium text-left lg:font-bold lg:text-3xl lg:mb-11 text-slate-400;
+  }
 }
