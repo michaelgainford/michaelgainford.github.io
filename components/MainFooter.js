@@ -3,13 +3,13 @@ import Image from "next/image"
 
 export default function mainFooter() {
   return (
-    <footer className="w-full mt-32 tracking-wider text-slate-400">
-      <div className="flex flex-col justify-between mb-12 lg:flex-row max-lg:gap-y-8">
-        <div className="footer-information">
+    <footer className="w-[90%] md:w-[92%] lg:-[95%] border-b flex flex-col lg:justify-between  gap-1 pt-6 mx-auto lg:pt-4 header-content lg:pb-2 border-slate-700 lg:gap-4 mt-32 tracking-wider">
+      <div className="w-full  justify-between mb-12 lg:flex-row max-lg:gap-y-8 lg:gap-x-24 grid grid-cols-3">
+        <div className="footer-information col-span-2">
           <h3 className="mb-16 text-lg tracking-wider font-extralight">Information</h3>
-          <div className="flex flex-col gap-16 lg:flex-row footer-navs">
+          <div className="flex flex-col gap-16 lg:flex-row footer-nav  lg:grid lg:grid-cols-2">
             <div className="rounded lg:pr-8 footer-nav-group border-slate-700">
-              <h4 className="pb-4 mb-4 text-sm tracking-widest text-center uppercase border-b lg:text-left border-slate-700 text-slate-400 font-extralight">Fun Stuff
+              <h4 className="pb-4 mb-4 text-sm tracking-widest text-center uppercase border-b lg:text-left border-slate-700 font-extralight">Fun Stuff
               </h4>
               <ul className="lg:w-[200px] text-center lg:text-left text-sm">
                 <li><Link className="flex py-2" href="/">Home</Link></li>
@@ -20,7 +20,7 @@ export default function mainFooter() {
               </ul>
             </div>
             <div className="rounded lg:pr-8 footer-nav-group border-slate-700">
-              <h4 className="pb-4 mb-4 text-sm tracking-widest text-center uppercase border-b lg:text-left border-slate-700 text-slate-400 font-extralight">Boring
+              <h4 className="pb-4 mb-4 text-sm tracking-widest text-center uppercase border-b lg:text-left border-slate-700 font-extralight">Boring
                 Stuff</h4>
               <ul className="lg:w-[200px] text-center lg:text-left text-sm">
                 <li><Link className="flex py-2" href="/">Link</Link></li>
@@ -32,23 +32,23 @@ export default function mainFooter() {
             </div>
           </div>
         </div>
-        <div className="footer-about max-w-[500px]">
+        <div className="footer-about max-w-[700px] col-span-1">
           <h3 className="mb-6 text-lg tracking-wider h2 font-extralight lg:mb-16">About</h3>
-          <div className="opening-paragraph flex flex-col lg:flex-col-reverse gap-6 lg:w-[calc(100-144px-10px)] mb-8">
+          <div className="opening-paragraph flex flex-col lg:flex-row gap-6 lg:gap-16 mb-8 lg:items-center pb-8">
             <div className="lg:w-2/3 text">
-              <p className="text-sm leading-loose text-left text-slate-400">
+              <p className="text-sm leading-relaxed text-left">
                 My name is Michael and I am Front-End Developer. I currently work as a Shopify Developer but particularly enjoy working
-                with React and Next.js.
+                with React and Next.js. More text to fill in this space as it is currently a bit light of content.
               </p>
             </div>
             <div
-              className="grey-image justify-center items-center aspect-square flex w-[144px] h-[144px]">
+              className="grey-image justify-center items-center aspect-square flex w-[144px] h-[144px] opacity-60 hover:opacity-100 transition">
                 <Image className="rounded-2xl" src="/mg.webp" alt="Michael Gainford" width={144} height={144} />
             </div>
 
           </div>
           <div className="mt-8 socials">
-            <ul className="flex gap-8">
+            <ul className="flex justify-end gap-8">
               <li>
                 <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
