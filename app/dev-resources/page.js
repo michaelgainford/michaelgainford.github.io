@@ -35,7 +35,7 @@ const resourcesSortedByName = resources.sort((a, b) => a.name.localeCompare(b.na
 
 export default function Home() {
   return (
-    <div className="bg-emerald-500/50 text-slate-800">
+    <div className="bg-teal-900/80 text-slate-200">
 
       <MainHeader />
 
@@ -44,8 +44,8 @@ export default function Home() {
          <div className="resources flex flex-row flex-wrap justify-start border-rose-500 gap-12 w-full pt-16">
 
           {resourcesSortedByName.map((resource, index) => (
-            <Link href={resource.url} key={index} className="resource border border-emerald-950 text-center w-[200px] bg-emerald-950 text-white/80">
-              <div className="resource-image aspect-square w-full bg-emerald-700"></div>
+            <Link href={resource.url} key={index} className="resource border border-emerald-950 text-center w-[200px] bg-emerald-950 text-white/80 rounded-lg">
+              <div className="resource-image aspect-square w-full bg-teal-700 rounded-t-lg"></div>
               <div className="resource-details gap-y-4 py-2">
                 <span className="uppercase py-2 text-sm tracking-widest">{resource.name}</span>
                 <div className="resource-tags py-2 flex flex-wrap justify-center gap-2">

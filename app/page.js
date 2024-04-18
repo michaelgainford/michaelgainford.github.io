@@ -10,7 +10,7 @@ export default function Home() {
       <MainHeader />
       <main className="mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center justify-between min-h-screen gap-y-12 >*:bg-slate-200 py-8">
         <MainIntro />
-        <div className="container flex gap-16 lg:gap-24 xl:gap-32 2xl:gap-48">
+        <div className="container max-lg:flex-col flex gap-16 lg:gap-24 xl:gap-32 2xl:gap-48">
           <MainProjects />
           <MainResources />
         </div>

@@ -7,27 +7,65 @@ import MainFooter from "@/components/MainFooter";
 // import hand.svg from the public folder
 //import hand from "../public/hand.svg";
 import MainProjects from "@/components/MainProjects";
+import MainHeader from "@/components/MainHeader";
+
+const jokes = [
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  },
+  {
+    setup: "What do you call a fish wearing a crown?",
+    punchline: "A kingfish"
+  }
+];
 
 export default function Home() {
   return (
-    <div className="bg-indigo-950">
+    <div className="bg-rose-950/70">
 
-      <header className="w-[90%] md:w-[92%] lg:-[95%] border-b flex flex-col gap-1 pt-2 mx-auto lg:border-b lg:pt-12 header-content lg:pb-9 lg:border-slate-700 lg:gap-2">
-        <MainLogo />
-        <MainNav />
-      </header>
+      <MainHeader />
 
-      <main className="mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center justify-between min-h-screen gap-y-12 >*:bg-slate-200">
+      <main className="mx-auto w-[90%] md:w-[92%] lg:w-[95%]] flex flex-col items-center min-h-screen gap-y-12 >*:bg-slate-200 mt-16">
 
-        <MainIntro />
+        <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6 text-slate-400">Jokes</h1>
 
-        <MainProjects />
+        <div className="w-full flex flex-wrap gap-8">
+          {jokes.map((joke, index) => (
+            <div key={index} className="border border-rose-700 w-[400px] bg-rose-900 p-4 rounded-lg min-h-[200px] space-y-4">
+              <p>{joke.setup}</p>
+              <p>{joke.punchline}</p>
+            </div>
+          ))}
+        </div>
 
-        <MainResources />
-
-        <MainFooter />
 
       </main>
+      <MainFooter />
     </div>
   );
 }

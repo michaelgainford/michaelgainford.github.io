@@ -685,12 +685,12 @@ export default function Home() {
         <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6 text-slate-400">Movies Database</h1>
         <div className="movies-grid w-full min-h-[500px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8 gap-12">
           {MoviesList.map((movie, id) => (
-            <div key={id} className="movie-card justify-items-center content-center border-yellow-500/10 w-[200px] flex flex-col items-center duration-300 ease-in-out border cursor-pointer border-tr-md border-tl-md border-violet-900 movie-card text-light_colour border-secondary group hover:bg-secondary">
+            <div key={id} className="movie-card justify-items-center content-center border-yellow-500/10 min-w-[120px] lg:w-[200px] flex flex-col items-center duration-300 ease-in-out border cursor-pointer border-tr-md border-tl-md border-violet-900 movie-card text-light_colour border-secondary group hover:bg-secondary">
               <div className="movie-poster">
                 <Image src={movie.image} className={`object-cover duration-1000 border-tr-md border-tl-md lg:opacity-50 group-hover:lg:opacity-100 group-hover:ease-in-out`} alt={movie.title} width={200} height={300} />
               </div>
-              <div className="movie-info">
-                <p className="movie-title bg-violet-900  lg:px-2 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 w-[200px] text-center text-xs min-h-[60px] max-w-full flex items-center justify-center">{movie.title}</p>
+              <div className="movie-info w-full">
+                <p className="movie-title bg-violet-900 w-full px-2 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 w-full text-center text-xs min-h-[60px] max-w-full flex items-center justify-center">{movie.title}</p>
               </div>
             </div>
           ))}
