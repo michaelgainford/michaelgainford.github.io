@@ -17,13 +17,13 @@ const featuredProjects = [
 export default function MainProjects() {
   return (
     <div className="w-full projects-list">
-      <h2 className="mb-6 text-base tracking-wide font-extralight lg:mb-8 lg:text-2xl text-slate-400">Projects</h2>
-      <div className="grid grid-cols-2 gap-12">
+      <h2 className="mb-6 text-md max-md:font-bold tracking-wide font-extralight lg:mb-8 lg:text-2xl text-slate-400">Featured Projects</h2>
+      <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 gap-12">
         {featuredProjects.map((project, index) => (
           <Link
             key={index}
             href={project.href}
-            className={`flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border  min-w-[250px] rounded-lg ${project.border} ${project.group} project ${project.hover} aspect-[3/2] bg-slate-800 opacity-75 hover:opacity-100`}>
+            className={`flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border  lg:min-w-[250px] rounded-lg ${project.border} ${project.group} project ${project.hover} aspect-[3/2] bg-slate-800 opacity-75 hover:opacity-100`}>
             <span className="w-10 h-auto lg:w-16 lg:h-auto max-lg:fill-slate-100 lg:fill-slate-100 ${project.groupHover}">  
               <Image src={project.icon} alt="Hand Icon" className="stroke-slate-300 fill-slate-300 text-slate-300" width={168} height={168} />
             </span>

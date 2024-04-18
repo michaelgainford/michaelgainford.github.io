@@ -13,10 +13,10 @@ const navLinks = [
 export default function MainNav() {
   return (
     <nav className="flex justify-start nav logo">
-      <ul className="flex gap-2 pt-8 pb-4 overflow-x-hidden text-[12px] tracking-wider uppercase lg:py-8 lg:justify-center lg:gap-7 no-scrollbar text-slate-400">
+      <ul className="flex gap-2 pt-8 pb-4 max-md:overflow-auto text-[12px] tracking-wider uppercase lg:py-8 lg:justify-center lg:gap-7 no-scrollbar">
         {navLinks.map((link, index) => (
           <li key={index} className="">
-            <Link className={`inline-block px-4 py-3 transition border-2 rounded-lg lg:px-12 lg:py-5 ${link.border} ${link.hover} min-w-max`} href={link.href}>
+            <Link className={`inline-block px-4 py-3 transition border-2 rounded-lg hover:text-slate-300 lg:px-12 lg:py-5 ${link.border} ${link.hover} min-w-max`} href={link.href}>
               {link.label}
             </Link>
           </li>
