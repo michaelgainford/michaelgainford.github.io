@@ -9,7 +9,7 @@ import Icon_Resources from '../public/icon-laptop.svg'
 const featuredProjects = [
   { href: "/dev-resources", label: "Dev Resources", border: "border-teal-700", hover: "hover:bg-teal-800", group: "group/resources", fill: "fill-slate-100", groupHover: "group-hover/resources:fill-slate-100", icon: Icon_Resources},
   { href: "/movies-database", label: "Movies Database", border: "border-violet-700", hover: "hover:bg-violet-800", group: "group/movies", fill: "fill-slate-100", groupHover: "group-hover/movies:fill-slate-100", icon: Icon_Movies},
-  { href: "/euro-2024", label: "Euro 2024", border: "border-blue-700", hover: "hover:bg-blue-800", group: "group/euros", fill: "fill-slate-100", groupHover: "group-hover/euros:fill-slate-900", icon: Icon_Football},
+  { href: "/football/euro-2024", label: "Euro 2024", border: "border-blue-700", hover: "hover:bg-blue-800", group: "group/euros", fill: "fill-slate-100", groupHover: "group-hover/euros:fill-slate-900", icon: Icon_Football},
   { href: "/jokes", label: "Jokes", border: "border-rose-700", hover: "hover:bg-rose-800", group: "group/jokes", fill: "fill-slate-100", groupHover: "group-hover/jokes:fill-slate-100", icon: Icon_Jokes},
 ]
 
@@ -18,7 +18,7 @@ export default function MainProjects() {
   return (
     <div className="w-full projects-list">
       <h2 className="mb-6 text-md max-md:font-bold tracking-wide font-extralight lg:mb-8 lg:text-2xl text-slate-400">Featured Projects</h2>
-      <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 gap-12">
+      <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
         {featuredProjects.map((project, index) => (
           <Link
             key={index}
