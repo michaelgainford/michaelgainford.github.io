@@ -663,12 +663,6 @@ const MoviesList = [
     imdb_url: "https://www.imdb.com/title/tt0372784/"
   },
   {
-    id: 107,
-    title: "The Dark Knight",
-    image: "/movies-images/the-dark-knight.webp",
-    imdb_url: "https://www.imdb.com/title/tt0468569/"
-  },
-  {
     id: 108,
     title: "Die Hard with a Vengeance",
     image: "/movies-images/die-hard-with-a-vengeance.webp",
@@ -690,7 +684,7 @@ export default function Home() {
                 <Image src={movie.image} className={`object-cover duration-1000 border-tr-md border-tl-md lg:opacity-50 group-hover:lg:opacity-100 group-hover:ease-in-out`} alt={movie.title} width={200} height={300} />
               </div>
               <div className="movie-info w-full">
-                <p className="movie-title bg-violet-900 w-full px-2 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 w-full text-center text-xs min-h-[60px] max-w-full flex items-center justify-center">{movie.title}</p>
+                <p className="movie-title bg-violet-900 w-full px-2 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 text-center text-xs min-h-[60px] max-w-full flex items-center justify-center">{movie.title}</p>
               </div>
             </div>
           ))}
