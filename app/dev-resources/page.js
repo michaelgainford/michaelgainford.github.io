@@ -1,14 +1,9 @@
 //import Image from "next/image";
-import MainNav from "@/components/MainNav";
-import MainLogo from "@/components/MainLogo";
-import MainFooter from "@/components/MainFooter";
-// import hand.svg from the public folder
-//import hand from "../public/hand.svg";
-import MainProjects from "@/components/MainProjects";
-import MainHeader from "@/components/MainHeader";
 import Link from "next/link";
-import H1Span from "@/components/typography/H1Span";
-import Image from "next/image";
+import MainHeader from "@/components/MainHeader";
+import H1 from "@/components/typography/H1Span";
+import MainFooter from "@/components/footer/MainFooter";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
 
 const resources = [
   { name: "Codepen", url: "https://codepen.io", image: "codepen", tags: ["code", "sandbox"] },
@@ -28,31 +23,33 @@ const resources = [
   { name: "Wesh", url: "https://wesh.uk", image: "wesh-uk", tags: ["hosting", "domains"] },
   { name: "X", url: "https://x.co", image: "x", tags: ["networking", "social"] },
   { name: "YouTube", url: "https://youtube.com", image: "youtube", tags: ["social", "tutorials"] },
+  { name: "SVG Repo", url: "https://svgrepo.com", image: "template", tags: ["icons", "svg"] },
+  { name: "HTML5 Doctor", url: "http://html5doctor.com", image: "html5-doctor", tags: ["html", "docs"] },
+  { name: "CSS Tricks", url: "https://css-tricks.com", image: "css-tricks", tags: ["css", "tutorials"] },
+  { name: "CSS Stats", url: "https://cssstats.com", image: "css-stats", tags: ["css", "analytics"] },
+  { name: "WebAIM", url: "https://webaim.org", image: "webaim", tags: ["accessibility", "web dev"] },
 ];
-
-
 
 const resourcesSortedByName = resources.sort((a, b) => a.name.localeCompare(b.name));
 
-
 export default function Home() {
   return (
-    <div className="bg-teal-900/80 text-slate-200">
+    <div className="bg-teal-900/80 text-slate-300">
 
       <MainHeader />
 
-      <main className="mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center min-h-screen >*:bg-slate-200">
-         <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6 text-slate-400 mt-12">Dev Resources</h1>
-         <div className="resources grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 border-rose-500 gap-x-4 gap-y-8 md:gap-8 lg:gap-12 w-full pt-16">
+      <main className={mainStyles}>
+         <H1 text="Dev Resources" />
+         <div className="grid w-full grid-cols-2 pt-4 sm:pt-6 lg:pt-16 resources md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 border-rose-500 gap-x-4 gap-y-8 md:gap-8 lg:gap-12">
 
           {resourcesSortedByName.map((resource, index) => (
-            <Link target="_blank" href={resource.url} key={index} className="resource border border-emerald-950 text-center bg-emerald-950 text-white/80 rounded-lg group">
-              <div className="resource-image aspect-square w-full bg-teal-700 rounded-t-lg">
-                <Image src={`/resource-screenshots/screenshot-of-${resource.image}.png`} alt={resource.name} width={250} height={200} className="object-cover w-full h-full rounded-t-lg lg:opacity-50 group-hover:opacity-100 transition" />
+            <Link target="_blank" href={resource.url} key={index} className="text-center border rounded-lg resource border-emerald-950 bg-emerald-950 hover:bg-emerald-800 text-white/80 group">
+              <div className="hidden w-full bg-teal-700 rounded-t-lg resource-image aspect-square">
+                {/* <Image src={`/resource-screenshots/screenshot-of-${resource.image}.png`} alt={resource.name} width={250} height={200} className="object-cover w-full h-full transition rounded-t-lg lg:opacity-20 group-hover:opacity-100" /> */}
               </div>
-              <div className="resource-details gap-y-4 py-2">
-                <span className="uppercase py-2 text-xs lg:text-sm tracking-widest">{resource.name}</span>
-                <div className="resource-tags p-2 flex flex-wrap justify-center gap-2">
+              <div className="py-2 resource-details gap-y-4">
+                <span className="py-2 text-xs tracking-widest uppercase lg:text-sm">{resource.name}</span>
+                <div className="flex flex-wrap justify-center gap-2 p-2 resource-tags">
                   {resource.tags.map((tag, index) => (
                     <span className="border border-emerald-800 py-1 px-2 rounded-lg tracking-wide text-[10px]" key={index}>{tag}</span>
                   ))}

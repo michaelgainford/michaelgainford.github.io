@@ -1,14 +1,8 @@
-//import Image from "next/image";
-import MainNav from "@/components/MainNav";
-import MainLogo from "@/components/MainLogo";
-import MainIntro from "@/components/MainIntro";
-import MainResources from "@/components/MainResources";
-import MainFooter from "@/components/MainFooter";
-// import hand.svg from the public folder
-//import hand from "../public/hand.svg";
-import MainProjects from "@/components/MainProjects";
-import MainHeader from "@/components/MainHeader";
 import Image from "next/image";
+import MainHeader from "@/components/MainHeader";
+import H1 from "@/components/typography/H1Span";
+import MainFooter from "@/components/footer/MainFooter";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
 
 const fortniteSeasons = [
   {
@@ -301,21 +295,21 @@ export default function Home() {
 
       <MainHeader />
 
-      <main className="mx-auto w-[90%] md:w-[92%] lg:w-[95%]] flex flex-col items-center min-h-screen gap-y-12 >*:bg-slate-200 mt-16">
+      <main className={mainStyles}>
 
-        <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6 text-slate-400">Fortnite</h1>
+        <H1 text="Fortnite" />
 
-        <div className="w-full gap-8 lg:gap-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full grid-cols-1 gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-3">
           {fortniteSeasons.map((season, index) => (
-            <div key={index} className="bg-green-900 p-4 lg:py-8 flex flex-col justify-end aspect-square sm:aspect-[4/3] lg:aspect-[5/3] relative">
-              <div className="z-20 relative space-y-2  text-slate-400 group">
+            <div key={index} className="bg-green-900 p-4 lg:py-8 flex flex-col justify-end aspect-square sm:aspect-[4/3] lg:aspect-[5/3] relative lg:opacity-50 lg:hover:opacity-100 transition">
+              <div className="relative z-20 space-y-2 text-slate-400 group">
                 <p className="text-2xl font-medium">Chapter {season.chapter} Season {season.season}</p>
                 <p className="italic">({season.startDate} - {season.endDate})</p>
                 <p>{season.theme}</p>
               </div>
-              <Image src={season.mobileImage} alt={season.name} width={200} height={200} className="md:hidden" />
-              <Image src={season.desktopImage} alt={season.name} width={400} height={200} className="max-md:hidden w-full h-full z-0 absolute inset-0" />
-              <div className="bg-black h-full w-full bg-opacity-60 absolute inset-0 z-10"></div>
+              <Image src={season.mobileImage} alt={season.name} width={200} height={200} className="absolute inset-0 z-0 w-full h-full md:hidden" />
+              <Image src={season.desktopImage} alt={season.name} width={400} height={200} className="absolute inset-0 z-0 w-full h-full max-md:hidden" />
+              <div className="absolute inset-0 z-10 w-full h-full bg-black bg-opacity-60"></div>
             </div>
           ))}
 

@@ -1,14 +1,8 @@
-//import Image from "next/image";
-import MainNav from "@/components/MainNav";
-import MainLogo from "@/components/MainLogo";
-import MainIntro from "@/components/MainIntro";
-import MainResources from "@/components/MainResources";
-import MainFooter from "@/components/MainFooter";
-// import hand.svg from the public folder
-//import hand from "../public/hand.svg";
-import MainProjects from "@/components/MainProjects";
-import MainHeader from "@/components/MainHeader";
 import Image from "next/image";
+import MainHeader from "@/components/MainHeader";
+import H1 from "@/components/typography/H1Span";
+import MainFooter from "@/components/footer/MainFooter";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
 
 const euro2024Teams = [
   {
@@ -168,7 +162,6 @@ euro2024Teams.sort((a, b) => {
 }
 );
 
-
 const groups = [...new Set(euro2024Teams.map((team) => team.group))];
 groups.sort();
 
@@ -178,13 +171,13 @@ export default function Home() {
 
       <MainHeader />
 
-      <main className="mx-auto w-[90%] md:w-[92%] lg:w-[95%]] flex flex-col items-center min-h-screen gap-y-12 >*:bg-slate-200 mt-16">
+      <main className={mainStyles}>
 
-        <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6 text-slate-400">Euro 2024</h1>
+        <H1 text="Euro 2024" />
 
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12 gap-4 first-line:gap-4 countries-grid-container hidden">
+        <div className="grid hidden grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12 first-line:gap-4 countries-grid-container">
           {euro2024Teams.map((team, index) => (
-            <div key={index} className="flex flex-col items-center pb-4 duration-300 ease-in-out border border-blue-900 rounded-md cursor-pointer movie-card text-light_colour border-secondary group hover:bg-secondary w-full">
+            <div key={index} className="flex flex-col items-center w-full pb-4 duration-300 ease-in-out border border-blue-900 rounded-md cursor-pointer movie-card text-light_colour border-secondary group hover:bg-secondary">
               <Image className="text-sm duration-1000 group-hover:ease-in-out group-hover:scale-100 group-hover:rounded-t-md" src={team.flag} loading="lazy" alt={team.name} width={32} height={32} />
               <p className="pt-2 lg:pt
               -4 lg:px-2 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 w-[200px] text-center text-xs lg:text-md min-h-[60px] max-w-full">{team.name}</p>
@@ -193,13 +186,13 @@ export default function Home() {
 
         </div>
 
-        <div className="groups w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 2xl:gap-16">
+        <div className="grid w-full grid-cols-2 gap-8 groups sm:grid-cols-3 lg:grid-cols-6 2xl:gap-16">
           {groups.map((group, index) => (
-            <div key={index} className="group flex flex-col border rounded-lg w-full px-4 py-6 bg-white/90 text-blue-900 border border-blue-600">
-              <h2 className="text-sm text-left sm:text-center lg:text-left font-bold mb-4 uppercase tracking-wider">Group {group}</h2>
-              <div className="group-teams flex flex-col justify-center gap-4">
+            <div key={index} className="flex flex-col w-full px-4 py-6 text-blue-900 border border-blue-600 rounded-lg group bg-white/90">
+              <h2 className="mb-4 text-sm font-bold tracking-wider text-left uppercase sm:text-center lg:text-left">Group {group}</h2>
+              <div className="flex flex-col justify-center gap-4 group-teams">
                 {euro2024Teams.filter((team) => team.group === group).map((team, index) => (
-                  <div key={index} className="team flex sm:flex-col lg:flex-row gap-4 items-center">
+                  <div key={index} className="flex items-center gap-4 team sm:flex-col lg:flex-row">
                     <Image src={team.flag} alt={team.name} width={32} height={32} />
                     <p className="text-xs">{team.name}</p>
                   </div>

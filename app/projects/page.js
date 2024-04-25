@@ -1,14 +1,8 @@
-//import Image from "next/image";
-import MainNav from "@/components/MainNav";
-import MainLogo from "@/components/MainLogo";
-import MainIntro from "@/components/MainIntro";
-import MainResources from "@/components/MainResources";
-import MainFooter from "@/components/MainFooter";
-// import hand.svg from the public folder
-//import hand from "../public/hand.svg";
-import MainProjects from "@/components/MainProjects";
-import MainHeader from "@/components/MainHeader";
 import Image from "next/image";
+import MainHeader from "@/components/MainHeader";
+import H1 from "@/components/typography/H1Span";
+import MainFooter from "@/components/footer/MainFooter";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
 
 const allProjects = [
   {
@@ -69,11 +63,11 @@ const allProjects = [
     featuredProject: false,
     icon: "/icon-quote.svg",
     color: "text-slate-200",
-    bg: "bg-amber-700",
-    border: "border-amber-700",
-    divider: "divide-amber-700",
-    hover: "hover:bg-amber-800",
-    description: "A collection of quotes to inspire you",
+    bg: "bg-sky-700",
+    border: "border-sky-500",
+    divider: "divide-sky-500",
+    hover: "hover:bg-sky-800",
+    description: "A collection of motivational and inspirational quotes to inspire you",
     category: "fun",
   },
   {
@@ -88,31 +82,154 @@ const allProjects = [
     hover: "hover:bg-black/40",
     description: "All the latest news and updates for Fortnite",
     category: "gaming",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
+  },
+  {
+    name: "Template",
+    href: "/",
+    featuredProject: false,
+    icon: "/icon-template.svg",
+    color: "text-slate-200",
+    bg: "bg-slate-500",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "hover:bg-slate-700",
+    description: "A template for a project",
+    category: "template",
   }
 ];
 
+// Sort allProjects by name
+allProjects.sort((a, b) => a.name.localeCompare(b.name));
+
 export default function Home() {
   return (
-    <div className="bg-neutral-800 text-slate-300">
+    <div className="bg-neutral-400 text-slate-800">
 
       <MainHeader />
 
-      <main className="mx-auto w-[90%] md:w-[92%] lg:w-[95%]] flex flex-col items-center min-h-screen gap-y-12 >*:bg-slate-200 mt-16">
+      <main className={mainStyles}>
 
-        <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6">All Projects</h1>
+        <H1 text="All Projects" />
 
-        <div className="w-full gap-8 grid grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5">
+        <div className="grid flex-wrap w-full grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
           {allProjects.map((project, index) => (
-            <a key={index} href={project.href} className={`border ${project.border} aspect-[3/2] ${project.bg} ${project.hover} ${project.color} p-4 rounded-lg space-y-4 divide-y ${project.divider}`}>
-              <span className="flex gap-4 items-center">
-                <Image src={project.icon} alt="Hand Icon" className="w-8 h-auto max-lg:w-16 max-lg:h-auto stroke-slate-300 fill-slate-300 text-slate-300" width={168} height={168} />
-               <h2>{project.name}</h2>
+            <a key={index} href={project.href} className={`border ${project.border}  ${project.bg} ${project.hover} ${project.color} h-full p-4 rounded-lg space-y-4 divide-y ${project.divider}`}>
+              <span className="flex items-center gap-3">
+
+              <span className="flex items-center w-6 h-6 gap-4">
+                <Image src={project.icon} alt="Hand Icon" className="w-full stroke-slate-300 fill-slate-300 text-slate-300" width={168} height={168} />
               </span>
-              <span className="flex justify-start text-xs text-left pt-4 tracking-wider">
+               <h2 className="text-xs">{project.name}</h2>
+              </span>
+              <span className="flex justify-start pt-6 pb-2 text-xs tracking-wider text-left">
                 <p>{project.description}</p>
               </span>
-              <div className="category flex justify-start pt-4">
-                <span className="text-xs tracking-wider uppercase">{project.category}</span>
+              <div className="flex items-end justify-start pt-4 category">
+                <span className={`p-1 text-xs tracking-wider uppercase border ${project.border} rounded`}>{project.category}</span>
               </div>
             </a>
           ))}

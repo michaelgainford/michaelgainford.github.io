@@ -1,7 +1,8 @@
 import Image from "next/image";
 import MainHeader from "@/components/MainHeader";
-import MainFooter from "@/components/MainFooter";
-
+import MainFooter from "@/components/footer/MainFooter";
+import H1 from "@/components/typography/H1Span";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
 const MoviesList = [
   {
     id: 1,
@@ -591,73 +592,79 @@ const MoviesList = [
   },
   {
     id: 95,
+    title: "DC League of Super Pets",
+    image: "/movies-images/dc-league-of-super-pets.webp",
+    imdb_url: "https://www.imdb.com/title/tt10310140/"
+  },
+  {
+    id: 96,
     title: "Guardians of the Galaxy Vol. 3",
     image:  "/movies-images/guardians-of-the-galaxy-vol-3.webp",
     imdb_url: "https://www.imdb.com/title/tt6791350/",
     date_watched: "2023-08-12"
   },
   {
-    id: 96,
+    id: 97,
     title: "The Good Dinosaur",
     image:  "/movies-images/the-good-dinosaur.webp",
     imdb_url: "https://www.imdb.com/title/tt1979388/",
   },
   {
-    id: 97,
+    id: 98,
     title: "GoldenEye",
     image:  "/movies-images/goldeneye.webp",
     imdb_url: "https://www.imdb.com/title/tt0113189/",
   },
   {
-    id: 98,
+    id: 99,
     title: "Skyfall",
     image:  "/movies-images/skyfall.webp",
     imdb_url: "https://www.imdb.com/title/tt1074638/",
   },
   {
-    id: 99,
+    id: 100,
     title: "Casino Royale",
     image:  "/movies-images/casino-royale.webp",
     imdb_url: "https://www.imdb.com/title/tt0381061/",
   },
   {
-    id: 100,
+    id: 101,
     title: "Die Hard",
     image:  "/movies-images/die-hard.webp",
     imdb_url: "https://www.imdb.com/title/tt0095016/",
   },
   {
-    id: 101,
+    id: 102,
     title: "Die Hard 2",
     image:  "/movies-images/die-hard-2.webp",
     imdb_url: "https://www.imdb.com/title/tt0099423/",
   },
   {
-    id: 102,
+    id: 103,
     title: "Batman",
     image:  "/movies-images/batman.webp",
     imdb_url: "https://www.imdb.com/title/tt0096895/",
   },
   {
-    id: 103,
+    id: 104,
     title: "Batman Returns",
     image: "/movies-images/batman-returns.webp",
     imdb_url: "https://www.imdb.com/title/tt0103776/"
   },
   {
-    id: 104,
+    id: 105,
     title: "Batman Forever",
     image: "/movies-images/batman-forever.webp",
     imdb_url: "https://www.imdb.com/title/tt0112462/"
   },
   {
-    id: 105,
+    id: 106,
     title: "Batman & Robin",
     image: "/movies-images/batman-and-robin.webp",
     imdb_url: "https://www.imdb.com/title/tt0118688/"
   },
   {
-    id: 106,
+    id: 107,
     title: "Batman Begins",
     image: "/movies-images/batman-begins.webp",
     imdb_url: "https://www.imdb.com/title/tt0372784/"
@@ -667,23 +674,26 @@ const MoviesList = [
     title: "Die Hard with a Vengeance",
     image: "/movies-images/die-hard-with-a-vengeance.webp",
     imdb_url: "https://www.imdb.com/title/tt0112864/"
-  }
+  },
 ];
+
+// Sort MoviesList by title
+MoviesList.sort((a, b) => a.title.localeCompare(b.title));
 
 export default function Home() {
   return (
     <div className="bg-indigo-950 text-slate-300">
 
       <MainHeader />
-      <main className="mx-auto w-[90%] md:w-[92%] lg:w-[95%]] flex flex-col items-center justify-between min-h-screen gap-y-12 >*:bg-slate-200 mt-16">
-        <h1 className="mb-4 text-sm tracking-wide text-left font-extralight lg:text-2xl lg:mb-6 text-slate-400">Movies Database</h1>
-        <div className="movies-grid w-full min-h-[500px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8 gap-12">
+      <main className={mainStyles}>
+        <H1 text="Movies Database" />
+        <div className="movies-grid w-full min-h-[500px] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 3xl:grid-cols-8 gap-4 max-sm:gap-y-6 md:gap-6 lg:gap-8 xl:gap-12">
           {MoviesList.map((movie, id) => (
-            <div key={id} className="movie-card justify-items-center content-center border-yellow-500/10 min-w-[120px] lg:w-[200px] flex flex-col items-center duration-300 ease-in-out border cursor-pointer border-tr-md border-tl-md border-violet-900 movie-card text-light_colour border-secondary group hover:bg-secondary">
-              <div className="movie-poster">
-                <Image src={movie.image} className={`object-cover duration-1000 border-tr-md border-tl-md lg:opacity-50 group-hover:lg:opacity-100 group-hover:ease-in-out`} alt={movie.title} width={200} height={300} />
+            <div key={id} className="movie-card justify-items-center content-center border-yellow-500/10 flex flex-col items-center duration-300 ease-in-out border cursor-pointer border-violet-900 movie-card text-light_colour border-secondary group hover:bg-secondary">
+              <div className="movie-poster w-full max-w-full">
+                <Image src={movie.image} className={`object-cover duration-1000 border-tr-md border-tl-md lg:opacity-50 group-hover:lg:opacity-100 group-hover:ease-in-out w-full`} alt={movie.title} width={200} height={300} />
               </div>
-              <div className="movie-info w-full">
+              <div className="w-full movie-info">
                 <p className="movie-title bg-violet-900 w-full px-2 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 text-center text-xs min-h-[60px] max-w-full flex items-center justify-center">{movie.title}</p>
               </div>
             </div>
