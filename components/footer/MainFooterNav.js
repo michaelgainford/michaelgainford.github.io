@@ -54,7 +54,7 @@ export default function MainFooterNav() {
           <h4 className="pb-4 mb-4 text-xs tracking-widest text-left uppercase border-b lg:text-left border-slate-700 font-extralight">
             Fun Stuff
           </h4>
-          <ul className="text-sm text-left lg:text-left">
+          <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavItemsOne.map((item, index) => (
               <li key={index}>
                 <Link className="flex py-2" href

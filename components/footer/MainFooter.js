@@ -1,0 +1,16 @@
+import MainFooterAbout from "@/components/footer/MainFooterAbout"
+import MainFooterNav from "@/components/footer/MainFooterNav"
+
+export default function mainFooter() {
+  return (
+    <footer className="w-[90%] md:w-[92%] lg:-[95%] flex flex-col lg:justify-between gap-1 pt-6 mx-auto lg:pt-4 header-content lg:pb-2 border-slate-700 lg:gap-4 mt-8 md:mt-16 tracking-wider">
+      <div className="grid justify-between w-full grid-cols-1 mb-12 lg:flex-row max-lg:gap-y-8 lg:gap-x-24 lg:grid-cols-4">
+        <MainFooterNav />
+        <MainFooterAbout />
+      </div>
+      <div className="pt-4 text-[8px] pb-1 text-center copyright border-slate-700">
+        <p>Built by MG 2024</p>
+      </div>
+    </footer>
+  )
+}
