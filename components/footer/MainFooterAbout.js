@@ -6,7 +6,7 @@ export default function MainFooterAbout() {
       <h3 className="mb-6 text-lg tracking-wider text-left h2 font-extralight lg:mb-16 max-sm:underline underline-offset-8 max-sm:hidden">About</h3>
       <div className="flex flex-row gap-4 mb-8 lg:pb-8 lg:gap-16 lg:items-center">
         <div className="text">
-          <p className="pr-8 text-xs leading-loose text-left leading-re laxed md:text-sm">
+          <p className="pr-8 text-[10px] leading-loose text-left leading-re laxed md:text-sm">
             My name is Michael and I am Front-End Developer. I currently work as a Shopify Developer but particularly enjoy working
             with React and Next.js. More text to fill in this space as it is currently a bit light of content.
           </p>

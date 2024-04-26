@@ -49,9 +49,9 @@ export default function MainFooterNav() {
       <h3 className="mb-6 text-lg tracking-wider text-left max-sm:hidden h2 font-extralight lg:mb-16 max-sm:underline underline-offset-8">
         Information
       </h3>
-      <div className="grid grid-cols-2 gap-16 lg:flex-row footer-nav lg:grid lg:grid-cols-2">
+      <div className="grid grid-cols-2 gap-16 lg:flex-row footer-nav lg:grid lg:grid-cols-2 max-sm:mb-4">
         <div className="rounded lg:pr-8 footer-nav-group border-slate-700">
-          <h4 className="pb-4 mb-4 text-xs tracking-widest text-left uppercase border-b lg:text-left border-slate-700 font-extralight">
+          <h4 className="pb-4 mb-0 text-xs tracking-widest text-left uppercase border-b lg:text-left border-slate-700 font-extralight">
             Fun Stuff
           </h4>
           <ul className="text-xs text-left md:text-sm lg:text-left">
@@ -69,7 +69,7 @@ export default function MainFooterNav() {
           <h4 className="pb-4 mb-4 text-xs tracking-widest text-left uppercase border-b lg:text-left border-slate-700 font-extralight">
             Boring Stuff
           </h4>
-          <ul className="text-sm text-center lg:text-left">
+          <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavItemsTwo.map((item, index) => (
               <li key={index}>
                 <Link className="flex py-2" href={item.href
