@@ -1,8 +1,8 @@
-import MainHeader from "@/components/MainHeader";
-import MainIntro from "@/components/MainIntro";
-import MainResources from "@/components/MainResources";
+import MainHeader from "@/components/header/MainHeader";
+import MainIntro from "@/components/page_home/MainIntro";
+import MainResources from "@/components/page_home/MainResources";
 import MainFooter from "@/components/footer/MainFooter";
-import MainProjects from "@/components/MainProjects";
+import MainProjects from "@/components/page_home/MainProjects";
 
 export default function Home() {
   return (

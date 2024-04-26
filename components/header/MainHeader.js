@@ -1,5 +1,5 @@
-import MainLogo from '@/components/MainLogo'
-import MainNav from '@/components/Header/MainNav'
+import MainLogo from '@/components/header/MainLogo'
+import MainNav from '@/components/header/MainNav'
 
 export default function MainHeader() {
   return (

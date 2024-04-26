@@ -1,37 +1,37 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import H2SectionHeader from './typography/H2SectionHeader'
-import Button from '../components/buttons/StandardButton'
+import H2SectionHeader from '/components/typography/H2SectionHeader'
+import Button from '/components/buttons/StandardButton'
 
 const featuredDevResources = [
   {
     title: "W3 Schools",
-    logo: "/w3-schools-logo.svg",
+    logo: "/icons/w3-schools-logo.svg",
     url: "https://www.w3schools.com/"
   },
   {
     title: "GitHub",
-    logo: "/github-logo.svg",
+    logo: "/icons/github-logo.svg",
     url: "https://github.com"
   },
   {
     title: "MDN Docs",
-    logo: "/placeholder-icon.svg",
+    logo: "/icons/placeholder-icon.svg",
     url: "https://developer.mozilla.org"
   },
   {
     title: "Coolors",
-    logo: "/placeholder-icon.svg",
+    logo: "/icons/placeholder-icon.svg",
     url: "https://coolors.co"
   },
   {
     title: "Tailwind CSS",
-    logo: "/placeholder-icon.svg",
+    logo: "/icons/placeholder-icon.svg",
     url: "https://tailwindcss.com"
   },
   {
     title: "Google Fonts",
-    logo: "/placeholder-icon.svg",
+    logo: "/icons/placeholder-icon.svg",
     url: "https://fonts.google.com"
   }
 ]

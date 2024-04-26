@@ -6,28 +6,29 @@ import MainFooter from "@/components/footer/MainFooter";
 const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
 
 const resources = [
+  { name: "Can I Use", url: "https://caniuse.com", image: "can-i-use", tags: ["web dev", "browsers"] },
   { name: "Codepen", url: "https://codepen.io", image: "codepen", tags: ["code", "sandbox"] },
   { name: "Coolors", url: "https://coolors.co", image: "coolors", tags: ["colours", "design"] },
-  { name: "Can I Use", url: "https://caniuse.com", image: "can-i-use", tags: ["web dev", "browsers"] },
+  { name: "CSS Stats", url: "https://cssstats.com", image: "css-stats", tags: ["css", "analytics"] },
+  { name: "CSS Tricks", url: "https://css-tricks.com", image: "css-tricks", tags: ["css", "tutorials"] },
   { name: "Font Awesome", url: "https://fontawesome.com", image: "font-awesome", tags: ["typography", "icons"] },
   { name: "GitHub", url: "https://github.com/", image: "github", tags: ["code", "dev tools"] },
   { name: "Google Analytics", url: "https://analytics.google.com", image: "google-analytics", tags: ["analytics"] },
   { name: "Google Fonts", url: "https://fonts.google.com", image: "google-fonts", tags: ["typography"] },
+  { name: "HTML5 Doctor", url: "http://html5doctor.com", image: "html5-doctor", tags: ["html", "docs"] },
   { name: "Krystal UK", url: "https://krystal.uk", image: "krystal", tags: ["hosting", "domains"] },
   { name: "LinkedIn", url: "https://linkedin.com", image: "linkedin", tags: ["networking", "social", "jobs"] },
   { name: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/", image: "mdn-docs", tags: ["docs", "web dev"] },
   { name: "Next.js", url: "https://nextjs.org", image: "nextjs", tags: ["js", "react"] },
   { name: "PageSpeed Insights", url: "https://developers.google.com/speed/pagespeed/insights/", image: "google-analytics", tags: ["analytics"] },
+  { name: "Shopify Cheat Sheets", url: "https://cheat.markdunkley.com/" , image: "shopify", tags: ["cheat sheets", "shopify"] },
+  { name: "SVG Repo", url: "https://svgrepo.com", image: "template", tags: ["icons", "svg"] },
   { name: "Tailwind CSS", url: "https://tailwindcss.com", image: "tailwind-css", tags: ["css"] },
   { name: "W3 Schools", url: "https://w3schools.com", image: "w3-schools", tags: ["docs", "tutorials"] },
+  { name: "WebAIM", url: "https://webaim.org", image: "webaim", tags: ["accessibility", "web dev"] },
   { name: "Wesh", url: "https://wesh.uk", image: "wesh-uk", tags: ["hosting", "domains"] },
   { name: "X", url: "https://x.co", image: "x", tags: ["networking", "social"] },
   { name: "YouTube", url: "https://youtube.com", image: "youtube", tags: ["social", "tutorials"] },
-  { name: "SVG Repo", url: "https://svgrepo.com", image: "template", tags: ["icons", "svg"] },
-  { name: "HTML5 Doctor", url: "http://html5doctor.com", image: "html5-doctor", tags: ["html", "docs"] },
-  { name: "CSS Tricks", url: "https://css-tricks.com", image: "css-tricks", tags: ["css", "tutorials"] },
-  { name: "CSS Stats", url: "https://cssstats.com", image: "css-stats", tags: ["css", "analytics"] },
-  { name: "WebAIM", url: "https://webaim.org", image: "webaim", tags: ["accessibility", "web dev"] },
 ];
 
 const resourcesSortedByName = resources.sort((a, b) => a.name.localeCompare(b.name));

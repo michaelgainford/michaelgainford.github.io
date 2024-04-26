@@ -1,5 +1,6 @@
 import MainFooterAbout from "@/components/footer/MainFooterAbout"
 import MainFooterNav from "@/components/footer/MainFooterNav"
+import Copyright from "@/components/footer/Copyright"
 
 export default function mainFooter() {
   return (
@@ -8,9 +9,7 @@ export default function mainFooter() {
         <MainFooterNav />
         <MainFooterAbout />
       </div>
-      <div className="pt-4 text-[8px] pb-1 text-center copyright border-slate-700">
-        <p>Built by MG 2024</p>
-      </div>
+      <Copyright />
     </footer>
   )
 }
