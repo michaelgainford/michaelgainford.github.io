@@ -203,9 +203,9 @@ export default function Home() {
 
         </div>
 
-        <MainFooter />
 
       </main>
+        <MainFooter />
     </div>
   );
 }

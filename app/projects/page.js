@@ -84,17 +84,17 @@ const allProjects = [
     category: "gaming",
   },
   {
-    name: "Template",
-    href: "/",
+    name: "Everton",
+    href: "/football/everton",
     featuredProject: false,
     icon: "/icon-template.svg",
     color: "text-slate-200",
-    bg: "bg-slate-500",
-    border: "border-slate-700",
-    divider: "divide-slate-500",
-    hover: "hover:bg-slate-700",
-    description: "A template for a project",
-    category: "template",
+    bg: "bg-blue-900",
+    border: "border-blue-700",
+    divider: "divide-blue-500",
+    hover: "hover:bg-blue-700",
+    description: "A page dedicated to Everton Football Club",
+    category: "football",
   },
   {
     name: "Template",
@@ -215,7 +215,7 @@ export default function Home() {
 
         <H1 text="All Projects" />
 
-        <div className="grid flex-wrap w-full grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
+        <div className="grid flex-wrap w-full grid-cols-2 gap-4 sm:gap-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
           {allProjects.map((project, index) => (
             <a key={index} href={project.href} className={`border ${project.border}  ${project.bg} ${project.hover} ${project.color} h-full p-4 rounded-lg space-y-4 divide-y ${project.divider}`}>
               <span className="flex items-center gap-3">
