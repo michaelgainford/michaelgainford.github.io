@@ -244,19 +244,23 @@ export default function Home() {
           </div> 
           <div className="playing-squad mt-8">
             <h2 className="text-lg font-medium uppercase mb-2">Playing Squad</h2>
-            <div className="players flex gap-4 flex-wrap justify-between">
+            <div className="players gap-x-4 gap-y-8 justify-between grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {evertonSquad.map((player) => (
-                <div key={player.slug} className="player border rounded-lg basis-48 lg:basis-64 xl:basis-80">
-                  <div className="relative">
-                    <div className="player-image border-t-lg ">
-                      <Image src={`/everton/${player.slug}.jpg`} alt={player.name} width={450} height={300} className="!border-t-lg !max-w-full object-center aspect-[3/2]" />
+                
+                <div key={player.slug} className="player border border-blue-700 rounded-lg basis-48 lg:basis-64 xl:basis-80 space-y-2 bg-blue-700/80">
+                  <div className="player-image-and-number relative mb-2 space-y-2">
+                    <div className="player-image border-t-lg relative aspect-[3/2]">
+                      <Image src={`/everton/${player.slug}.webp`} alt={player.name} width={450} height={300} className="!border-t-lg !max-w-full object-center aspect-[3/2] absolute" />
                     </div>
-                    <div className="player-number">{player.number}</div>
+                    <div className="player-number absolute top-2 left-2 text-2xl py-1 px-2 !aspect-square flex justify-center items-center bg-black/60">{player.number}</div>
                   </div>
-                  <div className="player-name">{player.name}</div>
-                  <div className="player-position">{player.position}</div>
-                  <div className="player-country">{player.country}</div>
+                  <div className="player-details space-y-2 text-center pt-2 pb-6">
+                    <div className="player-name relative uppercase tracking-wide">{player.name}</div>
+                    <div className="player-position relative">{player.position}</div>
+                    <div className="player-country relative">{player.country}</div>
+                  </div>
                 </div>
+
               ))}
             </div>
           </div>
