@@ -1,4 +1,9 @@
 import Link from "next/link";
+import FooterSectionHeader from "/components/footer/FooterSectionHeader";
+import FooterNavListHeader from "/components/footer/FooterNavListHeader";
+
+
+const linkClasses = "flex py-2";
 
 const footerNavItemsOne = [
   {
@@ -46,18 +51,14 @@ const footerNavItemsTwo = [
 export default function MainFooterNav() {
   return (
     <div className="col-span-1 footer-information lg:col-span-2 lg:pr-8">
-      <h3 className="mb-6 text-lg tracking-wider text-left max-sm:hidden h2 font-extralight lg:mb-16 max-sm:underline underline-offset-8">
-        Information
-      </h3>
-      <div className="grid grid-cols-2 gap-16 lg:flex-row footer-nav lg:grid lg:grid-cols-2 max-sm:mb-4">
+      <FooterSectionHeader text="Information" />
+      <div className="footer-navs grid grid-cols-2 gap-16 lg:flex-row footer-nav lg:grid lg:grid-cols-2 max-sm:mb-4">
         <div className="rounded lg:pr-8 footer-nav-group border-slate-700">
-          <h4 className="pb-4 mb-0 text-xs tracking-widest text-left uppercase border-b lg:text-left border-slate-700 font-extralight">
-            Fun Stuff
-          </h4>
+          <FooterNavListHeader text="Fun Stuff" />
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavItemsOne.map((item, index) => (
               <li key={index}>
-                <Link className="flex py-2" href
+                <Link className={`${linkClasses}`} href
                 ={item.href}>
                   {item.title}
                 </Link>
@@ -66,13 +67,11 @@ export default function MainFooterNav() {
           </ul>
         </div>
         <div className="rounded lg:pr-8 footer-nav-group border-slate-700">
-          <h4 className="pb-4 mb-4 text-xs tracking-widest text-left uppercase border-b lg:text-left border-slate-700 font-extralight">
-            Boring Stuff
-          </h4>
+          <FooterNavListHeader text="Boring Stuff" />
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavItemsTwo.map((item, index) => (
               <li key={index}>
-                <Link className="flex py-2" href={item.href
+                <Link className={`${linkClasses}`} href={item.href
                 }>
                   {item.title}
                 </Link>
