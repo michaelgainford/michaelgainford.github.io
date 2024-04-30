@@ -4,7 +4,7 @@ export default function MainFooterAbout() {
   return (
     <div className="flex flex-col col-span-1 gap-2 lg:col-span-2 footer-about">
       <h3 className="mb-6 text-lg tracking-wider text-left h2 font-extralight lg:mb-16 max-sm:underline underline-offset-8 max-sm:hidden">About</h3>
-      <div className="flex flex-row gap-4 mb-8 lg:pb-8 lg:gap-16 lg:items-center">
+      <div className="flex flex-row gap-4 mb-8 lg:pb-8 lg:gap-16">
         <div className="text">
           <p className="pr-8 text-[10px] leading-loose text-left leading-re laxed md:text-sm">
             My name is Michael and I am Front-End Developer. I currently work as a Shopify Developer but particularly enjoy working
