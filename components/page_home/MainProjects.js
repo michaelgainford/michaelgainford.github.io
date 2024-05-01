@@ -20,16 +20,16 @@ export default function MainProjects() {
   return (
     <div className="w-full projects-list">
       <H2SectionHeader text="Featured Projects" />
-      <div className="grid grid-cols-2 gap-6 sm:gap-8 lg:gap-8 xl:gap-12">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-6 sm:gap-4 md:gap-8 lg:gap-8 xl:gap-12">
         {featuredProjects.map((project, index) => (
           <Link
             key={index}
             href={project.href}
-            className={`flex flex-col items-center justify-center gap-4 font-light tracking-wide transition border xl:min-w-[250px] rounded-lg ${project.border} ${project.group} project ${project.hover} aspect-[3/2] bg-slate-800 opacity-75 hover:opacity-100`}>
-            <span className="w-10 h-auto sm:w-14 md:w-16 lg:w-10 lg:h-10 max-lg:fill-slate-100 lg:fill-slate-100 justify-center ${project.groupHover}">  
-              <Image src={project.icon} alt="Hand Icon" width={168} height={168} className="w-full h-auto stroke-slate-300 fill-slate-300 text-slate-300" />
+            className={`flex flex-col items-center justify-center font-light tracking-wide transition border xl:min-w-[250px] rounded-lg ${project.border} ${project.group} project ${project.hover} bg-slate-800 opacity-75 hover:opacity-100 sm:p-4 aspect-square`}>
+            <span className="flex w-[27%] md:w-[23%] justify-center items-end ${project.groupHover} h-1/2">  
+              <Image src={project.icon} alt="Hand Icon" width={168} height={168} className="size-12 sm:w-full stroke-slate-300 fill-slate-300 text-slate-300 items-center" />
             </span>
-            <span className="text-xs uppercase sm:text-sm md:text-base tracking max-lg:text-slate-100">
+            <span className="text-[10px] uppercase sm:text-xs md:text-sm lg:text-base tracking max-lg:text-slate-100 text-center h-1/2 flex items-center">
               {project.label}
             </span>
           </Link>
