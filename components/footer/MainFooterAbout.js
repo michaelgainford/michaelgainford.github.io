@@ -1,9 +1,32 @@
 import Image from 'next/image'
-import LinkedInIcon from '/public/icons/icon-linkedin.svg'
-import GitHubIcon from '/public/icons/icon-github.svg'
-import TwitterIcon from '/public/icons/icon-twitter.svg'
-import CodepenIcon from '/public/icons/icon-codepen.svg'
 import Link from 'next/link'
+import TwitterIcon from '/components/icons/IconTwitter'
+import CodepenIcon from '/components/icons/IconCodepen'
+import GitHubIcon from '/components/icons/IconGithub'
+import LinkedInIcon from '/components/icons/IconLinkedIn'
+
+const socials = [
+  {
+    name: "Codepen",
+    href: "https://codepen.io/michaelgainford",
+    icon: CodepenIcon
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/michaelgainford",
+    icon: GitHubIcon
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/michaelgainford/",
+    icon: LinkedInIcon
+  },
+  {
+    name: "Twitter",
+    href: "https://twitter.com/m1cha3lgainford",
+    icon: TwitterIcon
+  }
+]
 
 export default function MainFooterAbout() {
   return (
@@ -16,34 +39,20 @@ export default function MainFooterAbout() {
             with React and Next.js. More text to fill in this space as it is currently a bit light of content.
           </p>
         </div>
-        <div className="!aspect-square  opacity-60 hover:opacity-100 transition col-span-1 !w-[100px] md:!w-[144px]">
+        <div className="!aspect-square opacity-60 hover:opacity-100 transition col-span-1 !w-[100px] md:!w-[144px]">
           <Image className="rounded-2xl md:hidden w-[100px]  max-w-[100px] md:max-w-[144px]" src="/mg.webp" alt="Michael Gainford" width={100} height={100} />
           <Image className="rounded-2xl max-md:hidden w-[144px]  max-w-[100px] md:max-w-[144px]" src="/mg.webp" alt="Michael Gainford" width={144} height={144} />
         </div>
-
       </div>
       <div className="socials max-lg:mt-2">
-        <ul className="flex justify-center gap-8 sm:justify-end !fill-[#BCBCBC] !stroke-[#BCBCBC] !text-[#BCBCBC]">
-          <li className="!text-white !fill-white">
-            <Link href="https://www.linkedin.com/in/michaelgainford/">
-              <Image src={LinkedInIcon} alt="LinkedIn" width={24} height={24} className="w-4 h-4 fill-white" />
+        <ul className="flex justify-center gap-8 sm:justify-end">
+        {socials.map((social, index) => (
+          <li key={index}>
+            <Link href={social.href} title={social.name} className="group">
+              <social.icon  classes="size-4 lg:size-5 fill-slate-300 group-hover:fill-amber-300" />
             </Link>
           </li>
-          <li>
-            <Link href="https://github.com/michaelgainford">
-              <Image src={GitHubIcon} alt="GitHub" width={24} height={24} className="w-4 h-4 fill-white" />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://twitter.com/m1cha3lgainford">
-              <Image src={TwitterIcon} alt="Twitter" width={24} height={24} className="w-4 h-4 fill-white" />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://codepen.io/michaelgainford">
-              <Image src={CodepenIcon} alt="Codepen" width={24} height={24} className="w-4 h-4 fill-white" />
-            </Link>
-          </li>
+        ))}
         </ul>
       </div>
     </div>

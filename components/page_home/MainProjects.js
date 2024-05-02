@@ -9,10 +9,10 @@ import Button from '/components/buttons/StandardButton'
 
 // Create a variable to store featured projects
 const featuredProjects = [
-  { href: "/web-development/dev-resources", label: "Dev Resources", border: "border-teal-700", hover: "hover:bg-teal-800", group: "group/resources", fill: "fill-slate-100", groupHover: "group-hover/resources:fill-slate-100", icon: Icon_Resources},
-  { href: "/projects/movies-database", label: "Movies Database", border: "border-violet-700", hover: "hover:bg-violet-800", group: "group/movies", fill: "fill-slate-100", groupHover: "group-hover/movies:fill-slate-100", icon: Icon_Movies},
-  { href: "/projects/football/competitions/euro-2024", label: "Euro 2024", border: "border-blue-700", hover: "hover:bg-blue-800", group: "group/euros", fill: "fill-slate-100", groupHover: "group-hover/euros:fill-slate-900", icon: Icon_Football},
-  { href: "/projects/jokes", label: "Jokes", border: "border-rose-700", hover: "hover:bg-rose-800", group: "group/jokes", fill: "fill-slate-100", groupHover: "group-hover/jokes:fill-slate-100", icon: Icon_Jokes},
+  { href: "/web-development/dev-resources", label: "Dev Resources", border: "border-teal-700", hover: "hover:bg-teal-800", group: "group/resources", fill: "fill-slate-100", groupHover: "group-hover/resources:fill-slate-100 group-hover/resources:text-slate-100", icon: Icon_Resources},
+  { href: "/projects/movies-database", label: "Movies Database", border: "border-violet-700", hover: "hover:bg-violet-800", group: "group/movies", fill: "fill-slate-100", groupHover: "group-hover/movies:fill-slate-100 group-hover/movies:text-slate-100", icon: Icon_Movies},
+  { href: "/projects/football/competitions/euro-2024", label: "Euro 2024", border: "border-blue-700", hover: "hover:bg-blue-800", group: "group/euros", fill: "fill-slate-100", groupHover: "group-hover/euros:fill-slate-900 group-hover/euros:text-slate-100", icon: Icon_Football},
+  { href: "/projects/jokes", label: "Jokes", border: "border-rose-700", hover: "hover:bg-rose-800", group: "group/jokes", fill: "fill-slate-100", groupHover: "group-hover/jokes:fill-slate-100 group-hover/jokes:text-slate-100", icon: Icon_Jokes},
 ]
 
 // Loop through the featured projects and display them
@@ -25,11 +25,11 @@ export default function MainProjects() {
           <Link
             key={index}
             href={project.href}
-            className={`flex flex-col items-center justify-center font-light tracking-wide transition border xl:min-w-[250px] rounded-lg ${project.border} ${project.group} project ${project.hover} bg-slate-800 opacity-75 hover:opacity-100 sm:p-4 aspect-square`}>
-            <span className="flex w-[27%] md:w-[23%] justify-center items-end ${project.groupHover} h-1/2">  
+            className={`flex flex-col items-center justify-center font-light tracking-wide transition border xl:min-w-[250px] rounded-lg ${project.border} ${project.group} project ${project.hover} bg-slate-800 opacity-75 hover:opacity-100 sm:p-4 aspect-square lg:aspect-[3/2]`}>
+            <span className={`flex w-[27%] md:w-[23%] xl:w-[20%] justify-center items-end ${project.groupHover} h-1/2`} >  
               <Image src={project.icon} alt="Hand Icon" width={168} height={168} className="size-12 sm:w-full stroke-slate-300 fill-slate-300 text-slate-300 items-center" />
             </span>
-            <span className="text-[10px] uppercase sm:text-xs md:text-sm lg:text-base tracking max-lg:text-slate-100 text-center h-1/2 flex items-center">
+            <span className="text-[10px] uppercase sm:text-xs md:text-sm tracking max-lg:text-slate-100 text-center h-1/2 flex items-center">
               {project.label}
             </span>
           </Link>

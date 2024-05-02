@@ -11,7 +11,7 @@ const featuredDevResources = [
   },
   {
     title: "GitHub",
-    logo: "/icons/icon-github.svg",
+    logo: "/icons/icon-github-white.svg",
     url: "https://github.com"
   },
   {
@@ -44,11 +44,13 @@ export default function MainResources() {
       <H2SectionHeader text="Featured Dev Resources" />
       <div className="grid grid-cols-2 justify-center gap-4 xl:gap-6">
         {featuredDevResourcesSortedByName.map((resource, index) => (
-          <Link href={resource.url} key={index} className="flex items-center text-lg transition border rounded-lg lg:gap-4 lg:p-6 xl:gap-12 resource border-slate-700 bg-slate-900 hover:bg-slate-900 w-full p-4">
+          <Link href={resource.url} key={index} className="flex items-center text-lg transition border rounded-lg lg:gap-4 lg:p-6 xl:gap-12 resource border-slate-700 bg-slate-900 hover:bg-slate-900 w-full p-4 xl:px-8">
             <div className="flex justify-center !text-white fill-white stroke-white">
-              <Image src={resource.logo} alt={resource.title} width={48} height={48} className="size-6 sm:size-8 text-white stroke-white fill-white" />
+              <span className="fill-white text-white">
+                <Image src={resource.logo} alt={resource.title} width={48} height={48} className="size-6 sm:size-8 text-white stroke-white fill-white" />
+              </span>
             </div>
-            <span className="px-4 text-[10px] md:text-xs leading-tight text-center uppercase lg:w-full tracking w-full tracking-wider lg:text-left">
+            <span className="px-4 text-[10px] md:text-xs leading-tight text-center uppercase lg:w-full tracking w-full tracking-wider lg:text-left italic">
               {resource.title}
             </span>
           </Link>
