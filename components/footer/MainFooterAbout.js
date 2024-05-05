@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import TwitterIcon from '/components/icons/IconTwitter'
 import CodepenIcon from '/components/icons/IconCodepen'
-import GitHubIcon from '/components/icons/IconGithub'
+import GitHubIcon from '/components/icons/IconGitHub'
 import LinkedInIcon from '/components/icons/IconLinkedIn'
 
 const socials = [
@@ -49,7 +49,7 @@ export default function MainFooterAbout() {
         {socials.map((social, index) => (
           <li key={index}>
             <Link href={social.href} title={social.name} className="group">
-              <social.icon  classes="size-4 lg:size-5 fill-slate-300 group-hover:fill-amber-300" />
+              <social.icon  classes="size-4 lg:size-5 fill-slate-300 group-hover:fill-amber-500" />
             </Link>
           </li>
         ))}

@@ -4,11 +4,14 @@ import MainResources from "@/components/page_home/MainResources";
 import MainFooter from "@/components/footer/MainFooter";
 import MainProjects from "@/components/page_home/MainProjects";
 
+// import the mainStyles variables from components/data/Variables.js
+import { mainStyles } from "@/components/data/Variables";
+
 export default function Home() {
   return (
-    <div className="bg-slate-900 text-slate-400">
+    <div className="bg-slate-900 text-slate-400 space-y-4 lg:space-y-8">
       <MainHeader />
-      <main className="mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center min-h-screen gap-y-8 >*:bg-slate-200 py-2 sm:pb-8">
+      <main className={mainStyles}>
         <MainIntro />
         <div className="flex w-full gap-12 max-lg:flex-col lg:gap-24 xl:gap-32 2xl:gap-48">
           <MainProjects />

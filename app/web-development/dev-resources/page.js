@@ -3,7 +3,7 @@ import Link from "next/link";
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
-const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
+import { mainStyles } from "@/components/data/Variables";
 
 const resources = [
   { name: "Can I Use", url: "https://caniuse.com", image: "can-i-use", tags: ["web dev", "browsers"] },
@@ -41,7 +41,7 @@ export default function Home() {
 
       <main className={mainStyles}>
          <H1 text="Dev Resources" />
-         <div className="grid w-full grid-cols-2 pt-4 sm:pt-6 lg:pt-16 resources md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 border-rose-500 gap-x-4 gap-y-8 md:gap-8 lg:gap-12">
+         <div className="grid w-full grid-cols-2 pt-4 sm:pt-6 lg:pt-16 resources md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 border-rose-500 gap-x-4 gap-y-8 md:gap-8 lg:gap-12">
 
           {resourcesSortedByName.map((resource, index) => (
             <Link target="_blank" href={resource.url} key={index} className="text-center border rounded-lg resource border-emerald-950 bg-emerald-950 hover:bg-emerald-800 text-white/80 group">

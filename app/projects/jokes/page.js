@@ -1,7 +1,7 @@
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
-const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
+import { mainStyles } from "@/components/data/Variables";
 
 const jokes = [
   {
@@ -44,7 +44,7 @@ export default function Home() {
 
       <MainHeader />
 
-      <main className={mainStyles}>
+      <main className={`${mainStyles}`}>
         
         <H1 text="Jokes" />
 
