@@ -1,17 +1,18 @@
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
+import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
 
 import DataForProjects from "@/components/data/DataForProjects";
 DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 
-const pageStyles = "bg-slate-900 text-slate-400";
+const pageStyles = "bg-slate-900 text-slate-400 bg-brand-background bg-repeat";
 
 
 export default function Home() {
   return (
-    <div className={pageStyles}>
+    <div className={`${globalPageStyles} ${pageStyles}`}>
       <MainHeader />
       <main className={`${mainStyles}`}>
         <H1 text="All Projects" />

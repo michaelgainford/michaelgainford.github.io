@@ -1,5 +1,5 @@
 const mainStyles =
-  "mx-auto w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-col items-center border border-rose-500";
+  "mx-auto w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-col items-center";
 
 const globalPageStyles = "space-y-4 lg:space-y-16";
 

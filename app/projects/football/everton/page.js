@@ -2,7 +2,8 @@ import Image from "next/image";
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
-const mainStyles = "mx-auto w-[90%] md:w-[92%] lg:-[95%]] flex flex-col items-center";
+import { globalPageStyles } from "@/components/data/Variables";
+import { mainStyles } from "@/components/data/Variables";
 
 const evertonSquad = [
   {
@@ -227,12 +228,11 @@ evertonSquad.sort((a, b) => a.number - b.number);
 
 export default function Home() {
   return (
-    <div className="bg-blue-800">
+    <div className={`${globalPageStyles} bg-blue-800`}>
       <MainHeader />
-      <main className={mainStyles}>
+      <main className={`${mainStyles}`}>
         <H1 text="Everton" />
-        <div className="grid gap-4 w-full first-line:gap-4 countries-grid-container">
-       
+        <div className="grid gap-4 w-full first-line:gap-4 countries-grid-container">   
           <div className="details">
             <h2 className="text-lg font-medium uppercase mb-2">Club Information</h2>
             <ul className="flex justify-between">

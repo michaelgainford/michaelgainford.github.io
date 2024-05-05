@@ -8,7 +8,7 @@ import MainProjects from "@/components/page_home/MainProjects";
 import { mainStyles } from "@/components/data/Variables";
 import { globalPageStyles } from "@/components/data/Variables";
 
-const pageBackground = "bg-slate-900";
+const pageBackground = "bg-slate-900 bg-brand-background bg-repeat";
 const pageTextColour = "text-slate-400";
 
 export default function Home() {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
+import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
 
 const resources = [
@@ -35,7 +36,7 @@ const resourcesSortedByName = resources.sort((a, b) => a.name.localeCompare(b.na
 
 export default function Home() {
   return (
-    <div className="bg-teal-900/80 text-slate-300">
+    <div className={`${globalPageStyles} bg-teal-900/80 text-slate-300`}>
 
       <MainHeader />
 
