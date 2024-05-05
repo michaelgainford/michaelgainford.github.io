@@ -3,6 +3,7 @@ import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
 import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/components/data/Variables";
 
 const euro2024Teams = [
   {
@@ -167,7 +168,7 @@ groups.sort();
 
 export default function Home() {
   return (
-    <div className="bg-blue-900">
+    <div className={`bg-blue-900 ${globalPageStyles}`}>
 
       <MainHeader />
 
@@ -175,7 +176,7 @@ export default function Home() {
 
         <H1 text="Euro 2024" />
 
-        <div className="grid hidden grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12 first-line:gap-4 countries-grid-container">
+        <div className="hidden grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12 first-line:gap-4 countries-grid-container">
           {euro2024Teams.map((team, index) => (
             <div key={index} className="flex flex-col items-center w-full pb-4 duration-300 ease-in-out border border-blue-900 rounded-md cursor-pointer movie-card text-light_colour border-secondary group hover:bg-secondary">
               <Image className="text-sm duration-1000 group-hover:ease-in-out group-hover:scale-100 group-hover:rounded-t-md" src={team.flag} loading="lazy" alt={team.name} width={32} height={32} />

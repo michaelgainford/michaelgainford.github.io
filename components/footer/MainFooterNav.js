@@ -1,51 +1,14 @@
 import Link from "next/link";
 import FooterSectionHeader from "/components/footer/FooterSectionHeader";
 import FooterNavListHeader from "/components/footer/FooterNavListHeader";
+import { navigation } from "../data/Variables";
 
+// filter navigation based on footerNav being true
+const footerNavLinks1 = navigation.filter((link) => link.footerNav_1 === true);
+const footerNavLinks2 = navigation.filter((link) => link.footerNav_2 === true);
 
 const linkClasses = "flex py-2";
 
-const footerNavItemsOne = [
-  {
-    title: "Home",
-    href: "/"
-  },
-  {
-    title: "Dev Resources",
-    href: "/dev-resources"
-  },
-  {
-    title: "Euro 2024",
-    href: "/football/euro-2024"
-  },
-  {
-    title: "Movies Database",
-    href: "/movies-database"
-  },
-  {
-    title: "Jokes",
-    href: "/jokes"
-  }
-];
-
-const footerNavItemsTwo = [
-  {
-    title: "Contact",
-    href: "/"
-  },
-  {
-    title: "Contact",
-    href: "/"
-  },
-  {
-    title: "Link",
-    href: "/"
-  },
-  {
-    title: "Sitemap",
-    href: "/"
-  }
-];
 
 
 export default function MainFooterNav() {
@@ -58,11 +21,11 @@ export default function MainFooterNav() {
             <FooterNavListHeader text="Projects" />
             </summary>
           <ul className="text-xs text-left md:text-sm lg:text-left">
-            {footerNavItemsOne.map((item, index) => (
+            {footerNavLinks1.map((item, index) => (
               <li key={index}>
                 <Link className={`${linkClasses}`} href
                 ={item.href}>
-                  {item.title}
+                  {item.label}
                 </Link>
               </li>
             ))}
@@ -71,11 +34,11 @@ export default function MainFooterNav() {
         <div className="rounded lg:pr-8 footer-nav-group border-slate-700 max-sm:hidden">
           <FooterNavListHeader text="Projects" />
           <ul className="text-xs text-left md:text-sm lg:text-left">
-            {footerNavItemsOne.map((item, index) => (
+            {footerNavLinks1.map((item, index) => (
               <li key={index}>
                 <Link className={`${linkClasses}`} href
                 ={item.href}>
-                  {item.title}
+                  {item.label}
                 </Link>
               </li>
             ))}
@@ -86,11 +49,11 @@ export default function MainFooterNav() {
             <FooterNavListHeader text="Boring Stuff" />
           </summary>
           <ul className="text-xs text-left md:text-sm lg:text-left">
-            {footerNavItemsTwo.map((item, index) => (
+            {footerNavLinks2.map((item, index) => (
               <li key={index}>
                 <Link className={`${linkClasses}`} href={item.href
                 }>
-                  {item.title}
+                  {item.label}
                 </Link>
               </li>
             ))}
@@ -99,11 +62,11 @@ export default function MainFooterNav() {
         <div className="rounded lg:pr-8 footer-nav-group border-slate-700 max-sm:hidden">
           <FooterNavListHeader text="Boring Stuff" />
           <ul className="text-xs text-left md:text-sm lg:text-left">
-            {footerNavItemsTwo.map((item, index) => (
+            {footerNavLinks2.map((item, index) => (
               <li key={index}>
                 <Link className={`${linkClasses}`} href={item.href
                 }>
-                  {item.title}
+                  {item.label}
                 </Link>
               </li>
             ))}

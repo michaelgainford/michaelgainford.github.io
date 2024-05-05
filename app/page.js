@@ -6,10 +6,14 @@ import MainProjects from "@/components/page_home/MainProjects";
 
 // import the mainStyles variables from components/data/Variables.js
 import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/components/data/Variables";
+
+const pageBackground = "bg-slate-900";
+const pageTextColour = "text-slate-400";
 
 export default function Home() {
   return (
-    <div className="bg-slate-900 text-slate-400 space-y-4 lg:space-y-8">
+    <div className={`${pageBackground} ${pageTextColour} ${globalPageStyles}`}>
       <MainHeader />
       <main className={mainStyles}>
         <MainIntro />

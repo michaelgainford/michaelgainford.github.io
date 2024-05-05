@@ -1,16 +1,11 @@
 import Link from "next/link"
 
+import { navigation } from "../data/Variables"
+// filter navigation based on mainNav being true
+const navLinks = navigation.filter((link) => link.mainNav === true)
+
 // Create a variable to store navigational links
-const navLinks = [
-  { href: "/", label: "Home", border: "border-slate-700", hover: "hover:bg-slate-900"},
-  {
-    href: "/projects", label: "Projects", border: "border-amber-500", hover: "hover:bg-amber-800",
-  },
-  //{ href: "/dev-resources", label: "Dev Resources", border: "border-teal-700", hover: "hover:bg-teal-900" },
-  //{ href: "/euro-2024", label: "Euro 2024", border: "border-blue-700", hover: "hover:bg-blue-900"},
-  //{ href: "/movies-database", label: "Movies DB", border: "border-violet-700", hover: "hover:bg-violet-900"},
-  //{ href: "/jokes", label: "Jokes", border: "border-rose-700", hover: "hover:bg-rose-900"},
-]
+
 
 // Setup a components called MainNav 
 export default function MainNav() {

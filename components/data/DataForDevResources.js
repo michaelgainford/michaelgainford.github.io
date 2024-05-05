@@ -5,6 +5,7 @@ import Icon_GitHub from "@/components/icons/IconGitHub";
 import Icon_Codepen from "@/components/icons/IconCodepen";
 import Icon_W3Schools from "@/components/icons/IconW3Schools";
 import Icon_ColourPalettes from "@/components/icons/IconColourPalettes";
+import Icon_Font from "@/components/icons/IconFont";
 
 const DataForDevResources = [
   {
@@ -75,7 +76,7 @@ const DataForDevResources = [
     name: "Google Fonts",
     slug: "google-fonts",
     url: "https://fonts.google.com",
-    icon: Icon_Resource,
+    icon: Icon_Font,
     tags: ["typography"],
     featured: true,
   },
