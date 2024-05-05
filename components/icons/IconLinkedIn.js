@@ -1,4 +1,4 @@
-export default function LinkedInIcon ({classes, fill}) {
+export default function IconLinkedIn ({classes, fill}) {
   return (
     <svg width="21" height="24" viewBox="0 0 21 24" className={classes} xmlns="http://www.w3.org/2000/svg">
       <path

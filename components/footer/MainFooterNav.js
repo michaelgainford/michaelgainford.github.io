@@ -55,7 +55,7 @@ export default function MainFooterNav() {
       <div className="footer-navs grid grid-cols-1 sm:grid-cols-2 gap-16 lg:flex-row footer-nav lg:grid lg:grid-cols-2 max-sm:mb-4">
         <details className="sm:hidden w-full">
           <summary className="flex w-full">
-            <FooterNavListHeader text="Fun Stuff" />
+            <FooterNavListHeader text="Projects" />
             </summary>
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavItemsOne.map((item, index) => (
@@ -69,7 +69,7 @@ export default function MainFooterNav() {
           </ul>
         </details>
         <div className="rounded lg:pr-8 footer-nav-group border-slate-700 max-sm:hidden">
-          <FooterNavListHeader text="Fun Stuff" />
+          <FooterNavListHeader text="Projects" />
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavItemsOne.map((item, index) => (
               <li key={index}>
