@@ -15,11 +15,11 @@ export default function MainProjects() {
           <Link
             key={index}
             href={project.href}
-            className={`flex flex-col items-center justify-center font-light tracking-wide transition border rounded-lg ${project.border} ${project.group} project ${project.hover} bg-gradient-to-b from-slate-800/60 to-slate-900/60 opacity-75 hover:opacity-100 sm:p-4 aspect-[3/2] 2xl:border-2 group`}>
+            className={`flex flex-col items-center justify-center font-light tracking-wide transition border rounded-lg ${project.border} ${project.group} project ${project.hover} bg-gradient-to-b from-slate-900/40 to-slate-900/60 hover:opacity-100 sm:p-4 aspect-[3/2] 2xl:border-2 group border-opacity-50`}>
             <span className={`flex w-[27%] md:w-[23%] xl:w-[20%] justify-center items-end ${project.groupHover} h-1/2`} >  
-              <project.icon fill={project.fill} classes="size-8 lg:size-12 2xl:size-16 fill-slate-100"/>
+              <project.icon fill={`${project.fill}`} classes="size-8 lg:size-12 2xl:size-16 fill-slate-100 flex justify-center"/>
             </span>
-            <span className="text-[10px] uppercase sm:text-xs md:text-sm 2xl:text-base tracking max-lg:text-slate-100 text-center h-1/2 flex items-center group-hover:text-white">
+            <span className="text-[10px] uppercase sm:text-xs md:text-sm tracking-wider max-lg:text-slate-100 text-center h-1/2 flex items-center group-hover:text-white">
               {project.name}
             </span>
           </Link>

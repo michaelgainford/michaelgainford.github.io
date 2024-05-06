@@ -1,28 +1,26 @@
 import Link from "next/link";
+import DataForNavigation from "../data/DataForNavigation";
 import FooterSectionHeader from "/components/footer/FooterSectionHeader";
 import FooterNavListHeader from "/components/footer/FooterNavListHeader";
-import { navigation } from "../data/Variables";
 
 // filter navigation based on footerNav being true
-const footerNavLinks1 = navigation.filter((link) => link.footerNav_1 === true);
-const footerNavLinks2 = navigation.filter((link) => link.footerNav_2 === true);
+const footerNavLinks1 = DataForNavigation.filter((link) => link.footerNav_1 === true);
+const footerNavLinks2 = DataForNavigation.filter((link) => link.footerNav_2 === true);
 
 const linkClasses = "flex py-2";
-
-
 
 export default function MainFooterNav() {
   return (
     <div className="col-span-1 footer-information lg:col-span-2 lg:pr-8">
       <FooterSectionHeader text="Information" />
-      <div className="footer-navs grid grid-cols-1 sm:grid-cols-2 gap-16 lg:flex-row footer-nav lg:grid lg:grid-cols-2 max-sm:mb-4">
-        <details className="sm:hidden w-full">
+      <div className="grid grid-cols-1 gap-16 footer-navs sm:grid-cols-2 lg:flex-row footer-nav lg:grid lg:grid-cols-2 max-sm:mb-4">
+        <details className="w-full sm:hidden">
           <summary className="flex w-full">
             <FooterNavListHeader text="Projects" />
-            </summary>
+          </summary>
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavLinks1.map((item, index) => (
-              <li key={index}>
+              <li key={index} className={``}>
                 <Link className={`${linkClasses}`} href
                 ={item.href}>
                   {item.label}
@@ -36,7 +34,7 @@ export default function MainFooterNav() {
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavLinks1.map((item, index) => (
               <li key={index}>
-                <Link className={`${linkClasses}`} href
+                <Link className={`${linkClasses} hover:ml-4 duration-500`} href
                 ={item.href}>
                   {item.label}
                 </Link>
@@ -44,7 +42,7 @@ export default function MainFooterNav() {
             ))}
           </ul>
         </div>
-        <details className="sm:hidden w-full">
+        <details className="w-full sm:hidden">
           <summary className="flex w-full">
             <FooterNavListHeader text="Boring Stuff" />
           </summary>
@@ -64,7 +62,7 @@ export default function MainFooterNav() {
           <ul className="text-xs text-left md:text-sm lg:text-left">
             {footerNavLinks2.map((item, index) => (
               <li key={index}>
-                <Link className={`${linkClasses}`} href={item.href
+                <Link className={`${linkClasses} hover:ml-4 duration-500`} href={item.href
                 }>
                   {item.label}
                 </Link>

@@ -5,52 +5,29 @@ import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
+import DataForDevResources from "@/components/data/DataForDevResources";
 
-const resources = [
-  { name: "Can I Use", url: "https://caniuse.com", image: "can-i-use", tags: ["web dev", "browsers"] },
-  { name: "Codepen", url: "https://codepen.io", image: "codepen", tags: ["code", "sandbox"] },
-  { name: "Coolors", url: "https://coolors.co", image: "coolors", tags: ["colours", "design"] },
-  { name: "CSS Stats", url: "https://cssstats.com", image: "css-stats", tags: ["css", "analytics"] },
-  { name: "CSS Tricks", url: "https://css-tricks.com", image: "css-tricks", tags: ["css", "tutorials"] },
-  { name: "Font Awesome", url: "https://fontawesome.com", image: "font-awesome", tags: ["typography", "icons"] },
-  { name: "GitHub", url: "https://github.com/", image: "github", tags: ["code", "dev tools"] },
-  { name: "Google Analytics", url: "https://analytics.google.com", image: "google-analytics", tags: ["analytics"] },
-  { name: "Google Fonts", url: "https://fonts.google.com", image: "google-fonts", tags: ["typography"] },
-  { name: "HTML5 Doctor", url: "http://html5doctor.com", image: "html5-doctor", tags: ["html", "docs"] },
-  { name: "Krystal UK", url: "https://krystal.uk", image: "krystal", tags: ["hosting", "domains"] },
-  { name: "LinkedIn", url: "https://linkedin.com", image: "linkedin", tags: ["networking", "social", "jobs"] },
-  { name: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/", image: "mdn-docs", tags: ["docs", "web dev"] },
-  { name: "Next.js", url: "https://nextjs.org", image: "nextjs", tags: ["js", "react"] },
-  { name: "PageSpeed Insights", url: "https://developers.google.com/speed/pagespeed/insights/", image: "google-analytics", tags: ["analytics"] },
-  { name: "Shopify Cheat Sheets", url: "https://cheat.markdunkley.com/" , image: "shopify", tags: ["cheat sheets", "shopify"] },
-  { name: "SVG Repo", url: "https://svgrepo.com", image: "template", tags: ["icons", "svg"] },
-  { name: "Tailwind CSS", url: "https://tailwindcss.com", image: "tailwind-css", tags: ["css"] },
-  { name: "W3 Schools", url: "https://w3schools.com", image: "w3-schools", tags: ["docs", "tutorials"] },
-  { name: "WebAIM", url: "https://webaim.org", image: "webaim", tags: ["accessibility", "web dev"] },
-  { name: "Wesh", url: "https://wesh.uk", image: "wesh-uk", tags: ["hosting", "domains"] },
-  { name: "X", url: "https://x.co", image: "x", tags: ["networking", "social"] },
-  { name: "YouTube", url: "https://youtube.com", image: "youtube", tags: ["social", "tutorials"] },
-];
+// sort DAtaForDevResources by name
+const ResourcesSortedByName = DataForDevResources.sort((a, b) => a.name.localeCompare(b.name));
 
-const resourcesSortedByName = resources.sort((a, b) => a.name.localeCompare(b.name));
 
 export default function Home() {
   return (
-    <div className={`${globalPageStyles} bg-teal-900/80 text-slate-300`}>
+    <div className={`${globalPageStyles} bg-gradient-to-t from-teal-900/80 to-teal-700 text-slate-300`}>
 
       <MainHeader />
 
       <main className={mainStyles}>
          <H1 text="Dev Resources" />
-         <div className="grid w-full grid-cols-2 pt-4 sm:pt-6 lg:pt-16 resources md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 border-rose-500 gap-x-4 gap-y-8 md:gap-8 lg:gap-12">
+         <div className="grid w-full grid-cols-2 pt-4 sm:pt-6 lg:pt-16 resources md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 border-rose-500 gap-x-4 gap-y-8 md:gap-8 lg:gap-12">
 
-          {resourcesSortedByName.map((resource, index) => (
-            <Link target="_blank" href={resource.url} key={index} className="text-center border rounded-lg resource border-emerald-950 bg-emerald-950 hover:bg-emerald-800 text-white/80 group">
+          {ResourcesSortedByName.map((resource, index) => (
+            <Link target="_blank" href={resource.url} key={index} className="flex items-center justify-center px-2 text-center duration-300 border rounded-lg resource border-emerald-950 bg-emerald-950 hover:bg-emerald-800 text-white/80 group aspect-square ">
               <div className="hidden w-full bg-teal-700 rounded-t-lg resource-image aspect-square">
                 {/* <Image src={`/resource-screenshots/screenshot-of-${resource.image}.png`} alt={resource.name} width={250} height={200} className="object-cover w-full h-full transition rounded-t-lg lg:opacity-20 group-hover:opacity-100" /> */}
               </div>
               <div className="py-2 resource-details gap-y-4">
-                <span className="py-2 text-xs tracking-widest uppercase lg:text-sm">{resource.name}</span>
+                <span className="py-2 text-xs tracking-widest text-center uppercase">{resource.name}</span>
                 <div className="flex flex-wrap justify-center gap-2 p-2 resource-tags">
                   {resource.tags.map((tag, index) => (
                     <span className="border border-emerald-800 py-1 px-2 rounded-lg tracking-wide text-[10px]" key={index}>{tag}</span>

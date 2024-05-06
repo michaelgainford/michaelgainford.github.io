@@ -192,6 +192,14 @@ const DataForDevResources = [
     tags: ["social", "tutorials"],
     featured: false,
   },
+  {
+    name: "Vector Logo Zone",
+    slug: "vector-logo-zone",
+    url: "https://vectorlogo.zone",
+    icon: Icon_Resource,
+    tags: ["logos", "svg"],
+    featured: false,
+  }
 ];
 
 export default DataForDevResources;

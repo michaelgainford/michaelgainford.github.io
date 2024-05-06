@@ -228,13 +228,13 @@ evertonSquad.sort((a, b) => a.number - b.number);
 
 export default function Home() {
   return (
-    <div className={`${globalPageStyles} bg-blue-800`}>
+    <div className={`${globalPageStyles} bg-gradient-to-b from-blue-700 to-blue-900`}>
       <MainHeader />
       <main className={`${mainStyles}`}>
         <H1 text="Everton" />
-        <div className="grid gap-4 w-full first-line:gap-4 countries-grid-container">   
+        <div className="grid w-full gap-4 first-line:gap-4 countries-grid-container">   
           <div className="details">
-            <h2 className="text-lg font-medium uppercase mb-2">Club Information</h2>
+            <h2 className="mb-2 text-lg font-medium uppercase">Club Information</h2>
             <ul className="flex justify-between">
               <li>Founded: 1878</li>
               <li>Stadium: Goodison Park</li>
@@ -242,22 +242,22 @@ export default function Home() {
               <li>League: Premier League</li>
             </ul>
           </div> 
-          <div className="playing-squad mt-8">
-            <h2 className="text-lg font-medium uppercase mb-2">Playing Squad</h2>
-            <div className="players gap-x-4 gap-y-8 justify-between grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mt-8 playing-squad">
+            <h2 className="mb-2 text-lg font-medium uppercase">Playing Squad</h2>
+            <div className="grid justify-between grid-cols-1 players gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {evertonSquad.map((player) => (
                 
-                <div key={player.slug} className="player border border-blue-700 rounded-lg basis-48 lg:basis-64 xl:basis-80 space-y-2 bg-blue-700/80">
-                  <div className="player-image-and-number relative mb-2 space-y-2">
+                <div key={player.slug} className="space-y-2 border border-blue-700 rounded-lg player basis-48 lg:basis-64 xl:basis-80 bg-blue-700/80">
+                  <div className="relative mb-2 space-y-2 player-image-and-number">
                     <div className="player-image border-t-lg relative aspect-[3/2]">
                       <Image src={`/everton/${player.slug}.webp`} alt={player.name} width={450} height={300} className="!border-t-lg !max-w-full object-center aspect-[3/2] absolute" />
                     </div>
                     <div className="player-number absolute top-2 left-2 text-2xl py-1 px-2 !aspect-square flex justify-center items-center bg-black/60">{player.number}</div>
                   </div>
-                  <div className="player-details space-y-2 text-center pt-2 pb-6">
-                    <div className="player-name relative uppercase tracking-wide">{player.name}</div>
-                    <div className="player-position relative">{player.position}</div>
-                    <div className="player-country relative">{player.country}</div>
+                  <div className="pt-2 pb-6 space-y-2 text-center player-details">
+                    <div className="relative tracking-wide uppercase player-name">{player.name}</div>
+                    <div className="relative player-position">{player.position}</div>
+                    <div className="relative player-country">{player.country}</div>
                   </div>
                 </div>
 

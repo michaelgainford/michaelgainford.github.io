@@ -6,7 +6,7 @@ export default function MainLogo() {
     <Link href="/" className="flex items-center gap-2 max-md:justify-center">
       <IconLaptop classes="size-4 lg:size-6 fill-amber-500" />
       <span className="text-sm font-light tracking-wider text-left uppercase lg:text-base lg:font-medium">
-        Michael&apos;s Dev Site
+        MichaelGainford.dev
       </span>
     </Link>
   ) 
