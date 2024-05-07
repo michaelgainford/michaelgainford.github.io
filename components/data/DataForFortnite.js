@@ -1,4 +1,5 @@
-const DataForFortnite = [
+const FortniteSeasonsData = [
+
   {
     name: "C1 S1",
     chapter: 1,
@@ -280,6 +281,4 @@ const DataForFortnite = [
     desktopImage: "/gaming/fortnite/fortnite-desktop-banner.png",
   }
 
-
 ]
-export default DataForFortnite;

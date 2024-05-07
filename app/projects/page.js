@@ -16,7 +16,7 @@ export default function Home() {
       <MainHeader />
       <main className={`${mainStyles}`}>
         <H1 text="All Projects" />
-        <div className="grid flex-wrap w-full grid-cols-2 gap-4 sm:gap-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
+        <div className="grid flex-wrap w-full grid-cols-2 gap-4 sm:gap-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 2xl:grid-cols-5 2xl:gap-16">
           {DataForProjects.map((project, index) => (
             <a key={index} href={project.href} className={`border ${project.border}  ${project.bg} ${project.hover} ${project.color} h-full p-4 rounded-lg space-y-4 divide-y ${project.divider}`}>
               <span className="flex items-center gap-3">
@@ -29,7 +29,7 @@ export default function Home() {
                 <p className="line-clamp-2">{project.description}</p>
               </span>
               <div className="flex items-end justify-start pt-4 category">
-                <span className={`p-1 text-xs tracking-wider uppercase border ${project.border} rounded`}>{project.category}</span>
+                <span className={`p-1 text-xs tracking-wider lowercase border ${project.border} rounded`}>{project.category}</span>
               </div>
             </a>
           ))}
