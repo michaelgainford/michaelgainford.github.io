@@ -24,9 +24,15 @@ export default function MyDashboard(){
         <H1 text="My Dev Dashboard" />
         <div className="flex flex-col w-full mb-8">
 
-          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto">
-            <summary className="flex justify-between py-4 cursor-pointer after:content-['_▶'] group/open:after:content-[_▼']">My Domains</summary>
-          
+          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180">
+            <summary className="flex justify-between py-4 cursor-pointer">
+              <span>My Domains</span>
+              <span>
+              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              </span>
+            </summary>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               {DataForMyDevDashboard.map((domain, index) => (
                 <div key={index} className="domain min-w-[300px] sm:flex-wrap flex-col sm:flex-row flex-grow p-8 border-2 border-slate-800 rounded-lg space-y-2 bg-gradient-to-br from-slate-900/80 to-slate-900/90 text-sm gap-8 xl:gap-12 grid grid-cols-1 sm:grid-cols-2 items-start">
@@ -48,8 +54,15 @@ export default function MyDashboard(){
         </div>
 
         <div className="flex flex-col w-full">
-          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto">
-            <summary className="flex justify-between py-4 cursor-pointer after:content-['_▶'] group/open:after:content-[_▼']">Invoices/Payments</summary>
+        <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180">
+            <summary className="flex justify-between py-4 cursor-pointer">
+              <span>Bills/Payments</span>
+              <span>
+              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              </span>
+            </summary>
             <table className="w-full py-6 mt-6 text-center border table-auto">
               <thead className="mt-4 text-xs tracking-widest uppercase">
                 <tr className=" bg-slate-950/50">
