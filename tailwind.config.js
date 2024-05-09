@@ -15,7 +15,10 @@ module.exports = {
       },
       container: {
         center: true,
-      }
+      },
+      screens: {
+        '3xl': '1500px',
+      },
     },
   },
   plugins: [

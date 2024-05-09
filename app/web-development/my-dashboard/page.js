@@ -22,55 +22,54 @@ export default function MyDashboard(){
       <MainHeader />
       <main className={`${mainStyles}`}>
         <H1 text="My Dev Dashboard" />
-        <p>{`Today's date is ${today}`}</p>
-        <p>{`The formatted date is ${todayFormatted}`}</p>
+        <div className="flex flex-col w-full mb-8">
 
-        <div className="flex flex-col w-full min-h-[300px] mb-8 lg:mb-16">
-          <h2 className="mb-4 text-base underline uppercase lg:mb-8 underline-offset-8">Domains</h2>
-          <div className="flex flex-wrap justify-between gap-8">
-            {DataForMyDevDashboard.map((domain, index) => (
-              <div key={index} className="domain min-w-[300px] w-[45%] flex-wrap flex-grow p-8 border-2 border-slate-800 rounded-lg space-y-2 bg-slate-900 text-sm flex-row gap-8 grid grid-cols-2">
-                  <Image src="/grey-square.webp" alt="Grey Square" width={200} height={200} className="object-cover aspect-square @xs:aspect-[3/2]  w-full" />
-                  <div className="space-y-3">
-                    <h3 className="text-sm font-bold tracking-wide uppercase">{domain.name}</h3>
-                    <p>URL: {domain.url}</p>
-                    <p>Last Renewed: {domain.lastRenewed}</p>
-                    <p>Expires: {domain.expires}</p>
-                    <p>Host: {domain.host}</p>
-                    <div className="pt-8 space-x-4 domain-buttons">
-                      <Button label="Site" href={`https://${domain.url}`} />
-                      <Button label="Host" href="https://krystal.co.uk" />
+          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto">
+            <summary className="flex justify-between py-4 cursor-pointer after:content-['_▶'] group/open:after:content-[_▼']">My Domains</summary>
+          
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              {DataForMyDevDashboard.map((domain, index) => (
+                <div key={index} className="domain min-w-[300px] sm:flex-wrap flex-col sm:flex-row flex-grow p-8 border-2 border-slate-800 rounded-lg space-y-2 bg-gradient-to-br from-slate-900/80 to-slate-900/90 text-sm gap-8 xl:gap-12 grid grid-cols-1 sm:grid-cols-2 items-start">
+                    <Image src={domain.image} alt="Grey Square" width={300} height={300} className="object-cover object-center aspect-[3/2] @xs:aspect-[3/2]  w-full" />
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-bold tracking-wide uppercase">{domain.name}</h3>
+                      <p>URL: {domain.url}</p>
+                      <p>Expires: {domain.expires} <span>{domain.expires - todayFormatted} days until</span></p>
+                      <p>Host: {domain.host}</p>
+                      <div className="py-8 space-x-4 domain-buttons">
+                        <Button label="Site" target="_blank" href={`https://${domain.url}`} />
+                        <Button label="Host" href="https://krystal.co.uk" />
+                      </div>
                     </div>
-                  </div>
-              </div>
-            ))}
-          </div>
+                </div>
+              ))}
+            </div>
+          </details>
         </div>
 
         <div className="flex flex-col w-full">
-          <h2 className="mb-4 text-base underline uppercase lg:mb-8 underline-offset-8">Admin</h2>
-          <details className="border-2 border-slate-800 min-w-[600px] rounded-lg p-4 hover:bg-slate-900">
-            <summary className="flex justify-between py-4 cursor-pointer after:content-['_▶']">Invoices/Payments</summary>
-            <table className="w-full py-6 mt-6 text-center border table-auto border-rose-500">
-              <thead className="mt-4">
-                <tr className="bg-slate-950/50">
+          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto">
+            <summary className="flex justify-between py-4 cursor-pointer after:content-['_▶'] group/open:after:content-[_▼']">Invoices/Payments</summary>
+            <table className="w-full py-6 mt-6 text-center border table-auto">
+              <thead className="mt-4 text-xs tracking-widest uppercase">
+                <tr className=" bg-slate-950/50">
                   <th className="py-4 border border-slate-700">Invoice</th>
                   <th className="py-4 border border-slate-700">Amount</th>
                   <th className="py-4 border border-slate-700">Date</th>
                 </tr>
               </thead>
-              <tbody className="py-8 bg-slate-950/30">
-                <tr>
+              <tbody className="py-8 text-sm bg-slate-950/30">
+                <tr className="bg-slate-800/40">
                   <td className="py-4 border border-slate-700">Invoice 1</td>
                   <td className="py-4 border border-slate-700">$100</td>
                   <td className="py-4 border border-slate-700">1/1/2021</td>
                 </tr>
-                <tr>
+                <tr className="bg-slate-800/40">
                   <td className="py-4 border border-slate-700">Invoice 2</td>
                   <td className="py-4 border border-slate-700">$200</td>
                   <td className="py-4 border border-slate-700">2/1/2021</td>
                 </tr>
-                <tr>
+                <tr className="bg-slate-800/40">
                   <td className="py-4 border border-slate-700">Invoice 3</td>
                   <td className="py-4 border border-slate-700">$300</td>
                   <td className="py-4 border border-slate-700">3/1/2021</td>

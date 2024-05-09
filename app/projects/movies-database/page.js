@@ -18,7 +18,7 @@ export default function Home() {
       <MainHeader />
       <main className={`${mainStyles}`}>
         <H1 text={`Movies Database (${watchedMoviesLength} Watched)`} />
-        <div className="grid w-full grid-cols-3 gap-4 movies-grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 3xl:grid-cols-8 max-sm:gap-y-6 md:gap-6 lg:gap-8 xl:gap-12">
+        <div className="grid w-full grid-cols-3 gap-4 movies-grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 max-sm:gap-y-6 md:gap-6 lg:gap-8 xl:gap-12">
           {watchedMovies.map((movie, id) => (
             <div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out border cursor-pointer movie-card justify-items-center border-yellow-500/10 border-violet-900 text-light_colour border-secondary group hover:bg-secondary">
               <div className="w-full max-w-full movie-poster">

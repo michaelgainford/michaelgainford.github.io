@@ -10,7 +10,7 @@ export default function MainResources() {
   return (
     <div className="w-full resources-list">
       <H2SectionHeader text="Featured Dev Resources" />
-      <div className="grid justify-center grid-cols-2 gap-4 p-8 border rounded-lg border-slate-800/50 xl:gap-6">
+      <div className="grid justify-center grid-cols-2 gap-4 border rounded-lg lg:p-8 border-slate-800/50 xl:gap-6">
         {featuredResourcesSortedByName.map((resource, index) => (
           <Link href={resource.url} key={index} className="flex items-center w-full p-4 text-lg transition border rounded-lg opacity-75 lg:gap-4 lg:p-6 xl:gap-8 resource border-slate-700 bg-gradient-to-b from-slate-900/40 to-slate-900/60 to-90% hover:opacity-100 hover:bg-slate-800 xl:px-8 group">
             <div className="flex justify-center !text-white fill-white stroke-white">
