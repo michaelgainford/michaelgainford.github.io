@@ -11,7 +11,11 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "brand-background": "url('/constellation.svg')",
+        "brand-background": "url('/svg-backgrounds/constellation.svg')",
+        "dots-background": "url('/svg-backgrounds/dots.svg')",
+        "graph-paper-background": "url('/svg-backgrounds/graph-paper.svg')",
+        "rain-background": "url('/svg-backgrounds/rain.svg')",
+        "topo-background": "url('/svg-backgrounds/topography.svg')",
       },
       container: {
         center: true,

@@ -21,7 +21,7 @@ export default function Home() {
             <a key={index} href={project.href} className={`border ${project.border}  ${project.bg} ${project.hover} ${project.color} h-full p-4 rounded-lg space-y-4 divide-y ${project.divider}`}>
               <span className="flex items-center gap-3">
                 <span className="flex items-center w-6 h-6 gap-4">
-                  <project.icon className="w-6 h-6 stroke-slate-300 fill-slate-300 text-slate-300" />
+                  <project.icon fill="fff" className="w-6 h-6 stroke-slate-300 fill-slate-300 text-slate-300" />
                 </span>
                 <h2 className="text-xs">{project.name}</h2>
               </span>

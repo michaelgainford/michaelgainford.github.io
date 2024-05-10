@@ -18,7 +18,7 @@ tags.sort();
 
 export default function Home() {
   return (
-    <div className={`${globalPageStyles} bg-gradient-to-t from-teal-900/80 to-teal-700 text-slate-300`}>
+    <div className={`${globalPageStyles} bg-graph-paper-background bg-teal-800 text-slate-300`}>
 
       <MainHeader />
 

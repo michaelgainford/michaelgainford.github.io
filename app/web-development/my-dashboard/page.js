@@ -24,7 +24,7 @@ export default function MyDashboard(){
         <H1 text="My Dev Dashboard" />
         <div className="flex flex-col w-full mb-8">
 
-          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180">
+          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto">
             <summary className="flex justify-between py-4 cursor-pointer">
               <span>My Domains</span>
               <span>
@@ -53,8 +53,8 @@ export default function MyDashboard(){
           </details>
         </div>
 
-        <div className="flex flex-col w-full">
-        <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180">
+        <div className="flex flex-col w-full mb-8 ">
+          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto">
             <summary className="flex justify-between py-4 cursor-pointer">
               <span>Bills/Payments</span>
               <span>
@@ -89,6 +89,47 @@ export default function MyDashboard(){
                 </tr>
               </tbody>
             </table>
+          </details>
+        </div>
+
+
+
+        <div className="flex flex-col w-full">
+          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto">
+            <summary className="flex justify-between py-4 cursor-pointer">
+              <span>Code Snippets</span>
+              <span>
+              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              </span>
+            </summary>
+            <div className="w-full space-y-8 code-snippets">
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+              <div className="code-snippet">
+                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+              </div>
+            </div>
           </details>
         </div>
 

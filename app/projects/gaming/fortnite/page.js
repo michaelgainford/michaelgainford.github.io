@@ -9,7 +9,7 @@ import DataForFortnite from "@/components/data/DataForFortnite";
 
 export default function Home() {
   return (
-    <div className={`${globalPageStyles} bg-black`}>
+    <div className={`${globalPageStyles} !bg-topo-background`}>
 
       <MainHeader />
 

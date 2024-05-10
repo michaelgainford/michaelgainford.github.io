@@ -24,7 +24,7 @@ groups.sort();
 
 export default function Home() {
   return (
-    <div className={`bg-gradient-to-b from-blue-700 to-blue-900 ${globalPageStyles}`}>
+    <div className={`bg-dots-background bg-blue-800 ${globalPageStyles}`}>
 
       <MainHeader />
 

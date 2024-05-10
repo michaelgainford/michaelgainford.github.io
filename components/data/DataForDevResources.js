@@ -199,6 +199,54 @@ const DataForDevResources = [
     icon: Icon_Resource,
     tags: ["logos", "svg"],
     featured: false,
+  },
+  {
+    name: "Transition.css",
+    slug: "transition-css",
+    url: "https://transition.css",
+    icon: Icon_Resource,
+    tags: ["css", "animations"],
+    featured: false,
+  },
+  {
+    name: "Web Dev - Learn CSS",
+    slug: "web-dev-learn-css",
+    url: "https://web.dev/learn/css/",
+    icon: Icon_Resource,
+    tags: ["css", "tutorials"],
+    featured: false,
+  },
+  {
+    name: "Web Dev - Learn HTML",
+    slug: "web-dev-learn-html",
+    url: "https://web.dev/learn/html/",
+    icon: Icon_Resource,
+    tags: ["html", "tutorials"],
+    featured: false,
+  },
+  {
+    name: "Web Dev - Learn JavaScript",
+    slug: "web-dev-learn-js",
+    url: "https://web.dev/learn/js/",
+    icon: Icon_Resource,
+    tags: ["js", "tutorials"],
+    featured: false
+  },
+  {
+    name: "Web Dev - Learn Images",
+    slug: "web-dev-learn-images",
+    url: "https://web.dev/learn/images/",
+    icon: Icon_Resource,
+    tags: ["images", "tutorials"],
+    featured: false,
+  },
+  {
+    name: "GitHub Profile Generator",
+    slug: "github-profile-generator",
+    url: "https://rahuldkjain.github.io/gh-profile-readme-generator/",
+    icon: Icon_GitHub,
+    tags: ["github", "profile"],
+    featured: false,
   }
 ];
 
