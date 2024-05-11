@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function MainIntro() {
   return (
-    <div className="w-full pb-4 intro max-lg:mt-8 lg:pb-8 xl:pb-12 2xl:pb-16">
+    <div className="w-full pb-8 intro max-lg:mt-8 lg:pb-8 xl:pb-12 2xl:pb-16">
       <div className="grid grid-cols-1 lg:gap-32 lg:grid-cols-8">
         <div className="flex flex-col justify-center col-span-1 text-base text-left rounded-lg border-slate-800 lg:col-span-5 intro-left lg:pr-8">
           <h1 className="py-2 font-light leading-relaxed tracking-wide text-center sm:text-left sm:text-base lg:border-l-4 max-lg:mt-4 max-lg:font-bold lg:border-transparent decoration-8 lg:font-medium md:text-xl lg:text-2xl xl:text-3xl">Hi! Thank you for visiting <span className="underline underline-offset-4 decoration-amber-500/80 decoration-2 decoration-dotted">my site</span></h1>

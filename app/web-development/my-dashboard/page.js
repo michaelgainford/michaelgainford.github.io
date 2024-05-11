@@ -9,12 +9,14 @@ import Button from "@/components/buttons/StandardButton";
 
 // get today's date
 const today = new Date();
-
 // format today as dd/mm/yyyy
 const todayFormatted = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear();
-
+// page styles
 const pageStyles = "bg-slate-900 text-slate-400 bg-brand-background bg-repeat";
-
+const detailsStyles = "border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto";
+const summaryStyles = "flex justify-between py-4 cursor-pointer";
+const summaryHeaderStyles = "text-sm";
+const summaryHeaderSvgStyles = "rotate-0 transform text-slate-200 transition-all duration-300";
 
 export default function MyDashboard(){
   return (
@@ -24,11 +26,11 @@ export default function MyDashboard(){
         <H1 text="My Dev Dashboard" />
         <div className="flex flex-col w-full mb-8">
 
-          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto">
-            <summary className="flex justify-between py-4 cursor-pointer">
-              <span>My Domains</span>
+          <details className={detailsStyles}>
+            <summary className={summaryStyles}>
+              <span className={summaryHeaderStyles}>My Domains</span>
               <span>
-              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <svg class={summaryHeaderSvgStyles} fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
               </span>
@@ -54,11 +56,11 @@ export default function MyDashboard(){
         </div>
 
         <div className="flex flex-col w-full mb-8 ">
-          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto">
-            <summary className="flex justify-between py-4 cursor-pointer">
-              <span>Bills/Payments</span>
+          <details className={detailsStyles}>
+            <summary className={summaryStyles}>
+              <span className={summaryHeaderStyles}>Bills/Payments</span>
               <span>
-              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <svg class={summaryHeaderSvgStyles} fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
               </span>
@@ -95,9 +97,9 @@ export default function MyDashboard(){
 
 
         <div className="flex flex-col w-full">
-          <details className="border-2 border-slate-800 rounded-lg p-4 bg-slate-900 group !overflow-x-auto [&_svg]:open:-rotate-180 xl:w-[1200px] xl:mx-auto">
-            <summary className="flex justify-between py-4 cursor-pointer">
-              <span>Code Snippets</span>
+          <details className={detailsStyles}>
+            <summary className={summaryStyles}>
+              <span className={summaryHeaderStyles}>Code Snippets</span>
               <span>
               <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -106,7 +108,32 @@ export default function MyDashboard(){
             </summary>
             <div className="w-full space-y-8 code-snippets">
               <div className="code-snippet">
-                <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
+                <code className="block p-4 overflow-auto text-xs text-sm rounded-lg bg-slate-800/50">
+                  <pre>
+                    &lt;!DOCTYPE html&gt;
+                    <br />
+                    &lt;html lang=&ldquo;en&rdquo;&gt;
+                    <br />
+                    &lt;head&gt;
+                    <br />
+                    &lt;meta charset=&ldquo;UTF-8&rdquo;&gt;
+                    <br />
+                    &lt;meta http-equiv=&ldquo;X-UA-Compatible&rdquo; content=&ldquo;IE=edge&rdquo;&gt;
+                    <br />
+                    &lt;meta name=&ldquo;viewport&rdquo; content=&ldquo;width=device-width,
+                    initial-scale=1.0&rdquo;&gt;
+                    <br />
+                    &lt;title&gt;Document&lt;/title&gt;
+                    <br />
+                    &lt;/head&gt;
+                    <br />
+
+                    &lt;body&gt;
+                      Body content goes here
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                  </pre>
+                </code>
               </div>
               <div className="code-snippet">
                 <code className="block p-4 text-sm rounded-lg bg-slate-800/50">npm install react</code>
