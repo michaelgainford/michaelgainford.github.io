@@ -247,6 +247,14 @@ const DataForDevResources = [
     icon: Icon_GitHub,
     tags: ["github", "profile"],
     featured: false,
+  },
+  {
+    name: "Hero Patterns",
+    slug: "hero-patterns",
+    url: "https://heropatterns.com",
+    icon: Icon_Resource,
+    tags: ["patterns", "backgrounds"],
+    featured: false,
   }
 ];
 

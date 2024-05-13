@@ -4,7 +4,7 @@ import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
 import DataForQuotes from "@/components/data/DataForQuotes";
-const pageStyles = "bg-gradient-to-b from-sky-800 to-sky-900";
+const pageStyles = "bg-sky-900 bg-hexagons-background text-sky-300";
 
 export default function Home() {
   return (
