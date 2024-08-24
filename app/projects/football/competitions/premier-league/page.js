@@ -84,7 +84,9 @@ export default function Home() {
                   {team.premierLeagueSeasons.map((season, index) => (
                     <Fragment key={index}>
                     {seasonPositions.map((pos, i) => (
-                      <td key={i} className={`px-1 ${season[pos] === -1 ? 'text-slate-400' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`}>{season[pos] === -1 ? '-' : season[pos]}</td>
+                      <td key={i} className={`px-1 ${season[pos] === -1 ? 'text-slate-400' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`}>
+                        {season[pos] === -1 ? '-' : season[pos]}
+                      </td>
                     ))}
                   </Fragment>
                   ))}
