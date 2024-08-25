@@ -81,14 +81,30 @@ export default function Home() {
               {sortedPremierLeagueSeasonData.map((team, index) => (
                 <tr key={index}>
                   <td className="sticky left-0 pl-2 text-left bg-slate-800 z-3 min-w-[150px] py-3">{team.teamName}</td>
-                  {team.premierLeagueSeasons.map((season, index) => (
-                    <Fragment key={index}>
-                    {seasonPositions.map((pos, i) => (
-                      <td key={i} className={`px-1 ${season[pos] === -1 ? 'text-slate-400' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`}>
-                        {season[pos] === -1 ? '-' : season[pos]}
-                      </td>
-                    ))}
-                  </Fragment>
+                    {team.premierLeagueSeasons.map((season, index) => (
+                      <Fragment key={index}>
+                      {seasonPositions.map((pos, i) => {
+                        const wins = season[`season${i + 1}W`];
+                        const draws = season[`season${i + 1}D`];
+                        const losses = season[`season${i + 1}L`];
+                        const goalsFor = season[`season${i + 1}F`];
+                        const goalsAgainst = season[`season${i + 1}A`];
+                        const goalDifference = goalsFor - goalsAgainst;
+                        const totalGames = wins + draws + losses;
+                        const totalPoints = (wins * 3) + draws;
+                        return (
+                          <td 
+                            key={i} 
+                            className={`cursor-pointer px-1 ${season[pos] === -1 ? 'text-slate-400 cursor-default' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`} 
+                            {...(season[pos] !== -1 && {
+                              title: `Played: ${totalGames}, W: ${wins}, D: ${draws}, L: ${losses}, F: ${goalsFor}, A: ${goalsAgainst}, GD: ${goalDifference}, Pts: ${totalPoints}`
+                            })}
+                          >
+                            {season[pos] === -1 ? '-' : season[pos]}
+                          </td>
+                        );
+                      })}
+                    </Fragment>
                   ))}
                 </tr>
               ))}
