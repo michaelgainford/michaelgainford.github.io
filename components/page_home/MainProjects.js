@@ -19,7 +19,7 @@ export default function MainProjects() {
             <span className={`flex w-[27%] md:w-[23%] xl:w-[20%] justify-center items-end ${project.groupHover} h-1/2`} >  
               <project.icon fill={`${project.fill}`} classes="size-8 lg:size-12 2xl:size-16 fill-slate-100 flex justify-center"/>
             </span>
-            <span className="text-[10px] uppercase sm:text-xs md:text-sm tracking-wider max-lg:text-slate-100 text-center h-1/2 flex items-center group-hover:text-white">
+            <span className="text-[10px] lowercase sm:text-xs md:text-sm lg:text-base tracking-wider max-lg:text-slate-100 text-center h-1/2 flex items-center group-hover:text-white">
               {project.name}
             </span>
           </Link>
