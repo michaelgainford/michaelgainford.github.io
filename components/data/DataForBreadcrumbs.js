@@ -1,11 +1,19 @@
 const DataForBreadcrumbs = {
   home: {
-    title: "Home",
-    href: "/",
+    url1: {
+      title: "Home",
+      href: "/",
+    },
   },
   projects: {
-    title: "Projects",
-    href: "/projects",
+    url1: {
+      title: "Home",
+      href: "/",
+    },
+    url2: {
+      title: "Projects",
+      href: "/projects",
+    }
   },
   projects_football: {
     title: "Football",
