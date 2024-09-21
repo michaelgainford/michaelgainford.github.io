@@ -25,12 +25,11 @@ export default function MyDashboard(){
       <main className={`${mainStyles}`}>
         <H1 text="My Dev Dashboard" />
         <div className="flex flex-col w-full mb-8">
-
           <details className={detailsStyles}>
             <summary className={summaryStyles}>
               <span className={summaryHeaderStyles}>My Domains</span>
               <span>
-              <svg class={summaryHeaderSvgStyles} fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <svg class={summaryHeaderSvgStyles} fill="none" height="20" width="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
               </span>
@@ -60,7 +59,7 @@ export default function MyDashboard(){
             <summary className={summaryStyles}>
               <span className={summaryHeaderStyles}>Bills/Payments</span>
               <span>
-              <svg class={summaryHeaderSvgStyles} fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <svg class={summaryHeaderSvgStyles} fill="none" height="20" width="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
               </span>
@@ -101,7 +100,7 @@ export default function MyDashboard(){
             <summary className={summaryStyles}>
               <span className={summaryHeaderStyles}>Code Snippets</span>
               <span>
-              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="rotate-0 transform text-slate-200 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
               </span>

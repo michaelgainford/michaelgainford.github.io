@@ -1,23 +1,41 @@
+import { useState } from 'react'
 import MainLogo from '@/components/header/MainLogo'
 import MainNav from '@/components/header/MainNav'
-//import MainBreadcrumbs from '@/components/header/MainBreadcrumbs'
-import DataForBreadcrumbs from '@/components/data/DataForBreadcrumbs'
-//import MainBreadcrumbs from '@/components/header/MainBreadcrumbs'
+import MobileNav from '@/components/header/MainMobileNav'
+import IconHamburgerNav from '@/components/icons/IconHamburgerNav'
+import IconCrossNav from '@/components/icons/IconCrossNav'
 
-export default function MainHeader() {
+export default function MainHeader() {  
+
+  function ToggleVisibility() {
+    const [isVisible, setIsVisible] = useState(false);
+  
+    const toggleVisibilityHandler = () => {
+      setIsVisible(!isVisible);
+    };
   return (
-    <header className="w-full border-2 border-rose-500">
-      <div className="header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-col sm:flex-row sm:justify-between gap-1 pt-6 mx-auto lg:pt-4 lg:gap-2 lg:pb-2">
+    <header className={`w-full`}>
+      <div className={`header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-row justify-between sm:items-center gap-1 py-6 mx-auto lg:gap-2`}>
         <MainLogo />
         <MainNav />
-      </div>
-      <div className="w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] mx-auto text-[10px] uppercase">
-        <ul>
-          <li>
-            <a href={DataForBreadcrumbs.home.href}>{DataForBreadcrumbs.home.title}</a>
-          </li>
-          
-        </ul>
+        <div className="hamburger-menu-icon">
+          <IconHamburgerNav onClick={toggleMobileNav} />
+        </div>
+        <div className="hidden cross-menu-icon">
+          <IconCrossNav onClick={toggleMobileNav} />
+        </div>
+        <div>
+          <button onClick={toggleVisibilityHandler}>
+            Toggle Visibility
+          </button>
+          {isVisible && (
+            <div>
+              <div className="hidden mobile-nav">
+                <MobileNav />
+              </div>
+            </div>
+          )}
+       </div>
       </div>
     </header>
   )
