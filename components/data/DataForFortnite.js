@@ -317,6 +317,28 @@ const FortniteSeasonsData = [
     theme: "Greek Gods",
     mobileImage: "/gaming/fortnite/c5-s2-season-artwork.webp",
     desktopImage: "/gaming/fortnite/c5-s2-season-artwork.webp",
+  },
+  {
+    name: "C5 S3",
+    chapter: 5,
+    season: 3,
+    overall_season: 30,
+    startDate: "2024-05-24",
+    endDate: "2024-08-15",
+    theme: "Wrecked",
+    mobileImage: "/gaming/fortnite/c5-s3-season-artwork.webp",
+    desktopImage: "/gaming/fortnite/c5-s3-season-artwork.webp",
+  },
+  {
+    name: "C5 S4",
+    chapter: 5,
+    season: 4,
+    overall_season: 31,
+    startDate: "2024-08-15",
+    endDate: "2024-11-14",
+    theme: "Absolute Doom",
+    mobileImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
+    desktopImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
   }
 
 ]
