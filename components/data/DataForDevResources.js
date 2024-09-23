@@ -255,6 +255,14 @@ const DataForDevResources = [
     icon: Icon_Resource,
     tags: ["patterns", "backgrounds"],
     featured: false,
+  },
+  {
+    name: "Tailwind Color",
+    slug: "tailwind-color",
+    url: "https://tailwindcolor.com",
+    icon: Icon_Resource,
+    tags: ["colours", "tailwind"],
+    featured: false,
   }
 ];
 

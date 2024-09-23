@@ -9,8 +9,8 @@ const featuredResourcesSortedByName = featuredResources.sort((a, b) => a.name.lo
 export default function MainResources() {
   return (
     <div className={`w-full resources-list`}>
-      <H2SectionHeader text="Featured Dev Resources" />
-      <div className={`grid justify-center grid-cols-2 gap-4 border rounded-lg lg:p-8 border-slate-800/50 bg-slate-800/30 xl:gap-6`}>
+      <H2SectionHeader text={`Featured Dev Resources`} />
+      <div className={`grid justify-center grid-cols-2 gap-4 rounded-lg xl:gap-6`}>
         {featuredResourcesSortedByName.map((resource, index) => (
           <Link href={resource.url} key={index} className={`flex items-center w-full p-4 text-lg transition border rounded-lg opacity-75 lg:gap-4 lg:p-6 xl:gap-8 resource border-slate-700 bg-gradient-to-b from-slate-900/40 to-slate-900/60 to-90% hover:opacity-100 hover:bg-slate-800 xl:px-8 group`}>
             <div className={`flex justify-center !text-white fill-white stroke-white`}>
@@ -25,7 +25,7 @@ export default function MainResources() {
         ))}  
       </div>
       <div className={`flex justify-start mt-8 lg:mt-12`}>
-        <Button label="See All" title="See More Resources" href="/web-development/dev-resources" />
+        <Button label={`See All`} title={`See More Resources`} href={`/web-development/dev-resources`} />
       </div>
     </div>
   )

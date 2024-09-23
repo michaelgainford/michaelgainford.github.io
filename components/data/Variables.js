@@ -1,7 +1,7 @@
 const mainStyles =
   "mx-auto w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-col items-center";
 
-const globalPageStyles = "space-y-4 lg:space-y-16 min-h-dvh";
+const globalPageStyles = "space-y-4 lg:space-y-8 2xl:space-y-16 min-h-dvh";
 
 const navigation = [
   {
