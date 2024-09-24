@@ -44,10 +44,10 @@ export default function Home() {
     <div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background`}>
       <MainHeader />
       <main className={`${mainStyles}`}>
-        <H1 text="Jokes" />
-        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-8 lg:gap-16">
+        <H1 text={`Jokes`} />
+        <div className={`grid w-full grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-8 lg:gap-16`}>
           {jokes.map((joke, index) => (
-            <div key={index} className="border border-rose-700 bg-rose-900 p-4 rounded-lg min-h-[200px] space-y-4">
+            <div key={index} className={`border border-rose-700 bg-rose-900 p-4 rounded-lg min-h-[200px] space-y-4`}>
               <p>{joke.setup}</p>
               <p>{joke.punchline}</p>
             </div>

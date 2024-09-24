@@ -23,12 +23,12 @@ export default function Home() {
                 <span className={`flex items-center w-6 h-6 gap-4`}>
                   <project.icon fill="fff" className={`w-6 h-6 stroke-slate-300 fill-slate-300 text-slate-300`} />
                 </span>
-                <h2 className="text-xs">{project.name}</h2>
+                <h2 className={`text-xs`}>{project.name}</h2>
               </span>
-              <span className="flex justify-start pt-6 pb-2 text-xs tracking-wider text-left">
-                <p className="line-clamp-2">{project.description}</p>
+              <span className={`flex justify-start pt-6 pb-2 text-xs tracking-wider text-left`}>
+                <p className={`line-clamp-2`}>{project.description}</p>
               </span>
-              <div className="flex items-end justify-start pt-4 category">
+              <div className={`flex items-end justify-start pt-4 category`}>
                 <span className={`p-1 text-xs tracking-wider lowercase border ${project.border} rounded`}>{project.category}</span>
               </div>
             </a>

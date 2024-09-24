@@ -11,43 +11,43 @@ export default function Home() {
     <div className={`${globalPageStyles} ${pageStyles}`}>
       <MainHeader />
       <main className={`${mainStyles}`}>
-        <H1 text="Space" />
-        <div className="flex flex-wrap justify-center w-full gap-8 max-w-[80vw]">
-          <ul className="grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-8 xl:gap-12">
+        <H1 text={`Space`} />
+        <div className={`flex flex-wrap justify-center w-full gap-8 max-w-[80vw]`}>
+          <ul className={`grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-8 xl:gap-12`}>
             {DataForSpace.map((planet, index) => (
               <li
                 key={index}
-                className="w-full p-4 lg:p-8 space-y-2 text-center border rounded-lg border-slate-600 bg-slate-800 min-w-[200px] max-sm:w-full flex flex-col items-center"
+                className={`w-full p-4 lg:p-8 space-y-2 text-center border rounded-lg border-slate-600 bg-slate-800 min-w-[200px] max-sm:w-full flex flex-col items-center`}
               >
-                <h2 className="mb-4 text-xl tracking-wider text-center uppercase">
+                <h2 className={`mb-4 text-xl tracking-wider text-center uppercase`}>
                   {planet.name}
                 </h2>
-                <span className="grid grid-cols-2 gap-4">
-                  <span className="flex flex-col tracking-wider text-center">
+                <span className={`grid grid-cols-2 gap-4`}>
+                  <span className={`flex flex-col tracking-wider text-center`}>
                     <span className="">
                       {planet.distanceFromSunInMiles.toLocaleString()}
                     </span>
-                    <span className="text-[10px]">miles from the Sun</span>
+                    <span className={`text-[10px]`}>miles from the Sun</span>
                   </span>
-                  <span className="flex flex-col tracking-wider text-center">
+                  <span className={`flex flex-col tracking-wider text-center`}>
                     <span>{planet.rotationPeriodInHours}</span>
-                    <span className="text-[10px]">hours to rotate</span>
+                    <span className={`text-[10px]`}>hours to rotate</span>
                   </span>
-                  <span className="flex flex-col tracking-wider text-center">
+                  <span className={`flex flex-col tracking-wider text-center`}>
                     <span>{planet.size}</span>
-                    <span className="text-[10px]">Earths</span>
+                    <span className={`text-[10px]`}>Earths</span>
                   </span>
-                  <span className="flex flex-col tracking-wider text-center text-">
+                  <span className={`flex flex-col tracking-wider text-center text-[12px]`}>
                     <span>{planet.moons}</span>
-                    <span className="text-[10px]">moons</span>
+                    <span className={`text-[10px]`}>moons</span>
                   </span>
                 </span>
               </li>
             ))}
           </ul>
         </div>
-        <div className="w-full mt-16 solar-system">
-          <h3 className="mt-8 mb-4 text-2xl text-center">The Solar System</h3>
+        <div className={`w-full mt-16 solar-system`}>
+          <h3 className={`mt-8 mb-4 text-2xl text-center`}>The Solar System</h3>
           <ol>
             {DataForSpace.map((planet, index) => (
               <li
