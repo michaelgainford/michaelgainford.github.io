@@ -25,6 +25,7 @@ module.exports = {
         center: true,
       },
       screens: {
+        'xxs': '380px',
         '3xl': '1500px',
       },
     },
