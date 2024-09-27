@@ -10,7 +10,7 @@ DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 const pageStyles = "bg-slate-900 text-slate-400 bg-brand-background bg-repeat";
 
 
-export default function Home() {
+export default function PROJECTS() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
       <MainHeader />

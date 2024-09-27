@@ -6,7 +6,7 @@ import Button from '@/components/buttons/StandardButton'
 const featuredResources = DataForDevResources.filter(resource => resource.featured === true);
 const featuredResourcesSortedByName = featuredResources.sort((a, b) => a.name.localeCompare(b.name));
 
-export default function MainResources() {
+export default function MAIN_RESOURCES() {
   return (
     <div className={`w-full resources-list`}>
       <H2SectionHeader text={`Featured Dev Resources`} />

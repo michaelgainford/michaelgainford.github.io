@@ -6,7 +6,7 @@ import MainFooter from "@/components/footer/MainFooter";
 import DataForSpace from "@/components/data/DataForSpace";
 const pageStyles = "bg-black bg-topo-background text-sky-100";
 
-export default function Home() {
+export default function SPACE() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
       <MainHeader />

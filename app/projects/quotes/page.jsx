@@ -6,7 +6,7 @@ import MainFooter from "@/components/footer/MainFooter";
 import DataForQuotes from "@/components/data/DataForQuotes";
 const pageStyles = "bg-sky-900 bg-hexagons-background text-sky-300";
 
-export default function Home() {
+export default function QUOTES() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
       <MainHeader />

@@ -6,7 +6,7 @@ import Button from '/components/buttons/StandardButton'
 // Loop through the projects that are featured projects to display in the MainProjects component
 const featuredProjects = DataForAllProjects.filter(project => project.featuredProject === true);
 
-export default function MainProjects() {
+export default function MAIN_PROJECTS() {
   return (
     <div className={`w-full projects-list`}>
       <H2SectionHeader text={`Featured Projects`} />

@@ -61,7 +61,7 @@ const sortedPremierLeagueSeasonData = [...DataForPremTeamsBySeason].sort((a, b) 
 });
 
 
-export default function Home() {
+export default function PREMIER_LEAGUE () {
   return (
     <div className={`bg-dots-background bg-blue-800 ${globalPageStyles}`}>
       <MainHeader />

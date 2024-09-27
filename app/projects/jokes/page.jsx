@@ -39,7 +39,7 @@ const jokes = [
   }
 ];
 
-export default function Home() {
+export default function JOKES() {
   return (
     <div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background`}>
       <MainHeader />

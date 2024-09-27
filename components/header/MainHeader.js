@@ -14,7 +14,7 @@ export default function MainHeader() {
   };
 
   return (
-    <header className={`w-full border-2 border-rose-500`}>
+    <header className={`w-full`}>
       <div
         className={`header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-row justify-between sm:items-center gap-1 py-6 mx-auto lg:gap-2`}
       >

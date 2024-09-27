@@ -12,7 +12,7 @@ const watchedMovies = DataForMoviesList.filter((movie) => movie.watched === true
 const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === false);
 const watchedMoviesLength = watchedMovies.length;
 
-export default function Home() {
+export default function MOVIES_DATABASE() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
       <MainHeader />
