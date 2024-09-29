@@ -1016,7 +1016,7 @@ const DataForMovies = [
   },
   {
     id: 86,
-    title: "The emoji movie",
+    title: "The Emoji Movie",
     image:  "/movies-images/the-emoji-movie.webp",
     imdb_url: "https://www.imdb.com/title/tt4877122/",
     description:
@@ -1064,7 +1064,7 @@ const DataForMovies = [
   },
   {
     id: 90,
-    title: "spiderman homecoming",
+    title: "Spiderman Homecoming",
     image:  "/movies-images/spiderman-homecoming.webp",
     imdb_url: "https://www.imdb.com/title/tt2250912/",
     description:
@@ -1456,6 +1456,18 @@ const DataForMovies = [
     genre: "Action",
     duration: 129,
     watched: false,
+  },
+  {
+    id: 123,
+    title: "Deadpool 2",
+    image: "/movies-images/deadpool-2.webp",
+    imdb_url: "https://www.imdb.com/title/tt5463162/",
+    description:
+      "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool), brings together a team of fellow mutant rogues to protect a",
+    year: 2018,
+    genre: "Action",
+    duration: 119,
+    watched: true,
   }
 ];
 

@@ -1,5 +1,5 @@
 import Icon_Codepen from "@/components/icons/IconCodepen";
-import Icon_ColourPalettes from "@/components/icons/IconColourPalettes";
+import Icon_ColourPalettes from "@/components/icons/IconColourPalette";
 import Icon_Font from "@/components/icons/IconFont";
 import Icon_GitHub from "@/components/icons/IconGitHub";
 import Icon_LinkedIn from "@/components/icons/IconLinkedIn";
