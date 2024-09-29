@@ -5,7 +5,7 @@ import MainFooter from "@/components/footer/MainFooter";
 import { mainStyles } from "@/components/data/Variables";
 import { globalPageStyles } from "@/components/data/Variables";
 
-import Euro2024Teams from "@/components/data/DataForEuro2024";
+import Euro2024Teams from "@/components/data/Data_For_Euro2024";
 
 // Sort by group and then group seeding
 Euro2024Teams.sort((a, b) => {

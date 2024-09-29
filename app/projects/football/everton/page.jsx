@@ -4,7 +4,7 @@ import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
-import evertonSquad from "@/components/data/DataForEverton";
+import evertonSquad from "@/components/data/Data_For_Everton";
 
 const team_headings_and_info = [
   {

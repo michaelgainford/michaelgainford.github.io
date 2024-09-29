@@ -3,7 +3,7 @@ import { mainStyles } from "@/components/data/Variables";
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
-import DataForQuotes from "@/components/data/DataForQuotes";
+import DataForQuotes from "@/components/data/Data_For_Quotes";
 const pageStyles = "bg-sky-900 bg-hexagons-background text-sky-300";
 
 export default function QUOTES() {

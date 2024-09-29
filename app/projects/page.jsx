@@ -4,7 +4,7 @@ import MainFooter from "@/components/footer/MainFooter";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
 
-import DataForProjects from "@/components/data/DataForProjects";
+import DataForProjects from "@/components/data/Data_For_Projects";
 DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 
 const pageStyles = "bg-slate-900 text-slate-400 bg-brand-background bg-repeat";

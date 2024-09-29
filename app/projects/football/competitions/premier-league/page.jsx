@@ -8,7 +8,7 @@ import { globalPageStyles } from "@/components/data/Variables";
 const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
 const seasonPositionsP = Array.from({ length: 33 }, (_, i) => `season${i + 1}P`);
 // import the data
-import DataForPremTeamsBySeason from "@/components/data/DataForPremTeamsBySeason";
+import DataForPremTeamsBySeason from "@/components/data/Data_For_PremTeamsBySeason";
 
 
 // create an array to store the premier league seasons

@@ -3,7 +3,7 @@ import { mainStyles } from "@/components/data/Variables";
 import MainHeader from "@/components/header/MainHeader";
 import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
-import DataForSpace from "@/components/data/DataForSpace";
+import DataForSpace from "@/components/data/Data_For_Space";
 const pageStyles = "bg-black bg-topo-background text-sky-100";
 
 export default function SPACE() {

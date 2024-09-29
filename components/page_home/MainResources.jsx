@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import DataForDevResources from '@/components/data/DataForDevResources'
+import DataForDevResources from '@/components/data/Data_For_DevResources'
 import H2SectionHeader from '@/components/typography/H2SectionHeader'
 import Button from '@/components/buttons/StandardButton'
 

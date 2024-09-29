@@ -6,7 +6,7 @@ import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
-import DataForDevResources from "@/components/data/DataForDevResources";
+import DataForDevResources from "@/components/data/Data_For_DevResources";
 
 // sort aAtaForDevResources by name
 const ResourcesSortedByName = DataForDevResources.sort((a, b) => a.name.localeCompare(b.name));

@@ -5,7 +5,7 @@ import MainFooter from "@/components/footer/MainFooter";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
 
-import DataForFortnite from "@/components/data/DataForFortnite";
+import DataForFortnite from "@/components/data/Data_For_Fornite";
 
 export default function FORTNITE() {
   return (

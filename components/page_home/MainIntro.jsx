@@ -11,7 +11,7 @@ function timeBasedGreeting() {
 }
 
 
-export default function MainIntro() {
+export default function MAIN_INTRO() {
   return (
     <div className={`w-full pb-8 intro lg:pb-8 xl:pb-12 2xl:pb-16`}>
       <div className={`grid grid-cols-8 lg:gap-32`}>

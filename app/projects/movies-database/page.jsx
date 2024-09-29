@@ -6,7 +6,7 @@ import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
 const pageStyles = "bg-gradient-to-b bg-indigo-900 bg-melt-background text-slate-300";
 
-import DataForMoviesList from "@/components/data/DataForMovies";
+import DataForMoviesList from "@/components/data/Data_For_Movies";
 DataForMoviesList.sort((a, b) => a.title.localeCompare(b.title));
 const watchedMovies = DataForMoviesList.filter((movie) => movie.watched === true);
 const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === false);
