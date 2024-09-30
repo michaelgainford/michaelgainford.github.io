@@ -179,3 +179,8 @@ body {
   --t: 20000ms;
   --w: 6cqi;
 }
+
+html,
+:host {
+  -webkit-text-size-adjust: 100%;
+}
