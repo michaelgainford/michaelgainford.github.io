@@ -5,6 +5,7 @@ import Icon_Laptop from "@/components/icons/IconLaptop";
 import Icon_Quote from "@/components/icons/IconQuote";
 import Icon_Gamepad from "@/components/icons/IconGamepad";
 import Icon_Template from "@/components/icons/IconTemplate";
+import Icon_Planet from "@/components/icons/IconPlanet";
 
 const DataForAllProjects = [
   {
@@ -136,7 +137,7 @@ const DataForAllProjects = [
     name: "Space",
     href: "/projects/space",
     featuredProject: true,
-    icon: Icon_Template,
+    icon: Icon_Planet,
     color: "text-slate-200",
     bg: "bg-slate-800",
     border: "border-slate-700",
