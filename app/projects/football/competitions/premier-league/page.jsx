@@ -63,7 +63,7 @@ const sortedPremierLeagueSeasonData = [...DataForPremTeamsBySeason].sort((a, b) 
 
 export default function PREMIER_LEAGUE () {
   return (
-    <div className={`bg-dots-background bg-blue-800 ${globalPageStyles}`}>
+    <div className={`bg-dots-background bg-purple-800 ${globalPageStyles}`}>
       <MainHeader />
       <main className={`${mainStyles}`}>
         <H1 text={`Premier League`} />

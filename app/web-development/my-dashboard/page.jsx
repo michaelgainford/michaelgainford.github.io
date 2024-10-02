@@ -29,7 +29,7 @@ export default function MY_DASHBOARD(){
             <summary className={summaryStyles}>
               <span className={summaryHeaderStyles}>My Domains</span>
               <span>
-              <svg class={summaryHeaderSvgStyles} fill={`none`} height={`20`} width={`20`} stroke={`currentColor`} strokeLinecap={`round`} strokeLinejoin={`round`} strokeWidth={`2`} viewBox={`0 0 24 24`}>
+              <svg className={summaryHeaderSvgStyles} fill={`none`} height={`20`} width={`20`} stroke={`currentColor`} strokeLinecap={`round`} strokeLinejoin={`round`} strokeWidth={`2`} viewBox={`0 0 24 24`}>
                 <polyline points={`6 9 12 15 18 9`}></polyline>
               </svg>
               </span>
@@ -59,7 +59,7 @@ export default function MY_DASHBOARD(){
             <summary className={summaryStyles}>
               <span className={summaryHeaderStyles}>Bills/Payments</span>
               <span>
-              <svg class={summaryHeaderSvgStyles} fill={`none" height="20" width="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24`}>
+              <svg className={summaryHeaderSvgStyles} fill={`none" height="20" width="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24`}>
                 <polyline points={`6 9 12 15 18 9`}></polyline>
               </svg>
               </span>

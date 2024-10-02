@@ -22,6 +22,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/resources:fill-slate-100 group-hover/resources:text-slate-100",
     description: "A collection of useful resources for web developers and designers.",
     category: "web dev",
+    archived: false,
   },
   {
     name: "Euro 2024",
@@ -37,6 +38,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/euros:fill-slate-900 group-hover/euros:text-slate-100",
     description: "A page dedicated to the Euro 2024 football competition.",
     category: "football",
+    archived: true,
   },
   {
     name: "Everton",
@@ -50,6 +52,7 @@ const DataForAllProjects = [
     hover: "hover:bg-blue-700",
     description: "A page dedicated to Everton Football Club",
     category: "football",
+    archived: false,
   },
   {
     name: "Fortnite",
@@ -63,6 +66,7 @@ const DataForAllProjects = [
     hover: "hover:bg-black/40",
     description: "A page dedicated to Fortnite.",
     category: "gaming",
+    archived: false,
   },
   {
     name: "Jokes",
@@ -78,6 +82,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/jokes:fill-slate-100 group-hover/jokes:text-slate-100",
     description: "A collection of random jokes to make you laugh.",
     category: "fun",
+    archived: false,
   },
   {
     name: "Movies Database",
@@ -93,6 +98,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/movies:fill-slate-100 group-hover/movies:text-slate-100",
     description: "A database of movies I have watched with my son.",
     category: "fun",
+    archived: false,
   },
   {
     name: "My Dev Dashboard",
@@ -106,6 +112,7 @@ const DataForAllProjects = [
     hover: "hover:bg-teal-800",
     description: "A dashboard for my web development projects.",
     category: "web dev",
+    archived: false,
   },
   {
     name: "Quotes",
@@ -119,6 +126,7 @@ const DataForAllProjects = [
     hover: "hover:bg-sky-800",
     description: "A collection of motivational and inspirational quotes to inspire you.",
     category: "fun",
+    archived: false,
   },
   {
     name: "Premier League",
@@ -127,11 +135,13 @@ const DataForAllProjects = [
     icon: Icon_Football,
     color: "text-slate-200",
     bg: "bg-slate-500",
-    border: "border-slate-700",
-    divider: "divide-slate-500",
-    hover: "hover:bg-slate-700",
+    bg: "bg-violet-900",
+    border: "border-purple-700",
+    divider: "divide-purple-700",
+    hover: "hover:bg-purple-800",
     description: "A project about the Premier League",
     category: "football",
+    archived: false,
   },
   {
     name: "Space",
@@ -145,6 +155,7 @@ const DataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A project about space",
     category: "space",
+    archived: false,
   },
   {
     name: "Template",
@@ -158,6 +169,7 @@ const DataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A template for a project",
     category: "template",
+    archived: true,
   },
   {
     name: "Template",
@@ -171,6 +183,7 @@ const DataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A template for a project",
     category: "template",
+    archived: true,
   },
   {
     name: "Template",
@@ -184,6 +197,7 @@ const DataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A template for a project",
     category: "template",
+    archived: true,
   },
   {
     name: "Template",
@@ -197,6 +211,7 @@ const DataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A template for a project",
     category: "template",
+    archived: true,
   },
   {
     name: "Template",
@@ -210,6 +225,7 @@ const DataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A template for a project",
     category: "template",
+    archived: true,
   }
 ];
 
