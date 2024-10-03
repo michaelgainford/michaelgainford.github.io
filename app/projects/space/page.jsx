@@ -5,6 +5,7 @@ import H1 from "@/components/typography/H1Span";
 import MainFooter from "@/components/footer/MainFooter";
 import DataForSpace from "@/components/data/Data_For_Space";
 const pageStyles = "bg-black bg-topo-background text-sky-100";
+const DataForPlanets = DataForSpace.filter((planet) => planet.star_or_planet === "planet");
 
 export default function SPACE() {
   return (
@@ -29,10 +30,10 @@ export default function SPACE() {
           <div className={`flex flex-wrap justify-center w-full gap-8 max-w-[80vw] lg:col-span-1 lg:order-1`}>
             <h3 className={`mt-8 mb-4 text-2xl text-center`}>The Planets</h3>
             <ul className={`grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8 xl:gap-12`}>
-              {DataForSpace.map((planet, index) => (
+              {DataForPlanets.map((planet, index) => (
                 <li
                   key={index}
-                  className={`w-full p-4 lg:p-8 space-y-2 text-center border rounded-lg border-slate-600 bg-slate-800 min-w-[200px] max-sm:w-full flex flex-col items-center`}
+                  className={`w-full p-4 space-y-2 text-center border rounded-lg border-slate-600 bg-slate-800 min-w-[200px] max-sm:w-full flex flex-col items-center`}
                 >
                   <h2 className={`mb-4 text-xl tracking-wider text-center uppercase`}>
                     {planet.name}
