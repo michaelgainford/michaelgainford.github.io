@@ -5,11 +5,9 @@ const footerAboutText = `My name is Michael. I am Front-End Developer. I live in
 
 export default function FOOTER_ABOUT() {
   return (
-    <div
-      	className={`footer-about flex flex-col col-span-1 gap-2 lg:col-span-2`}
-    >
-      	<FooterSectionHeader text={`About`} />
-      	<div className={`flex flex-col gap-4 mb-8 sm:gap-8 sm:flex-row md:gap-12 lg:pb-8 lg:gap-16`}>
+    <div className={`footer-about flex flex-col col-span-1 gap-2 lg:col-span-2`}>
+		<FooterSectionHeader text={`About`} />
+		<div className={`flex flex-col gap-4 mb-8 sm:gap-8 sm:flex-row md:gap-12 lg:pb-8 lg:gap-16`}>
 			<p className={`text-[10px] text-center leading-loose sm:pr-8 sm:text-left md:text-xs/relaxed lg:text-sm/loose`}>
 				{footerAboutText}
 			</p>
