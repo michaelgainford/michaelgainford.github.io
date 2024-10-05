@@ -68,7 +68,7 @@ body {
  }
 
  .solar-system {
-  width: 40vw;
+  width: clamp(300px, 96vw, 800px);
  }
 
 .solar-system ol {

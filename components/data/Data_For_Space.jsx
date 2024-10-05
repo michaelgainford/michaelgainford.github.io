@@ -7,6 +7,7 @@ const DataForSpace = [
     size: 109.2,
     moons: 0,
     color: "bg-yellow-500",
+    star_or_planet: "star",
   },
   {
     name: "Mercury",
@@ -16,6 +17,7 @@ const DataForSpace = [
     size: 0.382,
     moons: 0,
     color: "bg-red-500",
+    star_or_planet: "planet",
   },
   {
     name: "Venus",
@@ -25,6 +27,7 @@ const DataForSpace = [
     size: 0.949,
     moons: 0,
     collor: "bg-yellow-500",
+    star_or_planet: "planet",
   },
   {
     name: "Earth",
@@ -34,6 +37,7 @@ const DataForSpace = [
     size: 1,
     moons: 1,
     color: "bg-blue-500",
+    star_or_planet: "planet",
   },
   {
     name: "Mars",
@@ -43,6 +47,7 @@ const DataForSpace = [
     size: 0.532,
     moons: 2,
     color: "bg-red-500",
+    star_or_planet: "planet",
   },
   {
     name: "Jupiter",
@@ -52,6 +57,7 @@ const DataForSpace = [
     size: 11.209,
     moons: 79,
     color: "bg-orange-500",
+    star_or_planet: "planet",
   },
   {
     name: "Saturn",
@@ -61,6 +67,7 @@ const DataForSpace = [
     size: 9.449,
     moons: 82,
     color: "bg-blue-300",
+    star_or_planet: "planet",
   },
   {
     name: "Uranus",
@@ -69,6 +76,8 @@ const DataForSpace = [
     rotationPeriodInHours: 17.2,
     size: 4.007,
     moons: 27,
+    color: "bg-blue-500",
+    star_or_planet: "planet",
   },
   {
     name: "Neptune",
@@ -77,6 +86,8 @@ const DataForSpace = [
     rotationPeriodInHours: 16.1,
     size: 3.883,
     moons: 14,
+    color: "bg-blue-800",
+    star_or_planet: "planet",
   },
 ];
 
