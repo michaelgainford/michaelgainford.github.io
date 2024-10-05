@@ -4,13 +4,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MichaelGainford.dev",
-  description: "Michael's Web Dev Playground",
+  title: `MichaelGainford.dev`,
+  description: `Michael's Web Dev Playground`,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang={`en`}>
       <body className={`${inter.className}`}>{children}</body>
     </html>
   );
