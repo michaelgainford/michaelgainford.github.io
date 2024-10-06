@@ -1,6 +1,5 @@
 ## About Me
 
-
   Hi! 👋🏻 My name is Michael. I am a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, React, and Next.js. I am always looking to learn new things and improve my skills. I am currently working on a project to create a website that will act as a hub for all things web development. So, grab a ☕, get comfortable in your 🪑 and let's go! 🚀
 
 ## Overview
@@ -8,6 +7,12 @@
   The purpose of this site is to act as a single hub for all things web development. It will contain a list of resources, projects, and other helpful information for web developers. The site will be built using Next.js and Tailwind CSS, on the Next.js framework. The site will be fully responsive and accessible, and will be optimized for performance.
 
   > "What's more suitable a topic to build a website about than web development itself?" - Me
+
+### Using
+  [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#) 	[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#) [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#) [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#) [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
+
+### Ran and managed using
+  [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](#) [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
 
 ---
 
@@ -50,18 +55,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Sitemap
 
 + **Home**: Landing page with a brief description of the site and a list of resources/projects.
-+ **Resources**: A list of resources for web developers.
++ **Dev Resources**: A list of resources for web developers.
 + **Projects**: A list of projects that I have worked on.
   - **Euro 2024**: A project that I worked on for the Euro 2024 tournament.
+  - **Everton**: A project dedicated to Everton Football Club.
+  - **Fornite**: A project dedicated to the popular game Fortnite.
+  - **Jokes**: A project that displays random jokes.
+  - **Movies Database**: A project that displays information about movies either watched or to watch.
   - **Premier League**: A project that I worked on for the Premier League detailining season-by-season data.
-  - **Project 3**: Filler text for now.
-  - **Project 4**: Filler text for now.
-  - **Project 5**: Filler text for now.
-  - **Project 6**: Filler text for now.
-  - **Project 7**: Filler text for now.
-  - **Project 8**: Filler text for now.
-  - **Project 9**: Filler text for now.
-  - **Project 10**: Filler text for now.
+  - **Quotes**: A project that displays random quotes.
+  - **Space**: A project that displays information about space.
 
 ---
 
