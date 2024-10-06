@@ -100,6 +100,7 @@ const DataForAllProjects = [
     category: "fun",
     archived: false,
   },
+  /* 
   {
     name: "My Dev Dashboard",
     href: "/web-development/my-dashboard",
@@ -113,7 +114,7 @@ const DataForAllProjects = [
     description: "A dashboard for my web development projects.",
     category: "web dev",
     archived: false,
-  },
+  }, */
   {
     name: "Quotes",
     href: "/projects/quotes",
