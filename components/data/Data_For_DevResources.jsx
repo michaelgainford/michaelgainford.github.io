@@ -1,10 +1,9 @@
 import Icon_Codepen from "@/components/icons/IconCodepen";
 import Icon_ColourPalettes from "@/components/icons/IconColourPalette";
 import Icon_Font from "@/components/icons/IconFont";
-import Icon_GitHub from "@/components/icons/IconGitHub";
+import Icon_GitHub from "@/components/icons/IconGithub";
 import Icon_LinkedIn from "@/components/icons/IconLinkedIn";
 import Icon_Resource from "@/components/icons/IconResource";
-import Icon_Twitter from "@/components/icons/IconTwitter";
 import Icon_W3Schools from "@/components/icons/IconW3Schools";
 
 const DataForDevResources = [
