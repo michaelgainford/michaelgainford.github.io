@@ -107,11 +107,11 @@ const DataForNavigation = [
     category: "web-development",
     mainNav: false,
     footerNav_1: false,
-    footerNav_2: true,
+    footerNav_2: false,
   },
   {
     label: "About",
-    href: "/about",
+    href: "/",
     border_colour: "none",
     hover: "none",
     category: "none",
