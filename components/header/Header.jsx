@@ -11,7 +11,13 @@ export default function HEADER() {
 
 	const toggleMobileNav = () => {
 		setIsMobileNavVisible(!isMobileNavVisible);
-	};
+		const body = document.querySelector("body");
+		if (isMobileNavVisible) {
+			body.style.overflow = "auto";
+		} else {
+			body.style.overflow = "hidden";
+		}
+	}
 
 	return (
 		<header className={`w-full`}>
