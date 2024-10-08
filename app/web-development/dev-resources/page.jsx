@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import DataForDevResources from "@/components/data/Data_For_DevResources";
@@ -14,7 +14,7 @@ tags.sort();
 export default function PAGE_DEV_RESOURCES() {
     return (
         <div className={`${globalPageStyles} bg-graph-paper-background bg-teal-800 text-slate-300`}>
-            <MainHeader />
+            <Header />
             <main className={mainStyles}>
                 <H1 text={`Dev Resources`} />
                 <div className={`flex flex-wrap justify-center gap-2 p-2 resource-tags-all lg:w-3/4`}>

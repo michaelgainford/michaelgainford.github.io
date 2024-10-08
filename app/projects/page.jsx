@@ -1,4 +1,4 @@
-import MainHeader from "@/components/header/Header";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/components/data/Variables";
@@ -13,7 +13,7 @@ const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
 export default function PAGE_PROJECTS() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
-			<MainHeader />
+			<Header />
 			<main className={`${mainStyles}`}>
 				<H1 text={`All Projects`} />
 				<div className={`grid flex-wrap w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 2xl:grid-cols-5 2xl:gap-16`}>

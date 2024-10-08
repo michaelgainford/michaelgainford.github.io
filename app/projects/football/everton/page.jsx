@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/components/data/Variables";
@@ -30,7 +30,7 @@ evertonSquad.sort((a, b) => a.number - b.number);
 export default function PAGE_EVERTON() {
   return (
     <div className={`${globalPageStyles} bg-blue-900 bg-rain-background`}>
-      <MainHeader />
+      <Header />
       <main className={`${mainStyles}`}>
         <H1 text={`Everton`} />
         <div className={`mt-8 grid w-full gap-4 first-line:gap-4 countries-grid-container`}>   

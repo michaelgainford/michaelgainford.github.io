@@ -1,6 +1,6 @@
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import DataForQuotes from "@/components/data/Data_For_Quotes";
@@ -9,7 +9,7 @@ const pageStyles = "bg-sky-900 bg-hexagons-background text-sky-300";
 export default function PAGE_QUOTES() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
-			<MainHeader />
+			<Header />
 			<main className={`${mainStyles}`}>
 			<H1 text={`Quotes`} />
 			<div className={`flex flex-wrap justify-center w-full gap-8`}>

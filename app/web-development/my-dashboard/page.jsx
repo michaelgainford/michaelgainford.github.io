@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/components/data/Variables";
@@ -21,7 +21,7 @@ const summaryHeaderSvgStyles = "rotate-0 transform text-slate-200 transition-all
 export default function PAGE_MY_DASHBOARD(){
 	return (
 	<div className={`${globalPageStyles} ${pageStyles}`}>
-		<MainHeader />
+		<Header />
 		<main className={`${mainStyles}`}>
 		<H1 text={`My Dev Dashboard`} />
 		<div className={`flex flex-col w-full mb-8`}>
