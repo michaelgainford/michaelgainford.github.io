@@ -1,4 +1,4 @@
-function timeBasedGreeting() {
+/* function timeBasedGreeting() {
   const date = new Date();
   const hours = date.getHours();
   if (hours < 12) {
@@ -8,7 +8,7 @@ function timeBasedGreeting() {
   } else {
     return 'Good Evening!';
   }
-}
+} */
 
 const detailsStyles = `border border-slate-800 rounded-lg p-4 bg-slate-900/50 group !overflow-x-auto [&_svg]:open:-rotate-180 w-full transition-all duration-300 md:max-w-[800px] lg:px-4"`
 const summaryStyles = `flex justify-between md:py-4 cursor-pointer`;
@@ -24,7 +24,7 @@ export default function HOME_INTRO() {
 					<summary className={summaryStyles}>
 					<h1 
 						className={`text-[14px] text-balance py-2 font-light leading-relaxed tracking-wide text-left decoration-8 pr-8 md:text-base lg:border-l-4 max-lg:font-bold lg:border-transparent lg:font-medium lg:text-2xl`} title={`My Web Development Website`}>
-						{timeBasedGreeting()} Thank you for visiting <span className={`underline underline-offset-4 decoration-amber-500/80 decoration-2 decoration-dotted`}>my site</span>.
+						{/* {timeBasedGreeting()} */}Hi! Thank you for visiting <span className={`underline underline-offset-4 decoration-amber-500/80 decoration-2 decoration-dotted`}>my site</span>. 
 					</h1>
 					<span className={summaryHeaderSvgContainer}>
 					<svg 
