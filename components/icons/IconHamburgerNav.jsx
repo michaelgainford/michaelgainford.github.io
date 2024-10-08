@@ -3,7 +3,7 @@ export default function ICON_HAMBURGER_NAV({ classes }) {
       <svg 
         xmlns={`http://www.w3.org/2000/svg`} 
         viewBox={`0 0 24 24`} 
-        className={`hamburger-menu hamburger-menu-icon size-8 fill-slate-300  `}>
+        className={`hamburger-menu hamburger-menu-icon size-6 fill-slate-300 -right-1 -mt-1`}>
         <g 
           stroke={`none`} 
           strokeWidth={`1`} 

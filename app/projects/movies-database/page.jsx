@@ -18,7 +18,7 @@ export default function PAGE_MOVIES_DATABASE() {
 			<MainHeader />
 			<main className={`${mainStyles}`}>
 				<H1 text={`Movies Database (${watchedMoviesLength} Watched)`} />
-				<div className={`movies-mini-nav flex w-full mb-8 gap-4 divide-x divide-violet-800 uppercase text-sm tracking-wide`}>
+				<div className={`movies-mini-nav flex max-sm:justify-center max-sm:mt-8 w-full mb-8 gap-4 divide-x divide-gray-800 uppercase text-sm tracking-wide`}>
 					<a href={`#watched-movies`} className={`movies-mini-nav-item hover:underline duration-300 transition-all scroll-smooth`}>Watched</a>
 					<a href={`#to-watch`} className={`movies-mini-nav-item pl-3 hover:underline duration-300 transition-all scroll-smooth`}>To Watch</a>
 				</div>
@@ -34,7 +34,7 @@ export default function PAGE_MOVIES_DATABASE() {
 					</div>
 					))}
 				</div>
-				<div className={`w-full p-4 my-8 border rounded-lg border-indigo-900/50 lg:my-16`}>
+				<div className={`w-full p-4 my-8 border rounded-lg border-gray-900/50 lg:my-16`}>
 					<h2 className={`mb-4 text-lg`} id={`to-watch`}>To Watch</h2>
 					<div className={`min-h-[100px] movies-grid w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 3xl:grid-cols-8 gap-4 max-sm:gap-y-6 md:gap-6 lg:gap-8 xl:gap-12`}>
 						{unwatchedMovies.map((movie, id) => (
