@@ -1,6 +1,6 @@
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import DataForSpace from "@/components/data/Data_For_Space";
@@ -10,7 +10,7 @@ const DataForPlanets = DataForSpace.filter((planet) => planet.star_or_planet ===
 export default function PAGE_SPACE() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
-			<MainHeader />
+			<Header />
 			<main className={`${mainStyles}`}>
 				<H1 text={`Space`} />
 				<div className={`flex flex-col items-center w-full lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-12 2xl:gap-16`}>

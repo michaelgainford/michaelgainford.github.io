@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { mainStyles } from "@/components/data/Variables";
@@ -24,7 +24,7 @@ groups.sort();
 export default function PAGE_EURO_2024() {
   return (
     <div className={`bg-dots-background bg-blue-800 ${globalPageStyles}`}>
-		<MainHeader />
+		<Header />
 		<main className={`${mainStyles}`}>
 			<H1 text={`Euro 2024`} />
 			<div className={`hidden grid-cols-3 gap-4 first-line:gap-4 countries-grid-container md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12 `}>

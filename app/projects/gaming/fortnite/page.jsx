@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/components/data/Variables";
@@ -9,7 +9,7 @@ import DataForFortnite from "@/components/data/Data_For_Fornite";
 export default function PAGE_FORTNITE() {
   return (
     <div className={`${globalPageStyles} !bg-topo-background`}>
-      	<MainHeader />
+      	<Header />
       	<main className={`${mainStyles}`}>
 			<H1 text={`Fortnite`} />
 			<div className={`grid w-full grid-cols-1 gap-8 lg:gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols`}>

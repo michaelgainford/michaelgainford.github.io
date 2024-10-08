@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import H1 from "@/components/typography/H1Span";
 import { globalPageStyles } from "@/components/data/Variables";
@@ -15,7 +15,7 @@ const watchedMoviesLength = watchedMovies.length;
 export default function PAGE_MOVIES_DATABASE() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
-			<MainHeader />
+			<Header />
 			<main className={`${mainStyles}`}>
 				<H1 text={`Movies Database (${watchedMoviesLength} Watched)`} />
 				<div className={`movies-mini-nav flex max-sm:justify-center max-sm:mt-8 w-full mb-8 gap-4 divide-x divide-gray-800 uppercase text-sm tracking-wide`}>

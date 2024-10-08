@@ -1,4 +1,4 @@
-import MainHeader from "@/components/header/MainHeader";
+import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/components/data/Variables";
@@ -42,7 +42,7 @@ const jokes = [
 export default function PAGE_JOKES() {
 	return (
 		<div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background`}>
-			<MainHeader />
+			<Header />
 			<main className={`${mainStyles}`}>
 			<H1 text={`Jokes`} />
 			<div className={`grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:gap-16 xl:grid-cols-3`}>
