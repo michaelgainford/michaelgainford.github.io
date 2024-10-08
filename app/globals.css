@@ -68,7 +68,7 @@ body {
  }
 
  .solar-system {
-  width: clamp(300px, 96vw, 800px);
+  width: clamp(300px, 80vw, 800px);
  }
 
 .solar-system ol {
@@ -89,12 +89,13 @@ body {
   width: var(--d, 2cqi);
   &::after {
     animation: rotate var(--t, 3s) linear infinite;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1!important;
     background: var(--b, hsl(0, 0%, 50%));
-    border-radius: 50%;
+    border-radius: 50%!important;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     content: '';
     display: block;
+    max-width: 30px;
     offset-path: content-box;
     width: var(--w, 2cqi);
   }

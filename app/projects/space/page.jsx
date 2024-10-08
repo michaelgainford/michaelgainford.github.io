@@ -13,7 +13,7 @@ export default function PAGE_SPACE() {
 			<MainHeader />
 			<main className={`${mainStyles}`}>
 				<H1 text={`Space`} />
-				<div className={`lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-12 2xl:gap-16`}>
+				<div className={`flex flex-col items-center w-full lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-12 2xl:gap-16`}>
 				<div className={`w-full max-lg:mt-16 solar-system lg:col-span-1 lg:w-full lg:order-2`}>
 					<h3 className={`mt-8 mb-4 text-2xl text-center`}>The Solar System</h3>
 					<ol>
