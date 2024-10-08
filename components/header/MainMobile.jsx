@@ -35,7 +35,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
           <MainLogo />
           <div className={`flex justify-end`}>
             <div
-              className={`cursor-pointer absolute top-4 right-4`}
+              className={`cursor-pointer absolute top-4 right-6 -mt-[6px]`}
               onClick={toggleVisibility}
             >
               <IconCrossNav />
@@ -54,7 +54,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                 }`}
               >
                 <Link
-                  className={`px-4 py-3 transition border-l-4 w-full hover:text-slate-300 lg:px-4p lg:py-5 text-center ${link.border_colour} ${link.hover} min-w-max duration-300 capitalize`}
+                  className={`px-4 py-3 transition border-l-4 w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${link.border_colour} ${link.hover} min-w-max duration-300 capitalize`}
                   href={link.href}
                   onClick={isProjectsSubMenuVisible}
                 >
