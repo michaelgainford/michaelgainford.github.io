@@ -25,7 +25,7 @@ export default function HOME_RESOURCES () {
 		))}  
 		</div>
 		<div className={`flex justify-start mt-8 lg:mt-12`}>
-			<Button label={`See All`} title={`See More Resources`} href={`/web-development/dev-resources`} />
+			<Button label={`View All Resources`} title={`View All Resources`} href={`/web-development/dev-resources`} />
 		</div>
 	</div>
 	)

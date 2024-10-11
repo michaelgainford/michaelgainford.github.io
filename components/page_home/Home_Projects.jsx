@@ -27,7 +27,7 @@ export default function HOME_PROJECTS() {
 			))}
 			</div>
 			<div className={`flex justify-start mt-8 lg:mt-12`}>
-				<Button label={`See More`} title={`See More Projects`} href={`/projects`} />
+				<Button label={`View All Projects`} title={`View All Projects`} href={`/projects`} />
 			</div>
 		</div>
 	)
