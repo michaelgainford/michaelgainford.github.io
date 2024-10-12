@@ -7,7 +7,7 @@ const footerNavLinks1 = DataForNavigation.filter((link) => link.footerNav_1 === 
 const footerNavLinks2 = DataForNavigation.filter((link) => link.footerNav_2 === true);
 
 const linkClasses = `flex py-2`;
-const detailsStyles = `rounded-lg p-4 group !overflow-x-auto [&_svg]:open:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
+const detailsStyles = `rounded-lg py-4 group !overflow-x-auto [&_svg]:open:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
 const summaryStyles = `flex justify-between md:py-4 cursor-pointer`;
 const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-amber-500/80 lg:mt-1 lg:size-6`;
 
@@ -34,7 +34,7 @@ export default function FOOTER_NAV() {
 							</svg>
 						</span>
 					</summary>
-					<ul className={`text-xs text-left md:text-sm`}>
+					<ul className={`text-xs text-left xl:text-sm`}>
 						{footerNavLinks1.map((item, index) => (
 						<li key={index}>
 							<Link className={`${linkClasses}`} href={item.href}>
@@ -46,7 +46,7 @@ export default function FOOTER_NAV() {
 				</details>
 				<div className={`footer-nav-group border-slate-700 rounded max-sm:hidden lg:pr-8`}>
 					<FooterNavListHeader text={`Projects`} />
-					<ul className={`pt-4 text-xs text-left md:text-sm`}>
+					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
 						{footerNavLinks1.map((item, index) => (
 						<li key={index}>
 							<Link className={`${linkClasses} hover:ml-4 duration-500`} href={item.href}>
@@ -74,7 +74,7 @@ export default function FOOTER_NAV() {
 							</svg>
 						</span>
 					</summary>
-					<ul className={`text-xs text-left md:text-sm`}>
+					<ul className={`text-xs text-left xl:text-sm`}>
 						{footerNavLinks2.map((item, index) => (
 						<li key={index}>
 							<Link className={`${linkClasses}`} href={item.href}>
@@ -86,7 +86,7 @@ export default function FOOTER_NAV() {
 				</details>
 				<div className={`footer-nav-group rounded border-slate-700 max-sm:hidden lg:pr-8`}>
 					<FooterNavListHeader text={`Boring Stuff`} />
-					<ul className={`pt-4 text-xs text-left md:text-sm`}>
+					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
 						{footerNavLinks2.map((item, index) => (
 						<li key={index}>
 							<Link className={`${linkClasses} hover:ml-4 duration-500`} href={item.href}>
