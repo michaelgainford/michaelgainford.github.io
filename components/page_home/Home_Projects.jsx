@@ -18,9 +18,9 @@ export default function HOME_PROJECTS() {
 					<span className={`flex w-[27%] md:w-[23%] xl:w-[20%] justify-center items-end ${project.groupHover} h-1/2`} >  
 						<project.icon 
 							fill={`${project.fill}`} 
-							classes={`size-8 lg:size-12 2xl:size-16 fill-slate-400 flex justify-center`}/>
+							classes={`size-7 lg:size-12 2xl:size-16 fill-slate-400 flex justify-center`}/>
 					</span>
-					<span className={`text-[10px] tracking-wider max-lg:text-slate-400 text-center h-1/2 pt-1 flex items-center group-hover:text-white uppercase lg:text-xs 2xl:text-base`}>
+					<span className={`text-xs tracking-wider max-lg:text-slate-400 text-center h-1/2 -mt-1 sm:pt-1 flex items-center group-hover:text-white 2xl:text-base`}>
 						{project.name}
 					</span>
 				</Link>
