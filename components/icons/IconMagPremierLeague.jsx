@@ -1,4 +1,4 @@
-export default function ICON_MAG_PREMIER_LEAGUE ({ classes, fill }) {
+export default function ICON_MAG_PREMIER_LEAGUE ({ classes }) {
   return (/* 
     <svg 
       xmlns={`http://www.w3.org/2000/svg`} 

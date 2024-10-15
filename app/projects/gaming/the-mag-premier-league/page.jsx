@@ -228,9 +228,6 @@ leagueTableStructure.sort((a, b) => b.points - a.points);
 ////////////////////////////////////////
 
 // Style for MAG Premier League Page
-const magBlue = `#2BC9BC`;
-const magBlueText = `text-[#2BC9BC]`;
-const magBlueBorderBottom = `border-b-[#2BC9BC]`;
 const magPageBg = `bg-gradient-to-r from-[#030117] from-10% via-[#2B2659] via-50% to-[#030117] to-90%`;
 
 // Style For Details/Summary
@@ -240,8 +237,8 @@ const detailsRulesGroupStyles = `mb-12 mt-8 [&>p]:mb-1 lg:mb-12 flex flex-col`;
 const detailsAllHeadingsStyles = `text-sm lg:text-base`;
 const summaryStyles = `flex justify-between md:py-4 cursor-pointer lg:text-lg font-light`;
 const summaryHeaderSvgContainer = `flex flex-col justify-center`;
-const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-[#2BC9BC] lg:size-6`;
-const summarySectionHeadingStyles = `border-b-[0.5px] pb-4 ${magBlueBorderBottom}`;
+const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-magpl lg:size-6`;
+const summarySectionHeadingStyles = `border-b-[0.5px] pb-4 border-b-magpl border-b-magpl`;
 
 
 ////////////////////////////////////////
@@ -257,14 +254,14 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			<div className={`page-header`}>
 				<H1 text={`The MAG Premier League`} className={``} />
 				<div className={`flex flex-col`}>
-					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} fill={magBlue} />
+					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} />
 				</div>
 			</div>
 			{/* Page Header | End */}
 
 			{/* Rules | Start */}
 			<details className={`flex flex-col pb-4 ${detailsStyles} ${detailsContentStyles}`}>
-				<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-[1000px]] ${summaryStyles}`}>
+				<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-[1000px] ${summaryStyles}`}>
 					<span>The MAG Premier League Rules</span>					
 					<span className={summaryHeaderSvgContainer}>
 						<svg 
@@ -335,7 +332,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 				<h2 className={`text-center font-light text-sm lg:text-base`}>League Table</h2>
 				<div className={`flex mt-4`}>
 					<table className={`lg:min-w-[1000px] text-center`}>
-						<thead className={`border-b border-slate-900 text-xs md:text-sm xl:text-base ${magBlueText}`}>
+						<thead className={`border-b border-slate-900 text-xs md:text-sm xl:text-base text-magpl`}>
 							<tr className={`grid grid-cols-10 py-3 uppercase [&>*]:font-light`}>
 								<th data-league-position={`league-position pr-1`}>Pos</th>
 								<th data-league-team={`league-team`} className={`text-left`}>Team</th>
@@ -352,7 +349,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 						<tbody className={`text-xs md:text-base lg:text-xl`}>
 						{leagueTableStructure.map((team, index) => (
 							<tr key={index} data-player={team.team} className={`grid grid-cols-10 py-3 [&>*]:font-light`}>
-								<td data-league-position={index + 1} className={`pr-1 ${magBlueText}`}>{index + 1}</td>
+								<td data-league-position={index + 1} className={`pr-1 text-magpl`}>{index + 1}</td>
 								<td data-league-team={team.team} className={`text-left max-sm:hidden`}>{team.team}</td>
 								<td data-league-team-letter={team.team[0]} className={`sm:hidden`}>{team.team[0]}</td>
 								<td data-league-played={``}>{team.played}</td>
@@ -372,26 +369,26 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 
 			{/* Fixtures */}
 			<div className={`!w-full px-4 lg:px-8 max-w-[1000px]`}>
-				<h2 className={`mb-6 text-center`}>Fixtures</h2>
+				<h3 className={`mb-6 text-center font-light text-sm lg:text-base`}>Fixtures</h3>
 				<div className={`grid grid-cols-1 gap-6`}>
 					{DataForMAGPremierLeague?.map((fixture, index) => (
 						<div 
 							key={index} 
-							className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] !max-w-[1000px] w-full mx-auto flex flex-col ${fixture.played ? `${magBlueText} uppercase` : `opacity-50`}`}>
+							className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] !max-w-[1000px] w-full mx-auto flex flex-col ${fixture.played ? `text-magpl uppercase` : `opacity-50`}`}>
 							<div className={`grid grid-cols-1 relative`}>
-								<div className={`grid grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm [&>*]:text-sm [&>*]:md:text-xl [&>*]:lg:text-2xl ${fixture.played ? magBlueText : `text-slate-600`}`}>
+								<div className={`grid grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm [&>*]:text-sm [&>*]:md:text-xl [&>*]:lg:text-2xl ${fixture.played ? `text-magpl` : `text-slate-600`}`}>
 									<p className={`text-right md:pr-1`}>{fixture.homeTeam}</p>
 									<span className={`text-center`}>{fixture.played ? fixture.homeScore : ''}</span>
 									<span className={`text-center !text-sm`}>{fixture.played ? '-' : 'vs'}</span>
 									<span className={`text-center`}>{fixture.played ? fixture.awayScore : ''}</span>
 									<p className={`text-left md:pl-1`}>{fixture.awayTeam}</p>
 								</div>
-								<div className={`text-center flex flex-col pb-4 text-xs justify-center ${fixture.played ? magBlueText : 'text-slate-600'}`}>
+								<div className={`text-center flex flex-col pb-4 text-xs justify-center ${fixture.played ? `text-magpl`: `text-slate-600`}`}>
 									{fixture.date} @ {fixture.time}
 								</div>
 								<div className="">
 
-								<span className={`text-xs text-center mx-auto grid grid-cols-1 lowercase absolute top-0 left-0 ${fixture.played ? 'text-[#2BC9BC]' : 'text-slate-600'}`}>{fixture.game}</span>
+								<span className={`text-xs text-center mx-auto grid grid-cols-1 lowercase absolute top-0 left-0 ${fixture.played ? 'text-magpl' : 'text-slate-600'}`}>{fixture.game}</span>
 								</div>
 							</div>
 						</div>

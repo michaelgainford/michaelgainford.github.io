@@ -57,27 +57,27 @@ const sortedPremierLeagueSeasonData = [...DataForPremTeamsBySeason].sort((a, b) 
 	}
 });
 
-
 export default function PAGE_PREMIER_LEAGUE () {
 	return (
-		<div className={`bg-dots-background bg-purple-800 ${globalPageStyles}`}>
+		<div className={`bg-white ${globalPageStyles} [&>header]:bg-epl-500 [&>footer]:bg-epl`}>
 			<Header />
-			<main className={`${mainStyles}`}>
+			<main className={`${mainStyles} text-epl`}>
 				<H1 text={`Premier League`} />
-				<div className={`w-full overflow-x-auto border rounded-lg by-season border-slate-900`}>
-					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-sm text-center hover:cursor-pointer max-h-[700px] z-2`}>
-						<thead className={`font-light uppercase bg-slate-800`}>
+				<div className={`w-full overflow-x-auto by-season max-sm:pt-4 mb-8`}>
+					<h2 className={`mb-4 px-2 border-l-2 border-epl border-current w-fit text-xs font-bold leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>Teams by Season</h2>
+					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer max-h-[700px] z-2 rounded-lg`}>
+						<thead className={`font-light uppercase bg-epl/90 text-white [&>tr_th]:font-light`}>
 							<tr>
-							<th className={`left-0 py-3 pl-2 text-left z-2 first-of-type:z-10 first-of-type:sticky first-of-type:top-0`}>Team</th>
+							<th className={`first:bg-epl left-0 py-3 pl-1 lg:pl-2 text-left z-2 first-of-type:z-10 first-of-type:sticky first-of-type:top-0`}>Team</th>
 							{Years.map((season, index) => (
 								<th key={index} className={`relative z-0 px-1`}>{season}</th>
 							))}
 							</tr>
 						</thead>
-						<tbody className={`bg-slate-800/50`}>
+						<tbody className={`bg-epl/20`}>
 							{sortedPremierLeagueSeasonData.map((team, index) => (
-							<tr key={index}>
-								<td className={`sticky left-0 pl-2 text-left bg-slate-800 z-3 min-w-[150px] py-3`}>
+							<tr key={index} className={`border-b border-epl/20`}>
+								<td className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-3 max-w-[100px] lg:min-w-[150px] py-1 md:py-2 lg:py-3 truncate`}>
 									{team.teamName}
 								</td>
 								{team.premierLeagueSeasons.map((season, index) => (
@@ -94,7 +94,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 									return (
 									<td 
 										key={i} 
-										className={`cursor-pointer px-1 ${season[pos] === -1 ? 'text-slate-400 cursor-default' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`} 
+										className={`cursor-pointer px-1 ${season[pos] === -1 ? 'text-epl/20 cursor-default' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`} 
 										{...(season[pos] !== -1 && {
 										title: `Played: ${totalGames}, W: ${wins}, D: ${draws}, L: ${losses}, F: ${goalsFor}, A: ${goalsAgainst}, GD: ${goalDifference}, Pts: ${totalPoints}`
 										})}
@@ -111,7 +111,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 					</table>
 				</div>
 			</main>
-			<Footer />
+			<Footer customTextColour={`text-epl`} />
 		</div>
 	);
 }
