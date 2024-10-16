@@ -335,7 +335,7 @@ const FortniteSeasonsData = [
     season: 4,
     overall_season: 31,
     startDate: "2024-08-15",
-    endDate: "2024-11-14",
+    endDate: "2024-11-01",
     theme: "Absolute Doom",
     mobileImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
     desktopImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
