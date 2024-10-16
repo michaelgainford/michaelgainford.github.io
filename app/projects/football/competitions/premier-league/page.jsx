@@ -63,21 +63,23 @@ export default function PAGE_PREMIER_LEAGUE () {
 			<Header />
 			<main className={`${mainStyles} text-epl`}>
 				<H1 text={`Premier League`} />
-				<div className={`w-full overflow-x-auto by-season max-sm:pt-4 mb-8`}>
-					<h2 className={`mb-4 px-2 border-l-2 border-epl border-current w-fit text-xs font-bold leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>Teams by Season</h2>
-					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer max-h-[700px] z-2 rounded-lg`}>
-						<thead className={`font-light uppercase bg-epl/90 text-white [&>tr_th]:font-light`}>
-							<tr>
-							<th className={`first:bg-epl left-0 py-3 pl-1 lg:pl-2 text-left z-2 first-of-type:z-10 first-of-type:sticky first-of-type:top-0`}>Team</th>
-							{Years.map((season, index) => (
-								<th key={index} className={`relative z-0 px-1`}>{season}</th>
-							))}
+				<div className={`flex flex-col items-center justify-center max-md:mt-4 lg:mb-4 w-full`}>
+					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-epl border-current w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
+				</div>
+				<div className={`w-full overflow-x-auto by-season mb-8`}>
+					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 rounded-lg block max-h-[500px] [&>tr_td]:sticky z-2`}>
+						<thead className={`font-light uppercase bg-epl/90 text-white [&>tr_th]:font-light top-0  !z-3`}>
+							<tr className={`sticky top-0 left-0 z-[50]`}>
+								<th className={`first:bg-epl py-3 pl-1 lg:pl-2 text-left left-0 z-[50] sticky top-0`}>Team</th>
+								{Years.map((season, index) => (
+								<th key={index} className={`relative px-1 z-[49] bg-epl`}>{season}</th>
+								))}
 							</tr>
 						</thead>
 						<tbody className={`bg-epl/20`}>
 							{sortedPremierLeagueSeasonData.map((team, index) => (
 							<tr key={index} className={`border-b border-epl/20`}>
-								<td className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-3 max-w-[100px] lg:min-w-[150px] py-1 md:py-2 lg:py-3 truncate`}>
+								<td className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 max-w-[100px] lg:min-w-[150px] py-1 md:py-2 lg:py-3 truncate`}>
 									{team.teamName}
 								</td>
 								{team.premierLeagueSeasons.map((season, index) => (
@@ -94,7 +96,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 									return (
 									<td 
 										key={i} 
-										className={`cursor-pointer px-1 ${season[pos] === -1 ? 'text-epl/20 cursor-default' : season[pos] === 1 ? 'bg-yellow-500 text-slate-800' : ''}`} 
+										className={`cursor-pointer px-1 ${season[pos] === -1 ? `text-epl/20 cursor-default` : season[pos] === 1 ? `bg-yellow-500 text-slate-800` : ``}`} 
 										{...(season[pos] !== -1 && {
 										title: `Played: ${totalGames}, W: ${wins}, D: ${draws}, L: ${losses}, F: ${goalsFor}, A: ${goalsAgainst}, GD: ${goalDifference}, Pts: ${totalPoints}`
 										})}
