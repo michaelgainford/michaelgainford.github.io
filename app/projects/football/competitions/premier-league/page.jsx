@@ -5,9 +5,11 @@ import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { mainStyles } from "@/components/data/Variables";
 import { globalPageStyles } from "@/components/data/Variables";
-import DataForPremTeamsBySeason from "@/components/data/Data_For_PremTeamsBySeason";
+import DataForPremTeams from "@/components/data/Data_For_PremierLeagueTeams";
 
 const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
+
+const clubLogoRoot = "/football/premier-league/club-logos";
 
 // create an array to store the premier league seasons
 const Years = [
@@ -47,7 +49,7 @@ const Years = [
 ];
 
 // sort by teamName
-const sortedPremierLeagueSeasonData = [...DataForPremTeamsBySeason].sort((a, b) => {
+const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
 	if (a.teamName > b.teamName) {
 		return 1;
 	} else if (a.teamName < b.teamName) {
@@ -63,8 +65,28 @@ export default function PAGE_PREMIER_LEAGUE () {
 			<Header />
 			<main className={`${mainStyles} text-epl`}>
 				<H1 text={`Premier League`} />
+				<div className={`max-md:mt-4 lg:mb-12 w-full mb-8 xl:mb-16`}>
+					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>All Past and Present Teams</h2>
+					<div className={`badges-container flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 overflow-x-scroll snap-mandatory md:pb-4 no-scrollbar`}>
+						{sortedPremierLeagueSeasonData.map((team, index) => (
+						<div key={index} className={`badge-box snap-center`}>
+							<Image 
+							  src={`${clubLogoRoot}/${team.clubLogoSlug}.svg`} 
+							  alt={team.teamName} 
+							  width={60} 
+							  height={60} 
+							  title={team.teamName}
+							  className={`h-[40px] lg:h-[60px] w-auto max-w-[40px] lg:max-w-[60px]`} 
+							/>
+							<p className={`text-xs truncate hidden`}>{team.teamName}</p>
+						</div>
+						))}
+					</div>
+				</div>
+
+				{/* Teams by Season | Start */}
 				<div className={`flex flex-col items-center justify-center max-md:mt-4 lg:mb-4 w-full`}>
-					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-epl border-current w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
+					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
 				</div>
 				<div className={`w-full overflow-x-auto by-season mb-8`}>
 					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 rounded-lg block max-h-[500px] [&>tr_td]:sticky z-2`}>
@@ -96,7 +118,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 									return (
 									<td 
 										key={i} 
-										className={`cursor-pointer px-1 ${season[pos] === -1 ? `text-epl/20 cursor-default` : season[pos] === 1 ? `bg-yellow-500 text-slate-800` : ``}`} 
+										className={`cursor-pointer px-1 ${season[pos] === -1 ? `text-epl/20 cursor-default` : season[pos] === 1 ? `bg-amber-500 text-slate-800` : ``}`} 
 										{...(season[pos] !== -1 && {
 										title: `Played: ${totalGames}, W: ${wins}, D: ${draws}, L: ${losses}, F: ${goalsFor}, A: ${goalsAgainst}, GD: ${goalDifference}, Pts: ${totalPoints}`
 										})}
@@ -112,6 +134,8 @@ export default function PAGE_PREMIER_LEAGUE () {
 						</tbody>
 					</table>
 				</div>
+				{/* Teams by Season | End */}
+				
 			</main>
 			<Footer customTextColour={`text-epl`} />
 		</div>

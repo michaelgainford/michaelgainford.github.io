@@ -22,7 +22,7 @@ export default function PAGE_MOVIES_DATABASE() {
 					<a href={`#watched-movies`} className={`movies-mini-nav-item hover:underline duration-300 transition-all scroll-smooth`}>Watched</a>
 					<a href={`#to-watch`} className={`movies-mini-nav-item pl-3 hover:underline duration-300 transition-all scroll-smooth`}>To Watch</a>
 				</div>
-				<div className={`grid w-full grid-cols-3 gap-4 movies-grid sm:grid-cols-4 max-sm:gap-y-6 md:grid-cols-4 md:gap-6 lg:grid-cols-5 lg:gap-8 xl:gap-12 xl:grid-cols-6 2xl:grid-cols-7 3xl:grid-cols-8`} id={`watched-movies`}>
+				<div className={`grid w-full grid-cols-2 gap-4 movies-grid sm:grid-cols-3 max-sm:gap-y-6 md:grid-cols-4 md:gap-6 lg:grid-cols-5 lg:gap-8 xl:gap-12 xl:grid-cols-6 2xl:grid-cols-7 3xl:grid-cols-8`} id={`watched-movies`}>
 					{watchedMovies.map((movie, id) => (
 					<div key={id} className={`flex flex-col items-center content-center duration-300 ease-in-out border cursor-pointer movie-card justify-items-center border-black/80 text-light_colour border-secondary group hover:bg-secondary bg-black/90 relative  max-w-[200px] overflow-hidden`}>
 						<div className={`w-full max-w-full movie-poster`}>
