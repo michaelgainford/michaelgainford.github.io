@@ -1,7 +1,8 @@
-const DataForPremTeamsBySeason = [
+const DataForPremierLeagueTeams = [
   {
     teamName: "Arsenal",
     currentPrem: true,
+    clubLogoSlug: "arsenal",
     premierLeagueSeasons: [
       {
         season1Pos: 10,
@@ -207,6 +208,8 @@ const DataForPremTeamsBySeason = [
   },
   {
     teamName: "Aston Villa",
+    currentPrem: true,
+    clubLogoSlug: "aston-villa",
     premierLeagueSeasons: [
       {
         season1Pos: 2,
@@ -408,6 +411,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Barnsley",
     currentPrem: false,
+    clubLogoSlug: "barnsley",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -614,6 +618,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Birmingham City",
     currentPrem: false,
+    clubLogoSlug: "birmingham-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -820,6 +825,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Blackburn Rovers",
     currentPrem: false,
+    clubLogoSlug: "blackburn-rovers",
     premierLeagueSeasons: [
       {
         season1Pos: 4,
@@ -1026,6 +1032,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Blackpool",
     currentPrem: false,
+    clubLogoSlug: "blackpool",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -1232,6 +1239,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Bolton Wanderers",
     currentPrem: false,
+    clubLogoSlug: "bolton-wanderers",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -1438,6 +1446,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Bournemouth",
     currentPrem: true,
+    clubLogoSlug: "bournemouth",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -1638,6 +1647,8 @@ const DataForPremTeamsBySeason = [
   },
   {
     teamName: "Bradford City",
+    currentPrem: false,
+    clubLogoSlug: "bradford-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -1844,6 +1855,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Brentford",
     currentPrem: true,
+    clubLogoSlug: "brentford",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -2050,6 +2062,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Brighton & Hove Albion",
     currentPrem: true,
+    clubLogoSlug: "brighton-hove-albion",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -2256,6 +2269,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Burnley",
     currentPrem: false,
+    clubLogoSlug: "burnley",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -2457,6 +2471,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Cardiff City",
     currentPrem: false,
+    clubLogoSlug: "cardiff-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -2663,6 +2678,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Charlton Athletic",
     currentPrem: false,
+    clubLogoSlug: "charlton-athletic",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -2869,6 +2885,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Chelsea",
     currentPrem: true,
+    clubLogoSlug: "chelsea",
     premierLeagueSeasons: [
       {
         season1Pos: 11,
@@ -3075,6 +3092,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Coventry City",
     currentPrem: false,
+    clubLogoSlug: "coventry-city",
     premierLeagueSeasons: [
       {
         season1Pos: 15,
@@ -3281,6 +3299,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Crystal Palace",
     currentPrem: true,
+    clubLogoSlug: "crystal-palace",
     premierLeagueSeasons: [
       {
         season1Pos: 20,
@@ -3487,6 +3506,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Derby County",
     currentPrem: false,
+    clubLogoSlug: "derby-county",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -3693,6 +3713,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Everton",
     currentPrem: true,
+    clubLogoSlug: "everton",
     premierLeagueSeasons: [
       {
         season1Pos: 13,
@@ -3899,6 +3920,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Fulham",
     currentPrem: true,
+    clubLogoSlug: "fulham",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -4104,6 +4126,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Huddersfield Town",
     currentPrem: false,
+    clubLogoSlug: "huddersfield-town",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -4310,6 +4333,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Hull City",
     currentPrem: false,
+    clubLogoSlug: "hull-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -4516,6 +4540,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Ipswich Town",
     currentPrem: true,
+    clubLogoSlug: "ipswich-town",
     premierLeagueSeasons: [
       {
         season1Pos: 16,
@@ -4722,6 +4747,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Leeds United",
     currentPrem: false,
+    clubLogoSlug: "leeds-united",
     premierLeagueSeasons: [
       {
         season1Pos: 17,
@@ -4928,6 +4954,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Leicester City",
     currentPrem: true,
+    clubLogoSlug: "leicester-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -5127,6 +5154,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Liverpool",
     currentPrem: true,
+    clubLogoSlug: "liverpool",
     premierLeagueSeasons: [
       {
         season1Pos: 6,
@@ -5333,6 +5361,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Luton Town",
     currentPrem: false,
+    clubLogoSlug: "luton-town",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -5539,6 +5568,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Manchester City",
     currentPrem: true,
+    clubLogoSlug: "manchester-city",
     premierLeagueSeasons: [
       {
         season1Pos: 9,
@@ -5745,6 +5775,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Manchester United",
     currentPrem: true,
+    clubLogoSlug: "manchester-united",
     premierLeagueSeasons: [
       {
         season1Pos: 1,
@@ -5951,6 +5982,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Middlesbrough",
     currentPrem: false,
+    clubLogoSlug: "middlesbrough",
     premierLeagueSeasons: [
       {
         season1Pos: 21,
@@ -6156,7 +6188,8 @@ const DataForPremTeamsBySeason = [
   },
   {
     teamName: "Newcastle United",
-    currentPrem: false,
+    currentPrem: true,
+    clubLogoSlug: "newcastle-united",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -6363,6 +6396,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Norwich City",
     currentPrem: false,
+    clubLogoSlug: "norwich-city", 
     premierLeagueSeasons: [
       {
         season1Pos: 3,
@@ -6569,6 +6603,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Nottingham Forest",
     currentPrem: true,
+    clubLogoSlug: "nottingham-forest",
     premierLeagueSeasons: [
       {
         season1Pos: 22,
@@ -6775,6 +6810,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Oldham Athletic",
     currentPrem: false,
+    clubLogoSlug: "oldham-athletic",
     premierLeagueSeasons: [
       {
         season1Pos: 19,
@@ -6981,6 +7017,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Portsmouth",
     currentPrem: false,
+    clubLogoSlug: "portsmouth",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -7187,6 +7224,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Queens Park Rangers",
     currentPrem: false,
+    clubLogoSlug: "queens-park-rangers",
     premierLeagueSeasons: [
       {
         season1Pos: 5,
@@ -7393,6 +7431,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Reading",
     currentPrem: false,
+    clubLogoSlug: "reading",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -7598,6 +7637,8 @@ const DataForPremTeamsBySeason = [
   },
   {
     teamName: "Sheffield United",
+    currentPrem: false,
+    clubLogoSlug: "sheffield-united",
     premierLeagueSeasons: [
       {
         season1Pos: 14,
@@ -7804,6 +7845,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Sheffield Wednesday",
     currentPrem: false,
+    clubLogoSlug: "sheffield-wednesday",
     premierLeagueSeasons: [
       {
         season1Pos: 7,
@@ -7980,6 +8022,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Southampton",
     currentPrem: true,
+    clubLogoSlug: "southampton",
     premierLeagueSeasons: [
       {
         season1Pos: 18,
@@ -8185,6 +8228,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Stoke City",
     currentPrem: false,
+    clubLogoSlug: "stoke-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -8391,6 +8435,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Sunderland",
     currentPrem: false,
+    clubLogoSlug: "sunderland",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -8597,6 +8642,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Swansea City",
     currentPrem: false,
+    clubLogoSlug: "swansea-city",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -8803,6 +8849,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Swindon Town",
     currentPrem: false,
+    clubLogoSlug: "swindon-town",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -9009,6 +9056,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Tottenham Hotspur",
     currentPrem: true,
+    clubLogoSlug: "tottenham-hotspur",
     premierLeagueSeasons: [
       {
         season1Pos: 8,
@@ -9215,6 +9263,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Watford",
     currentPrem: false,
+    clubLogoSlug: "watford",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -9421,6 +9470,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "West Bromwich Albion",
     currentPrem: false,
+    clubLogoSlug: "west-bromwich-albion",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -9627,6 +9677,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "West Ham United",
     currentPrem: true,
+    clubLogoSlug: "west-ham-united",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -9833,6 +9884,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Wigan Athletic",
     currentPrem: false,
+    clubLogoSlug: "wigan-athletic",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -10039,6 +10091,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Wimbledon",
     currentPrem: false,
+    clubLogoSlug: "wimbledon",
     premierLeagueSeasons: [
       {
         season1Pos: 12,
@@ -10245,6 +10298,7 @@ const DataForPremTeamsBySeason = [
   {
     teamName: "Wolverhampton Wanderers",
     currentPrem: true,
+    clubLogoSlug: "wolverhampton-wanderers",
     premierLeagueSeasons: [
       {
         season1Pos: -1,
@@ -10450,4 +10504,4 @@ const DataForPremTeamsBySeason = [
   }
 ];
 
-export default DataForPremTeamsBySeason;
+export default DataForPremierLeagueTeams;
