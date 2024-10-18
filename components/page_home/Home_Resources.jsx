@@ -8,7 +8,7 @@ const featuredResourcesSortedByName = featuredResources.sort((a, b) => a.name.lo
 
 export default function HOME_RESOURCES () {
 	return (
-	<div className={`w-full resources-list mt-4`}>
+	<div className={`w-full resources-list max-sm:mt-4`}>
 		<H2SectionHeader text={`Featured Dev Resources`} />
 		<div className={`grid justify-center grid-cols-2 gap-4 rounded-lg xl:gap-8 2xl:gap-12`}>
 		{featuredResourcesSortedByName.map((resource, index) => (

@@ -1,6 +1,6 @@
 ## About Me
 
-  Hi! 👋🏻 My name is Michael. I am a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, React, and Next.js. I am always looking to learn new things and improve my skills. I am currently working on a project to create a website that will act as a hub for all things web development. So, grab a ☕, get comfortable in your 🪑 and let's go! 🚀
+  Hi! 👋🏻 My name is Michael. I am a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, React, and Next.js. I am always looking to learn new things and improve my skills and am combining passions of mine with latest coding technologies to create something special. My coding garden, if you will. So, grab a ☕, get comfortable in your 🪑 and let's go! 🚀
 
 ## Overview
 
@@ -61,6 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - **Everton**: A project dedicated to Everton Football Club.
   - **Fornite**: A project dedicated to the popular game Fortnite.
   - **Jokes**: A project that displays random jokes.
+  - **Mag Premier League**: A project that displays information about the Mag Premier League. An online eFootball league.
   - **Movies Database**: A project that displays information about movies either watched or to watch.
   - **Premier League**: A project that I worked on for the Premier League detailining season-by-season data.
   - **Quotes**: A project that displays random quotes.
