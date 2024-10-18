@@ -17,7 +17,7 @@ const DataForSocials = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/michaelgainford/",
+    href: "https://www.linkedin.com/in/michael-gainford/",
     icon: LinkedInIcon
   },
   {
