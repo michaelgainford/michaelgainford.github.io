@@ -258,6 +258,15 @@ const DataForDevResources = [
     icon: Icon_Resource,
     tags: ["colours", "tailwind"],
     featured: false,
+  },
+  {
+    name: "Shade Studio",
+    slug: "shade-studio",
+    url: "https://laura.media/shade-studio/",
+    screenshot: "/dev-resources/screenshot-of--shade-studio.webp",
+    icon: Icon_Resource,
+    tags: ["tailwind", "colours"],
+    featured: false,
   }
 ];
 
