@@ -11,6 +11,7 @@ const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`
 
 const clubLogoRoot = "/football/premier-league/club-logos";
 
+
 // create an array to store the premier league seasons
 const Years = [
   '92/93',
@@ -65,6 +66,8 @@ export default function PAGE_PREMIER_LEAGUE () {
 			<Header />
 			<main className={`${mainStyles} text-epl`}>
 				<H1 text={`Premier League`} />
+
+				{/* Introduction */}
 				<div className={`max-md:mt-4 lg:mb-12 w-full mb-8 xl:mb-16`}>
 					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>All Past and Present Teams</h2>
 					<div className={`badges-container flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 overflow-x-scroll snap-mandatory md:pb-4 no-scrollbar`}>
