@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DataForSocials from "/components/data/Data_For_Socials";
 import FooterSectionHeader from "./Footer_Section_Header";
-const footerAboutText = `My name is Michael. I am Front-End Developer. I live in the North West of England. I currently work as a Shopify Developer working on e-commerce websites and in my spare time I enjoy working on personal projects, lately using the NextJS framework.`;
+const footerAboutText = `My name is Michael. I am Front-End Developer from and living in the North West of England. I currently work as a Shopify Developer working on e-commerce websites and in my spare time I enjoy working on personal projects, specifically using the NextJS framework.`;
 
 export default function FOOTER_ABOUT() {
   return (
