@@ -16,7 +16,7 @@ export default function FOOTER_ABOUT() {
 					{DataForSocials.map((social, index) => (
 					<li key={index}>
 						<Link href={social.href} title={social.name} className={`group`}>
-							<social.icon classes={`size-4 fill-slate-300 group-hover:fill-amber-500 duration-300 lg:size-6 xl:size-8`}/>
+							<social.icon classes={`size-4 fill-current group-hover:fill-amber-500 duration-300 lg:size-6 xl:size-8`}/>
 						</Link>
 					</li>
 					))}
@@ -28,7 +28,7 @@ export default function FOOTER_ABOUT() {
 				{DataForSocials.map((social, index) => (
 				<li key={index}>
 					<Link href={social.href} title={social.name} className={`group`}>
-						<social.icon classes={`size-4 fill-slate-300 group-hover:fill-amber-500 duration-300 lg:size-5`}/>
+						<social.icon classes={`size-4 fill-current group-hover:fill-amber-500 duration-300 lg:size-5`}/>
 					</Link>
 				</li>
 				))}

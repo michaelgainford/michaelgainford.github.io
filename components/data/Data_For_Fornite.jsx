@@ -340,7 +340,6 @@ const FortniteSeasonsData = [
     mobileImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
     desktopImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
   }
-
 ]
 
 export default FortniteSeasonsData;
