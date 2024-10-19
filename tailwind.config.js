@@ -22,7 +22,7 @@ module.exports = {
         "topo-background": "url('/svg-backgrounds/topography.svg')",
       },
       colors: {
-        'magpl': {
+        magpl: {
           DEFAULT: '#2bc9bc',
           50: '#ccf4f1',
           100: '#aaede7',
@@ -49,6 +49,10 @@ module.exports = {
           800: '#050005',
           900: '#050005',
           950: '#050005',
+        },
+        fn: {
+          'dark-blue': '#1b90dd',
+          'light-blue': '#5fceea',
         }
       },
       container: {

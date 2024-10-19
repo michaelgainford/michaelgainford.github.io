@@ -374,16 +374,16 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 					{DataForMAGPremierLeague?.map((fixture, index) => (
 						<div 
 							key={index} 
-							className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] !max-w-[1000px] w-full mx-auto flex flex-col ${fixture.played ? `text-magpl uppercase` : `opacity-50`}`}>
+							className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] !max-w-[1000px] w-full mx-auto flex flex-col ${fixture.upcoming ? `text-white` : fixture.played ? `text-magpl uppercase` : 'opacity-50'}`}>
 							<div className={`grid grid-cols-1 relative`}>
-								<div className={`grid grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm [&>*]:text-sm [&>*]:md:text-xl [&>*]:lg:text-2xl ${fixture.played ? `text-magpl` : `text-slate-600`}`}>
+								<div className={`grid grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm [&>*]:text-sm [&>*]:md:text-xl [&>*]:lg:text-2xl ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
 									<p className={`text-right md:pr-1`}>{fixture.homeTeam}</p>
 									<span className={`text-center`}>{fixture.played ? fixture.homeScore : ''}</span>
 									<span className={`text-center !text-sm`}>{fixture.played ? '-' : 'vs'}</span>
 									<span className={`text-center`}>{fixture.played ? fixture.awayScore : ''}</span>
 									<p className={`text-left md:pl-1`}>{fixture.awayTeam}</p>
 								</div>
-								<div className={`text-center flex flex-col pb-4 text-xs justify-center ${fixture.played ? `text-magpl`: `text-slate-600`}`}>
+								<div className={`text-center flex flex-col pb-4 text-xs justify-center ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
 									{fixture.date} @ {fixture.time}
 								</div>
 								<div className="">
