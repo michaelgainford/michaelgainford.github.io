@@ -15,7 +15,7 @@ const chapter4Data = DataForFortnite.filter(chapter => chapter.chapter === 4);
 const chapter5Data = DataForFortnite.filter(chapter => chapter.chapter === 5);
 
 // put the above 5 in an array
-const allChapterData = [chapter1Data, chapter2Data, chapter3Data, chapter4Data, chapter5Data];
+// const allChapterData = [chapter1Data, chapter2Data, chapter3Data, chapter4Data, chapter5Data];
 
 const chapter1StartDate = "24/10/2017";
 const chapter1EndDate = "13/10/2019";
@@ -66,7 +66,7 @@ export default function PAGE_FORTNITE() {
 
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
-					<div className={`min-w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
+					<div className={`w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
 								<span>Chapter</span>
@@ -112,6 +112,7 @@ export default function PAGE_FORTNITE() {
 					<div className={`min-w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
+								<span>Chapter</span>
 								<span className={`text-4xl`}>2</span>
 							</h3>
 							<p className={`text-[10px]`}>({`${chapter2StartDate} to ${chapter2EndDate}`})</p>
