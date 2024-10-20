@@ -8,9 +8,7 @@ import { globalPageStyles } from "@/components/data/Variables";
 import DataForPremTeams from "@/components/data/Data_For_PremierLeagueTeams";
 
 const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
-
 const clubLogoRoot = "/football/premier-league/club-logos";
-
 
 // create an array to store the premier league seasons
 const Years = [
@@ -64,36 +62,42 @@ export default function PAGE_PREMIER_LEAGUE () {
 	return (
 		<div className={`bg-white ${globalPageStyles} [&>header]:bg-epl-500 [&>footer]:bg-epl`}>
 			<Header />
-			<main className={`${mainStyles} text-epl`}>
-				<H1 text={`Premier League`} />
+			<main className={`!w-full text-epl`}>
+				<div className={`${mainStyles}`}>
+					<H1 text={`Premier League`} />
+				</div>
 
 				{/* Introduction */}
-				<div className={`max-md:mt-4 lg:mb-12 w-full mb-8 xl:mb-16`}>
-					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>All Past and Present Teams</h2>
-					<div className={`badges-container flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 overflow-x-scroll snap-mandatory md:pb-4 no-scrollbar`}>
-						{sortedPremierLeagueSeasonData.map((team, index) => (
-						<div key={index} className={`badge-box snap-center`}>
-							<Image 
-							  src={`${clubLogoRoot}/${team.clubLogoSlug}.svg`} 
-							  alt={team.teamName} 
-							  width={60} 
-							  height={60} 
-							  title={team.teamName}
-							  className={`h-[40px] lg:h-[60px] w-auto max-w-[40px] lg:max-w-[60px]`} 
-							/>
-							<p className={`text-xs truncate hidden`}>{team.teamName}</p>
+				<div className={`${mainStyles}`}>
+					<div className={`max-md:mt-4 lg:mb-12 w-full mb-8 xl:mb-16`}>
+						<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>All Past and Present Teams</h2>
+						<div className={`badges-container flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 overflow-x-scroll snap-mandatory md:pb-4 no-scrollbar`}>
+							{sortedPremierLeagueSeasonData.map((team, index) => (
+							<div key={index} className={`badge-box snap-center`}>
+								<Image 
+								src={`${clubLogoRoot}/${team.clubLogoSlug}.svg`} 
+								alt={team.teamName} 
+								width={60} 
+								height={60} 
+								title={team.teamName}
+								className={`h-[40px] lg:h-[60px] w-auto max-w-[40px] lg:max-w-[60px]`} 
+								/>
+								<p className={`text-xs truncate hidden`}>{team.teamName}</p>
+							</div>
+							))}
 						</div>
-						))}
 					</div>
 				</div>
 
 				{/* Teams by Season | Start */}
-				<div className={`flex flex-col items-center justify-center max-md:mt-4 lg:mb-4 w-full`}>
-					<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
+				<div className={`${mainStyles}`}>
+					<div className={`flex flex-col items-center justify-center max-md:mt-4 lg:mb-4 w-full`}>
+						<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
+					</div>
 				</div>
-				<div className={`w-full overflow-x-auto by-season mb-8`}>
-					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 rounded-lg block max-h-[500px] [&>tr_td]:sticky z-2`}>
-						<thead className={`font-light uppercase bg-epl/90 text-white [&>tr_th]:font-light top-0  !z-3`}>
+				<div className={`w-full overflow-x-auto by-season mb-8 lg:w-[92%] lg:items-center lg:flex-col mx-auto`}>
+					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 lg:rounded-lg block max-h-[500px] [&>tr_td]:sticky z-2`}>
+						<thead className={`font-light uppercase bg-epl/90 text-white top-0 !z-3 [&>tr_th]:font-light`}>
 							<tr className={`sticky top-0 left-0 z-[50]`}>
 								<th className={`first:bg-epl py-3 pl-1 lg:pl-2 text-left left-0 z-[50] sticky top-0`}>Team</th>
 								{Years.map((season, index) => (
@@ -104,7 +108,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 						<tbody className={`bg-epl/20`}>
 							{sortedPremierLeagueSeasonData.map((team, index) => (
 							<tr key={index} className={`border-b border-epl/20`}>
-								<td className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 max-w-[100px] lg:min-w-[150px] py-1 md:py-2 lg:py-3 truncate`}>
+								<td className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 !max-w-[144px] lg:max-w-[150px] xl:max-w-[200px] py-1 md:py-2 lg:py-3 truncate`}>
 									{team.teamName}
 								</td>
 								{team.premierLeagueSeasons.map((season, index) => (

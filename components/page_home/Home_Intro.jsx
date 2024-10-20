@@ -4,13 +4,13 @@ function timeBasedGreeting() {
 	const date = new Date();
 	const hours = date.getHours();
 	if (hours < 12) {
-		return 'and Good Morning ';
+		return 'Good Morning ';
 	}
 	else if (hours >= 12 && hours < 18) {
-		return 'and Good Afternoon';
+		return 'Good Afternoon';
 	} 
 	else {
-		return 'and Good Evening ';
+		return 'Good Evening ';
 	}
 }
 
@@ -28,7 +28,7 @@ export default function HOME_INTRO() {
 						<summary className={summaryStyles}>
 							<h1 
 								className={`text-xs text-balance py-2 font-normal leading-relaxed tracking-wide text-left decoration-8 pr-8 md:text-base lg:border-l-4 lg:border-transparent lg:font-medium lg:text-lg 2xl:text-xl`} title={`My Web Development Website`}>
-								Hello {timeBasedGreeting()} 👋🏻. Thank you for visiting my site.
+								 {timeBasedGreeting()} 👋🏻. Thank you for visiting my site.
 							</h1>
 							<span className={summaryHeaderSvgContainer}>
 								<svg 
@@ -46,7 +46,7 @@ export default function HOME_INTRO() {
 							</span>
 						</summary>
 						<p className={`pt-4 text-xs font-light text-left !leading-loose tracking-wider text-slate-400 text-balance mb-4 sm:py-2 lg:text-sm lg:border-l-4 lg:border-transparent`}>
-							Welcome to my web development website. This is my place to share my projects, favourite resources and anything else web development related. What makes more sense than building a website about web development? I hope you find something useful here.
+							Hello welcome to my website. michaelgainford.dev is a place to share my projects, favourite resources and anything else web development related. What makes more sense than building a website about web development? I hope you find something useful here.
 						</p>
 					</details>
 				</div>

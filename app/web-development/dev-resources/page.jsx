@@ -26,7 +26,7 @@ export default function PAGE_DEV_RESOURCES() {
                     </button>
                 ))}
                 </div>
-                <div className={`grid w-full grid-cols-2 pt-4 resources gap-x-4 gap-y-8 sm:pt-6 sm:grid-cols-3 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:pt-16 xl:grid-cols-5 2xl:grid-cols-6`}>
+                <div className={`grid w-full grid-cols-2 pt-4 resources gap-x-4 gap-y-8 sm:pt-6 sm:grid-cols-3 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:pt-16`}>
 					{ResourcesSortedByName.map((resource, index) => (
 						<Link 
 							key={index} 

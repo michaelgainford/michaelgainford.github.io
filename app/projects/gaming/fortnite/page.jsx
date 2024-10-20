@@ -28,13 +28,15 @@ const chapter4EndDate = "03/12/2023";
 const chapter5StartDate = "03/12/2023";
 const chapter5EndDate = "02/12/2024";
 
-{/* Styles */}
+{/* Styles - Page */}
 const pageTextColour = `text-slate-900`;
 const subSectionHeadingStyles = `mb-8 text-slate-100 uppercase text-sm tracking-widest underline decoration-4 underline-offset-8 lg:mb-8 lg:text-lg lg:mt-6`;
+{/* Styles - Snap */}
 const snapContainerStyles = `snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8`;
 const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:!aspect-[1000/563] lg:hover:opacity-100 xl:min-w-[800px]`;
 const snapSlideImageStyles = `relative inset-0 z-0 w-full h-full object-fit`;
 const snapSlideImageOverlayStyles = `absolute inset-0 z-10 w-full h-full duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 group-hover/season:bg-opacity-0`;
+
 
 {/* Content */}
 const pageIntroText = `Fortnite is a free-to-play Battle Royale game that has taken the world by storm. It is available on all platforms and has a huge following. The game is known for its unique building mechanics and fun gameplay. Fortnite has a unique art style and is constantly updated with new content. The game has a competitive scene with tournaments and events. Fortnite is a cultural phenomenon and has become a huge part of popular culture.`;
@@ -55,18 +57,16 @@ export default function PAGE_FORTNITE() {
 				<h2 className={`${subSectionHeadingStyles} mt-8`}>Chapters</h2>
 				{/* Chapter 1 */}
 
-				{/* Mobile | Start */}
-				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
-					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
-						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 1</h3>
-						<p className={`text-[10px]`}>({`${chapter1StartDate} to ${chapter1EndDate}`})</p>
-					</div>
+				{/* Mobile Chapter Overview | Start */}
+				<div className={`flex flex-col w-full justify-center mb-4 pr-4 max-md:mt-4 md:hidden  md:mb-6 lg:mb-8 `}>
+					<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 1</h3>
+					<p className={`text-[10px]`}>({`${chapter1StartDate} to ${chapter1EndDate}`})</p>
 				</div>
-				{/* Mobile | End */}
+				{/* Mobile Chapter Overview | End */}
 
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
-					<div className={`w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
+					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
 								<span>Chapter</span>
@@ -86,8 +86,8 @@ export default function PAGE_FORTNITE() {
 							<Image
 							  src={season.mobileImage}
 							  alt={season.name}
-							  width={200}
-							  height={133}
+							  width={600}
+							  height={338}
 							  className={snapSlideImageStyles}
 							/>
 							<div className={snapSlideImageOverlayStyles}></div>
@@ -101,7 +101,7 @@ export default function PAGE_FORTNITE() {
 				{/* Mobile | Start */}
 				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
 					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
-						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 1</h3>
+						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 2</h3>
 						<p className={`text-[10px]`}>({`${chapter2StartDate} to ${chapter2EndDate}`})</p>
 					</div>
 				</div>
@@ -109,7 +109,7 @@ export default function PAGE_FORTNITE() {
 
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
-					<div className={`min-w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
+					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
 								<span>Chapter</span>
@@ -129,8 +129,8 @@ export default function PAGE_FORTNITE() {
 							<Image
 							  src={season.mobileImage}
 							  alt={season.name}
-							  width={200}
-							  height={133}
+							  width={600}
+							  height={338}
 							  className={snapSlideImageStyles}
 							/>
 							<div className={snapSlideImageOverlayStyles}></div>
@@ -154,7 +154,7 @@ export default function PAGE_FORTNITE() {
 
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
-					<div className={`min-w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
+					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
 								<span>Chapter</span>
@@ -174,8 +174,8 @@ export default function PAGE_FORTNITE() {
 							<Image
 							  src={season.mobileImage}
 							  alt={season.name}
-							  width={200}
-							  height={133}
+							  width={600}
+							  height={338}
 							  className={snapSlideImageStyles}
 							/>
 							<div className={snapSlideImageOverlayStyles}></div>
@@ -199,7 +199,7 @@ export default function PAGE_FORTNITE() {
 
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
-					<div className={`min-w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
+					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
 								<span>Chapter</span>
@@ -219,8 +219,8 @@ export default function PAGE_FORTNITE() {
 							<Image
 							  src={season.mobileImage}
 							  alt={season.name}
-							  width={200}
-							  height={133}
+							  width={600}
+							  height={338}
 							  className={snapSlideImageStyles}
 							/>
 							<div className={snapSlideImageOverlayStyles}></div>
@@ -244,7 +244,7 @@ export default function PAGE_FORTNITE() {
 
 				<div className={`w-full mb-8 flex`}>
 					{/* Desktop | Start */}
-					<div className={`min-w-[200px] flex flex-col justify-center max-md:hidden text-center`}>
+					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
 							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
 								<span>Chapter</span>
@@ -264,8 +264,8 @@ export default function PAGE_FORTNITE() {
 							<Image
 							  src={season.mobileImage}
 							  alt={season.name}
-							  width={200}
-							  height={133}
+							  width={600}
+							  height={338}
 							  className={snapSlideImageStyles}
 							/>
 							<div className={snapSlideImageOverlayStyles}></div>
