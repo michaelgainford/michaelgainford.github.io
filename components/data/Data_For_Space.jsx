@@ -1,6 +1,7 @@
 const DataForSpace = [
   {
     name: "Sun",
+    slug: "sun",
     order: 0,
     distanceFromSunInMiles: 0,
     rotationPeriodInHours: 0,
@@ -11,6 +12,7 @@ const DataForSpace = [
   },
   {
     name: "Mercury",
+    slug: "mercury",
     order: 1,
     distanceFromSunInMiles: 36000000,
     rotationPeriodInHours: 1407.6,
@@ -21,6 +23,7 @@ const DataForSpace = [
   },
   {
     name: "Venus",
+    slug: "venus",
     order: 2,
     distanceFromSunInMiles: 67000000,
     rotationPeriodInHours: 5832.5,
@@ -31,6 +34,7 @@ const DataForSpace = [
   },
   {
     name: "Earth",
+    slug: "earth",
     order: 3,
     distanceFromSunInMiles: 93000000,
     rotationPeriodInHours: 24,
@@ -41,6 +45,7 @@ const DataForSpace = [
   },
   {
     name: "Mars",
+    slug: "mars",
     order: 4,
     distanceFromSunInMiles: 142000000,
     rotationPeriodInHours: 24.6,
@@ -51,6 +56,7 @@ const DataForSpace = [
   },
   {
     name: "Jupiter",
+    slug: "jupiter",
     order: 5,
     distanceFromSunInMiles: 484000000,
     rotationPeriodInHours: 9.9,
@@ -61,6 +67,7 @@ const DataForSpace = [
   },
   {
     name: "Saturn",
+    slug: "saturn",
     order: 6,
     distanceFromSunInMiles: 886000000,
     rotationPeriodInHours: 10.7,
@@ -71,6 +78,7 @@ const DataForSpace = [
   },
   {
     name: "Uranus",
+    slug: "uranus",
     order: 7,
     distanceFromSunInMiles: 1780000000,
     rotationPeriodInHours: 17.2,
@@ -81,6 +89,7 @@ const DataForSpace = [
   },
   {
     name: "Neptune",
+    slug: "neptune",
     order: 8,
     distanceFromSunInMiles: 2790000000,
     rotationPeriodInHours: 16.1,

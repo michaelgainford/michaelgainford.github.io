@@ -215,6 +215,8 @@ leagueTableStructure.sort((a, b) => b.points - a.points);
 })
 };
 
+// sort the array by goal difference
+leagueTableStructure.sort((a, b) => b.goalDifference - a.goalDifference);
 // sort the array by points
 leagueTableStructure.sort((a, b) => b.points - a.points);
 

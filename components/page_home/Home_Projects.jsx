@@ -14,22 +14,57 @@ export default function HOME_PROJECTS() {
 				<Link
 				  key={index}
 				  href={project.href}
-				  className={`flex flex-col items-center justify-center font-light tracking-wide transition border rounded-lg ${project.border} ${project.group} project ${project.hover} bg-gradient-to-b from-slate-900/40 to-slate-900/60 hover:opacity-100 sm:p-4 aspect-[3/2] 2xl:border-2 group border-opacity-50  bg-slate-800/30`}>
+				  className={`
+				    flex flex-col items-center justify-center font-light tracking-wide transition border rounded-lg ${project.border} ${project.group} project ${project.hover} bg-gradient-to-b from-slate-900/40 to-slate-900/60 aspect-[3/2] group border-opacity-50  bg-slate-800/30
+					sm:aspect-square sm:gap-2 sm:p-2 
+					max-md:gap-0
+					md:aspect-[3/2] md:p-4
+					2xl:border-2 
+					hover:opacity-100
+				  `}
+				>
 					<span 
-					  className={`flex w-[27%] md:w-[23%] xl:w-[20%] justify-center items-end ${project.groupHover} h-1/2`} >  
+					  className={`
+					    flex w-[27%] justify-center items-end ${project.groupHover} h-1/2 
+						md:w-[23%] 
+						xl:w-[20%]
+					  `}
+					>  
 						<project.icon 
-							fill={`${project.fill}`} 
-							classes={`size-7 lg:size-12 2xl:size-16 fill-slate-400 flex justify-center`}/>
+						  fill={`${project.fill}`} 
+						  classes={`
+						    size-7 fill-slate-400 flex justify-center
+							lg:size-12 
+							2xl:size-16
+						  `}
+						/>
 					</span>
 					<span 
-					  className={`text-xs tracking-wider text-center h-1/2 -mt-1 sm:pt-1 flex items-center group-hover:text-white md:text-sm max-lg:text-slate-400 lg:text-base`}>
+					  className={`
+					    text-xs tracking-wider text-center h-1/2 -mt-1 flex items-center 
+						group-hover:text-white 
+						sm:pt-1 
+						max-lg:text-slate-400 
+						lg:text-base
+					  `}
+					>
 						{project.name}
 					</span>
 				</Link>
 			))}
 			</div>
-			<div className={`flex justify-start mt-8 lg:mt-12`}>
-				<Button label={`View All Projects`} title={`View All Projects`} href={`/projects`} />
+			<div 
+			  className={`
+			    flex justify-start mt-8 
+				lg:mt-12
+			  `}
+			>
+				<Button 
+				  label={`View All Projects`} 
+				  title={`View All Projects`} 
+				  href={`/projects`} 
+				/>
+
 			</div>
 		</div>
 	)

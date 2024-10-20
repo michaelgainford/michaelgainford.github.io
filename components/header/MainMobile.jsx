@@ -26,7 +26,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
   const projectsSubMenuVisibility = isProjectsSubMenuVisible ? `` : `hidden`;
   return (
     <div
-      className={`mobile-nav absolute inset-0 right-4 z-[99] w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto ${
+      className={`mobile-nav absolute inset-0 right-4 z-[99] w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto text-slate-100 ${
         isVisible ? `` : `hidden`
       }`}
     >
