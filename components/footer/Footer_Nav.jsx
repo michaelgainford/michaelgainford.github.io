@@ -18,7 +18,7 @@ export default function FOOTER_NAV() {
 		<div className={`col-span-1 footer-information lg:col-span-2 lg:pr-16 xl:pr-24`}>
 			<FooterSectionHeader text={`Navigation`} />
 			<div className={`grid grid-cols-1 pt-4 footer-navs footer-nav sm:gap-16 sm:grid-cols-2 max-sm:mb-4 lg:grid lg:grid-cols-2 lg:flex-row`}>
-				<details className={`${detailsStyles}`}>
+				<details className={`${detailsStyles} no-scrollbar`}>
 					<summary className={`${summaryStyles} flex w-full cursor-pointer`}>
 						<FooterNavListHeader text={`Projects`} />
 						<span>
@@ -58,7 +58,7 @@ export default function FOOTER_NAV() {
 						))}
 					</ul>
 				</div>
-				<details className={`${detailsStyles}`}>
+				<details className={`${detailsStyles} no-scrollbar`}>
 					<summary className={`flex w-full`}>
 						<FooterNavListHeader text={`Boring Stuff`} />
 						<span>
