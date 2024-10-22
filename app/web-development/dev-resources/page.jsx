@@ -51,8 +51,8 @@ export default function PAGE_DEV_RESOURCES() {
 							  src={resource.screenshot} 
 							  alt={resource.name} 
 							  className={`z-0 w-full max-w-full overflow-hidden transition duration-300 rounded-t-lg group-hover:scale-125`} 
-							  height={600} 
-							  width={320} 
+							  height={320} 
+							  width={600} 
 							  priority={index < 5} 
 							/> 
 						</div>
