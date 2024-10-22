@@ -60,7 +60,7 @@ const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
 
 export default function PAGE_PREMIER_LEAGUE () {
 	return (
-		<div className={`bg-white ${globalPageStyles} [&>header]:bg-epl-500 [&>footer]:bg-epl`}>
+		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl`}>
 			<Header />
 			<main className={`!w-full text-epl`}>
 				<div className={`${mainStyles}`}>
@@ -69,18 +69,18 @@ export default function PAGE_PREMIER_LEAGUE () {
 
 				{/* Introduction */}
 				<div className={`${mainStyles}`}>
-					<div className={`max-md:mt-4 lg:mb-12 w-full mb-8 xl:mb-16`}>
+					<div className={`w-full mb-8 max-md:mt-4 lg:mb-12 xl:mb-16`}>
 						<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg lg:mb-8`}>All Past and Present Teams</h2>
-						<div className={`badges-container flex gap-4 sm:gap-6 md:gap-8 lg:gap-12 overflow-x-scroll snap-mandatory md:pb-4 no-scrollbar`}>
+						<div className={`badges-container flex gap-4 overflow-x-scroll snap-mandatoryno-scrollbar sm:gap-6 md:pb-4 md:gap-8 lg:gap-12`}>
 							{sortedPremierLeagueSeasonData.map((team, index) => (
 							<div key={index} className={`badge-box snap-center`}>
 								<Image 
-								src={`${clubLogoRoot}/${team.clubLogoSlug}.svg`} 
-								alt={team.teamName} 
-								width={60} 
-								height={60} 
-								title={team.teamName}
-								className={`h-[40px] lg:h-[60px] w-auto max-w-[40px] lg:max-w-[60px]`} 
+								  src={`${clubLogoRoot}/${team.clubLogoSlug}.svg`} 
+								  alt={team.teamName} 
+								  width={60} 
+								  height={60} 
+								  title={team.teamName}
+								  className={`h-[40px] lg:h-[60px] w-auto max-w-[40px] lg:max-w-[60px]`} 
 								/>
 								<p className={`text-xs truncate hidden`}>{team.teamName}</p>
 							</div>
@@ -91,7 +91,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 
 				{/* Teams by Season | Start */}
 				<div className={`${mainStyles}`}>
-					<div className={`flex flex-col items-center justify-center max-md:mt-4 lg:mb-4 w-full`}>
+					<div className={`flex flex-col w-full items-center justify-center max-md:mt-4 lg:mb-4`}>
 						<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
 					</div>
 				</div>

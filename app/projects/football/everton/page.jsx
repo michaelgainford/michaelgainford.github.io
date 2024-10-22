@@ -29,7 +29,7 @@ evertonSquad.sort((a, b) => a.number - b.number);
 
 export default function PAGE_EVERTON() {
   return (
-    <div className={`${globalPageStyles} bg-blue-900 bg-rain-background`}>
+    <div className={`${globalPageStyles} bg-blue-900 bg-rain-background text-white`}>
       <Header />
       <main className={`${mainStyles}`}>
         <H1 text={`Everton`} />

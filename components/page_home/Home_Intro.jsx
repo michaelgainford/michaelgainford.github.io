@@ -27,7 +27,7 @@ export default function HOME_INTRO() {
 					<details className={detailsStyles}>
 						<summary className={summaryStyles}>
 							<h1 
-								className={`text-xs text-balance py-2 font-normal leading-relaxed tracking-wide text-left decoration-8 pr-8 md:text-base lg:border-l-4 lg:border-transparent lg:font-medium lg:text-lg 2xl:text-xl`} title={`My Web Development Website`}>
+								className={`text-xs text-balance py-2 font-normal leading-relaxed tracking-wide text-left decoration-8 pr-8 md:text-base lg:border-l-4 lg:border-transparent lg:font-medium 2xl:text-xl`} title={`My Web Development Website`}>
 								 {timeBasedGreeting()} 👋🏻. Thank you for visiting my site.
 							</h1>
 							<span className={summaryHeaderSvgContainer}>

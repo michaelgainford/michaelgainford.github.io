@@ -8,7 +8,7 @@ const pageStyles = "bg-sky-900 bg-hexagons-background text-sky-300";
 
 export default function PAGE_QUOTES() {
 	return (
-		<div className={`${globalPageStyles} ${pageStyles}`}>
+		<div className={`${globalPageStyles} ${pageStyles} text-blue-200`}>
 			<Header />
 			<main className={`${mainStyles}`}>
 			<H1 text={`Quotes`} />

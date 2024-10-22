@@ -41,7 +41,7 @@ const jokes = [
 
 export default function PAGE_JOKES() {
 	return (
-		<div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background`}>
+		<div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background text-white`}>
 			<Header />
 			<main className={`${mainStyles}`}>
 			<H1 text={`Jokes`} />
