@@ -254,12 +254,13 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			
 			{/* Page Header | Start */}
 			<div className={`page-header`}>
-				<H1 text={`The MAG Premier League`} className={``} />
 				<div className={`flex flex-col`}>
 					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} />
 				</div>
+				<H1 text={`The MAG Premier League`} className={``} />
 			</div>
 			{/* Page Header | End */}
+
 
 			{/* Rules | Start */}
 			<details className={`flex flex-col pb-4 ${detailsStyles} ${detailsContentStyles}`}>
@@ -328,6 +329,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 				</div>
 			</details>
 			{/* Rules | End */}
+
 
 			{/* League Table */}
 			<div className={`my-2 md:my-4 lg:my-8`}>

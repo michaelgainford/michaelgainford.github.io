@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
+import PageIntro from "@/components/site_elements/Page_Intro";
 import DataForDevResources from "@/components/data/Data_For_DevResources";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
@@ -13,21 +14,19 @@ const ResourcesSortedByName = DataForDevResources.sort((a, b) => a.name.localeCo
 const tags = ResourcesSortedByName.map((resource) => resource.tags).flat();
 tags.sort();
 
+const pageIntroText = `A collection of some of my favourite web development resources that I use in my standard workflow. This is a links to a series of tools and resources.`;
+
 export default function PAGE_DEV_RESOURCES() {
     return (
         <div className={`${globalPageStyles} bg-graph-paper-background bg-teal-900/90 text-slate-300`}>
             <Header />
             <main className={mainStyles}>
                 <H1 text={`Dev Resources`} />
-				<p 
-				  className={`
-				    max-w-[800px] mb-8 !text-balance text-center text-xs/5 
-					md:-mt-4 md:text-sm/5 
-					xl:text-base/6
-				  `}
-				>
-					This is a collection of some of my favourite web development resources that I use in my standard workflow. This is a links to a series of tools and resources.
-				</p>
+				<PageIntro 
+				  text={pageIntroText} 
+				  text_colour={`font-current`} 
+				  font_sizes={`text-xs/5 md:text-sm/6 lg:text-base/6`}
+				  other_classes={`!max-w-[800px] !text-balance !text-center !md:-mt-4 !xl:text-base/6`} />
                 <div 
 				  className={`
 				    grid w-full grid-cols-2 pt-4 resources gap-x-4 gap-y-8 
