@@ -60,7 +60,7 @@ const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
 
 export default function PAGE_PREMIER_LEAGUE () {
 	return (
-		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl`}>
+		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
 			<main className={`!w-full text-epl`}>
 				<div className={`${mainStyles}`}>
@@ -95,6 +95,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 						<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Teams by Season</h2>
 					</div>
 				</div>
+				
 				<div className={`w-full overflow-x-auto by-season mb-8 lg:w-[92%] lg:items-center lg:flex-col mx-auto`}>
 					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 lg:rounded-lg block max-h-[500px] [&>tr_td]:sticky z-2`}>
 						<thead className={`font-light uppercase bg-epl/90 text-white top-0 !z-3 [&>tr_th]:font-light`}>
