@@ -6,6 +6,7 @@ import Icon_Quote from "@/components/icons/IconQuote";
 import Icon_Gamepad from "@/components/icons/IconGamepad";
 import Icon_Template from "@/components/icons/IconTemplate";
 import Icon_Planet from "@/components/icons/IconPlanet";
+import Icon_PremierLeague from "@/components/icons/Icon_PremierLeagueLogo";
 
 const DataForAllProjects = [
   {
@@ -64,7 +65,7 @@ const DataForAllProjects = [
     border: "border-slate-700",
     divider: "divide-slate-700",
     hover: "hover:bg-black/40",
-    description: "A page dedicated to Fortnite.",
+    description: "A page dedicated to the video game Fortnite.",
     category: "gaming",
     archived: false,
   },
@@ -131,9 +132,9 @@ const DataForAllProjects = [
   },
   {
     name: "Premier League",
-    href: "/projects/football/competitions/premier-league",
+    href: "/projects/football/english-premier-league",
     featuredProject: true,
-    icon: Icon_Football,
+    icon: Icon_PremierLeague,
     color: "text-slate-200",
     bg: "bg-purple-900",
     border: "border-purple-700",
@@ -153,7 +154,7 @@ const DataForAllProjects = [
     border: "border-slate-700/50",
     divider: "divide-slate-500",
     hover: "hover:bg-slate-700",
-    description: "A project about space",
+    description: "A project about space and it's 8 planets.",
     category: "space",
     archived: false,
   },

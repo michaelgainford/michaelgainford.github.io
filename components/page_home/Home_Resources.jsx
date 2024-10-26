@@ -25,7 +25,16 @@ export default function HOME_RESOURCES () {
 		))}  
 		</div>
 		<div className={`flex justify-start mt-8 lg:mt-12`}>
-			<Button label={`View All Resources`} title={`View All Resources`} href={`/web-development/dev-resources`} />
+			<Button 
+			  label={`View All Resources`} 
+			  title={`View All Resources`} 
+			  href={`/web-development/dev-resources`} 
+			  background_colour={`bg-slate-800`}
+			  border_colour={`border-slate-700`} 
+			  hover_background_colour={`hover:bg-amber-500`}
+			  text_colour={`text-current`}
+			  hover_text_colour={`hover:text-slate-900`}
+			/>
 		</div>
 	</div>
 	)

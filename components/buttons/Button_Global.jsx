@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-export default function BUTTON_GLOBAL({ href, label, title, ariaLabel }) {
+export default function BUTTON_GLOBAL({ href, label, title, ariaLabel, background_colour, border_colour, hover_background_colour, text_colour, hover_text_colour }) {
 	return (
 		<Link 
 			aria-label={ariaLabel} 
-			className={`px-8 py-3 mx-auto text-xs tracking-widest lg:uppercase transition duration-300 border rounded main-btn bg-slate-800 border-slate-700 sm:py-4 xl:text-sm hover:bg-amber-500 hover:text-slate-900`}
+			className={`px-8 py-3 mx-auto text-xs tracking-widest transition duration-300 border rounded ${background_colour} ${border_colour} ${hover_background_colour} ${text_colour} ${hover_text_colour} sm:py-4 lg:uppercase xl:text-sm`}
 			href={href} 
 			title={title} 
 		>

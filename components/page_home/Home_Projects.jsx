@@ -63,6 +63,11 @@ export default function HOME_PROJECTS() {
 				  label={`View All Projects`} 
 				  title={`View All Projects`} 
 				  href={`/projects`} 
+				  background_colour={`bg-slate-800`}
+				  border_colour={`border-slate-700`} 
+				  hover_background_colour={`hover:bg-amber-500`}
+				  text_colour={`text-current`}
+				  hover_text_colour={`hover:text-slate-900`}
 				/>
 
 			</div>
