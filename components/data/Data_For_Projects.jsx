@@ -132,7 +132,7 @@ const DataForAllProjects = [
   },
   {
     name: "Premier League",
-    href: "/projects/football/competitions/premier-league",
+    href: "/projects/football/english-premier-league",
     featuredProject: true,
     icon: Icon_PremierLeague,
     color: "text-slate-200",

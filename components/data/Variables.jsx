@@ -1,7 +1,5 @@
-const mainStyles =
-  "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-
 const globalPageStyles = "space-y-4 lg:space-y-8 2xl:space-y-16 min-h-dvh";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
 
 const navigation = [
   {
@@ -136,6 +134,59 @@ const navigation = [
   },
 ];
 
+{/* create an array to store the premier league seasons */}
+const premierLeagueYears = [
+  '92/93',
+  '93/94', 
+  '94/95', 
+  '95/96', 
+  '96/97', 
+  '97/98', 
+  '98/99', 
+  '99/00', 
+  '00/01', 
+  '01/02', 
+  '02/03', 
+  '03/04', 
+  '04/05', 
+  '05/06', 
+  '06/07', 
+  '07/08', 
+  '08/09', 
+  '09/10', 
+  '10/11', 
+  '11/12', 
+  '12/13', 
+  '13/14', 
+  '14/15', 
+  '15/16', 
+  '16/17', 
+  '17/18', 
+  '18/19', 
+  '19/20', 
+  '20/21', 
+  '21/22', 
+  '22/23', 
+  '23/24', 
+  '24/25'
+];
+
+{/* map through the premier league seasons and create an array of season positions */}
+const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
+
+{/* paths */}
+const clubLogosRoot = "/football/premier-league/club-logos";
+const premierLeagueHubUrl = "/projects/football/competitions/english-premier-league";
+const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
+const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
+
+{/* exports */}
 export { mainStyles };
 export { globalPageStyles };
 export { navigation };
+export { premierLeagueYears };
+export { seasonPositions };
+export { clubLogosRoot };
+export { premierLeagueHubUrl };
+export { premierLeagueLogoSvgPath };
+export { premierLeagueHubBlockImageRoot };
