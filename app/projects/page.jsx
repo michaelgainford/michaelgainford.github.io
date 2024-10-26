@@ -37,7 +37,7 @@ export default function PAGE_PROJECTS() {
 						<span className={`flex flex-col items-center gap-3`}>
 							<h2 className={`text-xs uppercase`}>{project.name}</h2>
 							<span className={`flex items-center gap-4 size-8`}>
-								<project.icon fill={`fill-current`} className={`size-8 stroke-slate-300 fill-current lg:size-12`} />
+								<project.icon fill={`fill-current`} className={`stroke-slate-300 fill-current`} />
 							</span>
 						</span>
 						<span className={`flex flex-col justify-between gap-4`}>
