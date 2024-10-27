@@ -69,34 +69,34 @@ const MAGPremierLeagueFixturesSeason1 = [
     game: 7,
     homeTeam: "Alfie",
     awayTeam: "Michael",
-    homeScore: -1,
-    awayScore: -1,
+    homeScore: 3,
+    awayScore: 4,
     date: "26/10/2024",
-    time: "20:00",
-    upcoming: true,
-    played: false
+    time: "20:15",
+    upcoming: false,
+    played: true
   },
   {
     game: 8,
     homeTeam: "Garcon",
     awayTeam: "Alfie",
-    homeScore: -1,
-    awayScore: -1,
+    homeScore: 1, 
+    awayScore: 5,
     date: "26/10/2024",
-    time: "20:30",
-    upcoming: true,
-    played: false
+    time: "20:45",
+    upcoming: false,
+    played: true
   },
   {
     game: 9,
     homeTeam: "Michael",
     awayTeam: "Garcon",
-    homeScore: -1,
-    awayScore: -1,
+    homeScore: 3,
+    awayScore: 3,
     date: "26/10/2024",
-    time: "21:00",
-    upcoming: true,
-    played: false
+    time: "21:15",
+    upcoming: false,
+    played: true
   },
   {
     game: 10,
@@ -106,7 +106,7 @@ const MAGPremierLeagueFixturesSeason1 = [
     awayScore: -1,
     date: "02/11/2024",
     time: "00:00",
-    upcoming: false,
+    upcoming: true,
     played: false
   },
   {
@@ -117,7 +117,7 @@ const MAGPremierLeagueFixturesSeason1 = [
     awayScore: -1,
     date: "02/11/2024",
     time: "00:00",
-    upcoming: false,
+    upcoming: true,
     played: false
   },
   {
@@ -128,7 +128,7 @@ const MAGPremierLeagueFixturesSeason1 = [
     awayScore: -1,
     date: "02/11/2024",
     time: "00:00",
-    upcoming: false,
+    upcoming: true,
     played: false
   },
   {

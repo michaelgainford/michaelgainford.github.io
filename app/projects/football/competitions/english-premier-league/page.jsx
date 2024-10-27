@@ -1,58 +1,57 @@
 import Image from "next/image";
 import Button from "@/components/buttons/Button_Global";
 import Header from "@/components/header/Header";
-import H1 from "@/components/typography/H1Span";
-import Footer from "@/components/footer/Footer";
-import DataForPremTeams from "@/components/data/Data_For_PremierLeagueTeams";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
-import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/components/data/Variables";
+import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
+import Footer from "@/components/footer/Footer";
+import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/components/data/Variables";
 
-const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video bg-epl mt-4 rounded-t-xl";
+const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";
 
-const pageIntroText = `The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.`;
+const pageIntroText = "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.";
 
 // create an array to store the blocks of data to populate the page
 const premierLeagueHubBlocks = [
 	{
-	title: "History",
-	content: "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.",
-	button: "PL History",
-	buttonHref: "/",
-	buttonTitle: "English Premier League History",
-	image: "premier-league-92-93.webp"
+		title: "History",
+		content: "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.",
+		button: "PL History",
+		buttonHref: "/",
+		buttonTitle: "English Premier League History",
+		image: "premier-league-92-93.webp"
 	},
 	{
-	title: "The 100 Club",
-	content: "The 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.",
-	button: "The 100 Club",
-	buttonHref: "/",
-	buttonTitle: "The 100 Club",
-	image: "premier-league-92-93.webp"
+		title: "The 100 Club",
+		content: "The 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.",
+		button: "The 100 Club",
+		buttonHref: "/",
+		buttonTitle: "The 100 Club",
+		image: "premier-league-100-club.webp"
 	},
 	{
-	title: "Clubs in Focus",
-	content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
-	button: "Clubs in Focus",
-	buttonHref: "/",
-	buttonTitle: "Clubs in Focus",
-	image: "premier-league-92-93.webp"
+		title: "Clubs in Focus",
+		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
+		button: "Clubs in Focus",
+		buttonHref: "/",
+		buttonTitle: "Clubs in Focus",
+		image: "premier-league-92-93.webp"
 	},
 	{
-	title: "Records",
-	content: "Over the past 30+ years of the Premier League, there have been many records set and broken. Some of the most notable records include Alan Shearers record for the most goals scored in a single season (34), Manchester Citys record for the most points in a single season (100), and Arsenals record for the longest unbeaten run (49 games). Other notable records include the most goals scored in a single match (9), the most consecutive clean sheets (14), and the most consecutive wins (18).",
-	button: "Records",
-	buttonHref: "/",
-	buttonTitle: "Records",
-	image: "premier-league-92-93.webp"
+		title: "Records",
+		content: "Over the past 30+ years of the Premier League, there have been many records set and broken. Some of the most notable records include Alan Shearers record for the most goals scored in a single season (34), Manchester Citys record for the most points in a single season (100), and Arsenals record for the longest unbeaten run (49 games). Other notable records include the most goals scored in a single match (9), the most consecutive clean sheets (14), and the most consecutive wins (18).",
+		button: "Records",
+		buttonHref: "/",
+		buttonTitle: "Records",
+		image: "premier-league-92-93.webp"
 	},
 	{
-	title: "Seasons",
-	content: "The Premier League has been played over 30 seasons since its inception in 1992. Each season consists of 20 teams who play 38 matches each (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship. The Premier League season typically runs from August to May, with matches played on weekends and midweek.",
-	button: "Seasons",
-	buttonHref: "/projects/football/competitions/english-premier-league/seasons",
-	buttonTitle: "Seasons",
-	image: "premier-league-92-93.webp"
+		title: "Seasons",
+		content: "The Premier League has been played over 30 seasons since its inception in 1992. Each season consists of 20 teams who play 38 matches each (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship. The Premier League season typically runs from August to May, with matches played on weekends and midweek.",
+		button: "Seasons",
+		buttonHref: "/projects/football/competitions/english-premier-league/seasons",
+		buttonTitle: "Seasons",
+		image: "premier-league-92-93.webp"
 	},
 ];		
 
@@ -60,13 +59,13 @@ export default function PAGE_PREMIER_LEAGUE () {
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
-			<main className={`!w-full text-epl`}>
+			<main className="w-full text-epl">
 				<PremierLeagueHero />
 				<div className={`${mainStyles}`}>
 					<H1 
-					  text={`The Premier League`}
-					  font_sizes={`text-base lg:!text-[24px]`} 
-					  other_classes={`uppercase`} 
+					  text="The Premier League"
+					  font_sizes="text-base lg:!text-[24px]"
+					  other_classes="uppercase" 
 					/>
 					<PageIntro 
 					  text={pageIntroText} 
@@ -75,8 +74,8 @@ export default function PAGE_PREMIER_LEAGUE () {
 				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 					{premierLeagueHubBlocks.map((block, index) => {
 						return (
-							<div key={index} className={`flex flex-col h-full gap-4 divide-y`}>
-								<h2 className={``}>{block.title}</h2>
+							<div key={index} className="flex flex-col h-full gap-4 divide-y">
+								<h2 className="pl-1 leading-none border-l-2 border-amber-500">{block.title}</h2>
 								<div className="pt-4 content">
 									<div className={blockImagePlaceholderStyles}>
 										<Image 
@@ -84,20 +83,20 @@ export default function PAGE_PREMIER_LEAGUE () {
 											alt={block.title} 
 											width={800}
 											height={450} 
-											className={`object-cover rounded-lg`}
+											className="object-cover rounded-lg"
 										/>
 									</div>
 									<p>{block.content}</p>
-									<div className={`flex justify-start mt-8 text-white`}>
+									<div className="flex justify-start mt-8 text-white">
 										<Button 
 											label={block.button} 
 											href={block.buttonHref} 
 											title={block.buttonTitle} 
-											background_colour={`bg-transparent`}
-											border_colour={`border-epl`} 
-											text_colour={`text-epl`}
-											hover_background_colour={`hover:bg-epl`}
-											hover_text_colour={`hover:text-white`}
+											background_colour="bg-transparent"
+											border_colour="border-epl" 
+											text_colour="text-epl"
+											hover_background_colour="hover:bg-epl"
+											hover_text_colour="hover:text-white"
 										/>
 									</div>
 								</div>
@@ -108,7 +107,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 
 				
 			</main>
-			<Footer customTextColour={`text-epl`} />
+			<Footer customTextColour="text-epl" />
 		</div>
 	);
 }
