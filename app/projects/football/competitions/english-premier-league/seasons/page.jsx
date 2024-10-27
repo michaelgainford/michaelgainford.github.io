@@ -1,19 +1,18 @@
-import Image from "next/image";
 import { Fragment } from "react";
-import Link from "next/link";
-import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import ClubsData from "@/components/data/Data_For_PremierLeagueTeams";
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 import DataForPremTeams from "@/components/data/Data_For_PremierLeagueTeams";
 import { premierLeagueYears, seasonPositions } from "@/components/data/Variables";
+import Header from "@/components/header/Header";
+import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
+import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
+import Footer from "@/components/footer/Footer";
 
 import H1 from "@/components/typography/H1Span";
+import H2_EPL from "@/components/typography/H2_For_PremierLeague";
 
 import { mainStyles } from "@/components/data/Variables";
 import { globalPageStyles } from "@/components/data/Variables";
-
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 
 // sort by teamName
 const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
@@ -30,26 +29,32 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS () {
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
-			<main className={`w-full text-epl`}>
-                <HeroPremierLeague />
-                <div className={`${mainStyles} !text-xs py-4`}>
-                    <Link
-                        href={`/projects/football/competitions/english-premier-league`} 
-                    >
-                        Back to PL Hub 
-                    </Link>
-                </div>
-				<div className={`${mainStyles}`}>
-					<H1 text={`Seasons`} font_sizes={`text-base lg:!text-[24px]`} other_classes={`uppercase`} />
-				</div>
 
+			<main className={`w-full text-epl`}>
+
+                <HeroPremierLeague />
+
+                <div className={`${mainStyles} !text-xs py-4`}>
+                    <NavForPremierLeagueHub />
+                </div>
+
+				<div className={`${mainStyles}`}>
+					<H1 
+					  text={`Seasons`} 
+					  font_sizes={`text-base lg:!text-[24px]`} 
+					  other_classes={`uppercase`} 
+					/>
+				</div>
 
 				{/* Teams by Season | Start */}
 				<div className={`${mainStyles}`}>
 					<div className={`flex flex-col w-full items-center justify-center max-md:mt-4 lg:mb-4`}>
-						<h2 className={`mb-4 mt-2 px-2 border-l-4 border-amber-500 w-full text-xs font-bold text-left leading-none uppercase md:text-sm: lg:text-lg`}>Season by season league record</h2>
+						<H2_EPL 
+						  text={`Season by season league records`}
+						/>
 					</div>
 				</div>
+
 				<div className={`flex w-full overflow-x-auto by-season mb-8 lg:w-[92%] lg:items-center lg:flex-col mx-auto `}>
 					<table className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 lg:rounded-lg block max-h-[500px] lg:max-h-full [&>tr_td]:sticky z-2`}>
 						<thead className={`font-light uppercase bg-epl/90 text-white top-0 !z-3 [&>tr_th]:font-light`}>
