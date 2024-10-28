@@ -1,15 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "@/components/buttons/Button_Global";
 import Header from "@/components/header/Header";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
+import TopScorersData from "@/components/data/Data_For_PremierLeagueTopScorers";
+import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/components/data/Variables";
 
-const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";
+const sortedByGoals = [...TopScorersData].sort((a, b) =>
+	b.playerGoals - a.playerGoals
+);
 
-const pageIntroText = "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.";
+const pageIntroText = "The Premier League 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.";
 
 // create an array to store the blocks of data to populate the page
 const premierLeagueHubBlocks = [
@@ -33,9 +38,9 @@ const premierLeagueHubBlocks = [
 		title: "Clubs in Focus",
 		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
 		button: "Clubs in Focus",
-		buttonHref: "/projects/football/competitions/english-premier-league/all-clubs",
+		buttonHref: "/",
 		buttonTitle: "Clubs in Focus",
-		image: "premier-league-clubs.webp"
+		image: "premier-league-92-93.webp"
 	},
 	{
 		title: "Records",
@@ -43,7 +48,7 @@ const premierLeagueHubBlocks = [
 		button: "Records",
 		buttonHref: "/",
 		buttonTitle: "Records",
-		image: "premier-league-season-records.webp"
+		image: "premier-league-92-93.webp"
 	},
 	{
 		title: "Seasons",
@@ -51,19 +56,24 @@ const premierLeagueHubBlocks = [
 		button: "Seasons",
 		buttonHref: "/projects/football/competitions/english-premier-league/seasons",
 		buttonTitle: "Seasons",
-		image: "premier-league-seasons.webp"
+		image: "premier-league-92-93.webp"
 	},
 ];		
 
-export default function PAGE_PREMIER_LEAGUE () {
+export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
 			<main className="w-full text-epl">
 				<PremierLeagueHero />
+
+				<div className={`${mainStyles} !text-xs py-4`}>
+                    <NavForPremierLeagueHub />
+                </div>
+
 				<div className={`${mainStyles}`}>
 					<H1 
-					  text="The Premier League"
+					  text="The 100 Club"
 					  font_sizes="text-base lg:!text-[24px]"
 					  other_classes="uppercase" 
 					/>
@@ -71,38 +81,45 @@ export default function PAGE_PREMIER_LEAGUE () {
 					  text={pageIntroText} 
 					/>
 				</div>
-				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
-					{premierLeagueHubBlocks.map((block, index) => {
+				<div className={`${mainStyles} min-h-[300px] flex flex-col gap-4 lg:gap-8 xl:gap-12 [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
+
+				<div className="grid w-full grid-cols-4 gap-4 text-center">
+					{Object.values(sortedByGoals).map((TopScorer) => {
+						let clubsDir = "/clubs/";
+						let playerImageExt = ".webp";
+						let playerImageDir = "/football/premier-league/players/";
+						let playerImage = playerImageDir + TopScorer.playerSlug + playerImageExt;
 						return (
-							<div key={index} className="flex flex-col h-full gap-4 divide-y">
-								<h2 className="pl-2 leading-none border-l-8 border-amber-500">{block.title}</h2>
-								<div className="pt-4 content">
-									<div className={blockImagePlaceholderStyles}>
-										<Image 
-											src={`${premierLeagueHubBlockImageRoot}/${block.image}`} 
-											alt={block.title} 
-											width={800}
-											height={450} 
-											className="object-cover rounded-lg"
-										/>
-									</div>
-									<p className={`text-sm lg:text-sm`}>{block.content}</p>
-									<div className="flex justify-start mt-8 text-white">
-										<Button 
-											label={block.button} 
-											href={block.buttonHref} 
-											title={block.buttonTitle} 
-											background_colour="bg-transparent"
-											border_colour="border-epl" 
-											text_colour="text-epl"
-											hover_background_colour="hover:bg-epl"
-											hover_text_colour="hover:text-white"
-										/>
-									</div>
-								</div>
+							<div className="flex flex-col gap-4 px-4 py-8 border rounded-lg" key={TopScorer.playerId}>
+								<h3 className="font-bold uppercase">{TopScorer.playerName}</h3>
+								<Image
+									className="my-4 border-8 border-slate-100"
+									src={playerImage}
+									alt={TopScorer.playerName}
+									width={300}
+									height={150}
+								/>
+								<p className="font-bold">{TopScorer.playerGoals} goals</p>
+								<p className="flex flex-wrap justify-center gap-1">
+								{Object.values(TopScorer.playerClubs).map((playerClub) => {
+									let clubPageLink = clubsDir;
+									return (
+									<Link
+										className="px-2 py-1 text-xs border-b-[2px] border-slate-200"
+										key={playerClub.playerSlug}
+										href={clubPageLink}
+									>
+										{playerClub}
+									</Link>
+									);
+								})}
+								</p>
 							</div>
-						)
+						);
 					})}
+        		</div>
+					
+
 				</div>
 
 				
