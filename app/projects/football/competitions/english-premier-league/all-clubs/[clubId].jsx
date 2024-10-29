@@ -1,11 +1,17 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Data from "@/components/data/Data_For_PremierLeagueTeams";
+import Header from "@/components/header/Header";
+import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
+import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
+import Footer from "@/components/footer/Footer";
+import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/components/data/Variables";
 
 const ClubFiltered = () => {
-  const router = useRouter();
-  const clubId = router.query.clubLogoSlug;
-  const DataRun1 = Data.filter((club) => club.clubLogoSlug == clubId).map(
+    const router = useRouter();
+    const clubId = router.query.clubLogoSlug;
+    const DataRun1 = Data.filter((club) => club.clubLogoSlug == clubId).map(
     (club) => ({
       key: club.clubLogoSlug,
       name: club.teamName,
@@ -18,9 +24,25 @@ const ClubFiltered = () => {
       manager: club.teamManager,
     })
   );
-  const logoPath = "/club_logos";
+}
+
+const logoPath = "/football/premier-league/club_logos/club-logos/";
+
+export default function PREMIER_LEAGUE_FILTERED_CLUB() {
   return (
-    <div className="flex flex-col items-center w-full pt-8 club lg:pt-0">
+    <div
+    className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}
+  >
+    <Header />
+
+    <main className={`w-full text-epl`}>
+      <HeroPremierLeague />
+
+      <div className={`${mainStyles} !text-xs py-4`}>
+        <NavForPremierLeagueHub />
+      </div>
+
+      <div className={`${mainStyles}`}><div className="flex flex-col items-center w-full pt-8 club lg:pt-0">
       {DataRun1.map((FilteredClub) => (
         <div
           className="flex flex-col items-center justify-center w-full text-center lg:px-12 text-light"
@@ -118,6 +140,11 @@ const ClubFiltered = () => {
         </div>
       ))}
     </div>
-  );
-};
-export default ClubFiltered;
+      </div>
+    </main>
+    <Footer />
+  </div>
+  )
+}
+
+

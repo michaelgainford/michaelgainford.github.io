@@ -14,10 +14,18 @@ const pageIntroText = "The Premier League is the top tier of English football an
 // create an array to store the blocks of data to populate the page
 const premierLeagueHubBlocks = [
 	{
-		title: "History",
+		title: "Clubs in Focus",
+		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
+		button: "Clubs in Focus",
+		buttonHref: "/projects/football/competitions/english-premier-league/all-clubs",
+		buttonTitle: "Clubs in Focus",
+		image: "premier-league-clubs.webp"
+	},
+	{
+		title: "Season by Season History",
 		content: "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.",
 		button: "PL History",
-		buttonHref: "/",
+		buttonHref: "/projects/football/competitions/english-premier-league/history",
 		buttonTitle: "English Premier League History",
 		image: "premier-league-92-93.webp"
 	},
@@ -30,14 +38,6 @@ const premierLeagueHubBlocks = [
 		image: "premier-league-100-club.webp"
 	},
 	{
-		title: "Clubs in Focus",
-		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
-		button: "Clubs in Focus",
-		buttonHref: "/projects/football/competitions/english-premier-league/all-clubs",
-		buttonTitle: "Clubs in Focus",
-		image: "premier-league-clubs.webp"
-	},
-	{
 		title: "Records",
 		content: "Over the past 30+ years of the Premier League, there have been many records set and broken. Some of the most notable records include Alan Shearers record for the most goals scored in a single season (34), Manchester Citys record for the most points in a single season (100), and Arsenals record for the longest unbeaten run (49 games). Other notable records include the most goals scored in a single match (9), the most consecutive clean sheets (14), and the most consecutive wins (18).",
 		button: "Records",
@@ -46,7 +46,7 @@ const premierLeagueHubBlocks = [
 		image: "premier-league-season-records.webp"
 	},
 	{
-		title: "Seasons",
+		title: "Season by Season League Finishes",
 		content: "The Premier League has been played over 30 seasons since its inception in 1992. Each season consists of 20 teams who play 38 matches each (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship. The Premier League season typically runs from August to May, with matches played on weekends and midweek.",
 		button: "Seasons",
 		buttonHref: "/projects/football/competitions/english-premier-league/seasons",
@@ -69,6 +69,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 					/>
 					<PageIntro 
 					  text={pageIntroText} 
+					  font_sizes="text-xs/5 lg:!text-base"
 					/>
 				</div>
 				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>

@@ -109,7 +109,7 @@ const DataForNavigation = [
     href: "/projects/gaming/fortnite",
     border_colour: "none",
     background_colour: "bg-fortnite",
-    before: "before:bg-black",
+    before: "before:bg-fn-dark-blue",
     hover: "none",
     category: "projects",
     mainNav: false,
