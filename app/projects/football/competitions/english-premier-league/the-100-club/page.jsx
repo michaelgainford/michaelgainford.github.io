@@ -66,10 +66,7 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 			<Header />
 			<main className="w-full text-epl">
 				<PremierLeagueHero />
-
-				<div className={`${mainStyles} !text-xs py-4`}>
-                    <NavForPremierLeagueHub />
-                </div>
+				<NavForPremierLeagueHub />
 
 				<div className={`${mainStyles}`}>
 					<H1 
@@ -81,16 +78,16 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 					  text={pageIntroText} 
 					/>
 				</div>
-				<div className={`${mainStyles} min-h-[300px] flex flex-col gap-4 lg:gap-8 xl:gap-12 [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
+				<div className={`${mainStyles} min-h-[300px] flex flex-col gap-4 lg:gap-8 xl:gap-12 [&>div]:p-4 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 
-				<div className="grid w-full grid-cols-4 gap-4 text-center">
+				<div className="grid w-full grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 					{Object.values(sortedByGoals).map((TopScorer) => {
 						let clubsDir = "/clubs/";
 						let playerImageExt = ".webp";
 						let playerImageDir = "/football/premier-league/players/";
 						let playerImage = playerImageDir + TopScorer.playerSlug + playerImageExt;
 						return (
-							<div className="flex flex-col gap-4 px-4 py-8 border rounded-lg" key={TopScorer.playerId}>
+							<div className="relative flex flex-col gap-4 px-4 py-8 border rounded-lg" key={TopScorer.playerId}>
 								<h3 className="font-bold uppercase">{TopScorer.playerName}</h3>
 								<Image
 									className="my-4 border-8 border-slate-100"
@@ -100,12 +97,12 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 									height={150}
 								/>
 								<p className="font-bold">{TopScorer.playerGoals} goals</p>
-								<p className="flex flex-wrap justify-center gap-1">
+								<p className="flex flex-wrap justify-center gap-1 gap-x-4">
 								{Object.values(TopScorer.playerClubs).map((playerClub) => {
 									let clubPageLink = clubsDir;
 									return (
 									<Link
-										className="px-2 py-1 text-xs border-b-[2px] border-slate-200"
+										className="py-1 text-xs border-b-[2px] border-slate-200"
 										key={playerClub.playerSlug}
 										href={clubPageLink}
 									>
