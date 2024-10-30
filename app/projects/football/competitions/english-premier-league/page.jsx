@@ -9,7 +9,7 @@ import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/
 
 const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";
 
-const pageIntroText = "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.";
+const pageIntroText = "Welcome to the Premier League Hub. This is the place to find all the information you need about the Premier League, including the history of the competition, the clubs that have competed in the league, and the records that have been set and broken over the years. Whether you are a die-hard fan of a particular club or just a casual observer of the beautiful game, there is something here for everyone.";
 
 // create an array to store the blocks of data to populate the page
 const premierLeagueHubBlocks = [
@@ -72,11 +72,11 @@ export default function PAGE_PREMIER_LEAGUE () {
 					  font_sizes="text-xs/5 lg:!text-base"
 					/>
 				</div>
-				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
+				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 					{premierLeagueHubBlocks.map((block, index) => {
 						return (
 							<div key={index} className="flex flex-col h-full gap-4 divide-y">
-								<h2 className="pl-2 leading-none border-l-8 border-amber-500">{block.title}</h2>
+								<h2 className="pl-2 text-sm leading-none border-l-4 lg:border-l-8 border-amber-500">{block.title}</h2>
 								<div className="pt-4 content">
 									<div className={blockImagePlaceholderStyles}>
 										<Image 
@@ -87,7 +87,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 											className="object-cover rounded-lg"
 										/>
 									</div>
-									<p className={`text-sm lg:text-sm`}>{block.content}</p>
+									<p className="text-xs tracking-wide lg:text-sm">{block.content}</p>
 									<div className="flex justify-start mt-8 text-white">
 										<Button 
 											label={block.button} 
