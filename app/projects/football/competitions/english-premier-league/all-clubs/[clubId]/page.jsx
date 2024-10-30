@@ -17,23 +17,23 @@ const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 
 const pageIntroText = "This is Everton FC";
 
 export default function PAGE_FOR_INDIVIDUAL_CLUB () {
-  const router = useRouter();
+/*   const router = useRouter();
   //const clubLogoSlug = "aston-villa";
-  const clubLogoSlug = router.query;
+  const clubLogoSlug = router.query.clubId;
   const clubData = Data.filter((club) => club.clubLogoSlug == clubLogoSlug).map(
     (club) => ({
       key: club.clubLogoSlug,
       teamName: club.teamName,
     })
-  );
+  ); */
   //const clubName = clubData.teamName;
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
 			<main className="w-full text-epl">
 				<PremierLeagueHero />
-        <h1>Test: {clubLogoSlug}</h1>
-        {clubData.map((club) => (
+        {/* <h1>Test: {clubLogoSlug}</h1> */}
+        {/* {clubData.map((club) => (
           <div data-slug={club.clubLogoSlug} key={club.clubLogoSlug} className={`${mainStyles} ${blockImagePlaceholderStyles}`}>
             <Image
               src={`/football/premier-league/club-logos/${club.clubLogoSlug}.svg`}
@@ -44,7 +44,7 @@ export default function PAGE_FOR_INDIVIDUAL_CLUB () {
             />
             <p>{club.teamName}</p>
           </div>
-        ))}
+        ))} */}
 			</main>
 			<Footer customTextColour="text-epl" />
 		</div>
