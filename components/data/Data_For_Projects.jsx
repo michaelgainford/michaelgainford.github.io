@@ -6,7 +6,8 @@ import Icon_Quote from "@/components/icons/IconQuote";
 import Icon_Gamepad from "@/components/icons/IconGamepad";
 import Icon_Template from "@/components/icons/IconTemplate";
 import Icon_Planet from "@/components/icons/IconPlanet";
-import Icon_PremierLeague from "@/components/icons/Icon_PremierLeagueLogo";
+//import Icon_PremierLeague from "@/components/icons/Icon_PremierLeagueLogo";
+import Icon_PremierLeagueSimple from "@/components/icons/Icon_PremierLeagueLogoSimple";
 
 const DataForAllProjects = [
   {
@@ -134,7 +135,7 @@ const DataForAllProjects = [
     name: "Premier League",
     href: "/projects/football/competitions/english-premier-league",
     featuredProject: true,
-    icon: Icon_PremierLeague,
+    icon: Icon_PremierLeagueSimple,
     color: "text-slate-200",
     bg: "bg-purple-900",
     border: "border-purple-700",
