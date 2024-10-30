@@ -21,7 +21,7 @@ const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all
 
 export default function HOME_INTRO() {
 	return (
-		<div className={`w-full pb-8 intro mb-4 lg:pb-8 xl:pb-12 2xl:pb-16`}>
+		<div className={`w-full pb-8 intro mb-4 max-md:mt-8 lg:pb-8 xl:pb-12 2xl:pb-16`}>
 			<div className={`grid grid-cols-8`}>
 				<div className={`flex flex-col justify-center col-span-8 md:col-span-6 text-base text-left rounded-lg border-slate-800 lg:col-span-4 intro-left`}>
 					<details className={detailsStyles}>

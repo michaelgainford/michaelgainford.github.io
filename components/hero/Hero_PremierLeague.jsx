@@ -10,8 +10,8 @@ export default function HERO_PREMIER_LEAGUE () {
                     <Image
                       src={premierLeagueLogoSvgPath}
                       alt="English Premier League Logo"
-                      width={200}
-                      height={200}
+                      width={192}
+                      height={81}
                     />
                 </Link>
             </div>

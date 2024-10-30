@@ -72,7 +72,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 					  font_sizes="text-xs/5 lg:!text-base"
 					/>
 				</div>
-				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
+				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 					{premierLeagueHubBlocks.map((block, index) => {
 						return (
 							<div key={index} className="flex flex-col h-full gap-4 divide-y">

@@ -38,8 +38,9 @@ export default function PAGE_PREMIER_LEAGUE () {
                         let clubLogosDir = clubsDir + '/' + Club.clubLogoSlug + ".svg";
                         return (
                             <Link
-                              key={Club.teamName}
-                              href={club}
+                              key={Club.clubLogoSlug}
+                              href={club} 
+                              data-slug={Club.clubLogoSlug}
                               className={
                                 Club.currentPrem
                                 ? "club-card current-prem"
