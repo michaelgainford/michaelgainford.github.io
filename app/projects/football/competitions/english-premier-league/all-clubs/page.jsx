@@ -39,7 +39,8 @@ export default function PAGE_PREMIER_LEAGUE () {
                         return (
                             <Link
                               key={Club.clubLogoSlug}
-                              href={club} 
+                              href={``}
+                              // href={club} 
                               data-slug={Club.clubLogoSlug}
                               className={
                                 Club.currentPrem
