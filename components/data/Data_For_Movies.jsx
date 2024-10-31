@@ -1468,6 +1468,18 @@ const DataForMovies = [
     genre: "Action",
     duration: 119,
     watched: true,
+  },
+  {
+    id: 124,
+    title: "The Shawshank Redemption",
+    image: "/movies-images/the-shawshank-redemption.webp",
+    imdb_url: "https://www.imdb.com/title/tt0111161/",
+    description:
+      "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    year: 1994,
+    genre: "Drama",
+    duration: 142,
+    watched: true,
   }
 ];
 
