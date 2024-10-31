@@ -3711,9 +3711,44 @@ const DataForPremierLeagueTeams = [
     ],
   },
   {
-    teamName: "Everton",
-    currentPrem: true,
+    slug: "everton",
     clubLogoSlug: "everton",
+    teamName: "Everton",
+    teamNickname: "The Toffees",
+    yearFounded: 1878,
+    stadium: "Goodison Park",
+    stadiumCapacity: 39214,
+    numberOfPremierLeagueTitles: 0,
+    numberOfSeasonsInPremierLeague: 33,
+    highestLeagueFinish: 4,
+    lowestLeagueFinish: 17,
+    biggestWin: "7-1 vs Southampton (1996)",
+    biggestLoss: "0-7 vs Tottenham Hotspur (2004)",
+    currentPrem: true,
+    clubDetails: [
+      {
+        clubName: "Everton",
+        clubNickname: "The Toffees",
+        yearFounded: 1878,
+      }
+    ],
+    stadiumDetails: [
+      {
+        stadiumName: "Goodison Park",
+        stadiumLocation: "Liverpool",
+        stadiumCapacity: 39214,
+      }
+    ],
+    leaguePerformanceDetails: [
+      {
+        numberOfPremierLeagueTitles: 0,
+        numberOfSeasonsInPremierLeague: 33, 
+        highestLeagueFinish: 4,
+        lowestLeagueFinish: 17,
+        biggestWin: "7-1 vs Southampton (1996)",
+        biggestLoss: "0-7 vs Arsenal (2004)",
+      }
+    ],
     premierLeagueSeasons: [
       {
         season1Pos: 13,
