@@ -51,9 +51,9 @@ export default function PAGE_PREMIER_LEAGUE () {
                                 <Image
                                 src={clubLogosDir}
                                 alt={Club.teamName}
-                                height={80}
                                 width={80}
-                                className={Club.currentPrem ? "grayscale-0" : "grayscale hover:grayscale-0"}
+                                height={80}
+                                className={Club.currentPrem ? "grayscale-0 !h-[80px] 2xl:!h-[120px] !max-h-unset !w-auto max-w-auto" : "grayscale hover:grayscale-0 !h-[80px] 2xl:!h-[120px] !max-h-unset !w-auto max-w-auto"}
                                 />
                                 <p className={`text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
                                     {Club.teamName}
