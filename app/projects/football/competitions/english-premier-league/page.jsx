@@ -6,6 +6,9 @@ import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
 import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/components/data/Variables";
+import PremierLeagueData from "@/components/data/Data_For_PremierLeagueTeams";
+
+const numberOfUniqueClubs = PremierLeagueData.length;
 
 const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";
 
@@ -15,7 +18,7 @@ const pageIntroText = "Welcome to the Premier League Hub. This is the place to f
 const premierLeagueHubBlocks = [
 	{
 		title: "All Clubs",
-		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
+		content: `Over the past 30 years of the Premier League, there have been ${numberOfUniqueClubs} different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.`,
 		button: "All Clubs",
 		buttonHref: "/projects/football/competitions/english-premier-league/all-clubs",
 		buttonTitle: "All Clubs",
