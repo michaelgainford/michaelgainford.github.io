@@ -62,6 +62,8 @@ module.exports = {
         'xxs': '380px',
         'xs': '450px',
         '3xl': '1800px',
+        '4xl': '2100px',
+        '5xl': '2400px',
       },
     },
   },

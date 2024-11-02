@@ -14,11 +14,11 @@ const pageIntroText = "Welcome to the Premier League Hub. This is the place to f
 // create an array to store the blocks of data to populate the page
 const premierLeagueHubBlocks = [
 	{
-		title: "Clubs in Focus",
+		title: "All Clubs",
 		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
-		button: "Clubs in Focus",
+		button: "All Clubs",
 		buttonHref: "/projects/football/competitions/english-premier-league/all-clubs",
-		buttonTitle: "Clubs in Focus",
+		buttonTitle: "All Clubs",
 		image: "premier-league-clubs.webp"
 	},
 	{
@@ -75,7 +75,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 					{premierLeagueHubBlocks.map((block, index) => {
 						return (
-							<div key={index} className="flex flex-col h-full gap-4 divide-y">
+							<div key={index} className="flex flex-col h-full gap-4 divide-y rounded-lg">
 								<h2 className="pl-2 text-sm leading-none border-l-4 lg:border-l-8 border-amber-500">{block.title}</h2>
 								<div className="pt-4 content">
 									<div className={blockImagePlaceholderStyles}>
