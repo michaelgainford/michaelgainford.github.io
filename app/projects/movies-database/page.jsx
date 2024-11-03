@@ -34,18 +34,18 @@ export default function PAGE_MOVIES_DATABASE() {
 				{/* Watched Movies */}
 				<div className={watchedMoviesCombinedStyles} id="watched-movies">
 					{watchedMovies.map((movie, id) => (
-					<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-black/80 text-light_colour border-secondary group hover:bg-secondary bg-black/90 relative md:max-w-[200px] snap-always snap-center max-md:mr-12 mb-8">
+					<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-black/80 text-light_colour border-secondary group hover:bg-secondary bg-black/90 relative md:max-w-[200px] xl:max-w-[250px] snap-always snap-center max-md:mr-12 mb-8">
 						<div className="w-full max-w-full movie-poster">
 							<Image 
 							  src={movie.image} 
-							  className={`max-md:min-w-[200px] md:min-w-[120px]max-w-[200px] object-cover duration-1000 lg:opacity-50 group-hover:lg:opacity-100 scale-[120%] group-hover:scale-100 group-hover:ease-in-out w-full`}
+							  className={`max-md:min-w-[200px] md:min-w-[120px]max-w-[200px] object-cover duration-1000 lg:opacity-50 group-hover:lg:opacity-100 scale-[100%] group-hover:scale-[120%] group-hover:ease-in-out w-full rounded-sm`}
 							  alt={movie.title} 
 							  height={300} 
 							  width={200} 
 							/>
 						</div>
 						<div className="w-full transition-all duration-300 opacity-0 movie-info lg:absolute lg:-bottom-16 group-hover:opacity-100 group-hover:bottom-0">
-							<p className="movie-title bg-black/70 w-full px-2  ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 text-center text-xs min-h-[60px] max-w-full flex items-center justify-center">{movie.title}</p>
+							<p className="movie-title bg-black/80 w-full px-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 text-center text-xs min-h-[60px] max-w-full flex items-center justify-center xl:text-sm">{movie.title}</p>
 						</div>
 					</div>
 					))}
@@ -56,18 +56,18 @@ export default function PAGE_MOVIES_DATABASE() {
 					<h2 className="mb-4 text-lg" id="to-watch">To Watch</h2>
 					<div className="min-h-[100px] movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 md:gap-6 lg:gap-8 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
 						{unwatchedMovies.map((movie, id) => (
-						<div key={id} className="flex items-center content-center duration-300 ease-in-out cursor-pointer gap-2 movie-card justify-items-center text-light_colour border-secondary group hover:bg-secondary snap-always snap-center shrink-0 w-[300px]">
+						<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out cursor-pointer gap-2 movie-card justify-items-center text-light_colour border-secondary group hover:bg-secondary snap-always snap-center shrink-0 w-[144px]">
 							<div className="w-full max-w-full movie-poster">
 								<Image 
 								  src={movie.image} 
 								  className={`object-cover w-full duration-1000 border-tr-md border-tl-md lg:opacity-50 group-hover:lg:opacity-100 group-hover:ease-in-out !aspect-[2/3]`} 
 								  alt={movie.title} 
-								  width={200} 
-								  height={300} 
+								  width={144} 
+								  height={216} 
 								/>
 							</div>
 							<div className="w-full py-2 movie-info">
-								<p className="movie-title bg-black w-full py-2 px-3 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 text-xs min-h-[60px] max-w-full flex items-center justify-center h-full line-clamp-3 xl:text-base">
+								<p className="movie-title bg-black w-full py-2 px-3 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 group-hover:xl:opacity-100 text-xs min-h-[60px] max-w-full flex items-center justify-center h-full line-clamp-3 text-center">
 									{movie.title}
 								</p>
 							</div>
