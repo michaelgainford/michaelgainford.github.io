@@ -731,12 +731,12 @@ const DataForMovies = [
   {
     id: 62,
     title: "The Jungle Book",
-    image:  "/movies-images/the-jungle-book.webp",
+    image:  "/movies-images/the-jungle-book-original.webp",
     imdb_url: "https://www.imdb.com/title/tt0061852/",
     description: "Bagheera the Panther and Baloo the Bear have a difficult time trying to convince",
-    year: 1994,
+    year: 1967,
     genre: "Animation",
-    duration: 111,
+    duration: 78,
     watched: true,
   },
   {
@@ -1357,9 +1357,9 @@ const DataForMovies = [
     imdb_url: "https://www.imdb.com/title/tt3040964/",
     description: 
       "After a threat from the tiger Shere Khan forces him to flee",
-    year: 1967,
-    genre: "Animation",
-    duration: 78,
+    year: 2016,
+    genre: "Adventure",
+    duration: 106,
     watched: true,
   },
   {
@@ -1480,7 +1480,7 @@ const DataForMovies = [
     genre: "Drama",
     duration: 142,
     watched: true,
-  }
+  },
 ];
 
 export default DataForMovies;
