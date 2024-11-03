@@ -5,6 +5,7 @@ import Icon_GitHub from "@/components/icons/IconGithub";
 import Icon_LinkedIn from "@/components/icons/IconLinkedIn";
 import Icon_Resource from "@/components/icons/IconResource";
 import Icon_W3Schools from "@/components/icons/IconW3Schools";
+import Icon_Docs from "@/components/icons/IconDocs";
 
 const DataForDevResources = [
   {
@@ -57,7 +58,7 @@ const DataForDevResources = [
     slug: "font-awesome",
     url: "https://fontawesome.com",
     screenshot: "/dev-resources/screenshot-of--font-awesome.webp",
-    icon: Icon_Resource,
+    icon: Icon_Font,
     tags: ["typography", "icons"],
     featured: true,
   },
@@ -120,7 +121,7 @@ const DataForDevResources = [
     slug: "mdn-docs",
     url: "https://developer.mozilla.org/en-US/",
     screenshot: "/dev-resources/screenshot-of--mdn-web-docs.webp",
-    icon: Icon_Resource,
+    icon: Icon_Docs,
     tags: ["docs", "web dev"],
     featured: true,
   },
@@ -165,7 +166,7 @@ const DataForDevResources = [
     slug: "tailwind-css",
     url: "https://tailwindcss.com",
     screenshot: "/dev-resources/screenshot-of--tailwind-css.webp",
-    icon: Icon_Resource,
+    icon: Icon_Docs,
     tags: ["css"],
     featured: true,
   },
