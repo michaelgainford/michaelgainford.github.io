@@ -8,6 +8,7 @@ import Icon_Template from "@/components/icons/IconTemplate";
 import Icon_Planet from "@/components/icons/IconPlanet";
 //import Icon_PremierLeague from "@/components/icons/Icon_PremierLeagueLogo";
 import Icon_PremierLeagueSimple from "@/components/icons/Icon_PremierLeagueLogoSimple";
+import Icon_Construction from "@/components/icons/IconConstruction";
 
 const DataForAllProjects = [
   {
@@ -24,6 +25,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/resources:fill-slate-100 group-hover/resources:text-slate-100",
     description: "A collection of useful resources for web developers and designers.",
     category: "web dev",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -40,6 +42,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/euros:fill-slate-900 group-hover/euros:text-slate-100",
     description: "A page dedicated to the Euro 2024 football competition.",
     category: "football",
+    underConstruction: false,
     archived: true,
   },
   {
@@ -54,6 +57,7 @@ const DataForAllProjects = [
     hover: "hover:bg-blue-700",
     description: "A page dedicated to Everton Football Club",
     category: "football",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -68,6 +72,7 @@ const DataForAllProjects = [
     hover: "hover:bg-fn-dark-blue",
     description: "A page dedicated to the video game Fortnite.",
     category: "gaming",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -84,6 +89,7 @@ const DataForAllProjects = [
     groupHover: "group-hover/jokes:fill-slate-100 group-hover/jokes:text-slate-100",
     description: "A collection of random jokes to make you laugh.",
     category: "fun",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -98,8 +104,9 @@ const DataForAllProjects = [
     hover: "hover:bg-gray-800",
     group: "group/movies",
     groupHover: "group-hover/movies:fill-slate-100 group-hover/movies:text-slate-100",
-    description: "A database of movies I have watched with my son.",
+    description: "A database of movies watched or to watch by the Pigeon & Parrot Movie Club (PPMC).",
     category: "fun",
+    underConstruction: false,
     archived: false,
   },
   /* 
@@ -129,6 +136,7 @@ const DataForAllProjects = [
     hover: "hover:bg-sky-800",
     description: "A collection of motivational and inspirational quotes to inspire you.",
     category: "fun",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -141,8 +149,9 @@ const DataForAllProjects = [
     border: "border-purple-700",
     hover: "hover:bg-purple-800",
     divider: "divide-purple-700",
-    description: "A project about the Premier League",
+    description: "A project about the English Premier League",
     category: "football",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -155,8 +164,9 @@ const DataForAllProjects = [
     border: "border-slate-700/50",
     divider: "divide-slate-500",
     hover: "hover:bg-slate-700",
-    description: "A project about space and it's 8 planets.",
+    description: "A project about our solar system and it's 8 planets.",
     category: "space",
+    underConstruction: false,
     archived: false,
   },
   {
@@ -169,11 +179,27 @@ const DataForAllProjects = [
     border: "border-slate-800",
     divider: "divide-slate-800",
     hover: "hover:bg-[#2BC9BC]/80",
-    description: "A template for a project",
-    category: "template",
+    description: "An online eFootball competition for the MAG community.",
+    category: "gaming",
+    underConstruction: false,
     archived: false,
   },
   {
+    name: "Geography",
+    href: "/",
+    featuredProject: false,
+    icon: Icon_Construction,
+    color: "text-slate-300",
+    bg: "bg-gradient-to-br from-[#0000A5] from-40% to-[#34A56F] to-[92]%",
+    border: "border-slate-700",
+    divider: "divide-slate-500",
+    hover: "bg-gradient-to-br from-blue-400/80 from-20% to-green-400/80 to-80%",
+    description: "A template for a project about geography.",
+    category: "template",
+    underConstruction: true,
+    archived: false,
+  },
+ /*  {
     name: "Template",
     href: "/",
     featuredProject: false,
@@ -214,21 +240,7 @@ const DataForAllProjects = [
     description: "A template for a project",
     category: "template",
     archived: true,
-  },
-  {
-    name: "Template",
-    href: "/",
-    featuredProject: false,
-    icon: Icon_Template,
-    color: "text-slate-200",
-    bg: "bg-slate-500",
-    border: "border-slate-700",
-    divider: "divide-slate-500",
-    hover: "hover:bg-slate-700",
-    description: "A template for a project",
-    category: "template",
-    archived: true,
-  }
+  } */
 ];
 
 export default DataForAllProjects;

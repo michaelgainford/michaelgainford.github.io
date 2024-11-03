@@ -731,12 +731,12 @@ const DataForMovies = [
   {
     id: 62,
     title: "The Jungle Book",
-    image:  "/movies-images/the-jungle-book.webp",
+    image:  "/movies-images/the-jungle-book-original.webp",
     imdb_url: "https://www.imdb.com/title/tt0061852/",
     description: "Bagheera the Panther and Baloo the Bear have a difficult time trying to convince",
-    year: 1994,
+    year: 1967,
     genre: "Animation",
-    duration: 111,
+    duration: 78,
     watched: true,
   },
   {
@@ -1357,9 +1357,9 @@ const DataForMovies = [
     imdb_url: "https://www.imdb.com/title/tt3040964/",
     description: 
       "After a threat from the tiger Shere Khan forces him to flee",
-    year: 1967,
-    genre: "Animation",
-    duration: 78,
+    year: 2016,
+    genre: "Adventure",
+    duration: 106,
     watched: true,
   },
   {
@@ -1480,7 +1480,154 @@ const DataForMovies = [
     genre: "Drama",
     duration: 142,
     watched: true,
-  }
+  },
+  {
+    id: 125,
+    title: "Training Day",
+    image: "/movies-images/training-day.webp",
+    imdb_url: "https://www.imdb.com/title/tt0139654/",
+    description:
+      "On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the LAPD with a rogue detective who isn't what he appears to be.",
+    year: 2001,
+    genre: "Action",
+    duration: 122,
+    watched: false
+  },
+  {
+    id: 126,
+    title: "Inside Out 2",
+    image: "/movies-images/inside-out-2.webp",
+    imdb_url: "https://www.imdb.com/title/tt2096673/",
+    description:
+      "A sequel to the 2015 film, 'Inside Out'.",
+    year: 2022,
+    genre: "Animation",
+    duration: 120,
+    watched: false,
+  },
+  {
+    id: 127,
+    title: "Face Off",
+    image: "/movies-images/face-off.webp",
+    imdb_url: "https://www.imdb.com/title/tt0119094/",
+    description:
+      "In order to  foil an extortion plot, an FBI agent undergoes a facial transplant surgery and assumes the identity and physical  appearance",
+    year: 1997,
+    genre: "Action",
+    duration: 138,
+    watched: false,
+  },
+  {
+    id: 128,
+  title: "Pulp Fiction",
+  image: "/movies-images/pulp-fiction.webp",
+  imdb_url: "https://www.imdb.com/title/tt0110912/",
+  description:
+    "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+  year: 1994,
+  genre: "Crime",
+  duration: 154,
+  watched: false,
+},
+{
+  id: 129,
+  title: "Fight Club",
+  image: "/movies-images/fight-club.webp",
+  imdb_url: "https://www.imdb.com/title/tt0137523/",
+  description:
+    "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+  year: 1999,
+  genre: "Drama",
+  duration: 139,
+  watched: false,
+},
+{
+  id: 130,
+  title: "The Usual Suspects",
+  image: "/movies-images/the-usual-suspects.webp",
+  imdb_url: "https://www.imdb.com/title/tt0114814/",
+  description:
+    "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+  year: 1995,
+  genre: "Crime",
+  duration: 106,
+  watched: false,
+},
+{
+  id: 131,
+  title: "Inception",
+  image: "/movies-images/inception.webp",
+  imdb_url: "https://www.imdb.com/title/tt1375666/",
+  description:
+    "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+  year: 2010,
+  genre: "Action",
+  duration: 148,
+  watched: false,
+},
+{
+  id: 132,
+  title: "Se7en",
+  image: "/movies-images/se7en.webp",
+  imdb_url: "https://www.imdb.com/title/tt0114369/",
+  description:
+    "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+  year: 1995,
+  genre: "Crime",
+  duration: 127,
+  watched: false,
+},
+{
+  id: 133,
+  title: "The Truman Show",
+  image: "/movies-images/the-truman-show.webp",
+  imdb_url: "https://www.imdb.com/title/tt0120382/",
+  description:
+    "An insurance salesman discovers his whole life is actually a reality TV show.",
+  year: 1998,
+  genre: "Comedy",
+  duration: 103,
+  watched: false,
+},
+{
+  id: 134,
+  title: "Kill Bill: Vol. 1",
+  image: "/movies-images/kill-bill-vol-1.webp",
+  imdb_url: "https://www.imdb.com/title/tt0266697/",
+  description:
+    "After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+  year: 2003,
+  genre: "Action",
+  duration: 111,
+  watched: false,
+},
+{
+  id: 135,
+  title: "finding Nemo",
+  image: "/movies-images/finding-nemo.webp",
+  imdb_url: "https://www.imdb.com/title/tt0266543/",
+  description:
+    "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+  year: 2003,
+  genre: "Animation",
+  duration: 100,
+  watched: true,
+},
+{
+  id: 136,
+  title: "Kill Bill: Vol. 2",
+  image: "/movies-images/kill-bill-vol-2.webp",
+  imdb_url: "https://www.imdb.com/title/tt0378194/",
+  description:
+    "The Bride continues her quest of vengeance against her former boss and lover Bill, the reclusive bouncer Budd, and the treacherous, one-eyed Elle.",
+  year: 2004,
+  genre: "Action",
+  duration: 137,
+  watched: false,
+}
 ];
+
+  
+
 
 export default DataForMovies;

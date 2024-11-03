@@ -339,6 +339,17 @@ const FortniteSeasonsData = [
     theme: "Absolute Doom",
     mobileImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
     desktopImage: "/gaming/fortnite/c5-s4-season-artwork.webp",
+  },
+  {
+    name: "C5 Season Remix",
+    chapter: 5,
+    season: "Remix",
+    overall_season: 32,
+    startDate: "2024-11-01",
+    endDate: "2025-01-01",
+    theme: "Remix",
+    mobileImage: "/gaming/fortnite/c5-sremix-season-artwork.webp",
+    desktopImage: "/gaming/fortnite/c5-sremix-season-artwork.webp",
   }
 ]
 
