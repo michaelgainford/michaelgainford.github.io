@@ -3,12 +3,12 @@ import Icon_Football from "@/components/icons/IconFootball";
 import Icon_Movies from "@/components/icons/IconMovies";
 import Icon_Laptop from "@/components/icons/IconLaptop";
 import Icon_Quote from "@/components/icons/IconQuote";
+import Icon_Earth from "@/components/icons/IconEarth";
 import Icon_Gamepad from "@/components/icons/IconGamepad";
-import Icon_Template from "@/components/icons/IconTemplate";
+//import Icon_Template from "@/components/icons/IconTemplate";
 import Icon_Planet from "@/components/icons/IconPlanet";
-//import Icon_PremierLeague from "@/components/icons/Icon_PremierLeagueLogo";
 import Icon_PremierLeagueSimple from "@/components/icons/Icon_PremierLeagueLogoSimple";
-import Icon_Construction from "@/components/icons/IconConstruction";
+//import Icon_Construction from "@/components/icons/IconConstruction";
 
 const DataForAllProjects = [
   {
@@ -87,7 +87,7 @@ const DataForAllProjects = [
     hover: "hover:bg-rose-800",
     group: "group/jokes",
     groupHover: "group-hover/jokes:fill-slate-100 group-hover/jokes:text-slate-100",
-    description: "A collection of random jokes to make you laugh.",
+    description: "A collection of one-liner jokes. I bet (at least) one will make you laugh.",
     category: "fun",
     underConstruction: false,
     archived: false,
@@ -109,21 +109,6 @@ const DataForAllProjects = [
     underConstruction: false,
     archived: false,
   },
-  /* 
-  {
-    name: "My Dev Dashboard",
-    href: "/web-development/my-dashboard",
-    featuredProject: false,
-    icon: Icon_Laptop,
-    color: "text-slate-200",
-    bg: "bg-teal-900",
-    border: "border-teal-700",
-    divider: "divide-teal-700",
-    hover: "hover:bg-teal-800",
-    description: "A dashboard for my web development projects.",
-    category: "web dev",
-    archived: false,
-  }, */
   {
     name: "Quotes",
     href: "/projects/quotes",
@@ -188,12 +173,12 @@ const DataForAllProjects = [
     name: "Geography",
     href: "/",
     featuredProject: false,
-    icon: Icon_Construction,
-    color: "text-slate-300",
-    bg: "bg-gradient-to-br from-[#0000A5] from-40% to-[#34A56F] to-[92]%",
+    icon: Icon_Earth,
+    color: "text-slate-700",
+    bg: "bg-gradient-to-br from-[#92FE9D] to-[#00C9FF]",
     border: "border-slate-700",
     divider: "divide-slate-500",
-    hover: "bg-gradient-to-br from-blue-400/80 from-20% to-green-400/80 to-80%",
+    hover: "bg-gradient-to-br from-[#92FE9D]/80 to-[#00C9FF]/80",
     description: "A template for a project about geography.",
     category: "template",
     underConstruction: true,
