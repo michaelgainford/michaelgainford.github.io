@@ -44,6 +44,7 @@ export default function PAGE_DEV_RESOURCES() {
 					    flex flex-col items-center justify-center text-center duration-300 rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 
 						hover:bg-gradient-to-b hover:from-teal-800 hover:to-teal-950 
 					  `}
+					  title={resource.description? resource.description : resource.name}
 					>
 						<div className={`relative w-full overflow-hidden bg-teal-700 rounded-t-lg resource-image`}>
 							<Image 
