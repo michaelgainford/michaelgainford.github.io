@@ -33,7 +33,7 @@ const pageTextColour = `text-slate-900`;
 const subSectionHeadingStyles = `mb-8 text-slate-100 uppercase text-sm tracking-widest underline decoration-4 underline-offset-8 lg:mb-8 lg:text-lg lg:mt-6`;
 {/* Styles - Snap */}
 const snapContainerStyles = `snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8`;
-const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:!aspect-[1000/563] lg:hover:opacity-100 xl:min-w-[800px]`;
+const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:!aspect-[1000/563] lg:hover:opacity-100 xl:min-w-[800px] snap-always snap-center`;
 const snapSlideImageStyles = `relative inset-0 z-0 w-full h-full object-fit`;
 const snapSlideImageOverlayStyles = `absolute inset-0 z-10 w-full h-full duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 group-hover/season:bg-opacity-0`;
 
