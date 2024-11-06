@@ -58,6 +58,9 @@ module.exports = {
       container: {
         center: true,
       },
+      fontSize: {
+        'xxs': '.625rem',
+      },
       screens: {
         'xxs': '380px',
         'xs': '450px',
