@@ -302,16 +302,17 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 					
 					<div className={`rule-group mb-8 mt-8 lg:mb-12`}>
 						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Season Rules</p>
-						<ul className={`text-sm`}>
+						<ul className={`text-sm flex flex-col gap-1`}>
 							<li className={`pt-4`}>3 teams</li>
-							<li>Each team plays each other 8 times</li>
+							<li>Each team to play 8 games per season (max. 24 points)</li>
 							<li>Each team players each other 4 times at home and 4 times away from home</li>
+							<li>Prize money: &pound;10</li>
 						</ul>
 					</div>
 
 					<div className={`rule-group mb-8 mt-8 [&>p]:mb-1 lg:mb-12`}>
 						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Disciplinary Rules</p>
-						<ul className={`text-sm`}>
+						<ul className={`text-sm flex flex-col gap-1`}>
 							<li className={`pt-4`}>A red card for 2 yellows card = 1 match ban</li>
 							<li>A straight red card = 3 match ban</li>
 						</ul>
@@ -319,7 +320,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 
 					<div className={`rule-group mb-8 mt-8 [&>p]:mb-1`}>
 						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Game Settings</p>
-						<ul className={`text-sm`}>
+						<ul className={`text-sm flex flex-col gap-1`}>
 							<li className={`pt-4`}>13 minute matches</li>
 							<li>Excellent Condition</li>
 							<li>5 Subs</li>

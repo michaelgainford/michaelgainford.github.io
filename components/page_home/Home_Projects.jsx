@@ -9,12 +9,12 @@ export default function COMPONENT_HOME_PROJECTS() {
 	return (
 		<div className="w-full projects-list">
 			<H2SectionHeader text="Featured Projects" />
-			<div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 md:gap-8 lg:gap-8 lg:grid-cols-2 xl:gap-12 2xl:grid-cols-2">
+			<div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 md:gap-8 lg:gap-8 lg:grid-cols-2 xl:gap-12 2xl:grid-cols-2 motion motion-preset-slide-up motion-delay-[1000ms] motion-ease-spring-bouncier">
 			{featuredProjects.map((project, index) => (
 				<Link
 				  key={index}
 				  href={project.href}
-				  className={`flex flex-col items-center justify-center font-light tracking-wide transition border rounded-lg ${project.border} ${project.group} project ${project.hover} bg-gradient-to-b from-slate-900/40 to-slate-900/60 aspect-[3/2] group border-opacity-50  bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 max-md:gap-0 md:aspect-[3/2] md:p-4 2xl:border-2 hover:opacity-100`}
+				  className={`flex flex-col items-center justify-center font-light tracking-wide transition border rounded-lg ${project.border} ${project.group} project ${project.hover} bg-gradient-to-b from-slate-900/40 to-slate-900/60 aspect-[3/2] group border-opacity-50  bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 max-md:gap-0 md:aspect-[3/2] md:p-4 2xl:border-2 hover:opacity-100 motion motion-preset-slide-up motion-delay-[1000ms] motion-ease-spring-bouncier`}
 				>
 					<span className={`flex w-[27%] justify-center items-end ${project.groupHover} h-1/2 md:w-[23%] xl:w-[20%]`}>  
 						<project.icon 
@@ -28,7 +28,7 @@ export default function COMPONENT_HOME_PROJECTS() {
 				</Link>
 			))}
 			</div>
-			<div className="flex justify-start mt-8 lg:mt-12">
+			<div className="flex justify-start mt-8 lg:mt-12 motion motion-preset-slide-up motion-delay-[1000ms] motion-ease-spring-bouncier">
 				<Button 
 				  href="/projects"
 				  label="View All Projects"

@@ -20,7 +20,7 @@ export default function HEADER() {
 	}
 
 	return (
-		<header className={`w-full`}>
+		<header className={`w-full motion motion-preset-slide-right`}>
 			<div
 				className={`header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-row justify-between gap-1 py-6 mx-auto sm:items-center lg:gap-2`}
 			>

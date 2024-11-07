@@ -7,7 +7,7 @@ export default function FOOTER(customTextColour) {
 		<footer className={`w-full`}>
 			<div 
 			  className={`
-				w-[90%] max-w-[2000px] flex flex-col gap-1 pt-6 tracking-wider mx-auto 
+				w-[90%] max-w-[2000px] flex flex-col gap-1 pt-6 tracking-wider mx-auto motion motion-preset-fade motion-delay-[1000ms] motion-ease-spring-bouncier
 				max-md:mt-16
 				md:w-[92%] md:mt-8 
 				lg:pb-2 lg:gap-4 lg:justify-between lg:pt-16 
