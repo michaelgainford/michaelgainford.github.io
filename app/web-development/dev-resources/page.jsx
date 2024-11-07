@@ -32,7 +32,7 @@ export default function PAGE_DEV_RESOURCES() {
 				    grid w-full grid-cols-2 pt-4 resources gap-x-4 gap-y-8 
 					sm:pt-6 sm:grid-cols-3 
 					md:gap-8 md:grid-cols-3 
-					lg:grid-cols-4 lg:gap-12 lg:pt-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-ease-spring-bouncier
+					lg:grid-cols-4 lg:gap-12 lg:pt-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500
 				  `}
 				>
 				  {ResourcesSortedByName.map((resource, index) => (
