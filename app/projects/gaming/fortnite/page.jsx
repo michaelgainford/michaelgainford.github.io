@@ -33,10 +33,9 @@ const pageTextColour = `text-slate-900`;
 const subSectionHeadingStyles = `mb-8 text-slate-100 uppercase text-sm tracking-widest underline decoration-4 underline-offset-8 lg:mb-8 lg:text-lg lg:mt-6`;
 {/* Styles - Snap */}
 const snapContainerStyles = `snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8`;
-const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:!aspect-[1000/563] lg:hover:opacity-100 xl:min-w-[800px] snap-always snap-center`;
-const snapSlideImageStyles = `relative inset-0 z-0 w-full h-full object-fit`;
-const snapSlideImageOverlayStyles = `absolute bottom-0 w-full bg-black/80 z-10 w-full xl:h-[120px] mt-auto duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 group-hover/season:bg-opacity-0 lg:hidden`;
-
+const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:!aspect-[1000/563] lg:hover:opacity-100 xl:min-w-[800px] snap-always snap-center cursor-pointer overflow-hidden`;
+const snapSlideImageStyles = `relative inset-0 z-0 w-full h-full object-fit z-1`;
+const snapSlideImageOverlayStyles = `absolute translate-y-32 bottom-0 w-full bg-black/80 z-10 w-full xl:h-[120px] mt-auto duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 hidden group-hover/season:block transition w-full !flex items-center justify-center group-hover/season:bottom-0 transform group-hover/season:translate-y-0 z-0 text-slate-300 text-xxs lg:text-sm py-2 text-center group-hover/season:opacity-100 flex-col`;
 
 {/* Content */}
 const pageIntroText = `Fortnite is a free-to-play Battle Royale game that has taken the world by storm. It is available on all platforms and has a huge following. The game is known for its unique building mechanics and fun gameplay. Fortnite has a unique art style and is constantly updated with new content. The game has a competitive scene with tournaments and events. Fortnite is a cultural phenomenon and has become a huge part of popular culture.`;
@@ -81,7 +80,7 @@ export default function PAGE_FORTNITE() {
 						{chapter1Data.map((season, index) => (
 						<div
 						  key={index}
-						  className={`${snapSlideStyles} relative`}
+						  className={`${snapSlideStyles} relative motion motion-preset-slide-left motion-delay-[1000ms] motion-ease-spring-bouncier`}
 						>
 							<Image
 							  src={season.mobileImage}
@@ -90,7 +89,15 @@ export default function PAGE_FORTNITE() {
 							  height={338}
 							  className={snapSlideImageStyles}
 							/>
-							<div className={`${snapSlideImageOverlayStyles} text-slate-300 text-xxs py-2 text-center`}>C{season.chapter}, S{season.season}: { season.startDate } to { season.endDate } ({season.theme})</div>
+							<div className={snapSlideImageOverlayStyles}>
+								<div className="uppercase chapter-and-season lg:text-base">
+									Chapter {season.chapter}, Season {season.season} 
+								</div>
+								<div className="run-dates">
+								{new Date(season.startDate).toLocaleDateString('en-GB')} to {new Date(season.endDate).toLocaleDateString('en-GB')}
+								</div>
+								<div className="theme">({season.theme})</div>
+							</div>
 						</div>
 						))}
 					</div>
