@@ -1,6 +1,6 @@
 export default function H2_SECTION_HEADER ({ text }) {
 	return (
-		<h2 className="py-2 mb-2 text-sm font-normal leading-relaxed tracking-wider text-center text-slate-400 max-sm:uppercase sm:text-left md:text-lg lg:text-lg lg:font-medium lg:py-4 lg:mb-3 xl:text-xl 2xl:mb-6 3xl:text-2xl">
+		<h2 className="py-2 mb-2 text-sm font-normal leading-relaxed tracking-wider text-center text-slate-400 max-sm:uppercase sm:text-left md:text-lg lg:text-lg lg:font-medium lg:py-4 lg:mb-3 xl:text-xl 2xl:mb-6 3xl:text-2xl motion motion-preset-slide-up motion-delay-[800ms]">
 			{text}
 		</h2>
 	)

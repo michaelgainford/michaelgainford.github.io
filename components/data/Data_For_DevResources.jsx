@@ -14,6 +14,8 @@ const DataForDevResources = [
     url: "https://caniuse.com",
     description: "Can I Use is a tool that provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
     screenshot: "/dev-resources/screenshot-of--can-i-use.webp",
+    home_icon_fill: "fill-transparent",
+    icon_fill: "fill-transparent",
     icon: Icon_Resource,
     tags: ["web dev", "browsers"],
     featured: false,
