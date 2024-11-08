@@ -71,7 +71,7 @@ export default function PAGE_JOKES() {
 					text="A collection of one-liner jokes. I bet (at least) one will make you laugh."
 					other_classes={`text-balance text-center`}
 				/>
-				<div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:gap-16 xl:grid-cols-3">
+				<div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:gap-16 xl:grid-cols-3 motion motion-preset-slide-up motion-delay-1000">
 					{jokes.map((joke, index) => (
 					<div key={index} className="border border-rose-700 bg-rose-900 p-4 rounded-lg min-h-[200px] space-y-4 text-center flex items-center flex-col justify-center">
 						<p className="text-xl font-light uppercase">{joke.setup}</p>
