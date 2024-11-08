@@ -3,7 +3,7 @@ import DataForSocials from "/components/data/Data_For_Socials";
 import FooterSectionHeader from "./Footer_Section_Header";
 const footerAboutText = "My name is Michael. I am Front-End Developer from and living in the North West of England. By day, I currently work as a Shopify Developer working on e-commerce websites and stores for a large Shopify agency. By night, I use Next.js, React, and Tailwind CSS to create fun and practical ways of brightening one's day.";
 
-export default function FOOTER_ABOUT() {
+export default function COMPONENT_FOOTER_ABOUT() {
   return (
     <div className={`footer-about flex flex-col col-span-1 gap-2 lg:col-span-2`}>
 		<FooterSectionHeader text={`About`} />

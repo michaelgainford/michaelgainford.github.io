@@ -253,17 +253,17 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
       	<main className={`${mainStyles} gap-12`}>
 			
 			{/* Page Header | Start */}
-			<div className={`page-header`}>
+			<div className={`page-header motion motion-preset-slide-up motion-delay-100`}>
 				<div className={`flex flex-col`}>
 					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} />
 				</div>
-				<H1 text={`The MAG Premier League`} className={``} />
+				<H1 text={`The MAG Premier League`} className={`!max-lg:pt-0 text-balance`} />
 			</div>
 			{/* Page Header | End */}
 
 
 			{/* Rules | Start */}
-			<details className={`flex flex-col pb-4 ${detailsStyles} ${detailsContentStyles}`}>
+			<details className={`flex flex-col pb-4 ${detailsStyles} ${detailsContentStyles} motion motion-preset-slide-up motion-delay-[300ms]`}>
 				<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-[1000px] ${summaryStyles}`}>
 					<span>The MAG Premier League Rules</span>					
 					<span className={summaryHeaderSvgContainer}>
@@ -333,7 +333,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 
 
 			{/* League Table */}
-			<div className={`my-2 md:my-4 lg:my-8`}>
+			<div className={`my-2 md:my-4 lg:my-8 motion motion-preset-slide-up motion-delay-[600ms]`}>
 				<h2 className={`text-center font-light text-sm lg:text-base`}>League Table</h2>
 				<div className={`flex mt-4`}>
 					<table className={`lg:min-w-[1000px] text-center`}>
@@ -373,7 +373,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			</div>
 
 			{/* Fixtures */}
-			<div className={`!w-full px-4 lg:px-8 max-w-[1000px]`}>
+			<div className={`!w-full px-4 lg:px-8 max-w-[1000px] motion motion-preset-slide-up motion-delay-[900ms]`}>
 				<h3 className={`mb-6 text-center font-light text-sm lg:text-base`}>Fixtures</h3>
 				<div className={`grid grid-cols-1 gap-6`}>
 					{DataForMAGPremierLeague?.map((fixture, index) => (

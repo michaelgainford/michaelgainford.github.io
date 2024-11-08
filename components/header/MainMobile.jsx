@@ -52,6 +52,12 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                 className={`flex mb-4 ${
                   link.label === `Projects` ? `flex-col` : ``
                 }`}
+                onClick={() => { 
+                  setTimeout(() => { 
+                    toggleVisibility();
+                  },
+                  3000);
+                }}
               >
                 <Link
                   className={`px-4 py-3 transition border-l-4 w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${link.border_colour} ${link.hover} min-w-max duration-300 capitalize`}
