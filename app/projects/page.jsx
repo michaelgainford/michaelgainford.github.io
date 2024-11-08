@@ -31,7 +31,7 @@ export default function PAGE_PROJECTS() {
 				  other_classes={`!max-w-[800px] !text-balance !text-center !md:-mt-4`}
 				/>
 
-				<div className={`grid flex-wrap w-full grid-cols-1 gap-6 xs:grid-cols-2 xs:gap-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 2xl:grid-cols-5 2xl:gap-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-ease-spring-bouncier`}>
+				<div className={`grid flex-wrap w-full grid-cols-1 gap-6 xs:grid-cols-2 xs:gap-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 2xl:grid-cols-5 2xl:gap-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-50`}>
 					{DataForProjects.map((project, index) => (
 					<Link key={index} href={project.href} className={`border ${project.border} ${project.bg} ${project.hover} ${project.color} h-full p-4 rounded-lg space-y-4 gap-4 flex flex-col justify-between ${project.archived ? `opacity-50` : ``} cursor-pointer`}>
 						<span className={`flex flex-col items-center gap-3`}>
