@@ -23,7 +23,7 @@ export default function PAGE_SPACE() {
 						<h3 className={`mt-8 mb-4 text-2xl text-center hidden`}>The Planets</h3>
 						<PageIntro text={pageIntroText} text_colour="text-slate-100" />
 						
-						<div className={`grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8 xl:gap-12`}>
+						<div className={`grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8 xl:gap-12 motion motion-preset-slide-up motion-delay-[700ms]`}>
 						{DataForPlanets.map((planet, index) => (
 							<div key={index} className={`w-full border rounded-lg bg-black border-slate-900 flex flex-col items-center px-4 py-8 space-y-2 text-center min-w-[200px] gap-4 max-sm:w-full [&>h2]:text-base [&>h2]:tracking-wider [&>h2]:text-center [&>h2]:font-bold lg:[&_>h2]:text-lg`}>
 								<h2>{planet.name}</h2>

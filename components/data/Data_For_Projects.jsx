@@ -171,7 +171,7 @@ const DataForAllProjects = [
   },
   {
     name: "Geography",
-    href: "/",
+    href: "/projects/the-world",
     featuredProject: false,
     icon: Icon_Earth,
     color: "text-slate-700",
