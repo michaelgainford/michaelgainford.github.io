@@ -1624,6 +1624,18 @@ const DataForMovies = [
   genre: "Action",
   duration: 137,
   watched: false,
+},
+{
+  id: 137,
+  title: "Deadpool and Wolverine",
+  image: "/movies-images/deadpool-and-wolverine.webp",
+  imdb_url: "https://www.imdb.com/title/tt1431045/",
+  description:
+    "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track",
+  year: 2024,
+  genre: "Action",
+  duration: 108,
+  watched: false,
 }
 ];
 
