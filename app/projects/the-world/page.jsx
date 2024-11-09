@@ -8,7 +8,7 @@ import DataForCountries from "@/components/data/Data_For_Countries";
 import { globalPageStyles } from "@/components/data/Variables";
 import { mainStyles } from "@/components/data/Variables";
 
-const pageStyles = "bg-gradient-to-br from-[#00C9FF] to-[#92FE9D] text-sky-900";
+const pageStyles = "bg-gradient-to-br from-[#00C9FF] to-[#92FE9D] text-slate-700";
 const pageIntroText = "Our planet has over 170 countries, over land, which covers approximately 29% of the Earth's surface. Each country has its own unique culture, history, and geography. Explore the countries of the world and learn more about the people and places that make up our diverse planet.";
 const detailsStyles = "border-2 border-sky-900/80 rounded-lg py-0 bg-transparent group !overflow-x-auto open:pb-4 [&_svg]:open:-rotate-180 [&>summary]:open:border-b-2 [&>summary]:open:border-sky-900/80 w-full xl:mx-auto";
 const summaryStyles = "flex justify-between p-4 gap-4 cursor-pointer";
