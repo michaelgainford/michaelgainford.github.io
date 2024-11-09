@@ -27,11 +27,15 @@ export default function PAGE_MOVIES_DATABASE() {
 		<div className={`${globalPageStyles} ${pageStyles}`}>
 			<Header />
 			<main className={`${mainStyles}`}>
-				<div className="flex items-center gap-1 my-8 title-icon">
+				<div className="flex items-center gap-2 my-8 title-icon">
 					<IconMovies classes="size-5 fill-slate-200 lg:size-8"  />
 					<H1 text={`Movies Database`} font_sizes={`!pt-0`} other_classes={`!mb-0 !pb-0`}/>
 				</div>
-				<PageIntro text={pageIntroText} text_colour={`text-current`} other_classes={`text-xs text-balance text-center leading-5 font-light md:text-sm md:mb-20 xl:pb-12`}/>
+				<PageIntro 
+				  text={pageIntroText}
+				  text_colour={`text-current`} 
+				  other_classes={`text-xs text-balance text-center leading-5 font-light md:text-sm md:mb-20 xl:pb-12`}
+				/>
 				<div className="flex w-full gap-4 mb-8 text-xs lg:text-sm tracking-wide motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500 uppercase divide-x divide-gray-800 movies-mini-nav max-sm:justify-center max-sm:mt-8 [&>a]:transition-all [&>a]:duration-300 [&>a]:scroll-smooth xl:mb-16">
 					<a className="hover:underline" href="#watched-movies">🎥 Watched</a>
 					<a className="pl-3 hover:underline" href="#to-watch">⏰ To Watch</a>
@@ -40,7 +44,7 @@ export default function PAGE_MOVIES_DATABASE() {
 				{/* Watched Movies */}
 				<div className={watchedMoviesCombinedStyles} id="watched-movies">
 					{watchedMovies.map((movie, id) => (
-					<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-black/80 text-light_colour border-secondary group hover:bg-secondary bg-black/90 relative xl:max-w-[200px] 2xl:max-w-[250px] snap-always snap-center max-xl:mr-12 mb-8">
+					<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-black/80 text-light_colour border-secondary group hover:bg-secondary bg-black/90 relative xl:max-w-[200px] 2xl:max-w-[200px] snap-always snap-center max-xl:mr-12 mb-8">
 						<div className="w-full max-w-full movie-poster">
 							<Image src={movie.image} className="max-xl:min-w-[200px] xl:min-w-[120px] max-w-[200px] object-cover duration-1000 xl:opacity-50 group-hover:xl:opacity-100 scale-[100%] group-hover:xl:scale-[120%] group-hover:xl:ease-in-out w-full rounded-sm" alt={movie.title} height={300} width={200} />
 						</div>
