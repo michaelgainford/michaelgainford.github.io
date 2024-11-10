@@ -80,7 +80,7 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 				</div>
 				<div className={`${mainStyles} min-h-[300px] flex flex-col gap-4 lg:gap-8 xl:gap-12 [&>div]:p-4 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 
-				<div className="grid w-full grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+				<div className="grid w-full grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 motion motion-preset-slide-up motion-delay-700">
 					{Object.values(sortedByGoals).map((TopScorer, index) => {
 						let clubsDir = "/clubs/";
 						let playerImageExt = ".webp";
@@ -111,7 +111,7 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 									);
 								})}
 								</p>
-								<div className="absolute flex items-center justify-center w-8 text-xs border rounded-lg top-1 left-1 aspect-square lg:text-sm order">
+								<div className="absolute flex items-center justify-center p-1 text-xs leading-none border rounded-lg size-6 top-1 left-1 aspect-square order">
 									{index + 1}
 								</div>
 								<div className={`absolute top-1 right-1 p-1 text-xs player-status rounded-lg lowercase ${TopScorer.playerCurrent ? "bg-emerald-300" : "bg-rose-100"}`}>
