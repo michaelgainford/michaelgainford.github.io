@@ -14,8 +14,8 @@ export default function PAGE_HOME() {
 		<div className={`${pageBackground} ${pageTextColour} ${globalPageStyles}`}>
 			<Header />
 			<main className={mainStyles}>
-			<HomeIntro />
-				<div className={`flex w-full gap-12 max-lg:flex-col lg:gap-24 xl:gap-32 2xl:gap-48`}>
+				{/* <HomeIntro /> */}
+				<div className={`flex w-full mt-8 gap-12 max-lg:flex-col lg:gap-24 xl:gap-32 2xl:gap-48`}>
 					<HomeProjects />
 					<HomeResources />
 				</div>

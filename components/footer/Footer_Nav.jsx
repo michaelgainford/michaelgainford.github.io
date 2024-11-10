@@ -20,7 +20,7 @@ export default function FOOTER_NAV() {
 			<div className={`grid grid-cols-1 pt-4 footer-navs footer-nav sm:gap-16 sm:grid-cols-2 max-sm:mb-4 lg:grid lg:grid-cols-2 lg:flex-row`}>
 				<details className={`${detailsStyles} no-scrollbar`}>
 					<summary className={`${summaryStyles} flex w-full cursor-pointer`}>
-						<FooterNavListHeader text={`Projects`} />
+						<FooterNavListHeader text={`Site Links`} />
 						<span>
 							<svg 
 								className={summaryHeaderSvgStyles} 
@@ -47,7 +47,7 @@ export default function FOOTER_NAV() {
 					</ul>
 				</details>
 				<div className={`footer-nav-group border-slate-700 rounded max-sm:hidden lg:pr-8 max-md:mb-8`}>
-					<FooterNavListHeader text={`Projects`} />
+					<FooterNavListHeader text={`Site Links`} />
 					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
 						{footerNavLinks1.map((item, index) => (
 						<li key={index} className={``}>
@@ -60,7 +60,7 @@ export default function FOOTER_NAV() {
 				</div>
 				<details className={`${detailsStyles} no-scrollbar`}>
 					<summary className={`flex w-full`}>
-						<FooterNavListHeader text={`Boring Stuff`} />
+						<FooterNavListHeader text={`Projects`} />
 						<span>
 							<svg 
 								className={summaryHeaderSvgStyles} 
@@ -87,7 +87,7 @@ export default function FOOTER_NAV() {
 					</ul>
 				</details>
 				<div className={`footer-nav-group rounded border-slate-700 max-sm:hidden lg:pr-8`}>
-					<FooterNavListHeader text={`Boring Stuff`} />
+					<FooterNavListHeader text={`Projects`} />
 					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
 						{footerNavLinks2.map((item, index) => (
 						<li key={index} className={``}>
