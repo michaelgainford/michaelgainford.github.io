@@ -81,16 +81,16 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 				<div className={`${mainStyles} min-h-[300px] flex flex-col gap-4 lg:gap-8 xl:gap-12 [&>div]:p-4 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 
 				<div className="grid w-full grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-					{Object.values(sortedByGoals).map((TopScorer) => {
+					{Object.values(sortedByGoals).map((TopScorer, index) => {
 						let clubsDir = "/clubs/";
 						let playerImageExt = ".webp";
 						let playerImageDir = "/football/premier-league/players/";
 						let playerImage = playerImageDir + TopScorer.playerSlug + playerImageExt;
 						return (
-							<div className="relative flex flex-col gap-4 px-4 py-8 border rounded-lg" key={TopScorer.playerId}>
+							<div className="relative flex flex-col gap-4 px-4 py-8 border rounded-lg lg:py-12" key={TopScorer.playerId}>
 								<h3 className="font-bold uppercase">{TopScorer.playerName}</h3>
 								<Image
-									className="my-4 border-8 border-slate-100"
+									className="w-full my-4 border-8 border-slate-100"
 									src={playerImage}
 									alt={TopScorer.playerName}
 									width={300}
@@ -98,12 +98,12 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 								/>
 								<p className="font-bold">{TopScorer.playerGoals} goals</p>
 								<p className="flex flex-wrap justify-center gap-1 gap-x-4">
-								{Object.values(TopScorer.playerClubs).map((playerClub) => {
+								{Object.values(TopScorer.playerClubs).map((playerClub, index) => {
 									let clubPageLink = clubsDir;
 									return (
 									<Link
 										className="py-1 text-xs border-b-[2px] border-slate-200"
-										key={playerClub.playerSlug}
+										key={index}
 										href={clubPageLink}
 									>
 										{playerClub}
@@ -111,6 +111,12 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 									);
 								})}
 								</p>
+								<div className="absolute flex items-center justify-center w-8 text-xs border rounded-lg top-1 left-1 aspect-square lg:text-sm order">
+									{index + 1}
+								</div>
+								<div className={`absolute top-1 right-1 p-1 text-xs player-status rounded-lg lowercase ${TopScorer.playerCurrent ? "bg-emerald-300" : "bg-rose-100"}`}>
+									{TopScorer.playerCurrent ? "Active" : "Retired"}
+								</div>
 							</div>
 						);
 					})}

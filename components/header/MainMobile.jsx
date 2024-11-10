@@ -35,7 +35,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
           <MainLogo />
           <div className={`flex justify-end`}>
             <div
-              className={`cursor-pointer absolute top-4 right-6 -mt-[6px]`}
+              className={`cursor-pointer absolute top-5 right-[17px] -mt-[6px]`}
               onClick={toggleVisibility}
             >
               <IconCrossNav />
@@ -56,7 +56,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                   setTimeout(() => { 
                     toggleVisibility();
                   },
-                  3000);
+                  1000);
                 }}
               >
                 <Link

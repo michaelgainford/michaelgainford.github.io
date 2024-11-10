@@ -408,7 +408,7 @@ const premierLeagueSeasonsData = [
     {
         id: 31,
         season: "2022/23",
-        text: "",
+        text: "Manchester City won the Premier League title in the 2022/23 season, finishing 12 points ahead of Arsenal. The top goalscorer was Harry Kane of Tottenham Hotspur with 24 goals.",
         winners: "Manchester City (7)",
         runnersUp: "Arsenal (7)",
         relegated: [
@@ -421,7 +421,7 @@ const premierLeagueSeasonsData = [
     {
         id: 32,
         season: "2023/24",
-        text: "",
+        text: "Manchester City won the Premier League title in the 2023/24 season, finishing 10 points ahead of Liverpool. This was City's 4th consecutive title. A new Premier League record.",
         winners: "Manchester City (8), ",
         runnersUp: "Liverpool (5), ",
         relegated: [

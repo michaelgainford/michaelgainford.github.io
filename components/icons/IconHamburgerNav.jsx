@@ -12,11 +12,11 @@ export default function ICON_HAMBURGER_NAV({ classes }) {
           <g>
             <rect id={`Rectangle`} fillRule={`nonzero`} x={`0`} y={`0`} width={`24`} height={`24`}>
             </rect>
-            <line x1={`5`} y1={`7`} x2={`19`} y2={`7`} stroke={`#cbd5e1`} strokeWidth={`2`} strokeLinecap={`round`}>
+            <line x1={`5`} y1={`7`} x2={`19`} y2={`7`} stroke={`currentColor`} strokeWidth={`2`} strokeLinecap={`round`}>
             </line>
-            <line x1={`5`} y1={`17`} x2={`19`} y2={`17`} stroke={`#cbd5e1`} strokeWidth={`2`} strokeLinecap={`round`}>
+            <line x1={`5`} y1={`17`} x2={`19`} y2={`17`} stroke={`currentColor`} strokeWidth={`2`} strokeLinecap={`round`}>
             </line>
-            <line x1={`5`} y1={`12`} x2={`19`} y2={`12`} stroke={`#cbd5e1`} strokeWidth={`2`} strokeLinecap={`round`}>
+            <line x1={`5`} y1={`12`} x2={`19`} y2={`12`} stroke={`currentColor`} strokeWidth={`2`} strokeLinecap={`round`}>
             </line>
           </g>
         </g>
