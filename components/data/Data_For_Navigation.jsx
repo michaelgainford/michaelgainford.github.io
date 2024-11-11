@@ -175,7 +175,6 @@ const DataForNavigation = [
     footerNav_1: false,
     footerNav_2: true,
   },
-  // Add Geography
   {
     label: "Geography",
     href: "/projects/the-world",
