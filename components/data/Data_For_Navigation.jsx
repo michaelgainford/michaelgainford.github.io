@@ -175,6 +175,19 @@ const DataForNavigation = [
     footerNav_1: false,
     footerNav_2: true,
   },
+  // Add Geography
+  {
+    label: "Geography",
+    href: "/projects/the-world",
+    mainNav: false,
+    category: "geography",
+    border_colour: "border-geography",
+    background_colour: "bg-geography",
+    before: "before:bg-geography",
+    hover: "hover:bg-geography",
+    footerNav_1: false,
+    footerNav_2: true,
+  },
 ];
 
 export default DataForNavigation;
