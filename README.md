@@ -60,10 +60,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - **Euro 2024**: A project that I worked on for the Euro 2024 tournament.
   - **Everton**: A project dedicated to Everton Football Club.
   - **Fornite**: A project dedicated to the popular game Fortnite.
-  - **Geography**: UNDER CONSTRUCTION 🏗️
+  - **Geography**: A project that displays information about countries.
   - **Jokes**: A project that displays random jokes.
   - **Movies Database**: A project that displays information about movies either watched or to watch.
-  - **Premier League**: A project that I worked on for the Premier League detailining season-by-season data.
+  - **Premier League**: A project that I worked on for the Premier League detailining season-by-season data, which contains a central hub with separate categories of stats and information. such as all clubs, past seasons and records.
   - **Quotes**: A project that displays random quotes.
   - **Space**: A project that displays information about space.
   - **The Mag Premier League**: A project that displays information about the Mag Premier League. An online eFootball league.
