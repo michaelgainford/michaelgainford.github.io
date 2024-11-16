@@ -5,8 +5,8 @@ import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/components/data/Variables";
-import PremierLeagueData from "@/components/data/Data_For_PremierLeagueTeams";
+import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/data/Variables";
+import PremierLeagueData from "@/data/Data_For_PremierLeagueTeams";
 
 const numberOfUniqueClubs = PremierLeagueData.length;
 

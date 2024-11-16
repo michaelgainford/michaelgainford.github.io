@@ -1,9 +1,9 @@
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import DataForQuotes from "@/components/data/Data_For_Quotes";
+import DataForQuotes from "@/data/Data_For_Quotes";
 const pageStyles = "bg-sky-900 bg-hexagons-background text-sky-300";
 
 export default function PAGE_QUOTES() {

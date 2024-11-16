@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Fragment } from "react";
-import { mainStyles, globalPageStyles, premierLeagueYears, clubLogosRoot, seasonPositions } from "@/components/data/Variables";
-import DataForPremTeams from "@/components/data/Data_For_PremierLeagueTeams";
+import { mainStyles, globalPageStyles, premierLeagueYears, clubLogosRoot, seasonPositions } from "@/data/Variables";
+import DataForPremTeams from "@/data/Data_For_PremierLeagueTeams";
 import Header from "@/components/header/Header";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1Span";

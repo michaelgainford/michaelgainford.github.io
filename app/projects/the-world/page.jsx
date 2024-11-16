@@ -3,10 +3,10 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import PageIntro from "@/components/site_elements/Page_Intro";
-import DataForCountries from "@/components/data/Data_For_Countries";
+import DataForCountries from "@/data/Data_For_Countries";
 
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
 
 const pageStyles = "bg-gradient-to-br from-[#00C9FF] to-[#92FE9D] text-slate-700";
 const pageIntroText = "Our planet has over 170 countries, over land, which covers approximately 29% of the Earth's surface. Each country has its own unique culture, history, and geography. Explore the countries of the world and learn more about the people and places that make up our diverse planet.";

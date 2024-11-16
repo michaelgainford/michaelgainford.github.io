@@ -3,9 +3,9 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
-import evertonSquad from "@/components/data/Data_For_Everton";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
+import evertonSquad from "@/data/Data_For_Everton";
 
 const pageIntroText = `Everton Football Club is a professional football club based in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has competed in the top division for a record 117 seasons and has won the League Championship nine times.`;
 

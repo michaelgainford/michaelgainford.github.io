@@ -5,7 +5,6 @@ import Icon_Laptop from "@/components/icons/IconLaptop";
 import Icon_Quote from "@/components/icons/IconQuote";
 import Icon_Earth from "@/components/icons/IconEarth";
 import Icon_Gamepad from "@/components/icons/IconGamepad";
-//import Icon_Template from "@/components/icons/IconTemplate";
 import Icon_Planet from "@/components/icons/IconPlanet";
 import Icon_PremierLeagueSimple from "@/components/icons/Icon_PremierLeagueLogoSimple";
 //import Icon_Construction from "@/components/icons/IconConstruction";
@@ -179,7 +178,7 @@ const DataForAllProjects = [
     border: "border-[#00C9FF]",
     divider: "divide-slate-500",
     hover: "hover:bg-gradient-to-br from-[#92FE9D]/80 to-[#00C9FF]/80",
-    description: "A template for a project about geography.",
+    description: "A project about the countries of the world.",
     category: "template",
     underConstruction: true,
     archived: false,
@@ -197,35 +196,7 @@ const DataForAllProjects = [
     description: "A template for a project",
     category: "template",
     archived: true,
-  },
-  {
-    name: "Template",
-    href: "/",
-    featuredProject: false,
-    icon: Icon_Template,
-    color: "text-slate-200",
-    bg: "bg-slate-500",
-    border: "border-slate-700",
-    divider: "divide-slate-500",
-    hover: "hover:bg-slate-700",
-    description: "A template for a project",
-    category: "template",
-    archived: true,
-  },
-  {
-    name: "Template",
-    href: "/",
-    featuredProject: false,
-    icon: Icon_Template,
-    color: "text-slate-200",
-    bg: "bg-slate-500",
-    border: "border-slate-700",
-    divider: "divide-slate-500",
-    hover: "hover:bg-slate-700",
-    description: "A template for a project",
-    category: "template",
-    archived: true,
-  } */
+  }, */
 ];
 
 export default DataForAllProjects;

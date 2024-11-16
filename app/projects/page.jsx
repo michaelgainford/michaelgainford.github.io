@@ -3,10 +3,10 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
 
-import DataForProjects from "@/components/data/Data_For_Projects";
+import DataForProjects from "@/data/Data_For_Projects";
 {/* Sort the projects by name... */}
 DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 {/* ...and then by archived status */}

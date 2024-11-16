@@ -3,8 +3,8 @@ import HomeIntro from "@/components/page_home/Home_Intro";
 import HomeResources from "@/components/page_home/Home_Resources";
 import HomeProjects from "@/components/page_home/Home_Projects";
 import Footer from "@/components/footer/Footer";
-import { mainStyles } from "@/components/data/Variables";
-import { globalPageStyles } from "@/components/data/Variables";
+import { mainStyles } from "@/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
 
 const pageBackground = `bg-slate-900 bg-brand-background bg-repeat`;
 const pageTextColour = `text-slate-400`;

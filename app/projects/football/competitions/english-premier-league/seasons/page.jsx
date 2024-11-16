@@ -1,13 +1,13 @@
 import { Fragment } from "react";
-import ClubsData from "@/components/data/Data_For_PremierLeagueTeams";
+import ClubsData from "@/data/Data_For_PremierLeagueTeams";
 const sortedByName = [...ClubsData].sort((a, b) =>
   a.teamName > b.teamName ? 1 : -1
 );
-import DataForPremTeams from "@/components/data/Data_For_PremierLeagueTeams";
+import DataForPremTeams from "@/data/Data_For_PremierLeagueTeams";
 import {
   premierLeagueYears,
   seasonPositions,
-} from "@/components/data/Variables";
+} from "@/data/Variables";
 import Header from "@/components/header/Header";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
@@ -16,8 +16,8 @@ import Footer from "@/components/footer/Footer";
 import H1 from "@/components/typography/H1Span";
 import H2_EPL from "@/components/typography/H2_For_PremierLeague";
 
-import { mainStyles } from "@/components/data/Variables";
-import { globalPageStyles } from "@/components/data/Variables";
+import { mainStyles } from "@/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
 
 // sort by teamName
 const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {

@@ -2,9 +2,9 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import { mainStyles } from "@/components/data/Variables";
-import { globalPageStyles } from "@/components/data/Variables";
-import Euro2024Teams from "@/components/data/Data_For_Euro2024";
+import { mainStyles } from "@/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import Euro2024Teams from "@/data/Data_For_Euro2024";
 
 // Sort by group and then group seeding
 Euro2024Teams.sort((a, b) => {
