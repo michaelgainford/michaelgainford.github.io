@@ -168,34 +168,34 @@ const MAGPremierLeagueFixturesSeason1 = [
     game: 16,
     homeTeam: "Alfie",
     awayTeam: "Garcon",
-    homeScore: -1,
-    awayScore: -1,
+    homeScore: 4,
+    awayScore: 2,
     date: "16/11/2024",
     time: "20:30",
-    upcoming: true,
-    played: false
+    upcoming: false,
+    played: true
   },
   {
     game: 17,
     homeTeam: "Michael",
     awayTeam: "Alfie",
-    homeScore: -1,
-    awayScore: -1,
+    homeScore: 4,
+    awayScore: 6,
     date: "16/11/2024",
     time: "21:00",
-    upcoming: true,
-    played: false
+    upcoming: false,
+    played: true
   },
   {
     game: 18,
     homeTeam: "Garcon",
     awayTeam: "Michael",
-    homeScore: -1,
-    awayScore: -1,
+    homeScore: 0,
+    awayScore: 1,
     date: "16/11/2024",
     time: "21:30",
-    upcoming: true,
-    played: false
+    upcoming: false,
+    played: true
   },
   {
     game: 19,
