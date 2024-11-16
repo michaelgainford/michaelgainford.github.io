@@ -3,10 +3,10 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
 
-import DataForProjects from "@/components/data/Data_For_Projects";
+import DataForProjects from "@/data/Data_For_Projects";
 {/* Sort the projects by name... */}
 DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 {/* ...and then by archived status */}
@@ -38,7 +38,7 @@ export default function PAGE_PROJECTS() {
 
 				<div className="grid flex-wrap w-full grid-cols-1 gap-8 sm:grid-cols-2 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 3xl:grid-cols-5 2xl:gap-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-50">
 					{DataForProjects.map((project, index) => (
-					<Link key={index} href={project.href} className={`border ${project.border} ${project.hover} ${project.color} h-full  rounded-lg space-y-4 gap-4 flex flex-col justify-between bg-transparent max-sm:w-[80%] max-sm:mx-auto hover:transition duration-500 ${project.archived ? `opacity-50` : ``} cursor-pointer group`}>
+					<Link key={index} href={project.href} className={`border ${project.border} ${project.hover} ${project.color} h-full rounded-lg space-y-4 gap-4 flex flex-col justify-between bg-transparent max-sm:w-[80%] max-sm:mx-auto hover:transition duration-500 ${project.archived ? `opacity-50` : ``} cursor-pointer group`}>
 						<span className={`flex justify-center items-center gap-2 lg:gap-4 pt-4 rounded-t-md py-4 ${project.bg} bg-opacity-80 group-hover:bg-opacity-100`}>
 							<span className={`icon-box size-4 rounded-full ${project.bg} flex items-center justify-center ${project.color}`}>
 								<span className="flex items-center justify-center gap-4 size-4">

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import DataForNavigation from "../data/Data_For_Navigation"
+import DataForNavigation from "@/data/Data_For_Navigation"
 const navLinks = DataForNavigation.filter((link) => link.mainNav === true)
 
 export default function COMPONENT_MAIN_NAV() {

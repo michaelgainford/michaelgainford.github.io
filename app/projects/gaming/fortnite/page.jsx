@@ -2,9 +2,9 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
-import DataForFortnite from "@/components/data/Data_For_Fornite";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
+import DataForFortnite from "@/data/Data_For_Fornite";
 import IconFortnite from "@/components/icons/IconFortniteName";
 
 {/* Variables */}

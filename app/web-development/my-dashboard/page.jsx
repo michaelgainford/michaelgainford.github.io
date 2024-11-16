@@ -2,9 +2,9 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
-import DataForMyDevDashboard from "@/components/data/Data_For_MyDevDashboard";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
+import DataForMyDevDashboard from "@/data/Data_For_MyDevDashboard";
 import Button from "@/components/buttons/Button_Global";
 
 // get today's date

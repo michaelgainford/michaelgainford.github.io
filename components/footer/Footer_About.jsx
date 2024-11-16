@@ -1,5 +1,5 @@
 import Link from "next/link";
-import DataForSocials from "/components/data/Data_For_Socials";
+import DataForSocials from "@/data/Data_For_Socials";
 import FooterSectionHeader from "./Footer_Section_Header";
 const footerAboutText = "My name is Michael. I am Front-End Developer from and living in the North West of England. By day, I currently work as a Shopify Developer working on e-commerce websites and stores for a large Shopify agency. By night, I use Next.js, React, and Tailwind CSS to create fun and practical ways of brightening one's day.";
 

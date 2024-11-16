@@ -2,13 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-import ClubsData from "@/components/data/Data_For_PremierLeagueTeams";
+import ClubsData from "@/data/Data_For_PremierLeagueTeams";
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
+const metadata = {
+    title: "Premier League Clubs",
+    description: "All the clubs that have played in the English Premier League since its inception in 1992.",
+}
 
 import H1 from "@/components/typography/H1Span";
 
-import { mainStyles } from "@/components/data/Variables";
-import { globalPageStyles } from "@/components/data/Variables";
+import { mainStyles } from "@/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
@@ -39,14 +43,12 @@ export default function PAGE_PREMIER_LEAGUE () {
                         return (
                             <Link
                               key={Club.clubLogoSlug}
-                              href={``}
-                              // href={club} 
+                              //href={``}
+                              href={club} 
                               data-slug={Club.clubLogoSlug}
-                              className={
-                                Club.currentPrem
-                                ? "club-card current-prem"
-                                : "bg-gray-100 club-card former-prem"
-                              }
+                              className={`${Club.currentPrem}? "club-card current-prem relative cursor-default"
+                                : "bg-gray-100 club-card former-prem cursor-default"`}
+                              title={Club.teamName}
                             >
                                 <Image
                                 src={clubLogosDir}
@@ -58,6 +60,9 @@ export default function PAGE_PREMIER_LEAGUE () {
                                 <p className={`text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
                                     {Club.teamName}
                                 </p>
+                                <span className="absolute top-0 right-0 p-1 bg-emerald-200/30 text-[10px] font-bold tracking-wide">
+                                    Current
+                                </span>
                             </Link>
                         );
                         })}

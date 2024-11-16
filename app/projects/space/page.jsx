@@ -2,11 +2,11 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import DataForSpace from "@/components/data/Data_For_Space";
+import DataForSpace from "@/data/Data_For_Space";
 import PageIntro from "@/components/site_elements/Page_Intro";
 
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
 
 const pageStyles = "bg-black bg-topo-background text-sky-100";
 const DataForPlanets = DataForSpace.filter((planet) => planet.star_or_planet === "planet");

@@ -2,9 +2,9 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
-import DataForMAGPremierLeague from "@/components/data/Data_For_MAGPremierLeague";
-import { globalPageStyles } from "@/components/data/Variables";
-import { mainStyles } from "@/components/data/Variables";
+import DataForMAGPremierLeague from "@/data/Data_For_MAGPremierLeague";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/data/Variables";
 
 ////////////////////////////////////////
 // DATA | START
