@@ -43,8 +43,8 @@ export default function PAGE_PREMIER_LEAGUE () {
                         return (
                             <Link
                               key={Club.clubLogoSlug}
-                              //href={``}
-                              href={club} 
+                              href={``}
+                              //href={club} 
                               data-slug={Club.clubLogoSlug}
                               className={`${Club.currentPrem}? "club-card current-prem relative cursor-default"
                                 : "bg-gray-100 club-card former-prem cursor-default"`}
