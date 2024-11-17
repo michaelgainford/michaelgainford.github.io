@@ -129,10 +129,10 @@ const DataForNavigation = [
   },
   {
     label: "About",
-    href: "/",
+    href: "/general/about",
     border_colour: "none",
     before: "before:bg-current",
-    background_colour: "bg-slate-950",
+    background_colour: "bg-amber-500",
     hover: "none",
     category: "none",
     mainNav: false,
