@@ -6,6 +6,8 @@ import FooterNavListHeader from "/components/footer/Footer_NavList_Header";
 const footerNavLinks1 = DataForNavigation.filter((link) => link.footerNav_1 === true);
 const footerNavLinks2 = DataForNavigation.filter((link) => link.footerNav_2 === true);
 
+footerNavLinks2.sort((a, b) => a.label.localeCompare(b.label));
+
 const linkClasses = `flex py-2`;
 const detailsStyles = `rounded-lg py-4 group !overflow-x-auto [&_svg]:open:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
 const summaryStyles = `flex justify-between md:py-4 cursor-pointer`;
