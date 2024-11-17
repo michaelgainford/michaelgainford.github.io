@@ -100,7 +100,7 @@ const DataForAllProjects = [
     bg: "bg-black/30",
     border: "border-black/40",
     divider: "divide-gray-700",
-    hover: "hover:bg-gray-800",
+    hover: "hover:bg-gray-900",
     group: "group/movies",
     groupHover: "group-hover/movies:fill-slate-100 group-hover/movies:text-slate-100",
     description: "A database of movies watched or to watch by the Pigeon & Parrot Movie Club (PPMC).",
