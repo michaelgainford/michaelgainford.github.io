@@ -4,6 +4,8 @@ import { useState } from "react";
 
 // i want to create a statue for the checkbox
 
+import Image from "next/image";
+
 
 import Link from "next/link";
 import Header from "@/components/header/Header";
@@ -11,6 +13,12 @@ import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Button from "@/components/buttons/Button_Global";
 import Footer from "@/components/footer/Footer";
+import IconCSS from "@/components/icons/IconCSS";
+import IconHTML from "@/components/icons/IconHTML";
+import IconJavaScript from "@/components/icons/IconJavaScript";
+import IconNextJS from "@/components/icons/IconNextJS";
+import IconReact from "@/components/icons/IconReact";
+import IconTailwindSimple from "@/components/icons/IconTailwindSimple";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
 
@@ -72,9 +80,9 @@ export default function PAGE_ABOUT() {
 						{/* Card 2: List of Tools */}
 						<div className="col-span-12 p-6 text-xs transition-all duration-500 border rounded-lg md:col-span-4 xl:col-span-3 something-3 border-slate-500/10 group-tools hover:border-amber-500 lg:p-8">
 							<h2 className="mb-8 font-bold tracking-widest text-left lg:font-extrabold lg:text-lg 2xl:mt-8">List of Tools</h2>
-							<ul className="flex flex-col gap-4 lg:gap-8 [&_li]:flex [&>li]:border [&>li]:border-emerald-500 text-left [&_li]:border-slate-500/50 [&_a]:p-3 [&_li]:rounded-lg [&_a]:w-full [&_li]:w-full [&_li]:lg:py-4 [&_li]:bg-slate-600/10 lg:text-base">
+							<ul className="flex flex-col gap-4 lg:gap-8 [&_li]:flex [&_a]:border  text-left [&_a]:border-slate-500/50 [&_a]:p-3 [&_a]:rounded-lg [&_a]:w-full [&_li]:w-full [&_a]:lg:py-4 [&_li]:bg-slate-600/10 lg:text-base">
 								<li>
-									<Link href="/tools/url-converter" className="transition-all duration-500 hover:bg-amber-500 hover:text-slate-950">
+									<Link href="/tools/url-converter" className="flex h-full transition-all duration-500 hover:bg-amber-500 hover:text-slate-950">
 										URL Concatenator
 									</Link>
 								</li>
@@ -100,7 +108,7 @@ export default function PAGE_ABOUT() {
 						<div className="col-span-12 md:col-span-12 p-6 md:p-8 text-xs border rounded-lg something-2 border-slate-500/10 [&_.site-image]:aspect-square flex flex-col hover:border-amber-500 duration-500 transition-all 2xl:px-12 xl:col-span-4  hover:bg-slate-500/10">
 							<h2 className="mt-8 mb-8 font-bold tracking-widest lg:text-lg">Other Sites</h2>
 							<div className="grid w-full h-full grid-cols-2 gap-6 md:grid-cols-4 xl:grid-cols-2 2xl:gap-12">
-								{
+{/* 								{
 									[...Array(4)].map((_, i) => (
 										<div key={i} className="grid-item">
 											<h3 className="hidden">Title</h3>
@@ -108,19 +116,47 @@ export default function PAGE_ABOUT() {
 											</div>
 										</div>
 									))
-								}
+								} */}
+								<div className="col-span-2 grid-item">
+									<div className="w-full border rounded-lg site border-slate-200/20 site-image bg-slate-600/10 aspect-square">
+										<Image src="/my-sites/fairway-golf-holidays.webp" alt="Fairway Golf Holidays" className="object-cover w-full h-full transition-all duration-500 rounded-lg opacity-50 hover:opacity-100" width={300} height={300} title="Fairway Golf Group Holidays" />
+									</div>
+								</div>
+								<div className="grid-item f">
+									<h3 className="hidden">Title</h3>
+									<div className="w-full border rounded-lg site border-slate-200/20 site-image bg-slate-600/10 aspect-square">
+										<Image src="/my-sites/michael-gainford-portfolio.webp" alt="Michael Gainford Portfolio" className="object-cover w-full h-full transition-all duration-500 rounded-lg opacity-50 hover:opacity-100" width={300} height={300} title="Michael Gainford Portfolio" />
+									</div>
+								</div>
+								<div className="grid-item">
+									<div className="w-full border rounded-lg site border-slate-200/20 site-image bg-slate-600/10 aspect-square">
+										<Image src="/my-sites/golf-membership.webp" alt="Golf Membership" className="object-cover w-full h-full transition-all duration-500 rounded-lg opacity-50 hover:opacity-100" width={300} height={300} title="Golf Membership North West" />
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className="col-span-12 p-6 transition-all duration-500 border border-slate-500/10 md:p-8 2xl:p-16 hover:border-amber-500 hover:bg-slate-500/10">
-							<h2 className="mb-8 text-3xl font-bold">Something 6</h2>
+						<div className="col-span-12 p-6 transition-all duration-500 border rounded-lg border-slate-500/10 md:p-8 2xl:p-16 hover:border-amber-500 hover:bg-slate-500/10">
+							<h2 className="mb-8 text-3xl font-bold lg:mt-8">Currently Using</h2>
 							<div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-8 [&>.flex]:justify-center [&>.flex]:items-center [&>.flex]:rounded-lg">
-								{
-									[...Array(6)].map((_, i) => (
-										<div key={i} className="flex p-4 border border-slate-500/20 aspect-square">
-											Item
-										</div>
-									))
-								}
+								<div className="flex p-4 transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-slate-900">
+									<IconHTML classes="size-16" />
+								</div>
+								<div className="flex p-4 transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-slate-900">
+									<IconCSS classes="size-16" />
+								</div>
+								<div className="flex p-4 transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-slate-900">
+									<IconTailwindSimple classes="size-16" />
+								</div>
+								<div className="flex p-4 transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-slate-900">
+									<IconJavaScript classes="size-16" />	
+								</div>
+								<div className="flex p-4 transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-slate-900">
+									<IconReact classes="size-16" />
+								</div>
+								<div className="flex p-4 transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-slate-900">
+									<IconNextJS classes="size-16" />
+								</div>
+
 							</div>
 						</div>
 						<div className="col-span-12 p-6 text-xs transition-all duration-500 border rounded-lg md:col-span-7 something-4 border-slate-500/10 hover:border-amber-500 hover:bg-slate-500/10">
