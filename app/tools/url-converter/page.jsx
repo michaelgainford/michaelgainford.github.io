@@ -91,7 +91,7 @@ export default function TOOL_URL_CONCATENATOR() {
 			
 			<main className={`${mainStyles}`}>
 				
-				<H1 text={`URL Converter`} />
+				<H1 text={`URL Concatenator`} />
 				
 				<PageIntro 
 				  text={pageIntroText}
@@ -116,18 +116,18 @@ export default function TOOL_URL_CONCATENATOR() {
 						<div className="flex flex-col gap-8 url-maker xl:max-w-[50vw] mx-auto rounded-lg bg-slate-800/50 p-8 xl:p-16 [&>span]:px-2 [&>span]:py-1 [&>span]:text-xs [&>span]:font-light [&>span]:tracking-wider [&>span]:text-center [&>span]:border [&>span]:rounded [&>span]:border-slate-500/20 [&>span]:w-fit [&>span]:max-auto">
 							<span>input</span>
 							<div className="flex flex-col w-full gap-2 text-left pair">
-								<label htmlFor="base-url" className="text-sm font-medium text-left">Base URL</label>
+								<label htmlFor="base-url" className="text-sm font-medium text-left">Start of URL</label>
 								<input type="text" id="base-url" name="base-url" className="w-full p-2 border-b-2 bg-slate-100/10 border-slate-200/50 focus-visible::outline-200/80" />
 							</div>
 
 							<div className="flex flex-col w-full gap-2 text-left pair">
-								<label htmlFor="custom-concatenator" className="text-sm font-medium text-left text-amber-500">Concatention String</label>
-								<input type="text" id="custom-concatenator" name="custom-concatenator" className="w-full p-2 bg-transparent border-b-2 border-slate-200/50" />
+								<label htmlFor="custom-concatenator" className="text-sm font-medium text-left text-amber-500">Concatenation Value</label>
+								<input type="text" id="custom-concatenator" name="custom-concatenator" className="w-full p-2 border-b-2 bg-slate-100/10 border-slate-200/50 focus-visible::outline-200/80" />
 							</div>
 							
 							<div className="flex flex-col w-full gap-2 text-left pair">
 								<label htmlFor="query-string" className="text-sm font-medium text-left0">End of URL</label>
-								<input type="text" id="query-string" name="query-string" className="w-full p-2 bg-transparent border-b-2 border-slate-200/50" />
+								<input type="text" id="query-string" name="query-string" className="w-full p-2 border-b-2 bg-slate-100/10 border-slate-200/50 focus-visible::outline-200/80" />
 							</div>
 
 							<h2 className="hidden pb-1 mt-6 font-bold text-left border-b-4 border-current w-fit">Options</h2>
@@ -162,7 +162,7 @@ export default function TOOL_URL_CONCATENATOR() {
 								output
 							</h3>
 
-							<div className="w-full p-4 border-2 rounded-lg border-slate-200/50">
+							<div className="w-full p-4 border-2 rounded-lg border-slate-200/20">
 								<p className="flex items-center text-xs space-between">
 									{/* This is where the created URL will be displayed */}
 									<span className="created-url">Your URL will be displayed here.</span>
