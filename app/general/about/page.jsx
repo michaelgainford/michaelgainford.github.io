@@ -22,12 +22,6 @@ import IconTailwindSimple from "@/components/icons/IconTailwindSimple";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
 
-//import DataForProjects from "@/data/Data_For_Projects";
-{/* Sort the projects by name... */}
-//DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
-{/* ...and then by archived status */}
-//DataForProjects.sort((a, b) => a.archived - b.archived);
-
 const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
 const pageIntroText = `A simple tool to take a starting string, a concatenation character, and an ending string to create a URL.`;
 
