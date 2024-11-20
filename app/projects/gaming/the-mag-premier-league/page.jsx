@@ -242,10 +242,6 @@ const summaryHeaderSvgContainer = `flex flex-col justify-center`;
 const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-magpl lg:size-6`;
 const summarySectionHeadingStyles = `border-b-[0.5px] pb-4 border-b-magpl border-b-magpl`;
 
-
-////////////////////////////////////////
-// FUNCTION
-////////////////////////////////////////
 export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
   return (
     <div className={`${globalPageStyles} ${magPageBg}`}>
@@ -256,8 +252,8 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			<div className={`page-header motion motion-preset-slide-up motion-delay-100`}>
 				<div className={`flex flex-col`}>
 					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} />
+					<H1 text={`The MAG Premier League`} className={`max-lg:!pt-0 text-balance`} />
 				</div>
-				<H1 text={`The MAG Premier League`} className={`!max-lg:pt-0 text-balance`} />
 			</div>
 			{/* Page Header | End */}
 
