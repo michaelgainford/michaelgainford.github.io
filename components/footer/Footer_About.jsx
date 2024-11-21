@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DataForSocials from "@/data/Data_For_Socials";
 import FooterSectionHeader from "./Footer_Section_Header";
-const footerAboutText = "My name is Michael. I am Front-End Developer from and living in the North West of England. By day, I currently work as a Shopify Developer working on e-commerce websites and stores for a large Shopify agency. By night, I use Next.js, React, and Tailwind CSS to create fun and practical ways of brightening one's day.";
+const footerAboutText = "My name is Michael. I am Front-End Developer from and living in the North West of England. By day, I currently work as a Shopify Developer working on e-commerce websites and stores for a large Shopify agency. By night, I use Next.js, React, and Tailwind CSS to create fun, interesting and practical ways of brightening one's day.";
 
 export default function COMPONENT_FOOTER_ABOUT() {
   return (

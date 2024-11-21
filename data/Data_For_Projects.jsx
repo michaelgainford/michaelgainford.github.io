@@ -179,7 +179,7 @@ const DataForAllProjects = [
     divider: "divide-slate-500",
     hover: "hover:bg-gradient-to-br from-[#92FE9D]/80 to-[#00C9FF]/80",
     description: "A project about the countries of the world.",
-    category: "template",
+    category: "geography",
     underConstruction: true,
     archived: false,
   },

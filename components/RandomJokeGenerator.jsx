@@ -1,4 +1,3 @@
-"use client";
 import DataForJokes from "@/data/Data_For_Jokes";
 
 export default function RANDOM_JOKES_GENERATOR () {
