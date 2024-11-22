@@ -6,6 +6,7 @@ import Icon_LinkedIn from "@/components/icons/IconLinkedIn";
 import Icon_Resource from "@/components/icons/IconResource";
 import Icon_W3Schools from "@/components/icons/IconW3Schools";
 import Icon_Docs from "@/components/icons/IconDocs";
+import Icon_TailwindSimple from "@/components/icons/IconTailwindSimple";
 
 const DataForDevResources = [
   {
@@ -186,7 +187,7 @@ const DataForDevResources = [
     url: "https://tailwindcss.com",
     description: "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.",
     screenshot: "/dev-resources/screenshot-of--tailwind-css.webp",
-    icon: Icon_Docs,
+    icon: Icon_TailwindSimple,
     tags: ["css"],
     featured: true,
   },
