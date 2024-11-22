@@ -1,8 +1,7 @@
-
-import TwitterIcon from '/components/icons/IconTwitter'
 import CodepenIcon from '/components/icons/IconCodepen'
 import GitHubIcon from '/components/icons/IconGithub'
 import LinkedInIcon from '/components/icons/IconLinkedIn'
+import TwitterIcon from '/components/icons/IconTwitter'
 
 const DataForSocials = [
   {

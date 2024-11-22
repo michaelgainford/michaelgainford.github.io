@@ -8,6 +8,12 @@ import Footer from "@/components/footer/Footer";
 import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/data/Variables";
 import PremierLeagueData from "@/data/Data_For_PremierLeagueTeams";
 
+export const metadata = {
+	title: `Premier League Hub`,
+	description: `All past and present teams in the Premier League.`,
+}
+
+
 const numberOfUniqueClubs = PremierLeagueData.length;
 
 const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";

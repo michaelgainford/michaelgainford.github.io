@@ -104,7 +104,7 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 									<Link
 										className="py-1 text-xs border-b-[2px] border-slate-200"
 										key={index}
-										href={clubPageLink}
+										href="/projects/football/competitions/english-premier-league/the-100-club"
 									>
 										{playerClub}
 									</Link>

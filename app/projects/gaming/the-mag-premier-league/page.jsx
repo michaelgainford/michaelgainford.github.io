@@ -242,6 +242,11 @@ const summaryHeaderSvgContainer = `flex flex-col justify-center`;
 const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-magpl lg:size-6`;
 const summarySectionHeadingStyles = `border-b-[0.5px] pb-4 border-b-magpl border-b-magpl`;
 
+export const metadata = {
+	title: 'The MAG Premier League',
+	description: 'The MAG Premier League is a 3 team league where each team plays each other 4 times.',
+}
+
 export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
   return (
     <div className={`${globalPageStyles} ${magPageBg}`}>

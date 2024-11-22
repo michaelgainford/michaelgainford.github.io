@@ -35,19 +35,19 @@
         {
             "class": "slate-500/10",
             "class_background": "bg-slate-500/10",
-            "class_background_text": "text-slate-900",
+            "class_background_text": "text-slate-200",
             "class_text": "text-slate-500/10"
         },
         {
             "class": "slate-500/20",
             "class_background": "bg-slate-500/20",
-            "class_background_text": "text-slate-900",
+            "class_background_text": "text-slate-200",
             "class_text": "text-slate-500/20"
         },
         {
             "class": "slate-600",
             "class_background": "bg-slate-600",
-            "class_background_text": "text-slate-400",
+            "class_background_text": "text-slate-900",
             "class_text": "text-slate-600"
         },
         {
@@ -178,14 +178,55 @@
             "class": "text-xs",
             "size_rem": "0.75rem",
             "size_px": "12px"
+        },
+        {
+            "class": "text-xxs",
+            "size_rem": "0.625rem",
+            "size_px": "10px"
         }
     ],
     "ProjectColours": [
+        {
+            "class": "epl",
+            "class_background": "bg-epl",
+            "class_background_text": "text-slate-200",
+            "class_text": "text-epl"
+        },
+        {
+            "class": "fn-dark-blue",
+            "class_background": "bg-fn-dark-blue",
+            "class_background_text": "text-slate-200",
+            "class_text": "text-fn-dark-blue"
+        },
+        {
+            "class": "fn-light-blue",
+            "class_background": "bg-fn-light-blue",
+            "class_background_text": "text-slate-900",
+            "class_text": "text-fn-light-blue"
+        },
         {
             "class": "magpl",
             "class_background": "bg-magpl",
             "class_background_text": "text-slate-900",
             "class_text": "text-magpl"
+        },
+        {
+            "class": "rose-500",
+            "class_background": "bg-rose-500",
+            "class_background_text": "text-slate-200",
+            "class_text": "text-rose-500"
+        },
+        {
+            "class": "rose-900",
+            "class_background": "bg-rose-900",
+            "class_background_text": "text-slate-200",
+            "class_text": "text-rose-900"
+        },
+        {
+            "class": "rose-950",
+            "class_background": "bg-rose-950",
+            "class_background_text": "text-slate-200",
+            "class_text": "text-rose-950"
         }
     ]
 }

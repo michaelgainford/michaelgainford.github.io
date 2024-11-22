@@ -14,6 +14,7 @@ const DataForNavigation = [
   {
     label: "All Projects",
     href: "/projects",
+    before: "before:bg-amber-500",
     border_colour: "border-amber-500",
     background_colour: "bg-amber-500",
     hover: "hover:bg-amber-800",
@@ -40,8 +41,8 @@ const DataForNavigation = [
     before: "before:bg-teal-600",
     border_colour: "border-teal-600",
     category: "none",
-    footerNav_1: true,
-    footerNav_2: false,
+    footerNav_1: false,
+    footerNav_2: true,
     hover: "hover:bg-teal-800",
     href: "/web-development/dev-resources",
     mainNav: true,
@@ -131,7 +132,7 @@ const DataForNavigation = [
     label: "About",
     href: "/general/about",
     border_colour: "none",
-    before: "before:bg-current",
+    before: "before:bg-amber-500",
     background_colour: "bg-amber-500",
     hover: "none",
     category: "none",
@@ -182,11 +183,23 @@ const DataForNavigation = [
     category: "geography",
     border_colour: "border-geography",
     background_colour: "bg-geography",
-    before: "before:bg-geography",
+    before: "before:bg-blue-400",
     hover: "hover:bg-geography",
     footerNav_1: false,
     footerNav_2: true,
   },
+  {
+    label: "Style Guide",
+    href: "/general/site-style-guide",
+    mainNav: false,
+    category: "general",
+    border_colour: "border-slate-700",
+    background_colour: "bg-slate-950",
+    before: "before:bg-amber-500",
+    hover: "hover:bg-slate-950",
+    footerNav_1: true,
+    footerNav_2: false,
+  }
 ];
 
 export default DataForNavigation;

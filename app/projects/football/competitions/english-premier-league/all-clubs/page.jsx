@@ -60,8 +60,8 @@ export default function PAGE_PREMIER_LEAGUE () {
                                 <p className={`text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
                                     {Club.teamName}
                                 </p>
-                                <span className="absolute top-0 right-0 p-1 bg-emerald-200/30 text-[10px] font-bold tracking-wide">
-                                    Current
+                                <span className={`absolute top-0 right-0 p-1 ${Club.currentPrem ? `bg-emerald-200/30` : `bg-transparent`} text-[10px] font-bold tracking-wide`}>
+                                    {Club.currentPrem ? `Current` : `Former`}
                                 </span>
                             </Link>
                         );
