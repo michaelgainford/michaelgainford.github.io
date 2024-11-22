@@ -7,8 +7,15 @@ import H1_Span from "@/components/typography/H1Span";
 const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
 const sharedHeadingStyles = `pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit`;
 
+// const colours = ["bg-amber-500", "bg-amber-500/50", "bg-epl", "bg-fn-dark-blue", "bg-fn-light-blue", "bg-rose-500", "bg-rose-900", "bg-rose-950", "bg-slate-200", "bg-slate-200/20", "bg-slate-400", "bg-slate-500/10", "bg-slate-500/20", "bg-slate-600", "bg-slate-700" ];
+// const fontColours = [ "text-amber-500", "text-slate-200", "text-slate-400", "text-slate-500", "text-slate-600", "text-slate-700", "text-slate-900" ];
+
 // i want to import the json file within data/Data_For_Style_Guide_Font_Sizes.json
-import { BrandColours, CSSContainerWidths, FontSizes, ProjectColours } from "@/data/Data_For_StyleGuideFontSizes.json";
+import StyleGuideData from "@/data/Data_For_StyleGuideFontSizes.json";
+const FontSizes = StyleGuideData.FontSizes;
+const CSSContainerWidths = StyleGuideData.CSSContainerWidths;
+const BrandColours = StyleGuideData.BrandColours;
+const ProjectColours = StyleGuideData.ProjectColours;
 
 export default function PAGE_SITE_STYLE_GUIDE() {
 	return (
@@ -28,7 +35,7 @@ export default function PAGE_SITE_STYLE_GUIDE() {
 								<div className="flex flex-col gap-4 style-guide-group-items">
 									<table>
 										<thead className="mb-4">
-											<tr className="grid grid-cols-3 py-1 border-b-2 border-slate-200/5 bg-mag-epl-500">
+											<tr className="grid grid-cols-3 py-1 border-b-4 border-slate-200/5 bg-mag-epl-500">
 												<th>Class</th>
 												<th>Font Size (rem)</th>
 												<th>Font Size (px)</th>
@@ -36,7 +43,7 @@ export default function PAGE_SITE_STYLE_GUIDE() {
 										</thead>
 										<tbody>
 											{FontSizes.map((fontSize, index) => (
-												<tr key={index} className="grid grid-cols-3">
+												<tr key={index} className="grid grid-cols-3 border-b border-slate-200/5 last:border-transparent">
 													<td className="py-1">{fontSize.class}</td>
 													<td className="py-1">{fontSize.size_rem}</td>
 													<td className="py-1">{fontSize.size_px}</td>
@@ -51,7 +58,7 @@ export default function PAGE_SITE_STYLE_GUIDE() {
 								<div className="flex flex-col gap-4 style-guide-group-items">
 									<table>
 										<thead className="mb-4">
-											<tr className="grid grid-cols-3 py-1 border-b-2 border-slate-200/5">
+											<tr className="grid grid-cols-3 gap-2 py-1 border-b-4 border-slate-200/5">
 												<th>Class</th>
 												<th>Width (rem)</th>
 												<th>Width (px)</th>
@@ -59,7 +66,7 @@ export default function PAGE_SITE_STYLE_GUIDE() {
 										</thead>
 										<tbody>
 											{CSSContainerWidths.map((containerWidth, index) => (
-												<tr key={index} className="grid grid-cols-3">
+												<tr key={index} className="grid grid-cols-3 gap-2 border-b-2 border-slate-200/5 last:border-transparent">
 													<td className="py-1">{containerWidth.class}</td>
 													<td className="py-1">{containerWidth.width_rem}</td>
 													<td className="py-1">{containerWidth.width_px}</td>

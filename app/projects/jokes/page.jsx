@@ -1,14 +1,16 @@
-import Header from "@/components/header/Header";
-import H1 from "@/components/typography/H1Span";
-import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
+import Header from "@/components/header/Header";
+import H1 from "@/components/typography/H1Span";
 import Page_Intro from "@/components/site_elements/Page_Intro";
+import Footer from "@/components/footer/Footer";
 import DataForJokes from "@/data/Data_For_Jokes";
+DataForJokes.sort(() => Math.random() - 0.5);
 
 export default function PAGE_JOKES() {
 	return (
 		<div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background text-white`}>
+			
 			<Header />
 
 			<main className={`${mainStyles}`}>
@@ -26,6 +28,7 @@ export default function PAGE_JOKES() {
 					))}
 				</div>
 			</main>
+
 			<Footer />
 		</div>
 	)

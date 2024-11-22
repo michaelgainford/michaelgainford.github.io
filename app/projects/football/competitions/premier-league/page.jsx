@@ -1,13 +1,15 @@
 import Image from "next/image";
-import { Fragment } from "react";
-import { mainStyles, globalPageStyles, premierLeagueYears, clubLogosRoot, seasonPositions } from "@/data/Variables";
+import { mainStyles, globalPageStyles, clubLogosRoot } from "@/data/Variables";
 import DataForPremTeams from "@/data/Data_For_PremierLeagueTeams";
 import Header from "@/components/header/Header";
-import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 
-// sort by teamName
+export const metadata = {
+	title: 'Premier League',
+	description: 'All past and present teams in the Premier League.',
+}
+
 const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
 	if (a.teamName > b.teamName) {
 		return 1;
@@ -20,7 +22,7 @@ const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
 
 export default function PAGE_PREMIER_LEAGUE () {
 	return (
-		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
+		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
 			<main className={`!w-full text-epl`}>
 
