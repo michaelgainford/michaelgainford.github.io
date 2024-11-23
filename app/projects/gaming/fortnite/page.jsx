@@ -4,7 +4,7 @@ import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
-import DataForFortnite from "@/data/Data_For_Fornite";
+import DataForFortnite from "@/data/Data_For_Fortnite";
 import IconFortnite from "@/components/icons/IconFortniteName";
 
 {/* Variables */}
@@ -42,7 +42,7 @@ const pageIntroText = `Fortnite is a free-to-play Battle Royale game that has ta
 
 export default function PAGE_FORTNITE() {
   return (
-    <div className={`${globalPageStyles} bg-gradient-to-br from-fn-dark-blue from-30% to-fn-light-blue ${pageTextColour}`}>
+    <div className={`${globalPageStyles} bg-topo-fn-background bg-fn-light-blue from-fn-dark-blue from-30% to-fn-light-blue ${pageTextColour}`}>
       	<Header />
       	<main className={`${mainStyles}`}>
 			<IconFortnite classes={`w-64 h-auto mt-4 mb-12 lg:mb-12 lg:w-96 xl:w-[420px] xl:mb-20 2xl:w-[500px]`} fill={`fill-slate-900`} />

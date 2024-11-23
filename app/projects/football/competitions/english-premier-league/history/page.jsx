@@ -13,6 +13,12 @@ import { globalPageStyles } from "@/data/Variables";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+export const metadata = {
+    title: "Premier League History",
+    description: "The history of the English Premier League since its inception in 1992."
+}
+
+
 const premierLeagueSeasonsData = [
     {
         id: 1,
