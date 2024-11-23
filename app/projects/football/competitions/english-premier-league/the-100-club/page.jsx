@@ -1,14 +1,18 @@
-import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/buttons/Button_Global";
+import Image from "next/image";
 import Header from "@/components/header/Header";
+import TopScorersData from "@/data/Data_For_PremierLeagueTopScorers";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
+import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import TopScorersData from "@/data/Data_For_PremierLeagueTopScorers";
-import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/data/Variables";
+import { mainStyles, globalPageStyles } from "@/data/Variables";
+
+export const metadata = {
+	title: `The 100 Club`,
+	description: `The Premier League 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.`
+};
 
 const sortedByGoals = [...TopScorersData].sort((a, b) =>
 	b.playerGoals - a.playerGoals

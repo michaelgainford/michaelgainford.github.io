@@ -19,6 +19,11 @@ import H2_EPL from "@/components/typography/H2_For_PremierLeague";
 import { mainStyles } from "@/data/Variables";
 import { globalPageStyles } from "@/data/Variables";
 
+export const metadata = {
+  title: `Premier League Seasons`,
+  description: `The English Premier League has been played over 30 seasons since its inception in 1992. Each season consists of 20 teams who play 38 matches each (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship. The Premier League season typically runs from August to May, with matches played on weekends and midweek.`,
+};
+
 // sort by teamName
 const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
   if (a.teamName > b.teamName) {

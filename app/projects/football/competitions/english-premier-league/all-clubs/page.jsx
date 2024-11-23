@@ -4,7 +4,7 @@ import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import ClubsData from "@/data/Data_For_PremierLeagueTeams";
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
-const metadata = {
+export const metadata = {
     title: "Premier League Clubs",
     description: "All the clubs that have played in the English Premier League since its inception in 1992.",
 }

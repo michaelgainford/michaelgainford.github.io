@@ -13,7 +13,6 @@ export const metadata = {
 	description: `All past and present teams in the Premier League.`,
 }
 
-
 const numberOfUniqueClubs = PremierLeagueData.length;
 
 const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";

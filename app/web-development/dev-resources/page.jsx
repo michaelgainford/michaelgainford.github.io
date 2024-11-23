@@ -8,6 +8,11 @@ import DataForDevResources from "@/data/Data_For_DevResources";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
 
+export const metadata = {
+	title: `Dev Resources`,
+	description: `A collection of some of my favourite web development resources that I use in my standard workflow. This is a links to a series of tools and resources.`
+};
+
 {/* Sort the resources by name */}
 const ResourcesSortedByName = DataForDevResources.sort((a, b) => a.name.localeCompare(b.name));
 {/* Create an array of tags */}

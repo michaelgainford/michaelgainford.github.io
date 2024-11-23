@@ -5,8 +5,13 @@ import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
-
 import DataForProjects from "@/data/Data_For_Projects";
+
+export const metadata = {
+	title: `Projects`,
+	description: `A collection of projects that I have worked on, that are a part of this website. Some of these projects are still in progress, like my digital garden. Different plants needing tending to in different way. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`
+};
+
 {/* Sort the projects by name... */}
 DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 {/* ...and then by archived status */}

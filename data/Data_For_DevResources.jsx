@@ -7,6 +7,7 @@ import Icon_Resource from "@/components/icons/IconResource";
 import Icon_W3Schools from "@/components/icons/IconW3Schools";
 import Icon_Docs from "@/components/icons/IconDocs";
 import Icon_TailwindSimple from "@/components/icons/IconTailwindSimple";
+import Icon_NextJS from "@/components/icons/IconNextJS";
 
 const DataForDevResources = [
   {
@@ -69,7 +70,7 @@ const DataForDevResources = [
     screenshot: "/dev-resources/screenshot-of--font-awesome.webp",
     icon: Icon_Font,
     tags: ["typography", "icons"],
-    featured: true,
+    featured: false,
   },
   {
     name: "GitHub",
@@ -147,9 +148,9 @@ const DataForDevResources = [
     url: "https://nextjs.org",
     description: "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
     screenshot: "/dev-resources/screenshot-of--nextjs.webp",
-    icon: Icon_Resource,
+    icon: Icon_NextJS,
     tags: ["js", "react"],
-    featured: false,
+    featured: true,
   },
   {
     name: "PageSpeed Insights",
