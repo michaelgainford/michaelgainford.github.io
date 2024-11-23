@@ -21,6 +21,7 @@ module.exports = {
         "melt-background": "url('/svg-backgrounds/melt.svg')",
         "rain-background": "url('/svg-backgrounds/rain.svg')",
         "topo-background": "url('/svg-backgrounds/topography.svg')",
+        "topo-fn-background": "url('/svg-backgrounds/topography-fn.svg')",
       },
       colors: {
         magpl: {
