@@ -239,7 +239,7 @@ const detailsRulesGroupStyles = `mb-12 mt-8 [&>p]:mb-1 lg:mb-12 flex flex-col`;
 const detailsAllHeadingsStyles = `text-sm lg:text-base`;
 const summaryStyles = `flex justify-between md:py-4 cursor-pointer lg:text-lg font-light`;
 const summaryHeaderSvgContainer = `flex flex-col justify-center`;
-const summaryHeaderSvgStyles = `rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-magpl lg:size-6`;
+const summaryHeaderSvgStyles = `rotate-0 transform text-current transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-magpl lg:size-6 font-current`;
 const summarySectionHeadingStyles = `border-b-[0.5px] pb-4 border-b-magpl border-b-magpl`;
 
 export const metadata = {
@@ -257,7 +257,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			<div className={`page-header motion motion-preset-slide-up motion-delay-100`}>
 				<div className={`flex flex-col`}>
 					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} />
-					<H1 text={`The MAG Premier League`} className={`max-lg:!pt-0 text-balance`} />
+					<H1 text={`The MAG Premier League`} font_sizes={``} other_classes={`max-lg:-mt-4 text-balance !font-light`} />
 				</div>
 			</div>
 			{/* Page Header | End */}
@@ -266,10 +266,10 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			{/* Rules | Start */}
 			<details className={`flex flex-col pb-4 ${detailsStyles} ${detailsContentStyles} motion motion-preset-slide-up motion-delay-[300ms]`}>
 				<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-[1000px] ${summaryStyles}`}>
-					<span>The MAG Premier League Rules</span>					
+					<span className={`text-magpl`}>The MAG Premier League Rules</span>					
 					<span className={summaryHeaderSvgContainer}>
 						<svg 
-							className={summaryHeaderSvgStyles} 
+							className={`${summaryHeaderSvgStyles} text-magpl`} 
 							fill={`none`} 
 							height={`20`} 
 							width={`20`} 
@@ -335,7 +335,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 
 			{/* League Table */}
 			<div className={`my-2 md:my-4 lg:my-8 motion motion-preset-slide-up motion-delay-[600ms]`}>
-				<h2 className={`text-center font-light text-sm lg:text-base`}>League Table</h2>
+				<h2 className={`text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>League Table</h2>
 				<div className={`flex mt-4`}>
 					<table className={`lg:min-w-[1000px] text-center`}>
 						<thead className={`border-b border-slate-900 text-xs md:text-sm xl:text-base text-magpl`}>
@@ -375,26 +375,26 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 
 			{/* Fixtures */}
 			<div className={`!w-full px-4 lg:px-8 max-w-[1000px] motion motion-preset-slide-up motion-delay-[900ms]`}>
-				<h3 className={`mb-6 text-center font-light text-sm lg:text-base`}>Fixtures</h3>
+				<h3 className={`mb-6 text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>Fixtures</h3>
 				<div className={`grid grid-cols-1 gap-6`}>
 					{DataForMAGPremierLeague?.map((fixture, index) => (
 						<div 
 							key={index} 
-							className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] !max-w-[1000px] w-full mx-auto flex flex-col ${fixture.upcoming ? `text-white` : fixture.played ? `text-magpl uppercase` : 'opacity-50'}`}>
+							className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] !max-w-[1000px] w-full mx-auto flex flex-col ${fixture.upcoming ? `text-slate-200` : fixture.played ? `text-magpl uppercase` : 'opacity-50'}`}>
 							<div className={`grid grid-cols-1 relative`}>
-								<div className={`grid grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm [&>*]:text-sm [&>*]:md:text-xl [&>*]:lg:text-2xl ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
+								<div className={`grid grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm [&>*]:text-sm [&>*]:md:text-xl [&>*]:lg:text-2xl tracking-widest [&>span]:text-center ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
 									<p className={`text-right md:pr-1`}>{fixture.homeTeam}</p>
 									<span className={`text-center`}>{fixture.played ? fixture.homeScore : ''}</span>
 									<span className={`text-center !text-sm`}>{fixture.played ? '-' : 'vs'}</span>
 									<span className={`text-center`}>{fixture.played ? fixture.awayScore : ''}</span>
 									<p className={`text-left md:pl-1`}>{fixture.awayTeam}</p>
 								</div>
-								<div className={`text-center flex flex-col pb-4 text-xs justify-center ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
+								<div className={`text-center flex flex-col pb-4 text-xs justify-center tracking-widest ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
 									{fixture.date} @ {fixture.time}
 								</div>
 								<div className="">
 
-								<span className={`text-xs text-center mx-auto grid grid-cols-1 lowercase absolute top-0 left-0 ${fixture.played ? 'text-magpl' : 'text-slate-600'}`}>{fixture.game}</span>
+								<span className={`text-xxs text-center mx-auto lowercase absolute flex justify-center items-center top-0 left-0 border-2 w-7 h-7 rounded-full p-2 leading-none font-bold ${fixture.played ? 'text-magpl border-magpl' : 'text-slate-200 border-slate-200'}`}>{fixture.game}</span>
 								</div>
 							</div>
 						</div>

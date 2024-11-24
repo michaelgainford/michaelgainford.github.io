@@ -238,7 +238,7 @@ const MAGPremierLeagueFixturesSeason1 = [
     awayScore: -1,
     date: "30/11/2024",
     time: "00:00",
-    upcoming: false,
+    upcoming: true,
     played: false
   },
   {
@@ -249,7 +249,7 @@ const MAGPremierLeagueFixturesSeason1 = [
     awayScore: -1,
     date: "30/11/2024",
     time: "00:00",
-    upcoming: false,
+    upcoming: true,
     played: false
   },
   {
@@ -260,7 +260,7 @@ const MAGPremierLeagueFixturesSeason1 = [
     awayScore: -1,
     date: "2024-11-30",
     time: "00:00",
-    upcoming: false,
+    upcoming: true,
     played: false
   }
 ]
