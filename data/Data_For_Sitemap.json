@@ -1,0 +1,16 @@
+{
+    "Pages": [
+        {
+            "name": "Home",
+            "href": "/",
+            "lastUpdated": "2024-11-24",
+            "daysSinceLastUpdate": 0
+        },
+        {
+            "name": "About",
+            "href": "/about",
+            "lastUpdated": "2024-11-24",
+            "daysSinceLastUpdate": 0
+        }
+    ]
+}
