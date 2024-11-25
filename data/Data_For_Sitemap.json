@@ -3,14 +3,107 @@
         {
             "name": "Home",
             "href": "/",
-            "lastUpdated": "2024-11-24",
-            "daysSinceLastUpdate": 0
+            "lastUpdated": "2024-11-18"
         },
         {
             "name": "About",
-            "href": "/about",
-            "lastUpdated": "2024-11-24",
-            "daysSinceLastUpdate": 0
+            "href": "/general/about",
+            "lastUpdated": "2024-11-22"
+        },
+        {
+            "name": "Site Maintenance Tracker",
+            "href": "/general/site-maintenance-tracker",
+            "lastUpdated": "2024-11-24"
+        },
+        {
+            "name": "Site Style Guide",
+            "href": "/general/site-style-guide",
+            "lastUpdated": "2024-11-22"
+        },
+        {
+            "name": "All Projects",
+            "href": "/projects",
+            "lastUpdated": "2024-11-23"
+        },
+        {
+            "name": "English Premier League (EPL) Hub",
+            "href": "/football/competitions/english-premier-league",
+            "lastUpdated": "2024-11-22"
+        },
+        {
+            "name": "EPL - 100 Club",
+            "href": "/football/competitions/english-premier-league/100-club",
+            "lastUpdated": "2024-11-25"
+        },
+        {
+            "name": "EPL - Competition History",
+            "href": "/football/competitions/english-premier-league/history",
+            "lastUpdated": "2024-11-23"
+        },
+        {
+            "name": "EPL - Season x Season Record",
+            "href": "/football/competitions/english-premier-league/seasons",
+            "lastUpdated": "2024-11-23"
+        },
+        {
+            "name": "EPL - All Clubs",
+            "href": "/football/competitions/english-premier-league/all-clubs",
+            "lastUpdated": "2024-11-23"
+        },
+        {
+            "name": "Euro 2024",
+            "href": "/football/competitions/euro-2024",
+            "lastUpdated": "2024-11-19"
+        },
+        {
+            "name": "Everton",
+            "href": "/projects/football/everton",
+            "lastUpdated": "2024-11-19"
+        },
+        {
+            "name": "Fortnite",
+            "href": "/projects/gaming/fortnite",
+            "lastUpdated": "2024-11-23"
+        },
+        {
+            "name": "The MAG Premier League",
+            "href": "/projects/gaming/the-mag-premier-league",
+            "lastUpdated": "2024-11-24"
+        },
+        {
+            "name": "Jokes",
+            "href": "/projects/jokes",
+            "lastUpdated": "2024-11-22"
+        },
+        {
+            "name": "Movies Database",
+            "href": "/projects/movies-database",
+            "lastUpdated": "2024-11-20"
+        },
+        {
+            "name": "Quotes",
+            "href": "/projects/quotes",
+            "lastUpdated": "2024-11-19"
+        },
+        {
+            "name": "Space",
+            "href": "/projects/space",
+            "lastUpdated": "2024-11-18"
+        },
+        {
+            "name": "The World",
+            "href": "/projects/the-world",
+            "lastUpdated": "2024-11-18"
+        },
+        {
+            "name": "URL Concatenator",
+            "href": "/tools/url-converter",
+            "lastUpdated": "2024-11-19"
+        },
+        {
+            "name": "Dev Resources",
+            "href": "/web-development/dev-resources",
+            "lastUpdated": "2024-11-20"
         }
     ]
 }

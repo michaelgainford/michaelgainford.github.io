@@ -17,7 +17,7 @@ const numberOfUniqueClubs = PremierLeagueData.length;
 
 const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";
 
-const pageIntroText = "Welcome to the Premier League Hub. This is the place to find all the information you need about the Premier League, including the history of the competition, the clubs that have competed in the league, and the records that have been set and broken over the years. Whether you are a die-hard fan of a particular club or just a casual observer of the beautiful game, there is something here for everyone.";
+const pageIntroText = "Welcome to the Premier League Hub. This is the place to find lots of information about the English Premier League, including the history of the competition, the clubs that have competed in the league, and the records that have been set and broken over the years. Whether you are a die-hard fan of a particular club or just a casual observer of the beautiful game, there is something here for everyone.";
 
 // create an array to store the blocks of data to populate the page
 const premierLeagueHubBlocks = [

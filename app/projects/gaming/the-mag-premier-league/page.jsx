@@ -394,7 +394,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 								</div>
 								<div className="">
 
-								<span className={`text-xxs text-center mx-auto lowercase absolute flex justify-center items-center top-0 left-0 border-2 w-7 h-7 rounded-full p-2 leading-none font-bold ${fixture.played ? 'text-magpl border-magpl' : 'text-slate-200 border-slate-200'}`}>{fixture.game}</span>
+								<span className={`text-xxs text-center mx-auto lowercase absolute flex justify-center items-center top-0 left-0 lg:border-2 w-7 h-7 rounded-full p-2 leading-none font-bold ${fixture.played ? 'text-magpl border-magpl' : 'text-slate-200 border-slate-200'}`}>{fixture.game}</span>
 								</div>
 							</div>
 						</div>

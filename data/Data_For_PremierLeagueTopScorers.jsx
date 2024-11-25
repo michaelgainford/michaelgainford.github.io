@@ -24,13 +24,13 @@ const Data_TopScorers = [
 		playerCurrent: false,
     },
     {
-      playerId: 3,
-      playerName: "Harry Kane",
-      playerSlug: "harry-kane",
-      playerClubs: ["Tottenham Hotspur (213)"],
-      playerApps: 297,
-      playerGoals: 213,
-      playerCurrent: true,
+		playerId: 3,
+		playerName: "Harry Kane",
+		playerSlug: "harry-kane",
+		playerClubs: ["Tottenham Hotspur (213)"],
+		playerApps: 297,
+		playerGoals: 213,
+		playerCurrent: true,
     },
     {
 		playerId: 4,
@@ -243,9 +243,9 @@ const Data_TopScorers = [
 		playerSlug: "mohamed-salah",
 		playerClubs: [
 			"Chelsea (2)",
-			"Liverpool (163)"
+			"Liverpool (165)"
 		],
-		playerGoals: 165,
+		playerGoals: 167,
 		playerCurrent: true,
     },
     {
