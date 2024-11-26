@@ -37,7 +37,7 @@ export default function PAGE_THE_WORLD() {
 									<summary className={summaryStyles}>
 										<span className="flex gap-3 overflow-hidden text-ellipsis">
 											<span>
-												<Image src={`/country-flags/${country.country_code}.svg`} alt={`${country.country_name} flag`} width={30} height={30} />
+												<Image className="border border-sky-900/80" src={`/country-flags/${country.country_code}.svg`} alt={`${country.country_name} flag`} width={30} height={30} />
 											</span>
 											<span className={summaryHeaderStyles}>
 												<span>{country.country_name}</span>
