@@ -3,7 +3,7 @@
         {
             "name": "Home",
             "href": "/",
-            "lastUpdated": "2024-11-18"
+            "lastUpdated": "2024-11-26"
         },
         {
             "name": "About",
@@ -13,7 +13,7 @@
         {
             "name": "Site Maintenance Tracker",
             "href": "/general/site-maintenance-tracker",
-            "lastUpdated": "2024-11-24"
+            "lastUpdated": "2024-11-26"
         },
         {
             "name": "Site Style Guide",
@@ -27,27 +27,27 @@
         },
         {
             "name": "English Premier League (EPL) Hub",
-            "href": "/football/competitions/english-premier-league",
+            "href": "/projects/football/competitions/english-premier-league",
             "lastUpdated": "2024-11-22"
         },
         {
             "name": "EPL - 100 Club",
-            "href": "/football/competitions/english-premier-league/100-club",
+            "href": "/projects/football/competitions/english-premier-league/the-100-club",
             "lastUpdated": "2024-11-25"
         },
         {
             "name": "EPL - Competition History",
-            "href": "/football/competitions/english-premier-league/history",
+            "href": "/projects/football/competitions/english-premier-league/history",
             "lastUpdated": "2024-11-23"
         },
         {
             "name": "EPL - Season x Season Record",
-            "href": "/football/competitions/english-premier-league/seasons",
+            "href": "/projects/football/competitions/english-premier-league/seasons",
             "lastUpdated": "2024-11-23"
         },
         {
             "name": "EPL - All Clubs",
-            "href": "/football/competitions/english-premier-league/all-clubs",
+            "href": "/projects/football/competitions/english-premier-league/all-clubs",
             "lastUpdated": "2024-11-23"
         },
         {
