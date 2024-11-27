@@ -22,7 +22,7 @@ export default function PAGE_ABOUT() {
 
 				<div className="flex flex-col w-full justify-center text-center motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500 max-w-[1800px]">
 
-					<H1 text={`Site Maintenance Tracker`} font_sizes={``} other_classes={`${sharedHeadingStyles} max-lg:-mt-4 text-balance !font-light border-none max-md:text-xl`} />
+					<H1 text={`Site Maintenance Tracker`} font_sizes={``} other_classes={`${sharedHeadingStyles} max-lg:-mt-4 text-balance !font-light border-none max-md:text-xl xl:mb-0`} />
 
 					<TableOfSitePages />
 				</div>
