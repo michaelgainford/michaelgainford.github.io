@@ -1,7 +1,12 @@
 import Link from "next/link";
 import DataForSocials from "@/data/Data_For_Socials";
 import FooterSectionHeader from "./Footer_Section_Header";
-const footerAboutText = "My name is Michael. I am Front-End Developer from and living in the North West of England. By day, I currently work as a Shopify Developer working on e-commerce websites and stores for a large Shopify agency. By night, I use <a href="/">Next.js</a>, React, and Tailwind CSS to create fun, interesting and practical ways of brightening one's day.";
+
+// URLs
+const urlForShopify = `https://www.shopify.com/`;
+const urlForNextJS = `https://nextjs.org`;
+const urlForReactJS = `https://react.dev`;
+const urlForTailwindCSS = `https://tailwindcss.com`;
 
 export default function COMPONENT_FOOTER_ABOUT() {
   return (
@@ -9,7 +14,7 @@ export default function COMPONENT_FOOTER_ABOUT() {
 		<FooterSectionHeader text={`About`} />
 		<div className={`flex flex-col gap-4 mb-8 sm:gap-8 sm:flex-row md:gap-12 lg:pb-8 lg:gap-16`}>
 			<p className={`text-xs text-center leading-loose sm:pr-8 sm:text-left md:text-xs/relaxed lg:text-xs/loose xl:text-sm/loose lg:pr-16 [&>a:hover]:underline`}>
-				My name is Michael. I am Front-End Developer from and living in the North West of England. By day, I currently work as a Shopify Developer working on e-commerce websites and stores for a large Shopify agency. By night, I use <a title="NextJS" href="https://nextjs.org">Next.js</a>, <a title="React JS" href="https://react.dev">React</a>, and <a title="Tailwind CSS" href="https://tailwindcss.com">Tailwind CSS</a> to create fun, interesting and practical ways of brightening one&apos;s day.
+				My name is Michael. I am Front-End Developer from and living in the North West of England. By day, under my Bruce Wayne persona, I currently work as a <a href={urlForShopify}>Shopify</a> Developer working on e-commerce websites and stores for a large web development agency. By night, during the Batman hours, I work with <a title="NextJS" href={urlForNextJS}>Next.js</a>, <a title="React JS" href={urlForReactJS}>React</a>, and <a title="Tailwind CSS" href={urlForTailwindCSS}>Tailwind CSS</a> to create fun, interesting and practical ways of brightening one&apos;s day.
 			</p>
 			<div className={`max-lg:mt-2`}>
 				<ul className={`flex justify-center gap-8 sm:justify-end lg:flex-col`}>
