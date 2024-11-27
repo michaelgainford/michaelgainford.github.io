@@ -1,6 +1,9 @@
+{/* Site Wide Variables */}
 const globalPageStyles = "space-y-4 lg:space-y-8 2xl:space-y-16 min-h-dvh";
 const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
+const sharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
 
+{/* Navigation */}
 const navigation = [
   {
     label: "Home",
@@ -134,7 +137,7 @@ const navigation = [
   },
 ];
 
-{/* create an array to store the premier league seasons */}
+{/* Array of Premier League Seasons */}
 const premierLeagueYears = [
   '92/93',
   '93/94', 
@@ -180,9 +183,32 @@ const premierLeagueHubUrl = "/projects/football/competitions/english-premier-lea
 const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
 const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
 
+{/* List Of My Sites */}
+const mySites = [
+	{
+		name: "Fairway Golf Holidays",
+		image: "/my-sites/fairway-golf-holidays.webp",
+		alt: "Fairway Golf Holidays",
+		description: "Fairway Golf Group Holidays",
+	},
+	{
+		name: "Michael Gainford Portfolio",
+		image: "/my-sites/michael-gainford-portfolio.webp",
+		alt: "Michael Gainford Portfolio",
+		description: "Michael Gainford Portfolio",
+	},
+	{
+		name: "Golf Membership",
+		image: "/my-sites/golf-membership.webp",
+		alt: "Golf Membership",
+		description: "Golf Membership North West",
+	},
+];
+
 {/* exports */}
 export { mainStyles };
 export { globalPageStyles };
+export { sharedHeadingStyles };
 export { navigation };
 export { premierLeagueYears };
 export { seasonPositions };
@@ -190,3 +216,4 @@ export { clubLogosRoot };
 export { premierLeagueHubUrl };
 export { premierLeagueLogoSvgPath };
 export { premierLeagueHubBlockImageRoot };
+export { mySites };

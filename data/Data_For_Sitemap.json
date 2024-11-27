@@ -8,12 +8,12 @@
         {
             "name": "About",
             "href": "/general/about",
-            "lastUpdated": "2024-11-22"
+            "lastUpdated": "2024-11-27"
         },
         {
             "name": "Site Maintenance Tracker",
             "href": "/general/site-maintenance-tracker",
-            "lastUpdated": "2024-11-26"
+            "lastUpdated": "2024-11-27"
         },
         {
             "name": "Site Style Guide",
@@ -26,7 +26,7 @@
             "lastUpdated": "2024-11-23"
         },
         {
-            "name": "English Premier League (EPL) Hub",
+            "name": "EPL (English Premier League) Hub",
             "href": "/projects/football/competitions/english-premier-league",
             "lastUpdated": "2024-11-22"
         },
@@ -52,7 +52,7 @@
         },
         {
             "name": "Euro 2024",
-            "href": "/football/competitions/euro-2024",
+            "href": "/projects/football/competitions/euro-2024",
             "lastUpdated": "2024-11-19"
         },
         {

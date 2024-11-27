@@ -57,7 +57,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 + **Home**: Landing page with a brief description of the site and a list of resources/projects.
 + **Dev Resources**: A list of resources for web developers.
 + **Projects**: A list of projects that I have worked on.
-  - **Euro 2024**: A project that I worked on for the Euro 2024 tournament.
+  - **Euro 2024**: A project that I worked on for the Euro 2024 tournament. This never actually got finished in time for the tournament, but it was a good learning experience and I will be using it as a reference for the 2026 World Cup.
   - **Everton**: A project dedicated to Everton Football Club.
   - **Fortnite**: A project dedicated to the popular game Fortnite.
   - **Geography**: A project that displays information about countries.
@@ -68,7 +68,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - **Space**: A project that displays information about space.
   - **The Mag Premier League**: A project that displays information about the Mag Premier League. An online eFootball league.
 + **General**
-  - **About**: A page about me.
+  - **About**: A page about me and the site.
   - **Style Guide**: A page that contains a style guide for the site.
 
 ---
