@@ -1,7 +1,8 @@
-{/* Site Wide Variables */}
-const globalPageStyles = "space-y-4 lg:space-y-8 2xl:space-y-16 min-h-dvh";
+{/* Site Wide Styling */}
+const globalPageStyles = "space-y-4 lg:space-y-8 xl:space-y-12 2xl:space-y-16 min-h-dvh";
 const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
 const sharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
+const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
 
 {/* Navigation */}
 const navigation = [
@@ -205,10 +206,17 @@ const mySites = [
 	},
 ];
 
+{/* List of External Sites */}
+const urlForShopify = "https://www.shopify.com/";
+const urlForNextJS = "https://nextjs.org";
+const urlForReactJS = "https://react.dev";
+const urlForTailwindCSS = "https://tailwindcss.com";
+
 {/* exports */}
 export { mainStyles };
 export { globalPageStyles };
 export { sharedHeadingStyles };
+export { brandSharedHeadingStyles };
 export { navigation };
 export { premierLeagueYears };
 export { seasonPositions };
@@ -217,3 +225,7 @@ export { premierLeagueHubUrl };
 export { premierLeagueLogoSvgPath };
 export { premierLeagueHubBlockImageRoot };
 export { mySites };
+export { urlForShopify };
+export { urlForNextJS };
+export { urlForReactJS };
+export { urlForTailwindCSS };

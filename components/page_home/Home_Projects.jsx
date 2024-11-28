@@ -8,7 +8,7 @@ const featuredProjects = DataForAllProjects.filter(project => project.featuredPr
 export default function COMPONENT_HOME_PROJECTS() {
 	return (
 		<div className="w-full projects-list">
-			<H2SectionHeader text="Featured Projects" />
+			<H2SectionHeader text="Featured Dev Projects" />
 			<div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 md:gap-8 lg:gap-8 lg:grid-cols-2 xl:gap-12 2xl:grid-cols-2 motion motion-preset-slide-up motion-delay-[1000ms]">
 			{featuredProjects.map((project, index) => (
 				<Link
