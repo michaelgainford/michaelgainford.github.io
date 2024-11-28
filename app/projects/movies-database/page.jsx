@@ -14,7 +14,7 @@ const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === fa
 const watchedMoviesLength = watchedMovies.length;
 const unwatchedMoviesLength = unwatchedMovies.length;
 
-const pageStyles = "bg-gray-950/50 text-slate-300";
+const pageStyles = "bg-gray-950 text-slate-300";
 const watchedMoviesScrollStyles = "max-xl:flex max-xl:flex-no-wrap max-xl:justify-start max-xl:overflow-x-scroll max-xl:snap-x max-xl:snap-mandatory";
 const watchedMoviesGridStyles = "xl:grid xl:gap-8 xl:grid-cols-4 xl:gap-8 xl:gap-12 xl:grid-cols-6 2xl:grid-cols-5 3xl:grid-cols-8 4xl:grid-cols-10 5xl:grid-cols-12";
 const watchedMoviesSharedStyles = "w-full gap-4 no-scrollbar motion motion-preset-slide-up motion-delay-[600ms]";
