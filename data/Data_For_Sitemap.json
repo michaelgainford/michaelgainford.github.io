@@ -13,7 +13,7 @@
         {
             "name": "Site Maintenance Tracker",
             "href": "/general/site-maintenance-tracker",
-            "lastUpdated": "2024-11-27"
+            "lastUpdated": "2024-11-28"
         },
         {
             "name": "Site Style Guide",
@@ -23,7 +23,7 @@
         {
             "name": "All Projects",
             "href": "/projects",
-            "lastUpdated": "2024-11-23"
+            "lastUpdated": "2024-11-28"
         },
         {
             "name": "EPL (English Premier League) Hub",
@@ -68,7 +68,7 @@
         {
             "name": "The MAG Premier League",
             "href": "/projects/gaming/the-mag-premier-league",
-            "lastUpdated": "2024-11-24"
+            "lastUpdated": "2024-11-28"
         },
         {
             "name": "Jokes",
@@ -103,7 +103,7 @@
         {
             "name": "Dev Resources",
             "href": "/web-development/dev-resources",
-            "lastUpdated": "2024-11-20"
+            "lastUpdated": "2024-11-28"
         }
     ]
 }

@@ -9,7 +9,7 @@ import DataForProjects from "@/data/Data_For_Projects";
 
 export const metadata = {
 	title: `Projects`,
-	description: `A collection of projects that I have worked on, that are a part of this website. Some of these projects are still in progress, like my digital garden. Different plants needing tending to in different way. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`
+	description: `A collection of projects that I have worked on, that make up the metaverse as part of this website. Some of these projects are still in progress and my intention is to continuously wokr on all the pages. I see it as my digital garden. Different plants needing tending to in different way. Some are good for a few months, some need more regular attention. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`
 };
 
 {/* Sort the projects by name... */}
@@ -18,7 +18,7 @@ DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 DataForProjects.sort((a, b) => a.archived - b.archived);
 
 const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
-const pageIntroText = `A collection of projects that I have worked on, that are a part of this website. Some of these projects are still in progress, like my digital garden. Different plants needing tending to in different way. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`;
+const pageIntroText = `A collection of projects that I have worked on, that make up the metaverse as part of this website. Some of these projects are still in progress and my intention is to continuously tend to all the pages. I see it as my digital garden. Different plants needing tending to in different way. Some are good for a few months, some need more regular attention. Each project has a brief description and a category that it belongs to. Click on a project to view the page.`;
 
 export default function PAGE_PROJECTS() {
 	return (
@@ -28,7 +28,7 @@ export default function PAGE_PROJECTS() {
 			
 			<main className={`${mainStyles}`}>
 				
-				<H1 text={`All Projects`} />
+				<H1 text={`Projects`} />
 				
 				<PageIntro 
 				  text={pageIntroText}
