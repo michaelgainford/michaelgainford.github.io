@@ -55,7 +55,7 @@ export default function PAGE_PREMIER_LEAGUE () {
                                 alt={Club.teamName}
                                 width={80}
                                 height={80}
-                                className={Club.currentPrem ? "grayscale-0 !h-[80px] 2xl:!h-[120px] !max-h-unset !w-auto max-w-auto" : "grayscale hover:grayscale-0 !h-[80px] 2xl:!h-[120px] !max-h-unset !w-auto max-w-auto"}
+                                className={Club.currentPrem ? "grayscale-0 !h-[80px] 2xl:!h-[120px] !max-h-unset !w-auto max-w-auto" : "grayscale hover:grayscale-0 !h-[80px] 2xl:!h-[120px] !max-h-unset !w-auto max-w-auto duration-500 transition-all"}
                                 />
                                 <p className={`text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
                                     {Club.teamName}

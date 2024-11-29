@@ -5,6 +5,7 @@ import Link from "next/link";
 import DataForNavigation from "@/data/Data_For_Navigation";
 import MainLogo from "./MainLogo";
 import IconCrossNav from "../icons/IconCrossNav";
+import { brandTextColour } from "@/data/Variables";
 const navLinks = DataForNavigation.filter((link) => link.mainNav === true);
 
 // get all links get that contain the string '/projects/' and store for later
@@ -26,7 +27,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
   const projectsSubMenuVisibility = isProjectsSubMenuVisible ? `` : `hidden`;
   return (
     <div
-      className={`mobile-nav absolute inset-0 right-4 z-[99] w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto text-slate-100 ${
+      className={`mobile-nav absolute inset-0 right-4 z-[99] w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto ${brandTextColour} ${
         isVisible ? `` : `hidden`
       }`}
     >
