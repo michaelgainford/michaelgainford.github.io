@@ -28,7 +28,7 @@ export default function PAGE_MOVIES_DATABASE() {
 			<Header />
 			<main className={`${mainStyles}`}>
 				<div className="flex items-center gap-2 my-8 title-icon">
-					<IconMovies classes="size-5 fill-slate-200 lg:size-8"  />
+					<IconMovies classes="size-5 fill-slate-200 lg:size-8  motion motion-preset-slide-up motion-delay-300"  />
 					<H1 text={`Movies Database`} font_sizes={`!pt-0`} other_classes={`!mb-0 !pb-0`}/>
 				</div>
 				<PageIntro 
