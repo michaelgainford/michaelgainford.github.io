@@ -1,0 +1,24 @@
+{
+    "Socials": [
+        {
+            "name": "Codepen",
+            "href": "https://codepen.io/michaelgainford",
+            "icon": "CodepenIcon"
+        },
+        {
+            "name": "GitHub",
+            "href": "https://github.com/michaelgainford",
+            "icon": "GitHubIcon"
+        },
+        {
+            "name": "LinkedIn",
+            "href": "https://www.linkedin.com/in/michaelgainford",
+            "icon": "LinkedInIcon"
+        },
+        {
+            "name": "Twitter",
+            "href": "https://twitter.com/michaelgainford",
+            "icon": "TwitterIcon"
+        }
+    ]
+}
