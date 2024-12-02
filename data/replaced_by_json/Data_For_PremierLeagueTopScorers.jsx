@@ -9,7 +9,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 441,
 		playerGoals: 260,
+		playerLastGoalFor: "Newcastle United",
+		playerLastGoalOpponent: "Sunderland",
+		playerLastGoalDate: "2006-04-22",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 2,
@@ -21,16 +25,24 @@ const Data_TopScorers = [
 		],
 		playerApps: 491,
 		playerGoals: 208,
+		playerLastGoalFor: "Everton",
+		playerLastGoalOpponent: "Swansea City",
+		playerLastGoalDate: "2017-12-18",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 3,
 		playerName: "Harry Kane",
 		playerSlug: "harry-kane",
 		playerClubs: ["Tottenham Hotspur (213)"],
-		playerApps: 297,
+		playerApps: 320,
 		playerGoals: 213,
+		playerLastGoalFor: "Tottenham Hotspur",
+		playerLastGoalOpponent: "Crystal Palace",
+		playerLastGoalDate: "2023-05-06",
 		playerCurrent: true,
+		updated: "2024-12-01",
     },
     {
 		playerId: 4,
@@ -47,7 +59,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 414,
 		playerGoals: 187,
+		playerLastGoalFor: "Sunderland",
+		playerLastGoalOpponent: "Middlesbrough",
+		playerLastGoalDate: "2007-05-05",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 5,
@@ -58,7 +74,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 275,
 		playerGoals: 184,
+		playerLastGoalFor: "Manchester City",
+		playerLastGoalOpponent: "Everton",
+		playerLastGoalDate: "2021-05-23",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
       	playerId: 6,
@@ -71,7 +91,11 @@ const Data_TopScorers = [
 			],
 		playerApps: 609,
 		playerGoals: 177,
+		playerLastGoalFor: "Manchester City",
+		playerLastGoalOpponent: "Southampton",
+		playerLastGoalDate: "2015-05-24",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 7,
@@ -82,7 +106,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 258,
 		playerGoals: 175,
+		playerLastGoalFor: "Arsenal",
+		playerLastGoalOpponent: "Sunderland",
+		playerLastGoalDate: "2012-02-11",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 8,
@@ -96,7 +124,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 379,
 		playerGoals: 163,
+		playerLastGoalFor: "Liverpool",
+		playerLastGoalOpponent: "Sheffield United",
+		playerLastGoalDate: "2007-02-24",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 9,
@@ -111,7 +143,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 496,
 		playerGoals: 162,
+		playerLastGoalFor: "AFC Bournemouth",
+		playerLastGoalOpponent: "Watford",
+		playerLastGoalDate: "2018-03-31",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 10,
@@ -125,7 +161,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 326, 
 		playerGoals: 150,
+		playerLastGoalFor: "Stoke City",
+		playerLastGoalOpponent: "Swansea City",
+		playerLastGoalDate: "2013-01-19",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 11,
@@ -141,7 +181,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 351,
 		playerGoals: 149,
+		playerLastGoalFor: "Bolton Wanderers",
+		playerLastGoalOpponent: "Manchester United",
+		playerLastGoalDate: "2004-09-11",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 12,
@@ -156,6 +200,9 @@ const Data_TopScorers = [
 		],
 		playerApps: 418,
 		playerGoals: 146,
+		playerLastGoalFor: "West Ham United",
+		playerLastGoalOpponent: "Portsmouth",
+		playerLastGoalDate: "2006-12-26",
 		playerCurrent: false,
     },
     {
@@ -168,6 +215,9 @@ const Data_TopScorers = [
 		],
 		playerApps: 280,
 		playerGoals: 144,
+		playerLastGoalFor: "Manchester United",
+		playerLastGoalOpponent: "Burnley",
+		playerLastGoalDate: "2015-02-11",
 		playerCurrent: false,
     },
     {
@@ -177,7 +227,11 @@ const Data_TopScorers = [
 		playerClubs: ["Leicester City (140)"],
 		playerApps: 285,
 		playerGoals: 140,
+		playerLastGoalFor: "Leicester City",
+		playerLastGoalOpponent: "Nottingham Forest",
+		playerLastGoalDate: "2024-10-25",
 		playerCurrent: true,
+		updated: "2024-12-01",
     },
     {
 		playerId: 15,
@@ -191,7 +245,11 @@ const Data_TopScorers = [
 		],
 		playerApps: 288,
 		playerGoals: 127,
+		playerLastGoalFor: "Charlton Athletic",
+		playerLastGoalOpponent: "Middlebrough",
+		playerLastGoalDate: "2007-01-13",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
       playerId: 16,
@@ -205,8 +263,13 @@ const Data_TopScorers = [
 		"West Ham United (2)",
         "Aston Villa (3)",
       ],
+	  playerApps: 349,
       playerGoals: 126,
+	  playerLastGoalFor: "Aston Villa",
+	  playerLastGoalOpponent: "Newcastle United",
+	  playerLastGoalDate: "2012-02-05",
       playerCurrent: false,
+	  updated: "2024-12-01",
     },
     {
       playerId: 17,
@@ -220,8 +283,13 @@ const Data_TopScorers = [
         "Chelsea (38)",
 		"West Bromwich Albion (2)",
       ],
+	  playerApps: 364,
       playerGoals: 125,
+	  playerLastGoalFor: "West Bromwich Albion",
+	  playerLastGoalOpponent: "West Ham United",
+	  playerLastGoalDate: "2013-12-28",
       playerCurrent: false,
+	  updated: "2024-12-01",
     },
     {
 		playerId: 18,
@@ -234,8 +302,13 @@ const Data_TopScorers = [
 			"Birmingham City (2)",
 			"Sunderland (6)"
 		],
+		playerApps: 375,
 		playerGoals: 123,
+		playerLastGoalFor: "Sunderland",
+		playerLastGoalOpponent: "Everton",
+		playerLastGoalDate: "2007-11-24",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 19,
@@ -243,10 +316,15 @@ const Data_TopScorers = [
 		playerSlug: "mohamed-salah",
 		playerClubs: [
 			"Chelsea (2)",
-			"Liverpool (165)"
+			"Liverpool (166)"
 		],
-		playerGoals: 167,
+		playerApps: 276,
+		playerGoals: 168,
+		playerLastGoalFor: "Liverpool",
+		playerLastGoalOpponent: "Manchester City",
+		playerLastGoalDate: "2024-12-01",
 		playerCurrent: true,
+		updated: "2024-12-02",
     },
     {
 		playerId: 20,
@@ -255,21 +333,31 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Liverpool (120)"
 		],
+		playerApps: 504,
 		playerGoals: 120,
+		playerLastGoalFor: "Liverpool",
+		playerLastGoalOpponent: "Stoke City",
+		playerLastGoalDate: "2015-05-24",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
-      playerId: 21,
-      playerName: "Romelu Lukaku",
-      playerSlug: "romelu-lukaku",
-      playerClubs: [
-        "Chelsea (8)",
-        "West Bromwich Albion (17)",
-        "Everton (68)",
-        "Manchester United (28)",
-      ],
-      playerGoals: 121,
-      playerCurrent: true,
+		playerId: 21,
+		playerName: "Romelu Lukaku",
+		playerSlug: "romelu-lukaku",
+		playerClubs: [
+			"Chelsea (8)",
+			"West Bromwich Albion (17)",
+			"Everton (68)",
+			"Manchester United (28)",
+		],
+		playerApps: 278,
+		playerGoals: 121,
+		playerLastGoalFor: "Chelsea",
+		playerLastGoalOpponent: "Leeds United",
+		playerLastGoalDate: "2022-05-11",
+		playerCurrent: true,
+		updated: "2024-12-01",
     },
     {
      	playerId: 22,
@@ -279,19 +367,29 @@ const Data_TopScorers = [
 			"Arsenal (104)",
 			"West Ham United (9)"
 		],
+		playerApps: 213,
 		playerGoals: 113,
+		playerLastGoalFor: "West Ham United",
+		playerLastGoalOpponent: "Tottenham Hotspur",
+		playerLastGoalDate: "1999-04-24",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
-      playerId: 23,
-      playerName: "Sadio Mane",
-      playerSlug: "sadio-mane",
-      playerClubs: [
-		"Southampton (21)", 
-		"Liverpool (90)"
-	],
-      playerGoals: 111,
-      playerCurrent: true,
+		playerId: 23,
+		playerName: "Sadio Mané",
+		playerSlug: "sadio-mane",
+		playerClubs: [
+			"Southampton (21)", 
+			"Liverpool (90)"
+		],
+		playerApps: 263,
+		playerGoals: 111,
+		playerLastGoalFor: "Liverpool",
+		playerLastGoalOpponent: "Wolverhampton Wanderers",
+		playerLastGoalDate: "2022-05-22",
+		playerCurrent: true,
+		updated: "2024-12-01",
     },
     {
 		playerId: 24,
@@ -302,8 +400,13 @@ const Data_TopScorers = [
 			"Coventry City (61)",
 			"Aston Villa (46)"
 		],
+		playerApps: 312,
 		playerGoals: 111,
+		playerLastGoalFor: "Aston Villa",
+		playerLastGoalOpponent: "Leicester City",
+		playerLastGoalDate: "2004-01-31",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 25,
@@ -314,23 +417,30 @@ const Data_TopScorers = [
 			"Manchester City (91)",
 			"Chelsea (14)",
 			"Arsenal (0)"
-	],
-      playerGoals: 123,
-      playerCurrent: true,
+		],
+		playerApps: 385,
+		playerGoals: 123,
+		playerCurrent: true,
+		updated: "2024-12-02",
     },
     {
-      playerId: 26,
-      playerName: "Emile Heskey",
-      playerSlug: "emile-heskey",
-      playerClubs: [
-        "Leicester City (33)", 
-		"Liverpool (39)",
-		"Birmingham City (14)",
-		"Wigan Athletic (15)",
-		"Aston Villa (9)"
-	],
-      playerGoals: 110,
-      playerCurrent: false,
+		playerId: 26,
+		playerName: "Emile Heskey",
+		playerSlug: "emile-heskey",
+		playerClubs: [
+			"Leicester City (33)", 
+			"Liverpool (39)",
+			"Birmingham City (14)",
+			"Wigan Athletic (15)",
+			"Aston Villa (9)"
+		],
+		playersApps: 516,
+		playerGoals: 110,
+		playerLastGoalFor: "Aston Villa",
+		playerLastGoalOpponent: "Blackburn Rovers",
+		playerLastGoalDate: "2011-08-20",
+		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
       playerId: 27,
@@ -339,8 +449,13 @@ const Data_TopScorers = [
       playerClubs: [
         "Manchester United (109)"
       ],
+	  playerApps: 632,
       playerGoals: 109,
+	  playerLastGoalFor: "Manchester United",
+	  playerLastGoalOpponent: "Queens Park Rangers",
+	  playerLastGoalDate: "2013-02-23",
       playerCurrent: false,
+	  updated: "2024-12-01",
     },
     {
 		playerId: 28,
@@ -354,8 +469,12 @@ const Data_TopScorers = [
 			"Tottenham Hotspur (12)",
 			"Stoke City (45)",
 			"Burnley (0)",
-		],  
+		],
+		playerApps: 468,
 		playerGoals: 108,
+		playerLastGoalFor: "Stoke City",
+		playerLastGoalOpponent: "Swansea City",
+		playerLastGoalDate: "2018-05-13",
 		playerCurrent: false,
     },
     {
@@ -365,8 +484,13 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Manchester United (107)"
 		],
+		playerApps: 499,
 		playerGoals: 107,
+		playerLastGoalFor: "Manchester United",
+		playerLastGoalOpponent: "Wigan Athletic",
+		playerLastGoalDate: "2012-09-15",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 30,
@@ -380,10 +504,13 @@ const Data_TopScorers = [
 			"Aston Villa (21)",
 			"Fulham* (3)",
 		],
-		playerGoals: 106,
 		playerApps: 276,
-		playerLastGame: "2015-05-24",
+		playerGoals: 106,
+		playerLastGoalFor: "Fulham",
+		playerLastGoalOpponent: "Manchester United",
+		playerLastGoalDate: "2014-02-09",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 31,
@@ -392,8 +519,13 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Chelsea (104)"
 		],
+		playerApps: 254,
 		playerGoals: 104,
+		playerLastGoalFor: "Chelsea",
+		playerLastGoalOpponent: "Leicester City",
+		playerLastGoalDate: "2015-04-29",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 32,
@@ -402,8 +534,13 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Manchester United (102)"
 		],
-		playerGoals: 102,
+		playerApps: 236,
+		playerGoals: 103,
+		playerLastGoalFor: "Manchester United",
+		playerLastGoalOpponent: "Everton",
+		playerLastGoalDate: "2022-10-09",
 		playerCurrent: true,
+		updated: "2024-12-01",
     },
     {
 		playerId: 33,
@@ -412,8 +549,13 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Southampton (100)"
 		],
+		playerApps: 270,
 		playerGoals: 100,
+		playerLastGoalFor: "Southampton",
+		playerLastGoalOpponent: "Arsenal",
+		playerLastGoalDate: "2001-05-19",
 		playerCurrent: false,
+		updated: "2024-12-01",
     },
     {
 		playerId: 34,
@@ -422,9 +564,14 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Tottenham Hotspur (123)"
 		],
+		playerApps: 313,
 		playerGoals: 123,
+		playerLastGoalFor: "Tottenham Hotspur",
+		playerLastGoalOpponent: "West Ham United",
+		playerLastGoalDate: "2024-10-19",
 		playerCurrent: true,
-    }
+		updated: "2024-12-01"
+	}
   ];
   
   export default Data_TopScorers;

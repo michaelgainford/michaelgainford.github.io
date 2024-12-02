@@ -1,0 +1,577 @@
+{
+    "Top_Scorers": [
+        {
+            "playerId": 1,
+            "playerName": "Alan Shearer",
+            "playerSlug": "alan-shearer",
+            "playerClubs": [
+                "Blackburn Rovers (112)",
+                "Newcastle United (148)"
+            ],
+            "playerApps": 441,
+            "playerGoals": 260,
+            "playerLastGoalFor": "Newcastle United",
+            "playerLastGoalOpponent": "Sunderland",
+            "playerLastGoalDate": "2006-04-22",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 2,
+            "playerName": "Wayne Rooney",
+            "playerSlug": "wayne-rooney",
+            "playerClubs": [
+                "Everton (25)", 
+                "Manchester United (183)"
+            ],
+            "playerApps": 491,
+            "playerGoals": 208,
+            "playerLastGoalFor": "Everton",
+            "playerLastGoalOpponent": "Swansea City",
+            "playerLastGoalDate": "2017-12-18",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 3,
+            "playerName": "Harry Kane",
+            "playerSlug": "harry-kane",
+            "playerClubs": ["Tottenham Hotspur (213)"],
+            "playerApps": 320,
+            "playerGoals": 213,
+            "playerLastGoalFor": "Tottenham Hotspur",
+            "playerLastGoalOpponent": "Crystal Palace",
+            "playerLastGoalDate": "2023-05-06",
+            "playerCurrent": true,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 4,
+            "playerName": "Andy Cole",
+            "playerSlug": "andy-cole",
+            "playerClubs": [
+                "Newcastle United (55)",
+                "Manchester United (93)",
+                "Blackburn Rovers (27)",
+                "Fulham (12)",
+                "Manchester City (9)",
+                "Portsmouth (3)",
+                "Sunderland (0)"
+            ],
+            "playerApps": 414,
+            "playerGoals": 187,
+            "playerLastGoalFor": "Sunderland",
+            "playerLastGoalOpponent": "Middlesbrough",
+            "playerLastGoalDate": "2007-05-05",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 5,
+            "playerName": "Sergio Aguero",
+            "playerSlug": "sergio-aguero",
+            "playerClubs": [
+                "Manchester City (184)"
+            ],
+            "playerApps": 275,
+            "playerGoals": 184,
+            "playerLastGoalFor": "Manchester City",
+            "playerLastGoalOpponent": "Everton",
+            "playerLastGoalDate": "2021-05-23",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 6,
+            "playerName": "Frank Lampard",
+            "playerSlug": "frank-lampard",
+            "playerClubs": [
+                "West Ham United (24)", 
+                "Chelsea (147)", 
+                "Manchester City (6)"
+                ],
+            "playerApps": 609,
+            "playerGoals": 177,
+            "playerLastGoalFor": "Manchester City",
+            "playerLastGoalOpponent": "Southampton",
+            "playerLastGoalDate": "2015-05-24",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 7,
+            "playerName": "Thierry Henry",
+            "playerSlug": "thierry-henry",
+            "playerClubs": [
+                "Arsenal (175)"
+            ],
+            "playerApps": 258,
+            "playerGoals": 175,
+            "playerLastGoalFor": "Arsenal",
+            "playerLastGoalOpponent": "Sunderland",
+            "playerLastGoalDate": "2012-02-11",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 8,
+            "playerName": "Robbie Fowler",
+            "playerSlug": "robbie-fowler",
+            "playerClubs": [
+                "Liverpool (128)",
+                "Leeds United (14)",
+                "Manchester City (21)",
+                "Blackburn Rovers (0)"
+            ],
+            "playerApps": 379,
+            "playerGoals": 163,
+            "playerLastGoalFor": "Liverpool",
+            "playerLastGoalOpponent": "Sheffield United",
+            "playerLastGoalDate": "2007-02-24",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 9,
+            "playerName": "Jermain Defoe",
+            "playerSlug": "jermain-defoe",
+            "playerClubs": [
+                "West Ham United (29)",
+                "Tottenham Hotspur (91)",
+                "Portsmouth (15)",
+                "Sunderland (34)",
+                "Bournemouth (4)"
+            ],
+            "playerApps": 496,
+            "playerGoals": 162,
+            "playerLastGoalFor": "AFC Bournemouth",
+            "playerLastGoalOpponent": "Watford",
+            "playerLastGoalDate": "2018-03-31",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 10,
+            "playerName": "Michael Owen",
+            "playerSlug": "michael-owen",
+            "playerClubs": [
+                "Liverpool (118)",
+                "Newcastle United (26)",
+                "Manchester United (5)",
+                "Stoke City (1)"
+            ],
+            "playerApps": 326, 
+            "playerGoals": 150,
+            "playerLastGoalFor": "Stoke City",
+            "playerLastGoalOpponent": "Swansea City",
+            "playerLastGoalDate": "2013-01-19",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 11,
+            "playerName": "Les Ferdinand",
+            "playerSlug": "les-ferdinand",
+            "playerClubs": [
+                "Queens Park Rangers (60)",
+                "Newcastle United (41)",
+                "Tottenham Hotspur (33)",
+                "West Ham United (2)",
+                "Leicester City (12)",
+                "Bolton Wanderers (1)"
+            ],
+            "playerApps": 351,
+            "playerGoals": 149,
+            "playerLastGoalFor": "Bolton Wanderers",
+            "playerLastGoalOpponent": "Manchester United",
+            "playerLastGoalDate": "2004-09-11",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 12,
+            "playerName": "Teddy Sheringham",
+            "playerSlug": "teddy-sheringham",
+            "playerClubs": [
+                "Nottingham Forest (1)", 
+                "Tottenham Hotspur (75)",
+                "Manchester United (31)",
+                "Portsmouth (9)",
+                "West Ham United (28)"
+            ],
+            "playerApps": 418,
+            "playerGoals": 146,
+            "playerLastGoalFor": "West Ham United",
+            "playerLastGoalOpponent": "Portsmouth",
+            "playerLastGoalDate": "2006-12-26",
+            "playerCurrent": false
+        },
+        {
+            "playerId": 13,
+            "playerName": "Robin Van Persie",
+            "playerSlug": "robin-van-persie",
+            "playerClubs": [
+                "Arsenal (96)",
+                "Manchester United (48)"
+            ],
+            "playerApps": 280,
+            "playerGoals": 144,
+            "playerLastGoalFor": "Manchester United",
+            "playerLastGoalOpponent": "Burnley",
+            "playerLastGoalDate": "2015-02-11",
+            "playerCurrent": false
+        },
+        {
+            "playerId": 14,
+            "playerName": "Jamie Vardy",
+            "playerSlug": "jamie-vardy",
+            "playerClubs": ["Leicester City (140)"],
+            "playerApps": 285,
+            "playerGoals": 140,
+            "playerLastGoalFor": "Leicester City",
+            "playerLastGoalOpponent": "Nottingham Forest",
+            "playerLastGoalDate": "2024-10-25",
+            "playerCurrent": true,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 15,
+            "playerName": "Jimmy Floyd Hasselbaink",
+            "playerSlug": "jimmyfloyd-hasselbaink",
+            "playerClubs": [
+                "Leeds United (34)", 
+                "Chelsea (69)",
+                "Middlesbrough (22)",
+                "Charlton Athletic (2)"
+            ],
+            "playerApps": 288,
+            "playerGoals": 127,
+            "playerLastGoalFor": "Charlton Athletic",
+            "playerLastGoalOpponent": "Middlebrough",
+            "playerLastGoalDate": "2007-01-13",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 16,
+            "playerName": "Robbie Keane",
+            "playerSlug": "robbie-keane",
+            "playerClubs": [
+                "Coventry City (12)",
+                "Leeds United (13)",
+                "Tottenham Hotspur (91)",
+                "Liverpool (5)",
+                "West Ham United (2)",
+                "Aston Villa (3)"
+            ],
+            "playerApps": 349,
+            "playerGoals": 126,
+            "playerLastGoalFor": "Aston Villa",
+            "playerLastGoalOpponent": "Newcastle United",
+            "playerLastGoalDate": "2012-02-05",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 17,
+            "playerName": "Nicolas Anelka",
+            "playerSlug": "nicolas-anelka",
+            "playerClubs": [
+                "Arsenal (23)",
+                "Liverpool (4)",
+                "Manchester City (37)",
+                "Bolton Wanderers (21)",
+                "Chelsea (38)",
+                "West Bromwich Albion (2)"
+            ],
+            "playerApps": 364,
+            "playerGoals": 125,
+            "playerLastGoalFor": "West Bromwich Albion",
+            "playerLastGoalOpponent": "West Ham United",
+            "playerLastGoalDate": "2013-12-28",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 18,
+            "playerName": "Dwight Yorke",
+            "playerSlug": "dwight-yorke",
+            "playerClubs": [
+                "Aston Villa (73)",
+                "Manchester United (48)",
+                "Blackburn Rovers (12)",
+                "Birmingham City (2)",
+                "Sunderland (6)"
+            ],
+            "playerApps": 375,
+            "playerGoals": 123,
+            "playerLastGoalFor": "Sunderland",
+            "playerLastGoalOpponent": "Everton",
+            "playerLastGoalDate": "2007-11-24",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 19,
+            "playerName": "Mohamed Salah",
+            "playerSlug": "mohamed-salah",
+            "playerClubs": [
+                "Chelsea (2)",
+                "Liverpool (166)"
+            ],
+            "playerApps": 276,
+            "playerGoals": 168,
+            "playerLastGoalFor": "Liverpool",
+            "playerLastGoalOpponent": "Manchester City",
+            "playerLastGoalDate": "2024-12-01",
+            "playerCurrent": true,
+            "updated": "2024-12-02"
+        },
+        {
+            "playerId": 20,
+            "playerName": "Steven Gerrard",
+            "playerSlug": "steven-gerrard",
+            "playerClubs": [
+                "Liverpool (120)"
+            ],
+            "playerApps": 504,
+            "playerGoals": 120,
+            "playerLastGoalFor": "Liverpool",
+            "playerLastGoalOpponent": "Stoke City",
+            "playerLastGoalDate": "2015-05-24",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 21,
+            "playerName": "Romelu Lukaku",
+            "playerSlug": "romelu-lukaku",
+            "playerClubs": [
+                "Chelsea (8)",
+                "West Bromwich Albion (17)",
+                "Everton (68)",
+                "Manchester United (28)"
+            ],
+            "playerApps": 278,
+            "playerGoals": 121,
+            "playerLastGoalFor": "Chelsea",
+            "playerLastGoalOpponent": "Leeds United",
+            "playerLastGoalDate": "2022-05-11",
+            "playerCurrent": true,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 22,
+            "playerName": "Ian Wright",
+            "playerSlug": "ian-wright",
+            "playerClubs": [
+                "Arsenal (104)",
+                "West Ham United (9)"
+            ],
+            "playerApps": 213,
+            "playerGoals": 113,
+            "playerLastGoalFor": "West Ham United",
+            "playerLastGoalOpponent": "Tottenham Hotspur",
+            "playerLastGoalDate": "1999-04-24",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 23,
+            "playerName": "Sadio Mané",
+            "playerSlug": "sadio-mane",
+            "playerClubs": [
+                "Southampton (21)", 
+                "Liverpool (90)"
+            ],
+            "playerApps": 263,
+            "playerGoals": 111,
+            "playerLastGoalFor": "Liverpool",
+            "playerLastGoalOpponent": "Wolverhampton Wanderers",
+            "playerLastGoalDate": "2022-05-22",
+            "playerCurrent": true,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 24,
+            "playerName": "Dion Dublin",
+            "playerSlug": "dion-dublin",
+            "playerClubs": [
+                "Manchester United (2)",
+                "Coventry City (61)",
+                "Aston Villa (46)"
+            ],
+            "playerApps": 312,
+            "playerGoals": 111,
+            "playerLastGoalFor": "Aston Villa",
+            "playerLastGoalOpponent": "Leicester City",
+            "playerLastGoalDate": "2004-01-31",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 25,
+            "playerName": "Raheem Sterling",
+            "playerSlug": "raheem-sterling",
+            "playerClubs": [
+                "Liverpool (18)",
+                "Manchester City (91)",
+                "Chelsea (14)",
+                "Arsenal (0)"
+            ],
+            "playerApps": 385,
+            "playerGoals": 123,
+            "playerCurrent": true,
+            "updated": "2024-12-02"
+        },
+        {
+            "playerId": 26,
+            "playerName": "Emile Heskey",
+            "playerSlug": "emile-heskey",
+            "playerClubs": [
+                "Leicester City (33)", 
+                "Liverpool (39)",
+                "Birmingham City (14)",
+                "Wigan Athletic (15)",
+                "Aston Villa (9)"
+            ],
+            "playersApps": 516,
+            "playerGoals": 110,
+            "playerLastGoalFor": "Aston Villa",
+            "playerLastGoalOpponent": "Blackburn Rovers",
+            "playerLastGoalDate": "2011-08-20",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 27,
+            "playerName": "Ryan Giggs",
+            "playerSlug": "ryan-giggs",
+            "playerClubs": [
+            "Manchester United (109)"
+            ],
+            "playerApps": 632,
+            "playerGoals": 109,
+            "playerLastGoalFor": "Manchester United",
+            "playerLastGoalOpponent": "Queens Park Rangers",
+            "playerLastGoalDate": "2013-02-23",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 28,
+            "playerName": "Peter Crouch",
+            "playerSlug": "peter-crouch",
+            "playerClubs": [
+                "Aston Villa (6)",
+                "Southampton (12)",
+                "Liverpool (22)",
+                "Portsmouth (11)",
+                "Tottenham Hotspur (12)",
+                "Stoke City (45)",
+                "Burnley (0)"
+            ],
+            "playerApps": 468,
+            "playerGoals": 108,
+            "playerLastGoalFor": "Stoke City",
+            "playerLastGoalOpponent": "Swansea City",
+            "playerLastGoalDate": "2018-05-13",
+            "playerCurrent": false
+        },
+        {
+            "playerId": 29,
+            "playerName": "Paul Scholes",
+            "playerSlug": "paul-scholes",
+            "playerClubs": [
+                "Manchester United (107)"
+            ],
+            "playerApps": 499,
+            "playerGoals": 107,
+            "playerLastGoalFor": "Manchester United",
+            "playerLastGoalOpponent": "Wigan Athletic",
+            "playerLastGoalDate": "2012-09-15",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 30,
+            "playerName": "Darren Bent",
+            "playerSlug": "darren-bent",
+            "playerClubs": [
+                "Ipswich Town (1)",
+                "Charlton Athletic (31)",
+                "Tottenham Hotspur (18)",
+                "Sunderland (32)",
+                "Aston Villa (21)",
+                "Fulham* (3)"
+            ],
+            "playerApps": 276,
+            "playerGoals": 106,
+            "playerLastGoalFor": "Fulham",
+            "playerLastGoalOpponent": "Manchester United",
+            "playerLastGoalDate": "2014-02-09",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 31,
+            "playerName": "Didier Drogba",
+            "playerSlug": "didier-drogba",
+            "playerClubs": [
+                "Chelsea (104)"
+            ],
+            "playerApps": 254,
+            "playerGoals": 104,
+            "playerLastGoalFor": "Chelsea",
+            "playerLastGoalOpponent": "Leicester City",
+            "playerLastGoalDate": "2015-04-29",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 32,
+            "playerName": "Cristiano Ronaldo",
+            "playerSlug": "cristiano-ronaldo",
+            "playerClubs": [
+                "Manchester United (102)"
+            ],
+            "playerApps": 236,
+            "playerGoals": 103,
+            "playerLastGoalFor": "Manchester United",
+            "playerLastGoalOpponent": "Everton",
+            "playerLastGoalDate": "2022-10-09",
+            "playerCurrent": true,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 33,
+            "playerName": "Matt Le Tissier",
+            "playerSlug": "matt-le-tissier",
+            "playerClubs": [
+                "Southampton (100)"
+            ],
+            "playerApps": 270,
+            "playerGoals": 100,
+            "playerLastGoalFor": "Southampton",
+            "playerLastGoalOpponent": "Arsenal",
+            "playerLastGoalDate": "2001-05-19",
+            "playerCurrent": false,
+            "updated": "2024-12-01"
+        },
+        {
+            "playerId": 34,
+            "playerName": "Son Heung-Min",
+            "playerSlug": "son-heung-min",
+            "playerClubs": [
+                "Tottenham Hotspur (123)"
+            ],
+            "playerApps": 313,
+            "playerGoals": 123,
+            "playerLastGoalFor": "Tottenham Hotspur",
+            "playerLastGoalOpponent": "West Ham United",
+            "playerLastGoalDate": "2024-10-19",
+            "playerCurrent": true,
+            "updated": "2024-12-01"
+        }
+    ]
+}

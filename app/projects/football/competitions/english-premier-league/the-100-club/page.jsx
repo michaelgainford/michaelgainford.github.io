@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/header/Header";
-import TopScorersData from "@/data/Data_For_PremierLeagueTopScorers";
+import TopScorersData from "@/data/replaced_by_json/Data_For_PremierLeagueTopScorers";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import H1 from "@/components/typography/H1Span";
@@ -18,51 +18,7 @@ const sortedByGoals = [...TopScorersData].sort((a, b) =>
 	b.playerGoals - a.playerGoals
 );
 
-const pageIntroText = "The Premier League 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.";
-
-// create an array to store the blocks of data to populate the page
-const premierLeagueHubBlocks = [
-	{
-		title: "History",
-		content: "The Premier League is the top tier of English football and is the most watched football league in the world. The league was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League has 20 teams who play 38 matches each season (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship.",
-		button: "PL History",
-		buttonHref: "/",
-		buttonTitle: "English Premier League History",
-		image: "premier-league-92-93.webp"
-	},
-	{
-		title: "The 100 Club",
-		content: "The 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.",
-		button: "The 100 Club",
-		buttonHref: "/projects/football/competitions/english-premier-league/the-100-club",
-		buttonTitle: "The 100 Club",
-		image: "premier-league-100-club.webp"
-	},
-	{
-		title: "Clubs in Focus",
-		content: "Over the past 30 years of the Premier League, there have been 49 different clubs that have competed in the competition. Some clubs have been ever-present in the Premier League since its inception, while others have come and gone. The most successful club in Premier League history is Manchester United, who have won the title 13 times. Other successful clubs include Chelsea, Arsenal, Manchester City, and Liverpool.",
-		button: "Clubs in Focus",
-		buttonHref: "/",
-		buttonTitle: "Clubs in Focus",
-		image: "premier-league-92-93.webp"
-	},
-	{
-		title: "Records",
-		content: "Over the past 30+ years of the Premier League, there have been many records set and broken. Some of the most notable records include Alan Shearers record for the most goals scored in a single season (34), Manchester Citys record for the most points in a single season (100), and Arsenals record for the longest unbeaten run (49 games). Other notable records include the most goals scored in a single match (9), the most consecutive clean sheets (14), and the most consecutive wins (18).",
-		button: "Records",
-		buttonHref: "/",
-		buttonTitle: "Records",
-		image: "premier-league-92-93.webp"
-	},
-	{
-		title: "Seasons",
-		content: "The Premier League has been played over 30 seasons since its inception in 1992. Each season consists of 20 teams who play 38 matches each (19 home and 19 away). The team that finishes with the most points at the end of the season is crowned the Premier League champions. The bottom three teams are relegated to the EFL Championship. The Premier League season typically runs from August to May, with matches played on weekends and midweek.",
-		button: "Seasons",
-		buttonHref: "/projects/football/competitions/english-premier-league/seasons",
-		buttonTitle: "Seasons",
-		image: "premier-league-92-93.webp"
-	},
-];		
+const pageIntroText = "The Premier League 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.";	
 
 export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 	return (
