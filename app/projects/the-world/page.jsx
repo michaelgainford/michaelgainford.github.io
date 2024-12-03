@@ -3,7 +3,7 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import PageIntro from "@/components/site_elements/Page_Intro";
-import DataForCountries from "@/data/replaced_by_json/Data_For_Countries";
+import DataForCountries from "@/data/to_replace_with_json/Data_For_Countries";
 
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
