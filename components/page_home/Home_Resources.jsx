@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import DataForDevResources from '@/data/Data_For_DevResources';
+import DataForDevResources from '@/data/to_replace_with_json/Data_For_DevResources';
 import H2SectionHeader from '@/components/typography/H2SectionHeader';
 import Button from "@/components/buttons/Button_Global";
 
