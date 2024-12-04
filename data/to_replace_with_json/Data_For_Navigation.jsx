@@ -118,17 +118,6 @@ const DataForNavigation = [
     footerNav_2: true,
   },
   {
-    label: "My Dashboard",
-    href: "/web-development/my-dashboard",
-    border_colour: "none",
-    background_colour: "bg-slate-950",
-    hover: "none",
-    category: "web-development",
-    mainNav: false,
-    footerNav_1: false,
-    footerNav_2: false,
-  },
-  {
     label: "About",
     href: "/general/about",
     border_colour: "none",
