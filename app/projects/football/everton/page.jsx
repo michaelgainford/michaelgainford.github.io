@@ -5,7 +5,7 @@ import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
-import evertonSquad from "@/data/Data_For_Everton";
+import evertonSquad from "@/data/to_replace_with_json/Data_For_Everton";
 
 const pageIntroText = `Everton Football Club is a professional football club based in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has competed in the top division for a record 117 seasons and has won the League Championship nine times.`;
 
@@ -59,8 +59,8 @@ export default function PAGE_EVERTON() {
                       <Image src={`/everton/${player.slug}.webp`} alt={player.name} width={450} height={300} className={`!max-w-full object-center aspect-square group-hover:scale-110 duration-500 object-cover w-full sm:aspect-[3/2] sm:rounded-l-none sm:!rounded-t-lg lg:!rounded-b-none`} />
                     </div>
                     <div className={`player-number absolute top-0 left-1 text-xs p-2 !aspect-square flex justify-center items-center bg-black/60 md:top-2 md:left-2 md:text-2xl lg:text-xl`}>
-						{player.number}
-					</div>
+                      {player.number}
+                    </div>
                   </div>
                   <div className={`flex flex-col pt-2 pb-6 space-y-2 text-left player-details sm:text-center max-sm:w-[60%] max-sm:justify-center`}>
                     <div className={`relative tracking-wide uppercase player-name`}>

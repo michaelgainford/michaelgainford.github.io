@@ -1,7 +1,9 @@
 import Link from "next/link";
-import DataForSocials from "@/data/Data_For_Socials";
-import FooterSectionHeader from "./Footer_Section_Header";
 import { urlForShopify, urlForNextJS, urlForReactJS, urlForTailwindCSS } from "@/data/Variables";
+import DataForSocials from "@/data/to_replace_with_json/Data_For_Socials";
+import FooterSectionHeader from "./Footer_Section_Header";
+//import DataForSocialsJSON from "@/data/data_for__socials.json";
+//const DataForSocials = DataForSocialsJSON.Socials;
 
 export default function COMPONENT_FOOTER_ABOUT() {
   return (

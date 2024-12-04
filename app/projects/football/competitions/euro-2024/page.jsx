@@ -4,7 +4,7 @@ import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { mainStyles } from "@/data/Variables";
 import { globalPageStyles } from "@/data/Variables";
-import Euro2024Teams from "@/data/Data_For_Euro2024";
+import Euro2024Teams from "@/data/to_replace_with_json/Data_For_Euro2024";
 
 // Sort by group and then group seeding
 Euro2024Teams.sort((a, b) => {

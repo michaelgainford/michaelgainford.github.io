@@ -5,7 +5,7 @@ import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
-import DataForProjects from "@/data/Data_For_Projects";
+import DataForProjects from "@/data/to_replace_with_json/Data_For_Projects";
 
 export const metadata = {
 	title: `Projects`,

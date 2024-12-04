@@ -2,7 +2,7 @@ const DataForEvertonSquad = [
   // Beto
   {
     name: "Beto",
-    position: "Forward",
+    position: "Forwarda",
     number: 14,
     country: "Portugal",
     slug: "beto",

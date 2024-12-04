@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { mainStyles, globalPageStyles, clubLogosRoot } from "@/data/Variables";
-import DataForPremTeams from "@/data/Data_For_PremierLeagueTeams";
+import DataForPremTeams from "@/data/to_replace_with_json/Data_For_PremierLeagueTeams";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";

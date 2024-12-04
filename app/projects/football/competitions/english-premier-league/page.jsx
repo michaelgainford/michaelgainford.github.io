@@ -6,7 +6,7 @@ import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
 import { mainStyles, globalPageStyles, premierLeagueHubBlockImageRoot } from "@/data/Variables";
-import PremierLeagueData from "@/data/Data_For_PremierLeagueTeams";
+import PremierLeagueData from "@/data/to_replace_with_json/Data_For_PremierLeagueTeams";
 
 export const metadata = {
 	title: `Premier League Hub`,

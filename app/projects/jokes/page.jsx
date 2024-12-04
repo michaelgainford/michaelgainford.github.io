@@ -4,7 +4,7 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Page_Intro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import DataForJokes from "@/data/Data_For_Jokes";
+import DataForJokes from "@/data/to_replace_with_json/Data_For_Jokes";
 DataForJokes.sort(() => Math.random() - 0.5);
 
 export default function PAGE_JOKES() {

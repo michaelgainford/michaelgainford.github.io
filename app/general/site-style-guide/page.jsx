@@ -11,7 +11,7 @@ const sharedHeadingStyles = `pb-2 mx-auto mb-12 text-3xl font-bold text-left tra
 // const fontColours = [ "text-amber-500", "text-slate-200", "text-slate-400", "text-slate-500", "text-slate-600", "text-slate-700", "text-slate-900" ];
 
 // i want to import the json file within data/Data_For_Style_Guide_Font_Sizes.json
-import StyleGuideData from "@/data/Data_For_StyleGuideFontSizes.json";
+import StyleGuideData from "@/data/data_for__styleguidefontsizes.json";
 const FontSizes = StyleGuideData.FontSizes;
 const CSSContainerWidths = StyleGuideData.CSSContainerWidths;
 const BrandColours = StyleGuideData.BrandColours;

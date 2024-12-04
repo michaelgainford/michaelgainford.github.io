@@ -4,7 +4,7 @@ import Header from "@/components/header/Header";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import DataForDevResources from "@/data/Data_For_DevResources";
+import DataForDevResources from "@/data/to_replace_with_json/Data_For_DevResources";
 import { globalPageStyles, mainStyles } from "@/data/Variables";
 
 export const metadata = {

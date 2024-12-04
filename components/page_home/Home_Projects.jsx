@@ -1,5 +1,5 @@
 import Link from "next/link"
-import DataForAllProjects from "@/data/Data_For_Projects";
+import DataForAllProjects from "@/data/to_replace_with_json/Data_For_Projects";
 import H2SectionHeader from "@/components/typography/H2SectionHeader";
 import Button from "@/components/buttons/Button_Global";
 
