@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import ClubsData from "@/data/Data_For_PremierLeagueTeams";
+import ClubsData from "@/data/to_replace_with_json/Data_For_PremierLeagueTeams";
 const sortedByName = [...ClubsData].sort((a, b) =>
   a.teamName > b.teamName ? 1 : -1
 );
-import DataForPremTeams from "@/data/Data_For_PremierLeagueTeams";
+import DataForPremTeams from "@/data/to_replace_with_json/Data_For_PremierLeagueTeams";
 import {
   premierLeagueYears,
   seasonPositions,

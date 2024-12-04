@@ -6,7 +6,7 @@ import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
 
-import DataForProjects from "@/data/Data_For_Projects";
+import DataForProjects from "@/data/to_replace_with_json/Data_For_Projects";
 {/* Sort the projects by name... */}
 DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
 {/* ...and then by archived status */}

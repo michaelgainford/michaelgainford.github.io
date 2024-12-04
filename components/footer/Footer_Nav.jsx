@@ -1,5 +1,5 @@
 import Link from "next/link";
-import DataForNavigation from "@/data/Data_For_Navigation";
+import DataForNavigation from "@/data/to_replace_with_json/Data_For_Navigation";
 import FooterSectionHeader from "/components/footer/Footer_Section_Header";
 import FooterNavListHeader from "/components/footer/Footer_NavList_Header";
 
