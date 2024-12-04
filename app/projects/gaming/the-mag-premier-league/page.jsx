@@ -2,7 +2,7 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
-import DataForMAGPremierLeague from "@/data/Data_For_MAGPremierLeague";
+import DataForMAGPremierLeague from "@/data/to_replace_with_json/Data_For_MAGPremierLeague";
 import { globalPageStyles, mainStyles } from "@/data/Variables";
 
 ////////////////////////////////////////
