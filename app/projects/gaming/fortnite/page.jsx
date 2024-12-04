@@ -4,7 +4,7 @@ import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
-import DataForFortnite from "@/data/Data_For_Fortnite";
+import DataForFortnite from "@/data/to_replace_with_json/Data_For_Fortnite";
 import IconFortnite from "@/components/icons/IconFortniteName";
 
 {/* Variables */}

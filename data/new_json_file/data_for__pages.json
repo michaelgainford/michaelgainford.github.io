@@ -1,0 +1,23 @@
+{
+    "Pages": [
+        {
+            "id": 1,
+            "pageName": "Home",
+            "pageHref": "/",
+            "pageCategory": "none",
+            "pageGroup": "none",
+            "pageInMainNav": true,
+            "pageInFooterNav_1": true,
+            "pageInFooterNav_2": false,
+            "pageBackgroundColour": "bg-slate-950",
+            "pageBorderColour": "border-slate-700",
+            "pageDividerColour": "divide-slate-500",
+            "pageBefore": "before:bg-slate-700",
+            "pageHover": "hover:bg-slate-950",
+            "pageTextColour": "text-slate-200",
+            "pageIcon": null,
+            "pageIsProject": false,
+            "pageIsFeaturedProject": false          
+        }
+    ]
+}

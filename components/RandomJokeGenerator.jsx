@@ -1,4 +1,4 @@
-import DataForJokes from "@/data/Data_For_Jokes";
+import DataForJokes from "@/data/to_replace_with_json/Data_For_Jokes";
 
 export default function RANDOM_JOKES_GENERATOR () {
     const randomJoke = DataForJokes[Math.floor(Math.random() * DataForJokes.length)];

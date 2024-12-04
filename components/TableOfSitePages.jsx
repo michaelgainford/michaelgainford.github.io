@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import SitemapData from "@/data/Data_For_Sitemap.json";
+import SitemapData from "@/data/data_for__sitemap.json";
 const PagesInSitemap = SitemapData.Pages;
 const today = new Date();
 
