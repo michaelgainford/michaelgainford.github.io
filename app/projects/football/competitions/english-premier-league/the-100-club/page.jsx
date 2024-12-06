@@ -18,6 +18,14 @@ const sortedByGoals = [...TopScorersData].sort((a, b) =>
 	b.playerGoals - a.playerGoals
 );
 
+const calculateDaysAgo = (date) => {
+	const today = new Date();
+	const lastGoalDate = new Date(date);
+	const timeDifference = today - lastGoalDate;
+	const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+	return daysDifference;
+  };
+  
 const pageIntroText = "The Premier League 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. Other members of the 100 Club include Wayne Rooney, Andy Cole, Frank Lampard, Thierry Henry, and Robbie Fowler.";	
 
 export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
@@ -57,7 +65,7 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 									height={150}
 								/>
 								<p className="font-bold">{TopScorer.playerGoals} goals</p>
-								<p className="flex flex-wrap justify-center gap-1 gap-x-4">
+								<p className="flex flex-wrap justify-center gap-1 mb-4 gap-x-4">
 								{Object.values(TopScorer.playerClubs).map((playerClub, index) => {
 									let clubPageLink = clubsDir;
 									return (
@@ -76,6 +84,9 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 								</div>
 								<div className={`absolute top-1 right-1 p-1 text-xs player-status rounded-lg lowercase ${TopScorer.playerCurrent ? "bg-emerald-300" : "bg-rose-100"}`}>
 									{TopScorer.playerCurrent ? "Active" : "Retired"}
+								</div>
+								<div className={`absolute bottom-1 left-[4%] text-[10px] mx-auto w-[92%]`}>
+									<p className="px-4 mx-auto italic text-slate-400 text-balance">Last scored in the Premier League for {TopScorer.playerLastGoalFor} on {new Date(TopScorer.playerLastGoalDate).toLocaleDateString('en-GB')} ({calculateDaysAgo(TopScorer.playerLastGoalDate)} days ago) vs {TopScorer.playerLastGoalOpponent}.</p>
 								</div>
 							</div>
 						);

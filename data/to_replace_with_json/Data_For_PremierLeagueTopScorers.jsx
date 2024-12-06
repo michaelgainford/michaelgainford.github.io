@@ -224,12 +224,12 @@ const Data_TopScorers = [
 		playerId: 14,
 		playerName: "Jamie Vardy",
 		playerSlug: "jamie-vardy",
-		playerClubs: ["Leicester City (140)"],
-		playerApps: 285,
-		playerGoals: 140,
+		playerClubs: ["Leicester City (141)"],
+		playerApps: 320,
+		playerGoals: 141,
 		playerLastGoalFor: "Leicester City",
-		playerLastGoalOpponent: "Nottingham Forest",
-		playerLastGoalDate: "2024-10-25",
+		playerLastGoalOpponent: "West Ham United",
+		playerLastGoalDate: "2024-12-03",
 		playerCurrent: true,
 		updated: "2024-12-01",
     },
@@ -316,15 +316,15 @@ const Data_TopScorers = [
 		playerSlug: "mohamed-salah",
 		playerClubs: [
 			"Chelsea (2)",
-			"Liverpool (166)"
+			"Liverpool (169)"
 		],
-		playerApps: 276,
-		playerGoals: 168,
+		playerApps: 277,
+		playerGoals: 170,
 		playerLastGoalFor: "Liverpool",
-		playerLastGoalOpponent: "Manchester City",
-		playerLastGoalDate: "2024-12-01",
+		playerLastGoalOpponent: "Newcastle United",
+		playerLastGoalDate: "2024-12-04",
 		playerCurrent: true,
-		updated: "2024-12-02",
+		updated: "2024-12-06",
     },
     {
 		playerId: 20,
@@ -420,6 +420,9 @@ const Data_TopScorers = [
 		],
 		playerApps: 385,
 		playerGoals: 123,
+		playerLastGoalFor: "Chelsea",
+		playerLastGoalOpponent: "Bournemouth",
+		playerLastGoalDate: "2024-05-19",
 		playerCurrent: true,
 		updated: "2024-12-02",
     },
@@ -564,13 +567,13 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Tottenham Hotspur (123)"
 		],
-		playerApps: 313,
+		playerApps: 314,
 		playerGoals: 123,
 		playerLastGoalFor: "Tottenham Hotspur",
 		playerLastGoalOpponent: "West Ham United",
 		playerLastGoalDate: "2024-10-19",
 		playerCurrent: true,
-		updated: "2024-12-01"
+		updated: "2024-12-06"
 	}
   ];
   
