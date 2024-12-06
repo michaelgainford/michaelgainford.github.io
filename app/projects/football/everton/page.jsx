@@ -32,7 +32,7 @@ evertonSquad.sort((a, b) => a.number - b.number);
 
 export default function PAGE_EVERTON() {
   return (
-    <div className={`${globalPageStyles} bg-gradient-to-r from-blue-900 to-blue-700 text-white`}>
+    <div className={`${globalPageStyles} bg-linear-to-r from-blue-900 to-blue-700 text-white`}>
       <Header />
       <main className={`${mainStyles}`}>
         <H1 text={`Everton`} />
@@ -55,10 +55,10 @@ export default function PAGE_EVERTON() {
               {evertonSquad.map((player) => (
                 <div key={player.slug} className={`flex flex-row space-y-2 border border-blue-700 rounded-lg player bg-blue-700/50 group sm:flex-col max-sm:gap-4`}>
                   <div className={`relative space-y-2 player-image-and-number sm:mb-2 max-sm:w-[40%]`}>
-                    <div className={`player-image rounded-l-lg relative aspect-square overflow-hidden sm:aspect-[3/2] sm:rounded-b-none`}>
-                      <Image src={`/everton/${player.slug}.webp`} alt={player.name} width={450} height={300} className={`!max-w-full object-center aspect-square group-hover:scale-110 duration-500 object-cover w-full sm:aspect-[3/2] sm:rounded-l-none sm:!rounded-t-lg lg:!rounded-b-none`} />
+                    <div className={`player-image rounded-l-lg relative aspect-square overflow-hidden sm:aspect-3/2 sm:rounded-b-none`}>
+                      <Image src={`/everton/${player.slug}.webp`} alt={player.name} width={450} height={300} className={`max-w-full! object-center aspect-square group-hover:scale-110 duration-500 object-cover w-full sm:aspect-3/2 sm:rounded-l-none sm:rounded-t-lg! lg:rounded-b-none!`} />
                     </div>
-                    <div className={`player-number absolute top-0 left-1 text-xs p-2 !aspect-square flex justify-center items-center bg-black/60 md:top-2 md:left-2 md:text-2xl lg:text-xl`}>
+                    <div className={`player-number absolute top-0 left-1 text-xs p-2 aspect-square! flex justify-center items-center bg-black/60 md:top-2 md:left-2 md:text-2xl lg:text-xl`}>
                       {player.number}
                     </div>
                   </div>

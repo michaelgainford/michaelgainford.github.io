@@ -45,14 +45,14 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS() {
       <main className={`w-full text-epl`}>
         <HeroPremierLeague />
 
-        <div className={`${mainStyles} !text-xs py-4`}>
+        <div className={`${mainStyles} text-xs! py-4`}>
           <NavForPremierLeagueHub />
         </div>
 
         <div className={`${mainStyles}`}>
           <H1
             text={`Seasons`}
-            font_sizes={`text-base lg:!text-[24px]`}
+            font_sizes={`text-base lg:text-[24px]!`}
             other_classes={`uppercase`}
           />
         </div>
@@ -73,16 +73,16 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS() {
             className={`max-w-full overflow-x-auto overflow-y-scroll text-xs lg:text-sm text-center hover:cursor-pointer z-2 lg:rounded-lg block max-h-[500px] lg:max-h-full [&>tr_td]:sticky z-2`}
           >
             <thead
-              className={`font-light uppercase bg-epl/90 text-white top-0 !z-3 [&>tr_th]:font-light`}
+              className={`font-light uppercase bg-epl/90 text-white top-0 z-3! [&>tr_th]:font-light`}
             >
-              <tr className={`sticky top-0 left-0 z-[50]`}>
+              <tr className={`sticky top-0 left-0 z-50`}>
                 <th
-                  className={`first:bg-epl py-3 pl-1 lg:pl-2 text-left left-0 z-[50] sticky top-0`}
+                  className={`first:bg-epl py-3 pl-1 lg:pl-2 text-left left-0 z-50 sticky top-0`}
                 >
                   Team
                 </th>
                 {premierLeagueYears.map((season, index) => (
-                  <th key={index} className={`relative px-1 z-[49] bg-epl`}>
+                  <th key={index} className={`relative px-1 z-49 bg-epl`}>
                     {season}
                   </th>
                 ))}
@@ -92,7 +92,7 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS() {
               {sortedPremierLeagueSeasonData.map((team, index) => (
                 <tr key={index} className={`border-b border-epl/20`}>
                   <td
-                    className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 !max-w-[144px] lg:max-w-[150px] xl:max-w-[200px] py-1 md:py-2 lg:py-3 truncate`}
+                    className={`sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 max-w-[144px]! lg:max-w-[150px] xl:max-w-[200px] py-1 md:py-2 lg:py-3 truncate`}
                   >
                     {team.teamName}
                   </td>

@@ -36,7 +36,7 @@ export default function PAGE_ABOUT() {
 							<h2 className={`${sharedHeadingStyles} group-hover/gift:border-amber-500/80`}>
 								Something for you
 							</h2>
-							<div className="flex flex-col gap-8 p-8 mt-8 text-center border rounded joke border-slate-200/20 !bg-amber-500/5 hover:!border-amber-500 group/joke mb-4">
+							<div className="flex flex-col gap-8 p-8 mt-8 text-center border rounded-sm joke border-slate-200/20 bg-amber-500/5! hover:border-amber-500! group/joke mb-4">
 								<div className="flex flex-col items-center justify-center p-4 space-y-4 text-center rounded-lg">
 									<RandomJokeGenerator />
 								</div>

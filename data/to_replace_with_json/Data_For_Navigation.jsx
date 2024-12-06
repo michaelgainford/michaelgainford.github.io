@@ -132,7 +132,7 @@ const DataForNavigation = [
   {
     label: "Premier League",
     href: "/projects/football/competitions/english-premier-league",
-    border_colour: "border-epl-300/40",
+    border_colour: "border-epl-300/60",
     before: "before:bg-epl",
     background_colour: "bg-epl",
     hover: "hover:bg-epl",

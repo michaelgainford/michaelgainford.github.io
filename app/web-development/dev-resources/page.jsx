@@ -30,7 +30,7 @@ export default function PAGE_DEV_RESOURCES() {
 				  text={pageIntroText} 
 				  text_colour="font-current" 
 				  font_sizes="text-xs/5 md:text-sm/6 lg:text-base/7`"
-				  other_classes="!max-w-[800px] !text-balance !text-center !md:-mt-4 !xl:text-base/6" />
+				  other_classes="max-w-[800px]! text-balance! text-center! !md:-mt-4 !xl:text-base/6" />
                 <div 
 				  className="grid w-full xxs:grid-cols-2 pt-4 resources gap-x-4 gap-y-8 sm:pt-6 sm:grid-cols-3 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:pt-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500"
 				>
@@ -40,7 +40,7 @@ export default function PAGE_DEV_RESOURCES() {
 					  target="_blank" 
 					  href={resource.url} 
 					  className="flex flex-col items-center justify-center text-center duration-300 rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 
-						hover:bg-gradient-to-b hover:from-teal-800 hover:to-teal-950"
+						hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950"
 					  title={resource.description? resource.description : resource.name}
 					>
 						<div className="relative w-full overflow-hidden bg-teal-700 rounded-t-lg resource-image">
