@@ -225,7 +225,7 @@ const Data_TopScorers = [
 		playerName: "Jamie Vardy",
 		playerSlug: "jamie-vardy",
 		playerClubs: ["Leicester City (141)"],
-		playerApps: 286,
+		playerApps: 320,
 		playerGoals: 141,
 		playerLastGoalFor: "Leicester City",
 		playerLastGoalOpponent: "West Ham United",
@@ -319,12 +319,12 @@ const Data_TopScorers = [
 			"Liverpool (169)"
 		],
 		playerApps: 277,
-		playerGoals: 171,
+		playerGoals: 170,
 		playerLastGoalFor: "Liverpool",
 		playerLastGoalOpponent: "Newcastle United",
 		playerLastGoalDate: "2024-12-04",
 		playerCurrent: true,
-		updated: "2024-12-02",
+		updated: "2024-12-06",
     },
     {
 		playerId: 20,
@@ -420,6 +420,9 @@ const Data_TopScorers = [
 		],
 		playerApps: 385,
 		playerGoals: 123,
+		playerLastGoalFor: "Chelsea",
+		playerLastGoalOpponent: "Bournemouth",
+		playerLastGoalDate: "2024-05-19",
 		playerCurrent: true,
 		updated: "2024-12-02",
     },
@@ -564,13 +567,13 @@ const Data_TopScorers = [
 		playerClubs: [
 			"Tottenham Hotspur (123)"
 		],
-		playerApps: 313,
+		playerApps: 314,
 		playerGoals: 123,
 		playerLastGoalFor: "Tottenham Hotspur",
 		playerLastGoalOpponent: "West Ham United",
 		playerLastGoalDate: "2024-10-19",
 		playerCurrent: true,
-		updated: "2024-12-01"
+		updated: "2024-12-06"
 	}
   ];
   
