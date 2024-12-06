@@ -73,5 +73,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss-motion'),
+    require('@tailwindcss/container-queries')
   ],  
 };
