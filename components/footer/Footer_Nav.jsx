@@ -9,7 +9,7 @@ const footerNavLinks2 = DataForNavigation.filter((link) => link.footerNav_2 === 
 footerNavLinks2.sort((a, b) => a.label.localeCompare(b.label));
 
 const linkClasses = `flex py-2`;
-const detailsStyles = `rounded-lg py-4 group !overflow-x-auto [&_svg]:open:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
+const detailsStyles = `rounded-lg py-4 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
 const summaryStyles = `flex justify-between md:py-4 cursor-pointer`;
 const summaryHeaderSvgStyles = `rotate-0 transform text-current transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-amber-500/80 lg:mt-1 lg:size-6`;
 
@@ -48,7 +48,7 @@ export default function FOOTER_NAV() {
 						))}
 					</ul>
 				</details>
-				<div className={`footer-nav-group border-slate-700 rounded max-sm:hidden lg:pr-8 max-md:mb-8`}>
+				<div className={`footer-nav-group border-slate-700 rounded-sm max-sm:hidden lg:pr-8 max-md:mb-8`}>
 					<FooterNavListHeader text={`Site Links`} />
 					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
 						{footerNavLinks1.map((item, index) => (
@@ -88,7 +88,7 @@ export default function FOOTER_NAV() {
 						))}
 					</ul>
 				</details>
-				<div className={`footer-nav-group rounded border-slate-700 max-sm:hidden lg:pr-8`}>
+				<div className={`footer-nav-group rounded-sm border-slate-700 max-sm:hidden lg:pr-8`}>
 					<FooterNavListHeader text={`Projects`} />
 					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
 						{footerNavLinks2.map((item, index) => (

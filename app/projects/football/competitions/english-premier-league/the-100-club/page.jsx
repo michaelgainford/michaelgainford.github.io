@@ -39,7 +39,7 @@ export default function PAGE_PREMIER_LEAGUE_100_CLUB () {
 				<div className={`${mainStyles}`}>
 					<H1 
 					  text="The 100 Club"
-					  font_sizes="text-base lg:!text-[24px]"
+					  font_sizes="text-base lg:text-[24px]!"
 					  other_classes="uppercase" 
 					/>
 					<PageIntro 

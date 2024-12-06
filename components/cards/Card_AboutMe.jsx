@@ -3,7 +3,7 @@ import Button from "@/components/buttons/Button_Global";
 
 export default function COMPONENT_CARD_ABOUT_ME() {
     return (
-        <div data-card="about-me" className="flex flex-col items-center col-span-12 py-12 text-xs transition-all duration-500 border rounded xxs:px-6 md:col-span-8 md:p-8 border-slate-500/10 hover:bg-slate-500/10 group/about hover:border-amber-500 2xl:py-16 xl:col-span-5">
+        <div data-card="about-me" className="flex flex-col items-center col-span-12 py-12 text-xs transition-all duration-500 border rounded-sm xxs:px-6 md:col-span-8 md:p-8 border-slate-500/10 hover:bg-slate-500/10 group/about hover:border-amber-500 2xl:py-16 xl:col-span-5">
             <h1 className={`${sharedHeadingStyles} group-hover/about:border-amber-500/80`}>
                 About Me
             </h1>

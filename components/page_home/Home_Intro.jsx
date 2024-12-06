@@ -14,7 +14,7 @@ function timeBasedGreeting() {
 	}
 }
 
-const detailsStyles = "border border-slate-800 rounded-lg p-4 bg-slate-900/50 group !overflow-x-auto [&_svg]:open:-rotate-180 w-full transition-all duration-300 md:max-w-[800px] lg:px-4";
+const detailsStyles = "border border-slate-800 rounded-lg p-4 bg-slate-900/50 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 md:max-w-[800px] lg:px-4";
 const summaryStyles = "flex justify-between md:py-4 cursor-pointer";
 const summaryHeaderSvgContainer = "flex flex-col justify-center";
 const summaryHeaderSvgStyles = "rotate-0 transform text-slate-200 transition-all duration-300 size-4 stroke-2 cursor-pointer group-hover:text-amber-500/80 lg:size-6";
@@ -36,7 +36,7 @@ export default function COMPONENT_HOME_INTRO() {
 								</svg>
 							</span>
 						</summary>
-						<p className="pt-4 text-xs font-light text-left !leading-loose tracking-wider text-slate-400 text-balance mb-4 sm:py-2 lg:text-sm lg:border-l-4 lg:border-transparent">
+						<p className="pt-4 text-xs font-light text-left leading-loose! tracking-wider text-slate-400 text-balance mb-4 sm:py-2 lg:text-sm lg:border-l-4 lg:border-transparent">
 							Hello welcome to my website. michaelgainford.dev is a place to share my projects, favourite resources and anything else web development related. What makes more sense than building a website about web development? I hope you find something useful here.
 						</p>
 					</details>

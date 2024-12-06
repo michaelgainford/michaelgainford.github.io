@@ -450,13 +450,13 @@ export default function PAGE_PREMIER_LEAGUE_HISTORY () {
 			<Header />
 			<main className="w-full text-epl">
                 <HeroPremierLeague />
-				<div className={`${mainStyles} !text-xs py-4`}>
+				<div className={`${mainStyles} text-xs! py-4`}>
                     <NavForPremierLeagueHub />
                 </div>
 				<div className={`${mainStyles}`}>
 					<H1 
                       text="Premier League History" 
-                      font_sizes="text-base lg:!text-[24px]" 
+                      font_sizes="text-base lg:text-[24px]!" 
                       other_classes="uppercase" 
                     />
 				</div>

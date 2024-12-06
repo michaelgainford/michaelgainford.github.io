@@ -72,12 +72,12 @@ export default function PAGE_PREMIER_LEAGUE () {
 				<div className={`${mainStyles}`}>
 					<H1 
 					  text="The Premier League"
-					  font_sizes="text-base lg:!text-[24px]"
+					  font_sizes="text-base lg:text-[24px]!"
 					  other_classes="uppercase" 
 					/>
 					<PageIntro 
 					  text={pageIntroText} 
-					  font_sizes="text-xs/5 lg:!text-base"
+					  font_sizes="text-xs/5 lg:text-base!"
 					/>
 				</div>
 				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold motion motion-preset-slide-up motion-delay-[1000ms]`}>

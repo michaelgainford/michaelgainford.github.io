@@ -18,7 +18,7 @@ export default function PAGE_SITE_MAINTENANCE_TRACKER() {
 			<Header />
 			<main className={`${mainStyles}`}>
 				<div className="flex flex-col w-full justify-center text-center motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500 max-w-[1800px]">
-					<H1 text={`Site Maintenance Tracker`} font_sizes={``} other_classes={`${sharedHeadingStyles} max-lg:-mt-4 text-balance !font-light !text-sm lg:!text-xl 2xl:!text-3xl xl:!mb-0 border-none`} />
+					<H1 text={`Site Maintenance Tracker`} font_sizes={``} other_classes={`${sharedHeadingStyles} max-lg:-mt-4 text-balance font-light! text-sm! lg:text-xl! 2xl:text-3xl! xl:mb-0! border-none text-center mx-auto flex justify-center xl:pb-8!`} />
 					<TableOfSitePages />
 				</div>
 			</main>
