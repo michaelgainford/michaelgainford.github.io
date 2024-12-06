@@ -33,10 +33,10 @@ export default function PAGE_PROJECTS() {
 				<PageIntro 
 				  text={pageIntroText}
 				  classes_text_colour={`font-current`}
-				  classes_text_alignment={`!text-center !text-balance`}
+				  classes_text_alignment={`text-center! text-balance!`}
 				  classes_font_sizes={`text-xs/5 md:text-sm/6 lg:text-base/6 !xl:text-base/6`}
 				  classes_font_styling={`font-medium tracking-wider`}
-				  classes_width={`max-[80dvw] lg:!max-w-[800px]`}
+				  classes_width={`max-[80dvw] lg:max-w-[800px]!`}
 				  classes_margin={`!md:-mt-4 mb-12`}
 				  classes_other={``}
 				/>
@@ -57,7 +57,7 @@ export default function PAGE_PROJECTS() {
 								<span className="leading-relaxed text-center line-clamp-2">{project.description}</span>
 							</span>
 							<span className="flex items-end justify-center">
-								<span className={`p-1 text-xs tracking-wider lowercase border ${project.border} rounded`}>
+								<span className={`p-1 text-xs tracking-wider lowercase border ${project.border} rounded-sm`}>
 									{project.category}
 								</span>
 							</span>

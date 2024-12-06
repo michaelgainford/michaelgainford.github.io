@@ -27,7 +27,7 @@ export default function HEADER() {
 				<MainLogo />
 				<MainNav />
 				<div
-					className={`hamburger-menu-icon cursor-pointer lg:hidden !fill-current`}
+					className={`hamburger-menu-icon cursor-pointer lg:hidden fill-current!`}
 					onClick={toggleMobileNav}
 				>
 					<IconHamburgerNav />

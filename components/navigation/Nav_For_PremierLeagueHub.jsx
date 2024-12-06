@@ -3,7 +3,7 @@ import { mainStyles } from "@/data/Variables";
 
 export default function NavForPremierLeagueHub () {
     return (
-		<div className={`${mainStyles} !text-xs py-4`}>
+		<div className={`${mainStyles} text-xs! py-4`}>
             <Link
                 href="/projects/football/competitions/english-premier-league/" 
                 className="border-b border-transparent hover:border-current"

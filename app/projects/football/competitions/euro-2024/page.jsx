@@ -31,7 +31,7 @@ export default function PAGE_EURO_2024() {
 				{Euro2024Teams.map((team, index) => (
 				<div key={index} className={`flex flex-col items-center w-full pb-4 duration-300 ease-in-out border border-blue-900 rounded-md cursor-pointer movie-card text-light_colour border-secondary group hover:bg-secondary`}>
 					<Image className={`text-sm duration-1000 group-hover:ease-in-out group-hover:scale-100 group-hover:rounded-t-md`} src={team.flag} loading={`lazy`} alt={team.name} width={32} height={32} />
-					<p className={`pt-2 lg:pt-4 lg:px-2 group-hover:pt-2 ease-in-out duration-300 w-[200px] text-center text-xs lg:text-md min-h-[60px] max-w-full xl:opacity-50 group-hover:xl:opacity-100`}>
+					<p className={`pt-2 lg:pt-4 lg:px-2 group-hover:pt-2 ease-in-out duration-300 w-[200px] text-center text-xs lg:text-md min-h-[60px] max-w-full xl:opacity-50 xl:group-hover:opacity-100`}>
 					{team.name}
 					</p>
 				</div>

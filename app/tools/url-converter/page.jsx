@@ -96,10 +96,10 @@ export default function TOOL_URL_CONCATENATOR() {
 				<PageIntro 
 				  text={pageIntroText}
 				  classes_text_colour={`font-current`}
-				  classes_text_alignment={`!text-center !text-balance`}
+				  classes_text_alignment={`text-center! text-balance!`}
 				  classes_font_sizes={`text-xs/5 md:text-sm/6 lg:text-base/6 !xl:text-base/6`}
 				  classes_font_styling={`font-medium tracking-wider`}
-				  classes_width={`max-[80dvw] lg:!max-w-[800px]`}
+				  classes_width={`max-[80dvw] lg:max-w-[800px]!`}
 				  classes_margin={`!md:-mt-4 mb-12`}
 				  classes_other={``}
 				/>
@@ -113,7 +113,7 @@ export default function TOOL_URL_CONCATENATOR() {
 							3. The query string
 						*/}
 
-						<div className="flex flex-col gap-8 url-maker xl:max-w-[50vw] mx-auto rounded-lg bg-slate-800/50 p-8 xl:p-16 [&>span]:px-2 [&>span]:py-1 [&>span]:text-xs [&>span]:font-light [&>span]:tracking-wider [&>span]:text-center [&>span]:border [&>span]:rounded [&>span]:border-slate-500/20 [&>span]:w-fit [&>span]:max-auto">
+						<div className="flex flex-col gap-8 url-maker xl:max-w-[50vw] mx-auto rounded-lg bg-slate-800/50 p-8 xl:p-16 [&>span]:px-2 [&>span]:py-1 [&>span]:text-xs [&>span]:font-light [&>span]:tracking-wider [&>span]:text-center [&>span]:border [&>span]:rounded-sm [&>span]:border-slate-500/20 [&>span]:w-fit [&>span]:max-auto">
 							<span>input</span>
 							<div className="flex flex-col w-full gap-2 text-left pair">
 								<label htmlFor="base-url" className="text-sm font-medium text-left">Start of URL</label>
@@ -158,7 +158,7 @@ export default function TOOL_URL_CONCATENATOR() {
 
 							<hr className="mt-8 text-red-500 bg-opacity-50 border-slate-700/50 stroke-emerald-500" />
 							
-							<h3 className="px-2 py-1 text-sm font-light text-center border rounded border-slate-500/20 w-fit max-auto">
+							<h3 className="px-2 py-1 text-sm font-light text-center border rounded-sm border-slate-500/20 w-fit max-auto">
 								output
 							</h3>
 

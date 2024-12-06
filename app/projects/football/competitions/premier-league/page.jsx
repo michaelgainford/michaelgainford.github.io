@@ -24,7 +24,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
-			<main className={`!w-full text-epl`}>
+			<main className={`w-full! text-epl`}>
 
 				<div className={`${mainStyles}`}>
 					<H1 text={`Premier League`} />
