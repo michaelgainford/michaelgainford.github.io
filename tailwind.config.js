@@ -71,9 +71,5 @@ module.exports = {
         '5xl': '2400px',
       },
     },
-  },
-  plugins: [
-    require('tailwindcss-motion'),
-    require('@tailwindcss/container-queries')
-  ],  
+  } 
 };
