@@ -350,6 +350,17 @@ const FortniteSeasonsData = [
     theme: "Remix",
     mobileImage: "/gaming/fortnite/c5-sremix-season-artwork.webp",
     desktopImage: "/gaming/fortnite/c5-sremix-season-artwork.webp",
+  },
+  {
+    name: "C6 S1",
+    chapter: 6,
+    season: 1,
+    overall_season: 33,
+    startDate: "2025-01-01",
+    endDate: "2025-03-16",
+    theme: "The End",
+    mobileImage: "/gaming/fortnite/c6-s1-season-artwork.webp",
+    desktopImage: "/gaming/fortnite/c6-s1-season-artwork.webp",
   }
 ]
 

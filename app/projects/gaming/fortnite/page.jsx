@@ -13,6 +13,8 @@ const chapter2Data = DataForFortnite.filter(chapter => chapter.chapter === 2);
 const chapter3Data = DataForFortnite.filter(chapter => chapter.chapter === 3);
 const chapter4Data = DataForFortnite.filter(chapter => chapter.chapter === 4);
 const chapter5Data = DataForFortnite.filter(chapter => chapter.chapter === 5);
+const chapter6Data = DataForFortnite.filter(chapter => chapter.chapter === 6);
+const allChapterData = [chapter1Data, chapter2Data, chapter3Data, chapter4Data, chapter5Data, chapter6Data];
 
 // put the above 5 in an array
 // const allChapterData = [chapter1Data, chapter2Data, chapter3Data, chapter4Data, chapter5Data];
@@ -27,10 +29,12 @@ const chapter4StartDate = "04/12/2022";
 const chapter4EndDate = "03/12/2023";
 const chapter5StartDate = "03/12/2023";
 const chapter5EndDate = "02/12/2024";
+const chapter6StartDate = "02/12/2024";
+const chapter6EndDate = "01/12/2025";
 
 {/* Styles - Page */}
 const pageTextColour = `text-slate-900`;
-const subSectionHeadingStyles = `mb-8 text-slate-100 uppercase text-sm tracking-widest underline decoration-4 underline-offset-8 lg:mb-8 lg:text-lg lg:mt-6`;
+const subSectionHeadingStyles = `border-2 p-4 mb-8 text-slate-900 uppercase text-sm tracking-widest lg:mb-8 lg:text-base lg:mt-6 lg:font-bold`;
 {/* Styles - Snap */}
 const snapContainerStyles = `snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8`;
 const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:aspect-1000/563! lg:hover:opacity-100 xl:min-w-[800px] snap-always snap-start cursor-pointer overflow-hidden`;
@@ -54,15 +58,16 @@ export default function PAGE_FORTNITE() {
 			</p>
 			<div className={`w-full flex flex-col items-center`}>
 				<h2 className={`${subSectionHeadingStyles} mt-8`}>Chapters</h2>
-				{/* Chapter 1 */}
 
-				{/* Mobile Chapter Overview | Start */}
+				{/* 
+				*** CHAPTER 1 | START ***
+				*/}
+				{/* Mobile Only | Start */}
 				<div className={`flex flex-col w-full justify-center mb-4 pr-4 max-md:mt-4 md:hidden  md:mb-6 lg:mb-8 `}>
 					<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 1</h3>
 					<p className={`text-[10px]`}>({`${chapter1StartDate} to ${chapter1EndDate}`})</p>
 				</div>
-				{/* Mobile Chapter Overview | End */}
-
+				{/* Mobile Only | End */}
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
 					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
@@ -103,17 +108,21 @@ export default function PAGE_FORTNITE() {
 					</div>
 					{/* Snap Container | End */}
 				</div>
-				{/* Chapter 1 */}
+				{/*
+				*** CHAPTER 1 | END ***
+				*/}
 
-				{/* Mobile | Start */}
+				{/*
+				*** CHAPTER 2 | START ***
+				*/}
+				{/* Mobile Only | Start */}
 				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
 					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
 						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 2</h3>
 						<p className={`text-[10px]`}>({`${chapter2StartDate} to ${chapter2EndDate}`})</p>
 					</div>
 				</div>
-				{/* Mobile | End */}
-
+				{/* Mobile Only | End */}
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
 					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
@@ -146,19 +155,21 @@ export default function PAGE_FORTNITE() {
 					</div>
 					{/* Snap Container | End */}
 				</div>
+				{/*
+				*** CHAPTER 2 | END ***
+				*/}
 
-
-				{/* Chapter 1 */}
-
-				{/* Mobile | Start */}
+				{/*
+				*** CHAPTER 3 | START ***
+				*/}
+				{/* Mobile Only | Start */}
 				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
 					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
 						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 3</h3>
 						<p className={`text-[10px]`}>({`${chapter3StartDate} to ${chapter3EndDate}`})</p>
 					</div>
 				</div>
-				{/* Mobile | End */}
-
+				{/* Mobile Only | End */}
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
 					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
@@ -191,11 +202,14 @@ export default function PAGE_FORTNITE() {
 					</div>
 					{/* Snap Container | End */}
 				</div>
+				{/*
+				*** CHAPTER 3 | END ***
+				*/}
 
-
-				{/* Chapter 1 */}
-
-				{/* Mobile | Start */}
+				{/*
+				*** CHAPTER 4 | START ***
+				*/}
+				{/* Mobile Only | Start */}
 				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
 					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
 						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 4</h3>
@@ -203,7 +217,6 @@ export default function PAGE_FORTNITE() {
 					</div>
 				</div>
 				{/* Mobile | End */}
-
 				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
 					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
@@ -236,20 +249,22 @@ export default function PAGE_FORTNITE() {
 					</div>
 					{/* Snap Container | End */}
 				</div>
+				{/*
+				*** CHAPTER 4 | END ***
+				*/}
 
-
-				{/* Chapter 1 */}
-
-				{/* Mobile | Start */}
+				{/*
+				*** CHAPTER 5 | START ***
+				*/}
+				{/* Mobile Only | Start */}
 				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
 					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
 						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 5</h3>
 						<p className={`text-[10px]`}>({`${chapter5StartDate} to ${chapter5EndDate}`})</p>
 					</div>
 				</div>
-				{/* Mobile | End */}
-
-				<div className={`w-full mb-8 flex`}>
+				{/* Mobile Only | End */}
+				<div className={`w-full mb-8 flex lg:mb-32`}>
 					{/* Desktop | Start */}
 					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
 						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
@@ -281,6 +296,56 @@ export default function PAGE_FORTNITE() {
 					</div>
 					{/* Snap Container | End */}
 				</div>
+				{/*
+				*** CHAPTER 5 | END ***
+				*/}
+
+				{/*
+				*** CHAPTER 6 | START ***
+				*/}
+				{/* Mobile Only | Start */}
+				<div className={`flex flex-col justify-center max-md:mt-4 md:hidden w-full`}>
+					<div className={`mb-4 md:mb-6 lg:mb-8 pr-4 w-full`}>
+						<h3 className={`uppercase text-sm/4 font-bold`}>Chapter 6</h3>
+						<p className={`text-[10px]`}>({`${chapter6StartDate} to ${chapter6EndDate}`})</p>
+					</div>
+				</div>
+				{/* Mobile Only | End */}
+				<div className={`w-full mb-8 flex`}>
+					{/* Desktop | Start */}
+					<div className={`min-w-[150px] max-w-[150px] flex flex-col justify-center max-md:hidden text-center`}>
+						<div className={`mb-4 pr-4 flex flex-col gap-4 md:mb-6 lg:mb-8`}>
+							<h3 className={`flex flex-col text-xs uppercase tracking-widest font-bold lg:text-sm`}>
+								<span>Chapter</span>
+								<span className={`text-4xl`}>6</span>
+							</h3>
+							<p className={`text-[10px]`}>({`${chapter6StartDate} to ${chapter6EndDate}`})</p>
+						</div>
+					</div>
+					{/* Desktop | End */}
+					{/* Snap Container | Start */}
+					<div className={snapContainerStyles}>
+						{chapter6Data.map((season, index) => (
+						<div
+						  key={index}
+						  className={snapSlideStyles}
+						>
+							<Image
+							  src={season.mobileImage}
+							  alt={season.name}
+							  width={600}
+							  height={338}
+							  className={snapSlideImageStyles}
+							/>
+							<div className={`${snapSlideImageOverlayStyles} text-slate-300 text-xxs py-2 text-center`}>C{season.chapter}, S{season.season}: { season.startDate } to { season.endDate } ({season.theme})</div>
+						</div>
+						))}
+					</div>
+					{/* Snap Container | End */}
+				</div>
+				{/*
+				*** CHAPTER 6 | END ***
+				*/}
 			</div>
       	</main>
       	<Footer />
