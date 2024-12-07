@@ -34,7 +34,7 @@ const chapter6EndDate = "01/12/2025";
 
 {/* Styles - Page */}
 const pageTextColour = `text-slate-900`;
-const subSectionHeadingStyles = `mb-8 text-slate-100 uppercase text-sm tracking-widest underline decoration-4 underline-offset-8 lg:mb-8 lg:text-lg lg:mt-6`;
+const subSectionHeadingStyles = `border-2 p-4 mb-8 text-slate-900 uppercase text-sm tracking-widest lg:mb-8 lg:text-base lg:mt-6 lg:font-bold`;
 {/* Styles - Snap */}
 const snapContainerStyles = `snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8`;
 const snapSlideStyles = `flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:aspect-1000/563! lg:hover:opacity-100 xl:min-w-[800px] snap-always snap-start cursor-pointer overflow-hidden`;
