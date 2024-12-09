@@ -225,13 +225,13 @@ const Data_TopScorers = [
 		playerName: "Jamie Vardy",
 		playerSlug: "jamie-vardy",
 		playerClubs: ["Leicester City (141)"],
-		playerApps: 320,
-		playerGoals: 141,
+		playerApps: 321,
+		playerGoals: 142,
 		playerLastGoalFor: "Leicester City",
-		playerLastGoalOpponent: "West Ham United",
-		playerLastGoalDate: "2024-12-03",
+		playerLastGoalOpponent: "Brighton & Hove Albion",
+		playerLastGoalDate: "2024-12-08",
 		playerCurrent: true,
-		updated: "2024-12-01",
+		updated: "2024-12-08",
     },
     {
 		playerId: 15,
@@ -565,15 +565,15 @@ const Data_TopScorers = [
 		playerName: "Son Heung-Min",
 		playerSlug: "son-heung-min",
 		playerClubs: [
-			"Tottenham Hotspur (123)"
+			"Tottenham Hotspur (124)"
 		],
-		playerApps: 314,
-		playerGoals: 123,
+		playerApps: 315,
+		playerGoals: 124,
 		playerLastGoalFor: "Tottenham Hotspur",
-		playerLastGoalOpponent: "West Ham United",
-		playerLastGoalDate: "2024-10-19",
+		playerLastGoalOpponent: "Chelsea",
+		playerLastGoalDate: "2024-12-08",
 		playerCurrent: true,
-		updated: "2024-12-06"
+		updated: "2024-12-08"
 	}
   ];
   
