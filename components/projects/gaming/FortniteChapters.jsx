@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { allChapterData } from "@/data/Variables";
-const FortniteData = allChapterData;
+import { Chapters } from "@/data/data_for__fortnite.json";
 
 {/* Styles - Headings */}
-const subSectionHeadingStyles = "border-2 px-4 py-3 mb-8 text-slate-900 uppercase tracking-widest lg:mb-8 lg:mt-6 lg:font-bold";
+const subSectionHeadingStyles = "border-2 px-4 py-3 mb-8 text-slate-900 uppercase tracking-widest lg:mb-8 lg:mt-6 lg:font-bold mt-8 text-[16px]!";
 
 {/* Styles - Snap */}
 const snapContainerStyles = "snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8";
@@ -14,23 +13,23 @@ const snapSlideImageOverlayStyles = "absolute translate-y-32 bottom-0 w-full bg-
 export default function COMPONENT_FORTNITE_CHAPTERS_DATA () {
 	return (
 		<div className="w-full flex flex-col items-center">
-			<h2 className={`${subSectionHeadingStyles} mt-8 text-[16px]!`}>Chapters</h2>
-			{FortniteData.map((chapter, index) => (
+			<h2 className={subSectionHeadingStyles}>Chapters</h2>
+			{Chapters.map((chapter, index) => (
 				<div key={index} className="w-full mb-8 gap-4 flex flex-col md:flex-row lg:mb-32 pl-[4%]">
 					<div className="min-w-[150px] max-w-[150px] flex flex-col justify-center text-center md:mr-4">
 						<div className=" flex flex-col items-start md:items-center md:gap-4">
 							<h3 className="uppercase text-sm/4 flex flex-row md:flex-col md:tracking-widest font-bold max-md:gap-1">
 								<span>Chapter</span>
-								<span className="text-sm/4 md:text-4xl">{index + 1}</span>
+								<span className="text-sm/4 md:text-4xl">{ chapter.chapter }</span>
 							</h3>
-							<p className="text-[10px]">({`${chapter[0].startDate} to ${chapter[chapter.length - 1].endDate}`})</p>
+							<div className="text-[10px]">({new Date(chapter.seasons[0].start_date).toLocaleDateString('en-GB')} to {new Date(chapter.seasons[chapter.seasons.length - 1].end_date).toLocaleDateString('en-GB')})</div>
 						</div>
 					</div>
 					<div className={snapContainerStyles}>
-						{chapter.map((season, index) => (
+						{chapter.seasons.map((season, index) => (
 							<div key={index} className={snapSlideStyles}>
 								<Image
-									src={season.mobileImage}
+									src={season.mobile_image}
 									alt={season.name}
 									width={600}
 									height={338}
@@ -41,7 +40,7 @@ export default function COMPONENT_FORTNITE_CHAPTERS_DATA () {
 										Chapter {season.chapter}, Season {season.season}
 									</div>
 									<div className="run-dates">
-										{new Date(season.startDate).toLocaleDateString('en-GB')} to {new Date(season.endDate).toLocaleDateString('en-GB')}
+										{new Date(season.start_date).toLocaleDateString('en-GB')} to {new Date(season.end_date).toLocaleDateString('en-GB')}
 									</div>
 									<div className="theme">({season.theme})</div>
 								</div>

@@ -182,16 +182,6 @@ const premierLeagueYears = [
 {/* map through the premier league seasons and create an array of season positions */}
 const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
 
-{/* Fortnite data */}
-import DataForFortnite from "@/data/to_replace_with_json/Data_For_Fortnite";
-const chapter1Data = DataForFortnite.filter(chapter => chapter.chapter === 1);
-const chapter2Data = DataForFortnite.filter(chapter => chapter.chapter === 2);
-const chapter3Data = DataForFortnite.filter(chapter => chapter.chapter === 3);
-const chapter4Data = DataForFortnite.filter(chapter => chapter.chapter === 4);
-const chapter5Data = DataForFortnite.filter(chapter => chapter.chapter === 5);
-const chapter6Data = DataForFortnite.filter(chapter => chapter.chapter === 6);
-const allChapterData = [chapter1Data, chapter2Data, chapter3Data, chapter4Data, chapter5Data, chapter6Data];
-
 {/* paths */}
 const clubLogosRoot = "/football/premier-league/club-logos";
 const premierLeagueHubUrl = "/projects/football/competitions/english-premier-league";
@@ -238,7 +228,6 @@ export { brandTextColour };
 export { navigation };
 export { premierLeagueYears };
 export { seasonPositions };
-export { allChapterData };
 export { clubLogosRoot };
 export { premierLeagueHubUrl };
 export { premierLeagueLogoSvgPath };

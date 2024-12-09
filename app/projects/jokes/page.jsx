@@ -4,8 +4,9 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Page_Intro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import DataForJokes from "@/data/to_replace_with_json/Data_For_Jokes";
-DataForJokes.sort(() => Math.random() - 0.5);
+import DataForJokesJSON from "@/data/new_json_file/data_for__jokes.json";
+const Jokes = DataForJokesJSON.Jokes;
+Jokes.sort(() => Math.random() - 0.5);
 
 export default function PAGE_JOKES() {
 	return (
@@ -20,7 +21,7 @@ export default function PAGE_JOKES() {
 					other_classes={`text-balance text-center`}
 				/>
 				<div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:gap-16 xl:grid-cols-3 motion motion-preset-slide-up motion-delay-1000">
-					{DataForJokes.map((joke, index) => (
+					{Jokes.map((joke, index) => (
 					<div key={index} className="border border-rose-700 bg-rose-900 p-4 rounded-lg min-h-[200px] space-y-4 text-center flex items-center flex-col justify-center">
 						<p className="text-xl font-light uppercase">{joke.setup}</p>
 						<p className="text-lg">{joke.punchline}</p>
