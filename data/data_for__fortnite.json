@@ -1,0 +1,397 @@
+{
+    "Chapters": [
+        {
+			"chapter": 1,
+			"seasons": [
+				{
+					"name": "C1 S1",
+					"chapter": 1,
+					"season": 1,
+					"overall_season": 1,
+					"start_date": "2017-10-25",
+					"end_date": "2017-12-13",
+					"theme": "No Theme",
+					"mobile_image": "/gaming/fortnite/c1-s1-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s1-season-artwork.webp"
+				},
+				{
+					"name": "C1 S2",
+					"chapter": 1,
+					"season": 2,
+					"overall_season": 2,
+					"start_date": "2017-12-14",
+					"end_date": "2018-02-20",
+					"theme": "Medieval",
+					"mobile_image": "/gaming/fortnite/c1-s2-season-artwork.jpeg",
+					"desktop_image": "/gaming/fortnite/c1-s2-season-artwork.jpeg"
+				},
+				{
+					"name": "C1 S3",
+					"chapter": 1,
+					"season": 3,
+					"overall_season": 3,
+					"start_date": "2018-02-21",
+					"end_date": "2018-04-30",
+					"theme": "Space Exploration",
+					"mobile_image": "/gaming/fortnite/c1-s3-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s3-season-artwork.webp"
+				},
+				{
+					"name": "C1 S4",
+					"chapter": 1,
+					"season": 4,
+					"overall_season": 4,
+					"start_date": "2018-05-01",
+					"end_date": "2018-07-11",
+					"theme": "Superheroes",
+					"mobile_image": "/gaming/fortnite/c1-s4-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s4-season-artwork.webp"
+				},
+				{
+					"name": "C1 S5",
+					"chapter": 1,
+					"season": 5,
+					"overall_season": 5,
+					"start_date": "2018-07-12",
+					"end_date": "2018-09-26",
+					"theme": "World Collision",
+					"mobile_image": "/gaming/fortnite/c1-s5-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s5-season-artwork.webp"
+				},
+				{
+					"name": "C1 S6",
+					"chapter": 1,
+					"season": 6,
+					"overall_season": 6,
+					"start_date": "2018-09-27",
+					"end_date": "2018-12-05",
+					"theme": "Corruption",
+					"mobile_image": "/gaming/fortnite/c1-s6-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s6-season-artwork.webp"
+				},
+				{
+					"name": "C1 S7",
+					"chapter": 1,
+					"season": 7,
+					"overall_season": 7,
+					"start_date": "2018-12-06",
+					"end_date": "2019-02-27",
+					"theme": "Winter",
+					"mobile_image": "/gaming/fortnite/c1-s7-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s7-season-artwork.webp"
+				},
+				{
+					"name": "C1 S8",
+					"chapter": 1,
+					"season": 8,
+					"overall_season": 8,
+					"start_date": "2019-02-28",
+					"end_date": "2019-05-08",
+					"theme": "Pirates",
+					"mobile_image": "/gaming/fortnite/c1-s8-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s8-season-artwork.webp"
+				},
+				{
+					"name": "C1 S9",
+					"chapter": 1,
+					"season": 9,
+					"overall_season": 9,
+					"start_date": "2019-05-09",
+					"end_date": "2019-07-31",
+					"theme": "Future",
+					"mobile_image": "/gaming/fortnite/c1-s9-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-s9-season-artwork.webp"
+				},
+				{
+					"name": "C1 SX",
+					"chapter": 1,
+					"season": 10,
+					"overall_season": 10,
+					"start_date": "2019-08-01",
+					"end_date": "2019-10-13",
+					"theme": "Time Travel",
+					"mobile_image": "/gaming/fortnite/c1-sx-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c1-sx-season-artwork.webp"
+				}
+			]
+		},
+		{
+			"chapter": 2,
+			"seasons": [
+				{
+					"name": "C2 S1",
+					"chapter": 2,
+					"season": 1,
+					"overall_season": 11,
+					"start_date": "2019-10-14",
+					"end_date": "2019-02-20",
+					"theme": "New World",
+					"mobile_image": "/gaming/fortnite/c2-s1-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s1-season-artwork.webp"
+				},
+				{
+					"name": "C2 S2",
+					"chapter": 2,
+					"season": 2,
+					"overall_season": 12,
+					"start_date": "2019-02-20",
+					"end_date": "2020-06-17",
+					"theme": "Spies",
+					"mobile_image": "/gaming/fortnite/c2-s2-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s2-season-artwork.webp"
+				},
+				{
+					"name": "C2 S3",
+					"chapter": 2,
+					"season": 3,
+					"overall_season": 13,
+					"start_date": "2020-06-17",
+					"end_date": "2020-08-27",
+					"theme": "Water",
+					"mobile_image": "/gaming/fortnite/c2-s3-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s3-season-artwork.webp"
+				},
+				{
+					"name": "C2 S4",
+					"chapter": 2,
+					"season": 4,
+					"overall_season": 14,
+					"start_date": "2020-08-27",
+					"end_date": "2020-12-01",
+					"theme": "Marvel Comics",
+					"mobile_image": "/gaming/fortnite/c2-s4-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s4-season-artwork.webp"
+				},
+				{
+					"name": "C2 S5",
+					"chapter": 2,
+					"season": 5,
+					"overall_season": 15,
+					"start_date": "2020-12-01",
+					"end_date": "2021-03-16",
+					"theme": "The Zero Point/Bounty Hunters",
+					"mobile_image": "/gaming/fortnite/c2-s5-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s5-season-artwork.webp"
+				},
+				{
+					"name": "C2 S6",
+					"chapter": 2,
+					"season": 6,
+					"overall_season": 16,
+					"start_date": "2021-03-16",
+					"end_date": "2021-06-08",
+					"theme": "Primal",
+					"mobile_image": "/gaming/fortnite/c2-s6-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s6-season-artwork.webp"
+				},
+				{
+					"name": "C2 S7",
+					"chapter": 2,
+					"season": 7,
+					"overall_season": 17,
+					"start_date": "2021-06-08",
+					"end_date": "2021-09-12",
+					"theme": "Alien Invasion",
+					"mobile_image": "/gaming/fortnite/c2-s7-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s7-season-artwork.webp"
+				},
+				{
+					"name": "C2 S8",
+					"chapter": 2,
+					"season": 8,
+					"overall_season": 18,
+					"start_date": "2021-09-12",
+					"end_date": "2021-12-05",
+					"theme": "Cubed",
+					"mobile_image": "/gaming/fortnite/c2-s8-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c2-s8-season-artwork.webp"
+				}
+			]
+		},
+		{
+			"chapter": 3,
+			"seasons": [
+				{
+					"name": "C3 S1",
+					"chapter": 3,
+					"season": 1,
+					"overall_season": 19,
+					"start_date": "2021-12-05",
+					"end_date": "2022-03-19",
+					"theme": "Flipped",
+					"mobile_image": "/gaming/fortnite/c3-s1-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c3-s1-season-artwork.webp"
+				},
+				{
+					"name": "C3 S2",
+					"chapter": 3,
+					"season": 2,
+					"overall_season": 20,
+					"start_date": "2022-03-19",
+					"end_date": "2022-06-11",
+					"theme": "War",
+					"mobile_image": "/gaming/fortnite/c3-s2-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c3-s2-season-artwork.webp"
+				},
+				{
+					"name": "C3 S3",
+					"chapter": 3,
+					"season": 3,
+					"overall_season": 21,
+					"start_date": "2022-06-11",
+					"end_date": "2022-09-03",
+					"theme": "Party",
+					"mobile_image": "/gaming/fortnite/c3-s3-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c3-s3-season-artwork.webp"
+				},
+				{
+					"name": "C3 S4",
+					"chapter": 3,
+					"season": 4,
+					"overall_season": 22,
+					"start_date": "2022-09-03",
+					"end_date": "2022-12-03",
+					"theme": "Chrome",
+					"mobile_image": "/gaming/fortnite/c3-s4-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c3-s4-season-artwork.webp"
+				}
+			]
+		},
+		{
+			"chapter": 4,
+			"seasons": [
+				{
+					"name": "C4 S1",
+					"chapter": 4,
+					"season": 1,
+					"overall_season": 23,
+					"start_date": "2022-12-03",
+					"end_date": "2023-03-18",
+					"theme": "A New Beginning",
+					"mobile_image": "/gaming/fortnite/c4-s1-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c4-s1-season-artwork.webp"
+				},
+				{
+					"name": "C4 S2",
+					"chapter": 4,
+					"season": 2,
+					"overall_season": 24,
+					"start_date": "2023-03-18",
+					"end_date": "2023-06-10",
+					"theme": "Japanese",
+					"mobile_image": "/gaming/fortnite/c4-s2-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c4-s2-season-artwork.webp"
+				},
+				{
+					"name": "C4 S3",
+					"chapter": 4,
+					"season": 3,
+					"overall_season": 25,
+					"start_date": "2023-06-10",
+					"end_date": "2023-09-02",
+					"theme": "Wild",
+					"mobile_image": "/gaming/fortnite/c4-s3-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c4-s3-season-artwork.webp"
+				},
+				{
+					"name": "C4 S4",
+					"chapter": 4,
+					"season": 4,
+					"overall_season": 26,
+					"start_date": "2023-09-02",
+					"end_date": "2023-12-02",
+					"theme": "Heist",
+					"mobile_image": "/gaming/fortnite/c4-s4-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c4-s4-season-artwork.webp"
+				},
+				{
+					"name": "C4 SOG",
+					"chapter": 4,
+					"season": "OG",
+					"overall_season": 27,
+					"start_date": "2023-09-02",
+					"end_date": "2023-12-02",
+					"theme": "OG",
+					"mobile_image": "/gaming/fortnite/c4-sog-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c4-sog-season-artwork.webp"
+				}
+			]
+		},
+		{
+			"chapter": 5,
+			"seasons": [
+				{
+					"name": "C5 S1",
+					"chapter": 5,
+					"season": 1,
+					"overall_season": 28,
+					"start_date": "2023-12-02",
+					"end_date": "2024-03-16",
+					"theme": "Underground",
+					"mobile_image": "/gaming/fortnite/c5-s1-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c5-s1-season-artwork.webp"
+				},
+				{
+					"name": "C5 S2",
+					"chapter": 5,
+					"season": 2,
+					"overall_season": 29,
+					"start_date": "2024-03-16",
+					"end_date": "2024-05-24",
+					"theme": "Greek Gods",
+					"mobile_image": "/gaming/fortnite/c5-s2-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c5-s2-season-artwork.webp"
+				},
+				{
+					"name": "C5 S3",
+					"chapter": 5,
+					"season": 3,
+					"overall_season": 30,
+					"start_date": "2024-05-24",
+					"end_date": "2024-08-15",
+					"theme": "Wrecked",
+					"mobile_image": "/gaming/fortnite/c5-s3-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c5-s3-season-artwork.webp"
+				},
+				{
+					"name": "C5 S4",
+					"chapter": 5,
+					"season": 4,
+					"overall_season": 31,
+					"start_date": "2024-08-15",
+					"end_date": "2024-11-01",
+					"theme": "Absolute Doom",
+					"mobile_image": "/gaming/fortnite/c5-s4-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c5-s4-season-artwork.webp"
+				},
+				{
+					"name": "C5 Season Remix",
+					"chapter": 5,
+					"season": "Remix",
+					"overall_season": 32,
+					"start_date": "2024-11-01",
+					"end_date": "2025-01-01",
+					"theme": "Remix",
+					"mobile_image": "/gaming/fortnite/c5-sremix-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c5-sremix-season-artwork.webp"
+				}
+			]
+		},
+		{
+			"chapter": 6,
+			"seasons": [
+				{
+					"name": "C6 S1",
+					"chapter": 6,
+					"season": 1,
+					"overall_season": 33,
+					"start_date": "2025-01-01",
+					"end_date": "2025-03-16",
+					"theme": "The End",
+					"mobile_image": "/gaming/fortnite/c6-s1-season-artwork.webp",
+					"desktop_image": "/gaming/fortnite/c6-s1-season-artwork.webp"
+				}
+			]
+		}
+	]
+}

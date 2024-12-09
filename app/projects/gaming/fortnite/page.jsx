@@ -3,7 +3,7 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import IconFortnite from "@/components/icons/IconFortniteName";
-import FortniteChaptersData from "@/components/projects/gaming/FortniteChaptersData";
+import FortniteChapters from "@/components/projects/gaming/FortniteChapters";
 
 {/* Styles - Page */}
 const pageTextColour = "text-slate-900";
@@ -21,11 +21,10 @@ export default function PAGE_FORTNITE() {
 			<IconFortnite classes="w-64 h-auto mt-8 mb-12 lg:w-96 xl:w-[420px] xl:mb-20 2xl:w-[500px] mx-auto" fill="fill-slate-900" />
 			<span className="sr-only"><H1 text="Fortnite" /></span>
 			<h2 className={`${subSectionHeadingStyles} mt-8 text-center text-[16px]`}>Lore</h2>
-			<p 
-			  className={`mx-auto mb-12 text-slate-900 font-medium text-[13px] md:text-sm/6 tracking-wider lg:max-w-[80%] xl:mb-16 xl:text-lg max-w-[92%]`}>
+			<p className="mx-auto mb-12 text-slate-900 font-medium text-[13px] md:text-sm/6 tracking-wider lg:max-w-[80%] xl:mb-16 xl:text-lg max-w-[92%]">
 				{pageIntroText}
 			</p>
-			<FortniteChaptersData />
+			<FortniteChapters />
       	</main>
       	<Footer />
     </div>

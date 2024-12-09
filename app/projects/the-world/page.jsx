@@ -3,10 +3,8 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import PageIntro from "@/components/site_elements/Page_Intro";
-import DataForCountries from "@/data/to_replace_with_json/Data_For_Countries";
-
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
+import { Countries } from "@/data/data_for__countries.json";
+import { globalPageStyles, mainStyles } from "@/data/Variables";
 
 const pageStyles = "bg-linear-to-br from-[#00C9FF] to-[#92FE9D] text-slate-700";
 const pageIntroText = "Our planet has over 170 countries, over land, which covers approximately 29% of the Earth's surface. Each country has its own unique culture, history, and geography. Explore the countries of the world and learn more about the people and places that make up our diverse planet.";
@@ -21,7 +19,6 @@ export default function PAGE_THE_WORLD() {
 			<Header />
 			<main className={`${mainStyles}`}>
 				<H1 text={`Countries of the World`} />
-				{/*<Image src="/world-map.webp" alt="World Map" width={800} height={450} className="border-[2rem] border-sky-900/50 mb-8" />*/}
 				<div className={`flex flex-col items-center w-full lg:gap-8 xl:gap-12 2xl:gap-16`}>
 					<div className={`flex flex-col justify-center w-full gap-8 max-w-[80vw]`}>
 						<h3 className={`mt-8 mb-4 text-2xl text-center hidden`}>The Planets</h3>
@@ -29,7 +26,7 @@ export default function PAGE_THE_WORLD() {
 						
 						{/* Countries */}
 						<div className={`grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8 items-start motion motion-preset-slide-up motion-delay-700`}>
-							{DataForCountries.map((country, index) => (
+							{Countries.map((country, index) => (
 								<details
 									key={index}
 									className={`${detailsStyles}`}
