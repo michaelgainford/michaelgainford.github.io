@@ -188,6 +188,43 @@ const premierLeagueHubUrl = "/projects/football/competitions/english-premier-lea
 const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
 const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
 
+{/* MAG Premier League League Structure Setup */}
+const leagueTableStructure = [
+	{
+		team: 'Alfie',
+		played: 0,
+		won: 0,
+		drawn: 0,
+		lost: 0,
+		goalsFor: 0,
+		goalsAgainst: 0,
+		goalDifference: 0,
+		points: 0
+	},
+	{
+		team: 'Garcon',
+		played: 0,
+		won: 0,
+		drawn: 0,
+		lost: 0,
+		goalsFor: 0,
+		goalsAgainst: 0,
+		goalDifference: 0,
+		points: 0
+	},
+	{
+		team: 'Michael',
+		played: 0,
+		won: 0,
+		drawn: 0,
+		lost: 0,
+		goalsFor: 0,
+		goalsAgainst: 0,
+		goalDifference: 0,
+		points: 0
+	}
+];
+
 {/* List Of My Sites */}
 const mySites = [
 	{
@@ -232,6 +269,7 @@ export { clubLogosRoot };
 export { premierLeagueHubUrl };
 export { premierLeagueLogoSvgPath };
 export { premierLeagueHubBlockImageRoot };
+export { leagueTableStructure };
 export { mySites };
 export { urlForShopify };
 export { urlForNextJS };
