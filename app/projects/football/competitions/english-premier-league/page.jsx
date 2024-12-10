@@ -83,7 +83,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 				<div className={`${mainStyles} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold motion motion-preset-slide-up motion-delay-[1000ms]`}>
 					{premierLeagueHubBlocks.map((block, index) => {
 						return (
-							<div key={index} className="flex flex-col h-full gap-4 divide-y rounded-lg">
+							<div key={index} className="flex flex-col h-full gap-4 rounded-lg">
 								<h2 className="pl-2 text-sm leading-none border-l-4 lg:border-l-8 border-amber-500">{block.title}</h2>
 								<div className="pt-4 content">
 									<div className={blockImagePlaceholderStyles}>
