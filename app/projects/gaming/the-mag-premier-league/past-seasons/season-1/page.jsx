@@ -4,8 +4,7 @@ import Footer from "@/components/footer/Footer";
 import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
 import { Seasons } from "@/data/data_for__magpremierleague.json"
 import { globalPageStyles, mainStyles, leagueTableStructure } from "@/data/Variables";
-import Link from "next/link";
-const currentSeason = 2;
+const currentSeason = 1;
 
 // Get the current season's date from Seasons
 const Season = Seasons.find(season => season.season === currentSeason);
@@ -251,7 +250,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 				</summary>
 				<div className={`flex flex-col gap-8 pt-8 details-content`}>
 					<div className={detailsRulesGroupStyles}>
-						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Season {currentSeason} Competitors</p>
+						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Season 1 Competitors</p>
 						<div className={`rounded-lg p-4 border-slate-900`}>
 							<h2 className={`text-center mb-6`}>Teams</h2>
 							<div className={`grid w-full grid-cols-3 gap-8 [&>.team]:border [&>.team]:rounded-full [&>.team]:border-slate-900 [&>.team]:min-w-[40px] lg:[&>.team]:min-w-[160px] [&>.team]:text-center [&>.team]:aspect-square [&>.team]:flex [&>.team]:justify-center [&>.team]:items-center justify-center content-center`}>
@@ -293,13 +292,6 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 							<li>Excellent Condition</li>
 							<li>5 Subs</li>
 							<li>No extra time/penalties</li>
-						</ul>
-					</div>
-
-					<div className={`rule-group mb-8 mt-8 [&>p]:mb-1`}>
-						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Past Seasons</p>
-						<ul className={`text-sm flex flex-col gap-1`}>
-							<li className={`pt-4`}><Link href="/projects/gaming/the-mag-premier-league/past-seasons/season-1">Season 1</Link></li>
 						</ul>
 					</div>
 				</div>
