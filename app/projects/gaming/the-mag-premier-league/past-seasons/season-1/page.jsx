@@ -8,7 +8,6 @@ const currentSeason = 1;
 
 // Get the current season's date from Seasons
 const Season = Seasons.find(season => season.season === currentSeason);
-console.log('MG, this is the season', Season);
 ////////////////////////////////////////
 // DATA | START
 ////////////////////////////////////////
