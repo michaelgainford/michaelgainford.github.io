@@ -1,0 +1,28 @@
+{
+    "Tools": [
+        {
+            "name": "URL Concatenator",
+            "href": "/tools/url-concatenator",
+            "description": "A simple tool to take a starting string, a concatenation character, and an ending string to create a URL.",
+            "active": true
+        },
+        {
+            "name": "Tool",
+            "href": "/",
+            "description": "Coming Soon!",
+            "active": false
+        },
+        {
+            "name": "Tool",
+            "href": "/",
+            "description": "Coming Soon!",
+            "active": false
+        },
+        {
+            "name": "Tool",
+            "href": "/",
+            "description": "Coming Soon!",
+            "active": false
+        }
+    ]
+}
