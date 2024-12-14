@@ -1,12 +1,7 @@
-const checkbox = document.getElementById("toggle-concatenator");
-const presetConcatenator = document.getElementById("preset-concatenator");
-const manualConcatenator = document.getElementById("manual-concatenator");
-
 function CreateURL() {
 	{/* 3 inputs: base URL, concatenation character, query string */}
 	const baseURL = document.getElementById("base-url");
 	const concatenator = document.getElementById("preset-concatenator");
-	const concatenator2 = document.getElementById("manual-concatenator");
 	const queryString = document.getElementById("query-string");
 	const createURLButton = document.querySelector("button");	{/* create a URL output */}
 	const createdUrlOutput = document.querySelector(".created-url");
@@ -66,12 +61,9 @@ function checkBoxToggleDisplay () {
     }
     else {
         console.log("Checkbox is not checked");
-        //presetConcatenator.classList.add("hidden");
-        //manualConcatenator.classList.remove("hidden");
     }
     
 }
-//setTimeout(checkBoxToggleDisplay, 3000);
 setTimeout(checkBoxToggleDisplay, 4000);
 
 export default function TOOL_URL_CONCATENATOR() {
