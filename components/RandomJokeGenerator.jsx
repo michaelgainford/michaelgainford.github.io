@@ -1,4 +1,4 @@
-import DataForJokesJSON from "@/data/new_json_file/data_for__jokes.json";
+import DataForJokesJSON from "@/data/data_for__jokes.json";
 const Jokes = DataForJokesJSON.Jokes;
 const randomJoke = Jokes[Math.floor(Math.random() * Jokes.length)];
 

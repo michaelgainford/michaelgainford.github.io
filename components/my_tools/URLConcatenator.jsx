@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 
 function CreateURL() {
 	{/* 3 inputs: base URL, concatenation character, query string */}
