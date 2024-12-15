@@ -4,7 +4,7 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Page_Intro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import DataForJokesJSON from "@/data/new_json_file/data_for__jokes.json";
+import DataForJokesJSON from "@/data/data_for__jokes";
 const Jokes = DataForJokesJSON.Jokes;
 Jokes.sort(() => Math.random() - 0.5);
 

@@ -3,14 +3,12 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
+import { globalPageStyles, mainStyles, dataForAllProjects } from "@/data/Variables";
 
-import DataForProjects from "@/data/to_replace_with_json/Data_For_Projects";
 {/* Sort the projects by name... */}
-DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
+dataForAllProjects.sort((a, b) => a.name.localeCompare(b.name));
 {/* ...and then by archived status */}
-DataForProjects.sort((a, b) => a.archived - b.archived);
+dataForAllProjects.sort((a, b) => a.archived - b.archived);
 
 const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
 const pageIntroText = `A collection of projects that I have worked on, that are a part of this website. Some of these projects are still in progress, like my digital garden. Different plants needing tending to in different way. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`;

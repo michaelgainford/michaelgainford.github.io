@@ -3,32 +3,31 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
-import evertonSquad from "@/data/to_replace_with_json/Data_For_Everton";
-
-const pageIntroText = `Everton Football Club is a professional football club based in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has competed in the top division for a record 117 seasons and has won the League Championship nine times.`;
+import { globalPageStyles, mainStyles } from "@/data/Variables";
+import EvertonData from "@/data/data_for__everton";
+const EvertonPlayerData = EvertonData.Players;
+const ClubOverview = EvertonData.ClubOverview;
 
 const team_headings_and_info = [
 	{
 		label: "Founded",
-		value: "1878",
+		value: ClubOverview.founded,
 	},
 	{
 		label: "Stadium",
-		value: "Goodison Park",
+		value: ClubOverview.stadium,
 	},
 	{
 		label: "Manager",
-		value: "Sean Dyche",
+		value: ClubOverview.manager,
 	},
 	{
 		label: "League",
-		value: "Premier League",
+		value: ClubOverview.league,
 	}
 ]
 
-evertonSquad.sort((a, b) => a.number - b.number);
+EvertonPlayerData.sort((a, b) => a.number - b.number);
 
 export default function PAGE_EVERTON() {
   return (
@@ -36,7 +35,7 @@ export default function PAGE_EVERTON() {
       <Header />
       <main className={`${mainStyles}`}>
         <H1 text={`Everton`} />
-        <PageIntro text={pageIntroText} />
+        <PageIntro text={ClubOverview.page_intro} />
         <div className={`mt-8 grid w-full gap-4 first-line:gap-4 countries-grid-container`}>   
           <div className={`details border-b border-blue-500/50 pb-8`}>
             <h2 className={`mb-2 text-lg font-medium uppercase lg:text-2xl 2xl:mb-6`}>Club Information</h2>
@@ -52,7 +51,7 @@ export default function PAGE_EVERTON() {
           <div className={`mt-8 playing-squad`}>
             <h2 className={`mb-2 text-lg font-medium uppercase lg:text-2xl`}>Playing Squad</h2>
             <div className={`grid justify-between grid-cols-1 players gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 xl:grid-cols-4`}>
-              {evertonSquad.map((player) => (
+              {EvertonPlayerData.map((player) => (
                 <div key={player.slug} className={`flex flex-row space-y-2 border border-blue-700 rounded-lg player bg-blue-700/50 group sm:flex-col max-sm:gap-4`}>
                   <div className={`relative space-y-2 player-image-and-number sm:mb-2 max-sm:w-[40%]`}>
                     <div className={`player-image rounded-l-lg relative aspect-square overflow-hidden sm:aspect-3/2 sm:rounded-b-none`}>

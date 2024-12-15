@@ -3,22 +3,20 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
-import DataForProjects from "@/data/to_replace_with_json/Data_For_Projects";
-
-export const metadata = {
-	title: `Projects`,
-	description: `A collection of projects that I have worked on, that make up the metaverse as part of this website. Some of these projects are still in progress and my intention is to continuously wokr on all the pages. I see it as my digital garden. Different plants needing tending to in different way. Some are good for a few months, some need more regular attention. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`
-};
+import { globalPageStyles, mainStyles, dataForAllProjects } from "@/data/Variables";
 
 {/* Sort the projects by name... */}
-DataForProjects.sort((a, b) => a.name.localeCompare(b.name));
+dataForAllProjects.sort((a, b) => a.name.localeCompare(b.name));
 {/* ...and then by archived status */}
-DataForProjects.sort((a, b) => a.archived - b.archived);
+dataForAllProjects.sort((a, b) => a.archived - b.archived);
 
 const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
 const pageIntroText = `A collection of projects that I have worked on, that make up the metaverse as part of this website. Some of these projects are still in progress and my intention is to continuously tend to all the pages. I see it as my digital garden. Different plants needing tending to in different way. Some are good for a few months, some need more regular attention. Each project has a brief description and a category that it belongs to. Click on a project to view the page.`;
+
+export const metadata = {
+	title: `Projects`,
+	description: `A collection of projects that I have worked on, that make up the metaverse as part of this website. Some of these projects are still in progress and my intention is to continuously work on all the pages. I see it as my digital garden. Different plants needing tending to in different way. Some are good for a few months, some need more regular attention. Each project has a brief description and a category that it belongs to. Click on a project to learn more about it.`
+};
 
 export default function PAGE_PROJECTS() {
 	return (
@@ -42,7 +40,7 @@ export default function PAGE_PROJECTS() {
 				/>
 
 				<div className="grid flex-wrap w-full grid-cols-1 gap-8 sm:grid-cols-2 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 3xl:grid-cols-5 2xl:gap-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-50">
-					{DataForProjects.map((project, index) => (
+					{dataForAllProjects.map((project, index) => (
 					<Link key={index} href={project.href} className={`border ${project.border} ${project.hover} ${project.color} h-full rounded-lg space-y-4 gap-4 flex flex-col justify-between bg-transparent max-sm:w-[80%] max-sm:mx-auto transition-all hover:transition duration-[700ms] ${project.archived ? `opacity-50` : ``} cursor-pointer group xl:border-4`}>
 						<span className={`flex justify-center items-center gap-2 lg:gap-4 pt-4 rounded-t-sm py-4 ${project.bg} group-hover:bg-transparent bg-opacity-80`}>
 							<span className={`icon-box size-4 rounded-full ${project.bg} group-hover:bg-transparent! flex items-center justify-center ${project.color}`}>

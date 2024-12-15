@@ -1,0 +1,1636 @@
+{ 
+    "Movies": [
+        {
+            "id": 1,
+            "title": "Ace Ventura: Pet Detective",
+            "slug": "ace-ventura-pet-detective",
+            "image":  "/movies-images/ace-ventura-pet-detective.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0109040/",
+            "description":
+            "A goofy detective specializing in animals goes in search of the missing mascot of the Miami Dolphins.",
+            "year": 1994,
+            "genre": "Comedy",
+            "duration": 86,
+            "watched": true
+        },
+        {
+            "id": 2,
+            "title": "Ace Ventura: When Nature Calls",
+            "image":  "/movies-images/ace-ventura-when-nature-calls.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0112281/",
+            "description":
+            "Ace Ventura, Pet Detective, returns from a spiritual quest to investigate the disappearance of a rare white bat, the sacred animal of a tribe in Africa.",
+            "year": 1995,
+            "genre": "Comedy",
+            "duration": 90,
+            "watched": true
+        },
+        {
+            "id": 3,
+            "title": "Armageddon",
+            "image":  "/movies-images/armageddon.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0120591/",
+            "description":
+            "After discovering that an asteroid the size of Texas is going to impact Earth in less than a month, NASA recruits a misfit team of deep-core drillers to save the planet.",
+            "year": 1998,
+            "genre": "Action",
+            "duration": 151,
+            "watched": true
+        },
+        {
+            "id": 4,
+            "title": "Avatar",
+            "image":  "/movies-images/avatar.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0499549/",
+            "description":
+            "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+            "year": 2009,
+            "genre": "Action",
+            "duration": 162,
+            "watched": true
+        },
+        {
+            "id": 5,
+            "title": "Avengers: Age of Ultron",
+            "image":  "/movies-images/avengers-age-of-ultron.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2395427/",
+            "description":
+            "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+            "year": 2015,
+            "genre": "Action",
+            "duration": 141,
+            "watched": true
+        },
+        {
+            "id": 6,
+            "title": "Avengers: Endgame",
+            "image":  "/movies-images/avengers-endgame.webp",
+            "imdb_url": "https://www.imdb.com/title/tt4154796/",
+            "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+            "year": 2019,
+            "genre": "Action",
+            "duration": 181,
+            "watched": true
+        },
+        {
+            "id": 7,
+            "title": "Avengers: Infinity War",
+            "image":  "/movies-images/avengers-infinity-war.webp",
+            "imdb_url": "https://www.imdb.com/title/tt4154756/",
+            "description":
+            "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+            "year": 2018,
+            "genre": "Action",
+            "duration": 149,
+            "watched": true
+        },
+        {
+            "id": 8,
+            "title": "Batman: The Dark Knight",
+            "image":  "/movies-images/batman-the-dark-knight.webp",
+            "imdb_url": "httxps://www.imdb.com/title/tt0468569/",
+            "description":
+            "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "year": 2008,
+            "genre": "Action",
+            "duration": 152,
+            "watched": true
+        },
+        {
+            "id": 9,
+            "title": "Big",
+            "image":  "/movies-images/big.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0094737/",
+            "description": "After a wish turns 12-year-old Josh Baskin into a 30-year",
+            "year": 1988,
+            "genre": "Comedy",
+            "duration": 104,
+            "watched": true
+        },
+        {
+            "id": 10,
+            "title": "Big Hero 6",
+            "image":  "/movies-images/big-hero-6.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2245084/",
+            "description":
+            "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
+            "year": 2014,
+            "genre": "Action",
+            "duration": 102,
+            "watched": true
+        },
+        {
+            "id": 11,
+            "title": "Black Panther",
+            "image":  "/movies-images/black-panther.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1825683/",
+            "description":
+            "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+            "year": 2018,
+            "genre": "Action",
+            "duration": 134,
+            "watched": true
+        },
+        {
+            "id": 12,
+            "title": "Black Widow",
+            "image":  "/movies-images/black-widow.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3480822/",
+            "description":
+            "Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",
+            "year": 2021,
+            "genre": "Action",
+            "duration": 134,
+            "watched": true
+        },
+        {
+            "id": 13,
+            "title": "Captain America: Civil War",
+            "image":  "/movies-images/captain-america-civil-war.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3498820/",
+            "description":
+            "Political involvement in the Avengers' affairs causes a rift between Captain America and",
+            "year": 2016,
+            "genre": "Action",
+            "duration": 147,
+            "watched": true
+        },
+        {
+            "id": 14,
+            "title": "Captain America: The First Avenger",
+            "image":  "/movies-images/captain-america-the-first-avenger.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0458339/",
+            "description":
+            "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a 'Super-Soldier serum'. But being Captain America comes at a price as he attempts to take down a war monger and",
+            "year": 2011,
+            "genre": "Action",
+            "duration": 124,
+            "watched": true
+        },
+        {
+            "id": 15,
+            "title": "Captain America: The Winter Soldier",
+            "image":  "/movies-images/captain-america-the-winter-soldier.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1843866/",
+            "description":
+            "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
+            "year": 2014,
+            "genre": "Action",
+            "duration": 136,
+            "watched": true
+        },
+        {
+            "id": 16,
+            "title": "Captain Marvel",
+            "image":  "/movies-images/captain-marvel.webp",
+            "imdb_url": "https://www.imdb.com/title/tt4154664/",
+            "description":
+            "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two",
+            "year": 2019,
+            "genre": "Action",
+            "duration": 123,
+            "watched": true
+        },
+        {
+            "id": 17,
+            "title": "Castaway",
+            "image":  "/movies-images/castaway.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0162222/",
+            "description":
+            "A FedEx executive undergoes a physical and emotional transformation after crash landing on a deserted island.",
+            "year": 2000,
+            "genre": "Drama",
+            "duration": 143,
+            "watched": true
+        },
+        {
+            "id": 18,
+            "title": "Coco",
+            "image":  "/movies-images/coco.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2380307/",
+            "description":
+            "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+            "year": 2017,
+            "genre": "Animation",
+            "duration": 105,
+            "watched": true
+        },
+        {
+        "id": 19,
+        "title": "Doctor Strange",
+        "image":  "/movies-images/doctor-strange.webp",
+        "imdb_url": "https://www.imdb.com/title/tt1211837/",
+        "description":
+        "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
+        "year": 2016,
+        "genre": "Action",
+        "duration": 115,
+        "watched": true
+    },
+    {
+            "id": 20,
+            "title": "Dodgeball: A True Underdog Story",
+            "image":  "/movies-images/dodgeball.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0364725/",
+            "description":
+            "A group of misfits enter a Las Vegas dodgeball tournament in order to save their cherished local gym from the onslaught of a corporate health fitness chain.",
+            "year": 2004,
+            "genre": "Comedy",
+            "duration": 92,
+            "watched": true
+        },
+        {
+            "id": 21,
+            "title": "Ferris Bueller's Day Off",
+            "image":  "/movies-images/ferris-buellers-day-off.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0091042/",
+            "description":
+            "A high school wise guy is determined to have a day off from school, despite what the",
+            "year": 1986,
+            "genre": "Comedy",
+            "duration": 103,
+            "watched": true
+        },
+        {
+            "id": 22,
+            "title": "Flubber",
+            "image":  "/movies-images/flubber.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0119137/",
+            "description":
+            "An absent-minded professor discovers 'flubber', a rubber-like super-bouncy substance.",
+            "year": 1997,
+            "genre": "Comedy",
+            "duration": 93,
+            "watched": true
+        },
+        {
+            "id": 23,
+            "title": "Forrest Gump",
+            "image":  "/movies-images/forrest-gump.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0109830/",
+            "description":
+            "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold from the perspective",
+            "year": 1994,
+            "genre": "Drama",
+            "duration": 142,
+            "watched": true
+        },
+        {
+            "id": 24,
+            "title": "Free Guy",
+            "image":  "/movies-images/free-guy.webp",
+            "imdb_url": "https://www.imdb.com/title/tt6264654/",
+            "description":
+            "A bank teller discovers that he's actually an NPC inside a brutal, open world video game.",
+            "year": 2021,
+            "genre": "Action",
+            "duration": 115,
+            "watched": true
+        },
+        {
+            "id": 25,
+            "title": "George of the Jungle",
+            "image":  "/movies-images/george-of-the-jungle.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0119190/",
+            "description": "",
+            "year": 1997,
+            "genre": "Comedy",
+            "duration": 92,
+            "watched": true
+        },
+        {
+            "id": 26,
+            "title": "Guardians of the Galaxy",
+            "image":  "/movies-images/guardians-of-the-galaxy.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2015381/",
+            "description":
+            "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+            "year": 2014,
+            "genre": "Action",
+            "duration": 121,
+            "watched": true
+        },
+        {
+            "id": 27,
+            "title": "Guardians of the Galaxy Vol. 2",
+            "image":  "/movies-images/guardians-of-the-galaxy-vol-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3896198/",
+            "description":
+            "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.",
+            "year": 2017,
+            "genre": "Action",
+            "duration": 136,
+            "watched": true
+        },
+        {
+            "id": 28,
+            "title": "Happy Gilmore",
+            "image":  "/movies-images/happy-gilmore.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0116483/",
+            "description":
+            "A rejected hockey player puts his skills to the golf course to save his grandmother's house.",
+            "year": 1996,
+            "genre": "Comedy",
+            "duration": 92,
+            "watched": true
+        },
+        {
+            "id": 29,
+            "title": "Hercules",
+            "image":  "/movies-images/hercules.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0119282/",
+            "description":
+            "The son of Zeus and Hera is stripped of his immortality as an infant and must become a true hero in order to reclaim it.",
+            "year": 1997,
+            "genre": "Animation",
+            "duration": 93,
+            "watched": true
+        },
+        {
+            "id": 30,
+            "title": "Home Alone",
+            "image":  "/movies-images/home-alone.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0099785/",
+            "description":
+            "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.",
+            "year": 1990,
+            "genre": "Comedy",
+            "duration": 103,
+            "watched": true
+        },
+        {
+            "id": 31,
+            "title": "Home Alone 2: Lost in New York",
+            "image":  "/movies-images/home-alone-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0104431/",
+            "description":
+            "One year after Kevin McCallister was left home alone and had to defeat a pair of bumbling burglars, he accidentally finds himself stranded in New York City - and the same criminals are not far behind.",
+            "year": 1992,
+            "genre": "Comedy",
+            "duration": 120,
+            "watched": true
+        },
+        {
+            "id": 32,
+            "title": "Inside Out",
+            "image":  "/movies-images/inside-out.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2096673/",
+            "description":
+            "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.",
+            "year": 2015,
+            "genre": "Animation",
+            "duration": 95,
+            "watched": true
+        },
+        {
+            "id": 33,
+            "title": "Iron Man",
+            "image":  "/movies-images/iron-man.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0371746/",
+            "description":
+            "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.", 
+            "year": 2008,
+            "genre": "Action",
+            "duration": 126,
+            "watched": true
+        },
+        {
+            "id": 34,
+            "title": "Iron Man 2",
+            "image":  "/movies-images/iron-man-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1228705/",
+            "description":
+            "With the world now aware of his identity",
+            "year": 2010,
+            "genre": "Action",
+            "duration": 124,
+            "watched": true
+        },
+        {
+            "id": 35,
+            "title": "Iron Man 3",
+            "image":  "/movies-images/iron-man-3.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1300854/",
+            "description":
+            "When Tony Stark's world is torn apart by a formidable",
+            "year": 2013,
+            "genre": "Action",
+            "duration": 130,
+            "watched": true
+        },
+        {
+            "id": 36,
+            "title": "Jingle All The Way",
+            "image":  "/movies-images/jingle-all-the-way.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0116705/",
+            "description":
+            "A father vows to get his son a Turbo",
+            "year": 1996,
+            "genre": "Comedy",
+            "duration": 89,
+            "watched": true
+        },
+        {
+            "id": 37,
+            "title": "Jumanji",
+            "image":  "/movies-images/jumanji.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0113497/",
+            "description": "When two kids find and play a magical board game, they release",
+            "year": 1995,
+            "genre": "Adventure",
+            "duration": 104,
+            "watched": true
+        },
+        {
+            "id": 38,
+            "title": "Kindergarten Cop",
+            "image":  "/movies-images/kindergarten-cop.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0099938/",
+            "description":
+            "A tough cop must pose as a kindergarten teacher in order to locate a dangerous criminal's ex-wife, who may hold the key to putting him behind bars.",
+            "year": 1990,
+            "genre": "Comedy",
+            "duration": 111,
+            "watched": true
+        },
+        {
+            "id": 39,
+            "title": "Lego Batman",
+            "image":  "/movies-images/lego-batman.webp",
+            "imdb_url": "https://www.imdb.com/title/tt4116284/",
+            "description":
+            "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.",
+            "year": 2017,
+            "genre": "Animation",
+            "duration": 104,
+            "watched": true
+        },
+        {
+            "id": 40,
+            "title": "Lego Movie",
+            "image":  "/movies-images/lego-movie.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1490017/",
+            "description":
+            "An ordinary LEGO construction worker, thought to be the prophesied as 'special', is recruited to join a quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis.",
+            "year": 2014,
+            "genre": "Animation",
+            "duration": 100,
+            "watched": true
+        },
+        {
+            "id": 41,
+            "title": "Lego Movie 2",
+            "image":  "/movies-images/lego-movie-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3513498/",
+            "description":
+            "It's been five years since everything was awesome and the citizens are facing a huge new threat: Lego Duplo invaders from outer space, wrecking everything faster than they can rebuild.",
+            "year": 2019,
+            "genre": "Animation",
+            "duration": 107,
+            "watched": true
+        },
+        {
+            "id": 42,
+            "title": "Men in Black",
+            "image":  "/movies-images/men-in-black.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0119654/",
+            "description":
+            "A police officer joins a secret organization that polices and monitors extraterrestrial interactions on Earth.",
+            "year": 1997,
+            "genre": "Action",
+            "duration": 98,
+            "watched": true
+        },
+        {
+            "id": 43,
+            "title": "Men In Black 2",
+            "image":  "/movies-images/men-in-black-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0120912/",
+            "description":
+            "Agent J needs help so he is sent to find Agent K and restore his memory.",
+            "year": 2002,
+            "genre": "Action",
+            "duration": 88,
+            "watched": true
+        },
+        {
+            "id": 44,
+            "title": "Men In Black 3",
+            "image":  "/movies-images/men-in-black-3.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1409024/",
+            "description":
+            "Agent J travels in time to MIB's early years in the 1960s, to stop an alien from assassinating his friend Agent K and changing history.",
+            "year": 2012,
+            "genre": "Action",
+            "duration": 106,
+            "watched": true
+        },
+        {
+            "id": 45,
+            "title": "Monsters Inc.",
+            "image":  "/movies-images/monsters-inc.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0198781/",
+            "description":
+            "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.",
+            "year": 2001,
+            "genre": "Animation",
+            "duration": 92,
+            "watched": true
+        },
+        {
+            "id": 46,
+            "title": "Monsters University",
+            "image":  "/movies-images/monsters-university.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1453405/",
+            "description":
+            "A look at the relationship between Mike Wazowski (Billy Crystal) and James P. 'Sully' Sullivan (John Goodman) during their days at Monsters University, when they weren't necessarily the best of friends.",
+            "year": 2013,
+            "genre": "Animation",
+            "duration": 104,
+            "watched": true
+        },
+        {
+            "id": 47,
+            "title": "Mrs. Doubtfire",
+            "image":  "/movies-images/mrs-doubtfire.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0107614/",
+            "description":
+            "After a bitter divorce, an actor disgu",
+            "year": 1993,
+            "genre": "Comedy",
+            "duration": 125,
+            "watched": true
+        },
+        {
+            "id": 48,
+            "title": "Onward",
+            "image":  "/movies-images/onward.webp",
+            "imdb_url": "https://www.imdb.com/title/tt7146812/",
+            "description":
+            "Two elven brothers embark on a quest to bring their father back for one day.",
+            "year": 2020,
+            "genre": "Animation",
+            "duration": 102,
+            "watched": true
+        },
+        {
+            "id": 49,
+            "title": "Pixels",
+            "image":  "/movies-images/pixels.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2120120/",
+            "description":
+            "When aliens misinterpret video feeds of classic arcade games as a declaration of war, they attack the Earth in the form of the video games.",
+            "year": 2015,
+            "genre": "Action",
+            "duration": 105,
+            "watched": true
+        },
+        {
+            "id": 50,
+            "title": "Ratatouille",
+            "image":  "/movies-images/ratatouille.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0382932/",
+            "description":
+            "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
+            "year": 2007,
+            "genre": "Animation",
+            "duration": 111,
+            "watched": true
+        },
+        {
+            "id": 51,
+            "title": "Shaggy D.A.",
+            "image":  "/movies-images/shaggy-da.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0078259/",
+            "description":
+            "A lawyer makes an interesting discovery that could affect his chances of getting elected to office.",
+            "year": 1976,
+            "genre": "Comedy",
+            "duration": 91,
+            "watched": true
+        },
+        {
+            "id": 52,
+            "title": "Shallow Hal",
+            "image":  "/movies-images/shallow-hal.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0256380/",
+            "description": "A shallow",
+            "year": 2001,
+            "genre": "Comedy",
+            "duration": 113,
+            "watched": true
+        },
+        {
+            "id": 53,
+            "title": "Sonic the Hedgehog",
+            "image":  "/movies-images/sonic-the-hedgehog.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3794354/",
+            "description":
+            "After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.",
+            "year": 2020,
+            "genre": "Action",
+            "duration": 99,
+            "watched": true
+        },
+        {
+            "id": 54,
+            "title": "Sonic the Hedgehog 2",
+            "image":  "/movies-images/sonic-the-hedgehog-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3794354/",
+            "description":  "The sequel to the 2020 movie, Sonic the Hedgehog.",
+            "year": 2022,
+            "genre": "Action",
+            "duration": 99,
+            "watched": true
+        },
+        {
+            "id": 55,
+            "title": "Spies in Disguise",
+            "image":  "/movies-images/spies-in-disguise.webp",
+            "imdb_url": "https://www.imdb.com/title/tt5814534/",
+            "description":
+            "When the world's best spy is turned into a pigeon, he must rely on his nerdy tech officer to save the world.",
+            "year": 2019,
+            "genre": "Animation",
+            "duration": 102,
+            "watched": true
+        },
+        {
+            "id": 56,
+            "title": "Step Brothers",
+            "image":  "/movies-images/step-brothers.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0838283/",
+            "description":
+            "Two aimless middle-aged losers still living at home are forced against their will to become roommates when their parents marry.",
+            "year": 2008,
+            "genre": "Comedy",
+            "duration": 98,
+            "watched": true
+        },
+        {
+            "id": 57,
+            "title": "The Super Mario Bros Movie",
+            "image":  "/movies-images/the-super-mario-bros-movie.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0108255/",
+            "description": "",
+            "year": 2023,
+            "genre": "Action",
+            "duration": 104,
+            "watched": true
+        },
+        {
+            "id": 58,
+            "title": "The Avengers",
+            "image":  "/movies-images/the-avengers.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0848228/",
+            "description":
+            "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+            "year": 2012,
+            "genre": "Action",
+            "duration": 143,
+            "watched": true
+        },
+        {
+            "id": 59,
+            "title": "The Day After Tomorrow",
+            "image":  "/movies-images/the-day-after-tomorrow.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0319262/",
+            "description":
+            "Jack Hall, paleoclimatologist, must make a daring trek from Washington, D.C. to New York City to reach his son, trapped in the cross-hairs of a sudden international storm which plunges the planet into a new Ice Age.",
+            "year": 2004,
+            "genre": "Action",
+            "duration": 124,
+            "watched": true
+        },
+        {
+            "id": 60,
+            "title": "The Incredibles",
+            "image":  "/movies-images/the-incredibles.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0317705/",
+            "description":
+            "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
+            "year": 2004,
+            "genre": "Animation",
+            "duration": 115,
+            "watched": true
+        },
+        {
+            "id": 61,
+            "title": "The Incredibles 2",
+            "image":  "/movies-images/the-incredibles-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3606756/",
+            "description":
+            "The Incredibles family takes on a new mission which involves a change in family roles: Bob Parr (Mr Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.",
+            "year": 2018,
+            "genre": "Animation",
+            "duration": 118,
+            "watched": true
+        },
+        {
+            "id": 62,
+            "title": "The Jungle Book",
+            "image":  "/movies-images/the-jungle-book-original.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0061852/",
+            "description": "Bagheera the Panther and Baloo the Bear have a difficult time trying to convince",
+            "year": 1967,
+            "genre": "Animation",
+            "duration": 78,
+            "watched": true
+        },
+        {
+            "id": 63,
+            "title": "The Matrix",
+            "image":  "/movies-images/the-matrix.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0133093/",
+            "description":
+            "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+            "year": 1999,
+            "genre": "Action",
+            "duration": 136,
+            "watched": true
+        },
+        {
+            "id": 64,
+            "title": "The Matrix Reloaded",
+            "image":  "/movies-images/the-matrix-reloaded.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0234215/",
+            "description":
+            "Neo and his",
+            "year": 2003,
+            "genre": "Action",
+            "duration": 138,
+            "watched": true
+        },
+        {
+            "id": 65,
+            "title": "The Matrix Revolutions",
+            "image":  "/movies-images/the-matrix-revolutions.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0242653/",
+            "description":
+            "The human city of Zion defends itself against the massive invasion of the machines as Neo fights to end the war at another front while also opposing the rogue Agent Smith.",
+            "year": 2003,
+            "genre": "Action",
+            "duration": 129,
+            "watched": true
+        },
+        {
+            "id": 66,
+            "title": "Thor",
+            "image":  "/movies-images/thor.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0800369/",
+            "description":
+            "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
+            "year": 2011,
+            "genre": "Action",
+            "duration": 115,
+            "watched": true
+        },
+        {
+            "id": 67,
+            "title": "Thor: Ragnarok",
+            "image":  "/movies-images/thor-ragnarok.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3501632/",
+            "description":
+            "Imprisoned on the planet Sakaar, Thor",
+            "year": 2017,
+            "genre": "Action",
+            "duration": 130,
+            "watched": true
+        },
+        {
+            "id": 68,
+            "title": "Toy Story 4",
+            "image":  "/movies-images/toy-story-4.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1979376/",
+            "description":
+            "When a new toy called 'Forky' joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
+            "year": 2019,
+            "genre": "Animation",
+            "duration": 100,
+            "watched": true
+        },
+        {
+            "id": 69,
+            "title": "Wall-E",
+            "image":  "/movies-images/wall-e.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0910970/",
+            "description":
+            "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+            "year": 2008,
+            "genre": "Animation",
+            "duration": 98,
+            "watched": true
+        },
+        {
+            "id": 70,
+            "title": "X-Men",
+            "image":  "/movies-images/x-men.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0120903/",
+            "description":
+            "Two mutants come to a private academy for their kind whose resident superhero team",
+            "year": 2000,
+            "genre": "Action",
+            "duration": 104,
+            "watched": true
+        },
+        {
+            "id": 71,
+            "title": "Zoolander",
+            "image":  "/movies-images/zoolander.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0196229/",
+            "description":
+            "At the end of his career, a clueless fashion model is brainwashed to kill the Prime Minister of Malaysia.",
+            "year": 2001,
+            "genre": "Comedy",
+            "duration": 90,
+            "watched": true
+        },
+        {
+            "id": 72,
+            "title": "Zootopia",
+            "image":  "/movies-images/zootopia.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2948356/",
+            "description":
+            "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+            "year": 2016,
+            "genre": "Animation",
+            "duration": 108,
+            "watched": true
+        },
+        {
+            "id": 73,
+            "title": "Percy Jackson & the Olympians: The Lightning Thief",
+            "image":  "/movies-images/percy-jackson-the-lightning-thief.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0814255/",
+            "description": "A teenager discovers he's the descendant of a Greek god and sets out on an adventure to settle an on-going battle between the gods.",
+            "year": 2010,
+            "genre": "Action",
+            "duration": 118,
+            "watched": true
+        },
+        {
+            "id": 74,
+            "title": "Percy Jackson: Sea of Monsters",
+            "image":  "/movies-images/percy-jackson-sea-of-monsters.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1854564/",
+            "description":
+            "In order to restore their dying safe haven, the son of Poseidon and his friends embark on a quest to the Sea of Monsters, to find the mythical Golden Fleece, all the while trying to stop an ancient evil from rising.",
+            "year": 2013,
+            "genre": "Action",
+            "duration": 106,
+            "watched": true
+        },
+        {
+            "id": 75,
+            "title": "The Minions",
+            "image":  "/movies-images/the-minions.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2293640/",
+            "description":
+            "Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+            "year": 2015,
+            "genre": "Animation",
+            "duration": 91,
+            "watched": true
+        },
+        {
+            "id": 76,
+            "title": "Despicable Me",
+            "image":  "/movies-images/despicable-me.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1323594/",
+            "description":
+            "When a criminal mastermind uses a trio",
+            "year": 2010,
+            "genre": "Animation",
+            "duration": 95,
+            "watched": true
+        },
+        {
+            "id": 77,
+            "title": "Despicable Me 2",
+            "image":  "/movies-images/despicable-me-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1690953/",
+            "description":
+            "When Gru, the world's most super-bad turned super-dad has been recruited by a team of officials to stop lethal muscle and a host of Gru's own, He has to fight back with new gadgetry, cars, and more minion madness.",
+            "year": 2013,
+            "genre": "Animation",
+            "duration": 98,
+            "watched": true
+        },
+        {
+            "id": 78,
+            "title": "Despicable Me 3",
+            "image":  "/movies-images/despicable-me-3.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3469046/",
+            "description":
+            "Gru meets his long-lost, charming, cheerful, and more successful twin brother Dru, who wants to team up with him for one last criminal heist.",
+            "year": 2017,
+            "genre": "Animation",
+            "duration": 89,
+            "watched": true
+        },
+        {
+            "id": 79,
+            "title": "Minions: The Rise of Gru",
+            "image":  "/movies-images/minions-the-rise-of-gru.webp",
+            "imdb_url": "https://www.imdb.com/title/tt8116784/",
+            "description":
+            "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
+            "year": 2022,
+            "genre": "Animation",
+            "duration": 107,
+            "watched": true
+        },
+        {
+            "id": 80,
+            "title": "Die Another Day",
+            "image":  "/movies-images/die-another-day.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0246460/",
+            "description":
+            "James Bond is sent to investigate the connection between a North Korean",
+            "year": 2002,
+            "genre": "Action",
+            "duration": 133,
+            "watched": true
+        },
+        {
+            "id": 81,
+            "title": "Spiderman Into the Spiderverse",
+            "image":  "/movies-images/spiderman-into-the-spider-verse.webp",
+            "imdb_url": "https://www.imdb.com/title/tt4633694/",
+            "description":
+            "Teen Miles Morales becomes the",
+            "year": 2018,
+            "genre": "Animation",
+            "duration": 117,
+            "watched": true
+        },
+        {
+            "id": 82,
+            "title": "The Nutty Professor",
+            "image":  "/movies-images/the-nutty-professor.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0117218/",
+            "description":
+            "Grossly overweight yet good-hearted professor Sherman Klump takes",
+            "year": 1996,
+            "genre": "Comedy",
+            "duration": 95,
+            "watched": true
+        },
+        {
+            "id": 83,
+            "title": "Diary of a Wimpy Kid: Rodrick Rules",
+            "image":  "/movies-images/diary-of-a-wimpy-kid-rodrick-rules.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1650043/",
+            "description":
+            "Back in middle school after summer vacation, Greg Heffley and his older brother Rodrick must deal with their parents' misguided attempts to have them bond.",
+            "year": 2011,
+            "genre": "Comedy",
+            "duration": 99,
+            "watched": true
+        },
+        {
+            "id": 84,
+            "title": "Turning Red",
+            "image":  "/movies-images/turning-red.webp",
+            "imdb_url": "https://www.imdb.com/title/tt11240542/",
+            "description":
+            "Growing up is a beast.",
+            "year": 2022,
+            "genre": "Animation",
+            "duration": 100,
+            "watched": true
+        },
+        {
+            "id": 85,
+            "title": "Horrid Henry The Movie",
+            "image":  "/movies-images/horrid-henry-the-movie.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1684558/",
+            "description":
+            "Horrid Henry finds himself doing things he never ever thought he'd do, and then some.",
+            "year": 2011,
+            "genre": "Comedy",
+            "duration": 93,
+            "watched": true
+        },
+        {
+            "id": 86,
+            "title": "The Emoji Movie",
+            "image":  "/movies-images/the-emoji-movie.webp",
+            "imdb_url": "https://www.imdb.com/title/tt4877122/",
+            "description":
+            "Gene, a multi-expressional emoji, sets out on a journey to become a normal emoji.",
+            "year": 2017,
+            "genre": "Animation",
+            "duration": 86,
+            "watched": true
+        },
+        {
+            "id": 87,
+            "title": "Deadpool",
+            "image":  "/movies-images/deadpool.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1431045/",
+            "description": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out",
+            "year": 2016,
+            "genre": "Action",
+            "duration": 108,
+            "watched": true
+        },
+        {
+            "id": 88,
+            "title": "Back to the Future",
+            "image":  "/movies-images/back-to-the-future.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0088763/",
+            "description":
+            "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.",
+            "year": 1985,
+            "genre": "Adventure",
+            "duration": 116,
+            "watched": true
+        },
+        {
+            "id": 89,
+            "title": "Uncharted",
+            "image":  "/movies-images/uncharted.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1464335/",
+            "description":
+            "Street-smart Nathan Drake is recruited by seasoned treasure hunter Victor 'Sully' Sullivan to recover a fortune amassed by Ferdinand Magellan, and lost 500 years ago by the House of Moncada.",
+            "year": 2022,
+            "genre": "Action",
+            "duration": 116,
+            "watched": true
+        },
+        {
+            "id": 90,
+            "title": "Spiderman Homecoming",
+            "image":  "/movies-images/spiderman-homecoming.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2250912/",
+            "description":
+            "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter",
+            "year": 2017,
+            "genre": "Action",
+            "duration": 133,
+            "watched": true
+        },
+        {
+            "id": 91,
+            "title": "Richie Rich",
+            "image":  "/movies-images/richie-rich.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0110989/",
+            "description":
+            "A rich young",
+            "year": 1994,
+            "genre": "Comedy",
+            "duration": 95,
+            "watched": true
+        },
+        {
+            "id": 92,
+            "title": "Dr Dolittle",
+            "image":  "/movies-images/dr-dolittle.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0118998/",
+            "description":
+            "A doctor discovers that he can communicate with animals.",
+            "year": 1998,
+            "genre": "Comedy",
+            "duration": 85,
+            "watched": true
+        },
+        {
+            "id": 93,
+            "title": "Shrek",
+            "image":  "/movies-images/shrek.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0126029/",
+            "description":
+            "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+            "year": 2001,
+            "genre": "Animation",
+            "duration": 90,
+            "watched": true
+        },
+        {
+            "id": 94,
+            "title": "Anchorman",
+            "image":  "/movies-images/anchorman.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0357413/",
+            "description":
+            "Ron Burgundy is San Diego's top-rated",
+            "year": 2004,
+            "genre": "Comedy",
+            "duration": 94,
+            "watched": true
+        },
+        {
+            "id": 95,
+            "title": "DC League of Super Pets",
+            "image": "/movies-images/dc-league-of-super-pets.webp",
+            "imdb_url": "https://www.imdb.com/title/tt10310140/",
+            "description":
+            "The pets of superheroes must team up to save their owners.",
+            "year": 2022,
+            "genre": "Animation",
+            "duration": 107,
+            "watched": true
+        },
+        {
+            "id": 96,
+            "title": "Guardians of the Galaxy Vol. 3",
+            "image":  "/movies-images/guardians-of-the-galaxy-vol-3.webp",
+            "imdb_url": "https://www.imdb.com/title/tt6791350/",
+            "description":
+            "The third film in the 'Guardians of the Galaxy' series.",
+            "year": 2023,
+            "genre": "Action",
+            "duration": 120,
+            "watched": true
+        },
+        {
+            "id": 97,
+            "title": "The Good Dinosaur",
+            "image":  "/movies-images/the-good-dinosaur.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1979388/",
+            "description":
+            "In a world where dinosaurs and humans live side-by-side, an Apatosaurus named Arlo makes an unlikely human friend.",
+            "year": 2015,
+            "genre": "Animation",
+            "duration": 93,
+            "watched": true
+        },
+        {
+            "id": 98,
+            "title": "GoldenEye",
+            "image":  "/movies-images/goldeneye.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0113189/",
+            "description":
+            "James Bond teams up with the lone survivor of a destroyed Russian research center to stop the hijacking of a nuclear space weapon by a fellow Agent formerly believed to be dead.",
+            "year": 1995,
+            "genre": "Action",
+            "duration": 130,
+            "watched": true
+        },
+        {
+            "id": 99,
+            "title": "Skyfall",
+            "image":  "/movies-images/skyfall.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1074638/",
+            "description":
+            "James Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
+            "year": 2012,
+            "genre": "Action",
+            "duration": 143,
+            "watched": true
+        },
+        {
+            "id": 100,
+            "title": "Casino Royale",
+            "image":  "/movies-images/casino-royale.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0381061/",
+            "description":
+            "After eaxning 00 status and a licence to kill, Secret Agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding",
+            "year": 2006,
+            "genre": "Action",
+            "duration": 144,
+            "watched": true
+        },
+        {
+            "id": 101,
+            "title": "Die Hard",
+            "image":  "/movies-images/die-hard.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0095016/",
+            "description":
+            "An NYPD officer tries to save his wife and several others taken",
+            "year": 1988,
+            "genre": "Action",
+            "duration": 132,
+            "watched": true
+        },
+        {
+            "id": 102,
+            "title": "Die Hard 2",
+            "image":  "/movies-images/die-hard-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0099423/",
+            "description":
+            "John McClane attempts to avert disaster as rogue military operatives seize control of Dulles International Airport in Washington, D.C.",
+            "year": 1990,
+            "genre": "Action",
+            "duration": 124,
+            "watched": true
+        },
+        {
+            "id": 103,
+            "title": "Batman",
+            "image":  "/movies-images/batman.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0096895/",
+            "description":
+            "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker.",
+            "year": 1989,
+            "genre": "Action",
+            "duration": 126,
+            "watched": true
+        },
+        {
+            "id": 104,
+            "title": "Batman Returns",
+            "image": "/movies-images/batman-returns.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0103776/",
+            "description":
+            "While Batman deals with a deformed",
+            "year": 1992,
+            "genre": "Action",
+            "duration": 126,
+            "watched": true
+        },
+        {
+            "id": 105,
+            "title": "Batman Forever",
+            "image": "/movies-images/batman-forever.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0112462/",
+            "description":
+            "Batman must battle former district attorney Harvey Dent, who is now Two-Face and Edward Nygma, The Riddler with help from an amorous psychologist and a young circus acrobat who becomes his sidekick, Robin.",
+            "year": 1995,
+            "genre": "Action",
+            "duration": 121,
+            "watched": true
+        },
+        {
+            "id": 106,
+            "title": "Batman & Robin",
+            "image": "/movies-images/batman-and-robin.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0118688/",
+            "description":
+            "Batman and Robin try to keep their relationship together even as they must stop Mr. Freeze and Poison Ivy from freezing Gotham City.",
+            "year": 1997,
+            "genre": "Action",
+            "duration": 125,
+            "watched": true
+        },
+        {
+            "id": 107,
+            "title": "Batman Begins",
+            "image": "/movies-images/batman-begins.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0372784/",
+            "description":
+            "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.",
+            "year": 2005,
+            "genre": "Action",
+            "duration": 140,
+            "watched": true
+        },
+        {
+            "id": 108,
+            "title": "Die Hard with a Vengeance",
+            "image": "/movies-images/die-hard-with-a-vengeance.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0112864/",
+            "description":
+            "John McClane and a Harlem store owner are targeted by German",
+            "year": 1995,
+            "genre": "Action",
+            "duration": 128,
+            "watched": true
+        },
+        {
+            "id": 109,
+            "title": "Indiana Jones and the Temple of Doom",
+            "image": "/movies-images/indiana-jones-and-the-temple-of-doom.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0087469/",
+            "description":
+            "In 1935, Indiana Jones arrives in India, still part of the British Empire, and is asked to find a mystical stone. He then stumbles upon a secret cult committing enslavement and human sacrifices in the catacombs of an ancient palace.",
+            "year": 1984,
+            "genre": "Action",
+            "duration": 118,
+            "watched": true
+        },
+        {
+            "id": 110,
+            "title": "I Robot",
+            "image": "/movies-images/i-robot.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0343818/",
+            "description":
+            "In 2035, a technophobic cop investigates a crime that may have been perpetrated by a robot, which leads to a larger threat to humanity.",
+            "year": 2004,
+            "genre": "Action",
+            "duration": 115,
+            "watched": true
+        },
+        {
+            "id": 111,
+            "title": "2001: A Space Odyssey",
+            "image": "/movies-images/2001-a-space-odyssey.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0062622/",
+            "description":
+            "After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer HAL 9000.",
+            "year": 1968,
+            "genre": "Adventure",
+            "duration": 149,
+            "watched": false
+        },
+        {
+            "id": 112,
+            "title": "E.T. the Extra-Terrestrial",
+            "image": "/movies-images/et-the-extra-terrestrial.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0083866/",
+            "description":
+            "A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.",
+            "year": 1982,
+            "genre": "Adventure",
+            "duration": 115,
+            "watched": true
+        },
+        {
+            "id": 113,
+            "title": "The Lion King",
+            "image": "/movies-images/the-lion-king-2019.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0110357/",
+            "description": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+            "year": 2019,
+            "genre": "Animation",
+            "duration": 118,
+            "watched": true
+        },
+        {
+            "id": 114,
+            "title": "The Jungle Book",
+            "image": "/movies-images/the-jungle-book.webp",
+            "imdb_url": "https://www.imdb.com/title/tt3040964/",
+            "description": 
+            "After a threat from the tiger Shere Khan forces him to flee",
+            "year": 2016,
+            "genre": "Adventure",
+            "duration": 106,
+            "watched": true
+        },
+        {
+            "id": 115,
+            "title": "Indiana Jones and the Raiders of the Lost Ark",
+            "image": "/movies-images/indiana-jones-and-the-raiders-of-the-lost-ark.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0082971/",
+            "description":
+            "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf",
+            "year": 1981,
+            "genre": "Action",
+            "duration": 115,
+            "watched": true
+        },
+        {
+            "id": 116,
+            "title": "Indiana Jones and the Last Crusade",
+            "image": "/movies-images/indiana-jones-and-the-last-crusade.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0097576/",
+            "description":
+            "In 1938, after his father goes missing while pursuing the Holy Grail, Indiana Jones finds himself up against",
+            "year": 1989,
+            "genre": "Action",
+            "duration": 127,
+            "watched": false
+        },
+        {
+            "id": 117,
+            "title": "The Dark Knight Rises",
+            "image": "/movies-images/the-dark-knight-rises.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1345836/",
+            "description":
+            "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerr",
+            "year": 2012,
+            "genre": "Action",
+            "duration": 164,
+            "watched": false
+        },
+        {
+            "id": 118,
+            "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+            "image": "/movies-images/pirates-of-the-caribbean-the-curse-of-the-black-pearl.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0325980/",
+            "description":
+            "Blacksmith Will Turner teams up with eccentric pirate 'Captain' Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
+            "year": 2003,
+            "genre": "Action",
+            "duration": 143,
+            "watched": true
+        },
+        {
+            "id": 119,
+            "title": "Pirates of the Caribbean: Dead Mans Chest",
+            "image": "/movies-images/pirates-of-the-caribbean-dead-mans-chest.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0383574/",
+            "description": "Jack Sparrow",
+            "year": 2006,
+            "genre": "Action",
+            "duration": 151,
+            "watched": true
+        },
+        {
+            "id": 120,
+            "title": "Pirates of the Caribbean: At Worlds End",
+            "image": "/movies-images/pirates-of-the-caribbean-at-worlds-end.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0449088/",
+            "description":
+            "Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.",
+            "year": 2007,
+            "genre": "Action",
+            "duration": 169,
+            "watched": true
+        },
+        {
+            "id": 121,
+            "title": "Pirates of the Caribbean: On Stranger Tides",
+            "image": "/movies-images/pirates-of-the-caribbean-on-stranger-tides.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1298650/",
+            "description":
+            "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.",
+            "year": 2011,
+            "genre": "Action",
+            "duration": 136,
+            "watched": true
+        },
+        {
+            "id": 122,
+            "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+            "image": "/movies-images/pirates-of-the-caribbean-dead-man-tell-no-tales.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1790809/",
+            "description":
+            "Captain Jack Sparrow searches for the trident of Poseidon while being pursued by an undead sea captain and his crew.",
+            "year": 2017,
+            "genre": "Action",
+            "duration": 129,
+            "watched": false
+        },
+        {
+            "id": 123,
+            "title": "Deadpool 2",
+            "image": "/movies-images/deadpool-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt5463162/",
+            "description":
+            "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool), brings together a team of fellow mutant rogues to protect a",
+            "year": 2018,
+            "genre": "Action",
+            "duration": 119,
+            "watched": true
+        },
+        {
+            "id": 124,
+            "title": "The Shawshank Redemption",
+            "image": "/movies-images/the-shawshank-redemption.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0111161/",
+            "description":
+            "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+            "year": 1994,
+            "genre": "Drama",
+            "duration": 142,
+            "watched": true
+        },
+        {
+            "id": 125,
+            "title": "Training Day",
+            "image": "/movies-images/training-day.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0139654/",
+            "description":
+            "On his first day on the job as a Los Angeles narcotics officer, a rookie cop goes beyond a full work day in training within the narcotics division of the LAPD with a rogue detective who isn't what he appears to be.",
+            "year": 2001,
+            "genre": "Action",
+            "duration": 122,
+            "watched": false
+        },
+        {
+            "id": 126,
+            "title": "Inside Out 2",
+            "image": "/movies-images/inside-out-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2096673/",
+            "description":
+            "A sequel to the 2015 film, 'Inside Out'.",
+            "year": 2022,
+            "genre": "Animation",
+            "duration": 120,
+            "watched": false
+        },
+        {
+            "id": 127,
+            "title": "Face Off",
+            "image": "/movies-images/face-off.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0119094/",
+            "description":
+            "In order to  foil an extortion plot, an FBI agent undergoes a facial transplant surgery and assumes the identity and physical  appearance",
+            "year": 1997,
+            "genre": "Action",
+            "duration": 138,
+            "watched": false
+        },
+        {
+            "id": 128,
+            "title": "Pulp Fiction",
+            "image": "/movies-images/pulp-fiction.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0110912/",
+            "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+            "year": 1994,
+            "genre": "Crime",
+            "duration": 154,
+            "watched": false
+        },
+        {
+            "id": 129,
+            "title": "Fight Club",
+            "image": "/movies-images/fight-club.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0137523/",
+            "description":
+                "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+            "year": 1999,
+            "genre": "Drama",
+            "duration": 139,
+            "watched": false
+        },
+        {
+            "id": 130,
+            "title": "The Usual Suspects",
+            "image": "/movies-images/the-usual-suspects.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0114814/",
+            "description":
+                "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+            "year": 1995,
+            "genre": "Crime",
+            "duration": 106,
+            "watched": false
+        },
+        {
+            "id": 131,
+            "title": "Inception",
+            "image": "/movies-images/inception.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1375666/",
+            "description":
+                "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+            "year": 2010,
+            "genre": "Action",
+            "duration": 148,
+            "watched": false
+        },
+        {
+            "id": 132,
+            "title": "Se7en",
+            "image": "/movies-images/se7en.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0114369/",
+            "description":
+                "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+            "year": 1995,
+            "genre": "Crime",
+            "duration": 127,
+            "watched": false
+        },
+        {
+            "id": 133,
+            "title": "The Truman Show",
+            "image": "/movies-images/the-truman-show.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0120382/",
+            "description":
+                "An insurance salesman discovers his whole life is actually a reality TV show.",
+            "year": 1998,
+            "genre": "Comedy",
+            "duration": 103,
+            "watched": false
+        },
+        {
+            "id": 134,
+            "title": "Kill Bill: Vol. 1",
+            "image": "/movies-images/kill-bill-vol-1.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0266697/",
+            "description":
+                "After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+            "year": 2003,
+            "genre": "Action",
+            "duration": 111,
+            "watched": false
+        },
+        {
+            "id": 135,
+            "title": "finding Nemo",
+            "image": "/movies-images/finding-nemo.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0266543/",
+            "description":
+                "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+            "year": 2003,
+            "genre": "Animation",
+            "duration": 100,
+            "watched": true
+        },
+        {
+            "id": 136,
+            "title": "Kill Bill: Vol. 2",
+            "image": "/movies-images/kill-bill-vol-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0378194/",
+            "description":
+                "The Bride continues her quest of vengeance against her former boss and lover Bill, the reclusive bouncer Budd, and the treacherous, one-eyed Elle.",
+            "year": 2004,
+            "genre": "Action",
+            "duration": 137,
+            "watched": false
+        },
+        {
+            "id": 137,
+            "title": "Deadpool and Wolverine",
+            "image": "/movies-images/deadpool-and-wolverine.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1431045/",
+            "description":
+                "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track",
+            "year": 2024,
+            "genre": "Action",
+            "duration": 108,
+            "watched": true
+        }
+    ]
+}

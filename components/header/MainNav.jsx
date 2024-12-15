@@ -1,5 +1,6 @@
 import Link from "next/link"
-import DataForNavigation from "@/data/to_replace_with_json/Data_For_Navigation"
+import DataForNavigationJSON from "@/data/data_for__navigation";
+const DataForNavigation = DataForNavigationJSON.SiteNavigation;
 const navLinks = DataForNavigation.filter((link) => link.mainNav === true)
 
 export default function COMPONENT_MAIN_NAV() {
