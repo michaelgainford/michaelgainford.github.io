@@ -1,7 +1,13 @@
+"use client";
+import { useState } from "react";
+
 function CreateURL() {
 	{/* 3 inputs: base URL, concatenation character, query string */}
 	const baseURL = document.getElementById("base-url");
-	const concatenator = document.getElementById("preset-concatenator");
+	const presetConcatenator = document.getElementById("preset-concatenator");
+    const customConcatenator = document.getElementById("manual-concatenator");
+    // if the checkbox is checked, use the value of the select dropdown
+    const concatenator = document.getElementById("toggle-concatenator").checked ? presetConcatenator : customConcatenator;
 	const queryString = document.getElementById("query-string");
 	const createURLButton = document.querySelector("button");	{/* create a URL output */}
 	const createdUrlOutput = document.querySelector(".created-url");
@@ -10,6 +16,31 @@ function CreateURL() {
 		let url = `${baseURL.value}${concatenator.value}${queryString.value}`;
 		createdUrlOutput.textContent = url;
 	});
+}
+
+function checkBoxToggleDisplay () {
+    const checkbox = document.getElementById("toggle-concatenator");
+    if (checkbox) {
+        // if the checkbox is checked, show the select dropdown
+        checkbox.addEventListener("change", () => {
+            const presetConcatenator = document.getElementById("preset-concatenator");
+            const manualConcatenator = document.getElementById("manual-concatenator");
+            if (checkbox.checked) {
+                console.log("Checkbox is checked");
+                presetConcatenator.classList.remove("hidden");
+                manualConcatenator.classList.add("hidden");
+            }
+            else {
+                console.log("Checkbox is not checked");
+                presetConcatenator.classList.add("hidden");
+                manualConcatenator.classList.remove("hidden");
+            }
+        });
+    }
+    else {
+        console.log("Checkbox is not checked");
+    }
+    
 }
 
 function CopyURL() {
@@ -40,31 +71,17 @@ function clearContentsOfForm() {
 	createdUrlOutput.textContent = "Your URL will be displayed here.";
 }
 
-function checkBoxToggleDisplay () {
-    const checkbox = document.getElementById("toggle-concatenator");
-    if (checkbox) {
-        // if the checkbox is checked, show the select dropdown
-        checkbox.addEventListener("change", () => {
-            const presetConcatenator = document.getElementById("preset-concatenator");
-            const manualConcatenator = document.getElementById("manual-concatenator");
-            if (checkbox.checked) {
-                console.log("Checkbox is checked");
-                presetConcatenator.classList.remove("hidden");
-                manualConcatenator.classList.add("hidden");
-            }
-            else {
-                console.log("Checkbox is not checked");
-                presetConcatenator.classList.add("hidden");
-                manualConcatenator.classList.remove("hidden");
-            }
-        });
-    }
-    else {
-        console.log("Checkbox is not checked");
-    }
-    
+function testInputs() {
+    const baseURL = document.getElementById("base-url");
+    const concatenator = document.getElementById("custom-concatenator");
+    const queryString = document.getElementById("query-string");
+
+    console.log(baseURL.value);
+    console.log(concatenator.value);
+    console.log(queryString.value);
 }
-setTimeout(checkBoxToggleDisplay, 4000);
+
+setTimeout(CreateURL, CopyURL, clearContentsOfForm, checkBoxToggleDisplay, testInputs, 4000);
 
 export default function TOOL_URL_CONCATENATOR() {
     return (
@@ -82,7 +99,7 @@ export default function TOOL_URL_CONCATENATOR() {
             {/* INPUT FIELD FOR START OF URL | END */}  
 
             {/* INPUT FIELD FOR CUSTOM CONCATENATOR | START */}
-            <div className="flex flex-col w-full gap-2 text-left pair" id="manual-concatenator">
+            <div className="flex flex-col w-full gap-2 text-left pair" id="custom-concatenator">
                 <label htmlFor="custom-concatenator" className="text-sm font-medium text-left text-amber-500">Concatenation Value</label>
                 <input type="text" id="custom-concatenator" name="custom-concatenator" className="w-full p-2 border-b-2 bg-slate-100/10 border-slate-200/50 focus-visible::outline-200/80" />
             </div>
@@ -140,8 +157,8 @@ export default function TOOL_URL_CONCATENATOR() {
 
             {/* BUTTONS | START */}
             <div className="flex justify-center gap-8 mt-4">
-                <button onClick={CreateURL} className="px-4 py-2 text-sm transition-all duration-500 border rounded-lg border-amber-500 hover:bg-amber-500 w-fit hover:text-slate-900 bg-slate-900 text-amber-500">Create URL</button>
-                <button onClick={clearContentsOfForm} className="px-4 py-2 text-sm transition-all duration-500 border rounded-lg opacity-50 border-amber-500 hover:bg-amber-500 w-fit hover:text-slate-900 bg-slate-900 text-amber-500 hover:opacity-100">Clear</button>
+                <button onClick={CreateURL} className="px-4 py-2 text-sm transition-all duration-500 border rounded-lg border-amber-500 hover:bg-amber-500 w-fit hover:text-slate-900 bg-slate-900 text-amber-500 hover:cursor-pointer">Create URL</button>
+                <button onClick={clearContentsOfForm} className="px-4 py-2 text-sm transition-all duration-500 border rounded-lg opacity-50 border-amber-500 hover:bg-amber-500 w-fit hover:text-slate-900 bg-slate-900 text-amber-500 hover:opacity-100 hover:cursor-pointer">Clear</button>
             </div>
             {/* BUTTONS | END */}
 

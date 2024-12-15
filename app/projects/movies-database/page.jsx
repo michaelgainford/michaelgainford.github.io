@@ -7,7 +7,8 @@ import { globalPageStyles } from "@/data/Variables";
 import { mainStyles } from "@/data/Variables";
 import IconMovies from "@/components/icons/IconMovies";
 
-import DataForMoviesList from "@/data/to_replace_with_json/Data_For_Movies";
+import DataForMoviesListImport from "@/data/data_for__movies";
+const DataForMoviesList = DataForMoviesListImport.Movies;
 DataForMoviesList.sort((a, b) => a.title.localeCompare(b.title));
 const watchedMovies = DataForMoviesList.filter((movie) => movie.watched === true);
 const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === false);

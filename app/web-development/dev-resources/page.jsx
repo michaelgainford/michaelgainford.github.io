@@ -1,22 +1,14 @@
-import Link from "next/link";
-import Image from "next/image";
 import Header from "@/components/header/Header";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import H1 from "@/components/typography/H1Span";
+import AllProjects from "@/components/projects/AllProjects";
 import Footer from "@/components/footer/Footer";
-import DataForDevResources from "@/data/to_replace_with_json/Data_For_DevResources";
 import { globalPageStyles, mainStyles } from "@/data/Variables";
 
 export const metadata = {
 	title: "Dev Resources",
 	description: "A collection of some of my favourite web development resources that I use in my standard workflow. This is a links to a series of tools and resources."
 };
-
-{/* Sort the resources by name */}
-const ResourcesSortedByName = DataForDevResources.sort((a, b) => a.name.localeCompare(b.name));
-{/* Create an array of tags */}
-const tags = ResourcesSortedByName.map((resource) => resource.tags).flat();
-tags.sort();
 
 const pageIntroText = "This is a collection of some of my favourite web development resources that I use either in my standard workflow, or for experimenting with new technologies. The list is not exhaustive, but it is a good starting point for anyone looking to expand their toolkit.";
 
@@ -31,54 +23,8 @@ export default function PAGE_DEV_RESOURCES() {
 				  text_colour="font-current" 
 				  font_sizes="text-xs/5 md:text-sm/6 lg:text-base/7`"
 				  other_classes="max-w-[800px]! text-balance! text-center! !md:-mt-4 !xl:text-base/6" />
-                <div 
-				  className="grid w-full xxs:grid-cols-2 pt-4 resources gap-x-4 gap-y-8 sm:pt-6 sm:grid-cols-3 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:pt-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500"
-				>
-				  {ResourcesSortedByName.map((resource, index) => (
-					<Link 
-					  key={index} 
-					  target="_blank" 
-					  href={resource.url} 
-					  className="flex flex-col items-center justify-center text-center duration-300 rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 
-						hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950"
-					  title={resource.description? resource.description : resource.name}
-					>
-						<div className="relative w-full overflow-hidden bg-teal-700 rounded-t-lg resource-image">
-							<Image 
-							  src={resource.screenshot} 
-							  alt={resource.name} 
-							  className="z-0 w-full max-w-full overflow-hidden transition duration-300 rounded-t-lg group-hover:scale-125"
-							  height={320} 
-							  width={600} 
-							  priority={index < 5} 
-							/> 
-						</div>
-						<div className="grid w-full divide-teal-900 grid-cols-1 resource-details grid-rows-[40px_1fr] z-30 py-4 sm:space-y-4">
-							<span className="flex justify-center w-full px-2 py-2 mb-2 text-xs tracking-normal text-center uppercase lg:text-sm lg:tracking-wider">
-								{resource.name}
-							</span>
-							<div className="flex flex-wrap items-center justify-center w-full gap-2 resource-tags">
-							{resource.tags.map((tag, index) => (
-								<span 
-								  data-resource-tag={tag} 
-								  className="py-1 px-2 rounded-lg tracking-wide text-[10px] border border-emerald-800 w-fit" 
-								  key={index}>
-								{tag}
-								</span>
-							))}
-							</div>
-						</div>
-					</Link>
-				  ))}
-                </div>
-				<h2 className="pb-4 mt-16">Tags</h2>
-                <div className="flex flex-wrap justify-center gap-2 p-2 resource-tags-all lg:w-3/4">
-                {Array.from(new Set(tags)).map((tag, index) => (
-                    <button className="border border-teal-950/50 bg-teal-500/50 py-1 px-2 rounded-lg tracking-wide text-[10px] text-teal-950" key={index}>
-                        {tag}
-                    </button>
-                ))}
-                </div>
+				<AllProjects />
+
             </main>
         <Footer />
     </div>

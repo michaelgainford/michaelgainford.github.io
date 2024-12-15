@@ -1,6 +1,5 @@
 {
-    "NavigationItems": [
-
+    "SiteNavigation": [
         {
             "label": "Home",
             "href": "/",

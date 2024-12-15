@@ -1,9 +1,9 @@
 import Link from "next/link"
-import DataForAllProjects from "@/data/to_replace_with_json/Data_For_Projects";
+import { dataForAllProjects } from "@/data/Variables"
 import H2SectionHeader from "@/components/typography/H2SectionHeader";
 import Button from "@/components/buttons/Button_Global";
 
-const featuredProjects = DataForAllProjects.filter(project => project.featuredProject === true);
+const featuredProjects = dataForAllProjects.filter(project => project.featuredProject === true);
 
 export default function COMPONENT_HOME_PROJECTS() {
 	return (
