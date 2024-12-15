@@ -3,32 +3,37 @@
         {
             "name": "Home",
             "href": "/",
-            "lastUpdated": "2024-11-26"
+            "lastUpdated": "2024-12-06"
         },
         {
             "name": "About",
             "href": "/general/about",
-            "lastUpdated": "2024-11-27"
-        },
-        {
-            "name": "Site Maintenance Tracker",
-            "href": "/pigeon/site-maintenance-tracker",
-            "lastUpdated": "2024-11-28"
+            "lastUpdated": "2024-12-14"
         },
         {
             "name": "Site Style Guide",
             "href": "/general/site-style-guide",
-            "lastUpdated": "2024-11-22"
+            "lastUpdated": "2024-12-06"
+        },
+        {
+            "name": "Site Maintenance Tracker",
+            "href": "/pigeon/site-maintenance-tracker",
+            "lastUpdated": "2024-12-15"
         },
         {
             "name": "All Projects",
             "href": "/projects",
-            "lastUpdated": "2024-11-28"
+            "lastUpdated": "2024-12-15"
         },
         {
             "name": "EPL (English Premier League) Hub",
             "href": "/projects/football/competitions/english-premier-league",
-            "lastUpdated": "2024-11-22"
+            "lastUpdated": "2024-12-10"
+        },
+        {
+            "name": "EPL - All Clubs",
+            "href": "/projects/football/competitions/english-premier-league/all-clubs",
+            "lastUpdated": "2024-12-06"
         },
         {
             "name": "EPL - 100 Club",
@@ -38,72 +43,72 @@
         {
             "name": "EPL - Competition History",
             "href": "/projects/football/competitions/english-premier-league/history",
-            "lastUpdated": "2024-11-23"
+            "lastUpdated": "2024-12-06"
         },
         {
             "name": "EPL - Season x Season Record",
             "href": "/projects/football/competitions/english-premier-league/seasons",
-            "lastUpdated": "2024-11-23"
-        },
-        {
-            "name": "EPL - All Clubs",
-            "href": "/projects/football/competitions/english-premier-league/all-clubs",
-            "lastUpdated": "2024-11-29"
+            "lastUpdated": "2024-12-06"
         },
         {
             "name": "Euro 2024",
             "href": "/projects/football/competitions/euro-2024",
-            "lastUpdated": "2024-11-19"
+            "lastUpdated": "2024-12-06"
         },
         {
             "name": "Everton",
             "href": "/projects/football/everton",
-            "lastUpdated": "2024-11-19"
+            "lastUpdated": "2024-12-15"
         },
         {
             "name": "Fortnite",
             "href": "/projects/gaming/fortnite",
-            "lastUpdated": "2024-12-08"
+            "lastUpdated": "2024-12-13"
         },
         {
             "name": "The MAG Premier League",
             "href": "/projects/gaming/the-mag-premier-league",
-            "lastUpdated": "2024-11-28"
+            "lastUpdated": "2024-12-13"
+        },
+        {
+            "name": "The MAP EPL - Season 1",
+            "href": "/projects/gaming/the-mag-premier-league/past-seasons/season-1",
+            "lastUpdated": "2024-11-13"
         },
         {
             "name": "Jokes",
             "href": "/projects/jokes",
-            "lastUpdated": "2024-11-22"
+            "lastUpdated": "2024-12-15"
         },
         {
             "name": "Movies Database",
             "href": "/projects/movies-database",
-            "lastUpdated": "2024-11-29"
+            "lastUpdated": "2024-12-14"
         },
         {
             "name": "Quotes",
             "href": "/projects/quotes",
-            "lastUpdated": "2024-11-19"
+            "lastUpdated": "2024-12-10"
         },
         {
             "name": "Space",
             "href": "/projects/space",
-            "lastUpdated": "2024-11-18"
+            "lastUpdated": "2024-12-14"
         },
         {
             "name": "The World",
             "href": "/projects/the-world",
-            "lastUpdated": "2024-11-18"
+            "lastUpdated": "2024-12-09"
         },
         {
             "name": "URL Concatenator",
             "href": "/tools/url-concatenator",
-            "lastUpdated": "2024-11-19"
+            "lastUpdated": "2024-12-14"
         },
         {
             "name": "Dev Resources",
             "href": "/web-development/dev-resources",
-            "lastUpdated": "2024-11-28"
+            "lastUpdated": "2024-12-15"
         }
     ]
 }
