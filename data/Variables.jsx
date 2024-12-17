@@ -8,7 +8,7 @@ import Icon_LinkedIn from '@/components/icons/IconLinkedIn';
 import Icon_NextJS from '@/components/icons/IconNextJS';
 import Icon_Resource from '@/components/icons/IconResource';
 import Icon_TailwindSimple from '@/components/icons/IconTailwindSimple';
-import Icon_Twitter from '/components/icons/IconTwitter'
+import Icon_Twitter from '@/components/icons/IconTwitter'
 import Icon_W3Schools from '@/components/icons/IconW3Schools';
 import Icon_Laugh from "@/components/icons/IconLaugh";
 import Icon_Football from "@/components/icons/IconFootball";
