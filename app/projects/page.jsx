@@ -41,7 +41,7 @@ export default function PAGE_PROJECTS() {
 
 				<div className="grid flex-wrap w-full grid-cols-1 gap-8 sm:grid-cols-2 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 3xl:grid-cols-5 2xl:gap-16 motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-50">
 					{dataForAllProjects.map((project, index) => (
-					<Link key={index} href={project.href} className={`border ${project.border} ${project.hover} ${project.color} h-full rounded-lg space-y-4 gap-4 flex flex-col justify-between bg-transparent max-sm:w-[80%] max-sm:mx-auto transition-all hover:transition duration-[700ms] ${project.archived ? `opacity-50` : ``} cursor-pointer group xl:border-4`}>
+					<Link key={index} href={project.href} className={`border ${project.border} ${project.hover} ${project.color} h-full rounded-lg space-y-4 gap-4 flex flex-col justify-between bg-transparent max-sm:w-[80%] max-sm:mx-auto transition-all hover:transition duration-[700ms] ${project.archived ? `opacity-50` : ``} cursor-pointer group xl:border-1`}>
 						<span className={`flex justify-center items-center gap-2 lg:gap-4 pt-4 rounded-t-sm py-4 ${project.bg} group-hover:bg-transparent bg-opacity-80`}>
 							<span className={`icon-box size-4 rounded-full ${project.bg} group-hover:bg-transparent! flex items-center justify-center ${project.color}`}>
 								<span className="flex items-center justify-center gap-4 size-4">

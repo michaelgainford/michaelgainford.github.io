@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-import ClubsData from "@/data/to_replace_with_json/Data_For_PremierLeagueTeams";
+import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
+const ClubsData = PremierLeagueDataJSON.Clubs;
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 export const metadata = {
     title: "Premier League Clubs",
@@ -33,7 +34,7 @@ export default function PAGE_PREMIER_LEAGUE () {
                       other_classes="uppercase" 
                     />
 				</div>
-				<div className="min-h-[300px] grid grid-cols-1 gap-4 lg:gap-8 xl:gap-12 [&>div]:border [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold">
+				<div className="min-h-[300px] grid grid-cols-1 gap-4 lg:gap-8 xl:gap-12 [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold">
 					
                     <div className="grid grid-cols-2 lg:grid-cols-5 [&>a]:p-6 [&>a]:m-4 [&>a]:border [&>a]:border-slate-200 [&>a]:flex [&>a]:flex-col [&>a]:items-center [&>a]:rounded-lg [&>a]:flex-col] [&>a]:gap-4 [&>a}:text-center] [&_p]:text-center">
                     {Object.values(sortedByName).map((Club) => {
