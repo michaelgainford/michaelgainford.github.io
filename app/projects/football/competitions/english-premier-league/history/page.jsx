@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-import ClubsData from "@/data/to_replace_with_json/Data_For_PremierLeagueTeams";
+import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
+const ClubsData = PremierLeagueDataJSON.Clubs;
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 
 import H1 from "@/components/typography/H1Span";
