@@ -19,12 +19,11 @@ export default function PAGE_DEV_RESOURCES() {
             <main className={mainStyles}>
                 <H1 text="Dev Resources" />
 				<PageIntro 
-				  text={pageIntroText} 
-				  text_colour="font-current" 
-				  font_sizes="text-xs/5 md:text-sm/6 lg:text-base/7`"
-				  other_classes="max-w-[800px]! text-balance! text-center! !md:-mt-4 !xl:text-base/6" />
+					text={pageIntroText} 
+					text_colour="font-current" 
+					font_sizes="text-xs/5 md:text-sm/6 lg:text-base/7`"
+					other_classes="max-w-[800px]! text-balance! text-center! !md:-mt-4 !xl:text-base/6" />
 				<AllProjects />
-
             </main>
         <Footer />
     </div>

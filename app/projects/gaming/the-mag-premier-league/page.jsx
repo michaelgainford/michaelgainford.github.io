@@ -2,7 +2,8 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
 import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
-import { Seasons } from "@/data/data_for__magpremierleague.json"
+import SeasonsData from "@/data/data_for__magpremierleague.json"
+const Seasons = SeasonsData.Seasons;
 import { globalPageStyles, mainStyles, leagueTableStructure } from "@/data/Variables";
 import Link from "next/link";
 const currentSeason = 2;
