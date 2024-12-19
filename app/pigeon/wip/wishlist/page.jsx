@@ -38,7 +38,6 @@ export default function PAGE_PROJECTS() {
                     <div className="flex flex-col gap-4 p-4 item">
                         <span>External Hard Drive</span>
                         <div className="product-image">
-                            <img src="https://i.ebayimg.com/images/g/txsAAOSwISxjdoyv/s-l960.webp" alt="Product Image" />
                         </div>
                         <a className="p-2 border border-slate-200/5" href="https://www.ebay.co.uk/itm/385239009601?var=653120349562&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338757644&toolid=20006&customid=ad6c6a64ea984274ebb10d1dca7b252c&_trkparms=ispr%3D1&amdata=enc%3A1QwzqpcWPSN2wH5eXQEj8Iw6">
                             View Product Link
