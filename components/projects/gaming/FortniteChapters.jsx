@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Chapters } from "@/data/data_for__fortnite.json";
+import ForniteData from "@/data/data_for__fortnite.json";
+const Chapters = ForniteData.Chapters;
 
 {/* Styles - Headings */}
 const subSectionHeadingStyles = "border-2 px-4 py-3 mb-8 text-slate-900 uppercase tracking-widest lg:mb-8 lg:mt-6 lg:font-bold mt-8 text-[16px]!";
