@@ -1,5 +1,6 @@
 import { sharedHeadingStyles } from "@/data/Variables";
-import Button from "@/components/buttons/Button_Global";
+import Button from "@/components/buttons/Button";
+import { urlForMyCredlyPage } from "@/variables/Paths";
 
 export default function COMPONENT_CARD_ABOUT_ME() {
     return (
@@ -24,7 +25,7 @@ export default function COMPONENT_CARD_ABOUT_ME() {
                     other_classes="max-md:w-full"	
                 />
                 <Button 
-                    href="https://www.credly.com/users/michael-gainford.3546f4c8"
+                    href={urlForMyCredlyPage}
                     label="Credly Certifications"
                     target="_blank"
                     title="Credly Certifications" 

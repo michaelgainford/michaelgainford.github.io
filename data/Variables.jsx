@@ -1,26 +1,33 @@
-{/* Import Icons */}
-import Icon_Codepen from '@/components/icons/IconCodepen';
-import Icon_ColourPalettes from '@/components/icons/IconColourPalette';
-import Icon_Docs from '@/components/icons/IconDocs';
-import Icon_Font from '@/components/icons/IconFont';
-import Icon_GitHub from '@/components/icons/IconGithub';
-import Icon_LinkedIn from '@/components/icons/IconLinkedIn';
-import Icon_NextJS from '@/components/icons/IconNextJS';
-import Icon_Resource from '@/components/icons/IconResource';
-import Icon_TailwindSimple from '@/components/icons/IconTailwindSimple';
-import Icon_Twitter from '@/components/icons/IconTwitter'
-import Icon_W3Schools from '@/components/icons/IconW3Schools';
-import Icon_Laugh from "@/components/icons/IconLaugh";
-import Icon_Football from "@/components/icons/IconFootball";
-import Icon_Movies from "@/components/icons/IconMovies";
-import Icon_Laptop from "@/components/icons/IconLaptop";
-import Icon_Quote from "@/components/icons/IconQuote";
-import Icon_Earth from "@/components/icons/IconEarth";
-import Icon_Gamepad from "@/components/icons/IconGamepad";
-import Icon_Planet from "@/components/icons/IconPlanet";
-import Icon_PremierLeagueSimple from "@/components/icons/Icon_PremierLeagueLogoSimple";
+{/********************************
+  ICON IMPORTS
+*********************************/}
+import { 
+	Icon_Codepen, 
+	Icon_ColourPalettes, 
+	Icon_Docs, 
+	Icon_Earth, 
+	Icon_Font, 
+	Icon_Football, 
+	Icon_Gamepad, 
+	Icon_GitHub, 
+	Icon_Laptop, 
+	Icon_Laugh, 
+	Icon_LinkedIn, 
+	Icon_Movies, 
+	Icon_NextJS, 
+	Icon_Planet, 
+	Icon_PremierLeagueSimple, 
+	Icon_Quote, 
+	Icon_Resource, 
+	Icon_TailwindSimple, 
+	Icon_Twitter, 
+	Icon_W3Schools
+} from "@/variables/Icons";
 
-{/* Site Wide Styling */}
+
+{/********************************
+  SITE STYLES  
+*********************************/}
 const globalPageStyles = "space-y-4 lg:space-y-8 xl:space-y-12 2xl:space-y-16 min-h-dvh";
 const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
 const globalMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
@@ -31,7 +38,10 @@ const brandPageBackground = "bg-slate-900 bg-brand-background bg-repeat";
 const brandTextColour = "text-slate-400";
 const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
 
-{/* Navigation */}
+
+{/********************************
+  SITE NAVIGATION  
+*********************************/}
 const navigation = [
   {
     label: "Home",
@@ -165,8 +175,12 @@ const navigation = [
   },
 ];
 
+{/********************************
+  PREMIER LEAGUE  
+*********************************/}
+
 {/* Array of Premier League Seasons */}
-const premierLeagueYears = [
+const premierLeagueSeasons = [
   '92/93',
   '93/94', 
   '94/95', 
@@ -202,8 +216,10 @@ const premierLeagueYears = [
   '24/25'
 ];
 
+const numberOfPremierLeagueSeasons = premierLeagueSeasons.length;
+
 {/* map through the premier league seasons and create an array of season positions */}
-const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
+const seasonPositions = Array.from({ length: numberOfPremierLeagueSeasons }, (_, i) => `season${i + 1}Pos`);
 
 {/* paths */}
 const clubLogosRoot = "/football/premier-league/club-logos";
@@ -248,7 +264,10 @@ const leagueTableStructure = [
 	}
 ];
 
-{/* Dev Resource Data */}
+
+{/********************************
+  DEV RESOURCES
+*********************************/}
 const devResources = [
     {
         name: "Can I Use",
@@ -514,7 +533,10 @@ const devResources = [
     } 
 ];
 
-{/* Project Data */}
+
+{/********************************
+  PROJECTS
+*********************************/}
 const dataForAllProjects = [
   {
     name: "Dev Resources",
@@ -705,7 +727,10 @@ const dataForAllProjects = [
   }, */
 ];
 
-{/* Socials */}
+
+{/********************************
+  SOCIALS
+*********************************/}
 const socials = [
   {
     name: "Codepen",
@@ -729,7 +754,9 @@ const socials = [
   }
 ]
 
-{/* List Of My Sites */}
+{/********************************
+  MY SITE URLS
+*********************************/}
 const mySites = [
 	{
 		name: "Fairway Golf Holidays",
@@ -751,35 +778,30 @@ const mySites = [
 	},
 ];
 
-{/* List of External Sites */}
-const urlForShopify = "https://www.shopify.com/";
-const urlForNextJS = "https://nextjs.org";
-const urlForReactJS = "https://react.dev";
-const urlForTailwindCSS = "https://tailwindcss.com";
 
-{/* exports */}
-export { mainStyles };
-export { globalPageStyles };
-export { globalMainStyles };
-export { globalMainElementStyles };
-export { globalConstrainedMainStyles };
-export { sharedHeadingStyles };
-export { brandSharedHeadingStyles };
-export { brandPageBackground };
-export { brandTextColour };
-export { navigation };
-export { premierLeagueYears };
-export { seasonPositions };
-export { clubLogosRoot };
-export { premierLeagueHubUrl };
-export { premierLeagueLogoSvgPath };
-export { premierLeagueHubBlockImageRoot };
-export { leagueTableStructure };
-export { devResources };
-export { dataForAllProjects };
-export { socials };
-export { mySites };
-export { urlForShopify };
-export { urlForNextJS };
-export { urlForReactJS };
-export { urlForTailwindCSS };
+{/********************************
+  EXPORTS
+*********************************/}
+export { 
+	mainStyles, 
+	globalPageStyles, 
+	globalMainStyles, 
+	globalMainElementStyles, 
+	globalConstrainedMainStyles, 
+	sharedHeadingStyles, 
+	brandSharedHeadingStyles, 
+	brandPageBackground, 
+	brandTextColour, 
+	navigation, 
+	premierLeagueSeasons, 
+	seasonPositions, 
+	clubLogosRoot, 
+	premierLeagueHubUrl, 
+	premierLeagueLogoSvgPath, 
+	premierLeagueHubBlockImageRoot, 
+	leagueTableStructure, 
+	devResources, 
+	dataForAllProjects, 
+	socials, 
+	mySites
+};
