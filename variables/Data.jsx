@@ -1,42 +1,28 @@
 {/********************************
-  ICON IMPORTS
+  IMPORTS
 *********************************/}
 import { 
-	Icon_Codepen, 
-	Icon_ColourPalettes, 
-	Icon_Docs, 
-	Icon_Earth, 
-	Icon_Font, 
-	Icon_Football, 
-	Icon_Gamepad, 
-	Icon_GitHub, 
-	Icon_Laptop, 
-	Icon_Laugh, 
-	Icon_LinkedIn, 
-	Icon_Movies, 
-	Icon_NextJS, 
-	Icon_Planet, 
-	Icon_PremierLeagueSimple, 
-	Icon_Quote, 
-	Icon_Resource, 
-	Icon_TailwindSimple, 
-	Icon_Twitter, 
-	Icon_W3Schools
-} from "@/variables/Icons";
-
-
-{/********************************
-  SITE STYLES  
-*********************************/}
-const globalPageStyles = "space-y-4 lg:space-y-8 xl:space-y-12 2xl:space-y-16 min-h-dvh";
-const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const globalMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const globalMainElementStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const globalConstrainedMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const sharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-center transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
-const brandPageBackground = "bg-slate-900 bg-brand-background bg-repeat";
-const brandTextColour = "text-slate-400";
-const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
+    Icon_Resource ,
+	Icon_Codepen,
+	Icon_ColourPalettes,
+	Icon_Docs,
+	Icon_Earth,
+	Icon_Font,
+	Icon_Football,
+	Icon_Gamepad,
+	Icon_GitHub,
+	Icon_Laptop,
+	Icon_Laugh,
+	Icon_LinkedIn,
+	Icon_Movies,
+	Icon_NextJS,
+	Icon_Planet,
+	Icon_PremierLeagueSimple,
+	Icon_Quote,
+	Icon_TailwindSimple,
+	Icon_Twitter,
+	Icon_W3Schools,
+} from '@/variables/Icons';
 
 
 {/********************************
@@ -180,7 +166,7 @@ const navigation = [
 *********************************/}
 
 {/* Array of Premier League Seasons */}
-const premierLeagueSeasons = [
+const premierLeagueYears = [
   '92/93',
   '93/94', 
   '94/95', 
@@ -216,10 +202,8 @@ const premierLeagueSeasons = [
   '24/25'
 ];
 
-const numberOfPremierLeagueSeasons = premierLeagueSeasons.length;
-
 {/* map through the premier league seasons and create an array of season positions */}
-const seasonPositions = Array.from({ length: numberOfPremierLeagueSeasons }, (_, i) => `season${i + 1}Pos`);
+const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
 
 {/* paths */}
 const clubLogosRoot = "/football/premier-league/club-logos";
@@ -263,7 +247,7 @@ const leagueTableStructure = [
 		points: 0
 	}
 ];
-
+const magEPLCurrentSeason = 2;
 
 {/********************************
   DEV RESOURCES
@@ -533,6 +517,8 @@ const devResources = [
     } 
 ];
 
+const featuredResources = devResources.filter(resource => resource.featured === true);
+const featuredResourcesSortedByName = featuredResources.sort((a, b) => a.name.localeCompare(b.name));
 
 {/********************************
   PROJECTS
@@ -727,6 +713,7 @@ const dataForAllProjects = [
   }, */
 ];
 
+const featuredProjects = dataForAllProjects.filter(project => project.featuredProject === true);
 
 {/********************************
   SOCIALS
@@ -782,26 +769,19 @@ const mySites = [
 {/********************************
   EXPORTS
 *********************************/}
-export { 
-	mainStyles, 
-	globalPageStyles, 
-	globalMainStyles, 
-	globalMainElementStyles, 
-	globalConstrainedMainStyles, 
-	sharedHeadingStyles, 
-	brandSharedHeadingStyles, 
-	brandPageBackground, 
-	brandTextColour, 
-	navigation, 
-	premierLeagueSeasons, 
-	seasonPositions, 
-	clubLogosRoot, 
-	premierLeagueHubUrl, 
-	premierLeagueLogoSvgPath, 
-	premierLeagueHubBlockImageRoot, 
-	leagueTableStructure, 
-	devResources, 
-	dataForAllProjects, 
-	socials, 
-	mySites
-};
+export { navigation };
+export { premierLeagueYears };
+export { seasonPositions };
+export { clubLogosRoot };
+export { premierLeagueHubUrl };
+export { premierLeagueLogoSvgPath };
+export { premierLeagueHubBlockImageRoot };
+export { leagueTableStructure };
+export { magEPLCurrentSeason };
+export { devResources };
+export { featuredResources };
+export { featuredResourcesSortedByName };
+export { dataForAllProjects };
+export { featuredProjects };
+export { socials };
+export { mySites };

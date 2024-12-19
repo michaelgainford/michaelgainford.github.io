@@ -3,7 +3,7 @@
         {
             "name": "Home",
             "href": "/",
-            "lastUpdated": "2024-12-06"
+            "lastUpdated": "2024-12-19"
         },
         {
             "name": "About",
@@ -18,7 +18,7 @@
         {
             "name": "Site Maintenance Tracker",
             "href": "/pigeon/site-maintenance-tracker",
-            "lastUpdated": "2024-12-15"
+            "lastUpdated": "2024-12-19"
         },
         {
             "name": "All Projects",
@@ -68,12 +68,17 @@
         {
             "name": "The MAG Premier League",
             "href": "/projects/gaming/the-mag-premier-league",
-            "lastUpdated": "2024-12-13"
+            "lastUpdated": "2024-12-19"
         },
         {
             "name": "The MAP EPL - Season 1",
-            "href": "/projects/gaming/the-mag-premier-league/past-seasons/season-1",
-            "lastUpdated": "2024-11-13"
+            "href": "/projects/gaming/the-mag-premier-league/seasons/season-1",
+            "lastUpdated": "2024-12-19"
+        },
+        {
+            "name": "The MAP EPL - Season 2",
+            "href": "/projects/gaming/the-mag-premier-league/seasons/season-2",
+            "lastUpdated": "2024-12-19"
         },
         {
             "name": "Jokes",
