@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import DataForPremTeamsImport from "@/data/data_for__englishpremierleague";
 const DataForPremTeams = DataForPremTeamsImport.Clubs;
-import { premierLeagueYears, seasonPositions } from "@/data/Variables";
+import { premierLeagueYears, seasonPositions } from "@/variables/Data";
 
 {/* Sort by team name */}
 const sortedPremierLeagueSeasonData = [...DataForPremTeams].sort((a, b) => {
