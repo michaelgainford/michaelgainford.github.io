@@ -1,4 +1,10 @@
 {
+  "LeagueInfo": [
+    {
+		"league": "Mag Premier League",
+		"seasons": 2
+	}
+  ],
   "Seasons": [
     {
       "season": 1,

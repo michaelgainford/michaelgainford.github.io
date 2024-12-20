@@ -78,55 +78,6 @@ leagueTable.sort((a, b) => {
 	return b.points - a.points;
 });
 
-
-/* Season.forEach(season => {
-	season.fixtures.forEach(fixture => {
-		// Get the home team
-		const homeTeam = leagueTable.find(team => team.team === fixture.homeTeam);
-		// Get the away team
-		const awayTeam = leagueTable.find(team => team.team === fixture.awayTeam);
-
-		// Update the played games
-		homeTeam.played++;
-		awayTeam.played++;
-
-		// Update the goals for and against
-		homeTeam.goalsFor += fixture.homeScore;
-		homeTeam.goalsAgainst += fixture.awayScore;
-		awayTeam.goalsFor += fixture.awayScore;
-		awayTeam.goalsAgainst += fixture.homeScore;
-
-		// Update the goal difference
-		homeTeam.goalDifference = homeTeam.goalsFor - homeTeam.goalsAgainst;
-		awayTeam.goalDifference = awayTeam.goalsFor - awayTeam.goalsAgainst;
-
-		// Update the points
-		if (fixture.homeScore > fixture.awayScore) {
-			homeTeam.won++;
-			awayTeam.lost++;
-			homeTeam.points += 3;
-		} else if (fixture.homeScore < fixture.awayScore) {
-			awayTeam.won++;
-			homeTeam.lost++;
-			awayTeam.points += 3;
-		} else {
-			homeTeam.drawn++;
-			awayTeam.drawn++;
-			homeTeam.points++;
-			awayTeam.points++;
-		}
-	});
-}); */
-
-////////////////////////////////////////
-// DATA | END
-////////////////////////////////////////
-
-
-////////////////////////////////////////
-// STYLES
-////////////////////////////////////////
-
 // Style for MAG Premier League Page
 const magPageBg = `bg-linear-to-r from-[#030117] from-10% via-[#2B2659] via-50% to-[#030117] to-90%`;
 
