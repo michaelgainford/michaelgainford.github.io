@@ -3,27 +3,28 @@
 *********************************/}
 import { 
     Icon_Resource ,
-	Icon_Codepen,
-	Icon_ColourPalettes,
-	Icon_Docs,
-	Icon_Earth,
-	Icon_Font,
-	Icon_Football,
-	Icon_Gamepad,
-	Icon_GitHub,
-	Icon_Laptop,
-	Icon_Laugh,
-	Icon_LinkedIn,
-	Icon_Movies,
-	Icon_NextJS,
-	Icon_Planet,
-	Icon_PremierLeagueSimple,
-	Icon_Quote,
-	Icon_TailwindSimple,
-	Icon_Twitter,
-	Icon_W3Schools,
+		Icon_Codepen,
+		Icon_ColourPalettes,
+		Icon_Docs,
+		Icon_Earth,
+		Icon_Font,
+		Icon_Football,
+		Icon_Gamepad,
+		Icon_GitHub,
+		Icon_Laptop,
+		Icon_Laugh,
+		Icon_LinkedIn,
+		Icon_Movies,
+		Icon_NextJS,
+		Icon_Planet,
+		Icon_PremierLeagueSimple,
+		Icon_Quote,
+		Icon_TailwindSimple,
+		Icon_Twitter,
+		Icon_W3Schools,
 } from '@/variables/Icons';
 
+import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
 
 {/********************************
   SITE NAVIGATION  
@@ -211,7 +212,9 @@ const premierLeagueHubUrl = "/projects/football/competitions/english-premier-lea
 const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
 const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
 
-{/* MAG Premier League League Structure Setup */}
+{/********************************
+  THE MAG PREMIER LEAGUE
+*********************************/}
 const leagueTableStructure = [
 	{
 		team: 'Alfie',
@@ -247,7 +250,10 @@ const leagueTableStructure = [
 		points: 0
 	}
 ];
-const magEPLCurrentSeason = 2;
+const magPLCurrentSeason = 2;
+const magPremierLeagueSeasons = magPremierLeagueDataJSON.Seasons;
+const magEPLUpcomingMatches = magPremierLeagueSeasons.filter(season => season.season === magPLCurrentSeason)[0].fixtures.filter(fixture => fixture.upcoming === true);
+
 
 {/********************************
   DEV RESOURCES
@@ -769,19 +775,22 @@ const mySites = [
 {/********************************
   EXPORTS
 *********************************/}
-export { navigation };
-export { premierLeagueYears };
-export { seasonPositions };
-export { clubLogosRoot };
-export { premierLeagueHubUrl };
-export { premierLeagueLogoSvgPath };
-export { premierLeagueHubBlockImageRoot };
-export { leagueTableStructure };
-export { magEPLCurrentSeason };
-export { devResources };
-export { featuredResources };
-export { featuredResourcesSortedByName };
-export { dataForAllProjects };
-export { featuredProjects };
-export { socials };
-export { mySites };
+export { 
+    navigation,
+		premierLeagueYears,
+		seasonPositions,
+		clubLogosRoot,
+		premierLeagueHubUrl,
+		premierLeagueLogoSvgPath,
+		premierLeagueHubBlockImageRoot,
+		leagueTableStructure,
+		magPLCurrentSeason,
+		magEPLUpcomingMatches,
+		devResources,
+		featuredResources,
+		featuredResourcesSortedByName,
+		dataForAllProjects,
+		featuredProjects,
+		socials,
+		mySites
+};

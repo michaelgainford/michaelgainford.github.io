@@ -10,7 +10,8 @@ const brandTextColour = "text-slate-400";
 const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
 
 {/* MAG Premier League */}
-const magEPL_CardStyles = "rounded-lg bg-slate-900/50 text-center font-light aspect-square flex grid-rows-[60px_1fr] items-stretch grid w-full rounded-t-none";
+const magPLPageBg = "bg-linear-to-r from-[#030117] from-10% via-[#2B2659] via-50% to-[#030117] to-90%";
+const magEPL_CardStyles = "rounded-lg bg-slate-900/50 text-center font-light  flex grid-rows-[60px_1fr] items-stretch grid w-full border-magpl/20 border-1 overflow-clip  shadow-lg group";
 const magEPL_H2Styles = "text-sm bg-magpl/20 py-4 uppercase font-bold rounded-t-md text-slate-200 tracking-wider";
 
 {/********************************
@@ -25,6 +26,7 @@ export {
 	brandTextColour,
 	brandSharedHeadingStyles,
 	// MAGPL
+	magPLPageBg,
 	magEPL_CardStyles,
 	magEPL_H2Styles
 };
