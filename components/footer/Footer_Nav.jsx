@@ -1,13 +1,12 @@
 import Link from "next/link";
-import DataForNavigationJSON from "@/data/data_for__navigation";
-const DataForNavigation = DataForNavigationJSON.SiteNavigation;
+import DataForFooterNavJSON from "@/data/data_for__sitemap.json";
+const DataForFooterNav = DataForFooterNavJSON.Pages;	
 import FooterSectionHeader from "/components/footer/Footer_Section_Header";
 import FooterNavListHeader from "/components/footer/Footer_NavList_Header";
 
-const footerNavLinks1 = DataForNavigation.filter((link) => link.footerNav_1 === true);
-const footerNavLinks2 = DataForNavigation.filter((link) => link.footerNav_2 === true);
-
-footerNavLinks2.sort((a, b) => a.label.localeCompare(b.label));
+const footerNavList1 = DataForFooterNav.filter((link) => link.footerNav_1 === true);
+const footerNavList2 = DataForFooterNav.filter((link) => link.footerNav_2 === true);
+footerNavList2.sort((a, b) => (a.name > b.name) ? 1 : -1);
 
 const linkClasses = `flex py-2`;
 const detailsStyles = `rounded-lg py-4 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
@@ -40,7 +39,7 @@ export default function FOOTER_NAV() {
 						</span>
 					</summary>
 					<ul className={`text-xs text-left xl:text-sm`}>
-						{footerNavLinks1.map((item, index) => (
+						{footerNavList1.map((item, index) => (
 						<li key={index}>
 							<Link className={`${linkClasses}`} href={item.href}>
 								{item.label}
@@ -52,7 +51,7 @@ export default function FOOTER_NAV() {
 				<div className={`footer-nav-group border-slate-700 rounded-sm max-sm:hidden lg:pr-8 max-md:mb-8`}>
 					<FooterNavListHeader text={`Site Links`} />
 					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
-						{footerNavLinks1.map((item, index) => (
+						{footerNavList1.map((item, index) => (
 						<li key={index} className={``}>
 							<Link className={`${linkClasses} hover:ml-4 duration-500 cursor-pointer flex ${beforeStyles} ${item.before}`} href={item.href}>
 								{item.label}
@@ -80,7 +79,7 @@ export default function FOOTER_NAV() {
 						</span>
 					</summary>
 					<ul className={`text-xs text-left xl:text-sm`}>
-						{footerNavLinks2.map((item, index) => (
+						{footerNavList2.map((item, index) => (
 						<li key={index}>
 							<Link className={`${linkClasses}`} href={item.href}>
 								{item.label}
@@ -92,7 +91,7 @@ export default function FOOTER_NAV() {
 				<div className={`footer-nav-group rounded-sm border-slate-700 max-sm:hidden lg:pr-8`}>
 					<FooterNavListHeader text={`Projects`} />
 					<ul className={`pt-4 text-xs text-left xl:text-sm`}>
-						{footerNavLinks2.map((item, index) => (
+						{footerNavList2.map((item, index) => (
 						<li key={index} className={``}>
 							<Link className={`${linkClasses} hover:ml-4 duration-500 cursor-pointer ${beforeStyles} ${item.before}`} href={item.href}>
 								{item.label}
