@@ -3,7 +3,7 @@ import H1 from "@/components/typography/H1Span";
 
 export default function COMPONENT_LEAGUE_PAGE_HEADER() {
 	return (
-		<div className="max-lg:mt-4 border-b border-slate-900 w-full pb-8 lg:pb-12">
+		<div className="max-lg:mt-4 border-b border-slate-900 md:border-none w-full pb-8 lg:pb-12">
 			<div className="flex flex-col items-center gap-2">
 				<IconMagPremierLeague 
 					classes="mx-auto size-24 md:size-32 lg:size-48"

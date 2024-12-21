@@ -1,7 +1,6 @@
 import Header from "@/components/header/Header";
-import H1 from "@/components/typography/H1Span";
 import Footer from "@/components/footer/Footer";
-import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
+import LeaguePageHeader from "@/components/projects/mag-premier-league/LeaguePageHeader";
 import SeasonsData from "@/data/data_for__magpremierleague.json"
 const Seasons = SeasonsData.Seasons;
 import { globalPageStyles, mainStyles, leagueTableStructure } from "@/data/Variables";
@@ -102,15 +101,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
       	<Header />
       	<main className={`${mainStyles} gap-12`}>
 			
-			{/* Page Header | Start */}
-			<div className={`page-header motion motion-preset-slide-up motion-delay-100 max-lg:mt-4`}>
-				<div className={`flex flex-col items-center gap-2 lg:gap-4`}>
-					<IconMagPremierLeague classes={`mx-auto size-12 sm:size-24 md:size-32 lg:size-48`} />
-					<H1 text={`The MAG Premier League`} font_sizes={``} other_classes={`text-balance font-light! text-balance uppercase font-bold! text-slate-300 max-w-[16ch] mb-0! pb-0! max-lg:pt-0`} />
-					<span className="text-center pt-2 w-full border-t border-dashed border-magpl/20 lg:border-magpl/50 font-medium text-magpl tracking-wider">Season: {currentSeason}</span>
-				</div>
-			</div>
-			{/* Page Header | End */}
+			<LeaguePageHeader />
 
 			{/* League Table */}
 			<div className="my-2 md:my-4 lg:my-8 motion motion-preset-slide-up motion-delay-[300ms] pt-12 lg:pt-20 lg:pb-12">
