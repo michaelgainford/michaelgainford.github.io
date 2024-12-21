@@ -2,15 +2,15 @@
 import { useState } from "react";
 
 import Link from "next/link";
-import DataForNavigationJSON from "@/data/data_for__navigation";
-const DataForNavigation = DataForNavigationJSON.SiteNavigation;
+import DataForMainNavJSON from "@/data/data_for__sitemap.json";
+const DataForMainNav = DataForMainNavJSON.Pages;
 import MainLogo from "./MainLogo";
 import IconCrossNav from "../icons/IconCrossNav";
 import { brandTextColour } from "@/data/Variables";
-const navLinks = DataForNavigation.filter((link) => link.mainNav === true);
+const mobileNavLinks = DataForMainNav.filter((link) => link.mainNav === true);
 
 // get all links get that contain the string '/projects/' and store for later
-const projectsLinks = DataForNavigation.filter((link) =>
+const projectsLinks = DataForMainNav.filter((link) =>
   link.href.includes("/projects/")
 );
 
@@ -48,7 +48,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
           <ul
             className={`flex flex-col items-stretch max-md:overflow-auto text-[14px] md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-4 h-full`}
           >
-            {navLinks.map((link, index) => (
+            {mobileNavLinks.map((link, index) => (
               <li
                 key={index}
                 className={`flex mb-4 ${

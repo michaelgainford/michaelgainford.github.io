@@ -1,17 +1,16 @@
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
+import { 
+	globalPageStyles, 
+	brandPageBackground, 
+	globalWrapperFixedWidth, 
+	brandTextColour, 
+	sharedHeadingStyles 
+} from "@/variables/Styles";
+
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import H1_Span from "@/components/typography/H1Span";
+import H1_Span from "@/components/typography/H1_Span";
 
-const pageStyles = `bg-slate-900 text-slate-400 bg-brand-background bg-repeat`;
-const sharedHeadingStyles = `pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit`;
-
-// const colours = ["bg-amber-500", "bg-amber-500/50", "bg-epl", "bg-fn-dark-blue", "bg-fn-light-blue", "bg-rose-500", "bg-rose-900", "bg-rose-950", "bg-slate-200", "bg-slate-200/20", "bg-slate-400", "bg-slate-500/10", "bg-slate-500/20", "bg-slate-600", "bg-slate-700" ];
-// const fontColours = [ "text-amber-500", "text-slate-200", "text-slate-400", "text-slate-500", "text-slate-600", "text-slate-700", "text-slate-900" ];
-
-// i want to import the json file within data/Data_For_Style_Guide_Font_Sizes.json
-import StyleGuideData from "@/data/data_for__styleguidefontsizes.json";
+import StyleGuideData from "@/data/data_for__styleguide.json";
 const FontSizes = StyleGuideData.FontSizes;
 const CSSContainerWidths = StyleGuideData.CSSContainerWidths;
 const BrandColours = StyleGuideData.BrandColours;
@@ -19,16 +18,14 @@ const ProjectColours = StyleGuideData.ProjectColours;
 
 export default function PAGE_SITE_STYLE_GUIDE() {
 	return (
-		<div className={`${globalPageStyles} ${pageStyles}`}>
+		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
 
 			<Header />
 			
-			<main className={`${mainStyles}`}>
-
-				<div className="flex w-full justify-center text-center motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500 max-w-[1800px]">
+			<main className={`${globalWrapperFixedWidth}`}>
+				<div className="flex w-full justify-center text-center max-w-[1800px]">
 					<div className="flex flex-col w-full gap-8 xl:gap-y-16 3xl:gap-24 max-lg:mt-8 @container">
 						<H1_Span text="Site Style Guide" className={`${sharedHeadingStyles} group-hover/about:border-amber-500/80`} />
-						
 						<div className="grid w-full @4xl:grid-cols-2 gap-8 lg:gap-16 style-guide-main">
 							<div className="flex flex-col p-8 text-left border rounded-lg border-slate-200/5 style-guide-group bg-slate-200/5">
 								<h2 className={`${sharedHeadingStyles} text-left mr-auto flex justify-start w-fit`}>Typography</h2>

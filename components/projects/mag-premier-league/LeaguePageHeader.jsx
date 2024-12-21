@@ -7,6 +7,8 @@ export default function COMPONENT_LEAGUE_PAGE_HEADER() {
 			<div className="flex flex-col items-center gap-2">
 				<IconMagPremierLeague 
 					classes="mx-auto size-24 md:size-32 lg:size-48"
+					fillOne="#2BC9BC"
+					fillTwo="#1EA095"
 				/>
 				<H1 
 					font_sizes="" 

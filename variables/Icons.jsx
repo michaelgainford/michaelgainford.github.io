@@ -12,6 +12,7 @@ import Icon_GitHub from '@/components/icons/IconGithub';
 import Icon_Laugh from "@/components/icons/IconLaugh";
 import Icon_LinkedIn from '@/components/icons/IconLinkedIn';
 import Icon_Laptop from "@/components/icons/IconLaptop";
+import Icon_MagPremierLeague from '@/components/icons/IconMagPremierLeague';
 import Icon_Movies from "@/components/icons/IconMovies";
 import Icon_NextJS from '@/components/icons/IconNextJS';
 import Icon_Planet from "@/components/icons/IconPlanet";
@@ -38,6 +39,7 @@ export {
 	Icon_Laugh,
 	Icon_Laptop,
 	Icon_LinkedIn, 
+	Icon_MagPremierLeague,
 	Icon_Movies,
 	Icon_NextJS, 
 	Icon_Quote,
