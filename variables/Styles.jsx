@@ -11,8 +11,8 @@ const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-lef
 
 {/* MAG Premier League */}
 const magPLPageBg = "bg-linear-to-r from-[#030117] from-10% via-[#2B2659] via-50% to-[#030117] to-90%";
-const magEPL_CardStyles = "rounded-lg bg-slate-900/50 text-center font-light  flex grid-rows-[60px_1fr] items-stretch grid w-full border-magpl/20 border-1 overflow-clip  shadow-lg group";
-const magEPL_H2Styles = "text-sm bg-magpl/20 py-4 uppercase font-bold rounded-t-md text-slate-200 tracking-wider";
+const magEPL_CardStyles = "rounded-lg bg-slate-900/50 text-center font-light  flex grid-rows-[60px_1fr] grid w-full border-magpl/20 border-1 overflow-clip shadow-lg group h-full";
+const magEPL_H2Styles = "text-sm leading-[1.5em] bg-magpl/20 py-4 uppercase font-bold rounded-t-md text-slate-200 tracking-wider flex justify-center items-center group-hover:bg-magpl group-hover:text-slate-900 transition-all duration-500";
 
 {/********************************
   SITE STYLES - EXPORTS
