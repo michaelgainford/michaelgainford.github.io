@@ -22,11 +22,11 @@ export default function COMPONENT_CARD_FOR_PAST_WINNERS () {
 						</thead>
 						<tbody>
 							<tr className="border-b border-magpl/30">
-								<td className="w-1/2"><Link href="/projects/mag-premier-league/season-1" className="block hover:bg-slate-950 transition-all duration-500">1</Link></td>
+								<td className="w-1/2"><Link href="/projects/gaming/the-mag-premier-league/seasons/season-1" className="block hover:bg-slate-950 transition-all duration-500">1</Link></td>
 								<td className="w-1/2">Alfie</td>
 							</tr>
 							<tr>
-								<td className="w-1/2"><Link href="/projects/mag-premier-league/season-2" className="block hover:bg-slate-950 transition-all duration-500">2</Link></td>
+								<td className="w-1/2"><Link href="/projects/gaming/the-mag-premier-league/seasons/season-2" className="block hover:bg-slate-950 transition-all duration-500">2</Link></td>
 								<td className="w-1/2">???</td>
 							</tr>
 						</tbody>

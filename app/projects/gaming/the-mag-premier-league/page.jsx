@@ -25,7 +25,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
       	<Header />
       	<main className={`${globalWrapperFixedWidth} gap-12`}>
 			<LeaguePageHeader />
-			<div className="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-12 2xl:gap-16 w-full [&_h2]:items-center justify-center mx-auto">
+			<div className="grid grid-cols-1 lg:grid-cols-3 gap-16 w-full [&_h2]:items-center justify-center mx-auto">
 				<CardForCurrentSeason />
 				<CardForUpcomingFixtures />
 				<CardForLeagueRules />
