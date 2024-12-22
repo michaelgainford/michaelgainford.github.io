@@ -10,12 +10,12 @@ export default function COMPONENT_CARD_FOR_PAST_WINNERS () {
 			<ul className="divide-y divide-slate-800">
 				{magEPLUpcomingMatches.map((fixture, index) => (
 				<li key={index} className="flex items-center justify-center py-4 flex-col h-1/3">
-					<span className="text-lg uppercase grid grid-cols-[1fr_auto_1fr] gap-2">
-						<span className="text-right">{fixture.homeTeam}</span> 
-						<span className="text-center"> v </span>
-						<span className="text-left">{fixture.awayTeam}</span>
+					<span className="text-lg uppercase flex gap-2 items-center">
+						<span className="text-right w-full">{fixture.homeTeam}</span> 
+						<span className="text-center text-xs w-fit"> v </span>
+						<span className="text-left w-full">{fixture.awayTeam}</span>
 					</span>
-					<span className="text-sm">{fixture.date}</span>
+					<span className="text-sm">{fixture.date} @ {fixture.time}</span>
 				</li>
 				))}
 			</ul>

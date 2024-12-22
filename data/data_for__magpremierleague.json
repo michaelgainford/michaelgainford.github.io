@@ -287,36 +287,36 @@
       "fixtures": [
         {
           "game": 1,
-          "homeTeam": "Garcon",
-          "awayTeam": "Michael",
-          "homeScore": 0,
-          "awayScore": 0,
+          "homeTeam": "Alfie",
+          "awayTeam": "Garcon",
+          "homeScore": 2,
+          "awayScore": 2,
           "date": "21/12/2024",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "21:15",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 2,
-          "homeTeam": "Michael",
-          "awayTeam": "Alfie",
-          "homeScore": 0,
-          "awayScore": 0,
+          "homeTeam": "Garcon",
+          "awayTeam": "Michael",
+          "homeScore": 2,
+          "awayScore": 4,
           "date": "21/12/2024",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "21:45",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 3,
-          "homeTeam": "Alfie",
-          "awayTeam": "Garcon",
-          "homeScore": 0,
+          "homeTeam": "Michael",
+          "awayTeam": "Alfie",
+          "homeScore": 4,
           "awayScore": 0,
           "date": "21/12/2024",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "22:15",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 4,
@@ -326,7 +326,7 @@
           "awayScore": 0,
           "date": "28/12/2024",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -337,7 +337,7 @@
           "awayScore": 0,
           "date": "28/12/2024",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -348,7 +348,7 @@
           "awayScore": 0,
           "date": "28/12/2024",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
