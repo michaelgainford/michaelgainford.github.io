@@ -20,14 +20,12 @@ export default function HEADER() {
 	}
 
 	return (
-		<header className={`w-full`}>
-			<div
-				className={`header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-row justify-between gap-1 py-6 mx-auto sm:items-center lg:gap-2`}
-			>
+		<header className="w-full">
+			<div className="header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-row justify-between gap-1 py-6 mx-auto sm:items-center lg:gap-2">
 				<MainLogo />
 				<MainNav />
 				<div
-					className={`hamburger-menu-icon cursor-pointer lg:hidden fill-current!`}
+					className="hamburger-menu-icon cursor-pointer lg:hidden fill-current!"
 					onClick={toggleMobileNav}
 				>
 					<IconHamburgerNav />

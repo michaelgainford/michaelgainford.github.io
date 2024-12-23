@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import { brandPageBackground, brandTextColour, globalPageStyles, mainStyles } from "@/data/Variables";
+import { brandPageBackground, brandTextColour, globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 
 export const metadata = {
 	title: "404 Not Found",
 	description: "This page does not exist. Please go to the home page or check out one of these pages instead.",
 };
-
 
 const OtherPages = [
 	{
@@ -36,7 +35,7 @@ export default function PAGE_404() {
 	return (
 		<div className={`${brandPageBackground} ${brandTextColour} ${globalPageStyles}`}>
 			<Header />
-			<main className={mainStyles}>
+			<main className={globalWrapperFixedWidth}>
 				<div className="flex flex-col w-full gap-12 mt-8 text-center max-lg:flex-col">
 					<div className="border border-transparent text-wrapper w-full bg-amber-500/5 text-slate-300 lg:max-w-[50dvw] mx-auto p-8 flex flex-col gap-6 rounded-lg justify-start hover:border-amber-500 duration-500 transition-all">
 						<h1 className="mx-auto text-xl font-bold lg:text-4xl lg:w-fit">
@@ -55,8 +54,7 @@ export default function PAGE_404() {
 								</Link>
 							</li>
 						)
-					}
-					)}
+					})}
 					</ul>
 				</div>
 			</main>

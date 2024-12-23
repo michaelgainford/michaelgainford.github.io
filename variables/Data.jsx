@@ -26,6 +26,11 @@ import {
 
 import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
 
+
+{/********************************
+  SITE
+*********************************/}
+
 {/********************************
   PREMIER LEAGUE  
 *********************************/}
@@ -390,6 +395,7 @@ const devResources = [
 const featuredResources = devResources.filter(resource => resource.featured === true);
 const featuredResourcesSortedByName = featuredResources.sort((a, b) => a.name.localeCompare(b.name));
 
+
 {/********************************
   PROJECTS
 *********************************/}
@@ -656,4 +662,4 @@ export {
 	featuredProjects,
 	socials,
 	mySites
-	};
+};

@@ -12,7 +12,7 @@ import Footer from "@/components/footer/Footer";
 
 export default function PAGE_HOME() {
 	return (
-		<div className={`${brandPageBackground} ${brandTextColour} ${globalPageStyles}`}>
+		<div className={`${brandPageBackground} ${globalPageStyles} ${brandTextColour}`}>
 			<Header />
 			<main className={globalWrapperFixedWidth}>
 				<div className="flex w-full mt-8 gap-12 max-lg:flex-col lg:gap-24 xl:gap-32 2xl:gap-48">
