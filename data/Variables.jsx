@@ -37,6 +37,7 @@ const sharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-center t
 const brandPageBackground = "bg-slate-900 bg-brand-background bg-repeat";
 const brandTextColour = "text-slate-400";
 const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
+const brandHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
 
 
 {/********************************
@@ -790,6 +791,7 @@ export {
 	globalConstrainedMainStyles, 
 	sharedHeadingStyles, 
 	brandSharedHeadingStyles, 
+  brandHeadingStyles,
 	brandPageBackground, 
 	brandTextColour, 
 	navigation, 
