@@ -3,7 +3,8 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles, mainStyles, dataForAllProjects } from "@/data/Variables";
+import { brandTextColour, dataForAllProjects } from "@/data/Variables";
+import { globalPageStyles, globalWrapperFixedWidth, brandPageBackground } from "@/variables/Styles";
 
 {/* Sort the projects by name... */}
 dataForAllProjects.sort((a, b) => a.name.localeCompare(b.name));
@@ -20,11 +21,11 @@ export const metadata = {
 
 export default function PAGE_PROJECTS() {
 	return (
-		<div className={`${globalPageStyles} ${pageStyles}`}>
+		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
 
 			<Header />
 			
-			<main className={`${mainStyles}`}>
+			<main className={`${globalWrapperFixedWidth}`}>
 				
 				<H1 text={`Projects`} />
 				
