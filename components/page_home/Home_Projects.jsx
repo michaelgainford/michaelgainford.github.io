@@ -10,9 +10,9 @@ export default function COMPONENT_HOME_PROJECTS() {
 			<div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 md:gap-8 lg:gap-8 lg:grid-cols-2 xl:gap-12 2xl:grid-cols-2">
 			{featuredProjects.map((project, index) => (
 				<Link
-				  key={index}
-				  href={project.href}
-				  className={`flex flex-col items-center border justify-center font-light tracking-wide transition rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 max-md:gap-0 md:aspect-3/2 md:p-4 xl:border-2 hover:opacity-100 2xl:border-opacity-30 3xl:border-4`}
+					key={index}
+					href={project.href}
+					className={`flex flex-col items-center border justify-center font-light tracking-wide transition rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 max-md:gap-0 md:aspect-3/2 md:p-4 xl:border-2 hover:opacity-100 2xl:border-opacity-30 3xl:border-4`}
 				>
 					<span className={`flex w-[27%] justify-center items-end h-1/2 md:w-[23%] xl:w-[20%] ${project.groupHover}`}>  
 						<project.icon 
@@ -26,17 +26,17 @@ export default function COMPONENT_HOME_PROJECTS() {
 				</Link>
 			))}
 			</div>
-			<div className="flex justify-start mt-8 lg:mt-12 motion motion-preset-slide-up motion-delay-[1200ms]">
+			<div className="flex justify-start mt-8 lg:mt-12">
 				<Button 
-				  href="/projects"
-				  label="View All Projects"
-				  title="View All Projects" 
-				  ariaLabel="View All Projects"
-				  background_colour="bg-slate-800"
-				  border_colour="border-slate-700" 
-				  hover_background_colour="hover:bg-amber-500"
-				  text_colour="text-current"
-				  hover_text_colour="hover:text-slate-900"
+					href="/projects"
+					label="View All Projects"
+					title="View All Projects" 
+					ariaLabel="View All Projects"
+					background_colour="bg-slate-800"
+					border_colour="border-slate-700" 
+					hover_background_colour="hover:bg-amber-500"
+					text_colour="text-current"
+					hover_text_colour="hover:text-slate-900"
 				/>
 			</div>
 		</div>
