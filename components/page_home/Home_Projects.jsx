@@ -12,15 +12,15 @@ export default function COMPONENT_HOME_PROJECTS() {
 				<Link
 					key={index}
 					href={project.href}
-					className={`flex flex-col items-center border justify-center font-light tracking-wide transition rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 max-md:gap-0 md:aspect-3/2 md:p-4 xl:border-2 hover:opacity-100 2xl:border-opacity-30 3xl:border-4`}
+					className={`flex flex-col items-center border justify-center font-light tracking-wide transition rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 hover:opacity-100 2xl:border-opacity-30 3xl:border-4 gap-8 space-y-4`}
 				>
-					<span className={`flex w-[27%] justify-center items-end h-1/2 md:w-[23%] xl:w-[20%] ${project.groupHover}`}>  
+					<span className={`flex w-[27%] justify-center items-end md:w-[23%] xl:w-[20%] ${project.groupHover}`}>  
 						<project.icon 
-						  fill={`${project.fill}`} 
-						  classes="size-7 fill-slate-400 flex justify-center lg:size-12 2xl:size-16"
+						  fill={project.fill}
+						  classes="h-7 fill-slate-400 flex justify-center lg:h-12 2xl:h-16 w-auto"
 						/>
 					</span>
-					<span className="flex items-center -mt-1 text-xs tracking-wider text-center h-1/2 group-hover:text-white sm:pt-1 max-lg:text-slate-400 lg:text-sm 2xl:text-base 3xl:text-lg">
+					<span className="flex items-start -mt-1 text-xs tracking-wider text-center group-hover:text-white sm:pt-1 max-lg:text-slate-400 lg:text-sm 2xl:text-base 3xl:text-lg">
 						{project.name}
 					</span>
 				</Link>
