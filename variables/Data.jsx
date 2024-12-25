@@ -78,6 +78,7 @@ const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`
 {/* paths */}
 const clubLogosRoot = "/football/premier-league/club-logos";
 const premierLeagueHubUrl = "/projects/football/competitions/english-premier-league";
+const premierLeagueMainUrl = "/projects/football/competitions/english-premier-league/";
 const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
 const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
 

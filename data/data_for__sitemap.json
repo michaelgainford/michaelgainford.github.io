@@ -13,6 +13,9 @@
             "mainNav": true,
             "footerNav_1": true,
             "footerNav_2": false,
+            "navigationMain": true,
+            "navigationFooterFirstList": true,
+            "navigationFooterSecondList": false,
             "lastUpdated": "2024-12-22"
         },
         {
