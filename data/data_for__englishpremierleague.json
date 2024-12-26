@@ -226,13 +226,13 @@
             "playerName": "Jamie Vardy",
             "playerSlug": "jamie-vardy",
             "playerClubs": ["Leicester City (142)"],
-            "playerApps": 322,
+            "playerApps": 323,
             "playerGoals": 142,
             "playerLastGoalFor": "Leicester City",
             "playerLastGoalOpponent": "Brighton & Hove Albion",
             "playerLastGoalDate": "2024-12-08",
             "playerCurrent": true,
-            "updated": "2024-12-04"
+            "updated": "2024-12-25"
         },
         {
             "playerId": 15,
@@ -317,15 +317,15 @@
             "playerSlug": "mohamed-salah",
             "playerClubs": [
                 "Chelsea (2)",
-                "Liverpool (168)"
+                "Liverpool (170)"
             ],
-            "playerApps": 278,
-            "playerGoals": 170,
+            "playerApps": 279,
+            "playerGoals": 172,
             "playerLastGoalFor": "Liverpool",
-            "playerLastGoalOpponent": "Newcastle United",
-            "playerLastGoalDate": "2024-12-03",
+            "playerLastGoalOpponent": "Tottenham Hotspur",
+            "playerLastGoalDate": "2024-12-22",
             "playerCurrent": true,
-            "updated": "2024-12-04"
+            "updated": "2024-12-25"
         },
         {
             "playerId": 20,
@@ -425,7 +425,7 @@
             "playerLastGoalOpponent": "Bournemouth",
             "playerLastGoalDate": "2024-05-19",
             "playerCurrent": true,
-            "updated": "2024-12-02"
+            "updated": "2024-12-25"
         },
         {
             "playerId": 26,
@@ -568,13 +568,13 @@
             "playerClubs": [
                 "Tottenham Hotspur (125)"
             ],
-            "playerApps": 316,
+            "playerApps": 317,
             "playerGoals": 125,
             "playerLastGoalFor": "Tottenham Hotspur",
             "playerLastGoalOpponent": "Southampton",
             "playerLastGoalDate": "2024-12-15",
             "playerCurrent": true,
-            "updated": "2024-12-16"
+            "updated": "2024-12-25"
         }
     ],
     "Clubs":[
