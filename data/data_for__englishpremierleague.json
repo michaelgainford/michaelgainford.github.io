@@ -317,15 +317,15 @@
             "playerSlug": "mohamed-salah",
             "playerClubs": [
                 "Chelsea (2)",
-                "Liverpool (170)"
+                "Liverpool (171)"
             ],
-            "playerApps": 279,
-            "playerGoals": 172,
+            "playerApps": 280,
+            "playerGoals": 173,
             "playerLastGoalFor": "Liverpool",
-            "playerLastGoalOpponent": "Tottenham Hotspur",
-            "playerLastGoalDate": "2024-12-22",
+            "playerLastGoalOpponent": "Leicester City",
+            "playerLastGoalDate": "2024-12-26",
             "playerCurrent": true,
-            "updated": "2024-12-25"
+            "updated": "2024-12-26"
         },
         {
             "playerId": 20,
@@ -568,13 +568,13 @@
             "playerClubs": [
                 "Tottenham Hotspur (125)"
             ],
-            "playerApps": 317,
+            "playerApps": 318,
             "playerGoals": 125,
             "playerLastGoalFor": "Tottenham Hotspur",
             "playerLastGoalOpponent": "Southampton",
             "playerLastGoalDate": "2024-12-15",
             "playerCurrent": true,
-            "updated": "2024-12-25"
+            "updated": "2024-12-26"
         }
     ],
     "Clubs":[
