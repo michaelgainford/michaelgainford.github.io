@@ -12,7 +12,7 @@ export default function COMPONENT_HOME_PROJECTS() {
 				<Link
 					key={index}
 					href={project.href}
-					className={`flex flex-col items-center border justify-center font-light tracking-wide transition rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 hover:opacity-100 2xl:border-opacity-30 3xl:border-4 gap-8 space-y-4`}
+					className={`flex flex-col items-center border justify-center font-light tracking-wide transition rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 hover:opacity-100 2xl:border-opacity-30 3xl:border-4 space-y-4`}
 				>
 					<span className={`flex w-[27%] justify-center items-end md:w-[23%] xl:w-[20%] ${project.groupHover}`}>  
 						<project.icon 
