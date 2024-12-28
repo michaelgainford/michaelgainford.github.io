@@ -320,36 +320,36 @@
         },
         {
           "game": 4,
-          "homeTeam": "Garcon",
-          "awayTeam": "Alfie",
-          "homeScore": 0,
-          "awayScore": 0,
-          "date": "28/12/2024",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "homeTeam": "Alfie",
+          "awayTeam": "Michael",
+          "homeScore": 2,
+          "awayScore": 9,
+          "date": "27/12/2024",
+          "time": "21:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 5,
-          "homeTeam": "Alfie",
-          "awayTeam": "Michael",
-          "homeScore": 0,
-          "awayScore": 0,
-          "date": "28/12/2024",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "homeTeam": "Michael",
+          "awayTeam": "Garcon",
+          "homeScore": 2,
+          "awayScore": 3,
+          "date": "27/12/2024",
+          "time": "21:30",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 6,
-          "homeTeam": "Michael",
-          "awayTeam": "Garcon",
-          "homeScore": 0,
-          "awayScore": 0,
-          "date": "28/12/2024",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "homeTeam": "Garcon",
+          "awayTeam": "Alfie",
+          "homeScore": 3,
+          "awayScore": 5,
+          "date": "27/12/2024",
+          "time": "22:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 7,
@@ -359,7 +359,7 @@
           "awayScore": 0,
           "date": "04/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -370,7 +370,7 @@
           "awayScore": 0,
           "date": "04/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -381,7 +381,7 @@
           "awayScore": 0,
           "date": "04/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
