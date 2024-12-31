@@ -1,6 +1,6 @@
-export default function FOOTER_COPYRIGHT() {
+export default function COMPONENT_FOOTER_COPYRIGHT() {
 	return (
-    	<div className={`pt-4 text-[10px] pb-1 text-center copyright border-slate-700`}>
+    	<div className="pt-4 pb-1 text-[10px] text-center">
       		<p>Built by MG &mdash; &copy; 2025</p>
     	</div>
   	)
