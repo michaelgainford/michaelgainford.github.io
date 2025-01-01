@@ -5,8 +5,8 @@ const PagesInSitemap = SitemapData.Pages;
 const today = new Date();
 
 const daysInSafeZone = 7;
-const daysInAttentionZone = 10;
-const daysInWarningZone = 14;
+const daysInAttentionZone = 14;
+const daysInWarningZone = 28;
 
 export default function TABLE_OF_SITE_PAGES () {
     return (
