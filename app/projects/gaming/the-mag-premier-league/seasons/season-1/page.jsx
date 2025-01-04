@@ -152,7 +152,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			<LeaguePageHeader />
 
 			{/* League Table */}
-			<div className="my-2 md:my-4 lg:my-8 motion motion-preset-slide-up motion-delay-[300ms] pt-12 lg:pt-20 lg:pb-12">
+			<div className="my-2 md:my-4 lg:my-8 pt-12 lg:pt-20 lg:pb-12">
 				<h2 className={`text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>League Table</h2>
 				<div className={`flex mt-4`}>
 					<table className={`lg:min-w-[1000px] text-center`}>
@@ -160,14 +160,14 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 							<tr className={`grid grid-cols-10 py-3 lowercase *:font-light`}>
 								<th data-league-position={`league-position pr-1`}>Pos</th>
 								<th data-league-team={`league-team`} className={`text-left`}>Team</th>
-								<th data-league-played={``}>P</th>
-								<th data-league-won={``}>W</th>
-								<th data-league-drawn={``}>D</th>
-								<th data-league-lost={``}>L</th>
-								<th data-league-scored={``}>F</th>
-								<th data-league-against={``}>A</th>
-								<th data-league-goal-diff={``}>GD</th>
-								<th data-league-points={``}>PTS</th>
+								<th data-league-played="">P</th>
+								<th data-league-won="">W</th>
+								<th data-league-drawn="">D</th>
+								<th data-league-lost="">L</th>
+								<th data-league-scored="">F</th>
+								<th data-league-against="">A</th>
+								<th data-league-goal-diff="">GD</th>
+								<th data-league-points="">PTS</th>
 							</tr>
 						</thead>
 						<tbody className={`text-xs md:text-base lg:text-xl`}>
@@ -176,14 +176,14 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 								<td data-league-position={index + 1} className={`pr-1 text-magpl`}>{index + 1}</td>
 								<td data-league-team={team.team} className={`text-left max-sm:hidden font-bold! text-slate-300`}>{team.team}</td>
 								<td data-league-team-letter={team.team[0]} className={`sm:hidden`}>{team.team[0]}</td>
-								<td data-league-played={``}>{team.played}</td>
-								<td data-league-won={``}>{team.won}</td>
-								<td data-league-drawn={``}>{team.drawn}</td>
-								<td data-league-lost={``}>{team.lost}</td>
-								<td data-league-scored={``}>{team.goalsFor}</td>
-								<td data-league-against={``}>{team.goalsAgainst}</td>
-								<td data-league-goal-diff={``}>{team.goalDifference}</td>
-								<td data-league-point={``}>{team.points}</td>
+								<td data-league-played="">{team.played}</td>
+								<td data-league-won="">{team.won}</td>
+								<td data-league-drawn="">{team.drawn}</td>
+								<td data-league-lost="">{team.lost}</td>
+								<td data-league-scored="">{team.goalsFor}</td>
+								<td data-league-against="">{team.goalsAgainst}</td>
+								<td data-league-goal-diff="">{team.goalDifference}</td>
+								<td data-league-point="">{team.points}</td>
 							</tr>
 						))}
 						</tbody>
@@ -192,7 +192,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			</div>
 
 			{/* Fixtures */}
-			<div className={`w-full! px-4 lg:px-8  motion motion-preset-slide-up motion-delay-[600ms] pt-12 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
+			<div className={`w-full! px-4 lg:px-8  motion motion-preset-slide-up motion-delay-[600ms] pt-4 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
 				<h3 className={`mb-6 text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>Fixtures</h3>
 				<div className={`grid grid-cols-1 gap-6`}>
 

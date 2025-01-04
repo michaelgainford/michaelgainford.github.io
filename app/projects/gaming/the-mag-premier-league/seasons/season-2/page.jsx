@@ -104,7 +104,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			<LeaguePageHeader />
 
 			{/* League Table */}
-			<div className="my-2 md:my-4 lg:my-8 motion motion-preset-slide-up motion-delay-[300ms] pt-12 lg:pt-20 lg:pb-12">
+			<div className="my-2 md:my-4 lg:my-8 motion motion-preset-slide-up motion-delay-[300ms] pt-4 lg:pt-20 lg:pb-12">
 				<h2 className={`text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>League Table</h2>
 				<div className={`flex mt-4`}>
 					<table className={`lg:min-w-[1000px] text-center`}>
@@ -144,7 +144,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			</div>
 
 			{/* Fixtures */}
-			<div className={`w-full! px-4 lg:px-8  motion motion-preset-slide-up motion-delay-[600ms] pt-12 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
+			<div className={`w-full! px-4 lg:px-8  motion motion-preset-slide-up motion-delay-[600ms] pt-4 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
 				<h3 className={`mb-6 text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>Fixtures</h3>
 				<div className={`grid grid-cols-1 gap-6`}>
 
