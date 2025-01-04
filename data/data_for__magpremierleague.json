@@ -353,36 +353,36 @@
         },
         {
           "game": 7,
-          "homeTeam": "Garcon",
-          "awayTeam": "Michael",
-          "homeScore": 0,
+          "homeTeam": "Michael",
+          "awayTeam": "Alfie",
+          "homeScore": 2,
           "awayScore": 0,
           "date": "04/01/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "20:30",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 8,
-          "homeTeam": "Michael",
-          "awayTeam": "Alfie",
-          "homeScore": 0,
-          "awayScore": 0,
+          "homeTeam": "Garcon",
+          "awayTeam": "Michael",
+          "homeScore": 3,
+          "awayScore": 4,
           "date": "04/01/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "21:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 9,
           "homeTeam": "Alfie",
           "awayTeam": "Garcon",
-          "homeScore": 0,
-          "awayScore": 0,
+          "homeScore":7,
+          "awayScore": 3,
           "date": "04/01/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "21:30",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 10,
@@ -392,7 +392,7 @@
           "awayScore": 0,
           "date": "11/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -403,7 +403,7 @@
           "awayScore": 0,
           "date": "11/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -414,7 +414,7 @@
           "awayScore": 0,
           "date": "11/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
