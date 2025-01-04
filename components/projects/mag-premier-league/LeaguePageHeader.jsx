@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function COMPONENT_LEAGUE_PAGE_HEADER() {
 	return (
-		<div className="max-lg:mt-4 md:border-none w-full pb-8 lg:pb-12">
+		<div className="max-lg:mt-16 md:border-none w-full pb-8 lg:pb-12">
 			<Link href="/projects/gaming/the-mag-premier-league" className="flex flex-col items-center gap-2">
 				<IconMagPremierLeague 
 					classes="mx-auto size-24 md:size-32 lg:size-48"
