@@ -226,13 +226,13 @@
             "playerName": "Jamie Vardy",
             "playerSlug": "jamie-vardy",
             "playerClubs": ["Leicester City (142)"],
-            "playerApps": 324,
+            "playerApps": 325,
             "playerGoals": 142,
             "playerLastGoalFor": "Leicester City",
             "playerLastGoalOpponent": "Brighton & Hove Albion",
             "playerLastGoalDate": "2024-12-08",
             "playerCurrent": true,
-            "updated": "2024-12-29"
+            "updated": "2025-01-05"
         },
         {
             "playerId": 15,
@@ -317,15 +317,15 @@
             "playerSlug": "mohamed-salah",
             "playerClubs": [
                 "Chelsea (2)",
-                "Liverpool (172)"
+                "Liverpool (173)"
             ],
-            "playerApps": 281,
-            "playerGoals": 174,
+            "playerApps": 282,
+            "playerGoals": 175,
             "playerLastGoalFor": "Liverpool",
-            "playerLastGoalOpponent": "West Ham United",
-            "playerLastGoalDate": "2024-12-29",
+            "playerLastGoalOpponent": "Manchester United",
+            "playerLastGoalDate": "2025-01-05",
             "playerCurrent": true,
-            "updated": "2024-12-29"
+            "updated": "2025-01-05"
         },
         {
             "playerId": 20,
@@ -568,13 +568,13 @@
             "playerClubs": [
                 "Tottenham Hotspur (125)"
             ],
-            "playerApps": 319,
+            "playerApps": 320,
             "playerGoals": 125,
             "playerLastGoalFor": "Tottenham Hotspur",
             "playerLastGoalOpponent": "Southampton",
             "playerLastGoalDate": "2024-12-15",
             "playerCurrent": true,
-            "updated": "2024-12-29"
+            "updated": "2025-01-05"
         }
     ],
     "Clubs":[
