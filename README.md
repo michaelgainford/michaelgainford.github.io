@@ -55,19 +55,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Sitemap
 
 + **[HOME](https://michaelgainford.dev/)**: Landing page with a brief description of the site and a list of resources/projects.
-+ **[DEV RESOURCES]((https://michaelgainford.dev/web-development/dev-resources))**: A list of resources for web developers.
-+ **[GENERAL](https://michaelgainford.dev/projects/general)**: A project that displays general information.
-  + **[ABOUT](https://michaelgainford.dev/about)**: A page about me and the site.
-  + **[STYLE GUIDE](https://michaelgainford.dev/style-guide)**: A page that contains a style guide for the site.
-
++ **[DEV RESOURCES](https://michaelgainford.dev/web-development/dev-resources)**: A list of resources for web developers.
++ **[GENERAL](https://michaelgainford.dev/general)**: A project that displays general information.
+  + **[ABOUT](https://michaelgainford.dev/general/about)**: A page about me and the site.
+  + **[STYLE GUIDE](https://michaelgainford.dev/general/site-style-guide)**: A page that contains a style guide for the site.
 + **[PROJECTS]((https://michaelgainford.dev/projects))**: A list of projects that I have worked on.
   - **[EURO 2024]((https://michaelgainford.dev/projects/football/competitions/euro-2024))**: A project that I worked on for the Euro 2024 tournament. This never actually got finished in time for the tournament, but it was a good learning experience and I will be using it as a reference for the 2026 World Cup.
   - **[EVERTON](https://michaelgainford.dev/projects/football/everton)**: A project dedicated to Everton Football Club.
-  - **[FORTNITE](https://michaelgainford.dev/projects/fortnite)**: A project dedicated to the popular video game Fortnite.
-  - **[GEOGRAPHY](https://michaelgainford.dev/projects/geography)**: A project that displays information about countries.
+  - **[FORTNITE](https://michaelgainford.dev/projects/gaming/fortnite)**: A project dedicated to the popular video game Fortnite.
+  - **[GEOGRAPHY](https://michaelgainford.dev/projects/the-world)**: A project that displays information about countries.
   - **[JOKES](https://michaelgainford.dev/projects/jokes)**: A project that displays random jokes.
-  - **[MOVIES](https://michaelgainford.dev/projects/movies)**: A project that displays information about movies either watched or to watch.
-  - **[PREMIER LEAGUE](https://michaelgainford.dev/projects/football/premier-league)**: A project that I worked on for the Premier League detailing season-by-season data, which contains a central hub with separate categories of stats and information. such as all clubs, past seasons and records.
+  - **[MOVIES](https://michaelgainford.dev/projects/movies-database)**: A project that displays information about movies either watched or to watch.
+  - **[PREMIER LEAGUE](https://michaelgainford.dev/projects/football/competitions/english-premier-league)**: A project that I worked on for the Premier League detailing season-by-season data, which contains a central hub with separate categories of stats and information. such as all clubs, past seasons and records.
   - **[QUOTES](https://michaelgainford.dev/projects/quotes)**: A project displaying a selection of random quotes.
   - **[SPACE](https://michaelgainford.dev/projects/space)**: A project that displays information about space.
-  - **[THE MAG PREMIER LEAGUE](https://michaelgainford.dev/projects/football/the-mag-premier-league)**: A project that displays information about the MAG Premier League. An online eFootball league.
+  - **[THE MAG PREMIER LEAGUE](https://michaelgainford.dev/projects/gaming/the-mag-premier-league)**: A project that displays information about the MAG Premier League. An online eFootball league.
