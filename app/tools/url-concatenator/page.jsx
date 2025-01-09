@@ -27,7 +27,7 @@ export default function TOOL_URL_CONCATENATOR() {
 				  classes_other=""
 				/>
 
-				<div className="flex w-full justify-center text-center motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-50">
+				<div className="flex w-full justify-center text-center">
 					<div className="w-full rounded-lg url-maker [&_label]:uppercase [&_label]:text-amber-500/70 [&_label]:text-xxs [&_label]:tracking-wider [&_label]:font-medium [&_label]:text-left">
 						<URLConcatenator />
 					</div>

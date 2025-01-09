@@ -18,7 +18,7 @@ const unwatchedMoviesLength = unwatchedMovies.length;
 const pageStyles = "bg-gray-950 text-slate-300";
 const watchedMoviesScrollStyles = "max-xl:flex max-xl:flex-no-wrap max-xl:justify-start max-xl:overflow-x-scroll max-xl:snap-x max-xl:snap-mandatory";
 const watchedMoviesGridStyles = "xl:grid xl:gap-8 xl:grid-cols-4 xl:gap-8 xl:gap-12 xl:grid-cols-6 2xl:grid-cols-5 3xl:grid-cols-8 4xl:grid-cols-10 5xl:grid-cols-12";
-const watchedMoviesSharedStyles = "w-full gap-4 no-scrollbar motion motion-preset-slide-up motion-delay-[600ms]";
+const watchedMoviesSharedStyles = "w-full gap-4 no-scrollbar";
 const watchedMoviesCombinedStyles = `${watchedMoviesSharedStyles} ${watchedMoviesScrollStyles} ${watchedMoviesGridStyles}`;
 
 const pageIntroText = `This is the list of movies watched by the PP Movie Club. In total, we have watched ${watchedMoviesLength} movies and currently, there are ${unwatchedMoviesLength} movies on the watchlist.`;
@@ -29,7 +29,7 @@ export default function PAGE_MOVIES_DATABASE() {
 			<Header />
 			<main className={`${mainStyles}`}>
 				<div className="flex items-center gap-2 my-8 title-icon">
-					<IconMovies classes="size-5 fill-slate-200 lg:size-8  motion motion-preset-slide-up motion-delay-300"  />
+					<IconMovies classes="size-5 fill-slate-200 lg:size-8" />
 					<H1 text={`Movies Database`} font_sizes={`pt-0!`} other_classes={`mb-0! pb-0!`}/>
 				</div>
 				<PageIntro 
@@ -37,7 +37,7 @@ export default function PAGE_MOVIES_DATABASE() {
 				  text_colour="text-current" 
 				  other_classes="text-xs text-balance text-center leading-5 font-light md:text-sm md:mb-20 xl:pb-12"
 				/>
-				<div className="flex w-full gap-4 mb-8 text-xs lg:text-sm tracking-wide motion motion-preset-slide-up motion-delay-[1000ms] motion-duration-500 uppercase divide-x divide-gray-800 movies-mini-nav max-sm:justify-center max-sm:mt-8 [&>a]:transition-all [&>a]:duration-300 [&>a]:scroll-smooth xl:mb-16">
+				<div className="flex w-full gap-4 mb-8 text-xs lg:text-sm tracking-wide uppercase divide-x divide-gray-800 movies-mini-nav max-sm:justify-center max-sm:mt-8 [&>a]:transition-all [&>a]:duration-300 [&>a]:scroll-smooth xl:mb-16">
 					<a className="hover:underline" href="#watched-movies">🎥 Watched</a>
 					<a className="pl-3 hover:underline" href="#to-watch">⏰ To Watch</a>
 				</div>
@@ -57,7 +57,7 @@ export default function PAGE_MOVIES_DATABASE() {
 				</div>
 
 				{/* To Watch Movies */}
-				<div className="w-full py-4 my-8 border-2 rounded-lg xl:py-8 border-slate-950 xl:my-16 motion motion-preset-slide-up motion-delay-700">
+				<div className="w-full py-4 my-8 border-2 rounded-lg xl:py-8 border-slate-950 xl:my-16">
 					<h2 className="mb-4 text-sm lg:text-lg" id="to-watch">To Watch</h2>
 					<div className="min-h-[100px] movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
 						{unwatchedMovies.map((movie, id) => (

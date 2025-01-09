@@ -25,7 +25,7 @@ export default function PAGE_THE_WORLD() {
 						<PageIntro text={pageIntroText} text_colour="text-sky-900" />
 						
 						{/* Countries */}
-						<div className={`grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8 items-start motion motion-preset-slide-up motion-delay-700`}>
+						<div className="grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8 items-start">
 							{Countries.map((country, index) => (
 								<details
 									key={index}
