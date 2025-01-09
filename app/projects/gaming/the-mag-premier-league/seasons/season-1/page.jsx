@@ -192,7 +192,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 			</div>
 
 			{/* Fixtures */}
-			<div className={`w-full! px-4 lg:px-8  motion motion-preset-slide-up motion-delay-[600ms] pt-4 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
+			<div className={`w-full! px-4 lg:px-8 pt-4 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
 				<h3 className={`mb-6 text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>Fixtures</h3>
 				<div className={`grid grid-cols-1 gap-6`}>
 
@@ -219,7 +219,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 				</div>
 			</div>
 			
-			<div className="w-full max-w-[920px] mx-auto lg:pt-16 motion motion-preset-slide-up motion-delay-[900ms]">
+			<div className="w-full max-w-[920px] mx-auto lg:pt-16">
 			{/* Rules | Start */}
 			<details className={`flex flex-col pb-4 mt-12 w-auto! no-scrollbar ${detailsStyles} ${detailsContentStyles} `}>
 				<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-[1000px] ${summaryStyles}`}>

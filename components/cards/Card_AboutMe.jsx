@@ -11,7 +11,7 @@ export default function COMPONENT_CARD_ABOUT_ME() {
             <p className="text-center lg:text-left max-lg:px-4 text-sm/5 lg:text-lg/8">
                 My name is Michael. I am Front-End Developer with over 15 years experience in a wide range of frontend technologies. I am passionate about creating beautiful and functional websites that are easy to use and accessible to all users. I regularly keep up to date with the latest web technologies and best practices to ensure that I am always delivering the best possible solutions to my clients. I am always looking for new opportunities to work on exciting projects and expand my skillset.
             </p>
-            <div className="flex flex-col [&>a]:max-md:w-full md:flex-row max-lg:px-4 justify-start mt-8 lg:mt-12 motion motion-preset-slide-up motion-delay-[1200ms] gap-4">
+            <div className="flex flex-col [&>a]:max-md:w-full md:flex-row max-lg:px-4 justify-start mt-8 lg:mt-12 gap-4">
                 <Button 
                     href="#socials"
                     label="Connect"

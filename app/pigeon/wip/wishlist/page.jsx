@@ -34,7 +34,7 @@ export default function PAGE_PROJECTS() {
 				  classes_other={``}
 				/>
 
-				<div className="grid flex-wrap w-full grid-cols-1 gap-8 sm:grid-cols-2 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 3xl:grid-cols-5 2xl:gap-16 motion *:border *:border-slate-200/5 *:flex *:items-center *:justify-center">
+				<div className="grid flex-wrap w-full grid-cols-1 gap-8 sm:grid-cols-2 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 3xl:grid-cols-5 2xl:gap-16 *:border *:border-slate-200/5 *:flex *:items-center *:justify-center">
                     <div className="flex flex-col gap-4 p-4 item">
                         <span>External Hard Drive</span>
                         <div className="product-image">
