@@ -25,6 +25,7 @@ import {
 } from '@/variables/Icons';
 
 import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
+import epl100ScorerDataJSON from '@/data/data_for__englishpremierleague.json';
 
 
 {/********************************
@@ -81,6 +82,11 @@ const premierLeagueHubUrl = "/projects/football/competitions/english-premier-lea
 const premierLeagueMainUrl = "/projects/football/competitions/english-premier-league/";
 const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
 const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
+const epl100ScorerData = epl100ScorerDataJSON.Top_Scorers;
+
+{/* Number of players in the 100 Club */}
+const numberOfPlayersWithAtLeast100Goals = epl100ScorerData.length;
+
 
 {/********************************
   THE MAG PREMIER LEAGUE
@@ -678,6 +684,7 @@ export {
 	premierLeagueHubUrl,
 	premierLeagueLogoSvgPath,
 	premierLeagueHubBlockImageRoot,
+  numberOfPlayersWithAtLeast100Goals,
 	leagueTableStructure,
 	magPLCurrentSeason,
 	magEPLUpcomingMatches,

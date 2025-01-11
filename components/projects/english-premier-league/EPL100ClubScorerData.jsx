@@ -18,7 +18,7 @@ const calculateDaysAgo = (date) => {
 
 export default function COMPONENT_100_CLUB_SCORER_DATA() {
     return (
-            <div className="grid w-full grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid w-full grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {Object.values(sortedByGoals).map((TopScorer, index) => {
                 //let clubsDir = "/clubs/";
                 let playerImageDir = "/football/premier-league/players/";
@@ -28,7 +28,7 @@ export default function COMPONENT_100_CLUB_SCORER_DATA() {
                     <div className="relative flex flex-col gap-4 px-4 py-8 border rounded-lg lg:py-12 hover:bg-epl hover:text-slate-200 transition-all duration-500 group" key={TopScorer.playerId}>
                         <h3 className="font-bold uppercase">{TopScorer.playerName}</h3>
                         <Image
-                            className="w-full my-4 border-8 border-slate-100 group-hover:border-slate-800"
+                            className="w-full my-4 border-8 border-slate-100 group-hover:border-slate-800 transition-all duration-500"
                             src={playerImage}
                             alt={TopScorer.playerName}
                             width={300}
@@ -42,17 +42,17 @@ export default function COMPONENT_100_CLUB_SCORER_DATA() {
                             <Link
                                 className="py-1 text-xs border px-1 rounded-lg border-slate-200"
                                 key={index}
-                                href="/projects/football/competitions/english-premier-league/the-100-club"
+                                href="/projects/football/competitions/english-premier-league/all-clubs"
                             >
                                 {playerClub}
                             </Link>
                             );
                         })}
                         </p>
-                        <div className="absolute flex items-center justify-center p-1 text-xs leading-none border rounded-lg size-6 top-1 left-1 aspect-square order">
+                        <div className="absolute flex items-center justify-center p-1 text-xs leading-none border rounded-tl-md rounded-br-lg size-6 top-1 left-1 aspect-square order">
                             {index + 1}
                         </div>
-                        <div className={`absolute top-1 right-1 p-1 text-xs player-status rounded-lg lowercase ${TopScorer.playerCurrent ? "bg-emerald-300" : "bg-rose-100"}`}>
+                        <div className={`absolute top-1 right-1 p-1 text-xs player-status rounded-tr-lg rounded-bl-lg lowercase ${TopScorer.playerCurrent ? "bg-emerald-300" : "bg-rose-100"} group-hover:text-epl`}>
                             {TopScorer.playerCurrent ? "Active" : "Retired"}
                         </div>
                         <div className={`absolute bottom-1 left-[4%] text-[10px] mx-auto w-[92%]`}>
