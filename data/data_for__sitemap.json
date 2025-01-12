@@ -47,6 +47,20 @@
             "lastUpdated": "2024-12-22"
         },
         {
+            "name": "Site Maintenance",
+            "label": "Site Maintenance",
+            "href": "/pigeon",
+            "category": "general",
+            "border_colour": "border-slate-700",
+            "background_colour": "bg-slate-950",
+            "before": "before:bg-amber-500",
+            "hover": "hover:bg-slate-950",
+            "mainNav": false,
+            "footerNav_1": false,
+            "footerNav_2": false,
+            "lastUpdated": "2025-01-12"
+        },
+        {
             "name": "Site Maintenance Tracker",
             "label": "Site Maintenance Tracker",
             "href": "/pigeon/site-maintenance-tracker",
@@ -176,7 +190,7 @@
             "hover": "hover:bg-magpl",
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2025-01-04"
+            "lastUpdated": "2025-01-11"
         },
         {
             "name": "The MAP EPL - Season 1",
@@ -188,7 +202,7 @@
             "name": "The MAP EPL - Season 2",
             "label": "The MAP EPL - Season 2",
             "href": "/projects/gaming/the-mag-premier-league/seasons/season-2",
-            "lastUpdated": "2025-01-04"
+            "lastUpdated": "2025-01-11"
         },
         {
             "name": "Jokes",
