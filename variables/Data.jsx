@@ -26,7 +26,7 @@ import {
 
 import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
 import epl100ScorerDataJSON from '@/data/data_for__englishpremierleague.json';
-
+import DataForMoviesListImport from "@/data/data_for__movies.json";
 
 {/********************************
   SITE
@@ -599,6 +599,15 @@ const dataForAllProjects = [
 const featuredProjects = dataForAllProjects.filter(project => project.featuredProject === true);
 
 {/********************************
+  MOVIES
+*********************************/}
+const DataForMoviesList = DataForMoviesListImport.Movies;
+DataForMoviesList.sort((a, b) => a.title.localeCompare(b.title));
+const watchedMovies = DataForMoviesList.filter((movie) => movie.watched === true);
+const watchedMoviesLength = watchedMovies.length;
+const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === false);
+const unwatchedMoviesLength = unwatchedMovies.length;
+{/********************************
   SOCIALS
 *********************************/}
 const socials = [
@@ -693,6 +702,10 @@ export {
 	featuredResourcesSortedByName,
 	dataForAllProjects,
 	featuredProjects,
+  watchedMovies,
+  watchedMoviesLength,
+  unwatchedMovies,
+  unwatchedMoviesLength,
 	socials,
 	mySites,
 	wipItems
