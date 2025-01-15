@@ -87,7 +87,7 @@
             "mainNav": true,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-08"
+            "lastUpdated": "2025-01-15"
         },
         {
             "name": "English Premier League",
@@ -231,7 +231,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2024-12-14"
+            "lastUpdated": "2025-01-14"
         },
         {
             "name": "Quotes",
@@ -304,7 +304,7 @@
             "mainNav": true,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2024-12-15"
+            "lastUpdated": "2025-01-15"
         }
     ]
 }
