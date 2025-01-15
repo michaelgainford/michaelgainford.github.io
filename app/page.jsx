@@ -4,7 +4,6 @@ import {
 	globalPageStyles, 
 	globalWrapperFixedWidth 
 } from "@/variables/Styles";
-
 import Header from "@/components/header/Header";
 import HomeResources from "@/components/page_home/Home_Resources";
 import HomeProjects from "@/components/page_home/Home_Projects";
