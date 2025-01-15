@@ -9,8 +9,6 @@ import PigeonNav from "@/components/site_elements/PigeonNav";
 import PigeonWip from "@/components/site_elements/PigeonWip";
 import Footer from "@/components/footer/Footer";
 
-
-
 export default function PAGE_PIGEON() {
 	return (
 		<div className={`${brandPageBackground} ${brandTextColour} ${globalPageStyles}`}>

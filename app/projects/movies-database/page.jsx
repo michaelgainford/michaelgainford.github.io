@@ -24,9 +24,9 @@ export default function PAGE_MOVIES_DATABASE() {
 				  text_colour="text-current" 
 				  other_classes="text-xs text-balance text-center leading-5 font-light md:text-sm md:mb-20 xl:pb-12"
 				/>
-				<div className="flex w-full gap-4 mb-8 text-xs lg:text-sm tracking-wide uppercase divide-x divide-gray-800 movies-mini-nav max-sm:justify-center max-sm:mt-8 [&>a]:transition-all [&>a]:duration-300 [&>a]:scroll-smooth xl:mb-16">
-					<a className="hover:underline" href="#watched-movies">🎥 Watched</a>
-					<a className="pl-3 hover:underline" href="#to-watch">⏰ To Watch</a>
+				<div className="flex w-full gap-3 mb-8 text-xs lg:text-base tracking-wide uppercase divide-x divide-gray-800 movies-mini-nav max-sm:justify-center max-sm:mt-8 [&>a]:transition-all [&>a]:duration-300 [&>a]:scroll-smooth [&>a]:hover:underline xl:mb-16">
+					<a className="pr-3" href="#watched-movies">🎥 Watched</a>
+					<a href="#to-watch">⏰ To Watch</a>
 				</div>
 				<MoviesWatched />
 				<MoviesToWatch />

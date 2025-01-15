@@ -1,13 +1,16 @@
 import Header from "@/components/header/Header";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import H1 from "@/components/typography/H1Span";
-import AllResources from "@/components/projects/AllProjects";
+import DevResourcesGrid from "@/components/dev_resources/DevResourcesGrid";
 import Footer from "@/components/footer/Footer";
-import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
+import { 
+    globalPageStyles, 
+    globalWrapperFixedWidth 
+} from "@/variables/Styles";
 
 export const metadata = {
 	title: "Dev Resources",
-	description: "A collection of some of my favourite web development resources that I use in my standard workflow. This is a links to a series of tools and resources."
+	description: "A collection of some of my favourite web development resources that I use in my standard workflow, for experimenting with new technologies and tools I would like to highlight and share with my fellow Developers.",
 };
 
 const customStyles = "bg-graph-paper-background bg-teal-900/90 text-slate-300";
@@ -26,7 +29,7 @@ export default function PAGE_DEV_RESOURCES() {
 					font_sizes="text-xs/5 md:text-sm/6 lg:text-base/7`"
 					other_classes="max-w-[800px]! text-balance! text-center! !md:-mt-4 !xl:text-base/6" 
                 />
-				<AllResources />
+				<DevResourcesGrid />
             </main>
         <Footer />
     </div>
