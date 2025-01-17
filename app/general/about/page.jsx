@@ -23,9 +23,7 @@ export const metadata = {
 export default function PAGE_ABOUT() {
 	return (
 		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
-
 			<Header />
-
 			<main className={`${globalWrapperFixedWidth}`}>
 				<div className="flex w-full justify-center text-center max-w-[1800px]">
 					<div className="grid grid-cols-12 gap-8 xl:gap-y-24 3xl:gap-24 max-lg:mt-8">
@@ -44,7 +42,6 @@ export default function PAGE_ABOUT() {
 					</div>
 				</div>
 			</main>
-
 			<Footer />
 			
 		</div>

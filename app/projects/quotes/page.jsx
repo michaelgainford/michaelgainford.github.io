@@ -12,8 +12,8 @@ export default function PAGE_QUOTES() {
 		<div className={`${globalPageStyles} ${pageStyles}`}>
 			<Header />
 			<main className={`${mainStyles} !w-full bg-sky-100 max-w-none`}>
-			<H1 text="Quotes" other_classes="text-sky-900 mt-12" />
-			<AllQuotes />
+				<H1 text="Quotes" other_classes="text-sky-900 mt-12" />
+				<AllQuotes />
 			</main>
 			<Footer />
 		</div>

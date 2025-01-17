@@ -91,7 +91,7 @@
         },
         {
             "name": "English Premier League",
-            "label": "English Premier League",
+            "label": "Premier League",
             "href": "/projects/football/competitions/english-premier-league",
             "category": "premier_league",
             "border_colour": "border-epl-300/80",
@@ -180,7 +180,7 @@
         },
         {
             "name": "The MAG Premier League",
-            "label": "The MAG Premier League",
+            "label": "The MAG PL",
             "href": "/projects/gaming/the-mag-premier-league",
             "mainNav": false,
             "category": "gaming",
