@@ -64,7 +64,6 @@ export default function PAGE_THE_WORLD() {
 								</details>
 							))}
 						</div>
-						
 					</div>
 				</div>
 			</main>

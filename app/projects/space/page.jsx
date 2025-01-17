@@ -67,7 +67,6 @@ export default function PAGE_SPACE() {
 							</div>
 						))}
 						</div>
-						
 					</div>
 					<div className={`w-full max-lg:mt-16 solar-system`}>
 						<h3 className={`mt-8 text-base mb-4 lg:text-2xl text-center`}>The Solar System</h3>

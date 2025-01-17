@@ -1,5 +1,4 @@
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
+import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1Span";
 import Page_Intro from "@/components/site_elements/Page_Intro";
@@ -11,10 +10,8 @@ Jokes.sort(() => Math.random() - 0.5);
 export default function PAGE_JOKES() {
 	return (
 		<div className={`${globalPageStyles} bg-rose-950 bg-brick-wall-background text-white`}>
-			
 			<Header />
-
-			<main className={`${mainStyles}`}>
+			<main className={`${globalWrapperFixedWidth}`}>
 				<H1 text="Jokes" />
 				<Page_Intro 
 					text="A collection of one-liner jokes. I bet (at least) one will make you laugh."
@@ -29,7 +26,6 @@ export default function PAGE_JOKES() {
 					))}
 				</div>
 			</main>
-
 			<Footer />
 		</div>
 	)
