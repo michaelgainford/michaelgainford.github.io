@@ -1,6 +1,6 @@
 ## About Me
 
-  Hi! 👋🏻 My name is Michael. I am a front-end developer with a passion for creating beautiful and functional websites and generally just writing code. I have experience with HTML, CSS, JavaScript, React, and Next.js (as well as other languages). I am always looking to learn new things and improve my skills and am combining passions of mine with latest coding technologies to create something special. So, grab a ☕, get comfortable in your 🪑 and let's go! 🚀
+  Hi! 👋🏻 My name is Michael. I am a Frontend Developer with a passion for creating beautiful and functional websites and generally just writing code. I have experience with HTML, CSS, JavaScript, React, and Next.js (as well as other languages). I am always looking to learn new things and improve my skills and am combining passions of mine with latest coding technologies to create something special. So, grab a ☕, get comfortable in your 🪑 and let's go! 🚀
 
 ## Overview
 
