@@ -1,20 +1,20 @@
-import { globalPageStyles, mainStyles } from "@/data/Variables";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/_Header";
 import H1 from "@/components/typography/H1Span";
-import PageIntro from "@/components/site_elements/Page_Intro";
 import IconMovies from "@/components/icons/IconMovies";
+import PageIntro from "@/components/site_elements/Page_Intro";
+import Footer from "@/components/footer/_Footer";
 import MoviesWatched from "@/components/projects/movies-database/MoviesWatched";
 import MoviesToWatch from "@/components/projects/movies-database/MoviesToWatch";
 import { watchedMoviesLength, unwatchedMoviesLength } from "@/variables/Data";
+import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 const pageStyles = "bg-gray-950 text-slate-300";
 const pageIntroText = `This is the list of movies watched by the PP Movie Club. In total, we have watched ${watchedMoviesLength} movies and currently, there are ${unwatchedMoviesLength} movies on the watchlist.`;
 
-export default function PAGE_MOVIES_DATABASE() {
+export default function Page_MoviesDatabase() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
 			<Header />
-			<main className={`${mainStyles}`}>
+			<main className={globalWrapperFixedWidth}>
 				<div className="flex items-center gap-2 my-8 title-icon">
 					<IconMovies classes="size-5 fill-slate-200 lg:size-8" />
 					<H1 text={`Movies Database`} font_sizes={`pt-0!`} other_classes={`mb-0! pb-0!`}/>

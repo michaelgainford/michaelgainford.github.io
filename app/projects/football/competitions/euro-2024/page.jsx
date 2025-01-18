@@ -25,9 +25,9 @@ Euro2024Teams.sort((a, b) => {
 const groups = [...new Set(Euro2024Teams.map((team) => team.group))];
 groups.sort();
 
-export default function PAGE_EURO_2024() {
+export default function Page_Euro2024() {
   return (
-    <div className={`bg-dots-background bg-blue-800 ${globalPageStyles}`}>
+    <div className={`${globalPageStyles} bg-dots-background bg-blue-800 text-slate-200`}>
 		<Header />
 		<main className={`${globalMainElementStyles}`}>
 			<H1 text={`Euro 2024`} />

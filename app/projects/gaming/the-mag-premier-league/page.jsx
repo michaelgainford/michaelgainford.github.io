@@ -9,7 +9,7 @@ import {
 	magPLPageBg 
 } from "@/variables/Styles";
 
-import Header from "@/components/header/Header";
+import Header from "@/components/header/_Header";
 import LeaguePageHeader from "@/components/projects/mag-premier-league/LeaguePageHeader";
 import CardForCurrentSeason from "@/components/projects/mag-premier-league/CardForCurrentSeason";
 import CardForCurrentTeams from "@/components/projects/mag-premier-league/CardForCurrentTeams";
@@ -17,7 +17,7 @@ import CardForUpcomingFixtures from "@/components/projects/mag-premier-league/Ca
 import CardForLeagueRules from "@/components/projects/mag-premier-league/CardForLeagueRules";
 import CardForPastWinners from "@/components/projects/mag-premier-league/CardForPastWinners";
 import CardForPastSeasons from "@/components/projects/mag-premier-league/CardForPastSeasons";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/_Footer";
 
 export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
   return (

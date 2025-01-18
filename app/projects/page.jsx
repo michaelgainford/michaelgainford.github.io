@@ -1,8 +1,8 @@
-import Header from "@/components/header/Header";
+import Header from "@/components/header/_Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import ProjectsGrid from "@/components/projects/ProjectsGrid";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/_Footer";
 import {
 	brandPageBackground,
 	brandTextColour,
@@ -17,7 +17,7 @@ export const metadata = {
 	description: `A collection of different projects I have worked on covering a varying of interests and topics.`,
 };
 
-export default function PAGE_PROJECTS() {
+export default function Page_Projects() {
 	return (
 		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
 			<Header />

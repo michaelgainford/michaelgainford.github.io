@@ -1,8 +1,8 @@
-import Header from "@/components/header/Header";
-import PageIntro from "@/components/site_elements/Page_Intro";
+import Header from "@/components/header/_Header";
 import H1 from "@/components/typography/H1Span";
+import PageIntro from "@/components/site_elements/Page_Intro";
 import DevResourcesGrid from "@/components/dev_resources/DevResourcesGrid";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/_Footer";
 import { 
     globalPageStyles, 
     globalWrapperFixedWidth 
@@ -14,10 +14,9 @@ export const metadata = {
 };
 
 const customStyles = "bg-graph-paper-background bg-teal-900/90 text-slate-300";
-
 const pageIntroText = "This is a collection of some of my favourite web development resources that I use either in my standard workflow, or for experimenting with new technologies. The list is not exhaustive, but it is a good starting point for anyone looking to expand their toolkit.";
 
-export default function PAGE_DEV_RESOURCES() {
+export default function Page_DevResources() {
     return (
         <div className={`${globalPageStyles} ${customStyles}`}>
             <Header />
