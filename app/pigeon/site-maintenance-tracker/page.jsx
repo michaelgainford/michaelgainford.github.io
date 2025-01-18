@@ -1,20 +1,24 @@
-import { globalPageStyles, brandPageBackground, globalWrapperFixedWidth, brandTextColour, brandHeadingStyles } from "@/variables/Styles";
-import Header from "@/components/header/Header";
+import { 
+	globalPageStyles, 
+	brandPageBackground, 
+	globalWrapperFixedWidth, 
+	brandTextColour, 
+	brandHeadingStyles 
+} from "@/variables/Styles";
+import Header from "@/components/header/_Header";
 import H1 from "@/components/typography/H1Span";
 import TableOfSitePages from "@/components/TableOfSitePages";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/_Footer";
 
 export const metadata = {
 	title: "Site Maintenance Tracker",
 	description: "A list of all the pages on this website, along with the last time they were updated."
 };
 
-export default function PAGE_SITE_MAINTENANCE_TRACKER() {
+export default function Page_SiteMaintenanceTracker() {
 	return (
 		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
-
 			<Header />
-
 			<main className={`${globalWrapperFixedWidth}`}>
 				<div className={`flex flex-col w-full justify-center text-center max-w-[1800px]`}>
 					<H1 
@@ -25,9 +29,7 @@ export default function PAGE_SITE_MAINTENANCE_TRACKER() {
 					<TableOfSitePages />
 				</div>
 			</main>
-
 			<Footer />
-
 		</div>
 	);
 }

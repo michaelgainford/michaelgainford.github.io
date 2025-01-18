@@ -6,21 +6,21 @@ import {
 	brandSharedHeadingStyles 
 } from "@/variables/Styles";
 
-import Header from "@/components/header/Header";
+import Header from "@/components/header/_Header";
 import Card_AboutMe from "@/components/cards/Card_AboutMe";
 import Card_Tools from "@/components/cards/Card_Tools";
 import Card_MySites from "@/components/cards/Card_MySites";
 import Card_IconsSkills from "@/components/icons/Icons_Skills";
 import Card_IconsSocials from "@/components/icons/Icons_Socials";
 import Card_RandomJoke from "@/components/cards/Card_RandomJoke";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/_Footer";
 
 export const metadata = {
 	title: "About",
 	description: "Michael is a Front-End Developer with over 15 years experience in a wide range of frontend technologies. He is passionate about creating beautiful and functional websites that are easy to use and accessible to all users. He regularly keeps up to date with the latest web technologies and best practices to ensure that he is always delivering the best possible solutions to his clients. He is always looking for new opportunities to work on exciting projects and expand his skillset."
 };
 
-export default function PAGE_ABOUT() {
+export default function Page_About() {
 	return (
 		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
 			<Header />
@@ -43,7 +43,6 @@ export default function PAGE_ABOUT() {
 				</div>
 			</main>
 			<Footer />
-			
 		</div>
 	);
 }

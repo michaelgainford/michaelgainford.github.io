@@ -1,15 +1,6 @@
-{/* Next imports */}
 import Image from "next/image";
-{/* Local imports */}
-import Header from "@/components/header/Header";
-import H1 from "@/components/typography/H1Span";
-import Footer from "@/components/footer/Footer";
-{/* Data & Styles */}
-import { globalPageStyles, globalMainElementStyles } from "@/data/Variables";
-
-import Euro2024TeamDataJSON from "@/data/data_for__euro2024";
+import Euro2024TeamDataJSON from "@/data/data_for__euro2024.json";
 const Euro2024Teams = Euro2024TeamDataJSON.Euro2024Teams;
-
 // Sort by group and then group seeding
 Euro2024Teams.sort((a, b) => {
 	if (a.group > b.group) {
@@ -25,12 +16,9 @@ Euro2024Teams.sort((a, b) => {
 const groups = [...new Set(Euro2024Teams.map((team) => team.group))];
 groups.sort();
 
-export default function Page_Euro2024() {
-  return (
-    <div className={`${globalPageStyles} bg-dots-background bg-blue-800 text-slate-200`}>
-		<Header />
-		<main className={`${globalMainElementStyles}`}>
-			<H1 text={`Euro 2024`} />
+export default function Component_Euro2024 () {
+	return (
+		<>
 			<div className={`hidden grid-cols-3 gap-4 first-line:gap-4 countries-grid-container md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12 `}>
 				{Euro2024Teams.map((team, index) => (
 				<div key={index} className={`flex flex-col items-center w-full pb-4 duration-300 ease-in-out border border-blue-900 rounded-md cursor-pointer movie-card text-light_colour border-secondary group hover:bg-secondary`}>
@@ -56,8 +44,6 @@ export default function Page_Euro2024() {
 				</div>
 				))}
 			</div>
-		</main>
-		<Footer />
-    </div>
-  );
+		</>
+	)
 }

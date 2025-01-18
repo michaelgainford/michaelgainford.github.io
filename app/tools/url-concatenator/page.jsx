@@ -1,20 +1,19 @@
 "use client";
-import Header from "@/components/header/Header";
+import Header from "@/components/header/_Header";
 import H1 from "@/components/typography/H1Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import URLConcatenator from "@/components/my_tools/URLConcatenator";
-import Footer from "@/components/footer/Footer";
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles } from "@/data/Variables";
+import Footer from "@/components/footer/_Footer";
+import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 
 const pageStyles = "bg-slate-900 text-slate-400 bg-brand-background bg-repeat";
 const pageIntroText = "A simple tool to take a starting string, a concatenation character, and an ending string to create a URL.";
 
-export default function TOOL_URL_CONCATENATOR() {
+export default function Page_UrlConcatenator() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
 			<Header />
-			<main className={`${mainStyles}`}>
+			<main className={globalWrapperFixedWidth}>
 				<H1 text={`URL Concatenator`} />
 				<PageIntro 
 				  text={pageIntroText}
@@ -26,7 +25,6 @@ export default function TOOL_URL_CONCATENATOR() {
 				  classes_margin="!md:-mt-4 mb-12"
 				  classes_other=""
 				/>
-
 				<div className="flex w-full justify-center text-center">
 					<div className="w-full rounded-lg url-maker [&_label]:uppercase [&_label]:text-amber-500/70 [&_label]:text-xxs [&_label]:tracking-wider [&_label]:font-medium [&_label]:text-left">
 						<URLConcatenator />
