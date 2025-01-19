@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Countries } from "@/data/data_for__countries.json";
+import Countries from "@/data/data_for__countries.json";
 const detailsStyles = "border-2 border-sky-900/80 rounded-lg py-0 bg-[#00C9FF] group overflow-x-auto! open:pb-4 open:[&_svg]:-rotate-180 open:[&>summary]:border-b-2 open:[&>summary]:border-sky-900/80 w-full xl:mx-auto";
 const summaryStyles = "flex justify-between p-4 gap-4 cursor-pointer";
 const summaryHeaderStyles = "text-sm lg:text-[14.8px] uppercase truncate overflow-hidden ";

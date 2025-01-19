@@ -16,7 +16,7 @@
             "navigationMain": true,
             "navigationFooterFirstList": true,
             "navigationFooterSecondList": false,
-            "lastUpdated": "2024-12-22"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "About",
@@ -30,7 +30,7 @@
             "mainNav": false,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2024-12-22"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Site Style Guide",
@@ -44,7 +44,7 @@
             "mainNav": false,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2024-12-22"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Site Maintenance",
@@ -58,7 +58,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-12"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Site Maintenance Tracker",
@@ -72,7 +72,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-08"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "All Projects",
@@ -87,7 +87,7 @@
             "mainNav": true,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-15"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "English Premier League",
@@ -162,7 +162,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": false,
-            "lastUpdated": "2024-12-15"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Fortnite",
@@ -176,7 +176,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2024-12-13"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "The MAG Premier League",
@@ -190,7 +190,7 @@
             "hover": "hover:bg-magpl",
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2025-01-11"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "The MAP EPL - Season 1",
@@ -202,7 +202,7 @@
             "name": "The MAP EPL - Season 2",
             "label": "The MAP EPL - Season 2",
             "href": "/projects/gaming/the-mag-premier-league/seasons/season-2",
-            "lastUpdated": "2025-01-11"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Jokes",
@@ -216,7 +216,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2024-12-15"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Movies Database",
@@ -231,7 +231,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2025-01-14"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Quotes",
@@ -246,7 +246,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2024-12-10"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Space",
@@ -260,7 +260,7 @@
             "hover": "hover:bg-black",
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2024-12-14"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "The World",
@@ -274,7 +274,7 @@
             "hover": "hover:bg-geography",
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2024-12-09"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "URL Concatenator",
@@ -289,7 +289,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": false,
-            "lastUpdated": "2024-12-14"
+            "lastUpdated": "2025-01-19"
         },
         {
             "name": "Dev Resources",
@@ -304,7 +304,7 @@
             "mainNav": true,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-15"
+            "lastUpdated": "2025-01-19"
         }
     ]
 }
