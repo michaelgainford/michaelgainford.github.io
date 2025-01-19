@@ -1,9 +1,10 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/_Header";
 import LeaguePageHeader from "@/components/projects/mag-premier-league/LeaguePageHeader";
+import Footer from "@/components/footer/_Footer";
 import SeasonsData from "@/data/data_for__magpremierleague.json"
 const Seasons = SeasonsData.Seasons;
-import { globalPageStyles, mainStyles, leagueTableStructure } from "@/data/Variables";
+import { globalPageStyles } from "@/data/Variables";
+import { mainStyles, leagueTableStructure } from "@/data/Variables";
 const currentSeason = 1;
 
 // Get the current season's date from Seasons
@@ -77,50 +78,6 @@ leagueTable.sort((a, b) => {
 });
 
 
-/* Season.forEach(season => {
-	season.fixtures.forEach(fixture => {
-		// Get the home team
-		const homeTeam = leagueTable.find(team => team.team === fixture.homeTeam);
-		// Get the away team
-		const awayTeam = leagueTable.find(team => team.team === fixture.awayTeam);
-
-		// Update the played games
-		homeTeam.played++;
-		awayTeam.played++;
-
-		// Update the goals for and against
-		homeTeam.goalsFor += fixture.homeScore;
-		homeTeam.goalsAgainst += fixture.awayScore;
-		awayTeam.goalsFor += fixture.awayScore;
-		awayTeam.goalsAgainst += fixture.homeScore;
-
-		// Update the goal difference
-		homeTeam.goalDifference = homeTeam.goalsFor - homeTeam.goalsAgainst;
-		awayTeam.goalDifference = awayTeam.goalsFor - awayTeam.goalsAgainst;
-
-		// Update the points
-		if (fixture.homeScore > fixture.awayScore) {
-			homeTeam.won++;
-			awayTeam.lost++;
-			homeTeam.points += 3;
-		} else if (fixture.homeScore < fixture.awayScore) {
-			awayTeam.won++;
-			homeTeam.lost++;
-			awayTeam.points += 3;
-		} else {
-			homeTeam.drawn++;
-			awayTeam.drawn++;
-			homeTeam.points++;
-			awayTeam.points++;
-		}
-	});
-}); */
-
-////////////////////////////////////////
-// DATA | END
-////////////////////////////////////////
-
-
 ////////////////////////////////////////
 // STYLES
 ////////////////////////////////////////
@@ -148,9 +105,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
     <div className={`${globalPageStyles} ${magPageBg} text-slate-200`}>
       	<Header />
       	<main className={`${mainStyles} gap-12`}>
-			
 			<LeaguePageHeader />
-
 			{/* League Table */}
 			<div className="my-2 md:my-4 lg:my-8 pt-12 lg:pt-20 lg:pb-12">
 				<h2 className={`text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>League Table</h2>

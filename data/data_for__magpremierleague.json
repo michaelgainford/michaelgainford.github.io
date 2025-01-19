@@ -422,33 +422,33 @@
           "homeTeam": "Garcon",
           "awayTeam": "Michael",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 5,
           "date": "18/01/2025",
           "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 14,
-          "homeTeam": "Michael",
-          "awayTeam": "Alfie",
-          "homeScore": 0,
-          "awayScore": 0,
+          "homeTeam": "Alfie",
+          "awayTeam": "Garcon",
+          "homeScore": 4,
+          "awayScore": 4,
           "date": "18/01/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "20:30",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 15,
-          "homeTeam": "Alfie",
-          "awayTeam": "Garcon",
-          "homeScore": 0,
+          "homeTeam": "Michael",
+          "awayTeam": "Alfie",
+          "homeScore": 5,
           "awayScore": 0,
           "date": "18/01/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "21:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 16,
@@ -458,7 +458,7 @@
           "awayScore": 0,
           "date": "25/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -469,7 +469,7 @@
           "awayScore": 0,
           "date": "25/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -480,7 +480,7 @@
           "awayScore": 0,
           "date": "25/01/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
