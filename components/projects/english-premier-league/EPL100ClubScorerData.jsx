@@ -34,7 +34,7 @@ export default function COMPONENT_100_CLUB_SCORER_DATA() {
                             width={300}
                             height={150}
                         />
-                        <p className="font-bold">{TopScorer.playerGoals} goals</p>
+                        <p className="font-bold">{TopScorer.playerGoals} goals <span className="text-xs font-light">({TopScorer.playerApps} apps)</span></p>
                         <p className="flex flex-wrap justify-center gap-1 mb-4 gap-x-4">
                         {Object.values(TopScorer.playerClubs).map((playerClub, index) => {
                             //let clubPageLink = clubsDir;
