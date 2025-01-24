@@ -1,5 +1,5 @@
 import Header from "@/components/header/_Header";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import Footer from "@/components/footer/_Footer";
 import IconFortnite from "@/components/icons/IconFortniteName";
 import FortniteChapters from "@/components/projects/gaming/FortniteChapters";

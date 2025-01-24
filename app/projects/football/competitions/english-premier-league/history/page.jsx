@@ -6,7 +6,7 @@ import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 const ClubsData = PremierLeagueDataJSON.Clubs;
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 
 import { mainStyles } from "@/data/Variables";
 import { globalPageStyles } from "@/data/Variables";

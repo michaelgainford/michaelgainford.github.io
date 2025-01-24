@@ -1,7 +1,7 @@
 import Header from "@/components/header/Header";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Prem100ClubScorerGrid from "@/components/projects/english-premier-league/EPL100ClubScorerData";
 import { numberOfPlayersWithAtLeast100Goals } from "@/variables/Data";

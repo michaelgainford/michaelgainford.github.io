@@ -1,5 +1,5 @@
 import Header from "@/components/header/_Header";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import IconMovies from "@/components/icons/IconMovies";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";

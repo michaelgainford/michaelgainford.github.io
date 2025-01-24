@@ -1,5 +1,5 @@
 import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import Link from "next/link";
 
 export default function COMPONENT_LEAGUE_PAGE_HEADER() {
