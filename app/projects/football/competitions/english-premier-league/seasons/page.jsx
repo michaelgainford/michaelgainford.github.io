@@ -2,7 +2,7 @@ import Header from "@/components/header/Header";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import Footer from "@/components/footer/Footer";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import H2_EPL from "@/components/typography/H2_For_PremierLeague";
 import SeasonBySeasonData from "@/components/projects/english-premier-league/SeasonBySeasonDataTable";  
 import { globalMainElementStyles, globalPageStyles } from "@/data/Variables";

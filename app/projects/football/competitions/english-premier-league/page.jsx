@@ -2,7 +2,7 @@ import Image from "next/image";
 import Header from "@/components/header/_Header";
 import Button from "@/components/buttons/Button_Global";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";

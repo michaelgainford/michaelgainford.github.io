@@ -1,6 +1,6 @@
 "use client";
 import Header from "@/components/header/_Header";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import URLConcatenator from "@/components/my_tools/URLConcatenator";
 import Footer from "@/components/footer/_Footer";

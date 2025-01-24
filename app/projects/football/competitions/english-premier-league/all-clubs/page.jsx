@@ -10,7 +10,7 @@ export const metadata = {
     description: "All the clubs that have played in the English Premier League since its inception in 1992.",
 }
 
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 
 import { mainStyles } from "@/data/Variables";
 import { globalPageStyles } from "@/data/Variables";

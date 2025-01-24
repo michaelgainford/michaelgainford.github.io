@@ -2,7 +2,7 @@
 import Image from "next/image";
 {/* Local imports */}
 import Header from "@/components/header/Header";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import Footer from "@/components/footer/Footer";
 {/* Data & Styles */}
 import { globalPageStyles, globalMainElementStyles } from "@/data/Variables";

@@ -1,6 +1,6 @@
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 import Header from "@/components/header/_Header";
-import H1 from "@/components/typography/H1Span";
+import H1 from "@/components/typography/H1_Span";
 import Page_Intro from "@/components/site_elements/Page_Intro";
 import JokesGrid from "@/components/projects/jokes/JokesGrid";
 import Footer from "@/components/footer/_Footer";
