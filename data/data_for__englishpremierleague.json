@@ -225,14 +225,14 @@
             "playerId": 14,
             "playerName": "Jamie Vardy",
             "playerSlug": "jamie-vardy",
-            "playerClubs": ["Leicester City (142)"],
-            "playerApps": 327,
-            "playerGoals": 142,
+            "playerClubs": ["Leicester City (143)"],
+            "playerApps": 328,
+            "playerGoals": 143,
             "playerLastGoalFor": "Leicester City",
-            "playerLastGoalOpponent": "Brighton & Hove Albion",
-            "playerLastGoalDate": "2024-12-08",
+            "playerLastGoalOpponent": "Tottenham Hotspur",
+            "playerLastGoalDate": "2025-01-26",
             "playerCurrent": true,
-            "updated": "2025-01-20"
+            "updated": "2025-01-26"
         },
         {
             "playerId": 15,
@@ -317,15 +317,15 @@
             "playerSlug": "mohamed-salah",
             "playerClubs": [
                 "Chelsea (2)",
-                "Liverpool (173)"
+                "Liverpool (174)"
             ],
-            "playerApps": 284,
-            "playerGoals": 175,
+            "playerApps": 285,
+            "playerGoals": 176,
             "playerLastGoalFor": "Liverpool",
-            "playerLastGoalOpponent": "Manchester United",
-            "playerLastGoalDate": "2025-01-05",
+            "playerLastGoalOpponent": "Ipswich Town",
+            "playerLastGoalDate": "2025-01-25",
             "playerCurrent": true,
-            "updated": "2025-01-20"
+            "updated": "2025-01-25"
         },
         {
             "playerId": 20,
@@ -566,15 +566,15 @@
             "playerName": "Son Heung-Min",
             "playerSlug": "son-heung-min",
             "playerClubs": [
-                "Tottenham Hotspur (125)"
+                "Tottenham Hotspur (126)"
             ],
-            "playerApps": 322,
-            "playerGoals": 125,
+            "playerApps": 323,
+            "playerGoals": 126,
             "playerLastGoalFor": "Tottenham Hotspur",
-            "playerLastGoalOpponent": "Southampton",
-            "playerLastGoalDate": "2024-12-15",
+            "playerLastGoalOpponent": "Arsenal",
+            "playerLastGoalDate": "2025-01-15",
             "playerCurrent": true,
-            "updated": "2025-01-20"
+            "updated": "2025-01-26"
         }
     ],
     "Clubs":[
