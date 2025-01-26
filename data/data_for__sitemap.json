@@ -30,7 +30,7 @@
             "mainNav": false,
             "footerNav_1": true,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-19"
+            "lastUpdated": "2025-01-26"
         },
         {
             "name": "Site Style Guide",
@@ -72,7 +72,7 @@
             "mainNav": false,
             "footerNav_1": false,
             "footerNav_2": false,
-            "lastUpdated": "2025-01-19"
+            "lastUpdated": "2025-01-26"
         },
         {
             "name": "All Projects",
@@ -121,7 +121,7 @@
             "name": "EPL - 100 Club",
             "label": "EPL - 100 Club",
             "href": "/projects/football/competitions/english-premier-league/the-100-club",
-            "lastUpdated": "2025-01-23"
+            "lastUpdated": "2025-01-26"
         },
         {
             "name": "EPL - Competition History",
@@ -190,7 +190,7 @@
             "hover": "hover:bg-magpl",
             "footerNav_1": false,
             "footerNav_2": true,
-            "lastUpdated": "2025-01-19"
+            "lastUpdated": "2025-01-25"
         },
         {
             "name": "The MAP EPL - Season 1",
@@ -202,7 +202,7 @@
             "name": "The MAP EPL - Season 2",
             "label": "The MAP EPL - Season 2",
             "href": "/projects/gaming/the-mag-premier-league/seasons/season-2",
-            "lastUpdated": "2025-01-19"
+            "lastUpdated": "2025-01-25"
         },
         {
             "name": "Jokes",
