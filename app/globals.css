@@ -1,174 +1,287 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @config '../tailwind.config.js';
 
 @utility text-balance {
-  text-wrap: balance;
+	text-wrap: balance;
 }
 
 @utility no-scrollbar {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
 
 @layer utilities {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-  }
+	:root {
+		--foreground-rgb: 0, 0, 0;
+		--background-start-rgb: 214, 219, 220;
+		--background-end-rgb: 255, 255, 255;
+	}
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --foreground-rgb: 255, 255, 255;
-      --background-start-rgb: 0, 0, 0;
-      --background-end-rgb: 0, 0, 0;
-    }
-  }
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--foreground-rgb: 255, 255, 255;
+			--background-start-rgb: 0, 0, 0;
+			--background-end-rgb: 0, 0, 0;
+		}
+	}
 }
 
 @layer utilities {
-  /* Solar System */
-  .solar-system {
-    width: clamp(300px, 80vw, 800px);
-  }
+	/* Solar System */
+	.solar-system {
+		width: clamp(300px, 80vw, 800px);
+	}
 
-  .solar-system ol {
-    all: unset;
-    aspect-ratio: 1 / 1;
-    container-type: inline-size;
-    display: grid;
-    width: 100%;
-  }
+	.solar-system ol {
+		all: unset;
+		aspect-ratio: 1 / 1;
+		container-type: inline-size;
+		display: grid;
+		width: 100%;
+	}
 
-  .solar-system li {
-    aspect-ratio: 1 / 1;
-    border: 1px dashed;
-    border-radius: 50%;
-    display: grid;
-    grid-area: 1 / 1;
-    place-self: center;
-    width: var(--d, 2cqi);
-    &::after {
-      animation: rotate var(--t, 3s) linear infinite;
-      aspect-ratio: 1 / 1 !important;
-      background: var(--b, hsl(0, 0%, 50%));
-      border-radius: 50% !important;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-      content: '';
-      display: block;
-      max-width: 30px;
-      offset-path: content-box;
-      width: var(--w, 2cqi);
-    }
-    &.sun::after {
-      animation: none;
-      background: var(--b, hsl(0, 0%, 50%));
-      offset-path: none;
-      width: var(--d, 2cqi);
-    }
-  }
+	.solar-system li {
+		aspect-ratio: 1 / 1;
+		border: 1px dashed;
+		border-radius: 50%;
+		display: grid;
+		grid-area: 1 / 1;
+		place-self: center;
+		width: var(--d, 2cqi);
+		&::after {
+			animation: rotate var(--t, 3s) linear infinite;
+			aspect-ratio: 1 / 1 !important;
+			background: var(--b, hsl(0, 0%, 50%));
+			border-radius: 50% !important;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+			content: "";
+			display: block;
+			max-width: 30px;
+			offset-path: content-box;
+			width: var(--w, 2cqi);
+		}
+		&.sun::after {
+			animation: none;
+			background: var(--b, hsl(0, 0%, 50%));
+			offset-path: none;
+			width: var(--d, 2cqi);
+		}
+	}
 
-  @keyframes rotate {
-    to {
-      offset-distance: 100%;
-    }
-  }
+	@keyframes rotate {
+		to {
+			offset-distance: 100%;
+		}
+	}
 
-  .sun {
-    --b: radial-gradient(circle, #f9d71c 0%, #f9a825 50%, #f9a825 100%);
-    --d: 10cqi;
-    --w: 8cqi;
-    border: 0;
-    &::after {
-      animation: none;
-      offset-path: none;
-      place-self: center;
-    }
-  }
+	.sun {
+		--b: radial-gradient(circle, #f9d71c 0%, #f9a825 50%, #f9a825 100%);
+		--d: 10cqi;
+		--w: 8cqi;
+		border: 0;
+		&::after {
+			animation: none;
+			offset-path: none;
+			place-self: center;
+		}
+	}
 
-  .mercury {
-    --b: radial-gradient(circle, #c2c2c2 0%, #8a8a8a 100%);
-    --d: 15cqi;
-    --t: 2105.26ms;
-    --w: 2.0526cqi;
-  }
+	.mercury {
+		--b: radial-gradient(circle, #c2c2c2 0%, #8a8a8a 100%);
+		--d: 15cqi;
+		--t: 2105.26ms;
+		--w: 2.0526cqi;
+	}
 
-  .venus {
-    --b: radial-gradient(circle, #f4d03f 0%, #c39c43 100%);
-    --d: 25cqi;
-    --t: 4210.53ms;
-    --w: 2.6053cqi;
-  }
+	.venus {
+		--b: radial-gradient(circle, #f4d03f 0%, #c39c43 100%);
+		--d: 25cqi;
+		--t: 4210.53ms;
+		--w: 2.6053cqi;
+	}
 
-  .earth {
-    --b: radial-gradient(circle, #3a82f7 0%, #2f9e44 80%, #1a5e20 100%);
-    --d: 35cqi;
-    --t: 6315.79ms;
-    --w: 3.1579cqi;
-  }
+	.earth {
+		--b: radial-gradient(circle, #3a82f7 0%, #2f9e44 80%, #1a5e20 100%);
+		--d: 35cqi;
+		--t: 6315.79ms;
+		--w: 3.1579cqi;
+	}
 
-  .mars {
-    --b: radial-gradient(circle, #e57373 0%, #af4448 100%);
-    --d: 45cqi;
-    --t: 8421.05ms;
-    --w: 3.7105cqi;
-  }
+	.mars {
+		--b: radial-gradient(circle, #e57373 0%, #af4448 100%);
+		--d: 45cqi;
+		--t: 8421.05ms;
+		--w: 3.7105cqi;
+	}
 
-  .jupiter {
-    --b: radial-gradient(circle, #d4a373 0%, #b36d32 50%, #f4e7d3 100%);
-    --d: 60cqi;
-    --t: 12631.58ms;
-    --w: 4.8158cqi;
-  }
+	.jupiter {
+		--b: radial-gradient(circle, #d4a373 0%, #b36d32 50%, #f4e7d3 100%);
+		--d: 60cqi;
+		--t: 12631.58ms;
+		--w: 4.8158cqi;
+	}
 
-  .saturn {
-    --b: radial-gradient(circle, #e6dba0 0%, #c2a13e 100%);
-    --d: 75cqi;
-    --t: 14736.84ms;
-    --w: 5.3684cqi;
-  }
+	.saturn {
+		--b: radial-gradient(circle, #e6dba0 0%, #c2a13e 100%);
+		--d: 75cqi;
+		--t: 14736.84ms;
+		--w: 5.3684cqi;
+	}
 
-  .uranus {
-    --b: radial-gradient(circle, #7de3f4 0%, #3ba0b5 100%);
-    --d: 84.5cqi;
-    --t: 10526.32ms;
-    --w: 4.2632cqi;
-  }
+	.uranus {
+		--b: radial-gradient(circle, #7de3f4 0%, #3ba0b5 100%);
+		--d: 84.5cqi;
+		--t: 10526.32ms;
+		--w: 4.2632cqi;
+	}
 
-  .neptune {
-    --b: radial-gradient(circle, #4c6ef5 0%, #1b3b8c 100%);
-    --d: 94cqi;
-    --t: 20000ms;
-    --w: 6cqi;
-  }
+	.neptune {
+		--b: radial-gradient(circle, #4c6ef5 0%, #1b3b8c 100%);
+		--d: 94cqi;
+		--t: 20000ms;
+		--w: 6cqi;
+	}
 
-  html,
-  :host {
-    -webkit-text-size-adjust: 100%;
-  }
+	html,
+	:host {
+		-webkit-text-size-adjust: 100%;
+	}
 }
 
 .cls-1 {
-  fill: none;
-  stroke: #020202;
-  stroke-miterlimit: 10;
-  stroke-width: 1.92px;
+	fill: none;
+	stroke: #020202;
+	stroke-miterlimit: 10;
+	stroke-width: 1.92px;
 }
 .st0 {
-  fill: #000000;
+	fill: #000000;
 }
 
 .snowflake {
-  color: #fff;
-  font-size: 1em;
-  font-family: Arial, sans-serif;
-  text-shadow: 0 0 5px #000;
+	color: #fff;
+	font-size: 1em;
+	font-family: Arial, sans-serif;
+	text-shadow: 0 0 5px #000;
 }
 
-.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+.snowflake,
+.snowflake .inner {
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+@keyframes snowflakes-fall {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(110vh);
+	}
+}
+@keyframes snowflakes-shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(80px);
+	}
+}
+.snowflake {
+	position: fixed;
+	top: -10%;
+	z-index: 9999;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+	animation-name: snowflakes-shake;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+.snowflake .inner {
+	animation-duration: 10s;
+	animation-name: snowflakes-fall;
+	animation-timing-function: linear;
+}
+.snowflake:nth-of-type(0) {
+	left: 1%;
+	animation-delay: 0s;
+}
+.snowflake:nth-of-type(0) .inner {
+	animation-delay: 0s;
+}
+.snowflake:first-of-type {
+	left: 10%;
+	animation-delay: 1s;
+}
+.snowflake:first-of-type .inner,
+.snowflake:nth-of-type(8) .inner {
+	animation-delay: 1s;
+}
+.snowflake:nth-of-type(2) {
+	left: 20%;
+	animation-delay: 0.5s;
+}
+.snowflake:nth-of-type(2) .inner,
+.snowflake:nth-of-type(6) .inner {
+	animation-delay: 6s;
+}
+.snowflake:nth-of-type(3) {
+	left: 30%;
+	animation-delay: 2s;
+}
+.snowflake:nth-of-type(11) .inner,
+.snowflake:nth-of-type(3) .inner {
+	animation-delay: 4s;
+}
+.snowflake:nth-of-type(4) {
+	left: 40%;
+	animation-delay: 2s;
+}
+.snowflake:nth-of-type(10) .inner,
+.snowflake:nth-of-type(4) .inner {
+	animation-delay: 2s;
+}
+.snowflake:nth-of-type(5) {
+	left: 50%;
+	animation-delay: 3s;
+}
+.snowflake:nth-of-type(5) .inner {
+	animation-delay: 8s;
+}
+.snowflake:nth-of-type(6) {
+	left: 60%;
+	animation-delay: 2s;
+}
+.snowflake:nth-of-type(7) {
+	left: 70%;
+	animation-delay: 1s;
+}
+.snowflake:nth-of-type(7) .inner {
+	animation-delay: 2.5s;
+}
+.snowflake:nth-of-type(8) {
+	left: 80%;
+	animation-delay: 0s;
+}
+.snowflake:nth-of-type(9) {
+	left: 90%;
+	animation-delay: 1.5s;
+}
+.snowflake:nth-of-type(9) .inner {
+	animation-delay: 3s;
+}
+.snowflake:nth-of-type(10) {
+	left: 25%;
+	animation-delay: 0s;
+}
+.snowflake:nth-of-type(11) {
+	left: 65%;
+	animation-delay: 2.5s;
+}
