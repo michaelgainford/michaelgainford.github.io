@@ -2,7 +2,7 @@ import { sharedHeadingStyles } from "@/data/Variables";
 import Link from "next/link";
 import RandomJokeGenerator from "@/components/RandomJokeGenerator";
 
-export default function COMPONENT_CARD_TOOLS() {
+export default function Component_CardRandomJoke() {
     return (
         <div data-card="joke" className="col-span-12 px-6 py-12 text-xs text-left transition-all duration-500 border lg:px-12 md:col-span-5 border-slate-500/10 hover:border-amber-500 hover:bg-slate-500/10 group-hover/joke:border-slate-500/10 group/gift">
             <h2 className={`${sharedHeadingStyles} group-hover/gift:border-amber-500/80`}>

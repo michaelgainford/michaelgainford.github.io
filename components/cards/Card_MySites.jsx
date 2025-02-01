@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { mySites, sharedHeadingStyles } from "@/data/Variables";
 
-export default function COMPONENT_CARD_ABOUT_ME() {
+export default function Component_CardMySites() {
     return (
 
         <div data-card="other sites" className="col-span-12 md:col-span-12 px-6 py-12 max-lg:px-0 md:p-8 text-xs border rounded-lg something-2 border-slate-500/10 [&_.site-image]:aspect-4/3 flex flex-col hover:border-amber-500 duration-500 transition-all xl:col-span-4  hover:bg-slate-500/10 2xl:py-16 2xl:pr-0 group/sites">

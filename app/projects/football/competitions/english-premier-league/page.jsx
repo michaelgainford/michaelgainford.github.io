@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/header/_Header";
-import Button from "@/components/buttons/Button_Global";
+import Button from "@/components/buttons/Button";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";

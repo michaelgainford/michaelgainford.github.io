@@ -1,6 +1,6 @@
 {
 	"Quotes": [
-     	{
+		{
 			"id": 1,
 			"quote": "The worst type of loneliness is the loneliness you feel when you are with people."
 		},
@@ -103,6 +103,11 @@
 		{
 			"id": 26,
 			"quote": "We are like islands in the sea, separate on the surface but connected in the deep."
+		},
+		{
+			"id": 27,
+			"quote": "The scariest moment is always just before you start.",
+			"quotee": "Stephen King"
 		}
-  	]
+	]
 }
