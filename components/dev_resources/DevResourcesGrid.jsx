@@ -8,7 +8,7 @@ const ResourcesSortedByName = devResources.sort((a, b) =>
 const tags = ResourcesSortedByName.map((resource) => resource.tags).flat();
 tags.sort();
 
-export default function COMPONENT_ALL_PROJECTS() {
+export default function Component_DevResourcesGrid() {
   return (
     <>
       <div className="grid w-full pt-4 resources gap-x-4 gap-y-6 md:pt-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:pt-16">
@@ -17,7 +17,7 @@ export default function COMPONENT_ALL_PROJECTS() {
             key={index}
             target="_blank"
             href={resource.url}
-            className="flex flex-row md:flex-col items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-500"
+            className="flex flex-row md:flex-col items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000"
             title={resource.description ? resource.description : resource.name}
           >
             <div className="w-full max-md:flex flex-row md:flex-col">
