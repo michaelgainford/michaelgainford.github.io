@@ -52,8 +52,8 @@ export default function Page_PremierLeague100Club() {
 					<Prem100ClubScorerGrid />
 				</div>
 				<div className={`${globalWrapperFixedWidth} mt-8`}>
-					<p className="text-center text-xs text-epl-400/60 italic">
-						*Correct as of 26th January 2025
+					<p className="text-center text-[10px] text-epl-400/60 uppercase italic">
+						*Correct as of 1st February 2025
 					</p>
 				</div>
 			</main>
