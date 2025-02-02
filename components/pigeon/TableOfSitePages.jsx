@@ -3,12 +3,11 @@ import Link from "next/link";
 import SitemapData from "@/data/data_for__sitemap.json";
 const PagesInSitemap = SitemapData.Pages;
 const today = new Date();
-
 const daysInSafeZone = 7;
 const daysInAttentionZone = 14;
 const daysInWarningZone = 28;
 
-export default function TABLE_OF_SITE_PAGES() {
+export default function Component_TableOfSitePages() {
 	return (
 		<div className="overflow-x-auto">
 			<table className="w-full max-w-[1800px] mx-auto mt-8 mb-16 text-left text-md xl:max-w-[90dvw]">
