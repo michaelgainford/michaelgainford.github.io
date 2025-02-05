@@ -19,6 +19,7 @@ export default function Component_BackToTopButton() {
 						<polyline points="18 15 12 9 6 15"></polyline>
 					</svg>
 				</span>
+				<span className="sr-only" aria-label="Back to Top">Back to top</span>
 			</a>
 		</div>
 	);
