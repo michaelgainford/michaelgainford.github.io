@@ -3,7 +3,7 @@ import DataForMainNavJSON from "@/data/data_for__sitemap.json";
 const DataForMainNav = DataForMainNavJSON.Pages;
 const mainNavLinks = DataForMainNav.filter((link) => link.mainNav === true)
 
-export default function COMPONENT_MAIN_NAV() {
+export default function Component_MainNav() {
 	return (
 		<nav className="flex items-center justify-start nav logo max-lg:hidden">
 			<ul className="flex max-sm:justify-center items-center w-full gap-2 pt-6 sm:pt-0 max-md:overflow-auto text-[10px] md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center lg:gap-7 no-scrollbar @container-inline">
