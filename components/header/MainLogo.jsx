@@ -1,7 +1,7 @@
 import Link from "next/link";
 import IconLaptop from "@/components/icons/IconLaptop";
 
-export default function COMPONENT_MAIN_LOGO() {
+export default function Component_MainLogo() {
 	return (
 		<Link href="/" className="flex items-center gap-2 max-md:justify-center">
 			<IconLaptop classes="size-5 fill-amber-500" />
