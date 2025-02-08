@@ -2,7 +2,7 @@ import FooterNav from "@/components/footer/Footer_Nav";
 import FooterAbout from "@/components/footer/Footer_About";
 import Copyright from "@/components/footer/Footer_Copyright";
 
-export default function COMPONENT_FOOTER(customTextColour) {
+export default function Component_Footer(customTextColour) {
 	return (
 		<footer className={`w-full`}>
 			<div className="w-[90%] max-w-[2000px] flex flex-col gap-1 pt-6 tracking-wider mx-auto max-md:mt-16 md:w-[92%] md:mt-8 lg:pb-2 lg:gap-4 lg:justify-between lg:pt-16 2xl:pt-24">
