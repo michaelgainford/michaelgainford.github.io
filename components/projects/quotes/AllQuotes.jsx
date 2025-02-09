@@ -1,7 +1,7 @@
 import DataForQuotesJSON from "@/data/data_for__quotes.json";
 const DataForQuotes = DataForQuotesJSON.Quotes;
 
-export default function COMPONENT_ALL_QUOTES() {
+export default function Component_AllQuotes() {
   return (
 		<div className="columns-3xs gap-x-4 lg:gap-x-8 mb-16" >
 			{DataForQuotes.map((quote, index) => (

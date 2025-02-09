@@ -2,7 +2,7 @@ import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
 import Button from '@/components/buttons/Button';
 const currentSeason = 1;
 
-export default function COMPONENT_CARD_FOR_PAST_SEASONS () {
+export default function Component_CardForPastSeasons() {
 	return(
 		<div className={magEPL_CardStyles}>
 			<h2 className={magEPL_H2Styles}>Past Season(s)</h2>

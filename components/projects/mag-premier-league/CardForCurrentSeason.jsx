@@ -2,7 +2,7 @@ import Button from '@/components/buttons/Button';
 import { magPLCurrentSeason as currentSeason } from '@/variables/Data';
 import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
 
-export default function COMPONENT_CARD_FOR_CURRENT_SEASON () {
+export default function Component_MAGPLCardForCurrentSeason() {
 	return(
 		<div className={magEPL_CardStyles}>
 			<h2 className={magEPL_H2Styles}>Current Season</h2>

@@ -1,6 +1,6 @@
 import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
 
-export default function COMPONENT_CARD_FOR_CURRENT_TEAMS () {
+export default function Component_MAPLCardForCurrentTeams() {
 	return (
 		<div className={`${magEPL_CardStyles}`}>
 			<h2 className={`${magEPL_H2Styles}`}>Current Teams</h2>

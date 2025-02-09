@@ -2,7 +2,7 @@ import IconMagPremierLeague from "@/components/icons/IconMagPremierLeague";
 import H1 from "@/components/typography/H1_Span";
 import Link from "next/link";
 
-export default function COMPONENT_LEAGUE_PAGE_HEADER() {
+export default function Component_LeaguePageHeader() {
 	return (
 		<div className="max-lg:mt-16 md:border-none w-full pb-8 lg:pb-12">
 			<Link href="/projects/gaming/the-mag-premier-league" className="flex flex-col items-center gap-2">
