@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { unwatchedMovies } from "@/variables/Data";
 
-export default function COMPONENT_MOVIES_TO_WATCH () {
+export default function Component_MoviesToWatch() {
 	return (
 		<div className="w-full py-4 my-8 border-2 rounded-lg xl:py-8 border-slate-950 xl:my-16">
 		<h2 className="mb-4 text-sm lg:text-lg" id="to-watch">To Watch</h2>
