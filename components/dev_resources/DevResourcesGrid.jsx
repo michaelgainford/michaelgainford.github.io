@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { devResources } from "@/data/Variables";
+import DevResourcesDataJSON from "@/data/data_for__devresources.json";
+const DevResourcesData = DevResourcesDataJSON.DevResources;
 
-const ResourcesSortedByName = devResources.sort((a, b) =>
+const ResourcesSortedByName = DevResourcesData.sort((a, b) =>
   a.name.localeCompare(b.name)
 );
 const tags = ResourcesSortedByName.map((resource) => resource.tags).flat();
