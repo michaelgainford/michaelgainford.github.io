@@ -1,197 +1,315 @@
 {
-    "ClubOverview": {
-        "name": "Everton",
-        "country": "England",
-        "founded": 1878,
-        "stadium": "Goodison Park",
-        "location": "Liverpool",
-        "league": "Premier League",
-        "manager": "David Moyes",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/1200px-Everton_FC_logo.svg.png",
-        "page_intro": "Everton Football Club is a professional football club based in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has competed in the top division for a record 117 seasons and has won the League Championship nine times."
-    },
-    "Players": [
-        {
-            "name": "Beto",
-            "position": "Forward",
-            "number": 14,
-            "country": "Portugal",
-            "slug": "beto"
-        },
-        {
-            "name": "Jarrad Branthwaite",
-            "position": "Defender",
-            "number": 32,
-            "country": "England",
-            "slug": "jarrad-branthwaite"
-        },
-        {
-            "name": "Dominic Calvert-Lewin",
-            "position": "Forward",
-            "number": 9,
-            "country": "England",
-            "slug": "dominic-calvert-lewin"
-        },
-        {
-            "name": "Youssef Chermiti",
-            "position": "Forward",
-            "number": 28,
-            "country": "Portugal",
-            "slug": "youssef-chermiti"
-        },
-        {
-            "name": "Seamus Coleman",
-            "position": "Defender",
-            "number": 23,
-            "country": "Ireland",
-            "slug": "seamus-coleman"
-        },
-        {
-            "name": "Billy Crellin",
-            "slug": "billy-crellin",
-            "position": "Goalkeeper",
-            "number": 43,
-            "country": "England"
-        },
-        {
-            "name": "Abdoulaye Doucouré",
-            "position": "Midfielder",
-            "number": 16,
-            "country": "France",
-            "slug": "abdoulaye-doucoure"
-        },
-        {
-            "name": "James Garner",
-            "position": "Midfielder",
-            "number": 37,
-            "country": "England",
-            "slug": "james-garner"
-        },
-        {
-            "name": "Idrissa Gueye",
-            "position": "Midfielder",
-            "number": 27,
-            "country": "Senegal",
-            "slug": "idrissa-gueye"
-        },
-        {
-            "name": "Jack Harrison",
-            "position": "Forward",
-            "number": 11,
-            "country": "England",
-            "slug": "jack-harrison"
-        },
-        {
-            "name": "Mason Holgate",
-            "position": "Defender",
-            "number": 4,
-            "country": "England",
-            "slug": "mason-holgate"
-        },
-        {
-            "name": "Tim Iroegbunam",
-            "position": "Midfielder",
-            "number": 42,
-            "country": "England",
-            "slug": "tim-iroegbunam"
-        },
-        {
-            "name": "Michael Keane",
-            "position": "Defender",
-            "number": 5,
-            "country": "England",
-            "slug": "michael-keane"
-        },
-        {
-            "name": "Jesper Lindstrom",
-            "position": "Midfielder",
-            "number": 29,
-            "country": "Denmark",
-            "slug": "jesper-lindstrom"
-        },
-        {
-            "name": "Neil Maupay",
-            "position": "Forward",
-            "number": 21,
-            "country": "France",
-            "slug": "neil-maupay"
-        },
-        {
-            "name": "Dwight McNeil",
-            "position": "Midfielder",
-            "number": 7,
-            "country": "England",
-            "slug": "dwight-mcneil"
-        },
-        {
-            "name": "Vitalii Mykolenko",
-            "position": "Defender",
-            "number": 19,
-            "country": "Ukraine",
-            "slug": "vitalii-mykolenko"
-        },
-        {
-            "name": "Iliman N'Diaye",
-            "position": "Midfielder",
-            "number": 10,
-            "country": "France",
-            "slug": "iliman-ndiaye"
-        },
-        {
-            "name": "Jake O'Brien",
-            "position": "Defender",
-            "number": 15,
-            "country": "Ireland",
-            "slug": "jake-obrien"
-        },
-        {
-            "name": "Tyler Onyango",
-            "position": "Midfielder",
-            "number": 62,
-            "country": "England",
-            "slug": "tyler-onyango"
-        },
-        {
-            "name": "Nathan Patterson",
-            "slug": "nathan-patterson",
-            "position": "Defender",
-            "number": 2,
-            "country": "Scotland"
-        },
-        {
-            "name": "Jordan Pickford",
-            "slug": "jordan-pickford",
-            "position": "Goalkeeper",
-            "number": 1,
-            "country": "England"
-        },
-        {
-            "name": "James Tarkowski",
-            "position": "Defender",
-            "number": 6,
-            "country": "England",
-            "slug": "james-tarkowski"
-        },
-        {
-            "name": "Harry Tyrer",
-            "slug": "harry-tyrer",
-            "position": "Goalkeeper",
-            "number": 53,
-            "country": "England"
-        },
-        {
-            "name": "Joao Virginia",
-            "slug": "joao-virginia",
-            "position": "Goalkeeper",
-            "number": 12,
-            "country": "Portugal"
-        },
-        {
-            "name": "Ashley Young",
-            "position": "Defender",
-            "number": 18,
-            "country": "England",
-            "slug": "ashley-young"
-        }       
-    ]
+	"ClubOverview": {
+		"name": "Everton",
+		"country": "England",
+		"founded": 1878,
+		"stadium": "Goodison Park",
+		"location": "Liverpool",
+		"league": "Premier League",
+		"manager": "David Moyes",
+		"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/1200px-Everton_FC_logo.svg.png",
+		"page_intro": "Everton Football Club is a professional football club based in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has competed in the top division for a record 117 seasons and has won the League Championship nine times."
+	},
+	"Players": [
+		{
+			"name": "Beto",
+			"slug": "beto",
+			"country": "Guinea-Bissau",
+			"position": "Forward",
+			"number": 14,
+			"joinedClub": [
+				{
+					"joinedClubFrom": "Udinese",
+					"joinedClubFromCountry": "Italy",
+					"joinedClubDate": "2023-08-29"
+				}
+			],
+			"loanDetails": [
+				{
+					"loanedIn": false,
+					"loanedInClub": "N/A",
+					"loanedInClubCountry": "N/A",
+					"loanedOut": false,
+					"loanedOutClub": "N/A",
+					"loanedOutClubCountry": "N/A"
+				}
+			],
+			"current": true
+		},
+		{
+			"name": "Jarrad Branthwaite",
+			"slug": "jarrad-branthwaite",
+			"country": "England",
+			"position": "Defender",
+			"number": 32,
+			"joinedClub": [
+				{
+					"joinedClubFrom": "Carlisle United",
+					"joinedClubFromCountry": "England",
+					"joinedClubDate": "2020-01-31"
+				}
+			],
+			"loanDetails": [
+				{
+					"loanedIn": false,
+					"loanedInClub": "N/A",
+					"loanedInClubCountry": "N/A",
+					"loanedOut": false,
+					"loanedOutClub": "N/A",
+					"loanedOutClubCountry": "N/A"
+				}
+			],
+			"current": true
+		},
+		{
+			"name": "Dominic Calvert-Lewin",
+			"position": "Forward",
+			"number": 9,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "dominic-calvert-lewin"
+		},
+		{
+			"name": "Youssef Chermiti",
+			"position": "Forward",
+			"number": 28,
+			"country": "Portugal",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "youssef-chermiti"
+		},
+		{
+			"name": "Seamus Coleman",
+			"position": "Defender",
+			"number": 23,
+			"country": "Ireland",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "seamus-coleman"
+		},
+		{
+			"name": "Billy Crellin",
+			"slug": "billy-crellin",
+			"position": "Goalkeeper",
+			"number": 43,
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"country": "England"
+		},
+		{
+			"name": "Abdoulaye Doucouré",
+			"position": "Midfielder",
+			"number": 16,
+			"country": "Mali",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "abdoulaye-doucoure"
+		},
+		{
+			"name": "James Garner",
+			"position": "Midfielder",
+			"number": 37,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "james-garner"
+		},
+		{
+			"name": "Idrissa Gueye",
+			"position": "Midfielder",
+			"number": 27,
+			"country": "Senegal",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "idrissa-gueye"
+		},
+		{
+			"name": "Jack Harrison",
+			"position": "Forward",
+			"number": 11,
+			"country": "England",
+			"inOnLoan": true,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "jack-harrison"
+		},
+		{
+			"name": "Mason Holgate",
+			"position": "Defender",
+			"number": 4,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": true,
+			"current": true,
+			"slug": "mason-holgate"
+		},
+		{
+			"name": "Tim Iroegbunam",
+			"position": "Midfielder",
+			"number": 42,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "tim-iroegbunam"
+		},
+		{
+			"name": "Michael Keane",
+			"position": "Defender",
+			"number": 5,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "michael-keane"
+		},
+		{
+			"name": "Jesper Lindstrom",
+			"position": "Midfielder",
+			"number": 29,
+			"country": "Denmark",
+			"inOnLoan": true,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "jesper-lindstrom"
+		},
+		{
+			"name": "Neil Maupay",
+			"position": "Forward",
+			"number": 21,
+			"country": "France",
+			"inOnLoan": false,
+			"outOnLoan": true,
+			"current": true,
+			"slug": "neil-maupay"
+		},
+		{
+			"name": "Dwight McNeil",
+			"position": "Midfielder",
+			"number": 7,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "dwight-mcneil"
+		},
+		{
+			"name": "Vitalii Mykolenko",
+			"position": "Defender",
+			"number": 19,
+			"country": "Ukraine",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "vitalii-mykolenko"
+		},
+		{
+			"name": "Iliman N'Diaye",
+			"position": "Midfielder",
+			"number": 10,
+			"country": "France",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "iliman-ndiaye"
+		},
+		{
+			"name": "Jake O'Brien",
+			"position": "Defender",
+			"number": 15,
+			"country": "Ireland",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "jake-obrien"
+		},
+		{
+			"name": "Tyler Onyango",
+			"position": "Midfielder",
+			"number": 62,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true,
+			"slug": "tyler-onyango"
+		},
+		{
+			"name": "Nathan Patterson",
+			"slug": "nathan-patterson",
+			"position": "Defender",
+			"number": 2,
+			"country": "Scotland",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true
+		},
+		{
+			"name": "Jordan Pickford",
+			"slug": "jordan-pickford",
+			"position": "Goalkeeper",
+			"number": 1,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true
+		},
+		{
+			"name": "James Tarkowski",
+			"position": "Defender",
+			"number": 6,
+			"country": "England",
+			"slug": "james-tarkowski",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true
+		},
+		{
+			"name": "Harry Tyrer",
+			"slug": "harry-tyrer",
+			"position": "Goalkeeper",
+			"number": 53,
+			"country": "England",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true
+		},
+		{
+			"name": "Joao Virginia",
+			"slug": "joao-virginia",
+			"position": "Goalkeeper",
+			"number": 12,
+			"country": "Portugal",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true
+		},
+		{
+			"name": "Ashley Young",
+			"position": "Defender",
+			"number": 18,
+			"country": "England",
+			"slug": "ashley-young",
+			"inOnLoan": false,
+			"outOnLoan": false,
+			"current": true
+		},
+		{
+			"name": "Carlos Alcaraz",
+			"position": "Midfielder",
+			"number": 24,
+			"country": "Argentina",
+			"slug": "carlos-alcaraz",
+			"inOnLoan": true,
+			"outOnLoan": false,
+			"current": true
+		}
+	]
 }
