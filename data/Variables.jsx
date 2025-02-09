@@ -530,7 +530,7 @@ const devResources = [
       icon: Icon_Resource,
       tags: ["tailwind", "colours"],
       featured: false
-    } 
+    }
 ];
 
 

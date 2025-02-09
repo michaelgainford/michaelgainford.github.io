@@ -1,7 +1,7 @@
 import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
 import { magEPLUpcomingMatches } from '@/variables/Data';
 
-export default function COMPONENT_CARD_FOR_PAST_WINNERS () {
+export default function Component_CardForUpcomingFixtures() {
 	return(
 		<div className={magEPL_CardStyles}>
 			<h2 className={magEPL_H2Styles}>

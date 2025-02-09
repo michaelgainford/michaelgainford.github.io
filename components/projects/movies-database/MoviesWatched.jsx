@@ -5,7 +5,7 @@ const watchedMoviesGridStyles = "xl:grid xl:gap-8 xl:grid-cols-4 xl:gap-8 xl:gap
 const watchedMoviesSharedStyles = "w-full gap-4 no-scrollbar";
 const watchedMoviesCombinedStyles = `${watchedMoviesSharedStyles} ${watchedMoviesScrollStyles} ${watchedMoviesGridStyles}`;
 
-export default function COMPONENT_MOVIES_WATCHED () {
+export default function Component_MoviesWatched() {
 	return (
 		<div className={watchedMoviesCombinedStyles} id="watched-movies">
 			{watchedMovies.map((movie, id) => (

@@ -2,11 +2,10 @@ import Link from 'next/link';
 import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
 import IconMagPremierLeague from '@/components/icons/IconMagPremierLeague';
 
-export default function COMPONENT_CARD_FOR_PAST_WINNERS () {
+export default function Component_CardForPastWinners() {
 	return(
 		<div className={magEPL_CardStyles}>
 			<h2 className={magEPL_H2Styles}>Past Winners</h2>
-
 			<div className="p-8 space-y-4 h-full w-full flex flex-col justify-center">
 				<IconMagPremierLeague 
 					fillOne="#EAB305" 

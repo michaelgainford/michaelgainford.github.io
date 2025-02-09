@@ -3,11 +3,10 @@ import { dataForAllProjects } from "@/data/Variables"
 dataForAllProjects.sort((a, b) => a.name.localeCompare(b.name))
 dataForAllProjects.sort((a, b) => a.archived - b.archived)
 
-export default function COMPONENT_PROJECTS_GRID() {
+export default function Component_ProjectsGrid() {
 	return (
-
 		<div className="grid flex-wrap w-full grid-cols-1 gap-8 sm:grid-cols-2 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 3xl:grid-cols-5 2xl:gap-16">
-		{dataForAllProjects.map((project, index) => (
+			{dataForAllProjects.map((project, index) => (
 			<Link
 				key={index}
 				href={project.href}
@@ -49,7 +48,7 @@ export default function COMPONENT_PROJECTS_GRID() {
 					</span>
 				</span>
 			</Link>
-		))}
-	</div>
+			))}
+		</div>
 	)
 }
