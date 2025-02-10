@@ -12,16 +12,16 @@ tags.sort();
 export default function Component_DevResourcesGrid() {
   return (
     <>
-      <div className="grid w-full pt-4 resources gap-x-4 gap-y-6 md:pt-6 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:pt-16">
+      <div className="grid w-full pt-4 resources gap-x-4 gap-y-6 xs:grid-cols-2 md:pt-6 md:gap-8 md:grid-cols-3 xl:grid-cols-4 lg:gap-12 lg:pt-16">
         {ResourcesSortedByName.map((resource, index) => (
           <Link
             key={index}
             target="_blank"
             href={resource.url}
-            className="flex flex-row md:flex-col items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000"
+            className="flex flex-row sm:flex-col items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000"
             title={resource.description ? resource.description : resource.name}
           >
-            <div className="w-full max-md:flex flex-row md:flex-col">
+            <div className="w-full flex flex-row xs:flex-col">
               <div className="md:w-full overflow-hidden bg-teal-700 md:rounded-t-lg resource-image">
                 <Image
                   src={resource.screenshot}
@@ -49,11 +49,11 @@ export default function Component_DevResourcesGrid() {
                 </div>
               </div>
             </div>
-            <div className="max-md:hidden absolute inset-0 bg-emerald-950 translate-y-[100%] transition-all duration-700 group-hover:translate-y-0 flex rounded-t-lg px-4 items-center justify-center h-full flex-col my-auto gap-8">
-              <p className="text-sm px-2 leading-relaxed">
+            <div className="max-sm:hidden absolute inset-0 bg-emerald-950 translate-y-[100%] transition-all duration-700 group-hover:translate-y-0 flex rounded-t-lg px-4 items-center justify-center h-full flex-col my-auto gap-8 z-100">
+              <p className="text-[10px] sm:text-xs xl:text-sm px-2 leading-relaxed">
                 {resource.description}
               </p>
-              <span className="border px-4 py-2 flex gap-1.5 rounded-lg text-center justify-center w-fit mx-auto transition-all duration-300 text-sm uppercase group-hover:bg-teal-100 group-hover:text-teal-950 after:content-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==)]">
+              <span className="border px-4 py-2 flex gap-1.5 rounded-lg text-center justify-center w-fit mx-auto transition-all duration-300 text-xs xl:text-sm uppercase group-hover:bg-teal-100 group-hover:text-teal-950 after:content-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==)]">
                 View {resource.name}
               </span>
             </div>
