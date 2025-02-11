@@ -6,7 +6,7 @@ import { featuredProjects } from "@/variables/Data";
 export default function Component_FeaturedProjects() {
 	return (
 		<div className="w-full projects-list">
-			<H2SectionHeader text="Featured Dev Projects" />
+			<H2SectionHeader text={`Featured Dev Projects`} />
 			{/* Featured Projects Grid */}
 			<div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 md:gap-8 lg:gap-8 lg:grid-cols-2 xl:gap-12 2xl:grid-cols-2">
 				{featuredProjects.map((project, index) => (
@@ -20,7 +20,8 @@ export default function Component_FeaturedProjects() {
 						>
 							<project.icon
 								fill={project.fill}
-								classes="h-7 fill-slate-400 flex justify-center lg:h-12 2xl:h-16 w-auto"
+								classes={`h-7 fill-slate-400 flex justify-center w-auto 
+									lg:h-12 2xl:h-16 3xl:h-20 4xl:h-24`}
 							/>
 						</span>
 						<span className="flex items-start -mt-1 text-xs tracking-wider text-center group-hover:text-white sm:pt-1 max-lg:text-slate-400 lg:text-sm 2xl:text-base 3xl:text-lg">
@@ -32,15 +33,16 @@ export default function Component_FeaturedProjects() {
 			{/* View All Projects Button */}
 			<div className="flex justify-start mt-8 lg:mt-12">
 				<Button
-					href="/projects"
-					label="View All Projects"
-					title="View All Projects"
-					ariaLabel="View All Projects"
-					background_colour="bg-slate-800"
-					border_colour="border-slate-700"
-					hover_background_colour="hover:bg-amber-500"
-					text_colour="text-current"
-					hover_text_colour="hover:text-slate-900"
+					href={`/projects`}
+					label={`View All Projects`}
+					title={`View All Projects`}
+					ariaLabel={`View All Projects`}
+					background_colour={`bg-slate-800`}
+					border_colour={`border-slate-700`}
+					hover_background_colour={`hover:bg-amber-500`}
+					text_colour={`text-current`}
+					hover_text_colour={`hover:text-slate-900`}
+					after={`after:content-['→'] after:ml-2`}
 				/>
 			</div>
 		</div>
