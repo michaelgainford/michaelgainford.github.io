@@ -10,6 +10,7 @@ export default function Component_Button({
 	hover_background_colour,
 	text_colour,
 	hover_text_colour,
+	after
 }) {
 	return (
 		<Link
@@ -19,6 +20,7 @@ export default function Component_Button({
 			title={title}
 		>
 			{label}
+			{after && <span className={after}></span>}
 		</Link>
 	);
 }
