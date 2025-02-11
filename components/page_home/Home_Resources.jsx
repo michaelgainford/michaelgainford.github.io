@@ -30,15 +30,16 @@ export default function Component_FeaturedDevResources() {
 			</div>
 			<div className="flex justify-start mt-8 lg:mt-12">
 				<Button
-					href="/web-development/dev-resources"
-					label="View All Resources"
-					title="View All Resources"
-					ariaLabel="View All Resources"
-					background_colour="bg-slate-800"
-					border_colour="border-slate-700"
-					hover_background_colour="hover:bg-amber-500"
-					text_colour="text-current"
-					hover_text_colour="hover:text-slate-900"
+					href={`/web-development/dev-resources`}
+					label={`View All Resources`}
+					title={`View All Resources`}
+					ariaLabel={`View All Resources`}
+					background_colour={`bg-slate-800`}
+					border_colour={`border-slate-700`}
+					hover_background_colour={`hover:bg-amber-500`}
+					text_colour={`text-current`}
+					hover_text_colour={`hover:text-slate-900`}
+					after={`after:content-['→'] after:ml-2`}
 				/>
 			</div>
 		</div>
