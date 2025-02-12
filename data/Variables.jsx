@@ -658,7 +658,7 @@ const dataForAllProjects = [
 		icon: Icon_PremierLeagueSimple,
 		color: "text-slate-200",
 		bg: "bg-purple-900",
-		border: "border-purple-700/20",
+		border: "border-purple-700",
 		hover: "hover:bg-purple-800 hover:border-purple-700",
 		divider: "divide-purple-700",
 		description: "A project about the English Premier League",
