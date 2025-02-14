@@ -271,6 +271,36 @@
 			"icon": "test",
 			"tags": ["colours", "gradients", "css"],
 			"featured": false
+		},
+		{
+			"name": "CSS Grid Cheatsheet",
+			"slug": "css-grid-cheatsheet",
+			"url": "https://alialaa.github.io/css-grid-cheat-sheet/",
+			"description": "CSS Grid Cheatsheet is a tool that helps you learn and understand CSS Grid Layout.",
+			"screenshot": "/dev-resources/screenshot-of--css-grid-cheatsheet.webp",
+			"icon": "test",
+			"tags": ["css", "grid"],
+			"featured": false
+		},
+		{
+			"name": "QuickRef",
+			"slug": "quickref",
+			"url": "https://quickref.me",
+			"description": "QuickRef is a collection of cheat sheets for web developers. It includes cheat sheets for HTML, CSS, JavaScript, React, and more.",
+			"screenshot": "/dev-resources/screenshot-of--quickref.webp",
+			"icon": "test",
+			"tags": ["cheat sheets", "web dev"],
+			"featured": false
+		},
+		{
+			"name": "Undraw",
+			"slug": "undraw",
+			"url": "https://undraw.co",
+			"description": "UnDraw is a collection of free illustrations for your projects. You can use these illustrations in your websites, apps, and more.",
+			"screenshot": "/dev-resources/screenshot-of--undraw.webp",
+			"icon": "test",
+			"tags": ["illustrations", "design"],
+			"featured": false
 		}
 	]
 }
