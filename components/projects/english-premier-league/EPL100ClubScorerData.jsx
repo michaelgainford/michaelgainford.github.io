@@ -28,11 +28,11 @@ export default function Component_EPL100ClubScorerData() {
 					<div className="relative flex flex-col gap-4 px-4 py-8 border rounded-lg lg:py-12 hover:bg-epl hover:text-slate-200 transition-all duration-500 group" key={TopScorer.playerId}>
 						<h3 className="font-bold uppercase">{TopScorer.playerName}</h3>
 						<Image
-								className="w-full my-4 border-8 border-slate-100 group-hover:border-amber-500/80 transition-all duration-500"
-								src={playerImage}
-								alt={TopScorer.playerName}
-								width={300}
-								height={150}
+							className="w-full my-4 border-8 border-slate-100 group-hover:border-amber-500/80 transition-all duration-500 lg:rounded-xl"
+							src={playerImage}
+							alt={TopScorer.playerName}
+							width={300}
+							height={150}
 						/>
 						<p className="font-bold">{TopScorer.playerGoals} goals <span className="text-xs font-light">({TopScorer.playerApps} apps)</span></p>
 						<p className="flex flex-wrap justify-center gap-1 mb-4 gap-x-4">
