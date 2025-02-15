@@ -53,7 +53,7 @@ export default function Page_PremierLeague100Club() {
 				</div>
 				<div className={`${globalWrapperFixedWidth} mt-8`}>
 					<p className="text-center text-[10px] text-epl-400/60 uppercase italic">
-						* Correct as of 2nd February 2025 @ 18:44 (GMT)
+						* Correct as of 15th February 2025 @ 17:00 (GMT)
 					</p>
 				</div>
 			</main>

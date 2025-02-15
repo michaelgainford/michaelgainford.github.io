@@ -213,13 +213,13 @@
 			"playerName": "Jamie Vardy",
 			"playerSlug": "jamie-vardy",
 			"playerClubs": ["Leicester City (143)"],
-			"playerApps": 329,
+			"playerApps": 330,
 			"playerGoals": 143,
 			"playerLastGoalFor": "Leicester City",
 			"playerLastGoalOpponent": "Tottenham Hotspur",
 			"playerLastGoalDate": "2025-01-26",
 			"playerCurrent": true,
-			"updated": "2025-02-01"
+			"updated": "2025-02-15"
 		},
 		{
 			"playerId": 15,
@@ -395,13 +395,13 @@
 				"Chelsea (14)",
 				"Arsenal (0)"
 			],
-			"playerApps": 388,
+			"playerApps": 389,
 			"playerGoals": 123,
 			"playerLastGoalFor": "Chelsea",
 			"playerLastGoalOpponent": "Bournemouth",
 			"playerLastGoalDate": "2024-05-19",
 			"playerCurrent": true,
-			"updated": "2025-02-02"
+			"updated": "2025-02-15"
 		},
 		{
 			"playerId": 26,
@@ -505,7 +505,7 @@
 			"playerId": 32,
 			"playerName": "Cristiano Ronaldo",
 			"playerSlug": "cristiano-ronaldo",
-			"playerClubs": ["Manchester United (102)"],
+			"playerClubs": ["Manchester United (103)"],
 			"playerApps": 236,
 			"playerGoals": 103,
 			"playerLastGoalFor": "Manchester United",
