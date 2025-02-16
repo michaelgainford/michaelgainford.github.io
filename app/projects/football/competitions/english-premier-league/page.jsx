@@ -63,7 +63,7 @@ const premierLeagueHubBlocks = [
 	},
 ];		
 
-export default function PAGE_PREMIER_LEAGUE () {
+export default function Page_EnglishPremierLeague () {
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
@@ -83,7 +83,7 @@ export default function PAGE_PREMIER_LEAGUE () {
 				<div className={`${globalWrapperFixedWidth} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
 					{premierLeagueHubBlocks.map((block, index) => {
 						return (
-							<div key={index} className="flex flex-col h-full gap-3 rounded-lg">
+							<div key={index} className="flex flex-col h-full lg:gap-3 rounded-lg">
 								<h2 className="pl-2 text-sm leading-none border-l-4 lg:border-l-8 border-amber-500">{block.title}</h2>
 								<div className="content">
 									<div className={blockImagePlaceholderStyles}>
@@ -92,7 +92,8 @@ export default function PAGE_PREMIER_LEAGUE () {
 										  alt={block.title} 
 										  width={800}
 										  height={450} 
-										  className="object-cover rounded-lg"
+										  className="object-cover rounded-lg aspect-16/9 h-auto w-full" 
+											loading={index < 2 ? "eager" : "lazy"}
 										/>
 									</div>
 									<p className="text-xs tracking-wide lg:text-sm">{block.content}</p>
