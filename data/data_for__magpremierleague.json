@@ -485,36 +485,36 @@
         },
         {
           "game": 19,
-          "homeTeam": "Garcon",
-          "awayTeam": "Michael",
-          "homeScore": 0,
-          "awayScore": 0,
-          "date": "15/02/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "homeTeam": "Alfie",
+          "awayTeam": "Garcon",
+          "homeScore": 4,
+          "awayScore": 4,
+          "date": "16/02/2025",
+          "time": "20:10",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 20,
-          "homeTeam": "Michael",
-          "awayTeam": "Alfie",
-          "homeScore": 0,
-          "awayScore": 0,
-          "date": "15/02/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "homeTeam": "Garcon",
+          "awayTeam": "Michael",
+          "homeScore": 6,
+          "awayScore": 3,
+          "date": "16/02/2025",
+          "time": "20:35",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 21,
-          "homeTeam": "Alfie",
-          "awayTeam": "Garcon",
-          "homeScore": 0,
-          "awayScore": 0,
-          "date": "15/02/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "homeTeam": "Michael",
+          "awayTeam": "Alfie",
+          "homeScore": 3,
+          "awayScore": 4,
+          "date": "16/02/2025",
+          "time": "21:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 22,
@@ -524,7 +524,7 @@
           "awayScore": 0,
           "date": "22/02/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -535,7 +535,7 @@
           "awayScore": 0,
           "date": "22/02/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         },
         {
@@ -546,11 +546,11 @@
           "awayScore": 0,
           "date": "22/02/2025",
           "time": "20:00",
-          "upcoming": false,
+          "upcoming": true,
           "played": false
         }
       ],
-      "winner": "???"
+      "winner": "Michael"
     }
   ]
 }

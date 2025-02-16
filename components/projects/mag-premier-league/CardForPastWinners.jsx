@@ -26,7 +26,7 @@ export default function Component_CardForPastWinners() {
 							</tr>
 							<tr>
 								<td className="w-1/2"><Link href="/projects/gaming/the-mag-premier-league/seasons/season-2" className="block hover:bg-slate-950 transition-all duration-500">2</Link></td>
-								<td className="w-1/2">???</td>
+								<td className="w-1/2">Michael</td>
 							</tr>
 						</tbody>
 					</table>
