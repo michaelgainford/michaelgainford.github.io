@@ -302,14 +302,14 @@
 			"playerId": 19,
 			"playerName": "Mohamed Salah",
 			"playerSlug": "mohamed-salah",
-			"playerClubs": ["Chelsea (2)", "Liverpool (177)"],
-			"playerApps": 287,
-			"playerGoals": 179,
+			"playerClubs": ["Chelsea (2)", "Liverpool (178)"],
+			"playerApps": 288,
+			"playerGoals": 180,
 			"playerLastGoalFor": "Liverpool",
-			"playerLastGoalOpponent": "Everton",
-			"playerLastGoalDate": "2025-02-12",
+			"playerLastGoalOpponent": "Wolverhampton Wanderers",
+			"playerLastGoalDate": "2025-02-16",
 			"playerCurrent": true,
-			"updated": "2025-02-14"
+			"updated": "2025-02-16"
 		},
 		{
 			"playerId": 20,
@@ -532,13 +532,13 @@
 			"playerName": "Son Heung-Min",
 			"playerSlug": "son-heung-min",
 			"playerClubs": ["Tottenham Hotspur (126)"],
-			"playerApps": 324,
+			"playerApps": 325,
 			"playerGoals": 126,
 			"playerLastGoalFor": "Tottenham Hotspur",
 			"playerLastGoalOpponent": "Arsenal",
 			"playerLastGoalDate": "2025-01-15",
 			"playerCurrent": true,
-			"updated": "2025-02-07"
+			"updated": "2025-02-16"
 		}
 	],
 	"Clubs": [
