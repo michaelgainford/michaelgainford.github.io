@@ -4,7 +4,7 @@ const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
 
 {/* Top level component imports for all pages */}
-import BackToTop from "@/components/site_elements/BackToTop";
+import BackToTopButton from "@/components/buttons/BackToTopButton";
 
 {/* This is my default metadata for pages that don't have any metadata */}
 export const metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
 		<html lang="en" className="scroll-smooth bg-slate-900">
 			<body className={`${inter.className} top`}>
 				{children}	
-				<BackToTop />
+				<BackToTopButton />
 			</body>
 		</html>
 	);
