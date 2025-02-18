@@ -301,6 +301,16 @@
 			"icon": "test",
 			"tags": ["illustrations", "design"],
 			"featured": false
+		},
+		{
+			"name": "Heroicons",
+			"slug": "heroicons",
+			"url": "https://heroicons.com",
+			"description": "Heroicons is a set of free premium SVG icons for your web projects. You can use these icons in your websites, apps, and more.",
+			"screenshot": "/dev-resources/screenshot-of--heroicons.webp",
+			"icon": "test",
+			"tags": ["icons", "svg"],
+			"featured": false
 		}
 	]
 }

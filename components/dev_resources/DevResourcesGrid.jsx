@@ -12,13 +12,13 @@ tags.sort();
 export default function Component_DevResourcesGrid() {
   return (
     <>
-      <div className="grid w-full pt-4 resources gap-x-4 gap-y-6 xs:grid-cols-2 md:pt-6 md:gap-8 md:grid-cols-3 xl:grid-cols-4 lg:gap-12 lg:pt-16">
+      <div className="grid w-full pt-4 resources gap-x-4 gap-y-6 xs:grid-cols-2 md:pt-6 md:gap-8 md:grid-cols-3 xl:grid-cols-4 lg:gap-12 lg:pt-16 [&>a]:flex [&>a]:flex-row [&>a]:sm:flex-col">
         {ResourcesSortedByName.map((resource, index) => (
           <Link
             key={index}
             target="_blank"
             href={resource.url}
-            className="flex flex-row sm:flex-col items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000"
+            className="items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg !overflow-hidden border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000"
             title={resource.description ? resource.description : resource.name}
           >
             <div className="w-full flex flex-row xs:flex-col">
@@ -26,7 +26,7 @@ export default function Component_DevResourcesGrid() {
                 <Image
                   src={resource.screenshot}
                   alt={resource.name}
-                  className="z-0 w-full h-full object-cover max-w-full overflow-hidden transition duration-300 md:rounded-t-lg lg:opacity-90 group-hover:opacity-100"
+                  className="z-0 w-full h-full object-cover max-w-full overflow-hidden transition duration-300 md:rounded-t-lg lg:opacity-90 group-hover:opacity-100 aspect-[4/3] sm:aspect-[5/3]"
                   height={320}
                   width={600}
                   priority={index < 5}
