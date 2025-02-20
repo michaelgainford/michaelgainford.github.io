@@ -311,6 +311,16 @@
 			"icon": "test",
 			"tags": ["icons", "svg"],
 			"featured": false
+		},
+		{
+			"name": "Animista",
+			"slug": "animista",
+			"url": "https://animista.net",
+			"description": "Animista is a tool that helps you create CSS animations. You can choose from a variety of pre-made animations or create your own custom animations.",
+			"screenshot": "/dev-resources/screenshot-of--animista.webp",
+			"icon": "test",
+			"tags": ["css", "animations"],
+			"featured": false
 		}
 	]
 }
