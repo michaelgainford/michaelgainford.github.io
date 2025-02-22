@@ -21,7 +21,7 @@ export default function Component_TableOfSitePages() {
 						<th className="text-left!">Status</th>
 					</tr>
 				</thead>
-				<tbody className="text-xs lg:text-sm">
+				<tbody className="text-xs xl:text-sm">
 					{PagesInSitemap.map((item, index) => (
 						<tr
 							key={index}
@@ -35,7 +35,12 @@ export default function Component_TableOfSitePages() {
 												(1000 * 60 * 60 * 24)
 									  ) > daysInAttentionZone
 									? "bg-yellow-500/10"
-									: ""
+									: Math.floor(
+											(today - new Date(item.lastUpdated)) /
+												(1000 * 60 * 60 * 24)
+									  ) > daysInSafeZone
+									? "bg-sky-500/10"
+									: "bg-green-500/10"
 							}`}
 						>
 							<td className="uppercase pl-2">{item.name}</td>

@@ -213,13 +213,13 @@
 			"playerName": "Jamie Vardy",
 			"playerSlug": "jamie-vardy",
 			"playerClubs": ["Leicester City (143)"],
-			"playerApps": 330,
+			"playerApps": 331,
 			"playerGoals": 143,
 			"playerLastGoalFor": "Leicester City",
 			"playerLastGoalOpponent": "Tottenham Hotspur",
 			"playerLastGoalDate": "2025-01-26",
 			"playerCurrent": true,
-			"updated": "2025-02-15"
+			"updated": "2025-02-22"
 		},
 		{
 			"playerId": 15,
