@@ -321,6 +321,16 @@
 			"icon": "test",
 			"tags": ["css", "animations"],
 			"featured": false
+		},
+		{
+			"name": "Every Hex Codes",
+			"slug": "every-hex-codes",
+			"url": "https://www.everyhex.codes",
+			"description": "Every Hex Codes is a super cool site that showcases every single hex code in existence. It's a great resource for finding the perfect colour for your projects.",
+			"screenshot": "/dev-resources/screenshot-of--every-hex-codes.webp",
+			"icon": "test",
+			"tags": ["colours", "hex codes"],
+			"featured": false
 		}
 	]
 }
