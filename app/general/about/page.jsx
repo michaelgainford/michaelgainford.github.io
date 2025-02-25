@@ -7,12 +7,12 @@ import {
 } from "@/variables/Styles";
 
 import Header from "@/components/header/_Header";
-import Card_AboutMe from "@/components/cards/Card_AboutMe";
-import Card_Tools from "@/components/cards/Card_Tools";
-import Card_MySites from "@/components/cards/Card_MySites";
+import CardForAboutMe from "@/components/page_specific/general/about/CardForAboutMe";
+import CardForTools from "@/components/page_specific/general/about/CardForTools";
+import CardForMySites from "@/components/page_specific/general/about/CardForMySites";
+import CardForRandomJoke from "@/components/page_specific/general/about/CardForRandomJoke";
 import Card_IconsSkills from "@/components/icons/Icons_Skills";
 import Card_IconsSocials from "@/components/icons/Icons_Socials";
-import Card_RandomJoke from "@/components/cards/Card_RandomJoke";
 import Footer from "@/components/footer/_Footer";
 
 export const metadata = {
@@ -27,9 +27,9 @@ export default function Page_About() {
 			<main className={`${globalWrapperFixedWidth}`}>
 				<div className="flex w-full justify-center text-center max-w-[1800px]">
 					<div className="grid grid-cols-12 gap-8 xl:gap-y-24 3xl:gap-24 max-lg:mt-8">
-						<Card_AboutMe />
-						<Card_Tools />
-						<Card_MySites />
+						<CardForAboutMe />
+						<CardForTools />
+						<CardForMySites />
 						<Card_IconsSkills 
 						  heading="Site Built Using" 
 						  heading_styles={brandSharedHeadingStyles} 
@@ -38,7 +38,7 @@ export default function Page_About() {
 						  heading="Connect" 
 						  heading_styles={brandSharedHeadingStyles}
 						/>
-						<Card_RandomJoke />
+						<CardForRandomJoke />
 					</div>
 				</div>
 			</main>
