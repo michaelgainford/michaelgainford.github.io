@@ -213,13 +213,13 @@
 			"playerName": "Jamie Vardy",
 			"playerSlug": "jamie-vardy",
 			"playerClubs": ["Leicester City (143)"],
-			"playerApps": 331,
+			"playerApps": 332,
 			"playerGoals": 143,
 			"playerLastGoalFor": "Leicester City",
 			"playerLastGoalOpponent": "Tottenham Hotspur",
 			"playerLastGoalDate": "2025-01-26",
 			"playerCurrent": true,
-			"updated": "2025-02-22"
+			"updated": "2025-02-27"
 		},
 		{
 			"playerId": 15,
@@ -303,13 +303,13 @@
 			"playerName": "Mohamed Salah",
 			"playerSlug": "mohamed-salah",
 			"playerClubs": ["Chelsea (2)", "Liverpool (180)"],
-			"playerApps": 290,
+			"playerApps": 291,
 			"playerGoals": 182,
 			"playerLastGoalFor": "Liverpool",
 			"playerLastGoalOpponent": "Manchester City",
 			"playerLastGoalDate": "2025-02-23",
 			"playerCurrent": true,
-			"updated": "2025-02-23"
+			"updated": "2025-02-26"
 		},
 		{
 			"playerId": 20,
@@ -395,13 +395,13 @@
 				"Chelsea (14)",
 				"Arsenal (0)"
 			],
-			"playerApps": 390,
+			"playerApps": 391,
 			"playerGoals": 123,
 			"playerLastGoalFor": "Chelsea",
 			"playerLastGoalOpponent": "Bournemouth",
 			"playerLastGoalDate": "2024-05-19",
 			"playerCurrent": true,
-			"updated": "2025-02-22"
+			"updated": "2025-02-26"
 		},
 		{
 			"playerId": 26,
@@ -532,13 +532,13 @@
 			"playerName": "Son Heung-Min",
 			"playerSlug": "son-heung-min",
 			"playerClubs": ["Tottenham Hotspur (126)"],
-			"playerApps": 326,
+			"playerApps": 327,
 			"playerGoals": 126,
 			"playerLastGoalFor": "Tottenham Hotspur",
 			"playerLastGoalOpponent": "Arsenal",
 			"playerLastGoalDate": "2025-01-15",
 			"playerCurrent": true,
-			"updated": "2025-02-22"
+			"updated": "2025-02-26"
 		}
 	],
 	"Clubs": [
