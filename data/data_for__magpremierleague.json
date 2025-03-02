@@ -520,34 +520,34 @@
           "game": 22,
           "homeTeam": "Garcon",
           "awayTeam": "Alfie",
-          "homeScore": 0,
+          "homeScore": 3,
           "awayScore": 0,
           "date": "01/03/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "00:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 23,
           "homeTeam": "Alfie",
           "awayTeam": "Michael",
           "homeScore": 0,
-          "awayScore": 0,
+          "awayScore": 3,
           "date": "01/03/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "00:00",
+          "upcoming": false,
+          "played": true
         },
         {
           "game": 24,
           "homeTeam": "Michael",
           "awayTeam": "Garcon",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
           "date": "01/03/2025",
-          "time": "20:00",
-          "upcoming": true,
-          "played": false
+          "time": "18:15",
+          "upcoming": false,
+          "played": true
         }
       ],
       "winner": "Michael"

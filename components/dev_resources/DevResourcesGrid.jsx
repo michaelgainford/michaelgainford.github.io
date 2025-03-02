@@ -26,7 +26,7 @@ export default function Component_DevResourcesGrid() {
                 <Image
                   src={resource.screenshot}
                   alt={resource.name}
-                  className="z-0 w-full h-full object-cover max-w-full overflow-hidden transition duration-300 md:rounded-t-lg lg:opacity-90 group-hover:opacity-100 aspect-[4/3] sm:aspect-[5/3]"
+                  className="z-0 w-full h-full object-cover max-w-full overflow-hidden transition duration-300 md:rounded-t-base lg:opacity-90 group-hover:opacity-100 aspect-[4/3] sm:aspect-[5/3]"
                   height={320}
                   width={600}
                   priority={index < 5}
