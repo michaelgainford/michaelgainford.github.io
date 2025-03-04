@@ -1,14 +1,15 @@
 import Image from "next/image";
 import ForniteData from "@/data/data_for__fortnite.json";
 const Chapters = ForniteData.Chapters;
+const imagesFolder = "/gaming/fortnite/";
 
 {/* Styles - Headings */}
-const subSectionHeadingStyles = "border-2 px-4 py-3 mb-8 text-slate-900 uppercase tracking-widest lg:mb-8 lg:mt-6 lg:font-bold mt-8 text-[16px]!";
+const subSectionHeadingStyles = "border-2 px-4 py-3 mb-8 text-slate-900 uppercase tracking-widest lg:mb-8 lg:mt-6 lg:font-bold mt-8 text-xs lg:text-base";
 
 {/* Styles - Snap */}
 const snapContainerStyles = "snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8";
-const snapSlideStyles = "flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:aspect-1000/563! lg:hover:opacity-100 xl:min-w-[640px] max-w-[600px] snap-always snap-start cursor-pointer overflow-hidden";
-const snapSlideImageStyles = "relative inset-0 z-0 w-full h-full object-fit z-1 max-w-[80dvw]";
+const snapSlideStyles = "flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:aspect-1000/563! lg:hover:opacity-100 xl:min-w-[480px] max-w-[540px] snap-always snap-start cursor-pointer overflow-hidden";
+const snapSlideImageStyles = "relative inset-0 z-0 w-full h-full object-fit z-1 max-w-[80dvw] xl:max-w-[500px]";
 const snapSlideImageOverlayStyles = "absolute translate-y-32 bottom-0 w-full bg-black/80 z-10 w-full xl:h-[120px] mt-auto duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 hidden group-hover/season:block transition w-full flex! items-center justify-center group-hover/season:bottom-0 transform group-hover/season:translate-y-0 z-0 text-slate-300 text-xxs lg:text-sm py-2 text-center group-hover/season:opacity-100 flex-col";
 
 export default function Component_ForniteChapters() {
@@ -32,10 +33,10 @@ export default function Component_ForniteChapters() {
 					{chapter.seasons.map((season, index) => (
 						<div key={index} className={snapSlideStyles}>
 							<Image
-								src={season.mobile_image}
-								alt={season.name}
-								width={600}
-								height={338}
+								src={`${imagesFolder}chapter-${season.chapter}/${season.mobile_image}-season-artwork.webp`}
+								alt={`Chapter ${season.chapter} Season ${season.season}: ${season.theme}`}
+								width={540}
+								height={315}
 								className={snapSlideImageStyles}
 							/>
 							<div className={snapSlideImageOverlayStyles}>
@@ -45,7 +46,7 @@ export default function Component_ForniteChapters() {
 								<div className="run-dates">
 									{new Date(season.start_date).toLocaleDateString('en-GB')} to {new Date(season.end_date).toLocaleDateString('en-GB')}
 								</div>
-								<div className="theme">({season.theme})</div>
+								<div className="theme">Theme: ({season.theme})</div>
 							</div>
 						</div>
 					))}
