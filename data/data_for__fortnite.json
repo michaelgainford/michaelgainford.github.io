@@ -12,8 +12,8 @@
 					"end_date": "2017-12-13",
 					"title": "First Steps",
 					"theme": "No Theme",
-					"mobile_image": "/gaming/fortnite/c1-s1-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s1-season-artwork.webp"
+					"mobile_image": "c1-s1",
+					"desktop_image": "c1-s1"
 				},
 				{
 					"name": "C1 S2",
@@ -24,8 +24,8 @@
 					"end_date": "2018-02-21",
 					"title": "Fort Knights",
 					"theme": "Medieval",
-					"mobile_image": "/gaming/fortnite/c1-s2-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s2-season-artwork.webp"
+					"mobile_image": "c1-s2",
+					"desktop_image": "c1-s2"
 				},
 				{
 					"name": "C1 S3",
@@ -36,8 +36,8 @@
 					"end_date": "2018-04-30",
 					"title": "Meteor Strike",
 					"theme": "Space",
-					"mobile_image": "/gaming/fortnite/c1-s3-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s3-season-artwork.webp"
+					"mobile_image": "c1-s3",
+					"desktop_image": "c1-s3"
 				},
 				{
 					"name": "C1 S4",
@@ -48,8 +48,8 @@
 					"end_date": "2018-07-11",
 					"title": "Brace For Impact",
 					"theme": "Superheroes",
-					"mobile_image": "/gaming/fortnite/c1-s4-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s4-season-artwork.webp"
+					"mobile_image": "c1-s4",
+					"desktop_image": "c1-s4"
 				},
 				{
 					"name": "C1 S5",
@@ -60,8 +60,8 @@
 					"end_date": "2018-09-26",
 					"title": "Worlds Collide",
 					"theme": "Worlds Collide",
-					"mobile_image": "/gaming/fortnite/c1-s5-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s5-season-artwork.webp"
+					"mobile_image": "c1-s5",
+					"desktop_image": "c1-s5"
 				},
 				{
 					"name": "C1 S6",
@@ -72,8 +72,8 @@
 					"end_date": "2018-12-05",
 					"title": "Darkness Rises",
 					"theme": "Darkness Corruption",
-					"mobile_image": "/gaming/fortnite/c1-s6-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s6-season-artwork.webp"
+					"mobile_image": "c1-s6",
+					"desktop_image": "c1-s6"
 				},
 				{
 					"name": "C1 S7",
@@ -83,8 +83,8 @@
 					"start_date": "2018-12-06",
 					"end_date": "2019-02-27",
 					"theme": "Winter",
-					"mobile_image": "/gaming/fortnite/c1-s7-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s7-season-artwork.webp"
+					"mobile_image": "c1-s7",
+					"desktop_image": "c1-s7"
 				},
 				{
 					"name": "C1 S8",
@@ -95,8 +95,8 @@
 					"end_date": "2019-05-08",
 					"title": "X Marks The Spot",
 					"theme": "Adventure Pirates",
-					"mobile_image": "/gaming/fortnite/c1-s8-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s8-season-artwork.webp"
+					"mobile_image": "c1-s8",
+					"desktop_image": "c1-s8"
 				},
 				{
 					"name": "C1 S9",
@@ -107,8 +107,8 @@
 					"end_date": "2019-07-31",
 					"title": "The Future Is Yours",
 					"theme": "The Future",
-					"mobile_image": "/gaming/fortnite/c1-s9-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-s9-season-artwork.webp"
+					"mobile_image": "c1-s9",
+					"desktop_image": "c1-s9"
 				},
 				{
 					"name": "C1 SX",
@@ -119,8 +119,8 @@
 					"end_date": "2019-10-13",
 					"title": "Out Of Time",
 					"theme": "Time Travel",
-					"mobile_image": "/gaming/fortnite/c1-sx-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c1-sx-season-artwork.webp"
+					"mobile_image": "c1-sx",
+					"desktop_image": "c1-sx"
 				}
 			]
 		},
@@ -136,8 +136,8 @@
 					"end_date": "2019-02-19",
 					"title": "New World",
 					"theme": "New World",
-					"mobile_image": "/gaming/fortnite/c2-s1-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s1-season-artwork.webp"
+					"mobile_image": "c2-s1",
+					"desktop_image": "c2-s1"
 				},
 				{
 					"name": "C2 S2",
@@ -148,8 +148,8 @@
 					"end_date": "2020-06-16",
 					"title": "Top Secret",
 					"theme": "Spies",
-					"mobile_image": "/gaming/fortnite/c2-s2-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s2-season-artwork.webp"
+					"mobile_image": "c2-s2",
+					"desktop_image": "c2-s2"
 				},
 				{
 					"name": "C2 S3",
@@ -160,8 +160,8 @@
 					"end_date": "2020-08-26",
 					"title": "Splash Down",
 					"theme": "Flooded Island",
-					"mobile_image": "/gaming/fortnite/c2-s3-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s3-season-artwork.webp"
+					"mobile_image": "c2-s3",
+					"desktop_image": "c2-s3"
 				},
 				{
 					"name": "C2 S4",
@@ -172,8 +172,8 @@
 					"end_date": "2020-12-01",
 					"title": "Nexus War",
 					"theme": "Marvel",
-					"mobile_image": "/gaming/fortnite/c2-s4-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s4-season-artwork.webp"
+					"mobile_image": "c2-s4",
+					"desktop_image": "c2-s4"
 				},
 				{
 					"name": "C2 S5",
@@ -184,8 +184,8 @@
 					"end_date": "2021-03-15",
 					"title": "Zero Point",
 					"theme": "Desert Hunters",
-					"mobile_image": "/gaming/fortnite/c2-s5-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s5-season-artwork.webp"
+					"mobile_image": "c2-s5",
+					"desktop_image": "c2-s5"
 				},
 				{
 					"name": "C2 S6",
@@ -196,8 +196,8 @@
 					"end_date": "2021-06-07",
 					"title": "Primal",
 					"theme": "Primitive Age",
-					"mobile_image": "/gaming/fortnite/c2-s6-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s6-season-artwork.webp"
+					"mobile_image": "c2-s6",
+					"desktop_image": "c2-s6"
 				},
 				{
 					"name": "C2 S7",
@@ -208,8 +208,8 @@
 					"end_date": "2021-09-12",
 					"title": "Invasion",
 					"theme": "Aliens",
-					"mobile_image": "/gaming/fortnite/c2-s7-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s7-season-artwork.webp"
+					"mobile_image": "c2-s7",
+					"desktop_image": "c2-s7"
 				},
 				{
 					"name": "C2 S8",
@@ -220,8 +220,8 @@
 					"end_date": "2021-12-04",
 					"title": "Cubed",
 					"theme": "Corruption",
-					"mobile_image": "/gaming/fortnite/c2-s8-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c2-s8-season-artwork.webp"
+					"mobile_image": "c2-s8",
+					"desktop_image": "c2-s8"
 				}
 			]
 		},
@@ -237,8 +237,8 @@
 					"end_date": "2022-03-19",
 					"title": "Flipped",
 					"theme": "New World",
-					"mobile_image": "/gaming/fortnite/c3-s1-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c3-s1-season-artwork.webp"
+					"mobile_image": "c3-s1",
+					"desktop_image": "c3-s1"
 				},
 				{
 					"name": "C3 S2",
@@ -249,8 +249,8 @@
 					"end_date": "2022-06-04",
 					"title": "Resistance",
 					"theme": "Imagined Order vs. The Seven War",
-					"mobile_image": "/gaming/fortnite/c3-s2-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c3-s2-season-artwork.webp"
+					"mobile_image": "c3-s2",
+					"desktop_image": "c3-s2"
 				},
 				{
 					"name": "C3 S3",
@@ -261,8 +261,8 @@
 					"end_date": "2022-09-17",
 					"title": "Vibin'",
 					"theme": "Party",
-					"mobile_image": "/gaming/fortnite/c3-s3-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c3-s3-season-artwork.webp"
+					"mobile_image": "c3-s3",
+					"desktop_image": "c3-s3"
 				},
 				{
 					"name": "C3 S4",
@@ -273,8 +273,8 @@
 					"end_date": "2022-12-03",
 					"title": "Paradise",
 					"theme": "Chrome",
-					"mobile_image": "/gaming/fortnite/c3-s4-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c3-s4-season-artwork.webp"
+					"mobile_image": "c3-s4",
+					"desktop_image": "c3-s4"
 				}
 			]
 		},
@@ -290,8 +290,8 @@
 					"end_date": "2023-03-18",
 					"title": "A New Beginning",
 					"theme": "New World Medieval",
-					"mobile_image": "/gaming/fortnite/c4-s1-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c4-s1-season-artwork.webp"
+					"mobile_image": "c4-s1",
+					"desktop_image": "c4-s1"
 				},
 				{
 					"name": "C4 S2",
@@ -302,8 +302,8 @@
 					"end_date": "2023-06-08",
 					"title": "MEGA",
 					"theme": "Neo-Tokyo",
-					"mobile_image": "/gaming/fortnite/c4-s2-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c4-s2-season-artwork.webp"
+					"mobile_image": "c4-s2",
+					"desktop_image": "c4-s2"
 				},
 				{
 					"name": "C4 S3",
@@ -314,8 +314,8 @@
 					"end_date": "2023-08-24",
 					"title": "Wilds",
 					"theme": "Jungle",
-					"mobile_image": "/gaming/fortnite/c4-s3-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c4-s3-season-artwork.webp"
+					"mobile_image": "c4-s3",
+					"desktop_image": "c4-s3"
 				},
 				{
 					"name": "C4 S4",
@@ -326,8 +326,8 @@
 					"end_date": "2023-11-02",
 					"title": "Last Resort",
 					"theme": "Heist",
-					"mobile_image": "/gaming/fortnite/c4-s4-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c4-s4-season-artwork.webp"
+					"mobile_image": "c4-s4",
+					"desktop_image": "c4-s4"
 				},
 				{
 					"name": "C4 SOG",
@@ -338,8 +338,8 @@
 					"end_date": "2023-12-02",
 					"title": "OG",
 					"theme": "Fortnite Chapter 1",
-					"mobile_image": "/gaming/fortnite/c4-sog-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c4-sog-season-artwork.webp"
+					"mobile_image": "c4-sog",
+					"desktop_image": "c4-sog"
 				}
 			]
 		},
@@ -355,8 +355,8 @@
 					"end_date": "2024-03-08",
 					"title": "Underground",
 					"theme": "The Society vs The Underground",
-					"mobile_image": "/gaming/fortnite/c5-s1-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c5-s1-season-artwork.webp"
+					"mobile_image": "c5-s1",
+					"desktop_image": "c5-s1"
 				},
 				{
 					"name": "C5 S2",
@@ -367,8 +367,8 @@
 					"end_date": "2024-05-24",
 					"title": "Myths & Mortals",
 					"theme": "Greek Mythology",
-					"mobile_image": "/gaming/fortnite/c5-s2-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c5-s2-season-artwork.webp"
+					"mobile_image": "c5-s2",
+					"desktop_image": "c5-s2"
 				},
 				{
 					"name": "C5 S3",
@@ -379,8 +379,8 @@
 					"end_date": "2024-08-15",
 					"title": "Wrecked",
 					"theme": "Post-Apocalypse",
-					"mobile_image": "/gaming/fortnite/c5-s3-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c5-s3-season-artwork.webp"
+					"mobile_image": "c5-s3",
+					"desktop_image": "c5-s3"
 				},
 				{
 					"name": "C5 S4",
@@ -391,8 +391,8 @@
 					"end_date": "2024-11-02",
 					"title": "Absolute Doom",
 					"theme": "Marvel",
-					"mobile_image": "/gaming/fortnite/c5-s4-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c5-s4-season-artwork.webp"
+					"mobile_image": "c5-s4",
+					"desktop_image": "c5-s4"
 				},
 				{
 					"name": "C5 Season Remix",
@@ -403,8 +403,8 @@
 					"end_date": "2024-11-30",
 					"title": "Chapter 2 Remix",
 					"theme": "Fortnite Chapter 2",
-					"mobile_image": "/gaming/fortnite/c5-sremix-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c5-sremix-season-artwork.webp"
+					"mobile_image": "c5-sremix",
+					"desktop_image": "c5-sremix"
 				}
 			]
 		},
@@ -420,8 +420,8 @@
 					"end_date": "2025-02-21",
 					"title": "Hunters",
 					"theme": "Traditional Japan",
-					"mobile_image": "/gaming/fortnite/c6-s1-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c6-s1-season-artwork.webp"
+					"mobile_image": "c6-s1",
+					"desktop_image": "c6-s1"
 				},
 				{
 					"name": "C6 S2",
@@ -432,8 +432,8 @@
 					"end_date": "2025-05-02",
 					"title": "Lawless",
 					"theme": "Crime",
-					"mobile_image": "/gaming/fortnite/c6-s2-season-artwork.webp",
-					"desktop_image": "/gaming/fortnite/c6-s2-season-artwork.webp"
+					"mobile_image": "c6-s2",
+					"desktop_image": "c6-s2"
 				}
 			]
 		}
