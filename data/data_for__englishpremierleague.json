@@ -302,14 +302,14 @@
 			"playerId": 19,
 			"playerName": "Mohamed Salah",
 			"playerSlug": "mohamed-salah",
-			"playerClubs": ["Chelsea (2)", "Liverpool (180)"],
-			"playerApps": 291,
-			"playerGoals": 182,
+			"playerClubs": ["Chelsea (2)", "Liverpool (182)"],
+			"playerApps": 292,
+			"playerGoals": 184,
 			"playerLastGoalFor": "Liverpool",
-			"playerLastGoalOpponent": "Manchester City",
-			"playerLastGoalDate": "2025-02-23",
+			"playerLastGoalOpponent": "Southampton",
+			"playerLastGoalDate": "2025-03-08",
 			"playerCurrent": true,
-			"updated": "2025-02-26"
+			"updated": "2025-03-08"
 		},
 		{
 			"playerId": 20,
