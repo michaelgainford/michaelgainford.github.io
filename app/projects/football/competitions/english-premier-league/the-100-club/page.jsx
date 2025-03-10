@@ -18,7 +18,7 @@ export const metadata = {
 
 const pageIntroText = `The Premier League 100 Club is an illustrious group of players who have scored 100 or more goals in the Premier League. The first player to reach this milestone was Alan Shearer, who scored 260 goals in the Premier League during his career. As of today, there are ${numberOfPlayers} players in the 100 Club.`;
 
-export default function Page_PremierLeague100Club() {
+export default function Page_EnglishPremierLeague100Club() {
 	return (
 		<div
 			className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}
