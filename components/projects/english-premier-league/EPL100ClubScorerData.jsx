@@ -18,7 +18,7 @@ const calculateDaysAgo = (date) => {
 
 export default function Component_EPL100ClubScorerData() {
 	return (
-		<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+		<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 !px-0">
 			{Object.values(sortedByGoals).map((TopScorer, index) => {
 				//let clubsDir = "/clubs/";
 				let playerImageDir = "/football/premier-league/players/";
@@ -56,13 +56,13 @@ export default function Component_EPL100ClubScorerData() {
 						<div className={`absolute top-1 right-1 p-1 text-xs player-status rounded-tr-md rounded-bl-lg lowercase ${TopScorer.playerCurrent ? "bg-emerald-300" : "bg-rose-100"} group-hover:text-epl`}>
 							{TopScorer.playerCurrent ? "Active" : "Retired"}
 						</div>
-						<div className={`absolute bottom-1 left-[4%] text-[10px] mx-auto w-[92%]`}>
+						<div className="absolute bottom-1 left-[4%] text-[10px] mx-auto w-[92%]">
 							<p className="px-4 mx-auto italic text-slate-400 text-balance">
-									Last scored in the Premier League for {TopScorer.playerLastGoalFor} on {new Date(TopScorer.playerLastGoalDate).toLocaleDateString('en-GB')} (
-									{calculateDaysAgo(TopScorer.playerLastGoalDate) === 0
-									? 'today'
-									: `${calculateDaysAgo(TopScorer.playerLastGoalDate)} ${calculateDaysAgo(TopScorer.playerLastGoalDate) === 1 ? 'day ago' : 'days ago'}`}
-									) vs {TopScorer.playerLastGoalOpponent}.
+								Last scored in the Premier League for {TopScorer.playerLastGoalFor} on {new Date(TopScorer.playerLastGoalDate).toLocaleDateString('en-GB')} (
+								{calculateDaysAgo(TopScorer.playerLastGoalDate) === 0
+								? 'today'
+								: `${calculateDaysAgo(TopScorer.playerLastGoalDate)} ${calculateDaysAgo(TopScorer.playerLastGoalDate) === 1 ? 'day ago' : 'days ago'}`}
+								) vs {TopScorer.playerLastGoalOpponent}.
 							</p>
 						</div>
 					</div>
