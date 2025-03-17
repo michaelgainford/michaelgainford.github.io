@@ -213,13 +213,13 @@
 			"playerName": "Jamie Vardy",
 			"playerSlug": "jamie-vardy",
 			"playerClubs": ["Leicester City (143)"],
-			"playerApps": 333,
+			"playerApps": 334,
 			"playerGoals": 143,
 			"playerLastGoalFor": "Leicester City",
 			"playerLastGoalOpponent": "Tottenham Hotspur",
 			"playerLastGoalDate": "2025-01-26",
 			"playerCurrent": true,
-			"updated": "2025-03-09"
+			"updated": "2025-03-16"
 		},
 		{
 			"playerId": 15,
@@ -532,13 +532,13 @@
 			"playerName": "Son Heung-Min",
 			"playerSlug": "son-heung-min",
 			"playerClubs": ["Tottenham Hotspur (127)"],
-			"playerApps": 328,
+			"playerApps": 329,
 			"playerGoals": 127,
 			"playerLastGoalFor": "Tottenham Hotspur",
 			"playerLastGoalOpponent": "Bournemouth",
 			"playerLastGoalDate": "2025-03-09",
 			"playerCurrent": true,
-			"updated": "2025-03-09"
+			"updated": "2025-03-16"
 		}
 	],
 	"Clubs": [
