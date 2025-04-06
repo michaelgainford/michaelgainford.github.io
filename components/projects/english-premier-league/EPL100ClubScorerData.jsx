@@ -61,7 +61,7 @@ export default function Component_EPL100ClubScorerData() {
 								Last scored in the Premier League for {TopScorer.playerLastGoalFor} on {new Date(TopScorer.playerLastGoalDate).toLocaleDateString('en-GB')} (
 								{calculateDaysAgo(TopScorer.playerLastGoalDate) === 0
 								? 'today'
-								: `${calculateDaysAgo(TopScorer.playerLastGoalDate)} ${calculateDaysAgo(TopScorer.playerLastGoalDate) === 1 ? 'day ago' : 'days ago'}`}
+								: `${calculateDaysAgo(TopScorer.playerLastGoalDate).toLocaleString()} ${calculateDaysAgo(TopScorer.playerLastGoalDate) === 1 ? 'day ago' : 'days ago'}`}
 								) vs {TopScorer.playerLastGoalOpponent}.
 							</p>
 						</div>
