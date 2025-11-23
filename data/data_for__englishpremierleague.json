@@ -213,13 +213,13 @@
 			"playerName": "Jamie Vardy",
 			"playerSlug": "jamie-vardy",
 			"playerClubs": ["Leicester City (143)"],
-			"playerApps": 335,
-			"playerGoals": 143,
+			"playerApps": 342,
+			"playerGoals": 145,
 			"playerLastGoalFor": "Leicester City",
 			"playerLastGoalOpponent": "Tottenham Hotspur",
-			"playerLastGoalDate": "2025-01-26",
+			"playerLastGoalDate": "2025-05-18",
 			"playerCurrent": true,
-			"updated": "2025-04-02"
+			"updated": "2025-08-01"
 		},
 		{
 			"playerId": 15,
@@ -302,14 +302,14 @@
 			"playerId": 19,
 			"playerName": "Mohamed Salah",
 			"playerSlug": "mohamed-salah",
-			"playerClubs": ["Chelsea (2)", "Liverpool (182)"],
-			"playerApps": 294,
-			"playerGoals": 184,
+			"playerClubs": ["Chelsea (2)", "Liverpool (188)"],
+			"playerApps": 313,
+			"playerGoals": 190,
 			"playerLastGoalFor": "Liverpool",
-			"playerLastGoalOpponent": "Southampton",
-			"playerLastGoalDate": "2025-03-08",
+			"playerLastGoalOpponent": "Aston Villa",
+			"playerLastGoalDate": "2025-11-01",
 			"playerCurrent": true,
-			"updated": "2025-04-06"
+			"updated": "2025-11-23"
 		},
 		{
 			"playerId": 20,
@@ -395,13 +395,13 @@
 				"Chelsea (14)",
 				"Arsenal (0)"
 			],
-			"playerApps": 392,
+			"playerApps": 396,
 			"playerGoals": 123,
 			"playerLastGoalFor": "Chelsea",
 			"playerLastGoalOpponent": "Bournemouth",
 			"playerLastGoalDate": "2024-05-19",
 			"playerCurrent": true,
-			"updated": "2025-04-05"
+			"updated": "2025-08-01"
 		},
 		{
 			"playerId": 26,
@@ -532,13 +532,13 @@
 			"playerName": "Son Heung-Min",
 			"playerSlug": "son-heung-min",
 			"playerClubs": ["Tottenham Hotspur (127)"],
-			"playerApps": 331,
+			"playerApps": 333,
 			"playerGoals": 127,
 			"playerLastGoalFor": "Tottenham Hotspur",
 			"playerLastGoalOpponent": "Bournemouth",
 			"playerLastGoalDate": "2025-03-09",
 			"playerCurrent": true,
-			"updated": "2025-04-06"
+			"updated": "2025-08-01"
 		}
 	],
 	"Clubs": [
@@ -2956,7 +2956,7 @@
 			"biggestWin": "4-0 vs Bournemouth (2019)",
 			"biggestLoss": "0-5 vs Manchester City (2019)",
 			"clubBlurb": "Burnley Football Club is a professional association football club based in Burnley, Lancashire, England, founded in 1882. Nicknamed The Clarets, due to the dominant colour of their home shirts, they were one of the founding members of the Football League in 1888.",
-			"currentPrem": false,
+			"currentPrem": true,
 			"premierLeagueSeasons": [
 				{
 					"season1Pos": -1,

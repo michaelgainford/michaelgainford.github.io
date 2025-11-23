@@ -1582,7 +1582,7 @@
             "year": 1998,
             "genre": "Comedy",
             "duration": 103,
-            "watched": false
+            "watched": true
         },
         {
             "id": 134,
@@ -1630,6 +1630,114 @@
             "year": 2024,
             "genre": "Action",
             "duration": 108,
+            "watched": true
+        },
+        {
+            "id": 138,
+            "title": "Austin Powers",
+            "image": "/movies-images/austin-powers.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0118655/",
+            "description":
+                "A British secret agent is thawed out of cryogenic sleep to oppose his arch-nemesis, Dr. Evil.",
+            "year": 1997,
+            "genre": "Comedy",
+            "duration": 95,
+            "watched": true
+        },
+        {
+            "id": 139,
+            "title": "Austin Powers: The Spy Who Shagged Me",
+            "image": "/movies-images/austin-powers-the-spy-who-shagged-me.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0145660/",
+            "description":
+                "Austin Powers travels back to 1969 to stop Dr. Evil from stealing Austin's mojo.",
+            "year": 1999,
+            "genre": "Comedy",
+            "duration": 95,
+            "watched": true
+        },
+        {
+            "id": 140,
+            "title": "Austin Powers in Goldmember",
+            "image": "/movies-images/austin-powers-in-goldmember.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0295178/",
+            "description":
+                "Austin Powers teams up with his father to stop Dr. Evil from using a time machine to take over the world.",
+            "year": 2002,
+            "genre": "Comedy",
+            "duration": 94,
+            "watched": true
+        },
+        {
+            "id": 143,
+            "title": "Madagascar",
+            "image": "/movies-images/madagascar.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0351283/",
+            "description":
+                "A group of spoiled animals from the Central Park Zoo find themselves stranded on the island of Madagascar.",
+            "year": 2005,
+            "genre": "Animation",
+            "duration": 86,
+            "watched": true
+        },
+        {
+            "id": 144,
+            "title": "Madagascar: Escape 2 Africa",
+            "image": "/movies-images/madagascar-escape-2-africa.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0479952/",
+            "description":
+                "Alex, Marty, Melman, and Gloria try to get back to New York by hijacking a plane, but they crash-land in Africa, where Alex reunites with his parents and must come to terms with his true identity.",
+            "year": 2008,
+            "genre": "Animation",
+            "duration": 89,
+            "watched": true
+        },
+        {
+            "id": 145,
+            "title": "Madagascar 3: Europe's Most Wanted",
+            "image": "/movies-images/madagascar-3-europes-most-wanted.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1277953/",
+            "description":
+                "Alex, Marty, Melman, and Gloria join a traveling circus as they continue their journey back to New York City.",
+            "year": 2012,
+            "genre": "Animation",
+            "duration": 93,
+            "watched": true
+        },
+        {
+            "id": 146,
+            "title": "The Secret Life of Pets",
+            "image": "/movies-images/the-secret-life-of-pets.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2709768/",
+            "description":
+                "The quiet life of a terrier named Max is upended when his owner takes in a stray dog named Duke.",
+            "year": 2016,
+            "genre": "Animation",
+            "duration": 87,
+            "watched": true
+        },
+        {
+            "id": 147,
+            "title": "The Secret Life of Pets 2",
+            "image": "/movies-images/the-secret-life-of-pets-2.webp",
+            "imdb_url": "https://www.imdb.com/title/tt5113040/",
+            "description":
+                "Continuing the story of Max and his pet friends, who now must deal with some new challenges and adventures.",
+            "year": 2019,
+            "genre": "Animation",
+            "duration": 86,
+            "watched": true
+        },
+        {
+            "id": 148,
+            "title": "The Simpsons Movie",
+            "image": "/movies-images/the-simpsons-movie.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0462538/",
+            "description":
+                "Homer Simpson must save his town from an environmental disaster caused by his own negligence.",
+            "year": 2007,
+            "genre": "Animation",
+            "duration": 87,
             "watched": true
         }
     ]
