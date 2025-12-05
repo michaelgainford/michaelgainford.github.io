@@ -1,6 +1,6 @@
-import FooterNav from "@/components/footer/Footer_Nav";
-import FooterAbout from "@/components/footer/Footer_About";
-import Copyright from "@/components/footer/Footer_Copyright";
+import FooterNav from "./Footer_Nav";
+import FooterAbout from "./Footer_About";
+import Copyright from "./Footer_Copyright";
 
 export default function Component_Footer(customTextColour) {
 	return (
