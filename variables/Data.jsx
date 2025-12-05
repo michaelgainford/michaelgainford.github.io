@@ -28,6 +28,8 @@ import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
 import epl100ScorerDataJSON from '@/data/data_for__englishpremierleague.json';
 import DataForMoviesListImport from "@/data/data_for__movies.json";
 
+const numberOfPremierLeagueSeasons = 34;
+
 {/********************************
   SITE
 *********************************/}
@@ -74,7 +76,7 @@ const premierLeagueYears = [
 ];
 
 {/* map through the premier league seasons and create an array of season positions */}
-const seasonPositions = Array.from({ length: 33 }, (_, i) => `season${i + 1}Pos`);
+const seasonPositions = Array.from({ length: numberOfPremierLeagueSeasons }, (_, i) => `season${i + 1}Pos`);
 
 {/* paths */}
 const clubLogosRoot = "/football/premier-league/club-logos";
