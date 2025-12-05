@@ -551,7 +551,7 @@
 			"stadium": "Emirates Stadium",
 			"stadiumCapacity": 60704,
 			"numberOfPremierLeagueTitles": 3,
-			"numberOfSeasonsInPremierLeague": 33,
+			"numberOfSeasonsInPremierLeague": 34,
 			"highestLeagueFinish": 1,
 			"lowestFinish": 12,
 			"biggestWin": "7-0 vs Everton (2005)",
@@ -752,12 +752,12 @@
 					"season32L": 5,
 					"season32F": 91,
 					"season32A": 29,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 2,
+					"season33W": 20,
+					"season33D": 14,
+					"season33L": 4,
+					"season33F": 69,
+					"season33A": 34
 				}
 			]
 		},
@@ -971,7 +971,12 @@
 					"season32L": 10,
 					"season32F": 76,
 					"season32A": 61,
-					"season33Pos": 0
+					"season33Pos": 6,
+					"season33W": 19,
+					"season33D": 9,
+					"season33L": 10,
+					"season33F": 58,
+					"season33A": 51
 				}
 			]
 		},
@@ -2079,7 +2084,7 @@
 			"stadium": "Vitality Stadium",
 			"stadiumCapacity": 11364,
 			"numberOfPremierLeagueTitles": 0,
-			"numberOfSeasonsInPremierLeague": 5,
+			"numberOfSeasonsInPremierLeague": 8,
 			"highestLeagueFinish": 9,
 			"lowestFinish": 18,
 			"biggestWin": "4-0 vs Chelsea (2018)",
@@ -2275,12 +2280,12 @@
 					"season32L": 16,
 					"season32F": 54,
 					"season32A": 67,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 9,
+					"season33W": 15,
+					"season33D": 11,
+					"season33L": 12,
+					"season33F": 58,
+					"season33A": 46
 				}
 			]
 		},
@@ -2512,7 +2517,7 @@
 			"stadium": "Brentford Community Stadium",
 			"stadiumCapacity": 17250,
 			"numberOfPremierLeagueTitles": 0,
-			"numberOfSeasonsInPremierLeague": 1,
+			"numberOfSeasonsInPremierLeague": 4,
 			"highestLeagueFinish": 10,
 			"lowestFinish": 20,
 			"biggestWin": "3-0 vs Arsenal (2021)",
@@ -2713,12 +2718,12 @@
 					"season32L": 19,
 					"season32F": 56,
 					"season32A": 65,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 10,
+					"season33W": 16,
+					"season33D": 8,
+					"season33L": 14,
+					"season33F": 66,
+					"season33A": 57
 				}
 			]
 		},
@@ -2731,8 +2736,8 @@
 			"stadium": "Falmer Stadium",
 			"stadiumCapacity": 30750,
 			"numberOfPremierLeagueTitles": 0,
-			"numberOfSeasonsInPremierLeague": 5,
-			"highestLeagueFinish": 15,
+			"numberOfSeasonsInPremierLeague": 8,
+			"highestLeagueFinish": 8,
 			"lowestFinish": 20,
 			"biggestWin": "4-0 vs Manchester City (2020)",
 			"biggestLoss": "0-5 vs Manchester City (2021)",
@@ -2932,12 +2937,12 @@
 					"season32L": 14,
 					"season32F": 55,
 					"season32A": 62,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 8,
+					"season33W": 16,
+					"season33D": 13,
+					"season33L": 9,
+					"season33F": 66,
+					"season33A": 59
 				}
 			]
 		},
@@ -3584,7 +3589,7 @@
 					"season32L": 0,
 					"season32F": 0,
 					"season32A": 0,
-					"season33Pos": 0,
+					"season33Pos": -1,
 					"season33W": 0,
 					"season33D": 0,
 					"season33L": 0,
@@ -3803,12 +3808,12 @@
 					"season32L": 11,
 					"season32F": 77,
 					"season32A": 63,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 4,
+					"season33W": 20,
+					"season33D": 9,
+					"season33L": 9,
+					"season33F": 64,
+					"season33A": 43
 				}
 			]
 		},
@@ -4241,12 +4246,12 @@
 					"season32L": 15,
 					"season32F": 57,
 					"season32A": 58,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 12,
+					"season33W": 13,
+					"season33D": 14,
+					"season33L": 11,
+					"season33F": 51,
+					"season33A": 51
 				}
 			]
 		},
@@ -4702,12 +4707,12 @@
 					"season32L": 16,
 					"season32F": 40,
 					"season32A": 51,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 13,
+					"season33W": 11,
+					"season33D": 15,
+					"season33L": 12,
+					"season33F": 42,
+					"season33A": 44
 				}
 			]
 		},
@@ -4920,12 +4925,12 @@
 					"season32L": 17,
 					"season32F": 55,
 					"season32A": 61,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 11,
+					"season33W": 15,
+					"season33D": 9,
+					"season33L": 14,
+					"season33F": 54,
+					"season33A": 54
 				}
 			]
 		},
@@ -5378,11 +5383,11 @@
 			"numberOfPremierLeagueTitles": 0,
 			"numberOfSeasonsInPremierLeague": 5,
 			"highestLeagueFinish": 5,
-			"lowestLeagueFinish": 18,
+			"lowestLeagueFinish": 19,
 			"biggestWin": "5-0 vs Southampton (2001)",
 			"biggestLoss": "0-9 vs Manchester United (1995)",
 			"clubBlurb": "Ipswich Town Football Club is a professional association football club based in Ipswich, Suffolk, England. They play in League One, the third tier of the English football league system, having last appeared in the second tier, the Championship, in 2019.",
-			"currentPrem": true,
+			"currentPrem": false,
 			"premierLeagueSeasons": [
 				{
 					"season1Pos": 16,
@@ -5577,12 +5582,12 @@
 					"season32L": 0,
 					"season32F": 0,
 					"season32A": 0,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 19,
+					"season33W": 4,
+					"season33D": 10,
+					"season33L": 24,
+					"season33F": 36,
+					"season33A": 82
 				}
 			]
 		},
@@ -5601,7 +5606,7 @@
 			"biggestWin": "6-1 vs Charlton Athletic (2003)",
 			"biggestLoss": "0-6 vs Manchester United (2001)",
 			"clubBlurb": "Leeds United Football Club is a professional football club in Leeds, West Yorkshire, England. The club was formed in 1919 following the disbanding of Leeds City by the Football League and took over their Elland Road stadium. They play in the Championship, the second tier of English football.",
-			"currentPrem": false,
+			"currentPrem": true,
 			"premierLeagueSeasons": [
 				{
 					"season1Pos": 17,
@@ -5820,7 +5825,7 @@
 			"biggestWin": "9-0 vs Southampton (2019)",
 			"biggestLoss": "0-6 vs Tottenham Hotspur (2017)",
 			"clubBlurb": "Leicester City Football Club is a professional football club based in Leicester, England. The club competes in the Premier League, the top tier of England's football league system, and plays its home matches at the King Power Stadium.",
-			"currentPrem": true,
+			"currentPrem": false,
 			"premierLeagueSeasons": [
 				{
 					"season1Pos": -1,
@@ -6008,12 +6013,12 @@
 					"season31D": 7,
 					"season31L": 22,
 					"season32Pos": -1,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 18,
+					"season33W": 6,
+					"season33D": 7,
+					"season33L": 25,
+					"season33F": 33,
+					"season33A": 80
 				}
 			]
 		},
@@ -6227,12 +6232,12 @@
 					"season32L": 4,
 					"season32F": 86,
 					"season32A": 41,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 1,
+					"season33W": 25,
+					"season33D": 9,
+					"season33L": 4,
+					"season33F": 86,
+					"season33A": 41
 				}
 			]
 		},
@@ -6665,12 +6670,12 @@
 					"season32L": 3,
 					"season32F": 96,
 					"season32A": 34,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 3,
+					"season33W": 21,
+					"season33D": 8,
+					"season33L": 9,
+					"season33F": 72,
+					"season33A": 44
 				}
 			]
 		},
@@ -6685,7 +6690,7 @@
 			"numberOfPremierLeagueTitles": 13,
 			"numberOfSeasonsInPremierLeague": 30,
 			"highestLeagueFinish": 1,
-			"lowestLeagueFinish": 13,
+			"lowestLeagueFinish": 15,
 			"biggestWin": "9-0 vs Ipswich Town (1995)",
 			"biggestLoss": "1-6 vs Manchester City (2011)",
 			"clubBlurb": "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed 'the Red Devils', the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.",
@@ -6884,12 +6889,12 @@
 					"season32L": 14,
 					"season32F": 57,
 					"season32A": 58,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 15,
+					"season33W": 11,
+					"season33D": 9,
+					"season33L": 18,
+					"season33F": 44,
+					"season33A": 54
 				}
 			]
 		},
@@ -7322,12 +7327,12 @@
 					"season32L": 14,
 					"season32F": 85,
 					"season32A": 62,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 5,
+					"season33W": 20,
+					"season33D": 6,
+					"season33L": 12,
+					"season33F": 68,
+					"season33A": 47
 				}
 			]
 		},
@@ -7760,12 +7765,12 @@
 					"season32L": 20,
 					"season32F": 49,
 					"season32A": 67,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 7,
+					"season33W": 19,
+					"season33D": 8,
+					"season33L": 11,
+					"season33F": 58,
+					"season33A": 46
 				}
 			]
 		},
@@ -9068,7 +9073,7 @@
 			"biggestWin": "8-0 vs Sunderland (2014)",
 			"biggestLoss": "0-9 vs Leicester City (2019)",
 			"clubBlurb": "Southampton Football Club is a professional football club based in Southampton, Hampshire, England, which plays in the Premier League, the top tier of English football. Their home ground since 2001 has been St Mary's Stadium, before which they were based at The Dell.",
-			"currentPrem": true,
+			"currentPrem": false,
 			"premierLeagueSeasons": [
 				{
 					"season1Pos": 18,
@@ -9263,11 +9268,12 @@
 					"season32L": 0,
 					"season32F": 0,
 					"season32A": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 20,
+					"season33W": 2,
+					"season33D": 6,
+					"season33L": 30,
+					"season33F": 26,
+					"season33A": 86
 				}
 			]
 		},
@@ -9505,7 +9511,7 @@
 			"biggestWin": "8-0 vs Sheffield Wednesday (1999)",
 			"biggestLoss": "0-8 vs Watford (1982)",
 			"clubBlurb": "Sunderland Association Football Club is an English professional football club based in the city of Sunderland, Tyne and Wear. Sunderland play in League One, the third tier of English football. Since its formation in 1879, the club has won six top-flight titles, a total only bettered by five other clubs, and has finished runners-up five times.",
-			"currentPrem": false,
+			"currentPrem": true,
 			"premierLeagueSeasons": [
 				{
 					"season1Pos": -1,
@@ -10158,7 +10164,7 @@
 			"numberOfPremierLeagueTitles": 2,
 			"numberOfSeasonsInPremierLeague": 30,
 			"highestLeagueFinish": 1,
-			"lowestLeagueFinish": 14,
+			"lowestLeagueFinish": 17,
 			"biggestWin": "9-1 vs Wigan Athletic (2009)",
 			"biggestLoss": "0-6 vs Manchester City (2019)",
 			"clubBlurb": "Tottenham Hotspur Football Club, commonly referred to as Tottenham or Spurs, is an English professional football club in Tottenham, London, that competes in the Premier League. Tottenham Hotspur Stadium has been the club's home ground since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site.",
@@ -10357,12 +10363,12 @@
 					"season32L": 12,
 					"season32F": 74,
 					"season32A": 61,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 17,
+					"season33W": 11,
+					"season33D": 5,
+					"season33L": 22,
+					"season33F": 64,
+					"season33A": 65
 				}
 			]
 		},
@@ -11014,12 +11020,12 @@
 					"season32L": 14,
 					"season32F": 60,
 					"season32A": 74,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 14,
+					"season33W": 11,
+					"season33D": 10,
+					"season33L": 17,
+					"season33F": 46,
+					"season33A": 62
 				}
 			]
 		},
@@ -11671,12 +11677,12 @@
 					"season32L": 18,
 					"season32F": 50,
 					"season32A": 65,
-					"season33Pos": 0,
-					"season33W": 0,
-					"season33D": 0,
-					"season33L": 0,
-					"season33F": 0,
-					"season33A": 0
+					"season33Pos": 16,
+					"season33W": 12,
+					"season33D": 6,
+					"season33L": 20,
+					"season33F": 54,
+					"season33A": 69
 				}
 			]
 		}
