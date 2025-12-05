@@ -1,8 +1,8 @@
 import Link from "next/link";
 import DataForFooterNavJSON from "@/data/data_for__sitemap.json";
 const DataForFooterNav = DataForFooterNavJSON.Pages;	
-import FooterSectionHeader from "/components/footer/Footer_Section_Header";
-import FooterNavListHeader from "/components/footer/Footer_NavList_Header";
+import FooterSectionHeader from "./Footer_Section_Header";
+import FooterNavListHeader from "./Footer_NavList_Header";
 
 const footerNavList1 = DataForFooterNav.filter((link) => link.footerNav_1 === true);
 const footerNavList2 = DataForFooterNav.filter((link) => link.footerNav_2 === true);
