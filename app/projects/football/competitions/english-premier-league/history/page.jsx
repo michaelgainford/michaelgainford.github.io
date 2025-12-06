@@ -1,10 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
-const ClubsData = PremierLeagueDataJSON.Clubs;
-const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 
 import H1 from "@/components/typography/H1_Span";
 
@@ -18,7 +13,6 @@ export const metadata = {
     title: "Premier League History",
     description: "The history of the English Premier League since its inception in 1992."
 }
-
 
 const premierLeagueSeasonsData = [
     {
@@ -378,7 +372,7 @@ const premierLeagueSeasonsData = [
         season: "2019/20",
         text: "Liverpool won the Premier League title in the 2019/20 season, finishing 18 points ahead of Manchester City. The top goalscorer was Jamie Vardy of Leicester City with 23 goals.",
         winners: "Liverpool (1)",
-        runnersUp: "Manchester City (5)",
+        runnersUp: "Manchester City (4)",
         relegated: [
             "Norwich City (5), ",
             "Watford (2), ",
@@ -423,7 +417,7 @@ const premierLeagueSeasonsData = [
             "Leeds United (2), ",
             "Southampton (2)"
         ],
-        topGoalscorer: "Harry Kane (24)"
+        topGoalscorer: "Erling Haaland (36)",
     },
     {
         id: 32,
@@ -436,12 +430,21 @@ const premierLeagueSeasonsData = [
             "Burnley (4), ",
             "Sheffield United (4)"
         ],
-        topGoalscorer: "Harry Kane (50)",
+        topGoalscorer: "Erling Haaland (27)",
     },
     {
         id: 33,
         season: "2024/25",
-        text: "Current Season",
+        text: "Liverpool won their 2nd Premier League title in the 2024/25 season, finishing 6 points ahead of Manchester City. This was made even more remarkable by the fact it was achieved under new management after the summer departure of long-term manager Jürgen Klopp (replaced by Arne Slot).",
+        winners: "Liverpool (2)",
+        runnersUp: "Manchester City (5)",
+        relegated: [
+            "Leicester City (3), ",
+            "Ipswich Town (1), ",
+            "Southampton (3), ",
+        ],
+        topGoalscorer: "Mohamed Salah (29)",
+
     }
 ]
 
@@ -462,11 +465,11 @@ export default function PAGE_PREMIER_LEAGUE_HISTORY () {
                     />
 				</div>
 				<div className={`${mainStyles}`}>
-                    <p className="text-sm lg:text-sm max-w-[800px]">The Premier League was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League is the top tier of English football and is the most-watched sports league in the world. The league has been dominated by Manchester United, Chelsea, Arsenal, and Manchester City, with Leicester City and Blackburn Rovers being the only other clubs to win the title.</p>
+                    <p className="text-sm lg:text-sm max-w-[800px]">The Premier League was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League is the top tier of English football and is the most-watched sports league in the world. The league has been dominated by Manchester United (13) and Manchester City (8) with Chelsea (5), Arsenal (3), Liverpool (2), Leicester City (1) and Blackburn Rovers (1) being the only other clubs to win the title.</p>
 
                     <div className="grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2 seasons">
                         {premierLeagueSeasonsData.map((season, index) => (
-                            <div key={season.id} className={`pt-4 pb-8 border border-epl rounded-lg season season-${index} [&>h3]:px-4 [&>h3]:mb-1 [&>h3]:text-sm [&>h3]:font-light [&>h3]:tracking-wider [&>h3]:uppercase [&>p]:px-4 [&>p]:mb-4 [&>p]:text-xs [&>p]:text-sm` }>
+                            <div key={season.id} className={`pt-4 pb-8 border border-epl rounded-lg season season-${index} [&>h3]:px-4 [&>h3]:mb-1 [&>h3]:text-sm [&>h3]:font-light [&>h3]:tracking-wider [&>h3]:uppercase [&>p]:px-4 [&>p]:mb-4 [&>p]:text-xs`}>
                                 <h2 className="px-4 pb-3 mb-4 text-sm font-bold border-b border-current lg:text-xl">{season.season}</h2>
                                 <h3>Overview</h3>
                                 <p>{season.text}</p>
