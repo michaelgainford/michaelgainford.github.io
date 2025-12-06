@@ -72,7 +72,7 @@ const premierLeagueYears = [
 	'21/22', 
 	'22/23', 
 	'23/24', 
-	'24/25'
+	'24/25',
 ];
 
 {/* map through the premier league seasons and create an array of season positions */}
