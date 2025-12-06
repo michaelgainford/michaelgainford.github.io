@@ -35,7 +35,7 @@ export default function Component_EPLSeasonBySeasonTable() {
 				<tbody className="bg-epl/20">
 					{sortedPremierLeagueSeasonData.map((team, index) => (
 					<tr key={index} className="border-b border-epl/20">
-						<td className="sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 max-w-[144px]! lg:max-w-[150px] xl:max-w-[200px] py-1 md:py-2 lg:py-3 truncate">
+						<td className="sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-2 max-w-36! lg:max-w-[150px] xl:max-w-[200px] py-1 md:py-2 lg:py-3 truncate">
 								{team.teamName}
 						</td>
 						{team.premierLeagueSeasons.map((season, index) => (

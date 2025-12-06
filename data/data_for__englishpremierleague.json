@@ -539,6 +539,19 @@
 			"playerLastGoalDate": "2025-03-09",
 			"playerCurrent": true,
 			"updated": "2025-08-01"
+		},
+		{
+			"playerId": 35,
+			"playerName": "Erling Haaland",
+			"playerSlug": "erling-haaland",
+			"playerClubs": ["Manchester City (100)"],
+			"playerApps": 111,
+			"playerGoals": 100,
+			"playerLastGoalFor": "Manchester City",
+			"playerLastGoalOpponent": "Fulham",
+			"playerLastGoalDate": "2024-12-03",
+			"playerCurrent": true,
+			"updated": "2024-12-05"
 		}
 	],
 	"Clubs": [
