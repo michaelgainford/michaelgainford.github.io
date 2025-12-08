@@ -434,6 +434,71 @@
 					"theme": "Crime",
 					"mobile_image": "c6-s2",
 					"desktop_image": "c6-s2"
+				},
+				{
+					"name": "C6 MS1",
+					"chapter": 6,
+					"season": "MS1",
+					"overall_season": 35,
+					"start_date": "2025-05-02",
+					"end_date": "2025-06-07",
+					"title": "Eruption",
+					"theme": "Star Wars",
+					"mobile_image": "c6-ms1",
+					"desktop_image": "c6-ms1"
+				},
+				{
+					"name": "C6 S3",
+					"chapter": 6,
+					"season": 3,
+					"overall_season": 36,
+					"start_date": "2025-06-07",
+					"end_date": "2025-08-07",
+					"title": "Celestial",
+					"theme": "Superheroes",
+					"mobile_image": "c6-s3",
+					"desktop_image": "c6-s3"
+				},
+				{
+					"name": "C6 S4",
+					"chapter": 6,
+					"season": 4,
+					"overall_season": 37,
+					"start_date": "2025-08-08",
+					"end_date": "2025-10-31",
+					"title": "Halloween Horror",
+					"theme": "Bug Invasion",
+					"mobile_image": "c6-s4",
+					"desktop_image": "c6-s4"
+				},
+				{
+					"name": "C6 MS2",
+					"chapter": 6,
+					"season": "MS2",
+					"overall_season": 38,
+					"start_date": "2025-11-01",
+					"end_date": "2025-11-29",
+					"title": "Frosty Festivities",
+					"theme": "The Simpsons",
+					"mobile_image": "c6-ms2",
+					"desktop_image": "c6-ms2"
+				}
+			]
+		},
+		{
+			"chapter": 7,
+			"seasons": [
+				{
+					"name": "C7 S1",
+					"chapter": 7,
+					"season": 1,
+					"overall_season": 39,
+					"start_date": "2025-11-30",
+					"end_date": "2026-02-20",
+					"title": "To Be Announced",
+					"theme": "To Be Announced",
+					"mobile_image": "c7-s1",
+					"desktop_image": "c7-s1"
 				}
 			]
 		}
