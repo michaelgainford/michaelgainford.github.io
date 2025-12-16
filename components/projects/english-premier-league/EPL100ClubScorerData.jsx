@@ -18,7 +18,7 @@ const calculateDaysAgo = (date) => {
 
 export default function Component_EPL100ClubScorerData() {
 	return (
-		<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 !px-0">
+		<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-0!">
 			{Object.values(sortedByGoals).map((TopScorer, index) => {
 				//let clubsDir = "/clubs/";
 				let playerImageDir = "/football/premier-league/players/";
