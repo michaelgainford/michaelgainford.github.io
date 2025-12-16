@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import CountriesJSON from "@/data/data_for__countries.json";
 const Countries = CountriesJSON.Countries;
+const sortedCountries = Countries.sort((a, b) => a.country_name.localeCompare(b.country_name));
 const detailsStyles = "border-2 border-sky-900/80 rounded-lg py-0 bg-[#00C9FF] group overflow-x-auto! open:pb-4 open:[&_svg]:-rotate-180 open:[&>summary]:border-b-2 open:[&>summary]:border-sky-900/80 w-full xl:mx-auto";
 const summaryStyles = "flex justify-between p-4 gap-4 cursor-pointer";
 const summaryHeaderStyles = "text-sm lg:text-[14.8px] uppercase truncate overflow-hidden ";
@@ -9,7 +10,7 @@ const summaryHeaderSvgStyles = "rotate-0 transform text-slate-700 transition-all
 export default function Component_CountriesGrid() {
 	return (
 		<div className="grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8 items-start">
-			{Countries.map((country, index) => (
+			{sortedCountries.map((country, index) => (
 				<details
 					key={index}
 					className={`${detailsStyles}`}
@@ -17,7 +18,14 @@ export default function Component_CountriesGrid() {
 					<summary className={summaryStyles}>
 						<span className="flex gap-3 overflow-hidden text-ellipsis">
 							<span>
-								<Image className="border border-sky-900/80" src={`/country-flags/${country.country_code}.svg`} alt={`${country.country_name} flag`} width={30} height={30} />
+								<Image 
+									className="border border-sky-900/80" 
+									src={`/country-flags/${country.country_code}.svg`} 
+									alt={`${country.country_name} flag`} 
+									width={30} 
+									height={30} 
+									loading={index > 50 ? "lazy" : "eager"}
+								/>
 							</span>
 							<span className={summaryHeaderStyles}>
 								<span>{country.country_name}</span>
