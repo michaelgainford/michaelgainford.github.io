@@ -105,7 +105,7 @@ export default function TOOL_URL_CONCATENATOR() {
             {/* INPUT FIELD FOR CUSTOM CONCATENATOR | END */}
 
             {/* SELECT DROPDOWN FOR CONCATENATOR | START */}
-            <div className="flex flex-col w-full gap-2 text-left pair converter-concat-select hidden" id="preset-concatenator">
+            <div className="flex flex-col w-full gap-2 text-left pair converter-concat-select" id="preset-concatenator">
                 <label htmlFor="select" className="text-sm font-medium text-left text-amber-500">Select</label>
                 <select id="select" name="select" className="w-full px-2 py-3 border-b-2 bg-slate-100/10 border-slate-200/50 focus-visible::outline-200/80">
                     {/* Add option for &_preview_theme_id= */}
@@ -136,12 +136,12 @@ export default function TOOL_URL_CONCATENATOR() {
             <h2 className="hidden pb-1 mt-6 font-bold text-left border-b-4 border-current w-fit">Options</h2>
 
             {/* create a checkbox below */}
-            <div className="flex hidden w-full gap-2 text-left pair checkbox-area">
+            <div className="flex w-full gap-2 text-left pair checkbox-area">
                 <label htmlFor="use-select-checkbox" className="text-sm font-medium text-left text-amber-500">Use Custom Concatenator?</label>
                 <input type="checkbox" id="use-select-checkbox" name="use-select-checkbox" title="use-select-checkbox" />
             </div>
 
-            <div className="flex flex-col hidden w-full gap-2 text-left pair converter-concat-select">
+            <div className="flex flex-col w-full gap-2 text-left pair converter-concat-select">
                 <label htmlFor="select" className="text-sm font-medium text-left text-amber-500">Select</label>
                 <select id="select" name="select" className="w-full p-2 border rounded-lg border-slate-200">
                     <option value="?">?</option>
@@ -149,7 +149,7 @@ export default function TOOL_URL_CONCATENATOR() {
                     <option value="#">#</option>
                 </select>
             </div>
-            <div className="flex flex-col hidden w-full gap-2 text-left pair converter-concat-custom">
+            <div className="flex flex-col w-full gap-2 text-left pair converter-concat-custom">
                 <label htmlFor="concatenator" className="text-sm font-medium text-left text-amber-500">Concatenator</label>
                 <input type="text" id="concatenator" name="concatenator" className="w-full p-2 border rounded-lg border-slate-200" />
             </div>

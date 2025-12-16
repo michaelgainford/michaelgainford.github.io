@@ -15,7 +15,7 @@ export default function Component_CardMySites() {
 			<div className="flex w-full h-full grid-cols-2 gap-6 overflow-scroll no-scrollbar flex-nowrap 2xl:gap-12">
 				{mySites.map((site, index) => (
 					<div key={index} className="first:col-span-2 grid-item group">
-						<div className="w-full border rounded-lg site border-slate-200/20 site-image bg-slate-600/10 aspect-[3/2] hover:bg-slate-900">
+						<div className="w-full border rounded-lg site border-slate-200/20 site-image bg-slate-600/10 aspect-3/2 hover:bg-slate-900">
 							<Image
 								src={site.image}
 								alt={site.alt}
