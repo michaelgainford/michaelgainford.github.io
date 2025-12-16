@@ -1,3 +1,7 @@
+"use client";
+
+import React from "react";
+
 import Image from "next/image";
 import ForniteData from "@/data/data_for__fortnite.json";
 const Chapters = ForniteData.Chapters;
@@ -13,44 +17,90 @@ const snapSlideImageStyles = "relative inset-0 z-0 w-full h-full object-fit z-1 
 const snapSlideImageOverlayStyles = "absolute translate-y-32 bottom-0 w-full bg-black/80 z-10 w-full xl:h-[120px] mt-auto duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 hidden group-hover/season:block transition w-full flex! items-center justify-center group-hover/season:bottom-0 transform group-hover/season:translate-y-0 z-0 text-slate-300 text-xxs lg:text-sm py-2 text-center group-hover/season:opacity-100 flex-col";
 
 export default function Component_ForniteChapters() {
+	const [visibleButtons, setVisibleButtons] = React.useState({});
+
+	React.useEffect(() => {
+		const checkScrollable = () => {
+			const newVisibleButtons = {};
+			Chapters.forEach((_, index) => {
+				const container = document.getElementById(`chapter-seasons-container-${index}`);
+				if (container) {
+					newVisibleButtons[index] = container.scrollWidth > container.clientWidth;
+				}
+			});
+			setVisibleButtons(newVisibleButtons);
+		};
+
+		checkScrollable();
+		window.addEventListener('resize', checkScrollable);
+		return () => window.removeEventListener('resize', checkScrollable);
+	}, []);
+
 	return (
 		<div className="w-full flex flex-col items-center">
 			<h2 className={subSectionHeadingStyles}>Chapters</h2>
 			{Chapters.map((chapter, index) => (
-			<div key={index} className="w-full mb-8 gap-4 flex flex-col md:flex-row lg:mb-32 pl-[4%]">
-				<div className="min-w-[150px] max-w-[150px] flex flex-col justify-center text-center md:mr-4">
-					<div className=" flex flex-col items-start md:items-center md:gap-4">
-						<h3 className="uppercase text-sm/4 flex flex-row md:flex-col md:tracking-widest font-bold max-md:gap-1">
-							<span>Chapter</span>
-							<span className="text-sm/4 md:text-4xl">{ chapter.chapter }</span>
-						</h3>
-						<div className="text-[10px]">
-							({new Date(chapter.seasons[0].start_date).toLocaleDateString('en-GB')} to {new Date(chapter.seasons[chapter.seasons.length - 1].end_date).toLocaleDateString('en-GB')})
+			<div key={index} className="w-full mt-8 mb-8 gap-4 flex flex-col lg:mb-16 xl:mb-20 pl-[4%]">
+				{visibleButtons[index] && (
+					<div className="scroll-buttons flex gap-2 justify-end -translate-x-2 translate-y-10 md:translate-y-0 lg:translate-y-1">
+						<div className="button-previous">
+							<button onClick={() => {
+								const container = document.getElementById(`chapter-seasons-container-${index}`);
+								if (container) {
+									container.scrollBy({ left: -300, behavior: 'smooth' });
+								}
+							}} className="bg-transparent border-2 border-slate-800 text-slate-800 px-3 py-2 mr-2 hover:bg-slate-800 hover:text-slate-200 hover:cursor-pointer transition text-sm font-bold">
+								Previous
+							</button>
+						</div>
+						<div className="button-next">
+							<button onClick={() => {
+								const container = document.getElementById(`chapter-seasons-container-${index}`);
+								if (container) {
+									container.scrollBy({ left: 300, behavior: 'smooth' });
+								}
+							}} className="bg-transparent border-2 border-slate-800 text-slate-800 px-3 py-2 mr-2 hover:bg-slate-800 hover:text-slate-200 hover:cursor-pointer transition text-sm font-bold">
+								Next
+							</button>		
 						</div>
 					</div>
-				</div>
-				<div className={snapContainerStyles}>
-					{chapter.seasons.map((season, index) => (
-						<div key={index} className={snapSlideStyles}>
-							<Image
-								src={`${imagesFolder}chapter-${season.chapter}/${season.mobile_image}-season-artwork.webp`}
-								alt={`Chapter ${season.chapter} Season ${season.season}: ${season.theme}`}
-								width={540}
-								height={315}
-								className={snapSlideImageStyles}
-							/>
-							<div className={snapSlideImageOverlayStyles}>
-								<div className="uppercase chapter-and-season lg:text-base">
-									Chapter {season.chapter}, Season {season.season}
-								</div>
-								<div className="run-dates">
-									{new Date(season.start_date).toLocaleDateString('en-GB')} to {new Date(season.end_date).toLocaleDateString('en-GB')}
-								</div>
-								<div className="theme">Theme: ({season.theme})</div>
+				)}
+				<div className="w-full flex flex-col md:flex-row">
+					<div className="min-w-[150px] max-w-[150px] flex flex-col justify-center text-center md:mr-4">
+						<div className=" flex flex-col items-start md:items-center md:gap-4">
+							<h3 className="uppercase text-sm/4 flex flex-row md:flex-col md:tracking-widest font-bold max-md:gap-1">
+								<span>Chapter</span>
+								<span className="text-sm/4 md:text-4xl">{ chapter.chapter }</span>
+							</h3>
+							<div className="text-[10px]">
+								({new Date(chapter.seasons[0].start_date).toLocaleDateString('en-GB')} to {new Date(chapter.seasons[chapter.seasons.length - 1].end_date).toLocaleDateString('en-GB')})
 							</div>
 						</div>
-					))}
+					</div>
+					<div className={`${snapContainerStyles}`} id={`chapter-seasons-container-${index}`}>
+						{chapter.seasons.map((season, index) => (
+							<div key={index} className={snapSlideStyles}>
+								<Image
+									src={`${imagesFolder}chapter-${season.chapter}/${season.mobile_image}-season-artwork.webp`}
+									alt={`Chapter ${season.chapter} Season ${season.season}: ${season.theme}`}
+									width={540}
+									height={315}
+									className={snapSlideImageStyles}
+								/>
+								<div className={snapSlideImageOverlayStyles}>
+									<div className="uppercase chapter-and-season lg:text-base">
+										Chapter {season.chapter}, Season {season.season}
+									</div>
+									<div className="run-dates">
+										{new Date(season.start_date).toLocaleDateString('en-GB')} to {new Date(season.end_date).toLocaleDateString('en-GB')}
+									</div>
+									<div className="theme">Theme: ({season.theme})</div>
+								</div>
+							</div>
+						))}
+					</div>
 				</div>
+
 			</div>
 			))}
 		</div>

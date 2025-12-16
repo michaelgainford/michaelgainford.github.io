@@ -7,7 +7,7 @@ export default function Component_MoviesToWatch() {
 		<h2 className="mb-4 text-sm lg:text-lg" id="to-watch">To Watch</h2>
 		<div className="min-h-[100px] movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
 			{unwatchedMovies.map((movie, id) => (
-			<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out cursor-pointer gap-2 movie-card justify-items-center text-light_colour border-secondary group hover:bg-secondary snap-always snap-center shrink-0 w-[144px]">
+			<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out cursor-pointer gap-2 movie-card justify-items-center text-light_colour border-secondary group hover:bg-secondary snap-always snap-center shrink-0 w-36">
 			<div className="w-full max-w-full movie-poster">
 				<Image src={movie.image} className="object-cover w-full duration-1000 border-tr-md border-tl-md xl:opacity-50 xl:group-hover:opacity-100 group-hover:ease-in-out aspect-2/3!" alt={movie.title} width={144} height={216} />
 				</div>
