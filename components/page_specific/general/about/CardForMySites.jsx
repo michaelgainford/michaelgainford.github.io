@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { mySites, sharedHeadingStyles } from "@/data/Variables";
+import { mySites, sharedHeadingStyles } from "@/variables/Data";
 
 export default function Component_CardMySites() {
 	return (

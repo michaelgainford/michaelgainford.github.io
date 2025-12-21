@@ -3,8 +3,8 @@ import LeaguePageHeader from "@/components/projects/mag-premier-league/LeaguePag
 import Footer from "@/components/footer/_Footer";
 import SeasonsData from "@/data/data_for__magpremierleague.json"
 const Seasons = SeasonsData.Seasons;
-import { globalPageStyles } from "@/data/Variables";
-import { mainStyles, leagueTableStructure } from "@/data/Variables";
+import { globalPageStyles } from "@/variables/Data";
+import { mainStyles, leagueTableStructure } from "@/variables/Data";
 const currentSeason = 1;
 
 // Get the current season's date from Seasons

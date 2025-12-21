@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { socials } from "@/data/Variables";
+import { socials } from "@/variables/Data";
 import FooterSectionHeader from "./Footer_Section_Header";
 import Footer_About_Text from "./Footer_About_Text";
 

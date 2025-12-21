@@ -3,8 +3,8 @@ import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagu
 
 import H1 from "@/components/typography/H1_Span";
 
-import { mainStyles } from "@/data/Variables";
-import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/variables/Data";
+import { globalPageStyles } from "@/variables/Data";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
