@@ -734,5 +734,15 @@ export {
   unwatchedMoviesLength,
 	socials,
 	mySites,
-	wipItems
+	wipItems,
+  globalPageStyles,
+  mainStyles,
+  globalMainStyles,
+  globalMainElementStyles,
+  globalConstrainedMainStyles,
+  sharedHeadingStyles,
+  brandPageBackground,
+  brandTextColour,
+  brandSharedHeadingStyles,
+  brandHeadingStyles
 };
