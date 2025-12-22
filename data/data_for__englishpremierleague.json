@@ -544,14 +544,14 @@
 			"playerId": 35,
 			"playerName": "Erling Haaland",
 			"playerSlug": "erling-haaland",
-			"playerClubs": ["Manchester City (102)"],
-			"playerApps": 113,
-			"playerGoals": 102,
+			"playerClubs": ["Manchester City (104)"],
+			"playerApps": 114,
+			"playerGoals": 104,
 			"playerLastGoalFor": "Manchester City",
-			"playerLastGoalOpponent": "Crystal Palace",
-			"playerLastGoalDate": "2025-12-14",
+			"playerLastGoalOpponent": "West Ham United",
+			"playerLastGoalDate": "2025-12-20",
 			"playerCurrent": true,
-			"updated": "2025-12-14"
+			"updated": "2025-12-20"
 		}
 	],
 	"Clubs": [

@@ -13,8 +13,8 @@ export const metadata = {
 	description: "All the clubs that have played in the English Premier League since its inception in 1992.",
 }
 
-import { mainStyles } from "@/data/Variables";
-import { globalPageStyles } from "@/data/Variables";
+import { mainStyles } from "@/variables/Data";
+import { globalPageStyles } from "@/variables/Data";
 
 export default function Page_PremierLeagueAllClubs () {
 	return (

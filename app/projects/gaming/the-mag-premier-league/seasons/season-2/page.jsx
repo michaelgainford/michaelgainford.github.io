@@ -3,7 +3,7 @@ import Footer from "@/components/footer/Footer";
 import LeaguePageHeader from "@/components/projects/mag-premier-league/LeaguePageHeader";
 import SeasonsData from "@/data/data_for__magpremierleague.json"
 const Seasons = SeasonsData.Seasons;
-import { globalPageStyles, mainStyles, leagueTableStructure } from "@/data/Variables";
+import { globalPageStyles, mainStyles, leagueTableStructure } from "@/variables/Data";
 import Link from "next/link";
 const currentSeason = 2;
 

@@ -5,7 +5,7 @@ import Footer from "@/components/footer/Footer";
 import H1 from "@/components/typography/H1_Span";
 import H2_EPL from "@/components/typography/H2_ForPremierLeague";
 import SeasonBySeasonData from "@/components/projects/english-premier-league/SeasonBySeasonDataTable";  
-import { globalMainElementStyles, globalPageStyles } from "@/data/Variables";
+import { globalMainElementStyles, globalPageStyles } from "@/variables/Data";
 
 export const metadata = {
   title: `Premier League Seasons`,

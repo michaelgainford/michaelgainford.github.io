@@ -1,28 +1,28 @@
 {/********************************
-  IMPORTS
+  ICON IMPORTS
 *********************************/}
 import { 
-    Icon_Resource ,
-		Icon_Codepen,
-		Icon_ColourPalettes,
-		Icon_Docs,
-		Icon_Earth,
-		Icon_Font,
-		Icon_Football,
-		Icon_Gamepad,
-		Icon_GitHub,
-		Icon_Laptop,
-		Icon_Laugh,
-		Icon_LinkedIn,
-		Icon_Movies,
-		Icon_NextJS,
-		Icon_Planet,
-		Icon_PremierLeagueSimple,
-		Icon_Quote,
-		Icon_TailwindSimple,
-		Icon_Twitter,
-		Icon_W3Schools,
-} from '@/variables/Icons';
+	Icon_Codepen, 
+	Icon_ColourPalettes, 
+	Icon_Docs, 
+	Icon_Earth, 
+	Icon_Font, 
+	Icon_Football, 
+	Icon_Gamepad, 
+	Icon_GitHub, 
+	Icon_Laptop, 
+	Icon_Laugh, 
+	Icon_LinkedIn, 
+	Icon_Movies, 
+	Icon_NextJS, 
+	Icon_Planet, 
+	Icon_PremierLeagueSimple, 
+	Icon_Quote, 
+	Icon_Resource, 
+	Icon_TailwindSimple, 
+	Icon_Twitter, 
+	Icon_W3Schools
+} from "@/variables/Icons";
 
 import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
 import epl100ScorerDataJSON from '@/data/data_for__englishpremierleague.json';
@@ -33,6 +33,19 @@ const numberOfPremierLeagueSeasons = 34;
 {/********************************
   SITE
 *********************************/}
+{/********************************
+  SITE STYLES  
+*********************************/}
+const globalPageStyles = "space-y-4 lg:space-y-8 xl:space-y-12 2xl:space-y-16 min-h-dvh";
+const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
+const globalMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
+const globalMainElementStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
+const globalConstrainedMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
+const sharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-center transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
+const brandPageBackground = "bg-slate-900 bg-brand-background bg-repeat";
+const brandTextColour = "text-slate-400";
+const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
+const brandHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
 
 {/********************************
   PREMIER LEAGUE  
@@ -419,6 +432,7 @@ const dataForAllProjects = [
     border: "border-teal-700/50",
     divider: "divide-teal-700",
     hover: "hover:bg-teal-800",
+    card_colour: "text-slate-300",
     group: "group/resources",
     groupHover: "group-hover/resources:fill-slate-100 group-hover/resources:text-slate-100",
     description: "A collection of useful resources for web developers and designers.",
@@ -436,6 +450,7 @@ const dataForAllProjects = [
     border: "border-blue-700",
     divider: "divide-blue-700",
     hover: "hover:bg-blue-800",
+    card_colour: "text-slate-300",
     group: "group/euros",
     groupHover: "group-hover/euros:fill-slate-900 group-hover/euros:text-slate-100",
     description: "A page dedicated to the Euro 2024 football competition.",
@@ -453,6 +468,7 @@ const dataForAllProjects = [
     border: "border-blue-700",
     divider: "divide-blue-500",
     hover: "hover:bg-blue-700",
+    card_colour: "text-slate-300",
     description: "A page dedicated to Everton Football Club",
     category: "football",
     underConstruction: false,
@@ -468,6 +484,7 @@ const dataForAllProjects = [
     border: "border-fn-dark-blue",
     divider: "divide-slate-700",
     hover: "hover:bg-fn-dark-blue",
+    card_colour: "text-slate-300",
     description: "A page dedicated to the video game Fortnite.",
     category: "gaming",
     underConstruction: false,
@@ -479,6 +496,7 @@ const dataForAllProjects = [
     featuredProject: false,
     icon: Icon_Laugh,
     color: "text-slate-300",
+    card_colour: "text-slate-300",
     bg: "bg-rose-900",
     border: "border-rose-700",
     divider: "divide-rose-700",
@@ -496,6 +514,7 @@ const dataForAllProjects = [
     featuredProject: true,
     icon: Icon_Movies,
     color: "text-slate-300",
+    card_colour: "text-slate-300",
     bg: "bg-black/10",
     border: "border-black/40",
     divider: "divide-gray-700",
@@ -513,6 +532,7 @@ const dataForAllProjects = [
     featuredProject: false,
     icon: Icon_Quote,
     color: "text-slate-200",
+    card_colour: "text-slate-300",
     bg: "bg-sky-700",
     border: "border-sky-500",
     divider: "divide-sky-500",
@@ -528,6 +548,7 @@ const dataForAllProjects = [
     featuredProject: true,
     icon: Icon_PremierLeagueSimple,
     color: "text-slate-200",
+    card_colour: "text-slate-300",
     bg: "bg-purple-900",
     border: "border-purple-700/20",
     hover: "hover:bg-purple-800 hover:border-purple-700",
@@ -543,6 +564,7 @@ const dataForAllProjects = [
     featuredProject: true,
     icon: Icon_Planet,
     color: "text-slate-200",
+    card_colour: "text-slate-300",
     bg: "bg-slate-800",
     border: "border-slate-700/50",
     divider: "divide-slate-500",
@@ -558,6 +580,7 @@ const dataForAllProjects = [
     featuredProject: false,
     icon: Icon_Football,
     color: "text-slate-800",
+    card_colour: "text-slate-300",
     bg: "bg-[#2BC9BC]",
     border: "border-magpl/20",
     divider: "divide-slate-800",
@@ -573,6 +596,7 @@ const dataForAllProjects = [
     featuredProject: true,
     icon: Icon_Earth,
     color: "text-slate-700",
+    card_colour: "text-slate-700",
     bg: "bg-linear-to-br from-[#92FE9D] to-[#00C9FF]",
     border: "border-[#00C9FF]/20",
     divider: "divide-slate-500",

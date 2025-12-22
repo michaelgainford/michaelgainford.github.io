@@ -18,6 +18,7 @@ const snapSlideImageOverlayStyles = "absolute translate-y-32 bottom-0 w-full bg-
 
 export default function Component_ForniteChapters() {
 	const [visibleButtons, setVisibleButtons] = React.useState({});
+	const [scrollPositions, setScrollPositions] = React.useState({});
 
 	React.useEffect(() => {
 		const checkScrollable = () => {
@@ -36,6 +37,37 @@ export default function Component_ForniteChapters() {
 		return () => window.removeEventListener('resize', checkScrollable);
 	}, []);
 
+	const handleScroll = (index) => {
+		const container = document.getElementById(`chapter-seasons-container-${index}`);
+		if (container) {
+			setScrollPositions(prev => ({
+				...prev,
+				[index]: {
+					isAtStart: container.scrollLeft === 0,
+					isAtEnd: container.scrollLeft + container.clientWidth >= container.scrollWidth - 1
+				}
+			}));
+		}
+	};
+
+	React.useEffect(() => {
+		Chapters.forEach((_, index) => {
+			const container = document.getElementById(`chapter-seasons-container-${index}`);
+			if (container) {
+				handleScroll(index);
+				container.addEventListener('scroll', () => handleScroll(index));
+			}
+		});
+		return () => {
+			Chapters.forEach((_, index) => {
+				const container = document.getElementById(`chapter-seasons-container-${index}`);
+				if (container) {
+					container.removeEventListener('scroll', () => handleScroll(index));
+				}
+			});
+		};
+	}, []);
+
 	return (
 		<div className="w-full flex flex-col items-center">
 			<h2 className={subSectionHeadingStyles}>Chapters</h2>
@@ -44,22 +76,28 @@ export default function Component_ForniteChapters() {
 				{visibleButtons[index] && (
 					<div className="scroll-buttons flex gap-2 justify-end -translate-x-2 translate-y-10 md:translate-y-0 lg:translate-y-1">
 						<div className="button-previous">
-							<button onClick={() => {
-								const container = document.getElementById(`chapter-seasons-container-${index}`);
-								if (container) {
-									container.scrollBy({ left: -300, behavior: 'smooth' });
-								}
-							}} className="bg-transparent border-2 border-slate-800 text-slate-800 px-3 py-2 mr-2 hover:bg-slate-800 hover:text-slate-200 hover:cursor-pointer transition text-sm font-bold">
+							<button 
+								onClick={() => {
+									const container = document.getElementById(`chapter-seasons-container-${index}`);
+									if (container) {
+										container.scrollBy({ left: -300, behavior: 'smooth' });
+									}
+								}} 
+								disabled={scrollPositions[index]?.isAtStart}
+								className="bg-transparent border-2 border-slate-800 text-slate-800 px-3 py-2 mr-2 hover:bg-slate-800 hover:text-slate-200 hover:cursor-pointer transition text-sm font-bold disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-slate-800">
 								Previous
 							</button>
 						</div>
 						<div className="button-next">
-							<button onClick={() => {
-								const container = document.getElementById(`chapter-seasons-container-${index}`);
-								if (container) {
-									container.scrollBy({ left: 300, behavior: 'smooth' });
-								}
-							}} className="bg-transparent border-2 border-slate-800 text-slate-800 px-3 py-2 mr-2 hover:bg-slate-800 hover:text-slate-200 hover:cursor-pointer transition text-sm font-bold">
+							<button 
+								onClick={() => {
+									const container = document.getElementById(`chapter-seasons-container-${index}`);
+									if (container) {
+										container.scrollBy({ left: 300, behavior: 'smooth' });
+									}
+								}} 
+								disabled={scrollPositions[index]?.isAtEnd}
+								className="bg-transparent border-2 border-slate-800 text-slate-800 px-3 py-2 mr-2 hover:bg-slate-800 hover:text-slate-200 hover:cursor-pointer transition text-sm font-bold disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-slate-800">
 								Next
 							</button>		
 						</div>
