@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { mainStyles } from "@/data/Variables";
+import { mainStyles } from "@/variables/Styles";
 
 export default function NavForPremierLeagueHub () {
     return (

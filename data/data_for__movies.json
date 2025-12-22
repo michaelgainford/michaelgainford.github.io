@@ -1739,6 +1739,18 @@
             "genre": "Animation",
             "duration": 87,
             "watched": true
+        },
+        {
+            "id": 149,
+            "title": "In Time",
+            "image": "/movies-images/in-time.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1637688/",
+            "description":
+                "In a future where people stop aging at 25 and must earn more time to stay alive.",
+            "year": 2011,
+            "genre": "Sci-Fi",
+            "duration": 109,
+            "watched": false
         }
     ]
 }

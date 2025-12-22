@@ -6,7 +6,7 @@ import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
-import { premierLeagueHubBlockImageRoot } from "@/data/Variables";
+import { premierLeagueHubBlockImageRoot } from "@/variables/Data";
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 const PremierLeagueData = PremierLeagueDataJSON.Clubs;
 

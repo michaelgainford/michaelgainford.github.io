@@ -6,7 +6,7 @@ import DataForMainNavJSON from "@/data/data_for__sitemap.json";
 const DataForMainNav = DataForMainNavJSON.Pages;
 import MainLogo from "./MainLogo";
 import IconCrossNav from "../icons/IconCrossNav";
-import { brandTextColour } from "@/data/Variables";
+import { brandTextColour } from "@/variables/Styles";
 const mobileNavLinks = DataForMainNav.filter((link) => link.mainNav === true);
 
 // get all links get that contain the string '/projects/' and store for later

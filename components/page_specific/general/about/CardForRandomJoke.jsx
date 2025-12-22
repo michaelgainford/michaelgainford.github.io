@@ -1,4 +1,4 @@
-import { sharedHeadingStyles } from "@/data/Variables";
+import { sharedHeadingStyles } from "@/variables/Data";
 import Link from "next/link";
 import RandomJokeGenerator from "@/components/RandomJokeGenerator";
 
