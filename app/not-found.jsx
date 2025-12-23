@@ -43,11 +43,11 @@ export default function PAGE_404() {
 						</h1>
 						<p className="mx-auto text-base lg:text-2xl text-balance w-fit">Go to the <Link href="/" className="underline transition-all duration-500 underline-offset-4 hover:text-amber-500 ">home page</Link> or check out one of these pages instead.</p>
 					</div>
-					<ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:my-8 ">
+					<ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:my-8">
 					{OtherPages.map((page, index) => {
 						return (
-							<li key={index}>
-								<Link className="flex flex-col items-start justify-start gap-8 p-8 border 2xl:h-full xl:aspect-square group/link" href={page.link}>
+							<li key={index} className="flex items-center rounded-lg transition-all duration-500 border border-slate-500/20 aspect-square hover:bg-amber-500/5 hover:border-amber-500">
+								<Link className="flex flex-col items-start justify-start gap-8 p-8 2xl:h-full xl:aspect-square group/link" href={page.link}>
 									<h2 className="text-lg font-bold xl:text-2xl text-amber-500/50 group-hover/link:text-amber-500">{page.title}</h2>
 									<p className="px-2 text-sm/5">{page.description}</p>
 									<span className="px-4 py-2 text-sm transition-all duration-500 border rounded-lg border-slate-500/20 hover:border-amber-500">View {page.title} page</span>
