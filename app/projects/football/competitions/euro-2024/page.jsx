@@ -5,7 +5,7 @@ import Header from "@/components/header/Header";
 import H1 from "@/components/typography/H1_Span";
 import Footer from "@/components/footer/Footer";
 {/* Data & Styles */}
-import { globalPageStyles, globalMainElementStyles } from "@/variables/Data";
+import { globalPageStyles, globalMainElementStyles } from "@/variables/Styles";
 
 import Euro2024TeamDataJSON from "@/data/data_for__euro2024";
 const Euro2024Teams = Euro2024TeamDataJSON.Euro2024Teams;

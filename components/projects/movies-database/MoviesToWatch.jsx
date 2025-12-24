@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { unwatchedMovies } from "@/variables/Data";
+import { unwatchedMovies } from "@/variables/ProjectMovies";
 
 export default function Component_MoviesToWatch() {
 	return (

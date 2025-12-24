@@ -1,5 +1,5 @@
 import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
-import { magEPLUpcomingMatches } from '@/variables/Data';
+import { magEPLUpcomingMatches } from '@/variables/ProjectMagPremierLeague';
 
 export default function Component_CardForUpcomingFixtures() {
 	return(

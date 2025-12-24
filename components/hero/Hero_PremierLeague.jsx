@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { premierLeagueHubUrl, premierLeagueLogoSvgPath } from '@/variables/Data';
+import { premierLeagueHubUrl, premierLeagueLogoSvgPath } from '@/variables/ProjectPremierLeague';
 
 export default function HERO_PREMIER_LEAGUE () {
     return (

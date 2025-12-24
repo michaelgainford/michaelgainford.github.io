@@ -6,7 +6,7 @@ import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
-import { premierLeagueHubBlockImageRoot } from "@/variables/Data";
+import { premierLeagueHubBlockImageRoot } from "@/variables/ProjectPremierLeague";
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 const PremierLeagueData = PremierLeagueDataJSON.Clubs;
 
@@ -92,7 +92,7 @@ export default function Page_EnglishPremierLeague () {
 										  alt={block.title} 
 										  width={800}
 										  height={450} 
-										  className="object-cover rounded-lg aspect-16/9 h-auto w-full" 
+										  className="object-cover rounded-lg aspect-video h-auto w-full" 
 											loading={index < 2 ? "eager" : "lazy"}
 										/>
 									</div>
