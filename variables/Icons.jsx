@@ -16,7 +16,8 @@ import Icon_MagPremierLeague from '@/components/icons/IconMagPremierLeague';
 import Icon_Movies from "@/components/icons/IconMovies";
 import Icon_NextJS from '@/components/icons/IconNextJS';
 import Icon_Planet from "@/components/icons/IconPlanet";
-import Icon_PremierLeagueSimple from "@/components/icons/Icon_PremierLeagueLogoSimple";
+import Icon_PremierLeague from '@/components/icons/IconPremierLeagueLogo';
+import Icon_PremierLeagueSimple from "@/components/icons/IconPremierLeagueLogoSimple";
 import Icon_Quote from "@/components/icons/IconQuote";
 import Icon_Resource from '@/components/icons/IconResource';
 import Icon_TailwindSimple from '@/components/icons/IconTailwindSimple';
@@ -44,6 +45,7 @@ export {
 	Icon_NextJS, 
 	Icon_Quote,
 	Icon_Planet,
+	Icon_PremierLeague,
 	Icon_PremierLeagueSimple,
 	Icon_Resource, 
 	Icon_TailwindSimple, 

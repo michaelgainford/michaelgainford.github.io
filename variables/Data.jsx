@@ -24,126 +24,9 @@ import {
 	Icon_W3Schools
 } from "@/variables/Icons";
 
-import magPremierLeagueDataJSON from '@/data/data_for__magpremierleague.json';
-import epl100ScorerDataJSON from '@/data/data_for__englishpremierleague.json';
-import DataForMoviesListImport from "@/data/data_for__movies.json";
-
-const numberOfPremierLeagueSeasons = 34;
-
 {/********************************
   SITE
 *********************************/}
-{/********************************
-  SITE STYLES  
-*********************************/}
-const globalPageStyles = "space-y-4 lg:space-y-8 xl:space-y-12 2xl:space-y-16 min-h-dvh";
-const mainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const globalMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const globalMainElementStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const globalConstrainedMainStyles = "mx-auto w-[90%] md:w-[92%] max-w-[2000px] flex flex-col items-center";
-const sharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-center transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
-const brandPageBackground = "bg-slate-900 bg-brand-background bg-repeat";
-const brandTextColour = "text-slate-400";
-const brandSharedHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
-const brandHeadingStyles = "pb-2 mx-auto mb-12 text-3xl font-bold text-left transition-all duration-500 border-b-4 border-slate-500/20 md:text-xl xl:mb-16 2xl:text-3xl w-fit";
-
-{/********************************
-  PREMIER LEAGUE  
-*********************************/}
-
-{/* Array of Premier League Seasons */}
-const premierLeagueYears = [
-	'92/93',
-	'93/94', 
-	'94/95', 
-	'95/96', 
-	'96/97', 
-	'97/98', 
-	'98/99', 
-	'99/00', 
-	'00/01', 
-	'01/02', 
-	'02/03', 
-	'03/04', 
-	'04/05', 
-	'05/06', 
-	'06/07', 
-	'07/08', 
-	'08/09', 
-	'09/10', 
-	'10/11', 
-	'11/12', 
-	'12/13', 
-	'13/14', 
-	'14/15', 
-	'15/16', 
-	'16/17', 
-	'17/18', 
-	'18/19', 
-	'19/20', 
-	'20/21', 
-	'21/22', 
-	'22/23', 
-	'23/24', 
-	'24/25',
-];
-
-{/* map through the premier league seasons and create an array of season positions */}
-const seasonPositions = Array.from({ length: numberOfPremierLeagueSeasons }, (_, i) => `season${i + 1}Pos`);
-
-{/* paths */}
-const clubLogosRoot = "/football/premier-league/club-logos";
-const premierLeagueHubUrl = "/projects/football/competitions/english-premier-league";
-//const premierLeagueMainUrl = "/projects/football/competitions/english-premier-league/";
-const premierLeagueLogoSvgPath = "/football/competition-logos/premier-league-logo-white.svg";
-const premierLeagueHubBlockImageRoot = "/football/premier-league/hub-blocks";
-const epl100ScorerData = epl100ScorerDataJSON.Top_Scorers;
-
-{/* Number of players in the 100 Club */}
-const numberOfPlayersWithAtLeast100Goals = epl100ScorerData.length;
-
-
-{/********************************
-  THE MAG PREMIER LEAGUE
-*********************************/}
-const leagueTableStructure = [
-	{
-		team: 'Alfie',
-		played: 0,
-		won: 0,
-		drawn: 0,
-		lost: 0,
-		goalsFor: 0,
-		goalsAgainst: 0,
-		goalDifference: 0,
-		points: 0
-	},
-	{
-		team: 'Garcon',
-		played: 0,
-		won: 0,
-		drawn: 0,
-		lost: 0,
-		goalsFor: 0,
-		goalsAgainst: 0,
-		goalDifference: 0,
-		points: 0
-	},
-	{
-		team: 'Michael',
-		played: 0,
-		won: 0,
-		drawn: 0,
-		lost: 0,
-		goalsFor: 0,
-		goalsAgainst: 0,
-		goalDifference: 0,
-		points: 0
-	}
-];
-const magPLCurrentSeason = 2;
-const magPremierLeagueSeasons = magPremierLeagueDataJSON.Seasons;
-const magEPLUpcomingMatches = magPremierLeagueSeasons.filter(season => season.season === magPLCurrentSeason)[0].fixtures.filter(fixture => fixture.upcoming === true);
 
 
 {/********************************
@@ -425,7 +308,6 @@ const dataForAllProjects = [
   {
     name: "Dev Resources",
     href: "/web-development/dev-resources",
-    featuredProject: false,
     icon: Icon_Laptop,
     color: "text-slate-300",
     bg: "bg-teal-900/80",
@@ -437,13 +319,18 @@ const dataForAllProjects = [
     groupHover: "group-hover/resources:fill-slate-100 group-hover/resources:text-slate-100",
     description: "A collection of useful resources for web developers and designers.",
     category: "web dev",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "Euro 2024",
     href: "/projects/football/competitions/euro-2024",
-    featuredProject: false,
     icon: Icon_Football,
     color: "text-slate-300",
     bg: "bg-blue-900",
@@ -455,13 +342,18 @@ const dataForAllProjects = [
     groupHover: "group-hover/euros:fill-slate-900 group-hover/euros:text-slate-100",
     description: "A page dedicated to the Euro 2024 football competition.",
     category: "football",
-    underConstruction: false,
-    archived: true,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: true
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    } 
   },
   {
     name: "Everton",
     href: "/projects/football/everton",
-    featuredProject: false,
     icon: Icon_Football,
     color: "text-slate-200",
     bg: "bg-blue-900/90",
@@ -471,13 +363,18 @@ const dataForAllProjects = [
     card_colour: "text-slate-300",
     description: "A page dedicated to Everton Football Club",
     category: "football",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "Fortnite",
     href: "/projects/gaming/fortnite",
-    featuredProject: false,
     icon: Icon_Gamepad,
     color: "text-slate-200",
     bg: "bg-fn-dark-blue/90",
@@ -487,13 +384,18 @@ const dataForAllProjects = [
     card_colour: "text-slate-300",
     description: "A page dedicated to the video game Fortnite.",
     category: "gaming",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    } 
   },
   {
     name: "Jokes",
     href: "/projects/jokes",
-    featuredProject: false,
     icon: Icon_Laugh,
     color: "text-slate-300",
     card_colour: "text-slate-300",
@@ -505,13 +407,18 @@ const dataForAllProjects = [
     groupHover: "group-hover/jokes:fill-slate-100 group-hover/jokes:text-slate-100",
     description: "A collection of one-liner jokes. I bet (at least) one will make you laugh.",
     category: "fun",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "Movies Database",
     href: "/projects/movies-database",
-    featuredProject: true,
     icon: Icon_Movies,
     color: "text-slate-300",
     card_colour: "text-slate-300",
@@ -523,13 +430,18 @@ const dataForAllProjects = [
     groupHover: "group-hover/movies:fill-slate-100 group-hover/movies:text-slate-100",
     description: "A database of movies watched or to watch by the Pigeon & Parrot Movie Club (PPMC).",
     category: "fun",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: true,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "Quotes",
     href: "/projects/quotes",
-    featuredProject: false,
     icon: Icon_Quote,
     color: "text-slate-200",
     card_colour: "text-slate-300",
@@ -539,13 +451,18 @@ const dataForAllProjects = [
     hover: "hover:bg-sky-800",
     description: "A collection of motivational and inspirational quotes to inspire you.",
     category: "fun",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "Premier League",
     href: "/projects/football/competitions/english-premier-league",
-    featuredProject: true,
     icon: Icon_PremierLeagueSimple,
     color: "text-slate-200",
     card_colour: "text-slate-300",
@@ -555,13 +472,18 @@ const dataForAllProjects = [
     divider: "divide-purple-700",
     description: "A project about the English Premier League",
     category: "football",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: true,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "Space",
     href: "/projects/space",
-    featuredProject: true,
     icon: Icon_Planet,
     color: "text-slate-200",
     card_colour: "text-slate-300",
@@ -571,13 +493,18 @@ const dataForAllProjects = [
     hover: "hover:bg-slate-700",
     description: "A project about our solar system and it's 8 planets.",
     category: "space",
-    underConstruction: false,
-    archived: false,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: true,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "The MAG Premier League",
     href: "/projects/gaming/the-mag-premier-league",
-    featuredProject: false,
     icon: Icon_Football,
     color: "text-slate-800",
     card_colour: "text-slate-300",
@@ -587,24 +514,35 @@ const dataForAllProjects = [
     hover: "hover:bg-[#2BC9BC]/80",
     description: "An online eFootball competition for the MAG community.",
     category: "gaming",
-    underConstruction: false,
-    archived: true,
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: true
+    },
+    projectsCard: {
+      textColour: "text-slate-300"
+    }
   },
   {
     name: "The World",
     href: "/projects/the-world",
-    featuredProject: true,
     icon: Icon_Earth,
     color: "text-slate-700",
     card_colour: "text-slate-700",
-    bg: "bg-linear-to-br from-[#92FE9D] to-[#00C9FF]",
-    border: "border-[#00C9FF]/90",
+    bg: "bg-linear-to-br from-green-500 to-blue-500",
+    border: "border-[#00C9FF]/20",
     divider: "divide-slate-500",
-    hover: "hover:bg-linear-to-br from-[#92FE9D]/80 to-[#00C9FF]/80",
+    hover: "hover:bg-[#00C9FF]/80 hover:border-[#00C9FF]/50",
     description: "A project about the countries of the world.",
     category: "geography",
-    underConstruction: true,
-    archived: false,
+    projectStatus: {
+      underConstruction: true,
+      featuredProject: true,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-slate-700"
+    }
   },
  /*  {
     name: "Template",
@@ -622,17 +560,9 @@ const dataForAllProjects = [
   }, */
 ];
 
-const featuredProjects = dataForAllProjects.filter(project => project.featuredProject === true);
+const featuredProjects = dataForAllProjects.filter(project => project.projectStatus.featuredProject === true);
 
-{/********************************
-  MOVIES
-*********************************/}
-const DataForMoviesList = DataForMoviesListImport.Movies;
-DataForMoviesList.sort((a, b) => a.title.localeCompare(b.title));
-const watchedMovies = DataForMoviesList.filter((movie) => movie.watched === true);
-const watchedMoviesLength = watchedMovies.length;
-const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === false);
-const unwatchedMoviesLength = unwatchedMovies.length;
+
 {/********************************
   SOCIALS
 *********************************/}
@@ -713,36 +643,12 @@ const wipItems = [
   EXPORTS
 *********************************/}
 export { 
-	premierLeagueYears,
-	seasonPositions,
-	clubLogosRoot,
-	premierLeagueHubUrl,
-	premierLeagueLogoSvgPath,
-	premierLeagueHubBlockImageRoot,
-  numberOfPlayersWithAtLeast100Goals,
-	leagueTableStructure,
-	magPLCurrentSeason,
-	magEPLUpcomingMatches,
 	devResources,
 	featuredResources,
 	featuredResourcesSortedByName,
 	dataForAllProjects,
 	featuredProjects,
-  watchedMovies,
-  watchedMoviesLength,
-  unwatchedMovies,
-  unwatchedMoviesLength,
 	socials,
 	mySites,
-	wipItems,
-  globalPageStyles,
-  mainStyles,
-  globalMainStyles,
-  globalMainElementStyles,
-  globalConstrainedMainStyles,
-  sharedHeadingStyles,
-  brandPageBackground,
-  brandTextColour,
-  brandSharedHeadingStyles,
-  brandHeadingStyles
+	wipItems
 };
