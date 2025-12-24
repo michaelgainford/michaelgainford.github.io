@@ -8,8 +8,9 @@ export default function ICON_PREMIER_LEAGUE_LOGO ({classes, fill}) {
             alt="EPL Logo"
             width={300}
             height={120}
+            fill={fill}
             priority
-            className={`[&>svg]:fill-epl`}
+            className={`[&>svg]:fill-epl ${classes}`}
         />
     );
   }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { sharedHeadingStyles } from "@/variables/Data";
+import { sharedHeadingStyles } from "@/variables/Styles";
 import Tools from "@/data/data_for__tools.json";
 const ListOfTools = Tools.Tools;
 

@@ -1,4 +1,4 @@
-import { sharedHeadingStyles } from "@/variables/Data";
+import { sharedHeadingStyles } from "@/variables/Styles";
 import Button from "@/components/buttons/Button";
 import { urlForMyCredlyPage } from "@/variables/Paths";
 

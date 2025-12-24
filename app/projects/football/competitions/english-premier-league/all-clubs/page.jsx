@@ -13,8 +13,7 @@ export const metadata = {
 	description: "All the clubs that have played in the English Premier League since its inception in 1992.",
 }
 
-import { mainStyles } from "@/variables/Data";
-import { globalPageStyles } from "@/variables/Data";
+import { globalPageStyles, mainStyles } from "@/variables/Styles";
 
 export default function Page_PremierLeagueAllClubs () {
 	return (
@@ -53,7 +52,7 @@ export default function Page_PremierLeagueAllClubs () {
 									alt={Club.teamName}
 									width={80}
 									height={80}
-									className={Club.currentPrem ? "grayscale-0 h-[80px]! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto" : "grayscale hover:grayscale-0 h-[80px]! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto duration-500 transition-all"}
+									className={Club.currentPrem ? "grayscale-0 h-20! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto" : "grayscale hover:grayscale-0 h-20! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto duration-500 transition-all"}
 								/>
 								<p className={`text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
 										{Club.teamName}

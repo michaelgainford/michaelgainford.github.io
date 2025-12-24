@@ -5,8 +5,8 @@ import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";
 import MoviesWatched from "@/components/projects/movies-database/MoviesWatched";
 import MoviesToWatch from "@/components/projects/movies-database/MoviesToWatch";
-import { watchedMoviesLength, unwatchedMoviesLength } from "@/variables/Data";
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
+import { watchedMoviesLength, unwatchedMoviesLength } from "@/variables/ProjectMovies";
 const pageStyles = "bg-gray-950 text-slate-300";
 const pageIntroText = `This is the list of movies watched by the PP Movie Club. In total, we have watched ${watchedMoviesLength} movies and currently, there are ${unwatchedMoviesLength} movies on the watchlist.`;
 
