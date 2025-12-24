@@ -1,13 +1,9 @@
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
-
 import H1 from "@/components/typography/H1_Span";
-
-import { mainStyles } from "@/variables/Data";
-import { globalPageStyles } from "@/variables/Data";
-
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import { globalPageStyles, mainStyles } from "@/variables/Styles";
 
 export const metadata = {
     title: "Premier League History",

@@ -4,7 +4,7 @@ import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagu
 import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Prem100ClubScorerGrid from "@/components/projects/english-premier-league/EPL100ClubScorerData";
-import { numberOfPlayersWithAtLeast100Goals } from "@/variables/Data";
+import { numberOfPlayersWithAtLeast100Goals } from "@/variables/ProjectPremierLeague";
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 import Footer from "@/components/footer/Footer";
 

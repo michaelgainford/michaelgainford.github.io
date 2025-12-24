@@ -3,8 +3,8 @@ import LeaguePageHeader from "@/components/projects/mag-premier-league/LeaguePag
 import Footer from "@/components/footer/_Footer";
 import SeasonsData from "@/data/data_for__magpremierleague.json"
 const Seasons = SeasonsData.Seasons;
-import { globalPageStyles } from "@/variables/Data";
-import { mainStyles, leagueTableStructure } from "@/variables/Data";
+import { globalPageStyles, mainStyles} from "@/variables/Styles";
+import { leagueTableStructure } from "@/variables/ProjectMagPremierLeague";
 const currentSeason = 1;
 
 // Get the current season's date from Seasons
@@ -199,7 +199,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 						<p className={`${summarySectionHeadingStyles} ${detailsAllHeadingsStyles}`}>Season 1 Competitors</p>
 						<div className={`rounded-lg p-4 border-slate-900`}>
 							<h2 className={`text-center mb-6`}>Teams</h2>
-							<div className={`grid w-full grid-cols-3 gap-8 [&>.team]:border [&>.team]:rounded-full [&>.team]:border-slate-900 [&>.team]:min-w-[40px] lg:[&>.team]:min-w-[160px] [&>.team]:text-center [&>.team]:aspect-square [&>.team]:flex [&>.team]:justify-center [&>.team]:items-center justify-center content-center`}>
+							<div className={`grid w-full grid-cols-3 gap-8 [&>.team]:border [&>.team]:rounded-full [&>.team]:border-slate-900 [&>.team]:min-w-10 lg:[&>.team]:min-w-40 [&>.team]:text-center [&>.team]:aspect-square [&>.team]:flex [&>.team]:justify-center [&>.team]:items-center justify-center content-center`}>
 								<div className="text-white bg-red-800 team lg:max-w-[5dvw] mx-auto lg:opacity-50 lg:hover:opacity-100 lg:transition-all lg:duration-300">
 									<span className={`text-2xl lg:text-[48px]`}>A</span>
 								</div>

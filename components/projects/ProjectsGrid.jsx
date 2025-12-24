@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { dataForAllProjects } from "@/variables/Data"
 dataForAllProjects.sort((a, b) => a.name.localeCompare(b.name))
-dataForAllProjects.sort((a, b) => a.archived - b.archived)
+dataForAllProjects.sort((a, b) => a.projectStatus.archived - b.projectStatus.archived)
 
 export default function Component_ProjectsGrid() {
 	return (
@@ -10,13 +10,13 @@ export default function Component_ProjectsGrid() {
 			<Link
 				key={index}
 				href={project.href}
-				className={`border ${project.border} ${project.hover} ${project.card_colour} h-full rounded-md space-y-6 flex flex-col justify-between max-sm:min-w-[300px] max-sm:mx-auto transition-all hover:transition duration-700 ${project.archived ? `opacity-50` : ``} cursor-pointer group xl:border-2 py-2 md:py-4 xl:py-8 ${project.bg} snap-always snap-start`}
+				className={`border ${project.border} ${project.hover} ${project.card_colour} h-full rounded-md space-y-6 flex flex-col justify-between max-sm:min-w-[300px] max-sm:mx-auto transition-all hover:transition duration-700 ${project.projectStatus.archived ? `opacity-50` : ``} cursor-pointer group xl:border-2 py-2 md:py-4 xl:py-8 ${project.bg} snap-always snap-start`}
 			>
-				<span className={`flex flex-col justify-end items-center gap-3	 lg:gap-4 pt-4 rounded-t-sm py-4 border-b ${project.border}`}>
-					<span className="flex items-center justify-center gap-4 size-8 md:size-10 lg:size-12 xl:size-14 2xl:size-16">
+				<span className={`flex flex-col justify-end items-center gap-3 lg:gap-4 pt-4 rounded-t-sm py-4 border-b ${project.border} ${project.projectsCard.textColour}`}>
+					<span className="flex items-center justify-center gap-4 size-8 lg:size-10 2xl:size-12">
 						<project.icon
-							fill={`fill-current`}
-							className={`stroke-slate-300`}
+							fill="currentColor"
+							className={`stroke-slate-300 fill-current`}
 						/>
 					</span>
 					<h2 className="text-sm xl:text-base 2xl:text-lg uppercase text-center font-medium tracking-wide  mb-3">

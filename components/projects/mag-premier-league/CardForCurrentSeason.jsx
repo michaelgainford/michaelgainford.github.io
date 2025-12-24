@@ -1,5 +1,5 @@
 import Button from '@/components/buttons/Button';
-import { magPLCurrentSeason as currentSeason } from '@/variables/Data';
+import { magPLCurrentSeason as currentSeason } from '@/variables/ProjectMagPremierLeague';
 import { magEPL_CardStyles, magEPL_H2Styles } from '@/variables/Styles';
 
 export default function Component_MAGPLCardForCurrentSeason() {
