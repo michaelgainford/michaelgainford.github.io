@@ -2,7 +2,6 @@
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
-import Snowflakes from "@/components/seasonal/Snowflakes";
 
 {/* Top level component imports for all pages */}
 import BackToTopButton from "@/components/buttons/BackToTopButton";
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="scroll-smooth bg-slate-900">
 			<body className={`${inter.className} top`}>
-				<Snowflakes />
 				{children}	
 				<BackToTopButton />
 			</body>
