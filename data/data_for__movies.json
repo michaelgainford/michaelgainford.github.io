@@ -1750,7 +1750,7 @@
             "year": 2011,
             "genre": "Sci-Fi",
             "duration": 109,
-            "watched": false
+            "watched": true
         }
     ]
 }
