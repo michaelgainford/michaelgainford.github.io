@@ -1499,7 +1499,10 @@
             "year": 2022,
             "genre": "Animation",
             "duration": 120,
-            "watched": false
+            "watched": true,
+            "rating": [
+                { "b": 6, "d": 6  }
+            ]
         },
         {
             "id": 127,
