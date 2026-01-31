@@ -8,12 +8,11 @@ const footerNavList1 = DataForFooterNav.filter((link) => link.footerNav_1 === tr
 const footerNavList2 = DataForFooterNav.filter((link) => link.footerNav_2 === true);
 footerNavList2.sort((a, b) => (a.name > b.name) ? 1 : -1);
 
-const linkClasses = `flex py-2`;
-const detailsStyles = `rounded-lg py-4 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4`;
-const summaryStyles = `flex justify-between md:py-4 cursor-pointer`;
-const summaryHeaderSvgStyles = `rotate-0 transform text-current transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-amber-500/80 lg:mt-1 lg:size-6`;
-
-const beforeStyles = `before:content-[''] before:h-2 before:w-2 before:items-center before:flex-col before:my-auto  before:hidden hover:before:flex before:mr-2`;
+const linkClasses = "flex py-2";
+const detailsStyles = "rounded-lg py-4 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 sm:hidden md:max-w-[800px] lg:px-4";
+const summaryStyles = "flex justify-between md:py-4 cursor-pointer";
+const summaryHeaderSvgStyles = "rotate-0 transform text-current transition-all duration-300 size-4 stroke-1 cursor-pointer group-hover:text-amber-500/80 lg:mt-1 lg:size-6";
+const beforeStyles = "before:content-[''] before:h-2 before:w-2 before:items-center before:flex-col before:my-auto  before:hidden hover:before:flex before:mr-2";
 
 export default function FOOTER_NAV() {
 	return (
