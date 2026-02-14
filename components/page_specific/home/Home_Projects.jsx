@@ -8,12 +8,12 @@ export default function Component_FeaturedProjects() {
 		<div className="w-full projects-list">
 			<H2SectionHeader text={`Featured Dev Projects`} />
 			{/* Featured Projects Grid */}
-			<div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 md:gap-8 lg:gap-8 lg:grid-cols-2 xl:gap-12 2xl:grid-cols-2">
+			<div className="grid grid-cols-2 gap-6 sm:gap-4 md:gap-8 lg:gap-8 md:grid-cols-2 xl:gap-12 2xl:grid-cols-2">
 				{featuredProjects.map((project, index) => (
 					<Link
 						key={index}
 						href={project.href}
-						className={`flex flex-col items-center border justify-center font-light tracking-wide transition-all duration-300 rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:aspect-square sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 2xl:border-opacity-30 3xl:border-4 space-y-4 hover:opacity-100`}
+						className={`flex flex-col items-center border justify-center font-light tracking-wide transition-all duration-300 rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 2xl:border-opacity-30 3xl:border-4 space-y-4 hover:opacity-100`}
 					>
 						<span
 							className={`flex w-[27%] justify-center items-end md:w-[23%] xl:w-[20%] ${project.groupHover}`}
@@ -21,10 +21,10 @@ export default function Component_FeaturedProjects() {
 							<project.icon
 								fill={project.fill}
 								classes={`h-7 fill-slate-400 flex justify-center w-auto 
-									lg:h-12 2xl:h-16 3xl:h-20 4xl:h-24`}
+								sm:h-12	md:h-16 2xl:h-16 3xl:h-20 4xl:h-24`}
 							/>
 						</span>
-						<span className="flex items-start -mt-1 text-xs tracking-wider text-center group-hover:text-white sm:pt-1 max-lg:text-slate-400 lg:text-sm 2xl:text-base 3xl:text-lg">
+						<span className="flex items-start -mt-1 text-xs tracking-wider text-center group-hover:text-white sm:pt-1 max-lg:text-slate-400 sm:text-sm 2xl:text-base 3xl:text-lg">
 							{project.name}
 						</span>
 					</Link>
