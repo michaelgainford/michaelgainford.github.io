@@ -303,7 +303,7 @@
 			"playerName": "Mohamed Salah",
 			"playerSlug": "mohamed-salah",
 			"playerClubs": ["Chelsea (2)", "Liverpool (188)"],
-			"playerApps": 316,
+			"playerApps": 319,
 			"playerGoals": 190,
 			"playerLastGoalFor": "Liverpool",
 			"playerLastGoalOpponent": "Aston Villa",
@@ -544,14 +544,14 @@
 			"playerId": 35,
 			"playerName": "Erling Haaland",
 			"playerSlug": "erling-haaland",
-			"playerClubs": ["Manchester City (105)"],
-			"playerApps": 120,
-			"playerGoals": 105,
+			"playerClubs": ["Manchester City (107)"],
+			"playerApps": 123,
+			"playerGoals": 107,
 			"playerLastGoalFor": "Manchester City",
-			"playerLastGoalOpponent": "Brighton & Hove Albion",
-			"playerLastGoalDate": "2026-01-07",
+			"playerLastGoalOpponent": "Fulham",
+			"playerLastGoalDate": "2026-02-11",
 			"playerCurrent": true,
-			"updated": "2026-01-31"
+			"updated": "2026-02-11"
 		}
 	],
 	"Clubs": [
