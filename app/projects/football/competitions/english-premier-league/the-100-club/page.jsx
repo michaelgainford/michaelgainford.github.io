@@ -42,7 +42,7 @@ export default function Page_EnglishPremierLeague100Club() {
 						classes_width=""
 						classes_other=""
 						other_classes=""
-						text_colour=""
+						text_colour=""face
 						font_sizes=""
 					/>
 				</div>
@@ -53,7 +53,7 @@ export default function Page_EnglishPremierLeague100Club() {
 				</div>
 				<div className={`${globalWrapperFixedWidth} mt-8`}>
 					<p className="text-center text-[10px] text-epl-400/60 uppercase italic">
-						* Correct as of 20th December 2025 @ 17:30 (GMT)
+						* Correct as of 14th February 2026 @ 17:30 (GMT)
 					</p>
 				</div>
 			</main>

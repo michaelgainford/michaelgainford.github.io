@@ -1514,7 +1514,10 @@
             "year": 1997,
             "genre": "Action",
             "duration": 138,
-            "watched": false
+            "watched": true,
+            "rating": [
+                { "b": 0, "d": 8}
+            ]
         },
         {
             "id": 128,
