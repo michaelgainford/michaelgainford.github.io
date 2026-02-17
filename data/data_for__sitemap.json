@@ -124,7 +124,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-12-20"
+			"lastUpdated": "2026-02-15"
 		},
 		{
 			"name": "EPL - Competition History",
@@ -198,7 +198,7 @@
 			"before": "before:bg-magpl",
 			"hover": "hover:bg-magpl",
 			"footerNav_1": false,
-			"footerNav_2": true,
+			"footerNav_2": false,
 			"lastUpdated": "2025-01-25"
 		},
 		{
@@ -246,7 +246,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2025-12-21"
+			"lastUpdated": "2026-02-15"
 		},
 		{
 			"name": "Quotes",
