@@ -28,8 +28,8 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
   const projectsSubMenuVisibility = isProjectsSubMenuVisible ? `` : `hidden`;
   return (
     <div
-      className={`mobile-nav absolute inset-0 right-4 z-99 w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto ${brandTextColour} ${
-        isVisible ? `` : `hidden`
+      className={`mobile-nav fixed inset-0 z-99 w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto transition-transform duration-500 ease-in-out ${brandTextColour} ${
+        isVisible ? `translate-x-0` : `translate-x-full`
       }`}
     >
       <div className={`grid grid-cols-1 gap-8 grid-rows-[60px_1fr] h-full`}>
