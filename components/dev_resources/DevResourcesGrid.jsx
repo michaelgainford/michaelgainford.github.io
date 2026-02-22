@@ -15,9 +15,12 @@ export default function Component_DevResourcesGrid() {
     <>
       <div className="resources w-full grid pt-4 md:pt-6 lg:pt-16  sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-4 gap-y-6 md:gap-8 lg:gap-12 [&>a]:flex [&>a]:flex-row [&>a]:sm:flex-col">
         {ResourcesSortedByName.map((resource, index) => (
-          <details key={index} className="group items-center justify-center text-center rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg overflow-hidden! border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000 p-4 hover:cursor-pointer">
-            <summary className="flex flex-col items-start gap-1 xl:gap-2">
-              <span className="text-lg text-left xl:text-xl">{resource.name}</span>
+          <details key={index} className="group rounded-lg resource border-emerald-950 bg-emerald-950 group drop-shadow-lg overflow-hidden! border text-white/80 hover:bg-linear-to-b hover:from-teal-800 hover:to-teal-950 md:relative transition-all duration-1000 p-4 hover:cursor-pointer h-fit">
+            <summary className="flex flex-col gap-1 xl:gap-2 cursor-pointer select-none">
+              <span className="flex flex-row items-center justify-between w-full">
+                <span className="text-lg text-left xl:text-xl">{resource.name}</span>
+                <span className="transition-transform duration-300 text-base text-white/60 group-open:rotate-[-90deg]">▼</span>
+              </span>
               <div className="flex gap-1">
               {resource.tags.map((tag, index) => (
                 <span
@@ -39,8 +42,16 @@ export default function Component_DevResourcesGrid() {
                 priority={index < 5}
               />
               <p className="w-full text-sm px-2 leading-relaxed mt-4 text-left mb-4">
-              {resource.description}
-            </p>
+                {resource.description}
+              </p>
+              <a
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 mb-2 px-4 py-2 bg-teal-700 hover:bg-teal-800 text-white text-xs rounded-lg font-semibold transition-colors duration-200 shadow"
+              >
+                Visit Resource
+              </a>
           </details>
         ))}
       </div>

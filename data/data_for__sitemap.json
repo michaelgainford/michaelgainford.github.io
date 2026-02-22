@@ -11,12 +11,23 @@
 			"before": "before:bg-amber-500",
 			"hover": "hover:bg-amber-800",
 			"mainNav": true,
-			"footerNav_1": false,
-			"footerNav_2": true,
+			"footerNav_1": true,
+			"footerNav_2": false,
 			"navigationMain": true,
 			"navigationFooterFirstList": true,
 			"navigationFooterSecondList": false,
-			"lastUpdated": "2025-02-23"
+			"lastUpdated": "2025-02-23",
+			"pageStyling": {
+				"border": "border-amber-500",
+				"background_colour": "bg-amber-500",
+				"before": "before:bg-amber-500",
+				"hover": "hover:bg-amber-800"
+			},
+			"pageNavigationRefs": {
+				"mainNav": true,
+				"footerNav_1": true,
+				"footerNav_2": false
+			}
 		},
 		{
 			"name": "About",
