@@ -8,7 +8,9 @@
 
 ## Overview
 
-  The purpose of this site is to act as a single hub for all things web development. It contains a raft of personal projects based on interests, tools, and other helpful information and resources for web developers - and hopefully some inspiration can be taken. The site is built using Next.js and Tailwind CSS.
+The purpose of this site is to act as a centralised hub for all things web development. It contains a bunch of personal projects based on interests, tools, and other helpful information and resources for web developers - and hopefully some inspiration can be taken. 
+
+The site is built using Next.js and Tailwind CSS.
 
   > "What's more suitable a topic to build a website about than web development itself?" - Me
 
