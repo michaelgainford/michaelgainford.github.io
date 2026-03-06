@@ -561,6 +561,7 @@
 			"clubLogoSlug": "arsenal",
 			"teamNickname": "The Gunners",
 			"yearFounded": 1886,
+			"manager": "Mikel Arteta",
 			"stadium": "Emirates Stadium",
 			"stadiumCapacity": 60704,
 			"numberOfPremierLeagueTitles": 3,
@@ -4493,7 +4494,8 @@
 			"clubLogoSlug": "everton",
 			"teamNickname": "The Toffees",
 			"yearFounded": 1878,
-			"stadium": "Goodison Park",
+			"stadium": "Hill Dickinson Stadium",
+			"stadiumOpened": 2025,
 			"stadiumCapacity": 39214,
 			"numberOfPremierLeagueTitles": 0,
 			"numberOfSeasonsInPremierLeague": 33,
@@ -4511,9 +4513,11 @@
 			],
 			"stadiumDetails": [
 				{
-					"stadiumName": "Goodison Park",
+					"stadiumName": "Hill Dickinson Stadium",
 					"stadiumLocation": "Liverpool",
-					"stadiumCapacity": 39214
+					"stadiumPostcode": "L3 0BW",
+					"stadiumCapacity": 52679,
+					"stadiumOpened": 2025
 				}
 			],
 			"leaguePerformanceDetails": [
