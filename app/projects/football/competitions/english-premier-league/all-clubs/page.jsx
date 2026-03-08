@@ -28,11 +28,11 @@ export default function Page_PremierLeagueAllClubs () {
 					<H1 
 					  text="All Clubs"
 						font_sizes="text-base lg:text-[24px]!" 
-						other_classes="uppercase" 
+						other_classes="uppercase pt-0! mb-0!" 
           />
 				</div>
-				<div className="min-h-[300px] grid grid-cols-1 gap-4 lg:gap-8 xl:gap-12 [&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold">					
-					<div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 [&>a]:p-6 [&>a]:m-4 [&>a]:border [&>a]:border-slate-200 [&>a]:flex [&>a]:flex-col [&>a]:items-center [&>a]:rounded-lg [&>a]:flex-col] [&>a]:gap-2 [&>a]:md:gap-4 [&>a}:text-center] [&_p]:text-center">
+				<div className="min-h-[300px] grid grid-cols-1 gap-4 lg:gap-8 xl:gap-12 [&>div]:px-4 [&>div]:py-6 [&>div]:md:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold">					
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 [&>a]:px-2 [&>a]:py-4 [&>a]:sm:p-4 [&>a]:m-2 [&>a]:sm:m-4 [&>a]:border [&>a]:border-slate-200 [&>a]:flex [&>a]:flex-col [&>a]:items-center [&>a]:rounded-lg [&>a]:flex-col] [&>a]:gap-2 [&>a]:md:gap-4 [&>a}:text-center] [&_p]:text-center">
 					{Object.values(sortedByName).map((Club) => {
 						const clubsDir = "/football/premier-league/club-logos";
 						let clubLogosDir = clubsDir + '/' + Club.clubLogoSlug + ".svg";
@@ -50,9 +50,9 @@ export default function Page_PremierLeagueAllClubs () {
 									alt={Club.teamName}
 									width={80}
 									height={80}
-									className={Club.currentPrem ? "grayscale-0 h-20! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto" : "grayscale hover:grayscale-0 h-20! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto duration-500 transition-all"}
+									className={Club.currentPrem ? "grayscale-0 h-16! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto" : "grayscale hover:grayscale-0 h-16! 2xl:h-[120px]! max-h-unset! w-auto! max-w-auto duration-500 transition-all"}
 								/>
-								<p className={`text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
+								<p className={`text-xs md:text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-gray-400"}`}>
 										{Club.teamName}
 								</p>
 								<span className={`absolute top-0 right-0 p-1 ${Club.currentPrem ? `bg-emerald-200/30` : `bg-transparent`} text-[10px] font-bold tracking-wide`}>
