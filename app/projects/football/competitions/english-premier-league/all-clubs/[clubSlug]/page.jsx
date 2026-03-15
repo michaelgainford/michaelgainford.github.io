@@ -2,12 +2,7 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
-import {
-	brandPageBackground,
-	brandTextColour,
-	globalPageStyles,
-	globalWrapperFixedWidth,
-} from "@/variables/Styles";
+import { globalPageStyles } from "@/variables/Styles";
 
 export default async function ClubPage({ params }) {
 	const resolvedParams = await params;
@@ -28,74 +23,171 @@ export default async function ClubPage({ params }) {
 	const clubsDir = "/football/premier-league/club-logos";
 	const logoSrc = `${clubsDir}/${club.clubLogoSlug}.svg`;
 
-	       return (
-		       <div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
-			       <Header />
-			       <main className="w-full text-epl">
-				       <div className="club-header border-2 border-amber-500 flex flex-col items-center">
-					       <Image
-						       src={logoSrc}
-						       alt={club.teamName}
-						       width={120}
-						       height={120}
-						       className="mb-4"
-					       />
-					       <h1 className="text-3xl font-bold mb-2">{club.teamName}</h1>
-					       <p className="text-lg mb-4 hidden">
-						       {club.currentPrem
-							       ? "Current Premier League Club"
-							       : "Former Premier League Club"}
-					       </p>
-				       </div>
-				       {/* Add more club details here as needed */}
-				       <div className="club-information-area px-8 border-4 w-full border-emerald-500">
-					       <h2 className="mb-2 text-lg font-bold text-amber-500">Club Information</h2>
-					       <ul className="mb-4">
-						       <li>Nickname: {club.teamNickname}</li>
-						       <li>Founded: {club.yearFounded}</li>
-					       </ul>
+	const splitSeasonObject = Array.isArray(club.premierLeagueSeasonsSplit) && club.premierLeagueSeasonsSplit.length > 0
+		? club.premierLeagueSeasonsSplit[0]
+		: null;
+	const positionsFromSplit = splitSeasonObject
+		? Object.values(splitSeasonObject)
+				.map((season) => season?.Pos)
+				.filter((pos) => typeof pos === "number" && pos > 0)
+		: [];
+	const seasonPositions = positionsFromSplit;
+	const premierLeagueTitles = seasonPositions.filter((pos) => pos === 1).length;
+	const bestPremierLeagueFinish = seasonPositions.length > 0 ? Math.min(...seasonPositions) : null;
+	const formatOrdinal = (n) => {
+		if (typeof n !== "number") return "N/A";
+		const suffixes = ["th", "st", "nd", "rd"];
+		const modHundred = n % 100;
+		return `${n}${suffixes[(modHundred - 20) % 10] || suffixes[modHundred] || suffixes[0]}`;
+	};
+	const cardClass =
+		"rounded-xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-4 shadow-sm";
+	const capacityValue = (() => {
+		const rawCap =
+			Array.isArray(club.stadiumDetails) &&
+			club.stadiumDetails.length > 0 &&
+			club.stadiumDetails[0].stadiumCapacity
+				? club.stadiumDetails[0].stadiumCapacity
+				: club.stadiumCapacity;
+		if (typeof rawCap === "number") return rawCap.toLocaleString();
+		if (typeof rawCap === "string" && !isNaN(Number(rawCap))) return Number(rawCap).toLocaleString();
+		return rawCap || "N/A";
+	})();
+	const clubBlurb =
+		Array.isArray(club.clubDetails) &&
+		club.clubDetails.length > 0 &&
+		club.clubDetails[0].clubBlurb
+			? club.clubDetails[0].clubBlurb
+			: club.clubBlurb;
+	const clubInfoItems = [
+		{
+			label: "Nickname",
+			value:
+				Array.isArray(club.clubDetails) &&
+				club.clubDetails.length > 0 &&
+				club.clubDetails[0].clubNickname
+					? club.clubDetails[0].clubNickname
+					: club.teamNickname,
+		},
+		{
+			label: "Founded",
+			value:
+				Array.isArray(club.clubDetails) &&
+				club.clubDetails.length > 0 &&
+				club.clubDetails[0].clubFounded
+					? club.clubDetails[0].clubFounded
+					: club.yearFounded,
+		},
+		{
+			label: "Manager",
+			value:
+				Array.isArray(club.clubDetails) &&
+				club.clubDetails.length > 0 &&
+				club.clubDetails[0].clubManager
+					? club.clubDetails[0].clubManager
+					: club.manager || "N/A",
+		},
+	];
+	const stadiumItems = [
+		{
+			label: "Stadium Name",
+			value:
+				Array.isArray(club.stadiumDetails) &&
+				club.stadiumDetails.length > 0 &&
+				club.stadiumDetails[0].stadiumName
+					? club.stadiumDetails[0].stadiumName
+					: club.stadium,
+		},
+		{
+			label: "Stadium Opened",
+			value:
+				Array.isArray(club.stadiumDetails) &&
+				club.stadiumDetails.length > 0 &&
+				club.stadiumDetails[0].stadiumOpened
+					? club.stadiumDetails[0].stadiumOpened
+					: "N/A",
+		},
+		{ label: "Capacity", value: capacityValue },
+	];
+	const leaguePerformance =
+		Array.isArray(club.leaguePerformanceDetails) && club.leaguePerformanceDetails.length > 0
+			? club.leaguePerformanceDetails[0]
+			: null;
+	const premierItems = [
+		{ label: "Premier League Titles", value: premierLeagueTitles },
+		{ label: "Best Premier League Finish", value: formatOrdinal(bestPremierLeagueFinish) },
+		{ label: "Relegations", value: club.relegationsFromPremierLeague ?? "N/A" },
+		{ label: "Biggest Win", value: leaguePerformance?.biggestWin ?? club.biggestWin ?? "N/A" },
+		{ label: "Biggest Defeat", value: leaguePerformance?.biggestLoss ?? club.biggestLoss ?? "N/A" },
+		{ label: "Current Premier League Team", value: club.currentPrem ? "Yes" : "No" },
+	];
 
-					       <h2 className="mb-2 text-lg font-bold text-amber-500">Stadium Information</h2>
-					       <ul>
-						       <li>
-							       Stadium Name:{" "}
-							       {Array.isArray(club.stadiumDetails) &&
-							       club.stadiumDetails.length > 0 &&
-							       club.stadiumDetails[0].stadiumName
-								       ? club.stadiumDetails[0].stadiumName
-								       : club.stadium}
-						       </li>
-						       <li>
-							       Stadium Opened:{" "}
-							       {Array.isArray(club.stadiumDetails) &&
-							       club.stadiumDetails.length > 0 &&
-							       club.stadiumDetails[0].stadiumOpened
-								       ? club.stadiumDetails[0].stadiumOpened
-								       : "N/A"}
-						       </li>
-						       <li>
-							       Capacity:{" "}
-							       {Array.isArray(club.stadiumDetails) &&
-							       club.stadiumDetails.length > 0 &&
-							       club.stadiumDetails[0].stadiumCapacity
-								       ? club.stadiumDetails[0].stadiumCapacity
-								       : club.stadiumCapacity}
-						       </li>
-						       <li>Manager: {club.manager}</li>
-						       <li>Premier League Titles: {club.premierLeagueTitles}</li>
-						       <li>Best Premier League Finish: {club.bestPremierLeagueFinish}</li>
-						       <li>
-							       Relegations from Premier League:{" "}
-							       {club.relegationsFromPremierLeague}
-						       </li>
-						       <li>Biggest Win: {club.biggestWin}</li>
-						       <li>Biggest Defeat: {club.biggestLoss}</li>
-						       <li>Current Prem? {club.currentPrem ? "Yes" : "No"}</li>
-						       <li>Club Blurb: {club.clubBlurb}</li>
-					       </ul>
-				       </div>
-			       </main>
-			       <Footer />
-		       </div>
-	       );
+	return (
+		<div className={`${globalPageStyles} bg-gradient-to-b from-slate-100 via-slate-50 to-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
+			<Header />
+			<main className="w-full text-epl">
+				<div className="mx-auto w-full max-w-[1320px] px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+					<div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden mb-8">
+						<div className="h-1.5 w-full bg-gradient-to-r from-epl-500 via-amber-400 to-teal-400" />
+						<div className="flex flex-col items-center px-6 py-8 text-center">
+							<div className="rounded-full border border-slate-200 bg-slate-50 p-4 shadow-sm">
+								<Image
+									src={logoSrc}
+									alt={club.teamName}
+									width={120}
+									height={120}
+									className="h-24 w-auto"
+								/>
+							</div>
+							<h1 className="mt-4 text-3xl font-bold tracking-tight">{club.teamName}</h1>
+							<p className="mt-2 text-sm font-medium uppercase tracking-wide text-slate-500">
+								{club.currentPrem ? "Current Premier League Club" : "Former Premier League Club"}
+							</p>
+						</div>
+					</div>
+
+					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
+						<h2 className="mb-4 text-lg font-bold text-epl-700">Club Information</h2>
+						<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+							{clubInfoItems.map((item) => (
+								<li key={item.label} className={cardClass}>
+									<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
+									<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
+								</li>
+							))}
+						</ul>
+					</section>
+
+					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
+						<h2 className="mb-4 text-lg font-bold text-epl-700">Stadium Information</h2>
+						<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 mb-4">
+							{stadiumItems.map((item) => (
+								<li key={item.label} className={cardClass}>
+									<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
+									<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
+								</li>
+							))}
+						</ul>
+						<div className={`${cardClass} text-left`}>
+							<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Club Blurb</p>
+							<p className="mt-2 text-base leading-relaxed">{clubBlurb || "N/A"}</p>
+						</div>
+					</section>
+
+					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+						<h2 className="mb-4 text-lg font-bold text-epl-700">Premier League Information</h2>
+						<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+							{premierItems.map((item) => (
+								<li key={item.label} className={cardClass}>
+									<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
+									<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
+								</li>
+							))}
+						</ul>
+					</section>
+				</div>
+			</main>
+			<Footer />
+		</div>
+	);
 }

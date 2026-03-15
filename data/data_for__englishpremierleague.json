@@ -4508,7 +4508,10 @@
 				{
 					"clubName": "Everton",
 					"clubNickname": "The Toffees",
-					"yearFounded": 1878
+					"clubFounded": 1878,
+					"clubManager": "David Moyes",
+					"yearFounded": 1878,
+					"clubBlurb": "Everton Football Club is a professional football club based in Liverpool, England, that competes in the Premier League, the top tier of English football. Founded in 1878, Everton has a rich history and is one of the most successful clubs in English football, having won nine league titles, five FA Cups, and one European Cup Winners' Cup. The club's home ground is Goodison Park, which has been their home since 1892. Everton is known for its passionate fan base and its long-standing rivalry with Liverpool FC, with whom they contest the Merseyside Derby."
 				}
 			],
 			"stadiumDetails": [
