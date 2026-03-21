@@ -1,5 +1,4 @@
 import Header from "@/components/header/Header";
-import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import Footer from "@/components/footer/Footer";
 import H1 from "@/components/typography/H1_Span";
@@ -21,10 +20,6 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS() {
 
       <main className={`w-full text-epl`}>
         <HeroPremierLeague />
-
-        <div className={`${globalMainElementStyles} text-xs! py-4`}>
-          <NavForPremierLeagueHub />
-        </div>
 
         <div className={`${globalMainElementStyles}`}>
           <H1
