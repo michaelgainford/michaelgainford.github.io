@@ -1,5 +1,4 @@
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
-import NavForPremierLeagueHub from "@/components/navigation/Nav_For_PremierLeagueHub";
 import H1 from "@/components/typography/H1_Span";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
@@ -450,9 +449,6 @@ export default function PAGE_PREMIER_LEAGUE_HISTORY () {
 			<Header />
 			<main className="w-full text-epl">
                 <HeroPremierLeague />
-				<div className={`${mainStyles} text-xs! py-4`}>
-                    <NavForPremierLeagueHub />
-                </div>
 				<div className={`${mainStyles}`}>
 					<H1 
                       text="Premier League History" 

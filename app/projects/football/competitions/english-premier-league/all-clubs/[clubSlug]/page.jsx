@@ -26,20 +26,66 @@ export default async function ClubPage({ params }) {
 	const splitSeasonObject = Array.isArray(club.premierLeagueSeasonsSplit) && club.premierLeagueSeasonsSplit.length > 0
 		? club.premierLeagueSeasonsSplit[0]
 		: null;
-	const positionsFromSplit = splitSeasonObject
-		? Object.values(splitSeasonObject)
-				.map((season) => season?.Pos)
-				.filter((pos) => typeof pos === "number" && pos > 0)
+	const seasonEntries = splitSeasonObject
+		? Object.entries(splitSeasonObject)
+				.map(([key, season]) => {
+					const seasonNumberMatch = key.match(/\d+/);
+					const seasonNumber = seasonNumberMatch ? Number(seasonNumberMatch[0]) : null;
+					const position = season?.Pos;
+					return { seasonNumber, position };
+				})
+				.filter((entry) => typeof entry.seasonNumber === "number" && typeof entry.position === "number" && entry.position > 0)
 		: [];
-	const seasonPositions = positionsFromSplit;
+	const seasonPositions = seasonEntries.map((entry) => entry.position);
+	const seasonsInPremierLeague =
+		seasonPositions.length > 0
+			? seasonPositions.length
+			: club.numberOfSeasonsInPremierLeague ?? "N/A";
 	const premierLeagueTitles = seasonPositions.filter((pos) => pos === 1).length;
 	const bestPremierLeagueFinish = seasonPositions.length > 0 ? Math.min(...seasonPositions) : null;
+	const bestPositionEntries = seasonEntries.filter((entry) => entry.position === bestPremierLeagueFinish);
+	const lowestPremierLeaguePosition = seasonPositions.length > 0 ? Math.max(...seasonPositions) : null;
+	const lowestPositionEntries = seasonEntries.filter((entry) => entry.position === lowestPremierLeaguePosition);
 	const formatOrdinal = (n) => {
 		if (typeof n !== "number") return "N/A";
 		const suffixes = ["th", "st", "nd", "rd"];
 		const modHundred = n % 100;
 		return `${n}${suffixes[(modHundred - 20) % 10] || suffixes[modHundred] || suffixes[0]}`;
 	};
+	const formatSeasonRange = (seasonNumber) => {
+		if (typeof seasonNumber !== "number") return "N/A";
+		const startYear = 1991 + seasonNumber;
+		const endYear = startYear + 1;
+		return `${String(startYear).slice(-2)}-${String(endYear).slice(-2)}`;
+	};
+	const lowestPositionSeasons = lowestPositionEntries
+		.map((entry) => formatSeasonRange(entry.seasonNumber))
+		.filter((season) => season !== "N/A");
+	const bestPositionSeasons = bestPositionEntries
+		.map((entry) => formatSeasonRange(entry.seasonNumber))
+		.filter((season) => season !== "N/A");
+	const bestPositionDisplay =
+		typeof bestPremierLeagueFinish === "number" ? (
+			<>
+				{formatOrdinal(bestPremierLeagueFinish)}
+				{bestPositionSeasons.length > 0 ? (
+					<span className="text-xs opacity-50"> ({bestPositionSeasons.join(", ")})</span>
+				) : null}
+			</>
+		) : (
+			"N/A"
+		);
+	const lowestPositionDisplay =
+		typeof lowestPremierLeaguePosition === "number" ? (
+			<>
+				{formatOrdinal(lowestPremierLeaguePosition)}
+				{lowestPositionSeasons.length > 0 ? (
+					<span className="text-xs opacity-50"> ({lowestPositionSeasons.join(", ")})</span>
+				) : null}
+			</>
+		) : (
+			"N/A"
+		);
 	const cardClass =
 		"rounded-xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-4 shadow-sm";
 	const capacityValue = (() => {
@@ -113,12 +159,31 @@ export default async function ClubPage({ params }) {
 		Array.isArray(club.leaguePerformanceDetails) && club.leaguePerformanceDetails.length > 0
 			? club.leaguePerformanceDetails[0]
 			: null;
+	const formatResultWithSeason = (value) => {
+		if (typeof value !== "string") return value ?? "N/A";
+		const match = value.match(/^(.*)\s\(([^)]+)\)$/);
+		if (!match) return value;
+		const mainText = match[1]?.trim();
+		const seasonText = match[2]?.trim();
+		if (!mainText || !seasonText) return value;
+
+		return (
+			<>
+				{mainText}
+				<span className="text-xs opacity-50"> ({seasonText})</span>
+			</>
+		);
+	};
+	const biggestWinRaw = leaguePerformance?.biggestWin ?? club.biggestWin ?? "N/A";
+	const biggestDefeatRaw = leaguePerformance?.biggestLoss ?? club.biggestLoss ?? "N/A";
 	const premierItems = [
+		{ label: "Seasons in Premier League", value: seasonsInPremierLeague },
 		{ label: "Premier League Titles", value: premierLeagueTitles },
-		{ label: "Best Premier League Finish", value: formatOrdinal(bestPremierLeagueFinish) },
+		{ label: "Best Premier League Finish", value: bestPositionDisplay },
+		{ label: "Lowest Premier League Position", value: lowestPositionDisplay },
 		{ label: "Relegations", value: club.relegationsFromPremierLeague ?? "N/A" },
-		{ label: "Biggest Win", value: leaguePerformance?.biggestWin ?? club.biggestWin ?? "N/A" },
-		{ label: "Biggest Defeat", value: leaguePerformance?.biggestLoss ?? club.biggestLoss ?? "N/A" },
+		{ label: "Biggest Win", value: formatResultWithSeason(biggestWinRaw) },
+		{ label: "Biggest Defeat", value: formatResultWithSeason(biggestDefeatRaw) },
 		{ label: "Current Premier League Team", value: club.currentPrem ? "Yes" : "No" },
 	];
 
@@ -156,6 +221,10 @@ export default async function ClubPage({ params }) {
 								</li>
 							))}
 						</ul>
+						<div className={`${cardClass} text-left mt-4`}>
+							<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Club Blurb</p>
+							<p className="mt-2 text-sm leading-relaxed">{clubBlurb || "N/A"}</p>
+						</div>
 					</section>
 
 					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
@@ -168,10 +237,6 @@ export default async function ClubPage({ params }) {
 								</li>
 							))}
 						</ul>
-						<div className={`${cardClass} text-left`}>
-							<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Club Blurb</p>
-							<p className="mt-2 text-base leading-relaxed">{clubBlurb || "N/A"}</p>
-						</div>
 					</section>
 
 					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
