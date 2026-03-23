@@ -18,10 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      # CRITICAL: This bypasses the Node 20 deprecation failure
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.0
 
       - name: Detect package manager
         id: detect-package-manager
@@ -40,7 +41,7 @@ jobs:
           fi
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.2.0
         with:
           node-version: "24"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
@@ -49,7 +50,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Restore cache
-        uses: actions/cache@v4
+        uses: actions/cache@v4.2.0
         with:
           path: |
             .next/cache
