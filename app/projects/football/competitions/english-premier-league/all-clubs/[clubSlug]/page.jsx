@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 import { globalPageStyles } from "@/variables/Styles";
+
+// Required for static export: generate all possible clubSlug params
+export async function generateStaticParams() {
+	const ClubsData = PremierLeagueDataJSON.Clubs;
+	return ClubsData.map((club) => ({ clubSlug: club.clubLogoSlug }));
+}
 
 export default async function ClubPage({ params }) {
 	const resolvedParams = await params;
