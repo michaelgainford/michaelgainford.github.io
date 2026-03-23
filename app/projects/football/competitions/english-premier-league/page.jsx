@@ -80,39 +80,41 @@ export default function Page_EnglishPremierLeague () {
 					  font_sizes="text-xs/5 lg:text-base!"
 					/>
 				</div>
-				<div className={`${globalWrapperFixedWidth} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 [&>div]:border [&>div]:px-4 [&>div]:py-8 lg:[&>div]:p-8 [&>div]lg:p-12 [&_h2]:uppercase [&_h2]:font-bold`}>
-					{premierLeagueHubBlocks.map((block, index) => {
-						return (
-							<div key={index} className="flex flex-col h-full lg:gap-3 rounded-lg">
-								<h2 className="pl-2 text-sm leading-none border-l-4 lg:border-l-8 border-amber-500">{block.title}</h2>
-								<div className="content">
-									<div className={blockImagePlaceholderStyles}>
-										<Image 
-										  src={`${premierLeagueHubBlockImageRoot}/${block.image}`} 
-										  alt={block.title} 
-										  width={800}
-										  height={450} 
-										  className="object-cover rounded-lg aspect-video h-auto w-full" 
-											loading={index < 2 ? "eager" : "lazy"}
-										/>
-									</div>
-									<p className="text-xs tracking-wide lg:text-sm">{block.content}</p>
-									<div className="flex justify-start mt-8 text-white">
-										<Button 
-										  label={block.button} 
-										  href={block.buttonHref} 
-										  title={block.buttonTitle} 
-										  background_colour="bg-transparent"
-										  border_colour="border-epl" 
-										  text_colour="text-epl"
-										  hover_background_colour="hover:bg-epl"
-										  hover_text_colour="hover:text-white"
-										/>
-									</div>
+				<div className={`${globalWrapperFixedWidth} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 [&>div]:border [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:text-lg [&_h2]:mb-2 [&_h2]:tracking-wide`}>
+					{premierLeagueHubBlocks.map((block, index) => (
+						<div key={index} className="p-4 md:p-8 flex flex-col h-full gap-4 rounded-2xl group">
+							<h2 className="pl-2 text-sm lg:text-base leading-none border-l-4 lg:border-l-8 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
+							<div className="flex-1 flex flex-col justify-between">
+								<div className="relative w-full mb-6 aspect-video rounded-xl overflow-hidden">
+									<Image 
+									  src={`${premierLeagueHubBlockImageRoot}/${block.image}`} 
+									  alt={block.title} 
+									  fill
+									  className="object-cover rounded-xl w-full h-full group-hover:scale-105 transition-transform duration-300" 
+									  loading={index < 2 ? "eager" : "lazy"}
+									  priority={index < 2}
+									  placeholder="blur"
+									  blurDataURL="/placeholder-files/blurred-image.webp"
+									/>
+									{/* Optional: subtle overlay for readability */}
+									<div className="absolute inset-0 bg-gradient-to-t from-epl-700/80 via-epl-500/40 to-transparent pointer-events-none rounded-xl" />
+								</div>
+								<p className="text-sm tracking-wide mb-4 line-clamp-4">{block.content}</p>
+								<div className="flex justify-start mt-auto">
+									<Button 
+									  label={block.button} 
+									  href={block.buttonHref} 
+									  title={block.buttonTitle} 
+									  background_colour="bg-epl-500"
+									  border_colour="border-epl-500" 
+									  text_colour="text-white"
+									  hover_background_colour="hover:bg-epl-800"
+									  hover_text_colour="hover:text-amber-400"
+									/>
 								</div>
 							</div>
-						)
-					})}
+						</div>
+					))}
 				</div>
 			</main>
 			<Footer customTextColour="text-epl" />
