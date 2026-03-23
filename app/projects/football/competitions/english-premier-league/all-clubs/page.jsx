@@ -68,8 +68,8 @@ export default function Page_PremierLeagueAllClubs () {
 						{filteredClubs.map((Club) => {
 							const clubsDir = "/football/premier-league/club-logos";
 							let clubLogosDir = clubsDir + '/' + Club.clubLogoSlug + ".svg";
-							// Only Everton gets a link, others are static
-							const isEverton = Club.clubLogoSlug === "everton";
+							// Link cards only when the club page should be displayed
+							const hasDisplayPage = Club.displayPage === true;
 							const cardContent = (
 								<>
 									<Image
@@ -93,8 +93,8 @@ export default function Page_PremierLeagueAllClubs () {
 								</>
 							);
 							// Shared card classes for both a and div
-							const cardClass = `club-card relative flex flex-col items-center gap-2 md:gap-4 px-3 py-4 sm:p-4 m-0 sm:m-2 border border-slate-200 rounded-xl shadow-sm bg-white ${Club.currentPrem ? "current-prem" : "bg-gray-50 former-prem"} ${isEverton ? "cursor-pointer" : "cursor-default"} transition-transform hover:scale-[1.03] max-w-xs w-full mx-auto text-center`;
-							if (isEverton) {
+							const cardClass = `club-card relative flex flex-col items-center gap-2 md:gap-4 px-3 py-4 sm:p-4 m-0 sm:m-2 border border-slate-200 rounded-xl shadow-sm bg-white ${Club.currentPrem ? "current-prem" : "bg-gray-50 former-prem"} ${hasDisplayPage ? "cursor-pointer" : "cursor-default"} transition-transform hover:scale-[1.03] max-w-xs w-full mx-auto text-center`;
+							if (hasDisplayPage) {
 								return (
 									<Link
 										key={Club.clubLogoSlug}
