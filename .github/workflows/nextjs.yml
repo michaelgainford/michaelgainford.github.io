@@ -17,9 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # CRITICAL: This bypasses the Node 20 deprecation failure
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.0
@@ -40,10 +37,10 @@ jobs:
             exit 1
           fi
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4.2.0
         with:
-          node-version: "24"
+          node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Setup Pages
@@ -63,6 +60,9 @@ jobs:
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      - name: Export static site
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
