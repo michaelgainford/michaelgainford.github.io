@@ -80,7 +80,7 @@ export default function Page_EnglishPremierLeague () {
 					  font_sizes="text-xs/5 lg:text-base!"
 					/>
 				</div>
-				<div className={`${globalWrapperFixedWidth} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 [&>div]:border [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:text-lg [&_h2]:mb-2 [&_h2]:tracking-wide`}>
+				<div className={`${globalWrapperFixedWidth} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 [&>div]:border [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:mb-2 [&_h2]:tracking-wide`}>
 					{premierLeagueHubBlocks.map((block, index) => (
 						<div key={index} className="p-4 md:p-8 flex flex-col h-full gap-4 rounded-2xl group">
 							<h2 className="pl-2 text-sm lg:text-base leading-none border-l-4 lg:border-l-8 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
