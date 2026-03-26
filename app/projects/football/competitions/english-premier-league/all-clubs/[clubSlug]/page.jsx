@@ -44,6 +44,12 @@ export default async function ClubPage({ params }) {
 				.filter((entry) => typeof entry.seasonNumber === "number" && typeof entry.position === "number" && entry.position > 0)
 		: [];
 	const seasonPositions = seasonEntries.map((entry) => entry.position);
+	const relegations = seasonEntries.reduce((count, entry, index) => {
+		if (index === seasonEntries.length - 1) return count;
+		const nextEntry = seasonEntries[index + 1];
+		if (typeof nextEntry?.seasonNumber !== "number") return count;
+		return nextEntry.seasonNumber - entry.seasonNumber > 1 ? count + 1 : count;
+	}, 0);
 	const seasonsInPremierLeague =
 		seasonPositions.length > 0
 			? seasonPositions.length
@@ -188,7 +194,7 @@ export default async function ClubPage({ params }) {
 		{ label: "Premier League Titles", value: premierLeagueTitles },
 		{ label: "Best Premier League Finish", value: bestPositionDisplay },
 		{ label: "Lowest Premier League Position", value: lowestPositionDisplay },
-		{ label: "Relegations", value: club.relegationsFromPremierLeague ?? "N/A" },
+		{ label: "Relegations", value: relegations },
 		{ label: "Biggest Win", value: formatResultWithSeason(biggestWinRaw) },
 		{ label: "Biggest Defeat", value: formatResultWithSeason(biggestDefeatRaw) },
 		{ label: "Current Premier League Team", value: club.currentPrem ? "Yes" : "No" },
@@ -211,10 +217,7 @@ export default async function ClubPage({ params }) {
 									className="h-24 w-auto"
 								/>
 							</div>
-							<h1 className="mt-4 text-3xl font-bold tracking-tight">{club.teamName}</h1>
-							<p className="mt-2 text-sm font-medium uppercase tracking-wide text-slate-500">
-								{club.currentPrem ? "Current Premier League Club" : "Former Premier League Club"}
-							</p>
+							<h1 className="mt-4 text-xl md:text-3xl font-bold tracking-tight">{club.teamName}</h1>
 						</div>
 					</div>
 
