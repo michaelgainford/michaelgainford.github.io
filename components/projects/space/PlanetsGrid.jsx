@@ -1,52 +1,58 @@
+"use client";
+
 import Image from 'next/image';
 import DataForSpaceJSON from "@/data/data_for__space";
 const DataForSpace = DataForSpaceJSON.SunAndPlanets;
-const DataForPlanets = DataForSpace.filter((planet) => planet.star_or_planet === "planet");
+const DataForPlanets = DataForSpace
+	.filter((planet) => planet.star_or_planet === "planet")
+	.sort((a, b) => a.order - b.order);
+
+const numberFormatter = new Intl.NumberFormat("en-GB");
 
 export default function Component_PlanetsGrid() {
 	return (
-		<div className="grid flex-wrap grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8 xl:gap-12">
-		{DataForPlanets.map((planet, index) => (
-			<div key={index} className="w-full border rounded-lg bg-black border-slate-900 flex flex-col items-center px-4 py-8 space-y-2 text-center min-w-[200px] gap-4 max-sm:w-full [&>h2]:text-base [&>h2]:tracking-wider [&>h2]:text-center [&>h2]:font-bold lg:[&_>h2]:text-lg">
-				<h2>{planet.name}</h2>
-				<div className="w-full grid grid-cols-1 gap-6 pb-2 md:gap-8 lg:gap-12 [&_>_.stat-description]:text-[10px]">
-
-					{/* Image | Start */}
-					<div className={`image`}>
-						<Image 
-							src={`/space/planets/${planet.slug}.webp`}
-							alt={planet.name}
-							height={400}
-							width={400}
-							className={`mx-auto`}
-						/>
+		<div className="w-full">
+			<p className="mb-3 text-center text-xxs uppercase tracking-[0.16em] text-sky-200/75 sm:hidden">
+				Swipe to explore planets
+			</p>
+			<div className="flex snap-x snap-mandatory scroll-px-4 scroll-smooth gap-4 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:snap-none lg:grid-cols-3 lg:gap-6 xl:gap-8 2xl:grid-cols-4">
+				{DataForPlanets.map((planet, index) => (
+					<div key={index} className="group w-[82vw] max-w-[360px] min-w-[260px] shrink-0 snap-start snap-always rounded-xl border border-sky-200/15 bg-black/90 p-4 text-center shadow-lg shadow-black/25 transition-all duration-300 hover:-translate-y-1 hover:border-sky-300/35 hover:bg-black sm:w-full sm:max-w-none sm:min-w-0 sm:shrink sm:snap-none">
+						<div className="mb-3 flex items-center justify-between">
+							<span className="rounded-full border border-sky-200/25 bg-slate-950/50 px-2 py-1 text-xxs uppercase tracking-wider text-sky-200">Planet {planet.order}</span>
+							<span className="text-xxs uppercase tracking-widest text-slate-400">{planet.slug}</span>
+						</div>
+						<h2 className="mb-4 text-base font-bold tracking-wide text-slate-100 lg:text-lg">{planet.name}</h2>
+						<div className="relative mb-5 overflow-hidden rounded-lg border border-sky-200/15 bg-black/30 p-2">
+							<Image 
+								src={`/space/planets/${planet.slug}.webp`}
+								alt={planet.name}
+								height={400}
+								width={400}
+								className="mx-auto transition-transform duration-500 group-hover:scale-105"
+							/>
+						</div>
+						<div className="grid grid-cols-2 gap-2 pt-1 text-left">
+							<div className="rounded-md border border-sky-200/10 bg-slate-950/60 p-2">
+								<p className="text-xs font-semibold text-slate-100">{numberFormatter.format(planet.distanceFromSunInMiles)}</p>
+								<span className="text-[10px] uppercase tracking-wide text-slate-400">Miles from Sun</span>
+							</div>
+							<div className="rounded-md border border-sky-200/10 bg-slate-950/60 p-2">
+								<p className="text-xs font-semibold text-slate-100">{planet.rotationPeriodInHours}</p>
+								<span className="text-[10px] uppercase tracking-wide text-slate-400">Rotation Hours</span>
+							</div>
+							<div className="rounded-md border border-sky-200/10 bg-slate-950/60 p-2">
+								<p className="text-xs font-semibold text-slate-100">{planet.size}</p>
+								<span className="text-[10px] uppercase tracking-wide text-slate-400">Earth Sizes</span>
+							</div>
+							<div className="rounded-md border border-sky-200/10 bg-slate-950/60 p-2">
+								<p className="text-xs font-semibold text-slate-100">{planet.moons}</p>
+								<span className="text-[10px] uppercase tracking-wide text-slate-400">Moons</span>
+							</div>
+						</div>
 					</div>
-					{/* Image | End */}
-
-					{/* Stats | Start */}
-					<div className="grid grid-cols-2 gap-x-4 gap-y-8 [&>div]:flex [&>div]:flex-col [&>div]:tracking-wider [&>div]:text-center [&_span]:text-[10px] [&_span]:text-center [&_span]:lowercase pt-8 [&_p]:text-sm [&_p]:font-bold lg:[&_p]:text-lg">
-						<div>
-							<p>{planet.distanceFromSunInMiles.toLocaleString()}</p>
-							<span>miles from the Sun</span>
-						</div>
-						<div>
-							<p>{planet.rotationPeriodInHours}</p>
-							<span>hours to rotate</span>
-						</div>
-						<div>
-							<p>{planet.size}</p>
-							<span>Earths (in size)</span>
-						</div>
-						<div>
-							<p>{planet.moons}</p>
-							<span >moons</span>
-						</div>
-					</div>
-					{/* Stats | End */}
-
-				</div>
+				))}
 			</div>
-		))}
-		</div>		
+		</div>
 	)
 }

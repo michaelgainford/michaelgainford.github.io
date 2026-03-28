@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Header from "@/components/header/_Header";
-import Button from "@/components/buttons/Button";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1_Span";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";
+import PremierLeagueHubCardsCarousel from "@/components/projects/english-premier-league/PremierLeagueHubCardsCarousel";
 import { globalPageStyles, globalWrapperFixedWidth } from "@/variables/Styles";
 import { premierLeagueHubBlockImageRoot } from "@/variables/ProjectPremierLeague";
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
@@ -16,7 +15,6 @@ export const metadata = {
 }
 
 const numberOfUniqueClubs = PremierLeagueData.length;
-const blockImagePlaceholderStyles = "w-full mb-8 image-holder aspect-video mt-4 rounded-t-xl";
 const pageIntroText = "Welcome to the Premier League Hub. This is the place to find lots of information about the English Premier League, including the history of the competition, the clubs that have competed in the league, and the records that have been set and broken over the years. Whether you are a die-hard fan of a particular club or just a casual observer of the beautiful game, there is something here for everyone.";
 
 // create an array to store the blocks of data to populate the page
@@ -80,42 +78,11 @@ export default function Page_EnglishPremierLeague () {
 					  font_sizes="text-xs/5 lg:text-base!"
 					/>
 				</div>
-				<div className={`${globalWrapperFixedWidth} min-h-[300px] grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 [&>div]:border [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:mb-2 [&_h2]:tracking-wide`}>
-					{premierLeagueHubBlocks.map((block, index) => (
-						<div key={index} className="p-4 md:p-8 flex flex-col h-full gap-4 rounded-2xl group">
-							<h2 className="pl-2 text-sm lg:text-base leading-none border-l-4 lg:border-l-8 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
-							<div className="flex-1 flex flex-col justify-between">
-								<div className="relative w-full mb-6 aspect-video rounded-xl overflow-hidden">
-									<Image 
-									  src={`${premierLeagueHubBlockImageRoot}/${block.image}`} 
-									  alt={block.title} 
-									  fill
-									  className="object-cover rounded-xl w-full h-full group-hover:scale-105 transition-transform duration-300" 
-									  loading={index < 2 ? "eager" : "lazy"}
-									  priority={index < 2}
-									  placeholder="blur"
-									  blurDataURL="/placeholder-files/blurred-image.webp"
-									/>
-									{/* Optional: subtle overlay for readability */}
-									<div className="absolute inset-0 bg-gradient-to-t from-epl-700/80 via-epl-500/40 to-transparent pointer-events-none rounded-xl" />
-								</div>
-								<p className="text-sm tracking-wide mb-4 line-clamp-4">{block.content}</p>
-								<div className="flex justify-start mt-auto">
-									<Button 
-									  label={block.button} 
-									  href={block.buttonHref} 
-									  title={block.buttonTitle} 
-									  background_colour="bg-epl-500"
-									  border_colour="border-epl-500" 
-									  text_colour="text-white"
-									  hover_background_colour="hover:bg-epl-800"
-									  hover_text_colour="hover:text-amber-400"
-									/>
-								</div>
-							</div>
-						</div>
-					))}
-				</div>
+				<PremierLeagueHubCardsCarousel
+					blocks={premierLeagueHubBlocks}
+					imageRoot={premierLeagueHubBlockImageRoot}
+					containerClassName={globalWrapperFixedWidth}
+				/>
 			</main>
 			<Footer customTextColour="text-epl" />
 		</div>

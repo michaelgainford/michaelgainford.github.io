@@ -221,45 +221,60 @@ export default async function ClubPage({ params }) {
 						</div>
 					</div>
 
-					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
-						<h2 className="mb-4 text-lg font-bold text-epl-700">Club Information</h2>
-						<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-							{clubInfoItems.map((item) => (
-								<li key={item.label} className={cardClass}>
-									<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
-									<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
-								</li>
-							))}
-						</ul>
-						<div className={`${cardClass} text-left mt-4`}>
-							<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Club Blurb</p>
-							<p className="mt-2 text-sm leading-relaxed">{clubBlurb || "N/A"}</p>
+					<details open className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
+						<summary className="flex cursor-pointer list-none items-center justify-between [&::-webkit-details-marker]:hidden">
+							<h2 className="text-lg font-bold text-epl-700">Club Information</h2>
+							<span className="text-xl font-bold text-epl-700 transition-transform duration-200 group-open:rotate-180">⌄</span>
+						</summary>
+						<div className="mt-4">
+							<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+								{clubInfoItems.map((item) => (
+									<li key={item.label} className={cardClass}>
+										<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
+										<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
+									</li>
+								))}
+							</ul>
+							<div className={`${cardClass} text-left mt-4`}>
+								<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Club Blurb</p>
+								<p className="mt-2 text-sm leading-relaxed">{clubBlurb || "N/A"}</p>
+							</div>
 						</div>
-					</section>
+					</details>
 
-					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
-						<h2 className="mb-4 text-lg font-bold text-epl-700">Stadium Information</h2>
-						<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 mb-4">
-							{stadiumItems.map((item) => (
-								<li key={item.label} className={cardClass}>
-									<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
-									<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
-								</li>
-							))}
-						</ul>
-					</section>
+					<details className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
+						<summary className="flex cursor-pointer list-none items-center justify-between [&::-webkit-details-marker]:hidden">
+							<h2 className="text-lg font-bold text-epl-700">Stadium Information</h2>
+							<span className="text-xl font-bold text-epl-700 transition-transform duration-200 group-open:rotate-180">⌄</span>
+						</summary>
+						<div className="mt-4">
+							<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+								{stadiumItems.map((item) => (
+									<li key={item.label} className={cardClass}>
+										<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
+										<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
+									</li>
+								))}
+							</ul>
+						</div>
+					</details>
 
-					<section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-						<h2 className="mb-4 text-lg font-bold text-epl-700">Premier League Information</h2>
-						<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-							{premierItems.map((item) => (
-								<li key={item.label} className={cardClass}>
-									<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
-									<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
-								</li>
-							))}
-						</ul>
-					</section>
+					<details className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+						<summary className="flex cursor-pointer list-none items-center justify-between [&::-webkit-details-marker]:hidden">
+							<h2 className="text-lg font-bold text-epl-700">Premier League Information</h2>
+							<span className="text-xl font-bold text-epl-700 transition-transform duration-200 group-open:rotate-180">⌄</span>
+						</summary>
+						<div className="mt-4">
+							<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+								{premierItems.map((item) => (
+									<li key={item.label} className={cardClass}>
+										<p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</p>
+										<p className="mt-2 text-base font-semibold leading-snug">{item.value}</p>
+									</li>
+								))}
+							</ul>
+						</div>
+					</details>
 				</div>
 			</main>
 			<Footer />

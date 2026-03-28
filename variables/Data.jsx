@@ -53,27 +53,27 @@ const dataForAllProjects = [
     }
   },
   {
-    name: "Euro 2024",
-    href: "/projects/football/competitions/euro-2024",
+    name: "World Cup 2026",
+    href: "/projects/football/competitions/world-cup-2026",
     icon: Icon_Football,
-    color: "text-slate-300",
-    bg: "bg-blue-900",
-    border: "border-blue-700",
-    divider: "divide-blue-700",
-    hover: "hover:bg-blue-800",
-    card_colour: "text-slate-300",
-    group: "group/euros",
-    groupHover: "group-hover/euros:fill-slate-900 group-hover/euros:text-slate-100",
-    description: "A page dedicated to the Euro 2024 football competition.",
+    color: "text-slate-100",
+    bg: "bg-sky-900/80",
+    border: "border-sky-700",
+    divider: "divide-sky-700",
+    hover: "hover:bg-sky-800",
+    card_colour: "text-slate-100",
+    group: "group/world-cup",
+    groupHover: "group-hover/world-cup:fill-slate-900 group-hover/world-cup:text-slate-100",
+    description: "A page dedicated to the 2026 FIFA World Cup.",
     category: "football",
     projectStatus: {
       underConstruction: false,
       featuredProject: false,
-      archived: true
+      archived: false
     },
     projectsCard: {
-      textColour: "text-slate-300"
-    } 
+      textColour: "text-slate-100"
+    }
   },
   {
     name: "Everton",
@@ -156,11 +156,103 @@ const dataForAllProjects = [
     category: "fun",
     projectStatus: {
       underConstruction: false,
-      featuredProject: true,
+      featuredProject: false,
       archived: false
     },
     projectsCard: {
       textColour: "text-slate-300"
+    }
+  },
+  {
+    name: "The Matrix",
+    href: "/projects/movies-database/the-matrix",
+    icon: Icon_Movies,
+    color: "text-green-200",
+    card_colour: "text-green-100",
+    bg: "bg-black/70",
+    border: "border-green-400/30",
+    divider: "divide-green-700/60",
+    hover: "hover:bg-green-950/40",
+    group: "group/matrix",
+    groupHover: "group-hover/matrix:fill-green-200 group-hover/matrix:text-green-100",
+    description: "A dedicated page for The Matrix with key themes, cast highlights, quotes, and iconic scenes.",
+    category: "fun",
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: true,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-green-100"
+    }
+  },
+  {
+    name: "Batman",
+    href: "/projects/movies-database/batman",
+    icon: Icon_Movies,
+    color: "text-amber-200",
+    card_colour: "text-amber-100",
+    bg: "bg-black/70",
+    border: "border-amber-400/30",
+    divider: "divide-amber-700/60",
+    hover: "hover:bg-amber-950/40",
+    group: "group/batman",
+    groupHover: "group-hover/batman:fill-amber-200 group-hover/batman:text-amber-100",
+    description: "A dedicated Batman page with films, cast highlights, quotes, and iconic scenes.",
+    category: "fun",
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-amber-100"
+    }
+  },
+  {
+    name: "Iron Man",
+    href: "/projects/movies-database/iron-man",
+    icon: Icon_Movies,
+    color: "text-red-200",
+    card_colour: "text-red-100",
+    bg: "bg-black/70",
+    border: "border-red-400/30",
+    divider: "divide-red-700/60",
+    hover: "hover:bg-red-950/40",
+    group: "group/ironman",
+    groupHover: "group-hover/ironman:fill-red-200 group-hover/ironman:text-red-100",
+    description: "A dedicated Iron Man page with films, cast highlights, quotes, and iconic scenes.",
+    category: "fun",
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-red-100"
+    }
+  },
+  {
+    name: "Deadpool",
+    href: "/projects/movies-database/deadpool",
+    icon: Icon_Movies,
+    color: "text-rose-200",
+    card_colour: "text-rose-100",
+    bg: "bg-black/70",
+    border: "border-rose-400/30",
+    divider: "divide-rose-700/60",
+    hover: "hover:bg-rose-950/40",
+    group: "group/deadpool",
+    groupHover: "group-hover/deadpool:fill-rose-200 group-hover/deadpool:text-rose-100",
+    description: "A dedicated Deadpool page with films, cast highlights, quotes, and iconic scenes.",
+    category: "fun",
+    projectStatus: {
+      underConstruction: false,
+      featuredProject: false,
+      archived: false
+    },
+    projectsCard: {
+      textColour: "text-rose-100"
     }
   },
   {

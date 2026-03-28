@@ -3,10 +3,12 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { unwatchedMovies } from "@/variables/ProjectMovies";
+const PLACEHOLDER_IMAGE = "/placeholder-files/square-template.webp";
 
 export default function Component_MoviesToWatch() {
 	const scrollContainerRef = useRef(null);
 	const [scrollWidth, setScrollWidth] = useState(240);
+	const [failedImages, setFailedImages] = useState(new Set());
 
 	useEffect(() => {
 		const calculateScrollWidth = () => {
@@ -59,8 +61,11 @@ export default function Component_MoviesToWatch() {
 	};
 
 	return (
-		<div className="w-full py-4 my-8 border-2 rounded-lg xl:py-8 border-slate-950 xl:my-16">
-		<h2 className="mb-4 text-sm lg:text-lg" id="to-watch">To Watch</h2>
+		<section className="w-full py-4 my-8 border rounded-xl xl:py-8 border-amber-300/20 bg-black/70 xl:my-16 px-4 lg:px-6" id="to-watch">
+		<div className="mb-5 flex items-center justify-between gap-4">
+			<h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-amber-200 lg:text-base">To Watch</h2>
+			<span className="text-xxs uppercase tracking-wider rounded-md border border-amber-300/25 bg-slate-900/70 px-2 py-1 text-slate-300">{unwatchedMovies.length} movies</span>
+		</div>
 		<div className="relative min-h-[100px]">
 			{/* Left scroll button */}
 			<button
@@ -86,19 +91,35 @@ export default function Component_MoviesToWatch() {
 
 		<div ref={scrollContainerRef} className="min-h-[100px] movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
 			{unwatchedMovies.map((movie, id) => (
-			<div key={id} className="flex flex-col items-center content-center duration-300 ease-in-out cursor-pointer gap-2 movie-card justify-items-center text-light_colour border-secondary group hover:bg-secondary snap-always snap-center shrink-0 w-36">
-			<div className="w-full max-w-full movie-poster">
-				<Image src={movie.image} className="object-cover w-full duration-1000 border-tr-md border-tl-md xl:opacity-50 xl:group-hover:opacity-100 group-hover:ease-in-out aspect-2/3!" alt={movie.title} width={144} height={216} />
-				</div>
-				<div className="w-full py-2 movie-info">
-					<p className="movie-title bg-black w-full py-2 px-3 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 xl:group-hover:opacity-100 text-xs min-h-[60px] max-w-full flex items-center justify-center h-full line-clamp-3 text-center">
+			<a key={id} href={movie.imdb_url} target="_blank" rel="noreferrer" className="flex flex-col duration-300 ease-in-out cursor-pointer movie-card text-light_colour border border-slate-800/80 rounded-md bg-black/80 border-secondary group hover:bg-black snap-always snap-center shrink-0 w-36 overflow-hidden transition-all hover:border-amber-300/40">
+			<div className="w-full max-w-full movie-poster flex-shrink-0">
+				<Image 
+					src={failedImages.has(movie.image) ? PLACEHOLDER_IMAGE : movie.image} 
+					className="object-cover w-full duration-1000 border-tr-md border-tl-md xl:opacity-50 xl:group-hover:opacity-100 group-hover:ease-in-out aspect-2/3" 
+					alt={movie.title} 
+					width={144} 
+					height={216}
+					onError={() => {
+						if (!failedImages.has(movie.image)) {
+							setFailedImages(prev => new Set([...prev, movie.image]));
+						}
+					}}
+				/>
+			</div>
+				<div className="w-full flex-1 flex flex-col movie-info">
+					<p className="movie-title bg-black w-full py-2 px-3 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 xl:group-hover:opacity-100 text-xs flex items-center justify-center line-clamp-3 text-center flex-1">
 						{movie.title}
 					</p>
+					<div className="grid grid-cols-3 border-t border-slate-800/80 text-xxs tracking-wide uppercase text-slate-300 flex-shrink-0">
+						<span className="px-2 py-1 text-center border-r border-slate-800/80">{movie.year}</span>
+						<span className="px-2 py-1 text-center border-r border-slate-800/80">{movie.ageRating || "NR"}</span>
+						<span className="px-2 py-1 text-center">{movie.duration} mins</span>
+					</div>
 				</div>
-			</div>
+			</a>
 			))}
 		</div>
 		</div>
-	</div>		
+	</section>		
 	)
 }
