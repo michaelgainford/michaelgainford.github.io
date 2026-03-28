@@ -26,6 +26,26 @@
 		<priority>0.80</priority>
 	</url>
 	<url>
+		<loc>https://michaelgainford.dev/projects/movies-database/the-matrix</loc>
+		<lastmod>2026-03-28T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://michaelgainford.dev/projects/movies-database/batman</loc>
+		<lastmod>2026-03-28T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://michaelgainford.dev/projects/movies-database/iron-man</loc>
+		<lastmod>2026-03-28T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://michaelgainford.dev/projects/movies-database/deadpool</loc>
+		<lastmod>2026-03-28T00:00:00+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
 		<loc>https://michaelgainford.dev/projects/space</loc>
 		<lastmod>2025-01-19T10:00:00+00:00</lastmod>
 		<priority>0.80</priority>
@@ -71,8 +91,8 @@
 		<priority>0.64</priority>
 	</url>
 	<url>
-		<loc>https://michaelgainford.dev/projects/football/competitions/euro-2024</loc>
-		<lastmod>2025-01-11T20:56:05+00:00</lastmod>
+		<loc>https://michaelgainford.dev/projects/football/competitions/world-cup-2026</loc>
+		<lastmod>2026-03-27T00:00:00+00:00</lastmod>
 		<priority>0.64</priority>
 	</url>
 	<url>

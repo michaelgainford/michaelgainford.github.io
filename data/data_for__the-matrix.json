@@ -1,0 +1,111 @@
+{
+  "matrixPage": {
+    "title": "The Matrix",
+    "tagline": "Welcome to the real world.",
+    "intro": "A dedicated hub for one of my all-time favourite films. The Matrix blended cyberpunk style, philosophical storytelling, and iconic action into a movie that still feels ahead of its time.",
+    "releaseYear": 1999,
+    "runtimeMinutes": 136,
+    "director": "The Wachowskis",
+    "imdb": 8.7,
+    "clubRating": 10
+  },
+  "trilogy": [
+    {
+      "title": "The Matrix",
+      "year": 1999,
+      "image": "/movies-images/the-matrix.webp",
+      "status": "Watched",
+      "hook": "The original simulation-breaker that changed sci-fi cinema forever."
+    },
+    {
+      "title": "The Matrix Reloaded",
+      "year": 2003,
+      "image": "/movies-images/the-matrix-reloaded.webp",
+      "status": "Watched",
+      "hook": "Bigger scale, deeper lore, and one of the best freeway chases in film."
+    },
+    {
+      "title": "The Matrix Revolutions",
+      "year": 2003,
+      "image": "/movies-images/the-matrix-revolutions.webp",
+      "status": "Watched",
+      "hook": "A bold ending focused on sacrifice, destiny, and peace through balance."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Keanu Reeves",
+      "role": "Neo",
+      "reason": "A perfect lead for the reluctant hero turned saviour arc."
+    },
+    {
+      "name": "Laurence Fishburne",
+      "role": "Morpheus",
+      "reason": "Calm authority and absolute belief in Neo's path."
+    },
+    {
+      "name": "Carrie-Anne Moss",
+      "role": "Trinity",
+      "reason": "Stylish, fearless, and central to the emotional core of the story."
+    },
+    {
+      "name": "Hugo Weaving",
+      "role": "Agent Smith",
+      "reason": "One of sci-fi's most memorable villains with a unique screen presence."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Reality vs Illusion",
+      "description": "The film constantly asks whether comfort in illusion is better than painful truth."
+    },
+    {
+      "title": "Choice and Destiny",
+      "description": "Predictions, prophecies, and free will collide in every major decision."
+    },
+    {
+      "title": "Identity and Control",
+      "description": "Neo's journey is about reclaiming identity from systems that define who you are."
+    },
+    {
+      "title": "Style and Innovation",
+      "description": "From costume design to bullet time, The Matrix set a new visual benchmark."
+    }
+  ],
+  "quotes": [
+    {
+      "line": "There is no spoon.",
+      "character": "Spoon Boy"
+    },
+    {
+      "line": "Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.",
+      "character": "Morpheus"
+    },
+    {
+      "line": "I know kung fu.",
+      "character": "Neo"
+    },
+    {
+      "line": "Welcome to the real world.",
+      "character": "Morpheus"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Red Pill / Blue Pill",
+      "impact": "The iconic fork-in-the-road moment that defines the entire trilogy."
+    },
+    {
+      "name": "Lobby Shootout",
+      "impact": "A genre-defining action sequence with signature Matrix style."
+    },
+    {
+      "name": "Rooftop Bullet Dodge",
+      "impact": "The shot that cemented bullet time in cinematic history."
+    },
+    {
+      "name": "Subway Fight with Smith",
+      "impact": "A pure clash of ideology as much as physical strength."
+    }
+  ]
+}

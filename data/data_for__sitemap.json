@@ -156,9 +156,9 @@
 			"lastUpdated": "2025-12-08"
 		},
 		{
-			"name": "Euro 2024",
-			"label": "Euro 2024",
-			"href": "/projects/football/competitions/euro-2024",
+			"name": "World Cup 2026",
+			"label": "World Cup 2026",
+			"href": "/projects/football/competitions/world-cup-2026",
 			"before": "",
 			"background_colour": "",
 			"border": "none",
@@ -167,7 +167,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2024-12-06"
+			"lastUpdated": "2026-03-27"
 		},
 		{
 			"name": "Everton",
@@ -258,6 +258,66 @@
 			"footerNav_1": false,
 			"footerNav_2": true,
 			"lastUpdated": "2026-02-15"
+		},
+		{
+			"name": "The Matrix",
+			"label": "The Matrix",
+			"href": "/projects/movies-database/the-matrix",
+			"border": "none",
+			"before": "before:bg-green-400",
+			"border_colour": "none",
+			"background_colour": "bg-black",
+			"hover": "none",
+			"category": "projects",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-03-28"
+		},
+		{
+			"name": "Batman",
+			"label": "Batman",
+			"href": "/projects/movies-database/batman",
+			"border": "none",
+			"before": "before:bg-amber-400",
+			"border_colour": "none",
+			"background_colour": "bg-black",
+			"hover": "none",
+			"category": "projects",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-03-28"
+		},
+		{
+			"name": "Iron Man",
+			"label": "Iron Man",
+			"href": "/projects/movies-database/iron-man",
+			"border": "none",
+			"before": "before:bg-red-400",
+			"border_colour": "none",
+			"background_colour": "bg-black",
+			"hover": "none",
+			"category": "projects",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-03-28"
+		},
+		{
+			"name": "Deadpool",
+			"label": "Deadpool",
+			"href": "/projects/movies-database/deadpool",
+			"border": "none",
+			"before": "before:bg-rose-400",
+			"border_colour": "none",
+			"background_colour": "bg-black",
+			"hover": "none",
+			"category": "projects",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "Quotes",

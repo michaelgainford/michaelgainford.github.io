@@ -1,0 +1,110 @@
+{
+  "page": {
+    "title": "Iron Man",
+    "badge": "Stark Systems Archive",
+    "tagline": "Sometimes you gotta run before you can walk.",
+    "intro": "A dedicated Iron Man hub covering Tony Stark's evolution from weapons genius to self-sacrificing Avenger.",
+    "releaseYear": 2008,
+    "runtimeMinutes": 126,
+    "director": "Jon Favreau",
+    "imdb": 7.9,
+    "clubRating": 9.1,
+    "heroImage": "/movies-images/iron-man.webp"
+  },
+  "films": [
+    {
+      "title": "Iron Man",
+      "year": 2008,
+      "status": "Watched",
+      "hook": "The launch point of the MCU with charisma, speed, and mechanical style."
+    },
+    {
+      "title": "Iron Man 2",
+      "year": 2010,
+      "status": "Watched",
+      "hook": "Escalates tech spectacle while digging into Tony's vulnerabilities."
+    },
+    {
+      "title": "Iron Man 3",
+      "year": 2013,
+      "status": "Watched",
+      "hook": "A post-Avengers story that challenges identity beyond the suit."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Robert Downey Jr.",
+      "role": "Tony Stark / Iron Man",
+      "reason": "Defined the role with swagger, wit, and emotional depth."
+    },
+    {
+      "name": "Gwyneth Paltrow",
+      "role": "Pepper Potts",
+      "reason": "Balances Tony's chaos with intelligence and emotional grounding."
+    },
+    {
+      "name": "Don Cheadle",
+      "role": "James Rhodes",
+      "reason": "A trusted ally who reflects responsibility and military discipline."
+    },
+    {
+      "name": "Jon Favreau",
+      "role": "Happy Hogan",
+      "reason": "Brings loyalty and levity through every stage of Stark's journey."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Engineering as Heroism",
+      "description": "Tony solves impossible problems with invention under pressure."
+    },
+    {
+      "title": "Accountability",
+      "description": "The trilogy repeatedly confronts weaponization and unintended harm."
+    },
+    {
+      "title": "Identity Beyond Armor",
+      "description": "Core tension: is Tony Iron Man, or does he become more than the suit?"
+    },
+    {
+      "title": "Style and Signature",
+      "description": "From HUD visuals to suit-up moments, Iron Man set a Marvel tone."
+    }
+  ],
+  "quotes": [
+    {
+      "line": "I am Iron Man.",
+      "character": "Tony Stark"
+    },
+    {
+      "line": "Sometimes you gotta run before you can walk.",
+      "character": "Tony Stark"
+    },
+    {
+      "line": "If you're nothing without the suit, then you shouldn't have it.",
+      "character": "Tony Stark"
+    },
+    {
+      "line": "Genius, billionaire, playboy, philanthropist.",
+      "character": "Tony Stark"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Mark I Escape",
+      "impact": "The origin forge sequence that redefines Tony's mission."
+    },
+    {
+      "name": "First Flight Test",
+      "impact": "Captures the thrill and danger of Stark's iterative genius."
+    },
+    {
+      "name": "House Party Protocol",
+      "impact": "A full-spectrum suit showcase blending chaos and control."
+    },
+    {
+      "name": "Hall of Armor Destruction",
+      "impact": "Marks Tony's attempt to detach identity from machinery."
+    }
+  ]
+}
