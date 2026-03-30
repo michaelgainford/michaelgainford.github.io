@@ -36,6 +36,7 @@ export default function Component_FeaturedMovieSpotlight() {
 					src={featuredMovie.image}
 					alt={featuredMovie.title}
 					fill
+					sizes="(min-width: 1280px) 320px, (min-width: 1024px) 280px, 100vw"
 					className="object-cover"
 					priority
 				/>

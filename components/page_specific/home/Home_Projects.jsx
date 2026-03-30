@@ -13,18 +13,18 @@ export default function Component_FeaturedProjects() {
 					<Link
 						key={index}
 						href={project.href}
-						className={`flex flex-col items-center border justify-center font-light tracking-wide transition-all duration-300 rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 2xl:border-opacity-30 3xl:border-4 space-y-4 hover:opacity-100`}
+						className={`flex flex-col items-center border justify-center font-light tracking-wide transition-all duration-300 rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-br from-slate-700/35 via-slate-700/24 to-slate-600/16 aspect-3/2 group border-opacity-55 shadow-[inset_0_1px_0_rgba(226,232,240,0.16)] backdrop-blur-sm hover:backdrop-blur-md sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 2xl:border-opacity-40 3xl:border-4 space-y-4 hover:opacity-100`}
 					>
 						<span
 							className={`flex w-[27%] justify-center items-end md:w-[23%] xl:w-[20%] ${project.groupHover}`}
 						>
 							<project.icon
 								fill={project.fill}
-								classes={`h-7 fill-slate-400 flex justify-center w-auto 
+								classes={`h-7 fill-slate-300 flex justify-center w-auto 
 								sm:h-12	md:h-16 2xl:h-16 3xl:h-20 4xl:h-24`}
 							/>
 						</span>
-						<span className="flex items-start -mt-1 text-xs tracking-wider text-center group-hover:text-white sm:pt-1 max-lg:text-slate-400 sm:text-sm 2xl:text-base 3xl:text-lg">
+						<span className="flex items-start -mt-1 text-xs tracking-wider text-center text-slate-200 group-hover:text-white sm:pt-1 sm:text-sm 2xl:text-base 3xl:text-lg">
 							{project.name}
 						</span>
 					</Link>

@@ -12,6 +12,8 @@ export default function HERO_PREMIER_LEAGUE () {
                       alt="English Premier League Logo"
                       width={192}
                       height={81}
+                                            sizes="(min-width: 1024px) 192px, 144px"
+                                            priority
                     />
                 </Link>
             </div>

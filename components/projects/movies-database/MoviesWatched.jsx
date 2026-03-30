@@ -190,6 +190,7 @@ export default function Component_MoviesWatched() {
 							alt={movie.title} 
 							height={300} 
 							width={200}
+							sizes="(min-width: 2560px) 8rem, (min-width: 1920px) 10rem, (min-width: 1536px) 10rem, (min-width: 1280px) 12.5rem, 13rem"
 							onError={() => {
 								if (!failedImages.has(movie.image)) {
 									setFailedImages(prev => new Set([...prev, movie.image]));

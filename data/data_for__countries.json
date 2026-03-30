@@ -238,6 +238,7 @@
             "country_capital": "Sarajevo",
             "country_population": 3280819,
             "country_land_area_km2": 51209,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Convertible Mark"
         },
@@ -248,6 +249,7 @@
             "country_capital": "Gaborone",
             "country_population": 2351627,
             "country_land_area_km2": 581730,
+            "country_continent": "Africa",
             "country_flag": "",
             "country_map": "",
             "country_currency": "Pula"
@@ -259,6 +261,7 @@
             "country_capital": "Brasília",
             "country_population": 212559417,
             "country_land_area_km2": 8515767,
+            "country_continent": "South America",
             "country_map": "",
             "country_currency": "Real"
         },
@@ -269,6 +272,7 @@
             "country_capital": "Bandar Seri Begawan",
             "country_population": 437479,
             "country_land_area_km2": 5765,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Brunei Dollar"
         },
@@ -279,6 +283,7 @@
             "country_capital": "Sofia",
             "country_population": 6948445,
             "country_land_area_km2": 110879,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Lev"
         },
@@ -289,6 +294,7 @@
             "country_capital": "Ouagadougou",
             "country_population": 20903278,
             "country_land_area_km2": 274200,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "West African CFA Franc"
         },
@@ -299,6 +305,7 @@
             "country_capital": "Gitega",
             "country_population": 11890784,
             "country_land_area_km2": 27834,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Burundi Franc"
         },
@@ -309,6 +316,7 @@
             "country_capital": "Yamoussoukro",
             "country_population": 26378274,
             "country_land_area_km2": 322463,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "West African CFA Franc"
         },
@@ -319,6 +327,7 @@
             "country_capital": "Praia",
             "country_population": 555987,
             "country_land_area_km2": 4033,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Cape Verdean Escudo"
         },
@@ -329,6 +338,7 @@
             "country_capital": "Phnom Penh",
             "country_population": 16718965,
             "country_land_area_km2": 181035,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Riel"
         },
@@ -339,6 +349,7 @@
             "country_capital": "Yaoundé",
             "country_population": 26545863,
             "country_land_area_km2": 475442,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Central African CFA Franc"
         },
@@ -349,6 +360,7 @@
             "country_capital": "Ottawa",
             "country_population": 37742154,
             "country_land_area_km2": 9984670,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Canadian Dollar"
         },
@@ -359,6 +371,7 @@
             "country_capital": "Bangui",
             "country_population": 4829767,
             "country_land_area_km2": 622984,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Central African CFA Franc"
         },
@@ -369,6 +382,7 @@
             "country_capital": "N'Djamena",
             "country_population": 16425859,
             "country_land_area_km2": 1284000,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Central African CFA Franc"
         },
@@ -379,6 +393,7 @@
             "country_capital": "Santiago",
             "country_population": 19116201,
             "country_land_area_km2": 756102,
+            "country_continent": "South America",
             "country_map": "",
             "country_currency": "Peso"
         },
@@ -389,6 +404,7 @@
             "country_capital": "Beijing",
             "country_population": 1439323776,
             "country_land_area_km2": 9596960,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Yuan"
         },
@@ -399,6 +415,7 @@
             "country_capital": "Bogotá",
             "country_population": 50882891,
             "country_land_area_km2": 1141748,
+            "country_continent": "South America",
             "country_map": "",
             "country_currency": "Peso"
         },
@@ -409,6 +426,7 @@
             "country_capital": "Moroni",
             "country_population": 869595,
             "country_land_area_km2": 1862,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Comorian Franc"
         },
@@ -419,6 +437,7 @@
             "country_capital": "Brazzaville",
             "country_population": 5518092,
             "country_land_area_km2": 342000,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Central African CFA Franc"
         },
@@ -429,6 +448,7 @@
             "country_capital": "San José",
             "country_population": 5094118,
             "country_land_area_km2": 51100,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Colon"
         },
@@ -439,6 +459,7 @@
             "country_capital": "Zagreb",
             "country_population": 4105267,
             "country_land_area_km2": 56594,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Kuna"
         },
@@ -449,6 +470,7 @@
             "country_capital": "Havana",
             "country_population": 11326616,
             "country_land_area_km2": 110860,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Peso"
         },
@@ -459,6 +481,7 @@
             "country_capital": "Nicosia",
             "country_population": 1207359,
             "country_land_area_km2": 9251,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -469,6 +492,7 @@
             "country_capital": "Prague",
             "country_population": 10708981,
             "country_land_area_km2": 78865,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Czech Koruna"
         },
@@ -479,6 +503,7 @@
             "country_capital": "Kinshasa",
             "country_population": 101780263,
             "country_land_area_km2": 2344858,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Congolese Franc"
         },
@@ -489,6 +514,7 @@
             "country_capital": "Copenhagen",
             "country_population": 5792202,
             "country_land_area_km2": 43094,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Danish Krone"
         },
@@ -499,6 +525,7 @@
             "country_capital": "Djibouti",
             "country_population": 988000,
             "country_land_area_km2": 23200,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Djiboutian Franc"
         },
@@ -509,6 +536,7 @@
             "country_capital": "Roseau",
             "country_population": 71986,
             "country_land_area_km2": 751,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "East Caribbean Dollar"
         },
@@ -519,6 +547,7 @@
             "country_capital": "Santo Domingo",
             "country_population": 10847904,
             "country_land_area_km2": 48671,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Peso"
         },
@@ -529,6 +558,7 @@
             "country_capital": "Quito",
             "country_population": 17643054,
             "country_land_area_km2": 276841,
+            "country_continent": "South America",
             "country_map": "",
             "country_currency": "US Dollar"
         },
@@ -539,6 +569,7 @@
             "country_capital": "Cairo",
             "country_population": 102334404,
             "country_land_area_km2": 1002450,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Egyptian Pound"
         },
@@ -549,6 +580,7 @@
             "country_capital": "San Salvador",
             "country_population": 6486205,
             "country_land_area_km2": 21041,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "US Dollar"
         },
@@ -559,6 +591,7 @@
             "country_capital": "Malabo",
             "country_population": 1402985,
             "country_land_area_km2": 28051,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Central African CFA Franc"
         },
@@ -569,6 +602,7 @@
             "country_capital": "Asmara",
             "country_population": 3546421,
             "country_land_area_km2": 117600,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Nakfa"
         },
@@ -579,6 +613,7 @@
             "country_capital": "Tallinn",
             "country_population": 1326535,
             "country_land_area_km2": 45227,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -589,6 +624,7 @@
             "country_capital": "Mbabane",
             "country_population": 1160164,
             "country_land_area_km2": 17364,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Lilangeni"
         },
@@ -599,6 +635,7 @@
             "country_capital": "Addis Ababa",
             "country_population": 114963588,
             "country_land_area_km2": 1104300,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Birr"
         },
@@ -609,6 +646,7 @@
             "country_capital": "Suva",
             "country_population": 896445,
             "country_land_area_km2": 18274,
+            "country_continent": "Oceania",
             "country_map": "",
             "country_currency": "Fijian Dollar"
         },
@@ -619,6 +657,7 @@
             "country_capital": "Helsinki",
             "country_population": 5540720,
             "country_land_area_km2": 338424,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -629,6 +668,7 @@
             "country_capital": "Paris",
             "country_population": 65273511,
             "country_land_area_km2": 551695,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -639,6 +679,7 @@
             "country_capital": "Libreville",
             "country_population": 2225734,
             "country_land_area_km2": 267668,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Central African CFA Franc"
         },
@@ -649,6 +690,7 @@
             "country_capital": "Banjul",
             "country_population": 2416668,
             "country_land_area_km2": 10689,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Dalasi"
         },
@@ -659,6 +701,7 @@
             "country_capital": "Tbilisi",
             "country_population": 3989167,
             "country_land_area_km2": 69700,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Lari"
         },
@@ -669,6 +712,7 @@
             "country_capital": "Berlin",
             "country_population": 83783942,
             "country_land_area_km2": 357022,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -679,6 +723,7 @@
             "country_capital": "Accra",
             "country_population": 31072940,
             "country_land_area_km2": 238533,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Ghana Cedi"
         },
@@ -689,6 +734,7 @@
             "country_capital": "Athens",
             "country_population": 10423054,
             "country_land_area_km2": 131957,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -699,6 +745,7 @@
             "country_capital": "St. George's",
             "country_population": 112523,
             "country_land_area_km2": 344,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "East Caribbean Dollar"
         },
@@ -709,6 +756,7 @@
             "country_capital": "Guatemala City",
             "country_population": 17915568,
             "country_land_area_km2": 108889,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Quetzal"
         },
@@ -719,6 +767,7 @@
             "country_capital": "Conakry",
             "country_population": 13132792,
             "country_land_area_km2": 245857,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Guinean Franc"
         },
@@ -729,6 +778,7 @@
             "country_capital": "Bissau",
             "country_population": 1968001,
             "country_land_area_km2": 36125,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "West African CFA Franc"
         },
@@ -739,6 +789,7 @@
             "country_capital": "Georgetown",
             "country_population": 786552,
             "country_land_area_km2": 214969,
+            "country_continent": "South America",
             "country_map": "",
             "country_currency": "Guyanese Dollar"
         },
@@ -749,6 +800,7 @@
             "country_capital": "Port-au-Prince",
             "country_population": 11402528,
             "country_land_area_km2": 27750,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Gourde"
         },
@@ -759,6 +811,7 @@
             "country_capital": "Vatican City",
             "country_population": 801,
             "country_land_area_km2": 0.44,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -769,6 +822,7 @@
             "country_capital": "Tegucigalpa",
             "country_population": 9904607,
             "country_land_area_km2": 112492,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Lempira"
         },
@@ -779,6 +833,7 @@
             "country_capital": "Budapest",
             "country_population": 9660351,
             "country_land_area_km2": 93028,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Forint"
         },
@@ -789,6 +844,7 @@
             "country_capital": "Reykjavik",
             "country_population": 341243,
             "country_land_area_km2": 103000,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Icelandic Krona"
         },
@@ -799,6 +855,7 @@
             "country_capital": "New Delhi",
             "country_population": 1380004385,
             "country_land_area_km2": 3287263,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Indian Rupee"
         },
@@ -809,6 +866,7 @@
             "country_capital": "Jakarta",
             "country_population": 273523615,
             "country_land_area_km2": 1904569,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Rupiah"
         },
@@ -819,6 +877,7 @@
             "country_capital": "Tehran",
             "country_population": 83992949,
             "country_land_area_km2": 1648195,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Rial"
         },
@@ -829,6 +888,7 @@
             "country_capital": "Baghdad",
             "country_population": 40222493,
             "country_land_area_km2": 437072,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Iraqi Dinar"
         },
@@ -839,6 +899,7 @@
             "country_capital": "Dublin",
             "country_population": 4937786,
             "country_land_area_km2": 70273,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -849,6 +910,7 @@
             "country_capital": "Jerusalem",
             "country_population": 8655535,
             "country_land_area_km2": 20770,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "New Israeli Shekel"
         },
@@ -859,6 +921,7 @@
             "country_capital": "Rome",
             "country_population": 60461826,
             "country_land_area_km2": 301340,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -869,6 +932,7 @@
             "country_capital": "Kingston",
             "country_population": 2961161,
             "country_land_area_km2": 10991,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Jamaican Dollar"
         },
@@ -879,6 +943,7 @@
             "country_capital": "Tokyo",
             "country_population": 126476461,
             "country_land_area_km2": 377975,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Yen"
         },
@@ -889,6 +954,7 @@
             "country_capital": "Amman",
             "country_population": 10203134,
             "country_land_area_km2": 89342,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Jordanian Dinar"
         },
@@ -899,6 +965,7 @@
             "country_capital": "Nur-Sultan",
             "country_population": 18776707,
             "country_land_area_km2": 2724900,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Tenge"
         },
@@ -909,6 +976,7 @@
             "country_capital": "Nairobi",
             "country_population": 53771296,
             "country_land_area_km2": 580367,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Kenyan Shilling"
         },
@@ -919,6 +987,7 @@
             "country_capital": "Tarawa",
             "country_population": 119449,
             "country_land_area_km2": 811,
+            "country_continent": "Oceania",
             "country_map": "",
             "country_currency": "Australian Dollar"
         },
@@ -929,6 +998,7 @@
             "country_capital": "Kuwait City",
             "country_population": 4270571,
             "country_land_area_km2": 17818,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Kuwaiti Dinar"
         },
@@ -939,6 +1009,7 @@
             "country_capital": "Bishkek",
             "country_population": 6524195,
             "country_land_area_km2": 199951,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Som"
         },
@@ -949,6 +1020,7 @@
             "country_capital": "Vientiane",
             "country_population": 7275560,
             "country_land_area_km2": 236800,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Kip"
         },
@@ -959,6 +1031,7 @@
             "country_capital": "Riga",
             "country_population": 1886198,
             "country_land_area_km2": 64562,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -969,6 +1042,7 @@
             "country_capital": "Beirut",
             "country_population": 6825442,
             "country_land_area_km2": 10452,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Lebanese Pound"
         },
@@ -979,6 +1053,7 @@
             "country_capital": "Maseru",
             "country_population": 2142249,
             "country_land_area_km2": 30355,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Loti"
         },
@@ -989,6 +1064,7 @@
             "country_capital": "Monrovia",
             "country_population": 5057681,
             "country_land_area_km2": 111369,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Liberian Dollar"
         },
@@ -999,6 +1075,7 @@
             "country_capital": "Tripoli",
             "country_population": 6871292,
             "country_land_area_km2": 1759540,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Libyan Dinar"
         },
@@ -1009,6 +1086,7 @@
             "country_capital": "Vaduz",
             "country_population": 38128,
             "country_land_area_km2": 160,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Swiss Franc"
         },
@@ -1019,6 +1097,7 @@
             "country_capital": "Vilnius",
             "country_population": 2722289,
             "country_land_area_km2": 65300,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -1029,6 +1108,7 @@
             "country_capital": "Luxembourg",
             "country_population": 625978,
             "country_land_area_km2": 2586,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -1039,6 +1119,7 @@
             "country_capital": "Antananarivo",
             "country_population": 27691018,
             "country_land_area_km2": 587041,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Malagasy Ariary"
         },
@@ -1049,6 +1130,7 @@
             "country_capital": "Lilongwe",
             "country_population": 19129952,
             "country_land_area_km2": 118484,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Kwacha"
         },
@@ -1059,6 +1141,7 @@
             "country_capital": "Kuala Lumpur",
             "country_population": 32365999,
             "country_land_area_km2": 329847,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Ringgit"
         },
@@ -1069,6 +1152,7 @@
             "country_capital": "",
             "country_population": 540542,
             "country_land_area_km2": 300,
+            "country_continent": "Asia",
             "country_map": "",
             "country_currency": "Rufiyaa"
         },
@@ -1079,6 +1163,7 @@
             "country_capital": "Bamako",
             "country_population": 20250833,
             "country_land_area_km2": 1240192,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "West African CFA Franc"
         },
@@ -1089,6 +1174,7 @@
             "country_capital": "Valletta",
             "country_population": 441543,
             "country_land_area_km2": 316,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },
@@ -1099,6 +1185,7 @@
             "country_capital": "Majuro",
             "country_population": 59190,
             "country_land_area_km2": 181,
+            "country_continent": "Oceania",
             "country_map": "",
             "country_currency": "US Dollar"
         },
@@ -1109,6 +1196,7 @@
             "country_capital": "Nouakchott",
             "country_population": 4649658,
             "country_land_area_km2": 1030700,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Ouguiya"
         },
@@ -1119,6 +1207,7 @@
             "country_capital": "Port Louis",
             "country_population": 1271768,
             "country_land_area_km2": 2040,
+            "country_continent": "Africa",
             "country_map": "",
             "country_currency": "Mauritian Rupee"
         },
@@ -1129,6 +1218,7 @@
             "country_capital": "Mexico City",
             "country_population": 128932753,
             "country_land_area_km2": 1964375,
+            "country_continent": "North America",
             "country_map": "",
             "country_currency": "Mexican Peso"
         },
@@ -1139,6 +1229,7 @@
             "country_capital": "Palikir",
             "country_population": 115023,
             "country_land_area_km2": 702,
+            "country_continent": "Oceania",
             "country_map": "",
             "country_currency": "US Dollar"
         },
@@ -1149,6 +1240,7 @@
             "country_capital": "Chisinau",
             "country_population": 4033963,
             "country_land_area_km2": 33846,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Moldovan Leu"
         },
@@ -1159,6 +1251,7 @@
             "country_capital": "Monaco",
             "country_population": 39242,
             "country_land_area_km2": 2,
+            "country_continent": "Europe",
             "country_map": "",
             "country_currency": "Euro"
         },

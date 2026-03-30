@@ -12,17 +12,17 @@ export default function Component_FeaturedDevResources() {
 					<Link
 						href={resource.resourceData.url}
 						key={index}
-						className="flex items-center w-full p-4 sm:py-8 text-lg transition border rounded-lg opacity-75 gap-2 lg:gap-4 lg:px-6 xl:gap-8 resource border-slate-700/50 bg-linear-to-b from-slate-900/40 to-slate-900/60 to-90% hover:opacity-100 hover:bg-slate-800 xl:px-8 group 2xl:py-8 xl:border-2 xl:border-slate-700/30"
+						className="flex items-center w-full p-4 sm:py-8 text-lg transition-all duration-300 border rounded-lg gap-2 lg:gap-4 lg:px-6 xl:gap-8 resource border-slate-400/28 bg-linear-to-br from-slate-700/30 via-slate-700/20 to-slate-600/14 hover:from-slate-600/38 hover:to-slate-500/28 hover:border-slate-300/40 shadow-[inset_0_1px_0_rgba(226,232,240,0.1)] backdrop-blur-sm hover:backdrop-blur-md xl:px-8 group 2xl:py-8 xl:border-2"
 					>
 						<span className="flex justify-center text-slate-200! fill-white stroke-white">
-							<span className="text-white fill-white size-6 xs:size-7 lg:size-8 3xl:size-12 ">
+							<span className="text-slate-50 fill-slate-50 size-6 xs:size-7 lg:size-8 3xl:size-12 transition-colors duration-300 group-hover:text-white group-hover:fill-white">
 								<resource.resourceData.icon
 									classes="size-6 xs:size-7 lg:size-8 3xl:size-12 h-auto"
 									fill={resource.resourceData.fill ? resource.resourceData.fill : "fill-slate-400"}
 								/>
 							</span>
 						</span>
-						<span className="px-4 text-[10px] leading-tight text-left tracking w-full tracking-wider group-hover:text-white sm:text-xs lg:w-full xl:text-sm 2xl:text-base">
+						<span className="px-4 text-[10px] leading-tight text-left tracking w-full tracking-wider text-slate-100 transition-colors duration-300 group-hover:text-white sm:text-xs lg:w-full xl:text-sm 2xl:text-base">
 							{resource.name}
 						</span>
 					</Link>

@@ -16,6 +16,7 @@ import Icon_MagPremierLeague from '@/components/icons/IconMagPremierLeague';
 import Icon_Movies from "@/components/icons/IconMovies";
 import Icon_NextJS from '@/components/icons/IconNextJS';
 import Icon_Planet from "@/components/icons/IconPlanet";
+import Icon_Pill from "@/components/icons/IconPill";
 import Icon_PremierLeague from '@/components/icons/IconPremierLeagueLogo';
 import Icon_PremierLeagueSimple from "@/components/icons/IconPremierLeagueLogoSimple";
 import Icon_Quote from "@/components/icons/IconQuote";
@@ -43,6 +44,7 @@ export {
 	Icon_MagPremierLeague,
 	Icon_Movies,
 	Icon_NextJS, 
+	Icon_Pill,
 	Icon_Quote,
 	Icon_Planet,
 	Icon_PremierLeague,

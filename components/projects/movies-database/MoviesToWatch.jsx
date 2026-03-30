@@ -99,6 +99,7 @@ export default function Component_MoviesToWatch() {
 					alt={movie.title} 
 					width={144} 
 					height={216}
+					sizes="9rem"
 					onError={() => {
 						if (!failedImages.has(movie.image)) {
 							setFailedImages(prev => new Set([...prev, movie.image]));

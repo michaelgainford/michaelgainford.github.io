@@ -111,6 +111,7 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 									src={`${imageRoot}/${block.image}`}
 									alt={block.title}
 									fill
+									sizes="(min-width: 1280px) 36rem, (min-width: 1024px) calc(50vw - 4rem), (min-width: 640px) 78vw, 100vw"
 									className="object-cover rounded-xl w-full h-full group-hover:scale-105 transition-transform duration-300"
 									loading={index < 2 ? "eager" : "lazy"}
 									priority={index < 2}

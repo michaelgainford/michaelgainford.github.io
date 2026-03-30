@@ -37,6 +37,8 @@ export default function MatrixHero({ page, stats }) {
             alt="The Matrix movie poster"
             width={900}
             height={1400}
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            priority
             className="h-[360px] w-full object-cover object-top lg:h-[430px]"
           />
           <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black to-transparent p-4">
