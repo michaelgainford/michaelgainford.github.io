@@ -819,7 +819,7 @@
 					"clubName": "Barnsley Football Club",
 					"clubNickname": "The Tykes",
 					"clubFounded": 1887,
-					"clubManager": "Poya Asbaghi",
+					"clubManager": "John Hendrie (1998)",
 					"clubBlurb": "Barnsley Football Club is a professional association football club based in the town of Barnsley, South Yorkshire, England. The team play in the Championship, the second tier of the English football league system. Nicknamed 'the Tykes', they were founded in 1887 by Reverend Tiverton Preedy under the name Barnsley St. Peter's."
 				}
 			],
@@ -957,7 +957,7 @@
 					"clubName": "Birmingham City Football Club",
 					"clubNickname": "The Blues",
 					"clubFounded": 1875,
-					"clubManager": "John Eustace",
+					"clubManager": "John Eustace (2011)",
 					"clubBlurb": "Birmingham City Football Club is a professional football club in Birmingham, England. Formed in 1875 as Small Heath Alliance, it was renamed Small Heath in 1888, Birmingham in 1905, and Birmingham City in 1943. The team compete in the EFL Championship, the second tier of the English football league system."
 				}
 			],
@@ -1509,17 +1509,17 @@
 					"clubName": "Bournemouth",
 					"clubNickname": "The Cherries",
 					"clubFounded": 1899,
-					"clubManager": "",
+					"clubManager": "Andoni Iraola",
 					"clubBlurb": "A.F.C. Bournemouth is a professional football club in Bournemouth, Dorset, that plays in the Premier League, the top tier of the English football league system. Formed in 1899 as Boscombe St. John's Institute F.C., the club adopted their current name in 1972."
 				}
 			],
 			"stadiumDetails": [
 				{
 					"stadiumName": "Vitality Stadium",
-					"stadiumLocation": "",
-					"stadiumPostcode": "",
+					"stadiumLocation": "Dean Court, Bournemouth",
+					"stadiumPostcode": "BH7 7AF",
 					"stadiumCapacity": 11364,
-					"stadiumOpened": null
+					"stadiumOpened": 2001
 				}
 			],
 			"leaguePerformanceDetails": [
@@ -1785,7 +1785,7 @@
 					"clubName": "Brentford",
 					"clubNickname": "The Bees",
 					"clubFounded": 1889,
-					"clubManager": "",
+					"clubManager": "Keith Andrews",
 					"clubBlurb": "Brentford Football Club is a professional football club based in Brentford, West London, England. They compete in the Premier League, the top tier of English football, having gained promotion via the EFL Championship play-offs in the 2020–21 season."
 				}
 			],
@@ -2061,7 +2061,7 @@
 					"clubName": "Burnley",
 					"clubNickname": "The Clarets",
 					"clubFounded": 1882,
-					"clubManager": "",
+					"clubManager": "Scott Parker",
 					"clubBlurb": "Burnley Football Club is a professional association football club based in Burnley, Lancashire, England, founded in 1882. Nicknamed The Clarets, due to the dominant colour of their home shirts, they were one of the founding members of the Football League in 1888."
 				}
 			],
@@ -2475,7 +2475,7 @@
 					"clubName": "Chelsea",
 					"clubNickname": "The Blues",
 					"clubFounded": 1905,
-					"clubManager": "",
+					"clubManager": "Liam Rosenior",
 					"clubBlurb": "Chelsea Football Club is an English professional football club based in Fulham, London. Founded in 1905, the club competes in the Premier League, the top division of English football. Chelsea are among England's most successful clubs, having won over thirty competitive honours, including six league titles and eight European trophies."
 				}
 			],
@@ -2751,7 +2751,7 @@
 					"clubName": "Crystal Palace",
 					"clubNickname": "The Eagles",
 					"clubFounded": 1905,
-					"clubManager": "",
+					"clubManager": "Oliver Glasner",
 					"clubBlurb": "Crystal Palace Football Club is a professional football club based in Selhurst, South London, England, who currently compete in the Premier League, the highest level of English football. Although their official founding date is 1905, the club claims to be a continuation of the original amateur Crystal Palace football club formed in 1861, as both were owned by the same Crystal Palace Company."
 				}
 			],
@@ -3165,7 +3165,7 @@
 					"clubName": "Fulham",
 					"clubNickname": "The Cottagers",
 					"clubFounded": 1879,
-					"clubManager": "",
+					"clubManager": "Marco Silva",
 					"clubBlurb": "Fulham Football Club is a professional football club based in Fulham, London, England. The club competes in the Premier League, the top tier of English football. Founded in 1879, Fulham is the oldest football club from London to play in the Football League. The club's home ground is Craven Cottage, which has been their home since 1896. Fulham has a rich history and has experienced various successes and challenges throughout its existence."
 				}
 			],
@@ -3651,7 +3651,7 @@
 					"clubName": "Leeds United",
 					"clubNickname": "The Whites",
 					"clubFounded": 1919,
-					"clubManager": "",
+					"clubManager": "Daniel Farke",
 					"clubBlurb": "Leeds United Football Club is a professional football club in Leeds, West Yorkshire, England. The club was formed in 1919 following the disbanding of Leeds City by the Football League and took over their Elland Road stadium. They play in the Championship, the second tier of English football."
 				}
 			],
@@ -3927,7 +3927,7 @@
 					"clubName": "Liverpool",
 					"clubNickname": "The Reds",
 					"clubFounded": 1892,
-					"clubManager": "",
+					"clubManager": "Arne Slot",
 					"clubBlurb": "Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. Domestically, the club has won nineteen League titles, seven FA Cups, a record eight League Cups, and fifteen FA Community Shields."
 				}
 			],
@@ -4203,7 +4203,7 @@
 					"clubName": "Manchester City",
 					"clubNickname": "The Citizens",
 					"clubFounded": 1880,
-					"clubManager": "",
+					"clubManager": "Pep Guardiola",
 					"clubBlurb": "Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's, it became Ardwick Association Football Club in 1887 and Manchester City in 1894."
 				}
 			],
@@ -4341,7 +4341,7 @@
 					"clubName": "Manchester United",
 					"clubNickname": "The Red Devils",
 					"clubFounded": 1878,
-					"clubManager": "",
+					"clubManager": "Michael Carrick",
 					"clubBlurb": "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed 'the Red Devils', the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910."
 				}
 			],
@@ -4617,7 +4617,7 @@
 					"clubName": "Newcastle United",
 					"clubNickname": "The Magpies",
 					"clubFounded": 1892,
-					"clubManager": "",
+					"clubManager": "Eddie Howe",
 					"clubBlurb": "Newcastle United Football Club is an English professional football club based in Newcastle upon Tyne, Tyne and Wear, that plays in the Premier League, the top flight of English football. Founded in 1892 by the merger of Newcastle East End and Newcastle West End, they have played at St James' Park since."
 				}
 			],
@@ -4893,7 +4893,7 @@
 					"clubName": "Nottingham Forest",
 					"clubNickname": "The Reds",
 					"clubFounded": 1865,
-					"clubManager": "",
+					"clubManager": "Vitor Pereira",
 					"clubBlurb": "Nottingham Forest Football Club is a professional football club based in West Bridgford, Nottinghamshire, England. The club was founded in 1865 and has been playing its home matches at the City Ground since 1898. They are currently competing in the EFL Championship, the second tier of the English football league system."
 				}
 			],
@@ -6135,7 +6135,7 @@
 					"clubName": "Sunderland",
 					"clubNickname": "The Black Cats",
 					"clubFounded": 1879,
-					"clubManager": "",
+					"clubManager": "Regis Le Bris",
 					"clubBlurb": "Sunderland Association Football Club is an English professional football club based in the city of Sunderland, Tyne and Wear. Sunderland play in League One, the third tier of English football. Since its formation in 1879, the club has won six top-flight titles, a total only bettered by five other clubs, and has finished runners-up five times."
 				}
 			],
@@ -6549,7 +6549,7 @@
 					"clubName": "Tottenham Hotspur",
 					"clubNickname": "Spurs",
 					"clubFounded": 1882,
-					"clubManager": "",
+					"clubManager": "Igor Tudor",
 					"clubBlurb": "Tottenham Hotspur Football Club, commonly referred to as Tottenham or Spurs, is an English professional football club in Tottenham, London, that competes in the Premier League. Tottenham Hotspur Stadium has been the club's home ground since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site."
 				}
 			],
@@ -6963,7 +6963,7 @@
 					"clubName": "West Ham United",
 					"clubNickname": "The Hammers",
 					"clubFounded": 1895,
-					"clubManager": "",
+					"clubManager": "Nuno Espirito Santo",
 					"clubBlurb": "West Ham United Football Club is a professional football club based in Stratford, East London, England that competes in the Premier League, the top tier of English football. The club plays at the London Stadium, having moved from their former home, the Boleyn Ground, in 2016."
 				}
 			],
@@ -7377,7 +7377,7 @@
 					"clubName": "Wolverhampton Wanderers",
 					"clubNickname": "Wolves",
 					"clubFounded": 1877,
-					"clubManager": "",
+					"clubManager": "Rob Edwards",
 					"clubBlurb": "Wolverhampton Wanderers Football Club, commonly known as Wolves, is a professional association football club based in Wolverhampton, West Midlands, England. Formed as St. Luke's F.C. in 1877, they have played at Molineux Stadium since 1889 and compete in the Premier League, the top tier of English football, after winning the 2017–18 EFL Championship."
 				}
 			],

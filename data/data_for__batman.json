@@ -1,0 +1,110 @@
+{
+  "page": {
+    "title": "Batman",
+    "badge": "Gotham Archive",
+    "tagline": "The city needs a symbol.",
+    "intro": "A Batman hub focused on the tone, detective roots, and legacy of Gotham across key live-action films.",
+    "releaseYear": 2008,
+    "runtimeMinutes": 152,
+    "director": "Christopher Nolan",
+    "imdb": 9.0,
+    "clubRating": 9.4,
+    "heroImage": "/movies-images/batman-the-dark-knight.webp"
+  },
+  "films": [
+    {
+      "title": "Batman Begins",
+      "year": 2005,
+      "status": "Watched",
+      "hook": "A grounded origin story that rebuilt Batman for a modern era."
+    },
+    {
+      "title": "Batman: The Dark Knight",
+      "year": 2008,
+      "status": "Watched",
+      "hook": "A crime epic with definitive performances and relentless tension."
+    },
+    {
+      "title": "Batman: The Dark Knight Rises",
+      "year": 2012,
+      "status": "Watched",
+      "hook": "A high-stakes finale about sacrifice, fear, and rebuilding Gotham."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Christian Bale",
+      "role": "Bruce Wayne / Batman",
+      "reason": "Balances billionaire mask and haunted vigilance with intensity."
+    },
+    {
+      "name": "Heath Ledger",
+      "role": "The Joker",
+      "reason": "A chaotic performance that became one of cinema's benchmark villains."
+    },
+    {
+      "name": "Michael Caine",
+      "role": "Alfred Pennyworth",
+      "reason": "Adds heart, wisdom, and emotional gravity to Bruce's arc."
+    },
+    {
+      "name": "Gary Oldman",
+      "role": "James Gordon",
+      "reason": "The moral center of Gotham's fight against systemic corruption."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Fear as a Weapon",
+      "description": "Batman transforms trauma into strategy, turning fear against criminals."
+    },
+    {
+      "title": "Order vs Chaos",
+      "description": "The trilogy constantly pits civic structure against anarchic disruption."
+    },
+    {
+      "title": "Identity and Sacrifice",
+      "description": "Bruce's journey is about choosing duty over personal peace."
+    },
+    {
+      "title": "Grounded Myth",
+      "description": "Comic-book scale delivered with crime-thriller realism."
+    }
+  ],
+  "quotes": [
+    {
+      "line": "It's not who I am underneath, but what I do that defines me.",
+      "character": "Batman"
+    },
+    {
+      "line": "Why do we fall? So we can learn to pick ourselves up.",
+      "character": "Alfred"
+    },
+    {
+      "line": "You either die a hero or live long enough to see yourself become the villain.",
+      "character": "Harvey Dent"
+    },
+    {
+      "line": "A hero can be anyone.",
+      "character": "Batman"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Dockyard Fear Takedown",
+      "impact": "Establishes Batman as an urban myth before a visible hero."
+    },
+    {
+      "name": "Interrogation Room",
+      "impact": "An iconic ideological duel between Batman and Joker."
+    },
+    {
+      "name": "Truck Flip in Gotham",
+      "impact": "A practical-effects set piece that remains instantly recognizable."
+    },
+    {
+      "name": "Final Rise from the Pit",
+      "impact": "Symbolizes Bruce reclaiming identity and purpose."
+    }
+  ]
+}

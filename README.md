@@ -8,7 +8,7 @@
 
 ## Overview
 
-The purpose of this site is to act as a centralised hub for all things web development. It contains a bunch of personal projects based on interests, tools, and other helpful information and resources for web developers - and hopefully some inspiration can be taken. 
+The purpose of this site is to act as a centralised hub for all things web development. It contains a bunch of personal projects based on interests, tools, and other helpful information and resources for web developers - and hopefully some inspiration can be taken.
 
 The site is built using Next.js and Tailwind CSS.
 
@@ -16,11 +16,11 @@ The site is built using Next.js and Tailwind CSS.
 
 ### Built using
 
-  [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#) 	[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#) [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#) [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#) [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
+  ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white) ![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB) ![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white) ![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)
 
 ### Ran and managed using
 
-  [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](#) [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
+  ![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)
 
 ---
 
@@ -67,11 +67,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - **[ABOUT](https://michaelgainford.dev/general/about)**: A page about me and the site.
   - **[STYLE GUIDE](https://michaelgainford.dev/general/site-style-guide)**: A page that contains a style guide for the site.
 - **[PROJECTS](https://michaelgainford.dev/projects)**: A list of projects that I have worked on.
-  - **[EURO 2024]((https://michaelgainford.dev/projects/football/competitions/euro-2024))**: A project that I worked on for the Euro 2024 tournament. This never actually got finished in time for the tournament, but it was a good learning experience and I will be using it as a reference for the 2026 World Cup.
+  - **[WORLD CUP 2026](https://michaelgainford.dev/projects/football/competitions/world-cup-2026)**: A project hub for the 2026 FIFA World Cup with confirmed hosts and qualifier placeholders ready to be replaced as teams qualify.
   - **[EVERTON](https://michaelgainford.dev/projects/football/everton)**: A project dedicated to Everton Football Club.
   - **[FORTNITE](https://michaelgainford.dev/projects/gaming/fortnite)**: A project dedicated to the popular video game Fortnite.
   - **[JOKES](https://michaelgainford.dev/projects/jokes)**: A project that displays random jokes.
   - **[MOVIES](https://michaelgainford.dev/projects/movies-database)**: A project that displays information about movies either watched or to watch.
+    - **[THE MATRIX](https://michaelgainford.dev/projects/movies-database/the-matrix)**: A dedicated movie page for The Matrix with themes, cast highlights, quotes, and key scenes.
   - **[PREMIER LEAGUE](https://michaelgainford.dev/projects/football/competitions/english-premier-league)**: A project that I worked on for the Premier League detailing season-by-season data, which contains a central hub with separate categories of stats and information. such as all clubs, past seasons and records.
   - **[QUOTES](https://michaelgainford.dev/projects/quotes)**: A project displaying a selection of random quotes.
   - **[SPACE](https://michaelgainford.dev/projects/space)**: A project that displays information about space.

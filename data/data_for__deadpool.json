@@ -1,0 +1,110 @@
+{
+  "page": {
+    "title": "Deadpool",
+    "badge": "Merc Archive",
+    "tagline": "Maximum effort.",
+    "intro": "A Deadpool hub celebrating fourth-wall chaos, brutal action-comedy, and the franchise's irreverent heart.",
+    "releaseYear": 2016,
+    "runtimeMinutes": 108,
+    "director": "Tim Miller",
+    "imdb": 8.0,
+    "clubRating": 9.0,
+    "heroImage": "/movies-images/deadpool.webp"
+  },
+  "films": [
+    {
+      "title": "Deadpool",
+      "year": 2016,
+      "status": "Watched",
+      "hook": "A meta superhero film that reset expectations for comic adaptations."
+    },
+    {
+      "title": "Deadpool 2",
+      "year": 2018,
+      "status": "Watched",
+      "hook": "Bigger cast, sharper banter, and surprisingly emotional beats."
+    },
+    {
+      "title": "Deadpool and Wolverine",
+      "year": 2024,
+      "status": "Watched",
+      "hook": "A chaotic team-up with legacy nods and relentless energy."
+    }
+  ],
+  "cast": [
+    {
+      "name": "Ryan Reynolds",
+      "role": "Wade Wilson / Deadpool",
+      "reason": "Pitch-perfect blend of sarcasm, vulnerability, and violence."
+    },
+    {
+      "name": "Hugh Jackman",
+      "role": "Logan / Wolverine",
+      "reason": "Brings raw gravitas that clashes brilliantly with Wade's chaos."
+    },
+    {
+      "name": "Morena Baccarin",
+      "role": "Vanessa",
+      "reason": "Adds emotional stakes and chemistry that anchor the humor."
+    },
+    {
+      "name": "Josh Brolin",
+      "role": "Cable",
+      "reason": "A hard-edged contrast that strengthens Deadpool 2's dynamic."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Fourth-Wall Precision",
+      "description": "Meta commentary is used as structure, not just punchline."
+    },
+    {
+      "title": "Comedy + Carnage",
+      "description": "Action choreography and humor are tightly interwoven."
+    },
+    {
+      "title": "Chosen Family",
+      "description": "Underneath the jokes, the films revolve around belonging and loyalty."
+    },
+    {
+      "title": "Franchise Self-Awareness",
+      "description": "Deadpool turns genre tropes into the core storytelling engine."
+    }
+  ],
+  "quotes": [
+    {
+      "line": "Maximum effort.",
+      "character": "Deadpool"
+    },
+    {
+      "line": "Life is an endless series of trainwrecks with only brief, commercial-like breaks of happiness.",
+      "character": "Deadpool"
+    },
+    {
+      "line": "You're probably thinking, whose balls did I have to fondle to get my very own movie?",
+      "character": "Deadpool"
+    },
+    {
+      "line": "Zip it, Thanos!",
+      "character": "Deadpool"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Opening Highway Sequence",
+      "impact": "Set the franchise tone instantly with stylized chaos and meta narration."
+    },
+    {
+      "name": "X-Force Drop",
+      "impact": "A brutal comedy set piece that became instantly iconic."
+    },
+    {
+      "name": "Prison Break at Ice Box",
+      "impact": "Blends absurdity and intensity while escalating emotional stakes."
+    },
+    {
+      "name": "Wade + Logan Car Chemistry",
+      "impact": "The verbal sparring dynamic powers the latest film's momentum."
+    }
+  ]
+}

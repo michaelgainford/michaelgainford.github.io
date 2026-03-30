@@ -34,12 +34,12 @@ export default function Page_PremierLeagueAllClubs () {
 					<H1 
 						text="All Clubs"
 						font_sizes="text-base lg:text-[24px]!" 
-						other_classes="uppercase pt-0! mb-0!" 
+						other_classes="uppercase pt-0! mb-0! mt-8" 
 					/>
 				</div>
 
 				{/* Filter Buttons */}
-				<div className={`${mainStyles} flex flex-row flex-nowrap gap-2 justify-center items-center mb-4`}>
+				<div className={`${mainStyles} flex flex-row flex-nowrap gap-2 justify-center items-center mt-4 mb-4`}>
 					<button
 						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "all" ? "bg-epl-500 text-white border-epl-500" : "bg-white text-epl border-epl-200 hover:bg-epl-100"}`}
 						onClick={() => setFilter("all")}
@@ -64,7 +64,7 @@ export default function Page_PremierLeagueAllClubs () {
 				</div>
 
 				<div className="min-h-[300px] w-full px-2 sm:px-4 md:px-8 py-2 sm:py-4">
-					<div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 xl:gap-10 justify-center">
+					<div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 max-sm:px-1 gap-3 sm:gap-6 md:gap-8 xl:gap-10 justify-center">
 						{filteredClubs.map((Club) => {
 							const clubsDir = "/football/premier-league/club-logos";
 							let clubLogosDir = clubsDir + '/' + Club.clubLogoSlug + ".svg";
@@ -85,7 +85,7 @@ export default function Page_PremierLeagueAllClubs () {
 										}
 									/>
 									<p className={`text-xxs md:text-sm ${Club.currentPrem ? "text-brand-main font-bold" : "text-brand-main font-bold lg:text-gray-400 lg:font-normal"} text-center`}>
-										{Club.teamName}
+										{Club.teamShortName ? Club.teamShortName : Club.teamName}
 									</p>
 									<span className={`max-md:hidden absolute top-0 right-0 p-1 ${Club.currentPrem ? `bg-emerald-200/30` : `bg-transparent`} text-[10px] font-bold tracking-wide`}>
 										{Club.currentPrem ? `Current` : `Former`}
