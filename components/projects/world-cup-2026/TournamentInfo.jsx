@@ -83,7 +83,7 @@ export default function Component_WorldCup2026TournamentInfo() {
 												<span className="text-center text-xxs font-bold text-sky-700">{pts(team)}</span>
 											</div>
 										))}
-										<p className="mt-2 text-xxs text-slate-400 italic">Top 2 qualify ↑</p>
+										<p className="mt-2 text-xxs text-slate-400 italic">Top 2 qualify, plus 8 best 3rd place teams ↑</p>
 								</div>
 							</div>
 						);

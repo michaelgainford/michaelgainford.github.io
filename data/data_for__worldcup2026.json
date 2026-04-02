@@ -37,8 +37,8 @@
 			"goalsAgainst": 0
 		},
 		{
-			"name": "TBD Qualifier 01",
-			"flag": "/country-flags/xx.svg",
+			"name": "Czech Republic",
+			"flag": "/country-flags/cz.svg",
 			"group": "A",
 			"groupSeeding": 4,
 			"played": 0,
@@ -61,8 +61,8 @@
 			"goalsAgainst": 0
 		},
 		{
-			"name": "TBD Qualifier 03",
-			"flag": "/country-flags/xx.svg",
+			"name": "Bosnia-Herzegovina",
+			"flag": "/country-flags/ba.svg",
 			"group": "B",
 			"groupSeeding": 2,
 			"played": 0,
@@ -181,8 +181,8 @@
 			"goalsAgainst": 0
 		},
 		{
-			"name": "TBD Qualifier 13",
-			"flag": "/country-flags/xx.svg",
+			"name": "Turkey",
+			"flag": "/country-flags/tr.svg",
 			"group": "D",
 			"groupSeeding": 4,
 			"played": 0,
@@ -265,8 +265,8 @@
 			"goalsAgainst": 0
 		},
 		{
-			"name": "TBD Qualifier 20",
-			"flag": "/country-flags/xx.svg",
+			"name": "Sweden",
+			"flag": "/country-flags/se.svg",
 			"group": "F",
 			"groupSeeding": 3,
 			"played": 0,
@@ -409,8 +409,8 @@
 			"goalsAgainst": 0
 		},
 		{
-			"name": "TBD Qualifier 32",
-			"flag": "/country-flags/xx.svg",
+			"name": "Iraq",
+			"flag": "/country-flags/iq.svg",
 			"group": "I",
 			"groupSeeding": 3,
 			"played": 0,
@@ -493,8 +493,8 @@
 			"goalsAgainst": 0
 		},
 		{
-			"name": "TBD Qualifier 39",
-			"flag": "/country-flags/xx.svg",
+			"name": "DR Congo",
+			"flag": "/country-flags/cd.svg",
 			"group": "K",
 			"groupSeeding": 2,
 			"played": 0,
