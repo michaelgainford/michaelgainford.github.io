@@ -459,21 +459,39 @@ export default function PAGE_PREMIER_LEAGUE_HISTORY () {
 				<div className={`${mainStyles}`}>
                     <p className="text-sm lg:text-sm max-w-[800px]">The Premier League was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League is the top tier of English football and is the most-watched sports league in the world. The league has been dominated by Manchester United (13) and Manchester City (8) with Chelsea (5), Arsenal (3), Liverpool (2), Leicester City (1) and Blackburn Rovers (1) being the only other clubs to win the title.</p>
 
-                    <div className="grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2 seasons">
+                    <div className="seasons mt-16 w-full grid grid-cols-1 gap-8 lg:grid-cols-2">
                         {premierLeagueSeasonsData.map((season, index) => (
-                            <div key={season.id} className={`pt-4 pb-8 border border-epl rounded-lg season season-${index} [&>h3]:px-4 [&>h3]:mb-1 [&>h3]:text-sm [&>h3]:font-light [&>h3]:tracking-wider [&>h3]:uppercase [&>p]:px-4 [&>p]:mb-4 [&>p]:text-xs`}>
-                                <h2 className="px-4 pb-3 mb-4 text-sm font-bold border-b border-current lg:text-xl">{season.season}</h2>
-                                <h3>Overview</h3>
-                                <p>{season.text}</p>
-                                <h3>Winners</h3>
-                                <p>{season.winners}</p>
-                                <h3>Runners-up</h3>
-                                <p>{season.runnersUp}</p>
-                                <h3>Relegated</h3>
-                                <p>{season.relegated}</p>
-                                <h3>Top Goalscorer</h3>
-                                <p>{season.topGoalscorer}</p>
-                            </div>
+                            <details
+                                key={season.id}
+                                className={`season season-${index} block w-full overflow-hidden rounded-lg border border-epl bg-white [&_p]:text-xs [&_p]:lg:text-sm`}
+                            >
+                                <summary className="flex w-full cursor-pointer list-none items-center justify-between gap-4 border-b border-current px-4 py-4 text-sm font-bold lg:text-xl">
+                                    <span>{season.season}</span>
+                                    <span className="text-lg leading-none text-epl-500 transition-transform duration-300 group-open:rotate-180">⌄</span>
+                                </summary>
+                                <div className="space-y-4 px-4 py-5 [&>div>h3]:mb-1 [&>div>h3]:text-sm [&>div>h3]:font-light [&>div>h3]:tracking-wider [&>div>h3]:uppercase [&>div>p]:text-xs [&>div>p]:lg:text-sm">
+                                    <div>
+                                        <h3>Overview</h3>
+                                        <p>{season.text}</p>
+                                    </div>
+                                    <div>
+                                        <h3>Winners</h3>
+                                        <p>{season.winners}</p>
+                                    </div>
+                                    <div>
+                                        <h3>Runners-up</h3>
+                                        <p>{season.runnersUp}</p>
+                                    </div>
+                                    <div>
+                                        <h3>Relegated</h3>
+                                        <p>{season.relegated}</p>
+                                    </div>
+                                    <div>
+                                        <h3>Top Goalscorer</h3>
+                                        <p>{season.topGoalscorer}</p>
+                                    </div>
+                                </div>
+                            </details>
                         ))}
                     </div>
 				</div>

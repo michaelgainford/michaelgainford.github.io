@@ -5,24 +5,24 @@ import Button from "@/components/buttons/Button";
 
 export default function Component_FeaturedDevResources() {
 	return (
-		<div className="w-full max-sm:mt-4">
+		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 sm:rounded-[1.5rem] sm:p-5 lg:p-6">
 			<H2SectionHeader text="Featured Dev Resources" />
-			<div className="grid justify-center grid-cols-2 gap-4 rounded-lg xl:gap-8 2xl:gap-12">
+			<div className="grid justify-center grid-cols-2 gap-3 sm:gap-4 md:gap-5 xl:gap-6">
 				{featuredResourcesSortedByName.map((resource, index) => (
 					<Link
 						href={resource.resourceData.url}
 						key={index}
-						className="flex items-center w-full p-4 sm:py-8 text-lg transition border rounded-lg opacity-75 gap-2 lg:gap-4 lg:px-6 xl:gap-8 resource border-slate-700/50 bg-linear-to-b from-slate-900/40 to-slate-900/60 to-90% hover:opacity-100 hover:bg-slate-800 xl:px-8 group 2xl:py-8 xl:border-2 xl:border-slate-700/30"
+						className="group resource flex w-full items-center gap-3 rounded-lg border border-slate-700/70 bg-slate-900/45 p-4 transition duration-300 hover:-translate-y-1 hover:border-slate-500/80 hover:bg-slate-800/80 sm:gap-4 sm:rounded-xl sm:p-5 lg:p-6"
 					>
-						<span className="flex justify-center text-slate-200! fill-white stroke-white">
-							<span className="text-white fill-white size-6 xs:size-7 lg:size-8 3xl:size-12 ">
+						<span className="flex justify-center rounded-xl border border-white/10 bg-black/20 p-2 text-slate-300 sm:p-3">
+							<span className="fill-white text-white size-6 xs:size-7 lg:size-8 3xl:size-10">
 								<resource.resourceData.icon
-									classes="size-6 xs:size-7 lg:size-8 3xl:size-12 h-auto"
-									fill={resource.resourceData.fill ? resource.resourceData.fill : "fill-slate-400"}
+									classes="h-auto size-6 xs:size-7 lg:size-8 3xl:size-10 fill-slate-300 transition duration-300 group-hover:fill-slate-100"
+									fill={resource.resourceData.fill ? resource.resourceData.fill : "fill-slate-300"}
 								/>
 							</span>
 						</span>
-						<span className="px-4 text-[10px] leading-tight text-left tracking w-full tracking-wider group-hover:text-white sm:text-xs lg:w-full xl:text-sm 2xl:text-base">
+						<span className="w-full text-left text-[10px] tracking-[0.12em] text-slate-300 transition duration-300 group-hover:text-slate-100 sm:text-xs sm:tracking-[0.16em] xl:text-sm 2xl:text-base">
 							{resource.name}
 						</span>
 					</Link>

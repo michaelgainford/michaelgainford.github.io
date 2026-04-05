@@ -47,7 +47,7 @@ const premierLeagueHubBlocks = [
 		title: "Records",
 		content: "Over the past 30+ years of the Premier League, there have been many records set and broken. Some of the most notable records include Alan Shearers record for the most goals scored in a single season (34), Manchester Citys record for the most points in a single season (100), and Arsenals record for the longest unbeaten run (49 games). Other notable records include the most goals scored in a single match (9), the most consecutive clean sheets (14), and the most consecutive wins (18).",
 		button: "Records",
-		buttonHref: "/",
+		buttonHref: "/projects/football/competitions/english-premier-league/premier-league-records",
 		buttonTitle: "Records",
 		image: "premier-league-season-records.webp"
 	},

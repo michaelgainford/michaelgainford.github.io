@@ -18,11 +18,11 @@ export const metadata = {
 export default function Page_Deadpool() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(244,63,94,0.22),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(148,163,184,0.12),transparent_72%)]" />
       <Header />
       <main className={globalWrapperFixedWidth}>
-        <section className="w-full max-w-[1800px] rounded-2xl border border-slate-700/70 bg-slate-950/70 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
-          <div className="mx-auto mb-4 w-fit rounded-full border border-rose-400/40 bg-black/60 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-rose-300">
+        <section className="w-full max-w-[1800px] rounded-2xl border border-slate-800/80 bg-slate-950/70 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
+          <div className="mx-auto mb-4 w-fit rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-slate-300">
             Maximum Effort Collection
           </div>
           <H1 text="Deadpool" other_classes="text-slate-100" />
@@ -33,8 +33,8 @@ export default function Page_Deadpool() {
           />
 
           <div className="mb-8 flex w-full justify-center gap-3 text-xs tracking-wide uppercase max-sm:flex-wrap lg:text-sm">
-            <a className="rounded-full border border-rose-400/40 bg-black/70 px-4 py-2 text-rose-200 transition-all duration-300 hover:bg-rose-500/15" href="/projects/movies-database">Back To Movies Database</a>
-            <a className="rounded-full border border-rose-400/40 bg-black/70 px-4 py-2 text-rose-200 transition-all duration-300 hover:bg-rose-500/15" href="#deadpool-explorer">Jump To Explorer</a>
+            <a className="rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-2 text-slate-200 transition-all duration-300 hover:border-slate-500 hover:bg-slate-800/80" href="/projects/movies-database">Back To Movies Database</a>
+            <a className="rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-2 text-slate-200 transition-all duration-300 hover:border-slate-500 hover:bg-slate-800/80" href="#deadpool-explorer">Jump To Explorer</a>
           </div>
 
           <div className="space-y-6">

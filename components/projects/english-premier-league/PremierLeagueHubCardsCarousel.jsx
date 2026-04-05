@@ -114,8 +114,6 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 									className="object-cover rounded-xl w-full h-full group-hover:scale-105 transition-transform duration-300"
 									loading={index < 2 ? "eager" : "lazy"}
 									priority={index < 2}
-									placeholder="blur"
-									blurDataURL="/placeholder-files/blurred-image.webp"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-epl-700/80 via-epl-500/40 to-transparent pointer-events-none rounded-xl" />
 							</div>
