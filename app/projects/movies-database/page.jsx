@@ -1,5 +1,4 @@
 import Header from "@/components/header/_Header";
-import H1 from "@/components/typography/H1_Span";
 import IconMovies from "@/components/icons/IconMovies";
 import PageIntro from "@/components/site_elements/Page_Intro";
 import Footer from "@/components/footer/_Footer";
@@ -14,16 +13,20 @@ const pageIntroText = `This is the list of movies watched by the PP Movie Club. 
 export default function Page_MoviesDatabase() {
 	return (
 		<div className={`${globalPageStyles} ${pageStyles}`}>
-			<div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(251,191,36,0.16),transparent_70%)]" />
+			<div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(148,163,184,0.12),transparent_72%)]" />
 			<Header />
 			<main className={globalWrapperFixedWidth}>
-				<section className="cinema-flicker w-full max-w-[1800px] rounded-2xl border border-slate-700/70 bg-black/40 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
-					<div className="mx-auto mb-4 w-fit rounded-full border border-amber-300/40 bg-black/60 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-amber-200">
+				<section className="cinema-flicker w-full max-w-[1800px] rounded-2xl border border-slate-800/80 bg-slate-950/60 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
+					<div className="mx-auto mb-4 w-fit rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-slate-300">
 						Now Showing
 					</div>
-					<div className="flex items-center justify-center gap-3 my-4 title-icon">
-						<IconMovies classes="size-5 fill-amber-300 lg:size-8" />
-						<H1 text={`Movies Database`} font_sizes={`pt-0!`} other_classes={`mb-0! pb-0! text-slate-100`}/>
+					<div className="my-4 flex items-center justify-center title-icon">
+						<div className="inline-flex items-center gap-3">
+							<IconMovies classes="size-5 fill-slate-300 lg:size-7" />
+							<h1 className="m-0 text-balance text-center text-3xl leading-tight font-bold tracking-wide text-slate-100 md:text-4xl">
+								Movies Database
+							</h1>
+						</div>
 					</div>
 					<PageIntro 
 					  text={pageIntroText}
@@ -32,33 +35,39 @@ export default function Page_MoviesDatabase() {
 					/>
 
 					<div className="grid grid-cols-2 gap-2 mb-6 md:grid-cols-4">
-						<div className="rounded-md border border-slate-700/70 bg-black/60 p-3 text-center">
+						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
 							<p className="text-xxs uppercase tracking-[0.16em] text-slate-400">Watched</p>
-							<p className="mt-1 text-sm font-semibold text-amber-300 lg:text-base">{watchedMoviesLength}</p>
+							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{watchedMoviesLength}</p>
 						</div>
-						<div className="rounded-md border border-slate-700/70 bg-black/60 p-3 text-center">
+						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
 							<p className="text-xxs uppercase tracking-[0.16em] text-slate-400">Watchlist</p>
-							<p className="mt-1 text-sm font-semibold text-amber-300 lg:text-base">{unwatchedMoviesLength}</p>
+							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{unwatchedMoviesLength}</p>
 						</div>
-						<div className="rounded-md border border-slate-700/70 bg-black/60 p-3 text-center">
+						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
 							<p className="text-xxs uppercase tracking-[0.16em] text-slate-400">Database</p>
-							<p className="mt-1 text-sm font-semibold text-amber-300 lg:text-base">{watchedMoviesLength + unwatchedMoviesLength}</p>
+							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{watchedMoviesLength + unwatchedMoviesLength}</p>
 						</div>
-						<div className="rounded-md border border-slate-700/70 bg-black/60 p-3 text-center">
+						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
 							<p className="text-xxs uppercase tracking-[0.16em] text-slate-400">Source</p>
-							<p className="mt-1 text-sm font-semibold text-amber-300 lg:text-base">IMDb</p>
+							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">IMDb</p>
 						</div>
 					</div>
 
 					<FeaturedMovieSpotlight />
 
-					<div className="flex w-full justify-center gap-3 mb-8 text-xs lg:text-sm tracking-wide uppercase movies-mini-nav max-sm:mt-4 xl:mb-10">
-						<a className="rounded-full border border-amber-300/30 bg-black/70 px-4 py-2 text-amber-200 transition-all duration-300 hover:bg-amber-500/20" href="#watched-movies">🎥 Watched</a>
-						<a className="rounded-full border border-amber-300/30 bg-black/70 px-4 py-2 text-amber-200 transition-all duration-300 hover:bg-amber-500/20" href="#to-watch">⏰ To Watch</a>
-						<a className="rounded-full border border-green-400/35 bg-black/70 px-4 py-2 text-green-200 transition-all duration-300 hover:bg-green-500/20" href="/projects/movies-database/the-matrix">🟩 The Matrix</a>
-						<a className="rounded-full border border-amber-400/35 bg-black/70 px-4 py-2 text-amber-200 transition-all duration-300 hover:bg-amber-500/20" href="/projects/movies-database/batman">🦇 Batman</a>
-						<a className="rounded-full border border-red-400/35 bg-black/70 px-4 py-2 text-red-200 transition-all duration-300 hover:bg-red-500/20" href="/projects/movies-database/iron-man">🛡️ Iron Man</a>
-						<a className="rounded-full border border-rose-400/35 bg-black/70 px-4 py-2 text-rose-200 transition-all duration-300 hover:bg-rose-500/20" href="/projects/movies-database/deadpool">🔴 Deadpool</a>
+					<div className="movies-mini-nav mb-8 max-sm:mt-4 xl:mb-10">
+						<div className="flex flex-wrap items-center justify-center gap-2.5">
+							<p className="text-[10px] uppercase tracking-[0.22em] text-slate-500">Sections</p>
+							<a className="rounded-full border border-slate-700/70 bg-slate-900/75 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-slate-200 transition-all duration-300 hover:border-slate-500 hover:bg-slate-800/80" href="#watched-movies">Watched</a>
+							<a className="rounded-full border border-slate-700/70 bg-slate-900/75 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-slate-200 transition-all duration-300 hover:border-slate-500 hover:bg-slate-800/80" href="#to-watch">Watchlist</a>
+						</div>
+						<div className="mt-3 flex flex-wrap items-center justify-center gap-2.5">
+							<p className="text-[10px] uppercase tracking-[0.22em] text-slate-500">Franchises</p>
+							<a className="rounded-full border border-slate-700/70 bg-slate-950/65 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-all duration-300 hover:border-slate-500 hover:bg-slate-900/75 hover:text-slate-100" href="/projects/movies-database/the-matrix">The Matrix</a>
+							<a className="rounded-full border border-slate-700/70 bg-slate-950/65 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-all duration-300 hover:border-slate-500 hover:bg-slate-900/75 hover:text-slate-100" href="/projects/movies-database/batman">Batman</a>
+							<a className="rounded-full border border-slate-700/70 bg-slate-950/65 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-all duration-300 hover:border-slate-500 hover:bg-slate-900/75 hover:text-slate-100" href="/projects/movies-database/iron-man">Iron Man</a>
+							<a className="rounded-full border border-slate-700/70 bg-slate-950/65 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-all duration-300 hover:border-slate-500 hover:bg-slate-900/75 hover:text-slate-100" href="/projects/movies-database/deadpool">Deadpool</a>
+						</div>
 					</div>
 
 					<MoviesWatched />

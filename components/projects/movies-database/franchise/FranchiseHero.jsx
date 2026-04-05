@@ -2,31 +2,31 @@ import Image from "next/image";
 
 const themeClasses = {
   batman: {
-    border: "border-amber-400/25",
-    cardBg: "bg-black/70",
-    badge: "border-amber-400/40 bg-amber-500/10 text-amber-300",
-    title: "text-amber-100",
-    meta: "text-amber-300/90",
+    border: "border-slate-800/80",
+    cardBg: "bg-slate-950/70",
+    badge: "border-slate-700/80 bg-slate-900/70 text-slate-300",
+    title: "text-slate-100",
+    meta: "text-slate-400",
     body: "text-slate-200",
-    statValue: "text-amber-300",
+    statValue: "text-slate-100",
   },
   "iron-man": {
-    border: "border-red-400/25",
-    cardBg: "bg-black/70",
-    badge: "border-red-400/40 bg-red-500/10 text-red-300",
-    title: "text-amber-100",
-    meta: "text-red-300/90",
+    border: "border-slate-800/80",
+    cardBg: "bg-slate-950/70",
+    badge: "border-slate-700/80 bg-slate-900/70 text-slate-300",
+    title: "text-slate-100",
+    meta: "text-slate-400",
     body: "text-slate-200",
-    statValue: "text-amber-300",
+    statValue: "text-slate-100",
   },
   deadpool: {
-    border: "border-rose-400/30",
-    cardBg: "bg-black/70",
-    badge: "border-rose-400/40 bg-rose-500/10 text-rose-200",
-    title: "text-rose-100",
-    meta: "text-rose-300/90",
+    border: "border-slate-800/80",
+    cardBg: "bg-slate-950/70",
+    badge: "border-slate-700/80 bg-slate-900/70 text-slate-300",
+    title: "text-slate-100",
+    meta: "text-slate-400",
     body: "text-slate-200",
-    statValue: "text-rose-200",
+    statValue: "text-slate-100",
   },
 };
 
@@ -43,19 +43,19 @@ export default function FranchiseHero({ page, stats, theme }) {
         <p className={`mt-3 text-sm uppercase tracking-[0.2em] ${styles.meta}`}>{page.tagline}</p>
         <p className={`mt-5 max-w-[70ch] text-sm leading-7 lg:text-base ${styles.body}`}>{page.intro}</p>
         <div className="mt-6 grid grid-cols-2 gap-2 lg:grid-cols-4">
-          <div className="rounded-md border border-white/10 bg-black/55 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Released</p>
             <p className={`mt-1 text-sm font-semibold ${styles.statValue}`}>{page.releaseYear}</p>
           </div>
-          <div className="rounded-md border border-white/10 bg-black/55 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Runtime</p>
             <p className={`mt-1 text-sm font-semibold ${styles.statValue}`}>{page.runtimeMinutes}m</p>
           </div>
-          <div className="rounded-md border border-white/10 bg-black/55 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">IMDb</p>
             <p className={`mt-1 text-sm font-semibold ${styles.statValue}`}>{page.imdb}</p>
           </div>
-          <div className="rounded-md border border-white/10 bg-black/55 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Club Rating</p>
             <p className={`mt-1 text-sm font-semibold ${styles.statValue}`}>{page.clubRating}/10</p>
           </div>
@@ -63,7 +63,7 @@ export default function FranchiseHero({ page, stats, theme }) {
       </div>
 
       <div className={`rounded-2xl border ${styles.border} ${styles.cardBg} p-4 lg:p-6`}>
-        <div className="relative overflow-hidden rounded-lg border border-white/10 bg-black/80">
+        <div className="relative overflow-hidden rounded-lg border border-slate-800/80 bg-slate-950/80">
           <Image
             src={page.heroImage}
             alt={`${page.title} poster`}
@@ -77,15 +77,15 @@ export default function FranchiseHero({ page, stats, theme }) {
           </div>
         </div>
         <div className="mt-4 grid grid-cols-3 gap-2">
-          <div className="rounded-md border border-white/10 bg-black/50 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Films</p>
             <p className={`mt-1 text-lg font-semibold ${styles.statValue}`}>{stats.filmCount}</p>
           </div>
-          <div className="rounded-md border border-white/10 bg-black/50 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Quotes</p>
             <p className={`mt-1 text-lg font-semibold ${styles.statValue}`}>{stats.quoteCount}</p>
           </div>
-          <div className="rounded-md border border-white/10 bg-black/50 p-3 text-center">
+          <div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
             <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Cast</p>
             <p className={`mt-1 text-lg font-semibold ${styles.statValue}`}>{stats.castLength}</p>
           </div>

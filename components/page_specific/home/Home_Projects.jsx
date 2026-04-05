@@ -5,26 +5,23 @@ import { featuredProjects } from "@/variables/Data";
 
 export default function Component_FeaturedProjects() {
 	return (
-		<div className="w-full projects-list">
+		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 projects-list sm:rounded-[1.5rem] sm:p-5 lg:p-6">
 			<H2SectionHeader text={`Featured Dev Projects`} />
 			{/* Featured Projects Grid */}
-			<div className="grid grid-cols-2 gap-6 sm:gap-4 md:gap-8 lg:gap-8 md:grid-cols-2 xl:gap-12 2xl:grid-cols-2">
+			<div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 xl:gap-6">
 				{featuredProjects.map((project, index) => (
 					<Link
 						key={index}
 						href={project.href}
-						className={`flex flex-col items-center border justify-center font-light tracking-wide transition-all duration-300 rounded-lg ${project.border} ${project.group} project ${project.hover} bg-linear-to-b from-slate-900/40 to-slate-900/60 aspect-3/2 group border-opacity-50 bg-slate-800/30 sm:gap-2 sm:p-2 md:aspect-3/2 md:p-4 xl:border-2 2xl:border-opacity-30 3xl:border-4 space-y-4 hover:opacity-100`}
+						className="group project flex aspect-3/2 flex-col items-center justify-center gap-3 rounded-lg border border-slate-700/70 bg-slate-900/45 p-3 text-center tracking-wide transition duration-300 hover:-translate-y-1 hover:border-slate-500/80 hover:bg-slate-800/80 sm:gap-4 sm:rounded-xl sm:p-4"
 					>
-						<span
-							className={`flex w-[27%] justify-center items-end md:w-[23%] xl:w-[20%] ${project.groupHover}`}
-						>
+						<span className="flex w-[30%] justify-center items-end sm:w-[28%] md:w-[24%]">
 							<project.icon
 								fill={project.fill}
-								classes={`h-7 fill-slate-400 flex justify-center w-auto 
-								sm:h-12	md:h-16 2xl:h-16 3xl:h-20 4xl:h-24`}
+								classes="h-8 w-auto fill-slate-300 transition duration-300 group-hover:fill-slate-100 sm:h-11 md:h-14 2xl:h-16 3xl:h-20"
 							/>
 						</span>
-						<span className="flex items-start -mt-1 text-xs tracking-wider text-center group-hover:text-white sm:pt-1 max-lg:text-slate-400 sm:text-sm 2xl:text-base 3xl:text-lg">
+						<span className="text-[10px] tracking-[0.12em] text-slate-300 transition duration-300 group-hover:text-slate-100 sm:text-xs sm:tracking-[0.18em] md:text-sm 2xl:text-base">
 							{project.name}
 						</span>
 					</Link>
