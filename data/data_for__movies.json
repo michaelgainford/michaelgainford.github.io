@@ -11,7 +11,12 @@
             "genre": "Comedy",
             "duration": 86,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 2,
@@ -23,7 +28,12 @@
             "genre": "Comedy",
             "duration": 90,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 3,
@@ -35,7 +45,12 @@
             "genre": "Action",
             "duration": 151,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 4,
@@ -47,7 +62,12 @@
             "genre": "Action",
             "duration": 162,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 5,
@@ -59,7 +79,12 @@
             "genre": "Action",
             "duration": 141,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 6,
@@ -71,7 +96,12 @@
             "genre": "Action",
             "duration": 181,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 7,
@@ -83,7 +113,12 @@
             "genre": "Action",
             "duration": 149,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 8,
@@ -95,7 +130,12 @@
             "genre": "Action",
             "duration": 152,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 9,
@@ -107,7 +147,12 @@
             "genre": "Comedy",
             "duration": 104,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 10,
@@ -119,7 +164,12 @@
             "genre": "Action",
             "duration": 102,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 11,
@@ -131,7 +181,12 @@
             "genre": "Action",
             "duration": 134,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 12,
@@ -143,7 +198,12 @@
             "genre": "Action",
             "duration": 134,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 13,
@@ -155,7 +215,12 @@
             "genre": "Action",
             "duration": 147,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 14,
@@ -167,7 +232,12 @@
             "genre": "Action",
             "duration": 124,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 15,
@@ -179,7 +249,12 @@
             "genre": "Action",
             "duration": 136,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 16,
@@ -191,7 +266,12 @@
             "genre": "Action",
             "duration": 123,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 17,
@@ -203,7 +283,12 @@
             "genre": "Drama",
             "duration": 143,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 18,
@@ -215,7 +300,12 @@
             "genre": "Animation",
             "duration": 105,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 19,
@@ -227,7 +317,12 @@
             "genre": "Action",
             "duration": 115,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 20,
@@ -239,7 +334,12 @@
             "genre": "Comedy",
             "duration": 92,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 21,
@@ -251,7 +351,12 @@
             "genre": "Comedy",
             "duration": 103,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 22,
@@ -263,7 +368,12 @@
             "genre": "Comedy",
             "duration": 93,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 23,
@@ -275,7 +385,12 @@
             "genre": "Drama",
             "duration": 142,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 24,
@@ -287,7 +402,12 @@
             "genre": "Action",
             "duration": 115,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 25,
@@ -299,7 +419,12 @@
             "genre": "Comedy",
             "duration": 92,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 26,
@@ -311,7 +436,12 @@
             "genre": "Action",
             "duration": 121,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 27,
@@ -323,7 +453,12 @@
             "genre": "Action",
             "duration": 136,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 28,
@@ -335,7 +470,12 @@
             "genre": "Comedy",
             "duration": 92,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 29,
@@ -347,7 +487,12 @@
             "genre": "Animation",
             "duration": 93,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 30,
@@ -359,7 +504,12 @@
             "genre": "Comedy",
             "duration": 103,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 31,
@@ -371,7 +521,12 @@
             "genre": "Comedy",
             "duration": 120,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 32,
@@ -383,7 +538,12 @@
             "genre": "Animation",
             "duration": 95,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 33,
@@ -395,7 +555,12 @@
             "genre": "Action",
             "duration": 126,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 34,
@@ -407,7 +572,12 @@
             "genre": "Action",
             "duration": 124,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 35,
@@ -419,7 +589,12 @@
             "genre": "Action",
             "duration": 130,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 36,
@@ -431,7 +606,12 @@
             "genre": "Comedy",
             "duration": 89,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 37,
@@ -443,7 +623,12 @@
             "genre": "Adventure",
             "duration": 104,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 38,
@@ -455,7 +640,12 @@
             "genre": "Comedy",
             "duration": 111,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 39,
@@ -467,7 +657,12 @@
             "genre": "Animation",
             "duration": 104,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 40,
@@ -479,7 +674,12 @@
             "genre": "Animation",
             "duration": 100,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 41,
@@ -491,7 +691,12 @@
             "genre": "Animation",
             "duration": 107,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 42,
@@ -503,7 +708,12 @@
             "genre": "Action",
             "duration": 98,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 43,
@@ -515,7 +725,12 @@
             "genre": "Action",
             "duration": 88,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 44,
@@ -527,7 +742,12 @@
             "genre": "Action",
             "duration": 106,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 45,
@@ -539,7 +759,12 @@
             "genre": "Animation",
             "duration": 92,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 46,
@@ -551,7 +776,12 @@
             "genre": "Animation",
             "duration": 104,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 47,
@@ -563,7 +793,12 @@
             "genre": "Comedy",
             "duration": 125,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 48,
@@ -575,7 +810,12 @@
             "genre": "Animation",
             "duration": 102,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 49,
@@ -587,7 +827,12 @@
             "genre": "Action",
             "duration": 105,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 50,
@@ -599,7 +844,12 @@
             "genre": "Animation",
             "duration": 111,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 51,
@@ -611,7 +861,12 @@
             "genre": "Comedy",
             "duration": 91,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 52,
@@ -623,7 +878,12 @@
             "genre": "Comedy",
             "duration": 113,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 53,
@@ -635,7 +895,12 @@
             "genre": "Action",
             "duration": 99,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 54,
@@ -647,7 +912,12 @@
             "genre": "Action",
             "duration": 99,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 55,
@@ -659,7 +929,12 @@
             "genre": "Animation",
             "duration": 102,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 56,
@@ -671,7 +946,12 @@
             "genre": "Comedy",
             "duration": 98,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 57,
@@ -683,7 +963,12 @@
             "genre": "Action",
             "duration": 104,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 58,
@@ -695,7 +980,12 @@
             "genre": "Action",
             "duration": 143,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 59,
@@ -707,7 +997,12 @@
             "genre": "Action",
             "duration": 124,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 60,
@@ -719,7 +1014,12 @@
             "genre": "Animation",
             "duration": 115,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 61,
@@ -731,7 +1031,12 @@
             "genre": "Animation",
             "duration": 118,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 62,
@@ -743,7 +1048,12 @@
             "genre": "Animation",
             "duration": 78,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 63,
@@ -755,7 +1065,12 @@
             "genre": "Action",
             "duration": 136,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "10"
+            }
         },
         {
             "id": 64,
@@ -767,7 +1082,12 @@
             "genre": "Action",
             "duration": 138,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 65,
@@ -779,7 +1099,12 @@
             "genre": "Action",
             "duration": 129,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 66,
@@ -791,7 +1116,12 @@
             "genre": "Action",
             "duration": 115,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 67,
@@ -803,7 +1133,12 @@
             "genre": "Action",
             "duration": 130,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 68,
@@ -815,7 +1150,12 @@
             "genre": "Animation",
             "duration": 100,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 69,
@@ -827,7 +1167,12 @@
             "genre": "Animation",
             "duration": 98,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 70,
@@ -839,7 +1184,12 @@
             "genre": "Action",
             "duration": 104,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 71,
@@ -851,7 +1201,12 @@
             "genre": "Comedy",
             "duration": 90,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 72,
@@ -863,7 +1218,12 @@
             "genre": "Animation",
             "duration": 108,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 73,
@@ -875,7 +1235,12 @@
             "genre": "Action",
             "duration": 118,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 74,
@@ -887,7 +1252,12 @@
             "genre": "Action",
             "duration": 106,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 75,
@@ -899,7 +1269,12 @@
             "genre": "Animation",
             "duration": 91,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 76,
@@ -911,7 +1286,12 @@
             "genre": "Animation",
             "duration": 95,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 77,
@@ -923,7 +1303,12 @@
             "genre": "Animation",
             "duration": 98,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 78,
@@ -935,7 +1320,12 @@
             "genre": "Animation",
             "duration": 89,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 79,
@@ -947,7 +1337,12 @@
             "genre": "Animation",
             "duration": 107,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 80,
@@ -959,7 +1354,12 @@
             "genre": "Action",
             "duration": 133,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 81,
@@ -971,7 +1371,12 @@
             "genre": "Animation",
             "duration": 117,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 82,
@@ -983,7 +1388,12 @@
             "genre": "Comedy",
             "duration": 95,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 83,
@@ -995,7 +1405,12 @@
             "genre": "Comedy",
             "duration": 99,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 84,
@@ -1007,7 +1422,12 @@
             "genre": "Animation",
             "duration": 100,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 85,
@@ -1019,7 +1439,12 @@
             "genre": "Comedy",
             "duration": 93,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 86,
@@ -1031,7 +1456,12 @@
             "genre": "Animation",
             "duration": 86,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 87,
@@ -1043,7 +1473,12 @@
             "genre": "Action",
             "duration": 108,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 88,
@@ -1055,7 +1490,12 @@
             "genre": "Adventure",
             "duration": 116,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 89,
@@ -1067,7 +1507,12 @@
             "genre": "Action",
             "duration": 116,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 90,
@@ -1079,7 +1524,12 @@
             "genre": "Action",
             "duration": 133,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 91,
@@ -1091,7 +1541,12 @@
             "genre": "Comedy",
             "duration": 95,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 92,
@@ -1103,7 +1558,12 @@
             "genre": "Comedy",
             "duration": 85,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 93,
@@ -1115,7 +1575,12 @@
             "genre": "Animation",
             "duration": 90,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 94,
@@ -1127,7 +1592,12 @@
             "genre": "Comedy",
             "duration": 94,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 95,
@@ -1139,7 +1609,12 @@
             "genre": "Animation",
             "duration": 107,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 96,
@@ -1151,7 +1626,12 @@
             "genre": "Action",
             "duration": 120,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 97,
@@ -1163,7 +1643,12 @@
             "genre": "Animation",
             "duration": 93,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 98,
@@ -1175,7 +1660,12 @@
             "genre": "Action",
             "duration": 130,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 99,
@@ -1187,7 +1677,12 @@
             "genre": "Action",
             "duration": 143,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 100,
@@ -1199,7 +1694,12 @@
             "genre": "Action",
             "duration": 144,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 101,
@@ -1211,7 +1711,12 @@
             "genre": "Action",
             "duration": 132,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "9"
+            }
         },
         {
             "id": 102,
@@ -1223,7 +1728,12 @@
             "genre": "Action",
             "duration": 124,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "7.5"
+            }
         },
         {
             "id": 103,
@@ -1235,7 +1745,12 @@
             "genre": "Action",
             "duration": 126,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "8",
+                "D": "N/A"
+            }
         },
         {
             "id": 104,
@@ -1247,7 +1762,12 @@
             "genre": "Action",
             "duration": 126,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "8",
+                "D": "N/A"
+            }
         },
         {
             "id": 105,
@@ -1259,7 +1779,12 @@
             "genre": "Action",
             "duration": 121,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "4",
+                "D": "N/A"
+            }
         },
         {
             "id": 106,
@@ -1271,7 +1796,12 @@
             "genre": "Action",
             "duration": 125,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "3",
+                "D": "N/A"
+            }
         },
         {
             "id": 107,
@@ -1283,7 +1813,12 @@
             "genre": "Action",
             "duration": 140,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "9.5",
+                "D": "N/A"
+            }
         },
         {
             "id": 108,
@@ -1295,7 +1830,12 @@
             "genre": "Action",
             "duration": 128,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "7.5",
+                "D": "N/A"
+            }
         },
         {
             "id": 109,
@@ -1307,7 +1847,12 @@
             "genre": "Action",
             "duration": 118,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 110,
@@ -1319,7 +1864,12 @@
             "genre": "Action",
             "duration": 115,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 111,
@@ -1331,7 +1881,12 @@
             "genre": "Adventure",
             "duration": 149,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 112,
@@ -1343,7 +1898,12 @@
             "genre": "Adventure",
             "duration": 115,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 113,
@@ -1355,7 +1915,12 @@
             "genre": "Animation",
             "duration": 118,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 114,
@@ -1367,7 +1932,12 @@
             "genre": "Adventure",
             "duration": 106,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 115,
@@ -1379,7 +1949,12 @@
             "genre": "Action",
             "duration": 115,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 116,
@@ -1391,7 +1966,12 @@
             "genre": "Action",
             "duration": 127,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 117,
@@ -1403,7 +1983,12 @@
             "genre": "Action",
             "duration": 164,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 118,
@@ -1415,7 +2000,12 @@
             "genre": "Action",
             "duration": 143,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 119,
@@ -1427,7 +2017,12 @@
             "genre": "Action",
             "duration": 151,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 120,
@@ -1439,7 +2034,12 @@
             "genre": "Action",
             "duration": 169,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 121,
@@ -1451,7 +2051,12 @@
             "genre": "Action",
             "duration": 136,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 122,
@@ -1463,7 +2068,12 @@
             "genre": "Action",
             "duration": 129,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 123,
@@ -1475,7 +2085,12 @@
             "genre": "Action",
             "duration": 119,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 124,
@@ -1487,7 +2102,12 @@
             "genre": "Drama",
             "duration": 142,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "9.5"
+            }
         },
         {
             "id": 125,
@@ -1499,7 +2119,12 @@
             "genre": "Action",
             "duration": 122,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "9"
+            }
         },
         {
             "id": 126,
@@ -1517,7 +2142,12 @@
                     "d": 6
                 }
             ],
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 127,
@@ -1529,13 +2159,12 @@
             "genre": "Action",
             "duration": 138,
             "watched": true,
-            "rating": [
-                {
-                    "b": 0,
-                    "d": 8
-                }
-            ],
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 128,
@@ -1547,7 +2176,12 @@
             "genre": "Crime",
             "duration": 154,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "9.5"
+            }
         },
         {
             "id": 129,
@@ -1559,7 +2193,12 @@
             "genre": "Drama",
             "duration": 139,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 130,
@@ -1571,7 +2210,12 @@
             "genre": "Crime",
             "duration": 106,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 131,
@@ -1583,7 +2227,12 @@
             "genre": "Action",
             "duration": 148,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 132,
@@ -1595,7 +2244,12 @@
             "genre": "Crime",
             "duration": 127,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 133,
@@ -1607,7 +2261,12 @@
             "genre": "Comedy",
             "duration": 103,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "8.5",
+                "D": "N/A"
+            }
         },
         {
             "id": 134,
@@ -1619,7 +2278,12 @@
             "genre": "Action",
             "duration": 111,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "9"
+            }
         },
         {
             "id": 135,
@@ -1631,7 +2295,12 @@
             "genre": "Animation",
             "duration": 100,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 136,
@@ -1643,7 +2312,12 @@
             "genre": "Action",
             "duration": 137,
             "watched": false,
-            "ageRating": "18"
+            "ageRating": "18",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "8"
+            }
         },
         {
             "id": 137,
@@ -1655,7 +2329,12 @@
             "genre": "Action",
             "duration": 108,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "7.5"
+            }
         },
         {
             "id": 138,
@@ -1667,7 +2346,12 @@
             "genre": "Comedy",
             "duration": 95,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "8"
+            }
         },
         {
             "id": 139,
@@ -1679,7 +2363,12 @@
             "genre": "Comedy",
             "duration": 95,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "7.5"
+            }
         },
         {
             "id": 140,
@@ -1691,7 +2380,12 @@
             "genre": "Comedy",
             "duration": 94,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "6.5"
+            }
         },
         {
             "id": 143,
@@ -1703,7 +2397,12 @@
             "genre": "Animation",
             "duration": 86,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 144,
@@ -1715,7 +2414,12 @@
             "genre": "Animation",
             "duration": 89,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 145,
@@ -1727,7 +2431,12 @@
             "genre": "Animation",
             "duration": 93,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 146,
@@ -1739,7 +2448,12 @@
             "genre": "Animation",
             "duration": 87,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 147,
@@ -1751,7 +2465,12 @@
             "genre": "Animation",
             "duration": 86,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 148,
@@ -1763,7 +2482,12 @@
             "genre": "Animation",
             "duration": 87,
             "watched": true,
-            "ageRating": "PG"
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": 7,
+                "D": 5
+            }
         },
         {
             "id": 149,
@@ -1775,7 +2499,12 @@
             "genre": "Sci-Fi",
             "duration": 109,
             "watched": true,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 150,
@@ -1787,7 +2516,12 @@
             "genre": "Action",
             "duration": 107,
             "watched": true,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 151,
@@ -1799,7 +2533,12 @@
             "genre": "Comedy",
             "duration": 101,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 152,
@@ -1811,19 +2550,29 @@
             "genre": "Comedy",
             "duration": 86,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 153,
-            "title": "Cable Guy",
-            "image": "/movies-images/cable-guy.webp",
+            "title": "The Cable Guy",
+            "image": "/movies-images/the-cable-guy.webp",
             "imdb_url": "https://www.imdb.com/title/tt0115798/",
             "description": "A lonely cable installer invades a customer's life with increasingly unsettling antics.",
             "year": 1996,
             "genre": "Comedy",
             "duration": 96,
             "watched": false,
-            "ageRating": "12"
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 154,
@@ -1835,7 +2584,12 @@
             "genre": "Drama",
             "duration": 96,
             "watched": false,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 155,
@@ -1847,7 +2601,12 @@
             "genre": "Action",
             "duration": 132,
             "watched": false,
-            "ageRating": "15"
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
         },
         {
             "id": 156,
@@ -1859,7 +2618,63 @@
             "genre": "Comedy",
             "duration": 128,
             "watched": false,
-            "ageRating": "12"
-        }
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
+        },
+        {
+            "id": 157,
+            "title": "There's Something About Mary",
+            "image": "/movies-images/theres-something-about-mary.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0129387/",
+            "description": "A man tries to track down his high school crush, only to find that she has a new boyfriend and is being pursued by several other suitors.",
+            "year": 1998,
+            "genre": "Comedy",
+            "duration": 119,
+            "watched": true,
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "9",
+                "D": "8.5"
+            }
+        },
+        {
+            "id": 158,
+            "title": "The Amateur",
+            "image": "/movies-images/the-amateur.webp",
+            "imdb_url": "https://www.imdb.com/title/tt15351078/",
+            "description": "A former CIA operative is recruited for a high-stakes mission to prevent a global catastrophe.",
+            "year": 2025,
+            "genre": "Action",
+            "duration": 120,
+            "watched": false,
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
+        },
+        {
+            "id": 159,
+            "title": "My Cousin Vinny",
+            "image": "/movies-images/my-cousin-vinny.webp",
+            "imdb_url": "https://www.imdb.com/title/tt0104952/",
+            "description": "Two New Yorkers are arrested in a small Alabama town for a crime they didn't commit, and one of their cousins, a loudmouth lawyer, comes to defend them.",
+            "year": 1992,
+            "genre": "Comedy",
+            "duration": 120,
+            "watched": true,
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
+        }   
     ]
 }

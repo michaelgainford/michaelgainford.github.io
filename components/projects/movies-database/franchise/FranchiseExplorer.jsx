@@ -11,37 +11,37 @@ const tabMap = {
 
 const themeClasses = {
   batman: {
-    border: "border-amber-400/20",
-    bg: "bg-black/60",
-    heading: "text-amber-200",
-    inputBorder: "focus:border-amber-400",
-    activeTab: "border-amber-400/50 bg-amber-400/15 text-amber-200",
-    inactiveTab: "border-slate-700 bg-black/40 text-slate-300 hover:border-amber-400/35 hover:text-amber-200",
-    cardBorder: "border-amber-400/15",
-    cardHeading: "text-amber-200",
-    accentText: "text-amber-300",
+    border: "border-slate-800/80",
+    bg: "bg-slate-950/60",
+    heading: "text-slate-200",
+    inputBorder: "focus:border-slate-500",
+    activeTab: "border-slate-600 bg-slate-800/80 text-slate-100",
+    inactiveTab: "border-slate-700 bg-slate-950/50 text-slate-300 hover:border-slate-500 hover:text-slate-100",
+    cardBorder: "border-slate-800/80",
+    cardHeading: "text-slate-100",
+    accentText: "text-slate-300",
   },
   "iron-man": {
-    border: "border-red-400/20",
-    bg: "bg-black/60",
-    heading: "text-red-200",
-    inputBorder: "focus:border-red-400",
-    activeTab: "border-red-400/50 bg-red-400/15 text-red-200",
-    inactiveTab: "border-slate-700 bg-black/40 text-slate-300 hover:border-red-400/35 hover:text-red-200",
-    cardBorder: "border-red-400/15",
-    cardHeading: "text-amber-300",
-    accentText: "text-red-300",
+    border: "border-slate-800/80",
+    bg: "bg-slate-950/60",
+    heading: "text-slate-200",
+    inputBorder: "focus:border-slate-500",
+    activeTab: "border-slate-600 bg-slate-800/80 text-slate-100",
+    inactiveTab: "border-slate-700 bg-slate-950/50 text-slate-300 hover:border-slate-500 hover:text-slate-100",
+    cardBorder: "border-slate-800/80",
+    cardHeading: "text-slate-100",
+    accentText: "text-slate-300",
   },
   deadpool: {
-    border: "border-rose-400/20",
-    bg: "bg-black/60",
-    heading: "text-rose-200",
-    inputBorder: "focus:border-rose-400",
-    activeTab: "border-rose-400/50 bg-rose-400/15 text-rose-200",
-    inactiveTab: "border-slate-700 bg-black/40 text-slate-300 hover:border-rose-400/35 hover:text-rose-200",
-    cardBorder: "border-rose-400/15",
-    cardHeading: "text-rose-200",
-    accentText: "text-rose-300",
+    border: "border-slate-800/80",
+    bg: "bg-slate-950/60",
+    heading: "text-slate-200",
+    inputBorder: "focus:border-slate-500",
+    activeTab: "border-slate-600 bg-slate-800/80 text-slate-100",
+    inactiveTab: "border-slate-700 bg-slate-950/50 text-slate-300 hover:border-slate-500 hover:text-slate-100",
+    cardBorder: "border-slate-800/80",
+    cardHeading: "text-slate-100",
+    accentText: "text-slate-300",
   },
 };
 
@@ -71,7 +71,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
           placeholder="Search current tab"
-          className={`w-full rounded-md border border-white/20 bg-black/60 px-3 py-2 text-sm text-slate-100 outline-none transition-all md:w-[260px] ${styles.inputBorder}`}
+          className={`w-full rounded-md border border-slate-800/80 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 outline-none transition-all md:w-[260px] ${styles.inputBorder}`}
         />
       </div>
 
@@ -97,7 +97,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
         {filteredData.map((item, index) => {
           if (activeTab === "films") {
             return (
-              <article key={`${item.title}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-black/45 p-4`}>
+              <article key={`${item.title}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
                 <p className={`text-sm uppercase tracking-[0.12em] ${styles.cardHeading}`}>{item.title}</p>
                 <p className="mt-1 text-xs text-slate-300">{item.year} • {item.status}</p>
                 <p className="mt-2 text-sm text-slate-200">{item.hook}</p>
@@ -107,7 +107,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
 
           if (activeTab === "cast") {
             return (
-              <article key={`${item.name}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-black/45 p-4`}>
+              <article key={`${item.name}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
                 <p className={`text-sm uppercase tracking-[0.12em] ${styles.cardHeading}`}>{item.name}</p>
                 <p className={`mt-1 text-xs ${styles.accentText}`}>as {item.role}</p>
                 <p className="mt-2 text-sm text-slate-200">{item.reason}</p>
@@ -117,7 +117,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
 
           if (activeTab === "quotes") {
             return (
-              <article key={`${item.line}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-black/45 p-4`}>
+              <article key={`${item.line}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
                 <q className="text-sm text-slate-100">{item.line}</q>
                 <p className={`mt-2 text-xs uppercase tracking-[0.12em] ${styles.accentText}`}>{item.character}</p>
               </article>
@@ -125,7 +125,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
           }
 
           return (
-            <article key={`${item.name}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-black/45 p-4`}>
+            <article key={`${item.name}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
               <p className={`text-sm uppercase tracking-[0.12em] ${styles.cardHeading}`}>{item.name}</p>
               <p className="mt-2 text-sm text-slate-200">{item.impact}</p>
             </article>
@@ -134,7 +134,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
       </div>
 
       {filteredData.length === 0 && (
-        <div className="mt-4 rounded-md border border-white/20 bg-white/5 p-4 text-sm text-slate-200">
+        <div className="mt-4 rounded-md border border-slate-800/80 bg-slate-900/60 p-4 text-sm text-slate-200">
           No results in this section for that search.
         </div>
       )}

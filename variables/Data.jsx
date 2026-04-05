@@ -2,9 +2,12 @@
   ICON IMPORTS
 *********************************/}
 import { 
+  Icon_Batman,
 	Icon_Codepen, 
 	Icon_ColourPalettes, 
-	Icon_Docs, 
+  Icon_Deadpool,
+	Icon_Docs,
+	Icon_IronMan, 
 	Icon_Earth, 
 	Icon_Font, 
 	Icon_Football, 
@@ -15,6 +18,7 @@ import {
 	Icon_LinkedIn, 
 	Icon_Movies, 
 	Icon_NextJS, 
+  Icon_Pill,
 	Icon_Planet, 
 	Icon_PremierLeagueSimple, 
 	Icon_Quote, 
@@ -156,7 +160,7 @@ const dataForAllProjects = [
     category: "fun",
     projectStatus: {
       underConstruction: false,
-      featuredProject: false,
+      featuredProject: true,
       archived: false
     },
     projectsCard: {
@@ -166,7 +170,7 @@ const dataForAllProjects = [
   {
     name: "The Matrix",
     href: "/projects/movies-database/the-matrix",
-    icon: Icon_Movies,
+    icon: Icon_Pill,
     color: "text-green-200",
     card_colour: "text-green-100",
     bg: "bg-black/70",
@@ -179,7 +183,7 @@ const dataForAllProjects = [
     category: "fun",
     projectStatus: {
       underConstruction: false,
-      featuredProject: true,
+      featuredProject: false,
       archived: false
     },
     projectsCard: {
@@ -189,7 +193,7 @@ const dataForAllProjects = [
   {
     name: "Batman",
     href: "/projects/movies-database/batman",
-    icon: Icon_Movies,
+    icon: Icon_Batman,
     color: "text-amber-200",
     card_colour: "text-amber-100",
     bg: "bg-black/70",
@@ -212,7 +216,7 @@ const dataForAllProjects = [
   {
     name: "Iron Man",
     href: "/projects/movies-database/iron-man",
-    icon: Icon_Movies,
+    icon: Icon_IronMan,
     color: "text-red-200",
     card_colour: "text-red-100",
     bg: "bg-black/70",
@@ -235,7 +239,7 @@ const dataForAllProjects = [
   {
     name: "Deadpool",
     href: "/projects/movies-database/deadpool",
-    icon: Icon_Movies,
+    icon: Icon_Deadpool,
     color: "text-rose-200",
     card_colour: "text-rose-100",
     bg: "bg-black/70",

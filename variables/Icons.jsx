@@ -12,10 +12,14 @@ import Icon_GitHub from '@/components/icons/IconGithub';
 import Icon_Laugh from "@/components/icons/IconLaugh";
 import Icon_LinkedIn from '@/components/icons/IconLinkedIn';
 import Icon_Laptop from "@/components/icons/IconLaptop";
+import Icon_Batman from "@/components/icons/IconBatman";
+import Icon_Deadpool from "@/components/icons/IconDeadpool";
+import Icon_IronMan from "@/components/icons/IconIronMan";
 import Icon_MagPremierLeague from '@/components/icons/IconMagPremierLeague';
 import Icon_Movies from "@/components/icons/IconMovies";
 import Icon_NextJS from '@/components/icons/IconNextJS';
 import Icon_Planet from "@/components/icons/IconPlanet";
+import Icon_Pill from "@/components/icons/IconPill";
 import Icon_PremierLeague from '@/components/icons/IconPremierLeagueLogo';
 import Icon_PremierLeagueSimple from "@/components/icons/IconPremierLeagueLogoSimple";
 import Icon_Quote from "@/components/icons/IconQuote";
@@ -29,9 +33,12 @@ import Icon_W3Schools from '@/components/icons/IconW3Schools';
 	EXPORTS
 *********************************/}
 export { 
+	Icon_Batman,
 	Icon_Codepen, 
 	Icon_ColourPalettes, 
-	Icon_Docs, 
+	Icon_Deadpool,
+	Icon_Docs,
+	Icon_IronMan, 
 	Icon_Earth,
 	Icon_Font, 
 	Icon_Football,
@@ -43,6 +50,7 @@ export {
 	Icon_MagPremierLeague,
 	Icon_Movies,
 	Icon_NextJS, 
+	Icon_Pill,
 	Icon_Quote,
 	Icon_Planet,
 	Icon_PremierLeague,
