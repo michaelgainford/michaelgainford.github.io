@@ -28,7 +28,6 @@ const EPL100ClubPage = DataForMainNavJSON.Pages.find(
 	(page) => page.href === "/projects/football/competitions/english-premier-league/the-100-club"
 );
 const lastUpdatedRaw = EPL100ClubPage?.lastUpdated;
-// Format date as '14th February 2026'
 function formatDate(dateString) {
 	if (!dateString) return "";
 	const date = new Date(dateString);
