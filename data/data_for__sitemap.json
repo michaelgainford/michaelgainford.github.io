@@ -16,7 +16,7 @@
 			"navigationMain": true,
 			"navigationFooterFirstList": true,
 			"navigationFooterSecondList": false,
-			"lastUpdated": "2026-04-04",
+			"lastUpdated": "2026-04-05",
 			"pageStyling": {
 				"border": "border-amber-500",
 				"background_colour": "bg-amber-500",
@@ -41,7 +41,7 @@
 			"mainNav": false,
 			"footerNav_1": true,
 			"footerNav_2": false,
-			"lastUpdated": "2025-02-19"
+			"lastUpdated": "2025-02-25"
 		},
 		{
 			"name": "Site Style Guide",
@@ -98,7 +98,7 @@
 			"mainNav": true,
 			"footerNav_1": true,
 			"footerNav_2": false,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "English Premier League",
@@ -112,7 +112,7 @@
 			"mainNav": true,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2025-12-08"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "EPL - All Clubs",
@@ -126,7 +126,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-12-08"
+			"lastUpdated": "2026-03-26"
 		},
 		{
 			"name": "EPL - 100 Club",
@@ -135,7 +135,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-04-14"
+			"lastUpdated": "2026-05-09"
 		},
 		{
 			"name": "EPL - Competition History",
@@ -144,7 +144,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-12-08"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "EPL - Season x Season Record",
@@ -153,7 +153,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-12-08"
+			"lastUpdated": "2026-03-21"
 		},
 		{
 			"name": "World Cup 2026",
@@ -167,7 +167,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-27"
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "Everton",
@@ -182,7 +182,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "Fortnite",
@@ -219,7 +219,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2024-12-19"
+			"lastUpdated": "2025-12-24"
 		},
 		{
 			"name": "The MAP EPL - Season 2",
@@ -228,7 +228,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-01-25"
+			"lastUpdated": "2025-12-24"
 		},
 		{
 			"name": "Jokes",
@@ -242,7 +242,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "Movies Database",
@@ -257,7 +257,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2026-02-15"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "The Matrix",
@@ -272,7 +272,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-28"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "Batman",
@@ -287,7 +287,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-28"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "Iron Man",
@@ -317,7 +317,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-28"
+			"lastUpdated": "2026-04-05"
 		},
 		{
 			"name": "Quotes",
@@ -332,7 +332,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "Space",
@@ -346,7 +346,7 @@
 			"hover": "hover:bg-black",
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "The World",
@@ -360,7 +360,7 @@
 			"hover": "hover:bg-geography",
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2026-03-28"
 		},
 		{
 			"name": "URL Concatenator",
@@ -375,7 +375,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2025-01-19"
+			"lastUpdated": "2025-01-24"
 		},
 		{
 			"name": "Dev Resources",
@@ -390,7 +390,7 @@
 			"mainNav": true,
 			"footerNav_1": true,
 			"footerNav_2": false,
-			"lastUpdated": "2025-02-24"
+			"lastUpdated": "2026-03-28"
 		}
 	]
 }

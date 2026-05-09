@@ -1,0 +1,17 @@
+{
+  "globs": [
+    "*.md",
+    ".github/instructions/*.instructions.md"
+  ],
+  "ignores": [
+    "node_modules/**",
+    ".next/**",
+    "out/**"
+  ],
+  "config": {
+    "MD013": false,
+    "MD024": {
+      "siblings_only": true
+    }
+  }
+}

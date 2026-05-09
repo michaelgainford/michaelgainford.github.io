@@ -7229,15 +7229,15 @@
 			"playerSlug": "mohamed-salah",
 			"playerClubs": [
 				"Chelsea (2)",
-				"Liverpool (190)"
+				"Liverpool (191)"
 			],
-			"playerApps": 324,
-			"playerGoals": 192,
+			"playerApps": 326,
+			"playerGoals": 193,
 			"playerLastGoalFor": "Liverpool",
-			"playerLastGoalOpponent": "Fulham",
-			"playerLastGoalDate": "2026-04-11",
+			"playerLastGoalOpponent": "Everton",
+			"playerLastGoalDate": "2026-04-19",
 			"playerCurrent": true,
-			"updated": "2026-05-14"
+			"updated": "2026-05-09"
 		},
 		{
 			"playerId": 20,
@@ -7350,7 +7350,7 @@
 				"Wigan Athletic (15)",
 				"Aston Villa (9)"
 			],
-			"playersApps": 516,
+			"playerApps": 516,
 			"playerGoals": 110,
 			"playerLastGoalFor": "Aston Villa",
 			"playerLastGoalOpponent": "Blackburn Rovers",
@@ -7493,15 +7493,15 @@
 			"playerName": "Erling Haaland",
 			"playerSlug": "erling-haaland",
 			"playerClubs": [
-				"Manchester City (107)"
+				"Manchester City (111)"
 			],
-			"playerApps": 127,
-			"playerGoals": 107,
+			"playerApps": 131,
+			"playerGoals": 111,
 			"playerLastGoalFor": "Manchester City",
-			"playerLastGoalOpponent": "Fulham",
-			"playerLastGoalDate": "2026-02-11",
+			"playerLastGoalOpponent": "Brentford",
+			"playerLastGoalDate": "2026-05-09",
 			"playerCurrent": true,
-			"updated": "2026-05-14"
+			"updated": "2026-05-09"
 		}
 	]
 }
