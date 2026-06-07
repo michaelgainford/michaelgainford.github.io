@@ -74,7 +74,7 @@ export default function Component_PlayersGrid() {
 					</div>
 					<div className="relative mb-5 aspect-square overflow-hidden rounded-lg">
 						<Image
-							src={`/everton/${featuredPlayer.slug}.webp`}
+							src={`/football/everton/${featuredPlayer.slug}.webp`}
 							alt={featuredPlayer.name}
 							width={400}
 							height={400}
@@ -145,7 +145,7 @@ export default function Component_PlayersGrid() {
 					<div key={player.slug} className={`group flex flex-col overflow-hidden rounded-xl border border-blue-400/20 bg-black/45 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/35`}>
 						<div className="relative aspect-square overflow-hidden">
 							<Image
-								src={`/everton/${player.slug}.webp`}
+								src={`/football/everton/${player.slug}.webp`}
 								alt={player.name}
 								width={300}
 								height={300}

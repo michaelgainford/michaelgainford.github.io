@@ -61,7 +61,7 @@ export default function Component_HomePageIntro() {
 								{timeBasedGreeting()} and welcome
 							</p>
 							<div className="space-y-4">
-								<h1 className="max-w-3xl text-xl leading-tight text-slate-100 text-balance sm:text-3xl lg:text-4xl xl:text-5xl">
+								<h1 className="max-w-3xl text-xl leading-tight text-slate-100 text-balance md:text-2xl xl:text-3xl">
 									A personal web development site built to collect projects, useful tools, and the ideas behind them.
 								</h1>
 								<p className="max-w-2xl text-sm leading-6 tracking-normal text-slate-400 sm:text-base sm:leading-7 sm:tracking-wide xl:text-lg">
