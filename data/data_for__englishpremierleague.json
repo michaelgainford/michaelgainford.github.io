@@ -1545,17 +1545,17 @@
 					"clubName": "Hull City",
 					"clubNickname": "The Tigers",
 					"clubFounded": 1904,
-					"clubManager": "",
+					"clubManager": "Sergej Jakirović",
 					"clubBlurb": "Hull City Association Football Club is a professional football club in Hull, East Riding of Yorkshire, England. Founded in 1904, the club plays in the Championship, the second tier of English football."
 				}
 			],
 			"stadiumDetails": [
 				{
-					"stadiumName": "KCOM Stadium",
-					"stadiumLocation": "",
-					"stadiumPostcode": "",
-					"stadiumCapacity": 25404,
-					"stadiumOpened": null
+					"stadiumName": "MKM Stadium",
+					"stadiumLocation": "Hull",
+					"stadiumPostcode": "HU3 6HU",
+					"stadiumCapacity": 25586,
+					"stadiumOpened": 2002
 				}
 			],
 			"leaguePerformanceDetails": [

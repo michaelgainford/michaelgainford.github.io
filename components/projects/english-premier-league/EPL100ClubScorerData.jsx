@@ -122,7 +122,7 @@ export default function Component_EPL100ClubScorerData() {
 				</div>
 			</div>
 
-			<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+			<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
 				{filteredAndSortedScorers.map((topScorer, index) => {
 					const playerImage = `/football/premier-league/players/${topScorer.playerSlug}.webp`;
 					const goalsPerGame = getGoalRate(topScorer.playerGoals, topScorer.playerApps).toFixed(2);
