@@ -1,10 +1,11 @@
-export default function ICON_PLACEHOLDER ({classes, fill}) {
+export default function ICON_PLACEHOLDER({ classes, fill }) {
   return (
     <svg 
+      className={classes}
       width={`800px`} 
       height={`800px`} 
       viewBox={`0 0 24 24`} 
-      fill={`none`} 
+      fill={fill ?? `none`} 
       xmlns={`http://www.w3.org/2000/svg`}>
       <path 
         d={`M20.5 7V13C20.5 16.7712 20.5 18.6569 19.3284 19.8284C18.1569 21 16.2712 21 12.5 21H11.5C7.72876 21 5.84315 21 4.67157 19.8284C3.5 18.6569 3.5 16.7712 3.5 13V7`} 

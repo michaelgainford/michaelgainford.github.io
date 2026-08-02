@@ -1,6 +1,8 @@
-export default function ICON_CONSTRUCTION ({classes, fill}) {
+export default function ICON_CONSTRUCTION({ classes, fill }) {
   return (
     <svg 
+			className={classes}
+			fill={fill}
       width="800px" 
       height="800px" 
       viewBox="0 0 24 24" 

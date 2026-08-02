@@ -1,6 +1,4 @@
 {/* Top level layout import styles for all pages */}
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
 
 {/* Top level component imports for all pages */}
@@ -15,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="scroll-smooth bg-slate-900" data-scroll-behavior="smooth">
-			<body className={`${inter.className} top`}>
+			<body className="top font-sans">
 				{children}	
 				<BackToTopButton />
 			</body>

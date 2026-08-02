@@ -1,19 +1,31 @@
 {/********************************
   ICON IMPORTS
 *********************************/}
+import Icon_Resource from "@/components/icons/IconResource";
+import Icon_Codepen from "@/components/icons/IconCodepen";
+import Icon_ColourPalettes from "@/components/icons/IconColourPalette";
+import Icon_Docs from "@/components/icons/IconDocs";
+import Icon_Font from "@/components/icons/IconFont";
+import Icon_GitHub from "@/components/icons/IconGithub";
+import Icon_LinkedIn from "@/components/icons/IconLinkedIn";
+import Icon_NextJS from "@/components/icons/IconNextJS";
+import Icon_TailwindSimple from "@/components/icons/IconTailwindSimple";
+import Icon_W3Schools from "@/components/icons/IconW3Schools";
 
-import {
-	Icon_Resource,
-	Icon_Codepen,
-	Icon_ColourPalettes,
-	Icon_Docs,
-	Icon_Font,
-	Icon_GitHub,
-	Icon_LinkedIn,
-	Icon_NextJS,
-	Icon_TailwindSimple,
-	Icon_W3Schools
-} from './Icons.jsx';
+const defaultIconFill = "fill-slate-400";
+
+function normalizeResource(resource) {
+	return {
+		...resource,
+		resourceData: {
+			home_icon_fill: defaultIconFill,
+			icon_fill: defaultIconFill,
+			icon: Icon_Resource,
+			featured: false,
+			...resource.resourceData
+		}
+	};
+}
 
 
 {/********************************
@@ -219,7 +231,7 @@ const devResources = [
 	{
 		name: "PageSpeed Insights",
 		resourceData: {
-			slug: "google-analytics",
+			slug: "pagespeed-insights",
 			url: "https://developers.google.com/speed/pagespeed/insights/",
 			description: "PageSpeed Insights is a tool that helps you identify ways to make your site faster and more mobile-friendly.",
 			screenshot: "/dev-resources/screenshot-of--pagespeed-insights.webp",
@@ -384,7 +396,7 @@ const devResources = [
 			featured: false
 		}
 	} 
-];
+].map(normalizeResource);
 
 const featuredResources = devResources.filter(resource => resource.resourceData.featured === true);
 const featuredResourcesSortedByName = featuredResources.sort((a, b) => a.name.localeCompare(b.name));

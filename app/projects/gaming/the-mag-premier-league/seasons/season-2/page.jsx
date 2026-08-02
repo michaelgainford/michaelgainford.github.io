@@ -21,7 +21,7 @@ leagueTable.sort((a, b) => b.points - a.points);
 leagueTable.sort((a, b) => b.goalDifference - a.goalDifference);
 
 // Work out league table data
-leagueTable.forEach((team, index) => {
+leagueTable.forEach((team) => {
 	team.played = 0;
 	team.won = 0;
 	team.drawn = 0;
