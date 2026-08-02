@@ -1,7 +1,8 @@
-export default function ICON_BRAND_APPLE ({classes, fill}) {
+export default function ICON_BRAND_APPLE({ classes, fill }) {
   return (
 		<svg 
-      fill={`#000000`} 
+  className={classes}
+  fill={fill ?? `#000000`} 
       width={`800px`} 
       height={`800px`} 
       viewBox={`0 0 20 20`} 

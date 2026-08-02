@@ -7,30 +7,31 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "lint:md": "markdownlint-cli2"
+    "lint:md": "markdownlint-cli2",
+    "validate:dev-resources": "node scripts/validate-dev-resources.mjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.0-beta.6",
-    "next": "^16.2.6",
+    "next": "^16.2.12",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "baseline-browser-mapping": "^2.9.19",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "16.0.7",
-    "markdownlint-cli2": "^0.22.1",
-    "postcss": "^8.5.15",
+    "eslint": "^10.8.0",
+    "markdownlint-cli2": "^0.23.2",
+    "postcss": "^8.5.24",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.8.0",
     "tailwindcss": "^4.0.0-beta.6"
   },
   "overrides": {
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.24",
     "ajv": "^6.14.0",
+    "sharp": "^0.35.3",
     "minimatch@^3.1.5": {
       "brace-expansion": "1.1.13"
-    },
-    "minimatch@^9.0.4": {
-      "brace-expansion": "2.0.3"
     }
   }
 }

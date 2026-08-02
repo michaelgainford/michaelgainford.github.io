@@ -22,9 +22,6 @@ function timeBasedGreeting() {
 const activeProjects = dataForAllProjects.filter(
 	(project) => project.projectStatus.archived === false
 );
-const highlightedProjects = activeProjects.filter(
-	(project) => project.projectStatus.featuredProject === true
-);
 const categories = new Set(activeProjects.map((project) => project.category));
 
 const statItems = [

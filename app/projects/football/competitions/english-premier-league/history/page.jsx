@@ -382,7 +382,7 @@ const premierLeagueSeasonsData = [
         winners: "Manchester City (5)",
         runnersUp: "Manchester United (6)",
         relegated: [
-            "Fulham (3)", ,
+            "Fulham (3)",
             "West Bromwich Albion (5), ",
             "Sheffield United (3)"
         ],

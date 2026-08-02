@@ -1,7 +1,9 @@
-export default function ICON_GAMEPAD ({fill, classes}) {
+export default function ICON_GAMEPAD({ fill, classes }) {
   return (
     <svg 
-      className={classes} viewBox={`0 0 1069 1069`}>
+      className={classes}
+      fill={fill}
+      viewBox={`0 0 1069 1069`}>
       <rect 
         id={`Console`} 
         height={`1066.67`} 
