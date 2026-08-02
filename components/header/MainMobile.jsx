@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-
 import Link from "next/link";
 import DataForMainNavJSON from "@/data/data_for__sitemap.json";
 const DataForMainNav = DataForMainNavJSON.Pages;
@@ -15,17 +13,10 @@ const projectsLinks = DataForMainNav.filter((link) =>
 );
 
 export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
-  // set a state that tracks sub menu visibility so when the Projects link is clicked, the .projects-sub-menu hidden class is toggled
-  const [isProjectsSubMenuVisible, setIsProjectsSubMenuVisible] =
-    useState(false);
-
-  // toggle the sub menu visibility
-  const toggleProjectsSubMenu = () => {
-    setIsProjectsSubMenuVisible(!isProjectsSubMenuVisible);
+  const handleNavigation = () => {
+    toggleVisibility();
   };
 
-  // if the sub menu is visible, add the hidden class to the sub menu
-  const projectsSubMenuVisibility = isProjectsSubMenuVisible ? `` : `hidden`;
   return (
     <div
       className={`mobile-nav fixed inset-0 z-99 w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto transition-transform duration-500 ease-in-out ${brandTextColour} ${
@@ -36,35 +27,31 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
         <div className={`flex text-center justify-center mb-4 pt-8`}>
           <MainLogo />
           <div className={`flex justify-end`}>
-            <div
+            <button
+              type="button"
               className={`cursor-pointer absolute top-5 right-[17px] -mt-1.5`}
               onClick={toggleVisibility}
+              aria-label="Close navigation"
             >
               <IconCrossNav />
-            </div>
+            </button>
           </div>
         </div>
         <nav className={`flex flex-col justify-start nav logo rounded-lg`}>
           <ul
             className={`flex flex-col items-stretch max-md:overflow-auto text-[14px] md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-4 h-full`}
           >
-            {mobileNavLinks.map((link, index) => (
+            {mobileNavLinks.map((link) => (
               <li
-                key={index}
+                key={link.href}
                 className={`flex mb-4 ${
                   link.label === `Projects` ? `flex-col` : ``
                 }`}
-                onClick={() => { 
-                  setTimeout(() => { 
-                    toggleVisibility();
-                  },
-                  1000);
-                }}
               >
                 <Link
                   className={`px-4 py-3 transition border-l-4 w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${link.border_colour} ${link.hover} min-w-max duration-300 capitalize`}
                   href={link.href}
-                  onClick={isProjectsSubMenuVisible}
+                  onClick={handleNavigation}
                 >
                   {link.label === `Projects` ? <>{link.label}</> : link.label}
                 </Link>
@@ -72,13 +59,14 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                   <ul
                     className={`projects-sub-menu flex flex-col justify-center items-stretch max-md:overflow-auto md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-1 h-full text-[10px]`}
                   >
-                    {projectsLinks.map((link, index) => (
-                      <li key={index} className={`flex`}>
+                    {projectsLinks.map((projectLink) => (
+                      <li key={projectLink.href} className={`flex`}>
                         <Link
-                          className={`px-4 py-3 transition w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${link.border_colour} ${link.hover} min-w-max duration-300 capitalize`}
-                          href={link.href}
+                          className={`px-4 py-3 transition w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${projectLink.border_colour} ${projectLink.hover} min-w-max duration-300 capitalize`}
+                          href={projectLink.href}
+                          onClick={handleNavigation}
                         >
-                          {link.label}
+                          {projectLink.label}
                         </Link>
                       </li>
                     ))}
