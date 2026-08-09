@@ -2207,7 +2207,7 @@
             "ageRating": "18",
             "featured": false,
             "migacriticScore": {
-                "B": "N/A",
+                "B": "9",
                 "D": "8.5"
             }
         },
@@ -2496,7 +2496,7 @@
             "ageRating": "12",
             "featured": false,
             "migacriticScore": {
-                "B": "8",
+                "B": "9",
                 "D": "8"
             }
         },
@@ -2713,12 +2713,12 @@
             "year": 2014,
             "genre": "Action",
             "duration": 101,
-            "watched": false,
+            "watched": true,
             "ageRating": "15",
             "featured": false,
             "migacriticScore": {
-                "B": "N/A",
-                "D": "N/A"
+                "B": "9.5",
+                "D": "9"
             }    
         }
     ]
