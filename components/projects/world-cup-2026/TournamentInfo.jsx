@@ -28,6 +28,7 @@ function sortedGroup(teams) {
 }
 
 const COLS = ["P", "W", "D", "L", "F", "A", "Pts"];
+const GROUP_TABLE_COLUMNS = "minmax(7.5rem, 1fr) repeat(7, 1.5rem)";
 
 export default function Component_WorldCup2026TournamentInfo() {
 	const [groupsSectionCollapsed, setGroupsSectionCollapsed] = useState(false);
@@ -55,7 +56,7 @@ export default function Component_WorldCup2026TournamentInfo() {
 
 								<div className="px-3 pb-4 pt-1">
 										{/* Column headers */}
-										<div className="grid items-center gap-x-1 pb-1 mb-1 border-b border-slate-200" style={{ gridTemplateColumns: "1fr repeat(7, 1.5rem)" }}>
+										<div className="mb-1 grid items-center gap-x-1 border-b border-slate-200 pb-1" style={{ gridTemplateColumns: GROUP_TABLE_COLUMNS }}>
 											<span className="text-xxs font-bold uppercase tracking-wider text-slate-400">Team</span>
 											{COLS.map((c) => (
 												<span key={c} className={`text-center text-xxs font-bold uppercase tracking-wider ${c === "Pts" ? "text-sky-600" : "text-slate-400"}`}>{c}</span>
@@ -65,12 +66,12 @@ export default function Component_WorldCup2026TournamentInfo() {
 										{groupTeams.map((team, idx) => (
 											<div
 												key={team.name}
-												className={`grid items-center gap-x-1 py-1 rounded-sm ${idx < 2 ? "bg-sky-50/60" : ""}`}
-												style={{ gridTemplateColumns: "1fr repeat(7, 1.5rem)" }}
+												className={`grid items-center gap-x-1 rounded-sm py-1 ${idx < 2 ? "bg-sky-50/60" : ""}`}
+												style={{ gridTemplateColumns: GROUP_TABLE_COLUMNS }}
 											>
-												<span className="flex items-center gap-1.5 min-w-0">
-													<Image src={team.flag} alt={team.name} width={18} height={18} className="shrink-0" />
-													<span className={`truncate text-xxs ${isTbd(team.name) ? "italic text-slate-500" : "font-semibold text-blue-950"}`}>
+													<span className="flex min-w-0 items-center gap-1.5">
+														<Image src={team.flag} alt={team.name} width={18} height={18} className="h-auto w-[18px] shrink-0" />
+														<span className={`block truncate text-xxs ${isTbd(team.name) ? "italic text-slate-500" : "font-semibold text-blue-950"}`}>
 														{isTbd(team.name) ? "TBD" : team.name}
 													</span>
 												</span>

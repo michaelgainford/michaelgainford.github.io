@@ -41,7 +41,7 @@ export default function Page_WorldCup2026() {
 						<div className="flex flex-wrap gap-2 lg:justify-end">
 							{hostNations.map((host) => (
 								<span key={host.name} className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs tracking-wide">
-									<Image src={host.flag} alt={host.name} width={16} height={16} />
+									<Image src={host.flag} alt={host.name} width={16} height={16} className="h-auto w-4" />
 									{host.name}
 								</span>
 							))}
