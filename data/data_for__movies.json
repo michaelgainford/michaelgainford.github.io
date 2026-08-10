@@ -2720,6 +2720,23 @@
                 "B": "9.5",
                 "D": "9"
             }    
+        },
+        {
+            "id": 163,
+            "title": "Spiderman: Brand New Day",
+            "image": "/movies-images/spiderman-brand-new-day.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1234567/",
+            "description": "Peter Parker navigates the challenges of being a superhero while balancing his personal life and relationships.",
+            "year": 2026,
+            "genre": "Action",
+            "duration": 130,
+            "watched": true,
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "8",
+                "D": "8"
+            }
         }
     ]
 }
