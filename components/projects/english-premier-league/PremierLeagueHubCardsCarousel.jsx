@@ -7,6 +7,8 @@ import Button from "@/components/buttons/Button";
 export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, containerClassName }) {
 	const scrollContainerRef = useRef(null);
 	const cardRefs = useRef([]);
+	const programmaticScrollRef = useRef(false);
+	const scrollSettleTimerRef = useRef(null);
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	useEffect(() => {
@@ -14,6 +16,8 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 		if (!container) return;
 
 		const updateActiveCard = () => {
+			if (programmaticScrollRef.current) return;
+
 			const cardElements = cardRefs.current;
 			if (!cardElements.length) return;
 
@@ -32,14 +36,39 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 
 			setActiveIndex(closestIndex);
 		};
+		const finishProgrammaticScroll = () => {
+			if (scrollSettleTimerRef.current) {
+				window.clearTimeout(scrollSettleTimerRef.current);
+				scrollSettleTimerRef.current = null;
+			}
+
+			programmaticScrollRef.current = false;
+			updateActiveCard();
+		};
+		const handleScroll = () => {
+			if (!programmaticScrollRef.current) {
+				updateActiveCard();
+				return;
+			}
+
+			if (scrollSettleTimerRef.current) {
+				window.clearTimeout(scrollSettleTimerRef.current);
+			}
+			scrollSettleTimerRef.current = window.setTimeout(finishProgrammaticScroll, 150);
+		};
 
 		updateActiveCard();
-		container.addEventListener("scroll", updateActiveCard, { passive: true });
+		container.addEventListener("scroll", handleScroll, { passive: true });
+		container.addEventListener("scrollend", finishProgrammaticScroll);
 		window.addEventListener("resize", updateActiveCard);
 
 		return () => {
-			container.removeEventListener("scroll", updateActiveCard);
+			container.removeEventListener("scroll", handleScroll);
+			container.removeEventListener("scrollend", finishProgrammaticScroll);
 			window.removeEventListener("resize", updateActiveCard);
+			if (scrollSettleTimerRef.current) {
+				window.clearTimeout(scrollSettleTimerRef.current);
+			}
 		};
 	}, [blocks.length]);
 
@@ -48,6 +77,8 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 		const card = cardRefs.current[index];
 		if (!container || !card) return;
 		setActiveIndex(index);
+		if (Math.abs(container.scrollLeft - card.offsetLeft) < 1) return;
+		programmaticScrollRef.current = true;
 		container.scrollTo({ left: card.offsetLeft, behavior: "smooth" });
 	};
 

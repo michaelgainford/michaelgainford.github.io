@@ -3965,7 +3965,7 @@
 		},
 		{
 			"playerId": 15,
-			"playerName": "Jimmy Floyd Hasselbaink",
+			"playerName": "Jimmy Floyd-Hasselbaink",
 			"playerSlug": "jimmy-floyd-hasselbaink",
 			"playerClubs": [
 				"Leeds United (34)",
@@ -4310,15 +4310,15 @@
 			"playerName": "Erling Haaland",
 			"playerSlug": "erling-haaland",
 			"playerClubs": [
-				"Manchester City (112)"
+				"Manchester City (117)"
 			],
-			"playerApps": 132,
-			"playerGoals": 112,
+			"playerApps": 137,
+			"playerGoals": 117,
 			"playerLastGoalFor": "Manchester City",
-			"playerLastGoalOpponent": "Bournemouth",
-			"playerLastGoalDate": "2026-05-19",
+			"playerLastGoalOpponent": "Sunderland",
+			"playerLastGoalDate": "2026-09-20",
 			"playerCurrent": true,
-			"updated": "2026-05-31"
+			"updated": "2026-09-30"
 		}
 	]
 }
