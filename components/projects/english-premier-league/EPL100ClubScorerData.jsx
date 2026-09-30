@@ -122,7 +122,7 @@ export default function Component_EPL100ClubScorerData() {
 				</div>
 			</div>
 
-			<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+			<div className="grid w-full grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
 				{filteredAndSortedScorers.map((topScorer, index) => {
 					const playerImage = `/football/premier-league/players/${topScorer.playerSlug}.webp`;
 					const goalsPerGame = getGoalRate(topScorer.playerGoals, topScorer.playerApps).toFixed(2);
@@ -145,7 +145,7 @@ export default function Component_EPL100ClubScorerData() {
 									</span>
 								</div>
 
-								<h3 className="line-clamp-2 text-lg leading-tight font-bold uppercase tracking-wide text-epl sm:text-xl">
+								<h3 className="min-w-0 truncate text-lg leading-tight font-bold uppercase tracking-wide text-epl sm:text-xl">
 									{topScorer.playerName}
 								</h3>
 
@@ -178,7 +178,9 @@ export default function Component_EPL100ClubScorerData() {
 							<details className="mt-4 rounded-lg border border-slate-200 bg-slate-50/60 p-3 group/details">
 								<summary className="flex cursor-pointer list-none items-center justify-between text-[11px] uppercase tracking-[0.2em] text-slate-600">
 									<span>Clubs And Last Goal</span>
-									<span className="text-slate-500 transition-transform duration-300 group-open/details:rotate-180">⌄</span>
+									<span aria-hidden="true" className="flex h-5 w-5 shrink-0 items-center justify-center text-slate-500 transition-transform duration-300 group-open/details:rotate-180">
+										<span className="h-2 w-2 rotate-45 border-r-2 border-b-2 border-current" />
+									</span>
 								</summary>
 								<div className="mt-3 flex flex-wrap content-start gap-2">
 									{topScorer.playerClubs.map((playerClub, clubIndex) => {

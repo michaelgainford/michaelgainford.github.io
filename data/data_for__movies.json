@@ -2203,7 +2203,7 @@
             "year": 1995,
             "genre": "Crime",
             "duration": 106,
-            "watched": false,
+            "watched": true,
             "ageRating": "18",
             "featured": false,
             "migacriticScore": {
@@ -2645,7 +2645,7 @@
             "year": 2025,
             "genre": "Action",
             "duration": 120,
-            "watched": false,
+            "watched": true,
             "ageRating": "15",
             "featured": false,
             "migacriticScore": {
