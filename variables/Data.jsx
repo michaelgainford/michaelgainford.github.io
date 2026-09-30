@@ -64,7 +64,7 @@ const dataForAllProjects = [
     projectStatus: {
       underConstruction: false,
       featuredProject: false,
-      archived: false
+      archived: true
     },
     projectsCard: {
       textColour: "text-slate-100"

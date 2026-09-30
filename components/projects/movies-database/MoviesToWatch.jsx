@@ -95,7 +95,7 @@ export default function Component_MoviesToWatch() {
 			<div className="w-full max-w-full movie-poster flex-shrink-0">
 				<Image 
 					src={failedImages.has(movie.image) ? PLACEHOLDER_IMAGE : movie.image} 
-					className="object-cover w-full duration-1000 border-tr-md border-tl-md xl:opacity-50 xl:group-hover:opacity-100 group-hover:ease-in-out aspect-2/3" 
+					className="aspect-2/3 h-auto w-full border-tl-md border-tr-md object-cover duration-1000 xl:opacity-50 xl:group-hover:opacity-100 group-hover:ease-in-out" 
 					alt={movie.title} 
 					width={144} 
 					height={216}

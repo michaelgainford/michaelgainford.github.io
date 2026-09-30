@@ -2203,11 +2203,11 @@
             "year": 1995,
             "genre": "Crime",
             "duration": 106,
-            "watched": false,
+            "watched": true,
             "ageRating": "18",
             "featured": false,
             "migacriticScore": {
-                "B": "N/A",
+                "B": "9",
                 "D": "8.5"
             }
         },
@@ -2496,7 +2496,7 @@
             "ageRating": "12",
             "featured": false,
             "migacriticScore": {
-                "B": "8",
+                "B": "9",
                 "D": "8"
             }
         },
@@ -2645,7 +2645,7 @@
             "year": 2025,
             "genre": "Action",
             "duration": 120,
-            "watched": false,
+            "watched": true,
             "ageRating": "15",
             "featured": false,
             "migacriticScore": {
@@ -2669,6 +2669,74 @@
                 "B": "7.5",
                 "D": "7.5"
             }
-        }   
+        },
+        {
+            "id": 160,
+            "title": "Bullet Train",
+            "image": "/movies-images/bullet-train.webp",
+            "imdb_url": "https://www.imdb.com/title/tt12593682/",
+            "description": "Five assassins aboard a fast-moving bullet train discover their missions are not unrelated.",
+            "year": 2022,
+            "genre": "Action",
+            "duration": 127,
+            "watched": true,
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "7.5",
+                "D": "7"
+            }
+        },
+        {
+            "id": 161,
+            "title": "Spongebob Out of Water",
+            "image": "/movies-images/spongebob-out-of-water.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2279373/",
+            "description": "When a pirate steals the secret Krabby Patty formula, Spongebob and his friends must team up with a human to retrieve it.",
+            "year": 2015,
+            "genre": "Animation",
+            "duration": 92,
+            "watched": true,
+            "ageRating": "PG",
+            "featured": false,
+            "migacriticScore": {
+                "B": "N/A",
+                "D": "N/A"
+            }
+        },
+        {
+            "id": 162,
+            "title": "John Wick",
+            "image": "/movies-images/john-wick.webp",
+            "imdb_url": "https://www.imdb.com/title/tt2911666/",
+            "description": "An ex-hitman comes out of retirement to track down the gangsters    that took everything from him.",
+            "year": 2014,
+            "genre": "Action",
+            "duration": 101,
+            "watched": true,
+            "ageRating": "15",
+            "featured": false,
+            "migacriticScore": {
+                "B": "9.5",
+                "D": "9"
+            }    
+        },
+        {
+            "id": 163,
+            "title": "Spiderman: Brand New Day",
+            "image": "/movies-images/spiderman-brand-new-day.webp",
+            "imdb_url": "https://www.imdb.com/title/tt1234567/",
+            "description": "Peter Parker navigates the challenges of being a superhero while balancing his personal life and relationships.",
+            "year": 2026,
+            "genre": "Action",
+            "duration": 130,
+            "watched": true,
+            "ageRating": "12",
+            "featured": false,
+            "migacriticScore": {
+                "B": "8",
+                "D": "8"
+            }
+        }
     ]
 }
