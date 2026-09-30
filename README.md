@@ -45,7 +45,11 @@ The site is built using Next.js and Tailwind CSS.
 
 ## Running the Project
 
-**Ensure you are running at least Node.js 22.**
+**Ensure you are running Node.js 26 or later.**
+
+The development command uses nvm to switch to the Node.js version in `.nvmrc`.
+Install nvm and run `nvm install` once from the project directory to install
+that version.
 
 Run the development server:
 
