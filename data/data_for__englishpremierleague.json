@@ -27,9 +27,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 3,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 12,
 					"biggestWin": "7-0 vs Everton (2005)",
 					"biggestLoss": "8-2 vs Manchester United (2011)"
 				}
@@ -100,9 +97,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 2,
-					"lowestLeagueFinish": 17,
 					"biggestWin": "7-1 vs Everton (1982)",
 					"biggestLoss": "1-8 vs Chelsea (2012)"
 				}
@@ -173,9 +167,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 19,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "3-2 vs West Ham United (1998)",
 					"biggestLoss": "0-7 vs Manchester United (1998)"
 				}
@@ -246,9 +237,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 9,
-					"lowestLeagueFinish": 18,
 					"biggestWin": "5-1 vs Blackburn Rovers (2007)",
 					"biggestLoss": "0-8 vs Chelsea (2012)"
 				}
@@ -319,9 +307,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 1,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "7-0 vs Nottingham Forest (1995)",
 					"biggestLoss": "0-7 vs Manchester United (2008)"
 				}
@@ -392,9 +377,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 19,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "4-3 vs Wigan Athletic (2010)",
 					"biggestLoss": "0-6 vs Arsenal (2010)"
 				}
@@ -465,9 +447,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 6,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "5-0 vs Stoke City (2011)",
 					"biggestLoss": "0-6 vs Manchester City (2012)"
 				}
@@ -538,9 +517,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 9,
-					"lowestLeagueFinish": 18,
 					"biggestWin": "4-0 vs Chelsea (2018)",
 					"biggestLoss": "0-5 vs Tottenham Hotspur (2019)"
 				}
@@ -611,9 +587,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 17,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "4-0 vs Chelsea (2000)",
 					"biggestLoss": "0-5 vs Manchester United (2001)"
 				}
@@ -684,9 +657,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 10,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "3-0 vs Arsenal (2021)",
 					"biggestLoss": "0-5 vs Manchester City (2021)"
 				}
@@ -742,7 +712,7 @@
 					"clubName": "Brighton & Hove Albion",
 					"clubNickname": "The Seagulls",
 					"clubFounded": 1901,
-					"clubManager": "",
+					"clubManager": "Fabian Hurzeler",
 					"clubBlurb": "Brighton & Hove Albion Football Club, commonly referred to simply as Brighton, is an English professional football club based in the city of Brighton. They compete in the Premier League, the top tier of the English football league system."
 				}
 			],
@@ -757,9 +727,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 8,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "4-0 vs Manchester City (2020)",
 					"biggestLoss": "0-5 vs Manchester City (2021)"
 				}
@@ -830,9 +797,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "4-0 vs Bournemouth (2019)",
 					"biggestLoss": "0-5 vs Manchester City (2019)"
 				}
@@ -903,9 +867,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 18,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "4-2 vs Fulham (2019)",
 					"biggestLoss": "0-5 vs Manchester City (2019)"
 				}
@@ -976,9 +937,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "4-0 vs Southampton (2000)",
 					"biggestLoss": "0-4 vs Manchester United (2000)"
 				}
@@ -1034,7 +992,7 @@
 					"clubName": "Chelsea",
 					"clubNickname": "The Blues",
 					"clubFounded": 1905,
-					"clubManager": "Liam Rosenior",
+					"clubManager": "Xabi Alonso",
 					"clubBlurb": "Chelsea Football Club is an English professional football club based in Fulham, London. Founded in 1905, the club competes in the Premier League, the top division of English football. Chelsea are among England's most successful clubs, having won over thirty competitive honours, including six league titles and eight European trophies."
 				}
 			],
@@ -1049,9 +1007,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 5,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 10,
 					"biggestWin": "8-0 vs Wigan Athletic (2010)",
 					"biggestLoss": "1-6 vs Manchester City (2022)"
 				}
@@ -1122,9 +1077,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 11,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "4-1 vs Southampton (1993)",
 					"biggestLoss": "0-8 vs Chelsea (1998)"
 				}
@@ -1180,7 +1132,7 @@
 					"clubName": "Crystal Palace",
 					"clubNickname": "The Eagles",
 					"clubFounded": 1905,
-					"clubManager": "Oliver Glasner",
+					"clubManager": "Pierre Sage",
 					"clubBlurb": "Crystal Palace Football Club is a professional football club based in Selhurst, South London, England, who currently compete in the Premier League, the highest level of English football. Although their official founding date is 1905, the club claims to be a continuation of the original amateur Crystal Palace football club formed in 1861, as both were owned by the same Crystal Palace Company."
 				}
 			],
@@ -1195,9 +1147,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 10,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "5-0 vs Leicester City (2018)",
 					"biggestLoss": "0-9 vs Liverpool (2020)"
 				}
@@ -1268,9 +1217,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 8,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-1 vs Ipswich Town (2007)",
 					"biggestLoss": "0-8 vs Liverpool (2022)"
 				}
@@ -1341,9 +1287,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 4,
-					"lowestLeagueFinish": 17,
 					"biggestWin": "7-1 vs Southampton (1996)",
 					"biggestLoss": "0-7 vs Arsenal (2004)"
 				}
@@ -1399,7 +1342,7 @@
 					"clubName": "Fulham",
 					"clubNickname": "The Cottagers",
 					"clubFounded": 1879,
-					"clubManager": "Marco Silva",
+					"clubManager": "Alvaro Arbeloa",
 					"clubBlurb": "Fulham Football Club is a professional football club based in Fulham, London, England. The club competes in the Premier League, the top tier of English football. Founded in 1879, Fulham is the oldest football club from London to play in the Football League. The club's home ground is Craven Cottage, which has been their home since 1896. Fulham has a rich history and has experienced various successes and challenges throughout its existence."
 				}
 			],
@@ -1414,9 +1357,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-0 vs Norwich City (2021)",
 					"biggestLoss": "0-8 vs Liverpool (2022)"
 				}
@@ -1487,9 +1427,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 16,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "4-1 vs Watford (2018)",
 					"biggestLoss": "0-6 vs Manchester City (2018)"
 				}
@@ -1560,9 +1497,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 16,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-0 vs Fulham (2013)",
 					"biggestLoss": "0-8 vs Wigan Athletic (2020)"
 				}
@@ -1618,7 +1552,7 @@
 					"clubName": "Ipswich Town",
 					"clubNickname": "The Tractor Boys",
 					"clubFounded": 1878,
-					"clubManager": "",
+					"clubManager": "Gary O'Neil",
 					"clubBlurb": "Ipswich Town Football Club is a professional association football club based in Ipswich, Suffolk, England. They play in League One, the third tier of the English football league system, having last appeared in the second tier, the Championship, in 2019."
 				}
 			],
@@ -1633,9 +1567,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 5,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "5-0 vs Southampton (2001)",
 					"biggestLoss": "0-9 vs Manchester United (1995)"
 				}
@@ -1706,9 +1637,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 3,
-					"highestLeagueFinish": 3,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-1 vs Charlton Athletic (2003)",
 					"biggestLoss": "0-6 vs Manchester United (2001)"
 				}
@@ -1779,9 +1707,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 1,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 23,
 					"biggestWin": "9-0 vs Southampton (2019)",
 					"biggestLoss": "0-6 vs Tottenham Hotspur (2017)"
 				}
@@ -1837,7 +1762,7 @@
 					"clubName": "Liverpool",
 					"clubNickname": "The Reds",
 					"clubFounded": 1892,
-					"clubManager": "Arne Slot",
+					"clubManager": "Andoni Iraola",
 					"clubBlurb": "Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. Domestically, the club has won nineteen League titles, seven FA Cups, a record eight League Cups, and fifteen FA Community Shields."
 				}
 			],
@@ -1852,9 +1777,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 19,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 8,
 					"biggestWin": "7-0 vs Crystal Palace (2020)",
 					"biggestLoss": "1-6 vs Stoke City (2015)"
 				}
@@ -1925,9 +1847,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 20,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "3-1 vs Blackburn Rovers (1992)",
 					"biggestLoss": "0-4 vs Nottingham Forest (1992)"
 				}
@@ -1983,7 +1902,7 @@
 					"clubName": "Manchester City",
 					"clubNickname": "The Citizens",
 					"clubFounded": 1880,
-					"clubManager": "Pep Guardiola",
+					"clubManager": "Enzo Maresca",
 					"clubBlurb": "Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's, it became Ardwick Association Football Club in 1887 and Manchester City in 1894."
 				}
 			],
@@ -1998,9 +1917,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 6,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 18,
 					"biggestWin": "8-0 vs Watford (2019)",
 					"biggestLoss": "0-8 vs Middlesbrough (2008)"
 				}
@@ -2071,9 +1987,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 13,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 15,
 					"biggestWin": "9-0 vs Ipswich Town (1995)",
 					"biggestLoss": "1-6 vs Manchester City (2011)"
 				}
@@ -2144,9 +2057,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "8-1 vs Manchester City (2008)",
 					"biggestLoss": "0-8 vs Manchester United (2008)"
 				}
@@ -2202,7 +2112,7 @@
 					"clubName": "Newcastle United",
 					"clubNickname": "The Magpies",
 					"clubFounded": 1892,
-					"clubManager": "Eddie Howe",
+					"clubManager": "Matthias Jaissle",
 					"clubBlurb": "Newcastle United Football Club is an English professional football club based in Newcastle upon Tyne, Tyne and Wear, that plays in the Premier League, the top flight of English football. Founded in 1892 by the merger of Newcastle East End and Newcastle West End, they have played at St James' Park since."
 				}
 			],
@@ -2217,9 +2127,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 2,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs Sheffield Wednesday (1999)",
 					"biggestLoss": "0-9 vs Manchester United (2022)"
 				}
@@ -2290,9 +2197,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 3,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "7-1 vs Reading (2012)",
 					"biggestLoss": "0-7 vs Manchester City (2020)"
 				}
@@ -2348,7 +2252,7 @@
 					"clubName": "Nottingham Forest",
 					"clubNickname": "The Reds",
 					"clubFounded": 1865,
-					"clubManager": "Vitor Pereira",
+					"clubManager": "Oliver Glasner",
 					"clubBlurb": "Nottingham Forest Football Club is a professional football club based in West Bridgford, Nottinghamshire, England. The club was founded in 1865 and has been playing its home matches at the City Ground since 1898. They are currently competing in the EFL Championship, the second tier of the English football league system."
 				}
 			],
@@ -2363,9 +2267,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 3,
-					"lowestLeagueFinish": 22,
 					"biggestWin": "7-0 vs Sheffield Wednesday (1995)",
 					"biggestLoss": "1-8 vs Manchester United (1999)"
 				}
@@ -2436,9 +2337,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 19,
-					"lowestLeagueFinish": 19,
 					"biggestWin": "5-1 vs Wimbledon (1993)",
 					"biggestLoss": "0-6 vs Manchester United (1994)"
 				}
@@ -2509,9 +2407,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 8,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "7-4 vs Reading (2007)",
 					"biggestLoss": "0-7 vs Chelsea (2004)"
 				}
@@ -2582,9 +2477,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 5,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-0 vs Ipswich Town (1995)",
 					"biggestLoss": "0-6 vs Manchester United (1995)"
 				}
@@ -2655,9 +2547,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 8,
-					"lowestLeagueFinish": 18,
 					"biggestWin": "7-1 vs Derby County (2007)",
 					"biggestLoss": "0-7 vs Portsmouth (2007)"
 				}
@@ -2728,9 +2617,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 9,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-0 vs Tottenham Hotspur (1993)",
 					"biggestLoss": "0-6 vs Chelsea (2006)"
 				}
@@ -2801,9 +2687,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs West Bromwich Albion (1999)",
 					"biggestLoss": "0-8 vs Newcastle United (1999)"
 				}
@@ -2874,9 +2757,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 2,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs Sunderland (2014)",
 					"biggestLoss": "0-9 vs Leicester City (2019)"
 				}
@@ -2947,9 +2827,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 9,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "6-1 vs Liverpool (2015)",
 					"biggestLoss": "0-7 vs Chelsea (2010)"
 				}
@@ -3020,9 +2897,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs Sheffield Wednesday (1999)",
 					"biggestLoss": "0-8 vs Watford (1982)"
 				}
@@ -3093,9 +2967,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 8,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "5-0 vs Bradford City (2013)",
 					"biggestLoss": "0-8 vs Liverpool (1990)"
 				}
@@ -3166,9 +3037,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 22,
-					"lowestLeagueFinish": 22,
 					"biggestWin": "4-3 vs Sheffield Wednesday (1994)",
 					"biggestLoss": "0-5 vs Manchester United (1994)"
 				}
@@ -3224,7 +3092,7 @@
 					"clubName": "Tottenham Hotspur",
 					"clubNickname": "Spurs",
 					"clubFounded": 1882,
-					"clubManager": "Igor Tudor",
+					"clubManager": "Roberto De Zerbi",
 					"clubBlurb": "Tottenham Hotspur Football Club, commonly referred to as Tottenham or Spurs, is an English professional football club in Tottenham, London, that competes in the Premier League. Tottenham Hotspur Stadium has been the club's home ground since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site."
 				}
 			],
@@ -3239,9 +3107,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 2,
-					"highestLeagueFinish": 1,
-					"lowestLeagueFinish": 17,
 					"biggestWin": "9-1 vs Wigan Athletic (2009)",
 					"biggestLoss": "0-6 vs Manchester City (2019)"
 				}
@@ -3312,9 +3177,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 11,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs Sunderland (1982)",
 					"biggestLoss": "0-8 vs Manchester City (2019)"
 				}
@@ -3385,9 +3247,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 8,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "5-1 vs Wolverhampton Wanderers (2012)",
 					"biggestLoss": "0-9 vs Leicester City (2020)"
 				}
@@ -3458,9 +3317,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 5,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs Sunderland (1968)",
 					"biggestLoss": "0-9 vs Manchester City (2019)"
 				}
@@ -3531,9 +3387,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 10,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "8-0 vs Hull City (2009)",
 					"biggestLoss": "0-9 vs Tottenham Hotspur (2009)"
 				}
@@ -3604,9 +3457,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 6,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "7-1 vs Watford (1986)",
 					"biggestLoss": "0-8 vs Liverpool (1999)"
 				}
@@ -3677,9 +3527,6 @@
 			],
 			"leaguePerformanceDetails": [
 				{
-					"numberOfPremierLeagueTitles": 0,
-					"highestLeagueFinish": 7,
-					"lowestLeagueFinish": 20,
 					"biggestWin": "10-1 vs Cardiff City (1962)",
 					"biggestLoss": "0-9 vs Manchester United (1955)"
 				}
@@ -4310,15 +4157,15 @@
 			"playerName": "Erling Haaland",
 			"playerSlug": "erling-haaland",
 			"playerClubs": [
-				"Manchester City (117)"
+				"Manchester City (121)"
 			],
-			"playerApps": 137,
-			"playerGoals": 117,
+			"playerApps": 140,
+			"playerGoals": 121,
 			"playerLastGoalFor": "Manchester City",
-			"playerLastGoalOpponent": "Sunderland",
-			"playerLastGoalDate": "2026-09-20",
+			"playerLastGoalOpponent": "Aston Villa",
+			"playerLastGoalDate": "2026-10-24",
 			"playerCurrent": true,
-			"updated": "2026-09-30"
+			"updated": "2026-10-24"
 		}
 	]
 }

@@ -126,8 +126,8 @@ export default function Page_EnglishPremierLeague100Club() {
 					<Prem100ClubScorerGrid />
 				</div>
 				<div className={`${globalWrapperFixedWidth} mt-2 pb-2`}>
-					<p className="text-center text-[10px] uppercase tracking-[0.2em] text-epl-400/70 italic">
-						* Correct as of {lastUpdatedFormatted} (GMT)
+					<p className="text-center text-[10px] uppercase tracking-[0.1em] text-epl-400/70 italic">
+						* Correct as of {lastUpdatedFormatted}
 					</p>
 				</div>
 			</main>
