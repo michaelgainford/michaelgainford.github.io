@@ -1,3 +1,4 @@
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
 import Header from "@/components/header/Header";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import Footer from "@/components/footer/Footer";
@@ -20,6 +21,7 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS() {
 
       <main className={`w-full text-epl`}>
         <HeroPremierLeague />
+        <PremierLeagueBreadcrumbs current="Seasons" />
 
         <div className={`${globalMainElementStyles}`}>
           <H1

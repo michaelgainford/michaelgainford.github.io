@@ -1,3 +1,4 @@
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
 import HeroPremierLeague from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1_Span";
 import Header from "@/components/header/Header";
@@ -449,6 +450,7 @@ export default function PAGE_PREMIER_LEAGUE_HISTORY () {
 			<Header />
 			<main className="w-full text-epl">
                 <HeroPremierLeague />
+				<PremierLeagueBreadcrumbs current="History" />
 				<div className={`${mainStyles}`}>
 					<H1 
                       text="Premier League History" 

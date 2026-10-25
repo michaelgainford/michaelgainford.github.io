@@ -2,6 +2,9 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
+import { premierLeagueHubUrl, premierLeagueYears } from "@/variables/ProjectPremierLeague";
+import ClubFinishesChart from "@/components/projects/english-premier-league/ClubFinishesChart";
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 import { globalPageStyles } from "@/variables/Styles";
 
@@ -190,7 +193,15 @@ export default async function ClubPage({ params }) {
 	const biggestWinRaw = leaguePerformance?.biggestWin ?? club.biggestWin ?? "N/A";
 	const biggestDefeatRaw = leaguePerformance?.biggestLoss ?? club.biggestLoss ?? "N/A";
 	const premierItems = [
-		{ label: "Seasons in Premier League", value: seasonsInPremierLeague },
+		{
+			label: "Seasons in Premier League",
+			value: (
+				<>
+					{seasonsInPremierLeague}
+					<span className="text-xs opacity-50"> of {premierLeagueYears.length}</span>
+				</>
+			),
+		},
 		{ label: "Premier League Titles", value: premierLeagueTitles },
 		{ label: "Best Premier League Finish", value: bestPositionDisplay },
 		{ label: "Lowest Premier League Position", value: lowestPositionDisplay },
@@ -204,6 +215,7 @@ export default async function ClubPage({ params }) {
 		<div className={`${globalPageStyles} bg-gradient-to-b from-slate-100 via-slate-50 to-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
 			<main className="w-full text-epl">
+				<PremierLeagueBreadcrumbs trail={[{ label: "All Clubs", href: `${premierLeagueHubUrl}/all-clubs` }]} current={club.teamName} />
 				<div className="mx-auto w-full max-w-[1320px] px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
 					<div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden mb-8">
 						<div className="h-1.5 w-full bg-gradient-to-r from-epl-500 via-amber-400 to-teal-400" />
@@ -273,6 +285,7 @@ export default async function ClubPage({ params }) {
 									</li>
 								))}
 							</ul>
+							<ClubFinishesChart seasons={splitSeasonObject} clubName={club.teamName} />
 						</div>
 					</details>
 				</div>
