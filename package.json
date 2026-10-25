@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:md": "markdownlint-cli2",
+    "sitemap:update": "node scripts/update-sitemap-dates.mjs",
     "validate:dev-resources": "node scripts/validate-dev-resources.mjs"
   },
   "dependencies": {

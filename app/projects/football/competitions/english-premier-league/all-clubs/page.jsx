@@ -1,5 +1,6 @@
 "use client";
 
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +15,16 @@ const FILTER_STORAGE_KEY = "epl-all-clubs-filter";
 const VALID_FILTERS = ["all", "current", "former"];
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 
+import { premierLeagueYears } from "@/variables/ProjectPremierLeague";
 import { globalPageStyles, mainStyles } from "@/variables/Styles";
+
+const getLastSeason = (club) => {
+	const seasons = club.premierLeagueSeasonsSplit?.[0] ?? {};
+	const played = Object.entries(seasons)
+		.filter(([, season]) => season?.Pos > 0)
+		.map(([key]) => Number(key.replace("season", "")));
+	return played.length > 0 ? premierLeagueYears[Math.max(...played) - 1] : null;
+};
 
 export default function Page_PremierLeagueAllClubs () {
 	const [filter, setFilter] = useState("all");
@@ -43,6 +53,7 @@ export default function Page_PremierLeagueAllClubs () {
 			<Header />
 			<main className="w-full text-epl">
 				<HeroPremierLeague />
+				<PremierLeagueBreadcrumbs current="All Clubs" />
 				<div className={`${mainStyles}`}>
 					<H1 
 						text="All Clubs"
@@ -101,7 +112,12 @@ export default function Page_PremierLeagueAllClubs () {
 										{Club.teamShortName ? Club.teamShortName : Club.teamName}
 									</p>
 									<span className={`max-md:hidden absolute top-0 right-0 p-1 ${Club.currentPrem ? `bg-emerald-200/30` : `bg-transparent`} text-[10px] font-bold tracking-wide`}>
-										{Club.currentPrem ? `Current` : `Former`}
+										{Club.currentPrem ? `Current` : (getLastSeason(Club) ? (
+											<>
+												<span className="text-red-600" aria-hidden="true">▼</span>
+												<span className="sr-only">Last season: </span> {getLastSeason(Club)}
+											</>
+										) : `Former`)}
 									</span>
 								</>
 							);
