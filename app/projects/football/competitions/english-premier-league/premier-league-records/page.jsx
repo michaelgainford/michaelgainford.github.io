@@ -1,3 +1,4 @@
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
 import Link from "next/link";
 import Header from "@/components/header/_Header";
 import Footer from "@/components/footer/_Footer";
@@ -53,6 +54,7 @@ export default function Page_PremierLeagueRecords() {
 			<Header />
 			<main className="w-full text-epl">
 				<PremierLeagueHero />
+				<PremierLeagueBreadcrumbs current="Records" />
 
 				<div className={`${globalWrapperFixedWidth} space-y-6`}>
 					<H1
@@ -68,7 +70,7 @@ export default function Page_PremierLeagueRecords() {
 						classes_width="max-w-[90ch]"
 					/>
 
-					<div className="grid gap-4 lg:grid-cols-3">
+					<div className="grid gap-4 lg:grid-cols-3 w-full">
 						{recordGroups.map((group) => (
 							<section
 								key={group.heading}

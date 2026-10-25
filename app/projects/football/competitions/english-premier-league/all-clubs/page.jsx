@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/header/Header";
@@ -10,12 +11,34 @@ import Footer from "@/components/footer/Footer";
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 
 const ClubsData = PremierLeagueDataJSON.Clubs;
+const FILTER_STORAGE_KEY = "epl-all-clubs-filter";
+const VALID_FILTERS = ["all", "current", "former"];
 const sortedByName = [...ClubsData].sort((a,b) => a.teamName > b.teamName ? 1 : -1);
 
+import { premierLeagueYears } from "@/variables/ProjectPremierLeague";
 import { globalPageStyles, mainStyles } from "@/variables/Styles";
+
+const getLastSeason = (club) => {
+	const seasons = club.premierLeagueSeasonsSplit?.[0] ?? {};
+	const played = Object.entries(seasons)
+		.filter(([, season]) => season?.Pos > 0)
+		.map(([key]) => Number(key.replace("season", "")));
+	return played.length > 0 ? premierLeagueYears[Math.max(...played) - 1] : null;
+};
 
 export default function Page_PremierLeagueAllClubs () {
 	const [filter, setFilter] = useState("all");
+
+	// Restore the saved filter after mount (avoids hydration mismatch)
+	useEffect(() => {
+		const saved = sessionStorage.getItem(FILTER_STORAGE_KEY);
+		if (VALID_FILTERS.includes(saved)) setFilter(saved);
+	}, []);
+
+	const updateFilter = (value) => {
+		setFilter(value);
+		sessionStorage.setItem(FILTER_STORAGE_KEY, value);
+	};
 
 	// Filtering logic
 	const filteredClubs = sortedByName.filter((club) => {
@@ -30,6 +53,7 @@ export default function Page_PremierLeagueAllClubs () {
 			<Header />
 			<main className="w-full text-epl">
 				<HeroPremierLeague />
+				<PremierLeagueBreadcrumbs current="All Clubs" />
 				<div className={`${mainStyles}`}>
 					<H1 
 						text="All Clubs"
@@ -42,21 +66,21 @@ export default function Page_PremierLeagueAllClubs () {
 				<div className={`${mainStyles} flex flex-row flex-nowrap gap-2 justify-center items-center mt-4 mb-4`}>
 					<button
 						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "all" ? "bg-epl-500 text-white border-epl-500" : "bg-white text-epl border-epl-200 hover:bg-epl-100"}`}
-						onClick={() => setFilter("all")}
+						onClick={() => updateFilter("all")}
 						aria-pressed={filter === "all"}
 					>
 						All
 					</button>
 					<button
 						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "current" ? "bg-emerald-600 text-white border-emerald-600" : "bg-white text-epl border-epl-200 hover:bg-emerald-50"}`}
-						onClick={() => setFilter("current")}
+						onClick={() => updateFilter("current")}
 						aria-pressed={filter === "current"}
 					>
 						Current
 					</button>
 					<button
 						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "former" ? "bg-gray-400 text-white border-gray-400" : "bg-white text-epl border-epl-200 hover:bg-gray-100"}`}
-						onClick={() => setFilter("former")}
+						onClick={() => updateFilter("former")}
 						aria-pressed={filter === "former"}
 					>
 						Former
@@ -88,7 +112,12 @@ export default function Page_PremierLeagueAllClubs () {
 										{Club.teamShortName ? Club.teamShortName : Club.teamName}
 									</p>
 									<span className={`max-md:hidden absolute top-0 right-0 p-1 ${Club.currentPrem ? `bg-emerald-200/30` : `bg-transparent`} text-[10px] font-bold tracking-wide`}>
-										{Club.currentPrem ? `Current` : `Former`}
+										{Club.currentPrem ? `Current` : (getLastSeason(Club) ? (
+											<>
+												<span className="text-red-600" aria-hidden="true">▼</span>
+												<span className="sr-only">Last season: </span> {getLastSeason(Club)}
+											</>
+										) : `Former`)}
 									</span>
 								</>
 							);

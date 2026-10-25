@@ -1,3 +1,4 @@
+import PremierLeagueBreadcrumbs from "@/components/projects/english-premier-league/PremierLeagueBreadcrumbs";
 import Header from "@/components/header/Header";
 import PremierLeagueHero from "@/components/hero/Hero_PremierLeague";
 import H1 from "@/components/typography/H1_Span";
@@ -87,6 +88,7 @@ export default function Page_EnglishPremierLeague100Club() {
 			<Header />
 			<main className="w-full text-epl">
 				<PremierLeagueHero />
+				<PremierLeagueBreadcrumbs current="The 100 Club" />
 				<div className={`${globalWrapperFixedWidth} space-y-6`}>
 					<H1
 						text="The 100 Club"
@@ -126,8 +128,8 @@ export default function Page_EnglishPremierLeague100Club() {
 					<Prem100ClubScorerGrid />
 				</div>
 				<div className={`${globalWrapperFixedWidth} mt-2 pb-2`}>
-					<p className="text-center text-[10px] uppercase tracking-[0.2em] text-epl-400/70 italic">
-						* Correct as of {lastUpdatedFormatted} (GMT)
+					<p className="text-center text-[10px] uppercase tracking-[0.1em] text-epl-400/70 italic">
+						* Correct as of {lastUpdatedFormatted}
 					</p>
 				</div>
 			</main>

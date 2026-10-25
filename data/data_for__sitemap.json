@@ -86,6 +86,20 @@
 			"lastUpdated": "2025-02-23"
 		},
 		{
+			"name": "Wishlist",
+			"label": "Wishlist",
+			"href": "/pigeon/wip/wishlist",
+			"category": "general",
+			"border_colour": "border-slate-700",
+			"background_colour": "bg-slate-950",
+			"before": "before:bg-amber-500",
+			"hover": "hover:bg-slate-950",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
 			"name": "All Projects",
 			"label": "All Projects",
 			"href": "/projects",
@@ -126,7 +140,475 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-26"
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Premier League Records",
+			"label": "EPL - Premier League Records",
+			"href": "/projects/football/competitions/english-premier-league/premier-league-records",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Arsenal",
+			"label": "EPL - Arsenal",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/arsenal",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Aston Villa",
+			"label": "EPL - Aston Villa",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/aston-villa",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Barnsley",
+			"label": "EPL - Barnsley",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/barnsley",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Birmingham City",
+			"label": "EPL - Birmingham City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/birmingham-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Blackburn Rovers",
+			"label": "EPL - Blackburn Rovers",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/blackburn-rovers",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Blackpool",
+			"label": "EPL - Blackpool",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/blackpool",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Bolton Wanderers",
+			"label": "EPL - Bolton Wanderers",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/bolton-wanderers",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Bournemouth",
+			"label": "EPL - Bournemouth",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/bournemouth",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Bradford City",
+			"label": "EPL - Bradford City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/bradford-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Brentford",
+			"label": "EPL - Brentford",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/brentford",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Brighton & Hove Albion",
+			"label": "EPL - Brighton & Hove Albion",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/brighton-hove-albion",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Burnley",
+			"label": "EPL - Burnley",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/burnley",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Cardiff City",
+			"label": "EPL - Cardiff City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/cardiff-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Charlton Athletic",
+			"label": "EPL - Charlton Athletic",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/charlton-athletic",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Chelsea",
+			"label": "EPL - Chelsea",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/chelsea",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Coventry City",
+			"label": "EPL - Coventry City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/coventry-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Crystal Palace",
+			"label": "EPL - Crystal Palace",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/crystal-palace",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Derby County",
+			"label": "EPL - Derby County",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/derby-county",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Everton",
+			"label": "EPL - Everton",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/everton",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Fulham",
+			"label": "EPL - Fulham",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/fulham",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Huddersfield Town",
+			"label": "EPL - Huddersfield Town",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/huddersfield-town",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Hull City",
+			"label": "EPL - Hull City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/hull-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Ipswich Town",
+			"label": "EPL - Ipswich Town",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/ipswich-town",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Leeds United",
+			"label": "EPL - Leeds United",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/leeds-united",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Leicester City",
+			"label": "EPL - Leicester City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/leicester-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Liverpool",
+			"label": "EPL - Liverpool",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/liverpool",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Luton Town",
+			"label": "EPL - Luton Town",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/luton-town",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Manchester City",
+			"label": "EPL - Manchester City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/manchester-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Manchester United",
+			"label": "EPL - Manchester United",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/manchester-united",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Middlesbrough",
+			"label": "EPL - Middlesbrough",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/middlesbrough",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Newcastle United",
+			"label": "EPL - Newcastle United",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/newcastle-united",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Norwich City",
+			"label": "EPL - Norwich City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/norwich-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Nottingham Forest",
+			"label": "EPL - Nottingham Forest",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/nottingham-forest",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Oldham Athletic",
+			"label": "EPL - Oldham Athletic",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/oldham-athletic",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Portsmouth",
+			"label": "EPL - Portsmouth",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/portsmouth",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Queens Park Rangers",
+			"label": "EPL - Queens Park Rangers",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/queens-park-rangers",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Reading",
+			"label": "EPL - Reading",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/reading",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Sheffield United",
+			"label": "EPL - Sheffield United",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/sheffield-united",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Sheffield Wednesday",
+			"label": "EPL - Sheffield Wednesday",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/sheffield-wednesday",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Southampton",
+			"label": "EPL - Southampton",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/southampton",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Stoke City",
+			"label": "EPL - Stoke City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/stoke-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Sunderland",
+			"label": "EPL - Sunderland",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/sunderland",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Swansea City",
+			"label": "EPL - Swansea City",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/swansea-city",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Swindon Town",
+			"label": "EPL - Swindon Town",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/swindon-town",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Tottenham Hotspur",
+			"label": "EPL - Tottenham Hotspur",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/tottenham-hotspur",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Watford",
+			"label": "EPL - Watford",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/watford",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - West Bromwich Albion",
+			"label": "EPL - West Bromwich Albion",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/west-bromwich-albion",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - West Ham United",
+			"label": "EPL - West Ham United",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/west-ham-united",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Wigan Athletic",
+			"label": "EPL - Wigan Athletic",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/wigan-athletic",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Wimbledon",
+			"label": "EPL - Wimbledon",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/wimbledon",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
+		},
+		{
+			"name": "EPL - Wolverhampton Wanderers",
+			"label": "EPL - Wolverhampton Wanderers",
+			"href": "/projects/football/competitions/english-premier-league/all-clubs/wolverhampton-wanderers",
+			"mainNav": false,
+			"footerNav_1": false,
+			"footerNav_2": false,
+			"lastUpdated": "2026-10-25"
 		},
 		{
 			"name": "EPL - 100 Club",
@@ -135,7 +617,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-05-09"
+			"lastUpdated": "2026-10-25"
 		},
 		{
 			"name": "EPL - Competition History",
@@ -144,7 +626,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-04-05"
+			"lastUpdated": "2026-10-25"
 		},
 		{
 			"name": "EPL - Season x Season Record",
@@ -153,7 +635,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-21"
+			"lastUpdated": "2026-10-25"
 		},
 		{
 			"name": "World Cup 2026",
