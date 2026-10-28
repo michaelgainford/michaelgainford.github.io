@@ -70,7 +70,7 @@ export default function Page_EnglishPremierLeague () {
 				<div className={globalWrapperFixedWidth}>
 					<H1 
 					  text="The Premier League"
-					  font_sizes="text-base lg:text-[24px]!"
+					  font_sizes="text-base lg:text-2xl!"
 					  other_classes="uppercase" 
 					/>
 					<PageIntro 

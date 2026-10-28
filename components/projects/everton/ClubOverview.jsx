@@ -43,7 +43,7 @@ export default function Component_ClubOverview() {
 				<ul className={`grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-12 *:flex *:flex-col`}>
 					{team_headings_and_info.map((team_heading_and_info) => (
 					<li key={team_heading_and_info.label}>
-						<span className={`text-xxs uppercase tracking-[0.16em] text-blue-300/80`}>{team_heading_and_info.label}</span>
+						<span className={`text-xxs uppercase tracking-em-16 text-blue-300/80`}>{team_heading_and_info.label}</span>
 						<span className={`mt-2 text-lg font-semibold text-blue-100 lg:text-2xl`}>{team_heading_and_info.value}</span>
 					</li>
 					))}
@@ -55,7 +55,7 @@ export default function Component_ClubOverview() {
 				<div className={`grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6`}>
 					{clubStats.map((stat) => (
 						<div key={stat.label} className={`rounded-lg border border-blue-400/20 bg-blue-950/60 p-4 text-center`}>
-							<p className={`text-xxs uppercase tracking-[0.16em] text-blue-300/80`}>{stat.label}</p>
+							<p className={`text-xxs uppercase tracking-em-16 text-blue-300/80`}>{stat.label}</p>
 							<p className={`mt-2 text-2xl font-bold text-cyan-300`}>{stat.value}</p>
 						</div>
 					))}

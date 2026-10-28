@@ -18,11 +18,11 @@ const pageIntroText =
 export default function Page_DevResources() {
 	return (
 		<div className={`${globalPageStyles} ${customStyles}`}>
-			<div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(45,212,191,0.18),transparent_70%)]" />
+			<div className="pointer-events-none absolute inset-x-0 top-0 h-105 bg-[radial-gradient(ellipse_at_top,rgba(45,212,191,0.18),transparent_70%)]" />
 			<Header />
 			<main className={globalWrapperFixedWidth}>
-				<section className="w-full max-w-[1800px] rounded-2xl border border-teal-400/20 bg-black/35 p-4 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-6 lg:p-8">
-					<div className="mx-auto mb-4 w-fit rounded-full border border-teal-300/40 bg-black/60 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-teal-200">
+				<section className="w-full max-w-450 rounded-2xl border border-teal-400/20 bg-black/35 p-4 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-6 lg:p-8">
+					<div className="mx-auto mb-4 w-fit rounded-full border border-teal-300/40 bg-black/60 px-4 py-1 text-xxs uppercase tracking-em-24 text-teal-200">
 						Developer Toolkit
 					</div>
 					<H1 
@@ -33,7 +33,7 @@ export default function Page_DevResources() {
 						text={pageIntroText}
 						text_colour="font-current"
 						font_sizes="text-xs/5 md:text-sm/6 lg:text-base/7 !xl:text-base/6"
-						classes_other="max-w-[900px]! text-balance! text-center!"
+						classes_other="max-w-225! text-balance! text-center!"
 					/>
 					<DevResourcesGrid />
 				</section>

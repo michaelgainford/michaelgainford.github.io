@@ -20,7 +20,7 @@ export default function Page_Wishlist() {
 				  classes_text_alignment={`text-center! text-balance!`}
 				  classes_font_sizes={`text-xs/5 md:text-sm/6 lg:text-base/6`}
 				  classes_font_styling={`font-medium tracking-wider`}
-				  classes_width={`max-[80dvw] lg:max-w-[800px]!`}
+				  classes_width={`max-[80dvw] lg:max-w-200!`}
 				  classes_margin={`!md:-mt-4 mb-12`}
 				  classes_other={``}
 				/>

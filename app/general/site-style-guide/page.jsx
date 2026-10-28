@@ -16,7 +16,7 @@ export default function Page_SiteStyleGuide() {
 		<div className={`${globalPageStyles} ${brandPageBackground} ${brandTextColour}`}>
 			<Header />
 			<main className={`${globalWrapperFixedWidth}`}>
-				<div className="flex w-full justify-center text-center max-w-[1800px]">
+				<div className="flex w-full justify-center text-center max-w-450">
 					<div className="flex flex-col w-full gap-8 xl:gap-y-16 3xl:gap-24 max-lg:mt-8 @container">
 						<H1_Span text="Site Style Guide" className={`${sharedHeadingStyles} group-hover/about:border-amber-500/80`} />
 						<StyleGuideInfo />

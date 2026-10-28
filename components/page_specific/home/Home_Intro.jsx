@@ -40,21 +40,21 @@ const statItems = [
 ];
 
 const primaryLinkStyles =
-	"inline-flex items-center justify-center rounded-sm border border-amber-500/40 bg-amber-500 px-5 py-3 text-[11px] tracking-[0.18em] text-slate-950 transition duration-300 hover:-translate-y-1 hover:bg-amber-400 sm:px-6 sm:text-xs sm:tracking-[0.24em] lg:text-sm";
+	"inline-flex items-center justify-center rounded-sm border border-amber-500/40 bg-amber-500 px-5 py-3 text-xxs-plus tracking-em-18 text-slate-950 transition duration-300 hover:-translate-y-1 hover:bg-amber-400 sm:px-6 sm:text-xs sm:tracking-em-24 lg:text-sm";
 const secondaryLinkStyles =
-	"inline-flex items-center justify-center rounded-sm border border-slate-700 bg-slate-900/70 px-5 py-3 text-[11px] tracking-[0.18em] text-slate-100 transition duration-300 hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-800 sm:px-6 sm:text-xs sm:tracking-[0.24em] lg:text-sm";
+	"inline-flex items-center justify-center rounded-sm border border-slate-700 bg-slate-900/70 px-5 py-3 text-xxs-plus tracking-em-18 text-slate-100 transition duration-300 hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-800 sm:px-6 sm:text-xs sm:tracking-em-24 lg:text-sm";
 
 export default function Component_HomePageIntro() {
 	return (
 		<section className="relative w-full pt-10 pb-10 lg:pt-14 lg:pb-14 xl:pt-16 xl:pb-16">
-			<div className="absolute inset-x-0 top-4 -z-10 h-48 rounded-[2rem] bg-linear-to-r from-amber-500/10 via-transparent to-sky-500/10 blur-3xl" />
+			<div className="absolute inset-x-0 top-4 -z-10 h-48 rounded-4xl bg-linear-to-r from-amber-500/10 via-transparent to-sky-500/10 blur-3xl" />
 			<div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(320px,0.9fr)] xl:gap-8">
-				<div className="relative overflow-hidden rounded-xl border border-slate-800 bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 p-5 sm:rounded-[1.5rem] sm:p-8 xl:p-10">
+				<div className="relative overflow-hidden rounded-xl border border-slate-800 bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 p-5 sm:rounded-3xl sm:p-8 xl:p-10">
 					<div className="absolute -top-8 right-0 h-32 w-32 rounded-full bg-amber-500/10 blur-3xl" />
 					<div className="absolute bottom-0 left-8 h-24 w-24 rounded-full bg-sky-500/10 blur-3xl" />
 					<div className="relative flex h-full flex-col justify-between gap-8">
 						<div className="space-y-5">
-						<p className="text-[10px] uppercase tracking-[0.18em] text-amber-400 sm:text-xs sm:tracking-[0.35em]">
+						<p className="text-xxs uppercase tracking-em-18 text-amber-400 sm:text-xs sm:tracking-em-35">
 								{timeBasedGreeting()} and welcome
 							</p>
 							<div className="space-y-4">
@@ -82,14 +82,14 @@ export default function Component_HomePageIntro() {
 
 				<div className="grid gap-4 grid-cols-1 lg:grid-cols-1">
 					<div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 sm:rounded-[1.25rem] sm:p-6">
-					<p className="text-[10px] uppercase tracking-[0.18em] text-slate-500 sm:text-xs sm:tracking-[0.35em]">
+					<p className="text-xxs uppercase tracking-em-18 text-slate-500 sm:text-xs sm:tracking-em-35">
 						Site Snapshot
 					</p>
 					<div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-1">
 						{statItems.map((item, index) => (
 							<div key={item.label} className={`rounded-lg border border-slate-800 bg-slate-900/80 p-3 sm:rounded-xl sm:p-4 ${index === 2 ? 'hidden sm:block' : ''}`}>
 								<p className="text-2xl text-slate-100 sm:text-3xl">{item.value}</p>
-								<p className="mt-1 text-[9px] uppercase tracking-[0.12em] text-slate-500 sm:text-xs sm:tracking-[0.2em]">
+								<p className="mt-1 text-micro uppercase tracking-em-12 text-slate-500 sm:text-xs sm:tracking-em-20">
 									{item.label}
 								</p>
 							</div>
@@ -97,8 +97,8 @@ export default function Component_HomePageIntro() {
 					</div>
 					</div>
 
-					<div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 sm:rounded-[1.25rem] sm:p-6 lg:min-h-[220px]">
-					<p className="text-[10px] uppercase tracking-[0.18em] text-slate-500 sm:text-xs sm:tracking-[0.35em]">
+					<div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 sm:rounded-[1.25rem] sm:p-6 lg:min-h-55">
+					<p className="text-xxs uppercase tracking-em-18 text-slate-500 sm:text-xs sm:tracking-em-35">
 						What You Can Expect
 					</p>
 					<div className="mt-4 space-y-4 text-xs leading-6 tracking-normal text-slate-400 sm:text-sm sm:leading-7 sm:tracking-wide">

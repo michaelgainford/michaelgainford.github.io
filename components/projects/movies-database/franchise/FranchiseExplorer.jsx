@@ -65,13 +65,13 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
   return (
     <section className={`rounded-2xl border ${styles.border} ${styles.bg} p-4 lg:p-6`}>
       <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-        <h3 className={`text-base uppercase tracking-[0.16em] lg:text-lg ${styles.heading}`}>Franchise Explorer</h3>
+        <h3 className={`text-base uppercase tracking-em-16 lg:text-lg ${styles.heading}`}>Franchise Explorer</h3>
         <input
           type="text"
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
           placeholder="Search current tab"
-          className={`w-full rounded-md border border-slate-800/80 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 outline-none transition-all md:w-[260px] ${styles.inputBorder}`}
+          className={`w-full rounded-md border border-slate-800/80 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 outline-none transition-all md:w-65 ${styles.inputBorder}`}
         />
       </div>
 
@@ -84,7 +84,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
               setActiveTab(key);
               setSearchTerm("");
             }}
-            className={`rounded-full border px-4 py-2 text-xxs uppercase tracking-[0.14em] transition-all ${
+            className={`rounded-full border px-4 py-2 text-xxs uppercase tracking-em-14 transition-all ${
               activeTab === key ? styles.activeTab : styles.inactiveTab
             }`}
           >
@@ -98,7 +98,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
           if (activeTab === "films") {
             return (
               <article key={`${item.title}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
-                <p className={`text-sm uppercase tracking-[0.12em] ${styles.cardHeading}`}>{item.title}</p>
+                <p className={`text-sm uppercase tracking-em-12 ${styles.cardHeading}`}>{item.title}</p>
                 <p className="mt-1 text-xs text-slate-300">{item.year} • {item.status}</p>
                 <p className="mt-2 text-sm text-slate-200">{item.hook}</p>
               </article>
@@ -108,7 +108,7 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
           if (activeTab === "cast") {
             return (
               <article key={`${item.name}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
-                <p className={`text-sm uppercase tracking-[0.12em] ${styles.cardHeading}`}>{item.name}</p>
+                <p className={`text-sm uppercase tracking-em-12 ${styles.cardHeading}`}>{item.name}</p>
                 <p className={`mt-1 text-xs ${styles.accentText}`}>as {item.role}</p>
                 <p className="mt-2 text-sm text-slate-200">{item.reason}</p>
               </article>
@@ -119,14 +119,14 @@ export default function FranchiseExplorer({ films, cast, quotes, scenes, theme }
             return (
               <article key={`${item.line}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
                 <q className="text-sm text-slate-100">{item.line}</q>
-                <p className={`mt-2 text-xs uppercase tracking-[0.12em] ${styles.accentText}`}>{item.character}</p>
+                <p className={`mt-2 text-xs uppercase tracking-em-12 ${styles.accentText}`}>{item.character}</p>
               </article>
             );
           }
 
           return (
             <article key={`${item.name}-${index}`} className={`rounded-lg border ${styles.cardBorder} bg-slate-950/55 p-4`}>
-              <p className={`text-sm uppercase tracking-[0.12em] ${styles.cardHeading}`}>{item.name}</p>
+              <p className={`text-sm uppercase tracking-em-12 ${styles.cardHeading}`}>{item.name}</p>
               <p className="mt-2 text-sm text-slate-200">{item.impact}</p>
             </article>
           );

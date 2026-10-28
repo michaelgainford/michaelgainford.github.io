@@ -92,7 +92,7 @@ export default function Page_EnglishPremierLeague100Club() {
 				<div className={`${globalWrapperFixedWidth} space-y-6`}>
 					<H1
 						text="The 100 Club"
-						font_sizes="text-base lg:text-[24px]!"
+						font_sizes="text-base lg:text-2xl!"
 						other_classes="uppercase"
 					/>
 					<PageIntro
@@ -113,7 +113,7 @@ export default function Page_EnglishPremierLeague100Club() {
 								className="rounded-xl border border-epl-300/25 bg-white p-4 text-center sm:p-5"
 								key={stat.label}
 							>
-								<p className="text-[10px] uppercase tracking-[0.28em] text-epl-500/70">
+								<p className="text-xxs uppercase tracking-em-28 text-epl-500/70">
 									{stat.label}
 								</p>
 								<p className="mt-2 text-2xl font-bold text-epl lg:text-3xl">{stat.value}</p>
@@ -123,12 +123,12 @@ export default function Page_EnglishPremierLeague100Club() {
 					</div>
 				</div>
 				<div
-					className={`${globalWrapperFixedWidth} min-h-[300px] flex flex-col gap-4 lg:gap-8 xl:gap-12 mt-4 lg:mt-6`}
+					className={`${globalWrapperFixedWidth} min-h-75 flex flex-col gap-4 lg:gap-8 xl:gap-12 mt-4 lg:mt-6`}
 				>
 					<Prem100ClubScorerGrid />
 				</div>
 				<div className={`${globalWrapperFixedWidth} mt-2 pb-2`}>
-					<p className="text-center text-[10px] uppercase tracking-[0.1em] text-epl-400/70 italic">
+					<p className="text-center text-xxs uppercase tracking-widest text-epl-400/70 italic">
 						* Correct as of {lastUpdatedFormatted}
 					</p>
 				</div>

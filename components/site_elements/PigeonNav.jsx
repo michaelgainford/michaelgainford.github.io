@@ -4,7 +4,7 @@ const adminLinkStyles =
 
 export default function Component_PigeonNav() {
 	return (
-		<div className="min-w-[300px] lg:w-full">
+		<div className="min-w-75 lg:w-full">
 			<h1 className="mb-8 font-bold lg:mb-12 2xl:mb-16 text-lg: xl:text-4xl underline-offset-8">
 				Admin
 			</h1>

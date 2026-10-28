@@ -12,9 +12,9 @@ const subSectionHeadingStyles = "border-2 px-4 py-3 mb-8 text-slate-900 uppercas
 
 {/* Styles - Snap */}
 const snapContainerStyles = "snap-x snap-mandatory overflow-x-auto overflow-y-auto no-scrollbar w-full flex gap-4 md:gap-8";
-const snapSlideStyles = "flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:aspect-1000/563! lg:hover:opacity-100 xl:min-w-[480px] max-w-[540px] snap-always snap-start cursor-pointer overflow-hidden";
-const snapSlideImageStyles = "relative inset-0 z-0 w-full h-full object-fit z-1 max-w-[80dvw] xl:max-w-[500px]";
-const snapSlideImageOverlayStyles = "absolute translate-y-32 bottom-0 w-full bg-black/80 z-10 w-full xl:h-[120px] mt-auto duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 hidden group-hover/season:block transition w-full flex! items-center justify-center group-hover/season:bottom-0 transform group-hover/season:translate-y-0 z-0 text-slate-300 text-xxs lg:text-sm py-2 text-center group-hover/season:opacity-100 flex-col";
+const snapSlideStyles = "flex flex-col border-2 justify-start object-cover aspect-3/2 relative transition group/season duration-300 min-w-[80dvw] sm:min-w-[70dvw] md:aspect-1000/563! lg:hover:opacity-100 xl:min-w-120 max-w-135 snap-always snap-start cursor-pointer overflow-hidden";
+const snapSlideImageStyles = "relative inset-0 z-0 w-full h-full object-fit z-1 max-w-[80dvw] xl:max-w-125";
+const snapSlideImageOverlayStyles = "absolute translate-y-32 bottom-0 w-full bg-black/80 z-10 w-full xl:h-30 mt-auto duration-300 bg-black bg-opacity-0 lg:bg-opacity-60 hidden group-hover/season:block transition w-full flex! items-center justify-center group-hover/season:bottom-0 transform group-hover/season:translate-y-0 z-0 text-slate-300 text-xxs lg:text-sm py-2 text-center group-hover/season:opacity-100 flex-col";
 
 export default function Component_ForniteChapters() {
 	const [visibleButtons, setVisibleButtons] = React.useState({});
@@ -104,13 +104,13 @@ export default function Component_ForniteChapters() {
 					</div>
 				)}
 				<div className="w-full flex flex-col md:flex-row">
-					<div className="min-w-[150px] max-w-[150px] flex flex-col justify-center text-center md:mr-4">
+					<div className="min-w-37.5 max-w-37.5 flex flex-col justify-center text-center md:mr-4">
 						<div className=" flex flex-col items-start md:items-center md:gap-4">
 							<h3 className="uppercase text-sm/4 flex flex-row md:flex-col md:tracking-widest font-bold max-md:gap-1">
 								<span>Chapter</span>
 								<span className="text-sm/4 md:text-4xl">{ chapter.chapter }</span>
 							</h3>
-							<div className="text-[10px]">
+							<div className="text-xxs">
 								({new Date(chapter.seasons[0].start_date).toLocaleDateString('en-GB')} to {new Date(chapter.seasons[chapter.seasons.length - 1].end_date).toLocaleDateString('en-GB')})
 							</div>
 						</div>

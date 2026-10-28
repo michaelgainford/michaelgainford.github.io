@@ -5,7 +5,7 @@ import { featuredProjects } from "@/variables/Data";
 
 export default function Component_FeaturedProjects() {
 	return (
-		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 projects-list sm:rounded-[1.5rem] sm:p-5 lg:p-6">
+		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 projects-list sm:rounded-3xl sm:p-5 lg:p-6">
 			<H2SectionHeader text={`Featured Dev Projects`} />
 			{/* Featured Projects Grid */}
 			<div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 xl:gap-6">
@@ -21,7 +21,7 @@ export default function Component_FeaturedProjects() {
 								classes="h-8 w-auto fill-slate-300 transition duration-300 group-hover:fill-slate-100 sm:h-11 md:h-14 2xl:h-16 3xl:h-20"
 							/>
 						</span>
-						<span className="text-[10px] tracking-[0.12em] text-slate-300 transition duration-300 group-hover:text-slate-100 sm:text-xs sm:tracking-[0.18em] md:text-sm 2xl:text-base">
+						<span className="text-xxs tracking-em-12 text-slate-300 transition duration-300 group-hover:text-slate-100 sm:text-xs sm:tracking-em-18 md:text-sm 2xl:text-base">
 							{project.name}
 						</span>
 					</Link>
