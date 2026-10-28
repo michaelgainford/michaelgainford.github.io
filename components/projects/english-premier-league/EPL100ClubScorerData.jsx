@@ -69,7 +69,7 @@ export default function Component_EPL100ClubScorerData() {
 			<div className="flex w-full flex-col gap-4 rounded-2xl border border-epl-300/25 bg-white p-4 sm:p-5">
 				<div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
 					<div>
-						<p className="text-[10px] uppercase tracking-[0.28em] text-epl-500/70">
+						<p className="text-xxs uppercase tracking-em-28 text-epl-500/70">
 							Browse Players
 						</p>
 						<p className="mt-2 text-sm text-epl-500/80 sm:text-base">
@@ -82,7 +82,7 @@ export default function Component_EPL100ClubScorerData() {
 				</div>
 
 				<div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-					<label className="flex flex-col gap-2 text-[10px] uppercase tracking-[0.24em] text-slate-500">
+					<label className="flex flex-col gap-2 text-xxs uppercase tracking-em-24 text-slate-500">
 						Search
 						<input
 							className="h-11 rounded-lg border border-slate-300 bg-white px-3 text-sm tracking-wide text-slate-700 outline-none transition duration-300 focus:border-slate-500 focus:ring-1 focus:ring-slate-500"
@@ -93,7 +93,7 @@ export default function Component_EPL100ClubScorerData() {
 						/>
 					</label>
 
-					<label className="flex flex-col gap-2 text-[10px] uppercase tracking-[0.24em] text-slate-500">
+					<label className="flex flex-col gap-2 text-xxs uppercase tracking-em-24 text-slate-500">
 						Status
 						<select
 							className="h-11 rounded-lg border border-slate-300 bg-white px-3 text-sm tracking-wide text-slate-700 outline-none transition duration-300 focus:border-slate-500 focus:ring-1 focus:ring-slate-500"
@@ -106,7 +106,7 @@ export default function Component_EPL100ClubScorerData() {
 						</select>
 					</label>
 
-					<label className="flex flex-col gap-2 text-[10px] uppercase tracking-[0.24em] text-slate-500">
+					<label className="flex flex-col gap-2 text-xxs uppercase tracking-em-24 text-slate-500">
 						Sort By
 						<select
 							className="h-11 rounded-lg border border-slate-300 bg-white px-3 text-sm tracking-wide text-slate-700 outline-none transition duration-300 focus:border-slate-500 focus:ring-1 focus:ring-slate-500"
@@ -139,7 +139,7 @@ export default function Component_EPL100ClubScorerData() {
 										{index + 1}
 									</span>
 									<span
-										className={`rounded-md px-2 py-1 text-[10px] uppercase tracking-[0.2em] ${topScorer.playerCurrent ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-500"}`}
+										className={`rounded-md px-2 py-1 text-xxs uppercase tracking-em-20 ${topScorer.playerCurrent ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-500"}`}
 									>
 										{topScorer.playerCurrent ? "Active" : "Retired"}
 									</span>
@@ -151,7 +151,7 @@ export default function Component_EPL100ClubScorerData() {
 
 								<div className="relative h-full overflow-hidden rounded-lg border border-epl-200/60 bg-slate-50">
 									<Image
-										className="object-cover transition duration-500 group-hover:scale-[1.02]"
+										className="object-cover transition duration-500 group-hover:scale-102"
 										src={playerImage}
 										alt={topScorer.playerName}
 										fill
@@ -162,21 +162,21 @@ export default function Component_EPL100ClubScorerData() {
 
 							<div className="mt-4 grid grid-cols-3 gap-2 rounded-lg border border-slate-200 bg-slate-50 p-3 text-center">
 								<div>
-									<p className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Goals</p>
+									<p className="text-xxs uppercase tracking-em-20 text-slate-500">Goals</p>
 									<p className="mt-1 text-xl font-bold text-epl">{topScorer.playerGoals}</p>
 								</div>
 								<div>
-									<p className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Apps</p>
+									<p className="text-xxs uppercase tracking-em-20 text-slate-500">Apps</p>
 									<p className="mt-1 text-xl font-bold text-epl">{topScorer.playerApps}</p>
 								</div>
 								<div>
-									<p className="text-[10px] uppercase tracking-[0.2em] text-slate-500">G/App</p>
+									<p className="text-xxs uppercase tracking-em-20 text-slate-500">G/App</p>
 									<p className="mt-1 text-xl font-bold text-epl">{goalsPerGame}</p>
 								</div>
 							</div>
 
 							<details className="mt-4 rounded-lg border border-slate-200 bg-slate-50/60 p-3 group/details">
-								<summary className="flex cursor-pointer list-none items-center justify-between text-[11px] uppercase tracking-[0.2em] text-slate-600">
+								<summary className="flex cursor-pointer list-none items-center justify-between text-xxs-plus uppercase tracking-em-20 text-slate-600">
 									<span>Clubs And Last Goal</span>
 									<span aria-hidden="true" className="flex h-5 w-5 shrink-0 items-center justify-center text-slate-500 transition-transform duration-300 group-open/details:rotate-180">
 										<span className="h-2 w-2 rotate-45 border-r-2 border-b-2 border-current" />

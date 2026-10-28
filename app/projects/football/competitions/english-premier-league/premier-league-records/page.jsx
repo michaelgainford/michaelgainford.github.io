@@ -59,7 +59,7 @@ export default function Page_PremierLeagueRecords() {
 				<div className={`${globalWrapperFixedWidth} space-y-6`}>
 					<H1
 						text="Premier League Records"
-						font_sizes="text-base lg:text-[24px]!"
+						font_sizes="text-base lg:text-2xl!"
 						other_classes="uppercase"
 					/>
 					<PageIntro
@@ -76,14 +76,14 @@ export default function Page_PremierLeagueRecords() {
 								key={group.heading}
 								className="rounded-xl border border-epl-300/25 bg-white p-4 sm:p-5"
 							>
-								<h2 className="text-xs uppercase tracking-[0.24em] text-epl-500/80">{group.heading}</h2>
+								<h2 className="text-xs uppercase tracking-em-24 text-epl-500/80">{group.heading}</h2>
 								<div className="mt-4 space-y-3">
 									{group.records.map((record) => (
 										<div
 											key={`${group.heading}-${record.label}`}
 											className="rounded-lg border border-slate-200 bg-slate-50 p-3"
 										>
-											<p className="text-[11px] uppercase tracking-[0.18em] text-slate-500">{record.label}</p>
+											<p className="text-xxs-plus uppercase tracking-em-18 text-slate-500">{record.label}</p>
 											<p className="mt-1 text-xl font-bold text-epl">{record.value}</p>
 											<p className="mt-1 text-sm text-epl-500/80">{record.holder}</p>
 										</div>
@@ -99,7 +99,7 @@ export default function Page_PremierLeagueRecords() {
 						</p>
 						<Link
 							href="/projects/football/competitions/english-premier-league"
-							className="mt-3 inline-flex rounded-md border border-epl-400/40 bg-white px-3 py-2 text-xs uppercase tracking-[0.2em] text-epl transition duration-300 hover:border-epl hover:bg-epl hover:text-white"
+							className="mt-3 inline-flex rounded-md border border-epl-400/40 bg-white px-3 py-2 text-xs uppercase tracking-em-20 text-epl transition duration-300 hover:border-epl hover:bg-epl hover:text-white"
 						>
 							Back To Premier League Hub
 						</Link>

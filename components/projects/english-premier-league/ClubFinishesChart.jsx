@@ -43,12 +43,12 @@ export default function ClubFinishesChart({ seasons, clubName }) {
 					viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
 					role="img"
 					aria-label={`Line graph of ${clubName}'s Premier League finishes by season, with 1st at the top`}
-					className="h-auto w-full min-w-[640px]"
+					className="h-auto w-full min-w-160"
 				>
 					{yTicks.map((tick) => (
 						<g key={tick}>
 							<line x1={MARGIN.left} x2={WIDTH - MARGIN.right} y1={yFor(tick)} y2={yFor(tick)} className="stroke-slate-200" strokeWidth="1" />
-							<text x={MARGIN.left - 8} y={yFor(tick)} textAnchor="end" dominantBaseline="middle" className="fill-slate-500 text-[11px]">
+							<text x={MARGIN.left - 8} y={yFor(tick)} textAnchor="end" dominantBaseline="middle" className="fill-slate-500 text-xxs-plus">
 								{tick}
 							</text>
 						</g>
@@ -60,7 +60,7 @@ export default function ClubFinishesChart({ seasons, clubName }) {
 							y={HEIGHT - MARGIN.bottom + 14}
 							textAnchor="end"
 							transform={`rotate(-60 ${xFor(index)} ${HEIGHT - MARGIN.bottom + 14})`}
-							className="fill-slate-500 text-[10px]"
+							className="fill-slate-500 text-xxs"
 						>
 							{finish.year}
 						</text>

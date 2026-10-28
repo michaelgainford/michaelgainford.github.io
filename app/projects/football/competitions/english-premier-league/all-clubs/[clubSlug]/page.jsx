@@ -216,7 +216,7 @@ export default async function ClubPage({ params }) {
 			<Header />
 			<main className="w-full text-epl">
 				<PremierLeagueBreadcrumbs trail={[{ label: "All Clubs", href: `${premierLeagueHubUrl}/all-clubs` }]} current={club.teamName} />
-				<div className="mx-auto w-full max-w-[1320px] px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+				<div className="mx-auto w-full max-w-330 px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
 					<div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden mb-8">
 						<div className="h-1.5 w-full bg-gradient-to-r from-epl-500 via-amber-400 to-teal-400" />
 						<div className="flex flex-col items-center px-6 py-8 text-center">

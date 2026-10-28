@@ -90,11 +90,11 @@ export default function Component_CountriesGrid() {
 	};
 
 	return (
-		<div className="w-full max-w-[1800px] space-y-6 lg:space-y-8">
+		<div className="w-full max-w-450 space-y-6 lg:space-y-8">
 			<div className="sticky top-2 z-20 space-y-4 rounded-xl border border-white/20 bg-slate-950/85 p-4 shadow-xl backdrop-blur-md lg:p-6">
 				<div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
 					<label className="flex flex-col gap-1">
-						<span className="text-xxs uppercase tracking-[0.16em] text-sky-200/90">Search</span>
+						<span className="text-xxs uppercase tracking-em-16 text-sky-200/90">Search</span>
 						<input
 							type="text"
 							value={searchTerm}
@@ -104,7 +104,7 @@ export default function Component_CountriesGrid() {
 						/>
 					</label>
 					<label className="flex flex-col gap-1">
-						<span className="text-xxs uppercase tracking-[0.16em] text-sky-200/90">Continent</span>
+						<span className="text-xxs uppercase tracking-em-16 text-sky-200/90">Continent</span>
 						<select
 							value={selectedContinent}
 							onChange={(event) => setSelectedContinent(event.target.value)}
@@ -118,7 +118,7 @@ export default function Component_CountriesGrid() {
 						</select>
 					</label>
 					<label className="flex flex-col gap-1">
-						<span className="text-xxs uppercase tracking-[0.16em] text-sky-200/90">Sort</span>
+						<span className="text-xxs uppercase tracking-em-16 text-sky-200/90">Sort</span>
 						<select
 							value={sortBy}
 							onChange={(event) => setSortBy(event.target.value)}
@@ -130,7 +130,7 @@ export default function Component_CountriesGrid() {
 						</select>
 					</label>
 					<div className="flex flex-col gap-1">
-						<span className="text-xxs uppercase tracking-[0.16em] text-sky-200/90">View</span>
+						<span className="text-xxs uppercase tracking-em-16 text-sky-200/90">View</span>
 						<div className="grid grid-cols-2 gap-2">
 							<button
 								type="button"
@@ -196,7 +196,7 @@ export default function Component_CountriesGrid() {
 
 				<div className="rounded-md border border-amber-200/25 bg-amber-500/10 p-3">
 					<div className="flex flex-wrap items-center justify-between gap-2">
-						<p className="text-xxs uppercase tracking-[0.16em] text-amber-100/90">
+						<p className="text-xxs uppercase tracking-em-16 text-amber-100/90">
 							Compare Mode: {selectedCountries.length}/3 selected
 						</p>
 						<button
@@ -215,7 +215,7 @@ export default function Component_CountriesGrid() {
 
 			{selectedCountryObjects.length > 0 && (
 				<section className="rounded-xl border border-amber-200/30 bg-slate-950/85 p-4 shadow-xl lg:sticky lg:top-28 lg:z-10 lg:p-6">
-					<h3 className="mb-4 text-sm uppercase tracking-[0.16em] text-amber-100">
+					<h3 className="mb-4 text-sm uppercase tracking-em-16 text-amber-100">
 						Country Compare
 					</h3>
 					<div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -263,10 +263,10 @@ export default function Component_CountriesGrid() {
 									loading={index > 60 ? "lazy" : "eager"}
 								/>
 								<div className="min-w-0">
-									<h3 className="truncate text-sm font-semibold uppercase tracking-wide text-slate-100 lg:text-[15px]">
+									<h3 className="truncate text-sm font-semibold uppercase tracking-wide text-slate-100 lg:text-sm-plus">
 										{country.country_name}
 									</h3>
-									<p className="truncate text-xxs uppercase tracking-[0.14em] text-sky-200/85">
+									<p className="truncate text-xxs uppercase tracking-em-14 text-sky-200/85">
 										{country.country_continent}
 									</p>
 								</div>

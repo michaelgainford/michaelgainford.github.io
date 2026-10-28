@@ -4,8 +4,8 @@ const DataForSpace = DataForSpaceJSON.SunAndPlanets;
 export default function Component_SolarSystem() {
 	return (
 		<div className="w-full">
-			<div className="mx-auto mb-6 max-w-[900px] text-center">
-				<h3 className="text-sm lg:text-lg font-semibold uppercase tracking-[0.18em] text-sky-200">Orbital View</h3>
+			<div className="mx-auto mb-6 max-w-225 text-center">
+				<h3 className="text-sm lg:text-lg font-semibold uppercase tracking-em-18 text-sky-200">Orbital View</h3>
 				<p className="mt-2 text-xs lg:text-sm text-slate-300/90">
 					A simplified visual of our solar system to show the relative orbit order from Mercury to Neptune.
 				</p>

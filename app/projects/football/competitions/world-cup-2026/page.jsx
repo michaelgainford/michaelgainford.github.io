@@ -35,7 +35,7 @@ export default function Page_WorldCup2026() {
 				<section className="mb-8 rounded-2xl border border-white/15 bg-gradient-to-r from-cyan-400/20 via-sky-400/15 to-indigo-500/15 p-6 lg:p-8 shadow-2xl shadow-sky-950/30">
 					<div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-center">
 						<div className="lg:col-span-2">
-							<h2 className="text-lg font-semibold uppercase tracking-[0.2em] text-cyan-100">Tournament Hub</h2>
+							<h2 className="text-lg font-semibold uppercase tracking-em-20 text-cyan-100">Tournament Hub</h2>
 							<p className="mt-3 max-w-3xl text-sm/6 text-slate-100/90 lg:text-base/7">World Cup 2026 expands to 48 teams across 12 groups. This page currently shows confirmed hosts plus qualifier placeholders so your content model is ready before the final draw.</p>
 						</div>
 						<div className="flex flex-wrap gap-2 lg:justify-end">
@@ -62,7 +62,7 @@ export default function Page_WorldCup2026() {
 					classes_text_alignment="text-center"
 					classes_font_sizes="text-xs/5 lg:text-sm/6"
 					classes_font_styling="font-medium tracking-wider"
-					classes_width="max-w-[900px]"
+					classes_width="max-w-225"
 					classes_margin="mb-12"
 				/>
 				<WorldCup2026TournamentInfo />
