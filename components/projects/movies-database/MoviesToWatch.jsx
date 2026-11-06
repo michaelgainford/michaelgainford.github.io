@@ -63,10 +63,10 @@ export default function Component_MoviesToWatch() {
 	return (
 		<section className="w-full py-4 my-8 border rounded-xl xl:py-8 border-slate-800/80 bg-slate-950/70 xl:my-16 px-4 lg:px-6" id="to-watch">
 		<div className="mb-5 flex items-center justify-between gap-4">
-			<h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200 lg:text-base">To Watch</h2>
+			<h2 className="text-sm font-semibold uppercase tracking-em-18 text-slate-200 lg:text-base">To Watch</h2>
 			<span className="text-xxs uppercase tracking-wider rounded-md border border-slate-700/80 bg-slate-900/70 px-2 py-1 text-slate-300">{unwatchedMovies.length} movies</span>
 		</div>
-		<div className="relative min-h-[100px]">
+		<div className="relative min-h-25">
 			{/* Left scroll button */}
 			<button
 				onClick={scrollLeft}
@@ -89,7 +89,7 @@ export default function Component_MoviesToWatch() {
 				</svg>
 			</button>
 
-		<div ref={scrollContainerRef} className="min-h-[100px] movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
+		<div ref={scrollContainerRef} className="min-h-25 movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
 			{unwatchedMovies.map((movie, id) => (
 			<a key={id} href={movie.imdb_url} target="_blank" rel="noreferrer" className="flex flex-col duration-300 ease-in-out cursor-pointer movie-card text-light_colour border border-slate-800/80 rounded-md bg-slate-950/80 group hover:bg-slate-900/85 snap-always snap-center shrink-0 w-36 overflow-hidden transition-all hover:border-slate-600/80">
 			<div className="w-full max-w-full movie-poster flex-shrink-0">

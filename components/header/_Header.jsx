@@ -21,7 +21,7 @@ export default function Component_Header() {
 
 	return (
 		<header className="w-full">
-			<div className="header-content w-[90%] md:w-[92%] lg:-[95%] max-w-[2000px] flex flex-row justify-between gap-1 py-6 mx-auto sm:items-center lg:gap-2">
+			<div className="header-content w-[90%] md:w-[92%] lg:-[95%] max-w-500 flex flex-row justify-between gap-1 py-6 mx-auto sm:items-center lg:gap-2">
 				<MainLogo />
 				<MainNav />
 				<div

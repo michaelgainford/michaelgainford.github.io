@@ -10,7 +10,7 @@ const daysInWarningZone = 28;
 export default function Component_TableOfSitePages() {
 	return (
 		<div className="overflow-x-auto">
-			<table className="w-full max-w-[1800px] mx-auto mt-8 mb-16 text-left text-md xl:max-w-[90dvw]">
+			<table className="w-full max-w-450 mx-auto mt-8 mb-16 text-left text-md xl:max-w-[90dvw]">
 				<thead className="text-xxs lg:text-sm">
 					<tr className="text-left border-b-4 border-slate-200/5 text-amber-500/70 [&>th]:py-2 [&>th]:text-center">
 						<th className="py-2 text-left! pl-2">Page</th>

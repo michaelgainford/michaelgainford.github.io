@@ -29,7 +29,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
           <div className={`flex justify-end`}>
             <button
               type="button"
-              className={`cursor-pointer absolute top-5 right-[17px] -mt-1.5`}
+              className={`cursor-pointer absolute top-5 right-4.25 -mt-1.5`}
               onClick={toggleVisibility}
               aria-label="Close navigation"
             >
@@ -39,7 +39,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
         </div>
         <nav className={`flex flex-col justify-start nav logo rounded-lg`}>
           <ul
-            className={`flex flex-col items-stretch max-md:overflow-auto text-[14px] md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-4 h-full`}
+            className={`flex flex-col items-stretch max-md:overflow-auto text-sm md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-4 h-full`}
           >
             {mobileNavLinks.map((link) => (
               <li
@@ -57,7 +57,7 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                 </Link>
                 {link.label === `Projects` && (
                   <ul
-                    className={`projects-sub-menu flex flex-col justify-center items-stretch max-md:overflow-auto md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-1 h-full text-[10px]`}
+                    className={`projects-sub-menu flex flex-col justify-center items-stretch max-md:overflow-auto md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-1 h-full text-xxs`}
                   >
                     {projectsLinks.map((projectLink) => (
                       <li key={projectLink.href} className={`flex`}>

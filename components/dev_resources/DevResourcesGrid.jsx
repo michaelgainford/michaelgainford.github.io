@@ -80,8 +80,8 @@ export default function Component_DevResourcesGrid() {
     <div className="w-full space-y-8 pt-4 md:pt-6 lg:pt-10">
       <section className="rounded-2xl border border-teal-400/20 bg-black/55 p-4 lg:p-6">
         <div className="mb-3 flex items-center justify-between gap-3">
-          <h2 className="text-sm uppercase tracking-[0.16em] text-teal-200 lg:text-base">Quick Launch</h2>
-          <span className="rounded-full border border-teal-400/30 bg-teal-500/10 px-3 py-1 text-xxs uppercase tracking-[0.14em] text-teal-200/90">
+          <h2 className="text-sm uppercase tracking-em-16 text-teal-200 lg:text-base">Quick Launch</h2>
+          <span className="rounded-full border border-teal-400/30 bg-teal-500/10 px-3 py-1 text-xxs uppercase tracking-em-14 text-teal-200/90">
             Featured Picks
           </span>
         </div>
@@ -95,7 +95,7 @@ export default function Component_DevResourcesGrid() {
               className="rounded-lg border border-teal-400/25 bg-teal-900/20 px-3 py-3 text-sm text-slate-100 transition-all hover:border-teal-300/45 hover:bg-teal-800/30"
             >
               <p className="font-medium">{resource.name}</p>
-              <p className="mt-1 text-xxs uppercase tracking-[0.12em] text-teal-200/80">Open Resource</p>
+              <p className="mt-1 text-xxs uppercase tracking-em-12 text-teal-200/80">Open Resource</p>
             </a>
           ))}
         </div>
@@ -104,11 +104,11 @@ export default function Component_DevResourcesGrid() {
       <section className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="rounded-2xl border border-teal-400/20 bg-linear-to-br from-teal-950/80 to-black/85 p-5 shadow-xl shadow-black/35 lg:p-6">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="text-xxs uppercase tracking-[0.18em] text-teal-200/80">Resource Explorer</p>
+            <p className="text-xxs uppercase tracking-em-18 text-teal-200/80">Resource Explorer</p>
             <button
               type="button"
               onClick={() => setFeaturedOnly((state) => !state)}
-              className={`rounded-full border px-4 py-2 text-xxs uppercase tracking-[0.14em] transition-all ${
+              className={`rounded-full border px-4 py-2 text-xxs uppercase tracking-em-14 transition-all ${
                 featuredOnly
                   ? "border-amber-300/50 bg-amber-500/15 text-amber-200"
                   : "border-teal-400/30 bg-black/50 text-teal-200 hover:border-teal-300/50"
@@ -143,7 +143,7 @@ export default function Component_DevResourcesGrid() {
             <button
               type="button"
               onClick={() => setActiveTag("all")}
-              className={`rounded-full border px-3 py-1 text-xxs uppercase tracking-[0.12em] transition-all ${
+              className={`rounded-full border px-3 py-1 text-xxs uppercase tracking-em-12 transition-all ${
                 activeTag === "all"
                   ? "border-teal-300/60 bg-teal-500/15 text-teal-100"
                   : "border-teal-500/25 bg-black/40 text-teal-200/70 hover:border-teal-300/40"
@@ -156,7 +156,7 @@ export default function Component_DevResourcesGrid() {
                 type="button"
                 key={tag}
                 onClick={() => setActiveTag(tag)}
-                className={`rounded-full border px-3 py-1 text-xxs uppercase tracking-[0.12em] transition-all ${
+                className={`rounded-full border px-3 py-1 text-xxs uppercase tracking-em-12 transition-all ${
                   activeTag === tag
                     ? "border-teal-300/60 bg-teal-500/15 text-teal-100"
                     : "border-teal-500/25 bg-black/40 text-teal-200/70 hover:border-teal-300/40"
@@ -169,22 +169,22 @@ export default function Component_DevResourcesGrid() {
         </div>
 
         <div className="rounded-2xl border border-teal-400/20 bg-black/60 p-5 shadow-xl shadow-black/35 lg:p-6">
-          <p className="text-xxs uppercase tracking-[0.18em] text-teal-200/80">At a Glance</p>
+          <p className="text-xxs uppercase tracking-em-18 text-teal-200/80">At a Glance</p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="rounded-md border border-teal-400/20 bg-black/50 p-3 text-center">
-              <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Visible</p>
+              <p className="text-xxs uppercase tracking-em-14 text-slate-400">Visible</p>
               <p className="mt-1 text-lg font-semibold text-teal-200">{filteredResources.length}</p>
             </div>
             <div className="rounded-md border border-teal-400/20 bg-black/50 p-3 text-center">
-              <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Total</p>
+              <p className="text-xxs uppercase tracking-em-14 text-slate-400">Total</p>
               <p className="mt-1 text-lg font-semibold text-teal-200">{resourcesData.length}</p>
             </div>
             <div className="rounded-md border border-teal-400/20 bg-black/50 p-3 text-center">
-              <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Featured</p>
+              <p className="text-xxs uppercase tracking-em-14 text-slate-400">Featured</p>
               <p className="mt-1 text-lg font-semibold text-amber-200">{featuredCount}</p>
             </div>
             <div className="rounded-md border border-teal-400/20 bg-black/50 p-3 text-center">
-              <p className="text-xxs uppercase tracking-[0.14em] text-slate-400">Tags</p>
+              <p className="text-xxs uppercase tracking-em-14 text-slate-400">Tags</p>
               <p className="mt-1 text-lg font-semibold text-teal-200">{allTags.length}</p>
             </div>
           </div>
@@ -197,10 +197,10 @@ export default function Component_DevResourcesGrid() {
             key={`${resource.slug}-${resource.name}-${index}`}
             className="group flex h-full flex-col overflow-hidden rounded-xl border border-teal-500/20 bg-black/45 p-4 shadow-lg shadow-black/25 transition-all duration-300 hover:-translate-y-1 hover:border-teal-300/40"
           >
-            <div className="mb-3 flex min-h-[2.25rem] items-center justify-between gap-3">
+            <div className="mb-3 flex min-h-9 items-center justify-between gap-3">
               <h3 className="text-base font-semibold text-slate-100">{resource.name}</h3>
               {resource.featured && (
-                <span className="rounded-full border border-amber-300/40 bg-amber-500/10 px-2 py-1 text-xxs uppercase tracking-[0.1em] text-amber-200">
+                <span className="rounded-full border border-amber-300/40 bg-amber-500/10 px-2 py-1 text-xxs uppercase tracking-widest text-amber-200">
                   featured
                 </span>
               )}
@@ -223,7 +223,7 @@ export default function Component_DevResourcesGrid() {
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {resource.tags.map((tag) => (
                   <span
-                    className="rounded-full border border-teal-500/25 bg-teal-500/10 px-2 py-1 text-xxs uppercase tracking-[0.1em] text-teal-200/85"
+                    className="rounded-full border border-teal-500/25 bg-teal-500/10 px-2 py-1 text-xxs uppercase tracking-widest text-teal-200/85"
                     key={tag}
                   >
                     {tag}
@@ -236,7 +236,7 @@ export default function Component_DevResourcesGrid() {
               href={resource.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-block w-full rounded-md border border-teal-400/30 bg-teal-700/70 px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.14em] text-white transition-colors duration-200 hover:bg-teal-600"
+              className="mt-5 inline-block w-full rounded-md border border-teal-400/30 bg-teal-700/70 px-4 py-2 text-center text-xs font-semibold uppercase tracking-em-14 text-white transition-colors duration-200 hover:bg-teal-600"
             >
               Visit Resource
             </a>

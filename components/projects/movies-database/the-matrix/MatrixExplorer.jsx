@@ -28,13 +28,13 @@ export default function MatrixExplorer({ trilogy, cast, quotes, scenes }) {
   return (
     <section className="rounded-2xl border border-slate-800/80 bg-slate-950/60 p-4 lg:p-6">
       <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-        <h3 className="text-base uppercase tracking-[0.16em] text-slate-200 lg:text-lg">Matrix Explorer</h3>
+        <h3 className="text-base uppercase tracking-em-16 text-slate-200 lg:text-lg">Matrix Explorer</h3>
         <input
           type="text"
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
           placeholder="Search current tab"
-          className="w-full rounded-md border border-slate-800/80 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 outline-none transition-all focus:border-slate-500 md:w-[260px]"
+          className="w-full rounded-md border border-slate-800/80 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 outline-none transition-all focus:border-slate-500 md:w-65"
         />
       </div>
 
@@ -47,7 +47,7 @@ export default function MatrixExplorer({ trilogy, cast, quotes, scenes }) {
               setActiveTab(key);
               setSearchTerm("");
             }}
-            className={`rounded-full border px-4 py-2 text-xxs uppercase tracking-[0.14em] transition-all ${
+            className={`rounded-full border px-4 py-2 text-xxs uppercase tracking-em-14 transition-all ${
               activeTab === key
                 ? "border-slate-600 bg-slate-800/80 text-slate-100"
                 : "border-slate-700 bg-slate-950/50 text-slate-300 hover:border-slate-500 hover:text-slate-100"
@@ -63,7 +63,7 @@ export default function MatrixExplorer({ trilogy, cast, quotes, scenes }) {
           if (activeTab === "trilogy") {
             return (
               <article key={`${item.title}-${index}`} className="rounded-lg border border-slate-800/80 bg-slate-950/55 p-4">
-                <p className="text-sm uppercase tracking-[0.12em] text-slate-100">{item.title}</p>
+                <p className="text-sm uppercase tracking-em-12 text-slate-100">{item.title}</p>
                 <p className="mt-1 text-xs text-slate-300">{item.year} • {item.status}</p>
                 <p className="mt-2 text-sm text-slate-200">{item.hook}</p>
               </article>
@@ -73,7 +73,7 @@ export default function MatrixExplorer({ trilogy, cast, quotes, scenes }) {
           if (activeTab === "cast") {
             return (
               <article key={`${item.name}-${index}`} className="rounded-lg border border-slate-800/80 bg-slate-950/55 p-4">
-                <p className="text-sm uppercase tracking-[0.12em] text-slate-100">{item.name}</p>
+                <p className="text-sm uppercase tracking-em-12 text-slate-100">{item.name}</p>
                 <p className="mt-1 text-xs text-slate-300">as {item.role}</p>
                 <p className="mt-2 text-sm text-slate-200">{item.reason}</p>
               </article>
@@ -84,14 +84,14 @@ export default function MatrixExplorer({ trilogy, cast, quotes, scenes }) {
             return (
               <article key={`${item.line}-${index}`} className="rounded-lg border border-slate-800/80 bg-slate-950/55 p-4">
                 <q className="text-sm text-slate-100">{item.line}</q>
-                <p className="mt-2 text-xs uppercase tracking-[0.12em] text-slate-300">{item.character}</p>
+                <p className="mt-2 text-xs uppercase tracking-em-12 text-slate-300">{item.character}</p>
               </article>
             );
           }
 
           return (
             <article key={`${item.name}-${index}`} className="rounded-lg border border-slate-800/80 bg-slate-950/55 p-4">
-              <p className="text-sm uppercase tracking-[0.12em] text-slate-100">{item.name}</p>
+              <p className="text-sm uppercase tracking-em-12 text-slate-100">{item.name}</p>
               <p className="mt-2 text-sm text-slate-200">{item.impact}</p>
             </article>
           );

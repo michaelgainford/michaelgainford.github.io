@@ -61,13 +61,13 @@ export default function Component_PlayersGrid() {
 			<div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_0.8fr]">
 				<div className="rounded-2xl border border-blue-400/20 bg-linear-to-br from-blue-950/90 to-black/90 p-5 shadow-xl shadow-black/30 lg:p-8">
 					<div className="mb-4 flex items-center justify-between">
-						<span className="rounded-full border border-blue-400/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-[0.2em] text-blue-200">
+						<span className="rounded-full border border-blue-400/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-em-20 text-blue-200">
 							Featured Player
 						</span>
 						<button
 							type="button"
 							onClick={handleNextFeatured}
-							className="rounded-full border border-blue-400/30 bg-black/40 px-4 py-2 text-xxs uppercase tracking-[0.16em] text-blue-100 transition-all hover:border-cyan-400/50 hover:text-cyan-200"
+							className="rounded-full border border-blue-400/30 bg-black/40 px-4 py-2 text-xxs uppercase tracking-em-16 text-blue-100 transition-all hover:border-cyan-400/50 hover:text-cyan-200"
 						>
 							Next
 						</button>
@@ -86,13 +86,13 @@ export default function Component_PlayersGrid() {
 					</div>
 					<h3 className="text-2xl font-semibold text-blue-50 lg:text-3xl">{featuredPlayer.name}</h3>
 					<div className="mt-3 space-y-2 text-blue-200/80">
-						<p className="text-sm"><span className="text-xxs uppercase tracking-[0.12em]">Position:</span> {featuredPlayer.position}</p>
-						<p className="text-sm"><span className="text-xxs uppercase tracking-[0.12em]">Country:</span> {featuredPlayer.country}</p>
+						<p className="text-sm"><span className="text-xxs uppercase tracking-em-12">Position:</span> {featuredPlayer.position}</p>
+						<p className="text-sm"><span className="text-xxs uppercase tracking-em-12">Country:</span> {featuredPlayer.country}</p>
 					</div>
 				</div>
 
 				<div className="rounded-2xl border border-blue-400/20 bg-black/55 p-5 shadow-xl shadow-black/30 lg:p-6">
-					<p className="text-xxs uppercase tracking-[0.18em] text-blue-200/80">Player Search</p>
+					<p className="text-xxs uppercase tracking-em-18 text-blue-200/80">Player Search</p>
 					<input
 						type="text"
 						value={searchTerm}
@@ -105,7 +105,7 @@ export default function Component_PlayersGrid() {
 					/>
 
 					<div className="mt-5 space-y-2">
-						<p className="text-xxs uppercase tracking-[0.18em] text-blue-200/80">Filter by Position</p>
+						<p className="text-xxs uppercase tracking-em-18 text-blue-200/80">Filter by Position</p>
 						<div className="space-y-1">
 							{positionCategories.map((pos) => (
 								<button
@@ -115,7 +115,7 @@ export default function Component_PlayersGrid() {
 										setSelectedPosition(pos);
 										setFeaturedIndex(0);
 									}}
-									className={`w-full rounded-md px-3 py-2 text-xs uppercase tracking-[0.14em] transition-all ${
+									className={`w-full rounded-md px-3 py-2 text-xs uppercase tracking-em-14 transition-all ${
 										selectedPosition === pos
 											? "border border-cyan-400/50 bg-cyan-400/15 text-cyan-200"
 											: "border border-blue-400/25 bg-black/40 text-blue-200/70 hover:border-blue-400/40 hover:text-blue-100"
@@ -129,11 +129,11 @@ export default function Component_PlayersGrid() {
 
 					<div className="mt-5 grid grid-cols-2 gap-2 text-center">
 						<div className="rounded-md border border-blue-400/20 bg-black/50 p-3">
-							<p className="text-xxs uppercase tracking-[0.16em] text-blue-200/70">Visible</p>
+							<p className="text-xxs uppercase tracking-em-16 text-blue-200/70">Visible</p>
 							<p className="mt-1 text-lg font-semibold text-blue-50">{filteredPlayers.length}</p>
 						</div>
 						<div className="rounded-md border border-blue-400/20 bg-black/50 p-3">
-							<p className="text-xxs uppercase tracking-[0.16em] text-blue-200/70">Total</p>
+							<p className="text-xxs uppercase tracking-em-16 text-blue-200/70">Total</p>
 							<p className="mt-1 text-lg font-semibold text-blue-50">{players.length}</p>
 						</div>
 					</div>

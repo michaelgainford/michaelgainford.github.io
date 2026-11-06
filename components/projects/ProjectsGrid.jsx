@@ -16,17 +16,17 @@ export default function Component_ProjectsGrid() {
 				<Link
 					key={index}
 					href={project.href}
-					className={`group flex h-full min-h-[22rem] snap-start flex-col justify-between overflow-hidden rounded-[1.4rem] border border-slate-800 bg-linear-to-br from-slate-950/95 via-slate-950/88 to-slate-900/90 transition duration-300 hover:-translate-y-1 hover:border-slate-600/80 hover:bg-slate-900/95 max-sm:min-w-[300px] max-sm:mx-auto ${project.projectStatus.archived ? "opacity-50" : ""}`}
+					className={`group flex h-full min-h-88 snap-start flex-col justify-between overflow-hidden rounded-[1.4rem] border border-slate-800 bg-linear-to-br from-slate-950/95 via-slate-950/88 to-slate-900/90 transition duration-300 hover:-translate-y-1 hover:border-slate-600/80 hover:bg-slate-900/95 max-sm:min-w-75 max-sm:mx-auto ${project.projectStatus.archived ? "opacity-50" : ""}`}
 				>
 					<div className="h-1 w-full bg-linear-to-r from-white/0 via-white/10 to-white/0" />
 					<div className="flex flex-1 flex-col p-5 sm:p-6 xl:p-7">
 						<div className="flex items-start justify-between gap-4">
-							<div className={`inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-[10px] uppercase tracking-[0.28em] text-slate-400 ${project.projectStatus.archived ? "opacity-80" : ""}`}>
+							<div className={`inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-xxs uppercase tracking-em-28 text-slate-400 ${project.projectStatus.archived ? "opacity-80" : ""}`}>
 								<span className={`h-2 w-2 rounded-full ${project.color}`} />
 								<span>{project.category}</span>
 							</div>
 							{project.projectStatus.archived ? (
-								<span className="rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-[10px] uppercase tracking-[0.28em] text-slate-500">
+								<span className="rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-xxs uppercase tracking-em-28 text-slate-500">
 									Archived
 								</span>
 							) : null}
@@ -40,16 +40,16 @@ export default function Component_ProjectsGrid() {
 								/>
 							</div>
 							<div className="space-y-3">
-								<h2 className="text-lg font-medium tracking-[0.16em] text-slate-100 sm:text-xl">
+								<h2 className="text-lg font-medium tracking-em-16 text-slate-100 sm:text-xl">
 									{project.name}
 								</h2>
-								<p className="mx-auto max-w-[24ch] text-sm leading-7 tracking-wide text-slate-400 line-clamp-3 sm:text-[15px]">
+								<p className="mx-auto max-w-[24ch] text-sm leading-7 tracking-wide text-slate-400 line-clamp-3 sm:text-sm-plus">
 									{project.description}
 								</p>
 							</div>
 						</div>
 
-						<div className="flex items-center justify-between gap-4 border-t border-slate-800/80 pt-4 text-[11px] uppercase tracking-[0.28em] text-slate-500">
+						<div className="flex items-center justify-between gap-4 border-t border-slate-800/80 pt-4 text-xxs-plus uppercase tracking-em-28 text-slate-500">
 							<span>Open Project</span>
 							<span className="text-slate-400 transition duration-300 group-hover:text-slate-200">→</span>
 						</div>

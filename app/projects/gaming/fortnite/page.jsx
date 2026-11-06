@@ -14,10 +14,10 @@ export default function Page_Fortnite() {
 		<div className={`${globalPageStyles} bg-topo-fn-background bg-fn-light-blue from-fn-dark-blue from-30% to-fn-light-blue ${pageTextColour}`}>
 			<Header />
 			<main className="w-full flex flex-col items-center">
-				<IconFortnite classes="w-64 h-auto mt-8 mb-12 lg:w-96 xl:w-[420px] xl:mb-20 2xl:w-[500px] mx-auto" fill="fill-slate-900" />
+				<IconFortnite classes="w-64 h-auto mt-8 mb-12 lg:w-96 xl:w-105 xl:mb-20 2xl:w-125 mx-auto" fill="fill-slate-900" />
 				<span className="sr-only"><H1 text="Fortnite" /></span>
 				<h2 className={subSectionHeadingStyles}>Lore</h2>
-				<p className="mx-auto mb-12 text-slate-900 font-medium text-[13px] md:text-sm/6 tracking-wider lg:max-w-[80%] xl:mb-16 xl:text-lg max-w-[92%]">
+				<p className="mx-auto mb-12 text-slate-900 font-medium text-sm-minus md:text-sm/6 tracking-wider lg:max-w-[80%] xl:mb-16 xl:text-lg max-w-[92%]">
 					{pageIntroText}
 				</p>
 				<FortniteChapters />

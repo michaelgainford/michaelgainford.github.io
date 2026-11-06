@@ -127,7 +127,7 @@ export default function Component_MoviesWatched() {
 	return (
 		<section className="relative w-full max-w-full overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 lg:p-6" id="watched-movies">
 			<div className="mb-5 flex flex-wrap items-center justify-between gap-4">
-				<h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200 lg:text-base">Watched Movies</h2>
+				<h2 className="text-sm font-semibold uppercase tracking-em-18 text-slate-200 lg:text-base">Watched Movies</h2>
 				<div className="flex flex-wrap gap-2 text-xxs uppercase tracking-wide text-slate-300">
 					<span className="rounded-md border border-slate-700/80 bg-slate-900/70 px-2 py-1">Visible: {numberFormatter.format(filteredMovies.length)}</span>
 					<span className="rounded-md border border-slate-700/80 bg-slate-900/70 px-2 py-1">Genres: {genres.length - 1}</span>
@@ -193,7 +193,7 @@ export default function Component_MoviesWatched() {
 
 			<div className="mb-6 rounded-md border border-slate-700/80 bg-slate-950/80 p-3">
 				<div className="mb-2 flex items-center justify-between gap-3">
-					<p className="text-xxs uppercase tracking-[0.14em] text-slate-300">Age Rating Filter</p>
+					<p className="text-xxs uppercase tracking-em-14 text-slate-300">Age Rating Filter</p>
 					<button
 						type="button"
 						onClick={() => setSelectedAgeRatings([])}
@@ -249,12 +249,12 @@ export default function Component_MoviesWatched() {
 					href={movie.imdb_url}
 					target="_blank"
 					rel="noreferrer"
-					className="flex w-52 shrink-0 flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-slate-800/80 text-light_colour group bg-slate-950/85 hover:bg-slate-900/85 xl:max-w-[200px] xl:w-auto 2xl:max-w-[200px] snap-always snap-center max-xl:mr-6 mb-8 relative before:pointer-events-none before:transform-gpu before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-slate-500/35 before:opacity-0 before:blur-[28px] before:transition-opacity before:content-[''] hover:before:opacity-100 rounded-sm overflow-hidden"
+					className="flex w-52 shrink-0 flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-slate-800/80 text-light_colour group bg-slate-950/85 hover:bg-slate-900/85 xl:max-w-50 xl:w-auto 2xl:max-w-50 snap-always snap-center max-xl:mr-6 mb-8 relative before:pointer-events-none before:transform-gpu before:absolute before:left-0 before:top-0 before:-z-1 before:h-full before:w-full before:bg-slate-500/35 before:opacity-0 before:blur-[28px] before:transition-opacity before:content-[''] hover:before:opacity-100 rounded-sm overflow-hidden"
 				>
-					<div className="relative w-full max-w-full movie-poster bg-black aspect-[2/3]">
+					<div className="relative w-full max-w-full movie-poster bg-black aspect-2/3">
 						<Image 
 							src={failedImages.has(movie.image) ? PLACEHOLDER_IMAGE : movie.image} 
-							className="h-full w-full object-cover duration-1000 xl:opacity-50 xl:group-hover:opacity-100 scale-[100%] xl:group-hover:ease-in-out rounded-xs" 
+							className="h-full w-full object-cover duration-1000 xl:opacity-50 xl:group-hover:opacity-100 scale-100 xl:group-hover:ease-in-out rounded-xs" 
 							alt={movie.title} 
 							height={300} 
 							width={200}
@@ -268,7 +268,7 @@ export default function Component_MoviesWatched() {
 						<span className="absolute right-2 top-2 rounded-sm bg-slate-950/85 px-2 py-1 text-xxs tracking-wide text-slate-300">{movie.ageRating || "NR"}</span>
 					</div>
 					<div className="w-full transition-all duration-300 movie-info">
-						<p className="movie-title bg-slate-950/70 w-full px-2 py-2 ease-in-out duration-300 text-center text-xs min-h-[60px] max-w-full flex items-center justify-center xl:text-sm line-clamp-2">{movie.title}</p>
+						<p className="movie-title bg-slate-950/70 w-full px-2 py-2 ease-in-out duration-300 text-center text-xs min-h-15 max-w-full flex items-center justify-center xl:text-sm line-clamp-2">{movie.title}</p>
 						<div className="grid grid-cols-2 text-xxs tracking-wide uppercase text-slate-300 border-t border-slate-800/70">
 							<span className="px-2 py-1 text-center border-r border-slate-800/70 truncate">{movie.genre}</span>
 							<span className="px-2 py-1 text-center">{movie.duration} mins</span>

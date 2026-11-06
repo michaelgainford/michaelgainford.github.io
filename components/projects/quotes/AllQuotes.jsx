@@ -49,17 +49,17 @@ export default function Component_AllQuotes() {
 	};
 
 	return (
-		<div className="w-full max-w-[1500px] space-y-8 lg:space-y-10">
+		<div className="w-full max-w-375 space-y-8 lg:space-y-10">
 			<div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_0.8fr]">
 				<div className="rounded-2xl border border-sky-300/20 bg-linear-to-br from-sky-950/90 to-black/90 p-5 shadow-xl shadow-black/30 lg:p-8">
 					<div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-						<span className="rounded-full border border-sky-300/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-[0.2em] text-sky-200">
+						<span className="rounded-full border border-sky-300/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-em-20 text-sky-200">
 							Featured Quote
 						</span>
 						<button
 							type="button"
 							onClick={handleNextFeatured}
-							className="rounded-full border border-sky-300/30 bg-black/40 px-4 py-2 text-xxs uppercase tracking-[0.16em] text-sky-100 transition-all hover:border-cyan-300/50 hover:text-cyan-200"
+							className="rounded-full border border-sky-300/30 bg-black/40 px-4 py-2 text-xxs uppercase tracking-em-16 text-sky-100 transition-all hover:border-cyan-300/50 hover:text-cyan-200"
 						>
 							Next One
 						</button>
@@ -73,7 +73,7 @@ export default function Component_AllQuotes() {
 					<button
 						type="button"
 						onClick={() => handleCopyQuote(featuredQuote.quote, featuredQuote.quotee, featuredQuote.id)}
-						className={`mt-5 w-full rounded-md px-4 py-2 text-xxs uppercase tracking-[0.16em] transition-all ${
+						className={`mt-5 w-full rounded-md px-4 py-2 text-xxs uppercase tracking-em-16 transition-all ${
 							copiedId === featuredQuote.id
 								? "border border-green-400/50 bg-green-500/15 text-green-200"
 								: "border border-sky-300/25 bg-black/40 text-sky-100/70 hover:border-cyan-300/40 hover:text-cyan-200"
@@ -84,7 +84,7 @@ export default function Component_AllQuotes() {
 				</div>
 
 				<div className="rounded-2xl border border-sky-300/20 bg-black/55 p-5 shadow-xl shadow-black/30 lg:p-6">
-					<p className="text-xxs uppercase tracking-[0.18em] text-sky-200/80">Quote Search</p>
+					<p className="text-xxs uppercase tracking-em-18 text-sky-200/80">Quote Search</p>
 					<input
 						type="text"
 						value={searchTerm}
@@ -96,8 +96,8 @@ export default function Component_AllQuotes() {
 						className="mt-4 w-full rounded-md border border-sky-300/25 bg-black/60 px-3 py-2 text-sm text-sky-50 outline-none transition-all focus:border-cyan-300"
 					/>
 					<div className="mt-5 space-y-2">
-						<p className="text-xxs uppercase tracking-[0.18em] text-sky-200/80">Top Authors</p>
-						<div className="max-h-[200px] space-y-1 overflow-y-auto">
+						<p className="text-xxs uppercase tracking-em-18 text-sky-200/80">Top Authors</p>
+						<div className="max-h-50 space-y-1 overflow-y-auto">
 							{authorStats.slice(0, 8).map((stat) => (
 								<div key={stat.author} className="rounded-md border border-sky-300/15 bg-black/40 px-3 py-2 text-xs text-sky-200/80">
 									<div className="flex justify-between">
@@ -110,11 +110,11 @@ export default function Component_AllQuotes() {
 					</div>
 					<div className="mt-5 grid grid-cols-2 gap-2 text-center">
 						<div className="rounded-md border border-sky-300/20 bg-black/50 p-3">
-							<p className="text-xxs uppercase tracking-[0.16em] text-sky-200/70">Visible</p>
+							<p className="text-xxs uppercase tracking-em-16 text-sky-200/70">Visible</p>
 							<p className="mt-1 text-lg font-semibold text-sky-50">{filteredQuotes.length}</p>
 						</div>
 						<div className="rounded-md border border-sky-300/20 bg-black/50 p-3">
-							<p className="text-xxs uppercase tracking-[0.16em] text-sky-200/70">Total</p>
+							<p className="text-xxs uppercase tracking-em-16 text-sky-200/70">Total</p>
 							<p className="mt-1 text-lg font-semibold text-sky-50">{quotes.length}</p>
 						</div>
 					</div>
@@ -136,7 +136,7 @@ export default function Component_AllQuotes() {
 						<button
 							type="button"
 							onClick={() => handleCopyQuote(quote.quote, quote.quotee, quote.id)}
-							className={`mt-3 w-full rounded-md px-3 py-2 text-xxs uppercase tracking-[0.16em] transition-all ${
+							className={`mt-3 w-full rounded-md px-3 py-2 text-xxs uppercase tracking-em-16 transition-all ${
 								copiedId === quote.id
 									? "border border-green-400/50 bg-green-500/15 text-green-200"
 									: "border border-sky-300/25 bg-black/40 text-sky-100/60 hover:border-cyan-300/40 hover:text-cyan-200"

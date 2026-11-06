@@ -18,11 +18,11 @@ export const metadata = {
 export default function Page_Deadpool() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(148,163,184,0.12),transparent_72%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-105 bg-[radial-gradient(ellipse_at_top,rgba(148,163,184,0.12),transparent_72%)]" />
       <Header />
       <main className={globalWrapperFixedWidth}>
-        <section className="w-full max-w-[1800px] rounded-2xl border border-slate-800/80 bg-slate-950/70 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
-          <div className="mx-auto mb-4 w-fit rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-slate-300">
+        <section className="w-full max-w-450 rounded-2xl border border-slate-800/80 bg-slate-950/70 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
+          <div className="mx-auto mb-4 w-fit rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-1 text-xxs uppercase tracking-em-24 text-slate-300">
             Maximum Effort Collection
           </div>
           <H1 text="Deadpool" other_classes="text-slate-100" />

@@ -18,11 +18,11 @@ export const metadata = {
 export default function Page_IronMan() {
   return (
     <div className={`${globalPageStyles} ${pageStyles}`}>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.2),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-105 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.2),transparent_70%)]" />
       <Header />
       <main className={globalWrapperFixedWidth}>
-        <section className="w-full max-w-[1800px] rounded-2xl border border-slate-700/70 bg-slate-950/70 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
-          <div className="mx-auto mb-4 w-fit rounded-full border border-red-400/40 bg-black/60 px-4 py-1 text-xxs uppercase tracking-[0.24em] text-red-300">
+        <section className="w-full max-w-450 rounded-2xl border border-slate-700/70 bg-slate-950/70 p-4 shadow-2xl shadow-black/35 md:p-6 lg:p-8">
+          <div className="mx-auto mb-4 w-fit rounded-full border border-red-400/40 bg-black/60 px-4 py-1 text-xxs uppercase tracking-em-24 text-red-300">
             Stark Systems Collection
           </div>
           <H1 text="Iron Man" other_classes="text-slate-100" />

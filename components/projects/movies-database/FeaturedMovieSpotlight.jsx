@@ -48,7 +48,7 @@ export default function Component_FeaturedMovieSpotlight() {
 			onMouseEnter={() => setIsPaused(true)}
 			onMouseLeave={() => setIsPaused(false)}
 		>
-			<div className="relative mx-auto w-full max-w-[200px] aspect-[2/3] bg-black lg:mx-0">
+			<div className="relative mx-auto w-full max-w-50 aspect-2/3 bg-black lg:mx-0">
 				<Image
 					src={featuredMovie.image}
 					alt={featuredMovie.title}
@@ -58,13 +58,13 @@ export default function Component_FeaturedMovieSpotlight() {
 					priority
 				/>
 				<div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-				<div className="absolute left-4 top-4 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-xxs uppercase tracking-[0.18em] text-slate-300">
+				<div className="absolute left-4 top-4 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-xxs uppercase tracking-em-18 text-slate-300">
 					Featured Movie
 				</div>
 			</div>
 			<div className="flex flex-col justify-between gap-5 p-5 lg:p-7">
 				<div>
-					<div className="mb-3 flex flex-wrap gap-2 text-xxs uppercase tracking-[0.16em] text-slate-300">
+					<div className="mb-3 flex flex-wrap gap-2 text-xxs uppercase tracking-em-16 text-slate-300">
 						<span className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">{featuredMovie.genre}</span>
 						<span className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">{featuredMovie.year}</span>
 						<span className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1">{featuredMovie.duration} mins</span>

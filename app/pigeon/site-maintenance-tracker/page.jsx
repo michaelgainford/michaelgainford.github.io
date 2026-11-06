@@ -24,7 +24,7 @@ export default function Page_SiteMaintenanceTracker() {
 			<Header />
 			<main className={`${globalWrapperFixedWidth}`}>
 				<div
-					className={`flex flex-col w-full justify-center text-center max-w-[1800px]`}
+					className={`flex flex-col w-full justify-center text-center max-w-450`}
 				>
 					<H1
 						text={`Site Maintenance Tracker`}

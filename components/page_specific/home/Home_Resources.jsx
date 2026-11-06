@@ -5,7 +5,7 @@ import Button from "@/components/buttons/Button";
 
 export default function Component_FeaturedDevResources() {
 	return (
-		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 sm:rounded-[1.5rem] sm:p-5 lg:p-6">
+		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 sm:rounded-3xl sm:p-5 lg:p-6">
 			<H2SectionHeader text="Featured Dev Resources" />
 			<div className="grid justify-center grid-cols-2 gap-3 sm:gap-4 md:gap-5 xl:gap-6">
 				{featuredResourcesSortedByName.map((resource, index) => (
@@ -22,7 +22,7 @@ export default function Component_FeaturedDevResources() {
 								/>
 							</span>
 						</span>
-						<span className="w-full text-left text-[10px] tracking-[0.12em] text-slate-300 transition duration-300 group-hover:text-slate-100 sm:text-xs sm:tracking-[0.16em] xl:text-sm 2xl:text-base">
+						<span className="w-full text-left text-xxs tracking-em-12 text-slate-300 transition duration-300 group-hover:text-slate-100 sm:text-xs sm:tracking-em-16 xl:text-sm 2xl:text-base">
 							{resource.name}
 						</span>
 					</Link>

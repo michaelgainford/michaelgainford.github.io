@@ -82,7 +82,7 @@ leagueTable.sort((a, b) => {
 const magPageBg = `bg-linear-to-r from-[#030117] from-10% via-[#2B2659] via-50% to-[#030117] to-90%`;
 
 // Style For Details/Summary
-const detailsStyles = `border border-slate-800 rounded-lg p-4 bg-slate-900/50 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 md:max-w-[800px] xl:max-w-[1000px] lg:px-4 font-light!`;
+const detailsStyles = `border border-slate-800 rounded-lg p-4 bg-slate-900/50 group overflow-x-auto! open:[&_svg]:-rotate-180 w-full transition-all duration-300 md:max-w-200 xl:max-w-250 lg:px-4 font-light!`;
 const detailsContentStyles = `[&>p]:font-light [&>p]:pb-1 [&>p]:border-b [&>p]:border-slate-800 [&_>_p]:mb-4 [&>p]:mt-12`;
 const detailsRulesGroupStyles = `mb-12 mt-8 [&>p]:mb-1 lg:mb-12 flex flex-col`;
 const detailsAllHeadingsStyles = `text-sm lg:text-base`;
@@ -107,7 +107,7 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 				<div className="my-2 md:my-4 lg:my-8 pt-4 lg:pt-20 lg:pb-12">
 					<h2 className={`text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>League Table</h2>
 					<div className={`flex mt-4`}>
-						<table className={`lg:min-w-[1000px] text-center`}>
+						<table className={`lg:min-w-250 text-center`}>
 							<thead className={`border-b border-slate-900 text-xs md:text-sm xl:text-base text-magpl`}>
 								<tr className={`grid grid-cols-10 py-3 lowercase *:font-light`}>
 									<th data-league-position={`league-position pr-1`}>Pos</th>
@@ -144,14 +144,14 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 				</div>
 
 				{/* Fixtures */}
-				<div className={`w-full! px-4 lg:px-8 pt-4 lg:pt-20 lg:pb-12 max-w-[1000px] mx-auto`}>
+				<div className={`w-full! px-4 lg:px-8 pt-4 lg:pt-20 lg:pb-12 max-w-250 mx-auto`}>
 					<h3 className={`mb-6 text-center font-bold text-sm lg:text-2xl lg:tracking-wider`}>Fixtures</h3>
 					<div className={`grid grid-cols-1 gap-6`}>
 
 						{Season.fixtures.map((fixture, index) => (
 							<div
 								key={index}
-								className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] max-w-[1000px]! w-full mx-auto flex flex-col duration-300 transition-all group/fixture ${fixture.upcoming ? `text-slate-200` : fixture.played ? `text-magpl uppercase` : 'opacity-50'}`}>
+								className={`bg-slate-900/50 hover:bg-slate-900/80 rounded-xl px-2 py-4 md:p-4 border-2 border-transparent max-lg:min-w-[80dvw] max-w-250! w-full mx-auto flex flex-col duration-300 transition-all group/fixture ${fixture.upcoming ? `text-slate-200` : fixture.played ? `text-magpl uppercase` : 'opacity-50'}`}>
 								<div className={`grid grid-cols-1 relative`}>
 									<div className={`grid grid-cols-[1fr_16px_16px_16px_1fr] sm:grid-cols-[1fr_30px_30px_30px_1fr] py-4 items-center text-sm *:text-sm md:*:text-xl lg:*:text-2xl tracking-widest [&>span]:text-center font-bold ${fixture.played ? `text-magpl` : fixture.upcoming ? `text-white` : `text-slate-600`}`}>
 										<p className={`text-right md:pr-1`}>{fixture.homeTeam}</p>
@@ -171,10 +171,10 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 					</div>
 				</div>
 			
-				<div className="w-full max-w-[920px] mx-auto lg:pt-16">
+				<div className="w-full max-w-230 mx-auto lg:pt-16">
 					{/* Rules | Start */}
 					<details className={`flex flex-col pb-4 mt-12 w-auto! no-scrollbar ${detailsStyles} ${detailsContentStyles} `}>
-						<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-[1000px] ${summaryStyles}`}>
+						<summary className={`text-xs tracking-wide text-center max-md:min-w-[80dvw] md:max-w-250 ${summaryStyles}`}>
 							<span className={`text-magpl`}>The MAG Premier League Rules</span>					
 							<span className={summaryHeaderSvgContainer}>
 								<svg 
@@ -198,13 +198,13 @@ export default function PAGE_THE_MAG_PREMIER_LEAGUE () {
 									<h2 className={`text-center mb-6`}>Teams</h2>
 									<div className={`grid w-full grid-cols-3 gap-8 [&>.team]:border [&>.team]:rounded-full [&>.team]:border-slate-900 [&>.team]:min-w-10 lg:[&>.team]:min-w-40 [&>.team]:text-center [&>.team]:aspect-square [&>.team]:flex [&>.team]:justify-center [&>.team]:items-center justify-center content-center`}>
 										<div className="text-white bg-red-800 team lg:max-w-[5dvw] mx-auto lg:opacity-50 lg:hover:opacity-100 lg:transition-all lg:duration-300">
-											<span className={`text-2xl lg:text-[48px]`}>A</span>
+											<span className={`text-2xl lg:text-5xl`}>A</span>
 										</div>
 										<div className="text-black bg-blue-800 team lg:max-w-[5dvw] mx-auto lg:opacity-50 lg:hover:opacity-100 lg:transition-all lg:duration-300">
-											<span className={`text-2xl lg:text-[48px]`}>G</span>
+											<span className={`text-2xl lg:text-5xl`}>G</span>
 										</div>
 										<div className="text-white bg-black team lg:max-w-[5dvw] mx-auto lg:opacity-50 lg:hover:opacity-100 lg:transition-all lg:duration-300">
-											<span className={`text-2xl lg:text-[48px]`}>M</span>
+											<span className={`text-2xl lg:text-5xl`}>M</span>
 										</div>
 									</div>
 								</div>

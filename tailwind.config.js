@@ -62,6 +62,22 @@ module.exports = {
       },
       fontSize: {
         'xxs': '.625rem',
+        'xxs-plus': '.6875rem',
+        'sm-minus': '.8125rem',
+        'sm-plus': '.9375rem',
+        'micro': '.5625rem',
+      },
+      letterSpacing: {
+        'em-12': '0.12em',
+        'em-14': '0.14em',
+        'em-16': '0.16em',
+        'em-18': '0.18em',
+        'em-20': '0.2em',
+        'em-22': '0.22em',
+        'em-24': '0.24em',
+        'em-28': '0.28em',
+        'em-30': '0.3em',
+        'em-35': '0.35em',
       },
       screens: {
         'xxs': '380px',

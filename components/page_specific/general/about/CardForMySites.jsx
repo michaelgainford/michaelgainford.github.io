@@ -20,7 +20,7 @@ export default function Component_CardMySites() {
 							<Image
 								src={site.image}
 								alt={site.alt}
-								className="object-cover w-full h-full transition-all duration-500 lg:rounded-t-md opacity-50 hover:opacity-100 min-w-[200px] lg:min-w-[300px]"
+								className="object-cover w-full h-full transition-all duration-500 lg:rounded-t-md opacity-50 hover:opacity-100 min-w-50 lg:min-w-75"
 								width={300}
 								height={169}
 								title={site.description}

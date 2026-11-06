@@ -70,7 +70,7 @@ export default function Component_EPLSeasonBySeasonTable() {
 	return (
 		<div className="relative by-season mb-8 ml-[5%] w-[95%] md:ml-[4%] md:w-[96%]">
 			{hasOverflow && (
-				<div className="sticky top-2 z-[70] mb-3 flex justify-end gap-2 pr-2">
+				<div className="sticky top-2 z-70 mb-3 flex justify-end gap-2 pr-2">
 					<button
 						type="button"
 						onClick={() => scrollTableHorizontally("left")}
@@ -116,7 +116,7 @@ export default function Component_EPLSeasonBySeasonTable() {
 				<tbody className="bg-epl/20">
 					{sortedPremierLeagueSeasonData.map((team, index) => (
 					<tr key={index} className="border-b border-epl/20">
-						<td className="sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-30 max-w-36! lg:max-w-[150px] xl:max-w-[200px] py-1 md:py-2 lg:py-3 truncate">
+						<td className="sticky left-0 pl-1 lg:pl-2 text-left bg-gray-100 z-30 max-w-36! lg:max-w-37.5 xl:max-w-50 py-1 md:py-2 lg:py-3 truncate">
 								{team.teamName}
 						</td>
 						{team.premierLeagueSeasonsSplit.map((season, index) => (

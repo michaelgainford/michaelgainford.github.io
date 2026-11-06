@@ -26,7 +26,7 @@ export default function PAGE_PREMIER_LEAGUE_SEASONS() {
         <div className={`${globalMainElementStyles}`}>
           <H1
             text={`Seasons`}
-            font_sizes={`text-base lg:text-[24px]!`}
+            font_sizes={`text-base lg:text-2xl!`}
             other_classes={`uppercase`}
           />
         </div>

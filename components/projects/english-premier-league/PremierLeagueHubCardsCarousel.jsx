@@ -125,7 +125,7 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 			<div className="relative w-full max-w-full overflow-hidden">
 				<div
 					ref={scrollContainerRef}
-					className="w-full max-w-full min-h-[300px] flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory scroll-px-0 scroll-smooth pb-3 no-scrollbar lg:grid lg:grid-cols-2 lg:gap-10 xl:gap-16 lg:overflow-visible lg:snap-none lg:scroll-auto lg:pb-0 [&>div]:max-w-full [&>div]:border-0 lg:[&>div]:border lg:[&>div]:border-slate-200 [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:mb-2 [&_h2]:tracking-wide"
+					className="w-full max-w-full min-h-75 flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory scroll-px-0 scroll-smooth pb-3 no-scrollbar lg:grid lg:grid-cols-2 lg:gap-10 xl:gap-16 lg:overflow-visible lg:snap-none lg:scroll-auto lg:pb-0 [&>div]:max-w-full [&>div]:border-0 lg:[&>div]:border lg:[&>div]:border-slate-200 [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:mb-2 [&_h2]:tracking-wide"
 				>
 				{blocks.map((block, index) => (
 					<div
