@@ -133,23 +133,24 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 						ref={(element) => {
 							cardRefs.current[index] = element;
 						}}
-						className="snap-start shrink-0 min-w-full sm:min-w-[78%] lg:min-w-0 p-4 md:p-8 flex flex-col h-full gap-4 rounded-2xl group"
+						className="snap-start shrink-0 min-w-full sm:min-w-[78%] lg:min-w-0 p-4 md:p-8 lg:p-0 lg:relative lg:overflow-hidden flex flex-col h-full gap-4 rounded-2xl group"
 					>
-						<h2 className="pl-2 text-sm lg:text-base leading-none border-l-4 lg:border-l-8 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
-						<div className="flex-1 flex flex-col justify-between">
-							<div className="relative w-full mb-6 aspect-[16/8.6] sm:aspect-video rounded-xl overflow-hidden">
+						<h2 className="lg:hidden pl-2 text-sm leading-none border-l-4 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
+						<div className="flex-1 flex flex-col justify-between lg:contents">
+							<div className="relative w-full mb-6 lg:mb-0 lg:order-1 aspect-[16/8.6] sm:aspect-video rounded-xl lg:rounded-none overflow-hidden">
 								<Image
 									src={`${imageRoot}/${block.image}`}
 									alt={block.title}
 									fill
-									className="object-cover rounded-xl w-full h-full group-hover:scale-105 transition-transform duration-300"
+									className="object-cover rounded-xl lg:rounded-none w-full h-full group-hover:scale-105 transition-transform duration-300"
 									loading={index < 2 ? "eager" : "lazy"}
 									priority={index < 2}
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-epl-700/80 via-epl-500/40 to-transparent pointer-events-none rounded-xl" />
+								<div className="absolute inset-0 bg-gradient-to-t from-epl-700/80 via-epl-500/40 to-transparent pointer-events-none rounded-xl lg:rounded-none" />
+								<h2 className="hidden lg:block absolute bottom-4 left-8 right-8 z-10 !mb-0 text-3xl !normal-case !tracking-normal leading-tight text-white">{block.title}</h2>
 							</div>
-							<p className="text-sm tracking-wide mb-4 line-clamp-4">{block.content}</p>
-							<div className="flex justify-start mt-auto">
+							<p className="lg:order-3 lg:mx-8 text-sm tracking-wide mb-4 lg:mb-0 line-clamp-4">{block.content}</p>
+							<div className="lg:order-4 lg:mx-8 lg:mb-8 flex justify-start mt-auto">
 								<Button
 									label={block.button}
 									href={block.buttonHref}
