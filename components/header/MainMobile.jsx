@@ -12,13 +12,19 @@ const projectsLinks = DataForMainNav.filter((link) =>
   link.href.includes("/projects/")
 );
 
-export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
-  const handleNavigation = () => {
-    toggleVisibility();
-  };
+export default function MAIN_MOBILE({
+  isVisible,
+  onClose,
+  mobileNavRef,
+  closeButtonRef,
+}) {
 
   return (
     <div
+      ref={mobileNavRef}
+      id="mobile-navigation"
+      aria-hidden={!isVisible}
+      inert={!isVisible}
       className={`mobile-nav fixed inset-0 z-99 w-full h-full p-8 bg-slate-900 lg:hidden flex flex-col gap-8 overflow-y-auto transition-transform duration-500 ease-in-out ${brandTextColour} ${
         isVisible ? `translate-x-0` : `translate-x-full pointer-events-none`
       }`}
@@ -28,16 +34,20 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
           <MainLogo />
           <div className={`flex justify-end`}>
             <button
+              ref={closeButtonRef}
               type="button"
               className={`cursor-pointer absolute top-5 right-4.25 -mt-1.5`}
-              onClick={toggleVisibility}
+              onClick={onClose}
               aria-label="Close navigation"
             >
               <IconCrossNav />
             </button>
           </div>
         </div>
-        <nav className={`flex flex-col justify-start nav logo rounded-lg`}>
+        <nav
+          aria-label="Mobile navigation"
+          className={`flex flex-col justify-start nav logo rounded-lg`}
+        >
           <ul
             className={`flex flex-col items-stretch max-md:overflow-auto text-sm md:text-xs tracking-wider uppercase lg:py-8 lg:justify-center w-full gap-4 h-full`}
           >
@@ -51,7 +61,6 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                 <Link
                   className={`px-4 py-3 transition border-l-4 w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${link.border_colour} ${link.hover} min-w-max duration-300 capitalize`}
                   href={link.href}
-                  onClick={handleNavigation}
                 >
                   {link.label === `Projects` ? <>{link.label}</> : link.label}
                 </Link>
@@ -64,7 +73,6 @@ export default function MAIN_MOBILE({ isVisible, toggleVisibility }) {
                         <Link
                           className={`px-4 py-3 transition w-full hover:text-slate-300 lg:px-4 lg:py-5 text-center ${projectLink.border_colour} ${projectLink.hover} min-w-max duration-300 capitalize`}
                           href={projectLink.href}
-                          onClick={handleNavigation}
                         >
                           {projectLink.label}
                         </Link>

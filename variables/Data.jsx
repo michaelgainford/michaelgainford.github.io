@@ -401,30 +401,6 @@ const socials = [
 ]
 
 {/********************************
-  MY SITE URLS
-*********************************/}
-const mySites = [
-	{
-		name: "Fairway Golf Holidays",
-		image: "/my-sites/fairway-golf-holidays.webp",
-		alt: "Fairway Golf Holidays",
-		description: "Fairway Golf Group Holidays",
-	},
-	{
-		name: "Michael Gainford Portfolio",
-		image: "/my-sites/michael-gainford-portfolio.webp",
-		alt: "Michael Gainford Portfolio",
-		description: "Michael Gainford Portfolio",
-	},
-	{
-		name: "Golf Membership",
-		image: "/my-sites/golf-membership.webp",
-		alt: "Golf Membership",
-		description: "Golf Membership North West",
-	},
-];
-
-{/********************************
   WORK IN PROGRESS ITEMS
 *********************************/}
 const wipItems = [
@@ -457,6 +433,5 @@ export {
 	dataForAllProjects,
 	featuredProjects,
 	socials,
-	mySites,
 	wipItems
 };

@@ -65,21 +65,21 @@ export default function Page_PremierLeagueAllClubs () {
 				{/* Filter Buttons */}
 				<div className={`${mainStyles} flex flex-row flex-nowrap gap-2 justify-center items-center mt-4 mb-4`}>
 					<button
-						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "all" ? "bg-epl-500 text-white border-epl-500" : "bg-white text-epl border-epl-200 hover:bg-epl-100"}`}
+						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors hover:cursor-pointer duration-200 ${filter === "all" ? "bg-epl-500 text-white border-epl-500" : "bg-white text-epl border-epl-200 hover:bg-epl-200 hover:text-white"}`}
 						onClick={() => updateFilter("all")}
 						aria-pressed={filter === "all"}
 					>
 						All
 					</button>
 					<button
-						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "current" ? "bg-emerald-600 text-white border-emerald-600" : "bg-white text-epl border-epl-200 hover:bg-emerald-50"}`}
+						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors hover:cursor-pointer duration-200 ${filter === "current" ? "bg-emerald-600 text-white border-emerald-600" : "bg-white text-epl border-epl-200 hover:bg-emerald-50"}`}
 						onClick={() => updateFilter("current")}
 						aria-pressed={filter === "current"}
 					>
 						Current
 					</button>
 					<button
-						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors duration-200 ${filter === "former" ? "bg-gray-400 text-white border-gray-400" : "bg-white text-epl border-epl-200 hover:bg-gray-100"}`}
+						className={`px-3 py-1 rounded border text-xs font-semibold transition-colors hover:cursor-pointer duration-200 ${filter === "former" ? "bg-gray-400 text-white border-gray-400" : "bg-white text-epl border-epl-200 hover:bg-gray-100"}`}
 						onClick={() => updateFilter("former")}
 						aria-pressed={filter === "former"}
 					>
@@ -122,7 +122,7 @@ export default function Page_PremierLeagueAllClubs () {
 								</>
 							);
 							// Shared card classes for both a and div
-							const cardClass = `club-card relative flex flex-col items-center gap-2 md:gap-3 px-3 py-4 sm:p-4 m-0 sm:m-2 border border-slate-200 rounded-xl shadow-sm bg-white ${Club.currentPrem ? "current-prem" : "bg-gray-50 former-prem"} ${hasDisplayPage ? "cursor-pointer" : "cursor-default"} transition-transform hover:scale-103 max-w-xs w-full mx-auto text-center`;
+							const cardClass = `club-card relative flex flex-col items-center gap-2 px-3 py-4 sm:p-4 m-0 sm:m-2 border border-slate-200 rounded-xl shadow-sm bg-white ${Club.currentPrem ? "current-prem" : "bg-gray-50 former-prem"} ${hasDisplayPage ? "cursor-pointer" : "cursor-default"} transition-transform hover:scale-103 max-w-xs w-full mx-auto text-center`;
 							if (hasDisplayPage) {
 								return (
 									<Link
