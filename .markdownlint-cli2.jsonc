@@ -4,6 +4,7 @@
     ".github/instructions/*.instructions.md"
   ],
   "ignores": [
+    "CLAUDE.md",
     "node_modules/**",
     ".next/**",
     "out/**"
