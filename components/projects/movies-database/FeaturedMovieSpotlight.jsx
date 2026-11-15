@@ -44,7 +44,7 @@ export default function Component_FeaturedMovieSpotlight() {
 
 	return (
 		<div
-			className="mb-8 grid grid-cols-1 overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-950/70 shadow-xl shadow-black/30 lg:grid-cols-[200px_1fr] xl:mb-10"
+			className="mb-8 grid grid-cols-1 overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-950/70 shadow-card-xl lg:grid-cols-[200px_1fr] xl:mb-10"
 			onMouseEnter={() => setIsPaused(true)}
 			onMouseLeave={() => setIsPaused(false)}
 		>

@@ -7,7 +7,7 @@ export default function Component_CardTools() {
 	return (
 		<div
 			data-card="tools"
-			className="col-span-12 px-6 py-12 text-xs transition-all duration-500 border rounded-lg md:col-span-4 xl:col-span-3 something-3 border-slate-500/10 group/tools hover:border-amber-500 lg:p-8 2xl:py-16 @container group/tools"
+			className="col-span-12 px-6 py-12 text-xs transition-all duration-500 border rounded-lg md:col-span-4 something-3 border-slate-500/10 group/tools hover:border-amber-500 lg:p-8 2xl:py-16 @container group/tools"
 		>
 			<h2
 				className={`${sharedHeadingStyles} group-hover/tools:border-amber-500/80`}

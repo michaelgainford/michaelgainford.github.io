@@ -7,6 +7,7 @@ export default function PremierLeagueBreadcrumbs({ trail = [], current }) {
 	const crumbs = [{ label: "Premier League", href: premierLeagueHubUrl }, ...trail];
 
 	return (
+		<div className="w-full border-b border-epl-500 pb-4 sm:border-b-0 sm:pb-0">
 		<nav aria-label="Breadcrumb" className="mx-auto w-full max-w-330 px-4 pt-4 sm:px-6 lg:px-8">
 			<ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs uppercase tracking-wider">
 				{crumbs.map((crumb) => (
@@ -20,6 +21,7 @@ export default function PremierLeagueBreadcrumbs({ trail = [], current }) {
 				<li aria-current="page" className="font-bold">{current}</li>
 			</ol>
 		</nav>
+		</div>
 	);
 }
 

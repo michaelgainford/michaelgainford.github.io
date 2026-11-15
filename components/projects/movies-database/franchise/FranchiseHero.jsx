@@ -35,7 +35,7 @@ export default function FranchiseHero({ page, stats, theme }) {
 
   return (
     <section className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
-      <div className={`rounded-2xl border ${styles.border} ${styles.cardBg} p-5 shadow-xl shadow-black/30 lg:p-8`}>
+      <div className={`rounded-2xl border ${styles.border} ${styles.cardBg} p-5 shadow-card-xl lg:p-8`}>
         <span className={`mb-4 inline-flex rounded-full border px-3 py-1 text-xxs uppercase tracking-em-18 ${styles.badge}`}>
           {page.badge}
         </span>

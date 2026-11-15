@@ -9,7 +9,6 @@ import {
 import Header from "@/components/header/_Header";
 import CardForAboutMe from "@/components/page_specific/general/about/CardForAboutMe";
 import CardForTools from "@/components/page_specific/general/about/CardForTools";
-import CardForMySites from "@/components/page_specific/general/about/CardForMySites";
 import CardForRandomJoke from "@/components/page_specific/general/about/CardForRandomJoke";
 import Card_IconsSkills from "@/components/icons/Icons_Skills";
 import Card_IconsSocials from "@/components/icons/Icons_Socials";
@@ -29,7 +28,6 @@ export default function Page_About() {
 					<div className="grid grid-cols-12 gap-8 xl:gap-y-24 3xl:gap-24 max-lg:mt-8">
 						<CardForAboutMe />
 						<CardForTools />
-						<CardForMySites />
 						<Card_IconsSkills 
 						  heading="Site Built Using" 
 						  heading_styles={brandSharedHeadingStyles} 

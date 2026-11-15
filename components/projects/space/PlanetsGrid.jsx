@@ -17,7 +17,7 @@ export default function Component_PlanetsGrid() {
 			</p>
 			<div className="flex snap-x snap-mandatory scroll-px-4 scroll-smooth gap-4 overflow-x-auto pb-2 no-scrollbar sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:snap-none lg:grid-cols-3 lg:gap-6 xl:gap-8 2xl:grid-cols-4">
 				{DataForPlanets.map((planet, index) => (
-					<div key={index} className="group w-[82vw] max-w-90 min-w-65 shrink-0 snap-start snap-always rounded-xl border border-sky-200/15 bg-black/90 p-4 text-center shadow-lg shadow-black/25 transition-all duration-300 hover:-translate-y-1 hover:border-sky-300/35 hover:bg-black sm:w-full sm:max-w-none sm:min-w-0 sm:shrink sm:snap-none">
+					<div key={index} className="group w-[82vw] max-w-90 min-w-65 shrink-0 snap-start snap-always rounded-xl border border-sky-200/15 bg-black/90 p-4 text-center shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-sky-300/35 hover:bg-black hover:shadow-card-lg sm:w-full sm:max-w-none sm:min-w-0 sm:shrink sm:snap-none">
 						<div className="mb-3 flex items-center justify-between">
 							<span className="rounded-full border border-sky-200/25 bg-slate-950/50 px-2 py-1 text-xxs uppercase tracking-wider text-sky-200">Planet {planet.order}</span>
 							<span className="text-xxs uppercase tracking-widest text-slate-400">{planet.slug}</span>

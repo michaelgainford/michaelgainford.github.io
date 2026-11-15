@@ -102,7 +102,7 @@ export default function Component_DevResourcesGrid() {
       </section>
 
       <section className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-2xl border border-teal-400/20 bg-linear-to-br from-teal-950/80 to-black/85 p-5 shadow-xl shadow-black/35 lg:p-6">
+        <div className="rounded-2xl border border-teal-400/20 bg-linear-to-br from-teal-950/80 to-black/85 p-5 shadow-card-xl lg:p-6">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <p className="text-xxs uppercase tracking-em-18 text-teal-200/80">Resource Explorer</p>
             <button
@@ -168,7 +168,7 @@ export default function Component_DevResourcesGrid() {
           </div>
         </div>
 
-        <div className="rounded-2xl border border-teal-400/20 bg-black/60 p-5 shadow-xl shadow-black/35 lg:p-6">
+        <div className="rounded-2xl border border-teal-400/20 bg-black/60 p-5 shadow-card-xl lg:p-6">
           <p className="text-xxs uppercase tracking-em-18 text-teal-200/80">At a Glance</p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="rounded-md border border-teal-400/20 bg-black/50 p-3 text-center">
@@ -195,7 +195,7 @@ export default function Component_DevResourcesGrid() {
         {filteredResources.map((resource, index) => (
           <article
             key={`${resource.slug}-${resource.name}-${index}`}
-            className="group flex h-full flex-col overflow-hidden rounded-xl border border-teal-500/20 bg-black/45 p-4 shadow-lg shadow-black/25 transition-all duration-300 hover:-translate-y-1 hover:border-teal-300/40"
+            className="group flex h-full flex-col overflow-hidden rounded-xl border border-teal-500/20 bg-black/45 p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-teal-300/40 hover:shadow-card-lg"
           >
             <div className="mb-3 flex min-h-9 items-center justify-between gap-3">
               <h3 className="text-base font-semibold text-slate-100">{resource.name}</h3>

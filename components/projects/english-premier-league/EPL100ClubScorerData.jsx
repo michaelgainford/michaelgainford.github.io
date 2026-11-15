@@ -126,6 +126,13 @@ export default function Component_EPL100ClubScorerData() {
 				{filteredAndSortedScorers.map((topScorer, index) => {
 					const playerImage = `/football/premier-league/players/${topScorer.playerSlug}.webp`;
 					const goalsPerGame = getGoalRate(topScorer.playerGoals, topScorer.playerApps).toFixed(2);
+					const getSortValue = (player) => {
+						if (sortBy === "apps") return player.playerApps;
+						if (sortBy === "ratio") return getGoalRate(player.playerGoals, player.playerApps);
+						if (sortBy === "name") return player.playerName;
+						return player.playerGoals;
+					};
+					const isTied = index > 0 && getSortValue(filteredAndSortedScorers[index - 1]) === getSortValue(topScorer);
 					const daysSinceLastGoal = calculateDaysAgo(topScorer.playerLastGoalDate);
 
 					return (
@@ -133,10 +140,10 @@ export default function Component_EPL100ClubScorerData() {
 							className="group flex h-full flex-col justify-start rounded-xl border border-epl-300/25 bg-white p-4 text-left transition duration-300 hover:-translate-y-1 hover:border-epl/50 hover:shadow-lg lg:p-5"
 							key={topScorer.playerId}
 						>
-							<div className="grid grid-rows-[2.25rem_3.5rem_14rem] gap-3 sm:grid-rows-[2.25rem_3.5rem_13rem] lg:grid-rows-[2.25rem_3.5rem_11rem] xl:grid-rows-[2.25rem_3.5rem_10.5rem] 2xl:grid-rows-[2.25rem_3.5rem_12rem]">
+							<div className="grid grid-rows-[2.25rem_auto_14rem] gap-3 sm:grid-rows-[2.25rem_auto_13rem] lg:grid-rows-[2.25rem_auto_11rem] xl:grid-rows-[2.25rem_auto_10.5rem] 2xl:grid-rows-[2.25rem_auto_12rem]">
 								<div className="flex items-start justify-between gap-3">
 									<span className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-slate-300 bg-slate-100 text-xs font-bold text-slate-700">
-										{index + 1}
+										{isTied ? "=" : index + 1}
 									</span>
 									<span
 										className={`rounded-md px-2 py-1 text-xxs uppercase tracking-em-20 ${topScorer.playerCurrent ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-500"}`}
@@ -160,18 +167,18 @@ export default function Component_EPL100ClubScorerData() {
 								</div>
 							</div>
 
-							<div className="mt-4 grid grid-cols-3 gap-2 rounded-lg border border-slate-200 bg-slate-50 p-3 text-center">
+							<div className="mt-4 grid grid-cols-3 gap-2 rounded-lg py-3 text-center">
 								<div>
 									<p className="text-xxs uppercase tracking-em-20 text-slate-500">Goals</p>
-									<p className="mt-1 text-xl font-bold text-epl">{topScorer.playerGoals}</p>
+									<p className="mt-1 text-xl lg:text-2xl font-bold text-epl">{topScorer.playerGoals}</p>
 								</div>
 								<div>
 									<p className="text-xxs uppercase tracking-em-20 text-slate-500">Apps</p>
-									<p className="mt-1 text-xl font-bold text-epl">{topScorer.playerApps}</p>
+									<p className="mt-1 text-xl lg:text-2xl font-bold text-epl">{topScorer.playerApps}</p>
 								</div>
 								<div>
 									<p className="text-xxs uppercase tracking-em-20 text-slate-500">G/App</p>
-									<p className="mt-1 text-xl font-bold text-epl">{goalsPerGame}</p>
+									<p className="mt-1 text-xl lg:text-2xl font-bold text-epl">{goalsPerGame}</p>
 								</div>
 							</div>
 
