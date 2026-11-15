@@ -51,7 +51,7 @@ export default function Component_AllQuotes() {
 	return (
 		<div className="w-full max-w-375 space-y-8 lg:space-y-10">
 			<div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-				<div className="rounded-2xl border border-sky-300/20 bg-linear-to-br from-sky-950/90 to-black/90 p-5 shadow-xl shadow-black/30 lg:p-8">
+				<div className="rounded-2xl border border-sky-300/20 bg-linear-to-br from-sky-950/90 to-black/90 p-5 shadow-card-xl lg:p-8">
 					<div className="mb-3 flex flex-wrap items-center justify-between gap-3">
 						<span className="rounded-full border border-sky-300/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-em-20 text-sky-200">
 							Featured Quote
@@ -83,7 +83,7 @@ export default function Component_AllQuotes() {
 					</button>
 				</div>
 
-				<div className="rounded-2xl border border-sky-300/20 bg-black/55 p-5 shadow-xl shadow-black/30 lg:p-6">
+				<div className="rounded-2xl border border-sky-300/20 bg-black/55 p-5 shadow-card-xl lg:p-6">
 					<p className="text-xxs uppercase tracking-em-18 text-sky-200/80">Quote Search</p>
 					<input
 						type="text"
@@ -125,7 +125,7 @@ export default function Component_AllQuotes() {
 				{filteredQuotes.map((quote) => (
 					<article
 						key={quote.id}
-						className="group break-inside-avoid rounded-xl border border-sky-300/20 bg-black/45 p-5 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300/35 lg:p-6"
+						className="group break-inside-avoid rounded-xl border border-sky-300/20 bg-black/45 p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300/35 hover:shadow-card-lg lg:p-6"
 					>
 						<q className="block text-sm font-light leading-relaxed text-sky-50 before:content-[open-quote] before:text-lg before:mr-2 before:leading-none before:font-serif before:text-sky-300 after:content-[close-quote] after:text-lg after:ml-2 after:leading-none after:font-serif after:text-sky-300 lg:text-base">
 							{quote.quote}

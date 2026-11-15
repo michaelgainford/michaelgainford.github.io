@@ -122,10 +122,10 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 				</button>
 			</div>
 
-			<div className="relative w-full max-w-full overflow-hidden">
+			<div className="relative w-full max-w-full overflow-hidden lg:overflow-visible">
 				<div
 					ref={scrollContainerRef}
-					className="w-full max-w-full min-h-75 flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory scroll-px-0 scroll-smooth pb-3 no-scrollbar lg:grid lg:grid-cols-2 lg:gap-10 xl:gap-16 lg:overflow-visible lg:snap-none lg:scroll-auto lg:pb-0 [&>div]:max-w-full [&>div]:border-0 lg:[&>div]:border lg:[&>div]:border-slate-200 [&>div]:bg-white [&>div]:shadow-lg [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-2xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:mb-2 [&_h2]:tracking-wide"
+					className="w-full max-w-full min-h-75 flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory scroll-px-0 scroll-smooth pb-3 no-scrollbar lg:grid lg:grid-cols-2 lg:gap-10 xl:gap-16 lg:overflow-visible lg:snap-none lg:scroll-auto lg:pb-0 [&>div]:max-w-full [&>div]:border-0 lg:[&>div]:border lg:[&>div]:border-slate-200 [&>div]:bg-white [&>div]:shadow-card [&>div]:rounded-2xl [&>div]:flex [&>div]:flex-col [&>div]:justify-between [&>div]:h-full [&>div]:transition-all [&>div]:hover:shadow-card-xl [&>div]:hover:-translate-y-1 [&_h2]:uppercase [&_h2]:font-extrabold [&_h2]:mb-2 [&_h2]:tracking-wide"
 				>
 				{blocks.map((block, index) => (
 					<div
@@ -133,7 +133,7 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 						ref={(element) => {
 							cardRefs.current[index] = element;
 						}}
-						className="snap-start shrink-0 min-w-full sm:min-w-[78%] lg:min-w-0 p-4 md:p-8 lg:p-0 lg:relative lg:overflow-hidden flex flex-col h-full gap-4 rounded-2xl group"
+						className="snap-start shrink-0 min-w-full sm:min-w-[78%] lg:min-w-0 p-4 md:p-8 lg:p-0 lg:mx-2 lg:relative lg:overflow-hidden flex flex-col h-full gap-4 rounded-2xl group"
 					>
 						<h2 className="lg:hidden pl-2 text-sm leading-none border-l-4 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
 						<div className="flex-1 flex flex-col justify-between lg:contents">
