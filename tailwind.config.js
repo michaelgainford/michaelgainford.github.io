@@ -86,6 +86,12 @@ module.exports = {
         '4xl': '2100px',
         '5xl': '2400px',
       },
+      boxShadow: {
+        'card-sm': '0 4px 6px -2px rgba(0, 0, 0, 0.12), 0 2px 4px -2px rgba(0, 0, 0, 0.08)',
+        'card': '0 8px 16px -4px rgba(0, 0, 0, 0.15), 0 4px 8px -4px rgba(0, 0, 0, 0.1)',
+        'card-lg': '0 12px 24px -6px rgba(0, 0, 0, 0.15), 0 8px 12px -6px rgba(0, 0, 0, 0.1)',
+        'card-xl': '0 16px 32px -8px rgba(0, 0, 0, 0.18), 0 12px 16px -8px rgba(0, 0, 0, 0.12)',
+      },
     },
   } 
 };

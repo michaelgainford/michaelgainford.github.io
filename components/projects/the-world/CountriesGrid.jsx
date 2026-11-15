@@ -91,7 +91,7 @@ export default function Component_CountriesGrid() {
 
 	return (
 		<div className="w-full max-w-450 space-y-6 lg:space-y-8">
-			<div className="sticky top-2 z-20 space-y-4 rounded-xl border border-white/20 bg-slate-950/85 p-4 shadow-xl backdrop-blur-md lg:p-6">
+			<div className="sticky top-2 z-20 space-y-4 rounded-xl border border-white/20 bg-slate-950/85 p-4 shadow-card-xl backdrop-blur-md lg:p-6">
 				<div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
 					<label className="flex flex-col gap-1">
 						<span className="text-xxs uppercase tracking-em-16 text-sky-200/90">Search</span>
@@ -214,7 +214,7 @@ export default function Component_CountriesGrid() {
 			</div>
 
 			{selectedCountryObjects.length > 0 && (
-				<section className="rounded-xl border border-amber-200/30 bg-slate-950/85 p-4 shadow-xl lg:sticky lg:top-28 lg:z-10 lg:p-6">
+				<section className="rounded-xl border border-amber-200/30 bg-slate-950/85 p-4 shadow-card-xl lg:sticky lg:top-28 lg:z-10 lg:p-6">
 					<h3 className="mb-4 text-sm uppercase tracking-em-16 text-amber-100">
 						Country Compare
 					</h3>
@@ -250,7 +250,7 @@ export default function Component_CountriesGrid() {
 				{filteredCountries.map((country, index) => (
 					<article
 						key={`${country.country_code}-${country.country_name}`}
-						className="group rounded-xl border border-slate-200/25 bg-slate-950/85 p-4 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:border-sky-300/40"
+						className="group rounded-xl border border-slate-200/25 bg-slate-950/85 p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-sky-300/40 hover:shadow-card-lg"
 					>
 						<div className="mb-4 flex items-start justify-between gap-3">
 							<div className="flex min-w-0 items-center gap-3">

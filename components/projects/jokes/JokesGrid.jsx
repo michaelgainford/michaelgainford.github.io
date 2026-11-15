@@ -59,7 +59,7 @@ export default function Component_JokesGrid() {
 	return (
 		<div className="w-full max-w-375 space-y-8 lg:space-y-10">
 			<div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-				<div className="rounded-2xl border border-amber-300/20 bg-linear-to-br from-rose-950/90 to-black/90 p-5 shadow-xl shadow-black/30 lg:p-8">
+				<div className="rounded-2xl border border-amber-300/20 bg-linear-to-br from-rose-950/90 to-black/90 p-5 shadow-card-xl lg:p-8">
 					<div className="mb-3 flex flex-wrap items-center justify-between gap-3">
 						<span className="rounded-full border border-amber-300/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-em-20 text-amber-200">
 							Featured Joke
@@ -80,7 +80,7 @@ export default function Component_JokesGrid() {
 					</p>
 				</div>
 
-				<div className="rounded-2xl border border-rose-300/20 bg-black/55 p-5 shadow-xl shadow-black/30 lg:p-6">
+				<div className="rounded-2xl border border-rose-300/20 bg-black/55 p-5 shadow-card-xl lg:p-6">
 					<p className="text-xxs uppercase tracking-em-18 text-rose-200/80">Joke Controls</p>
 					<div className="mt-4 space-y-3">
 						<input
@@ -118,7 +118,7 @@ export default function Component_JokesGrid() {
 				{filteredJokes.map((joke, index) => (
 					<article
 						key={`${joke.setup}-${index}`}
-						className="group flex min-h-55 flex-col justify-between rounded-xl border border-rose-300/20 bg-black/45 p-5 text-center shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:border-amber-300/35"
+						className="group flex min-h-55 flex-col justify-between rounded-xl border border-rose-300/20 bg-black/45 p-5 text-center shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-amber-300/35 hover:shadow-card-lg"
 					>
 						<div>
 							<p className="mb-4 text-xxs uppercase tracking-em-18 text-amber-200/75">One-Liner #{index + 1}</p>

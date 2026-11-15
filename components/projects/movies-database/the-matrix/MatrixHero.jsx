@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MatrixHero({ page, stats }) {
   return (
     <section className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
-      <div className="rounded-2xl border border-slate-800/80 bg-slate-950/70 p-5 shadow-xl shadow-black/30 lg:p-8">
+      <div className="rounded-2xl border border-slate-800/80 bg-slate-950/70 p-5 shadow-card-xl lg:p-8">
         <span className="mb-4 inline-flex rounded-full border border-slate-700/80 bg-slate-900/70 px-3 py-1 text-xxs uppercase tracking-em-18 text-slate-300">
           Reality Distortion Archive
         </span>

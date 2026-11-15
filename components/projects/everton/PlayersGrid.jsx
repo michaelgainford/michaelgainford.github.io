@@ -59,7 +59,7 @@ export default function Component_PlayersGrid() {
 	return (
 		<div className={`mt-8 space-y-8 playing-squad`}>
 			<div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-				<div className="rounded-2xl border border-blue-400/20 bg-linear-to-br from-blue-950/90 to-black/90 p-5 shadow-xl shadow-black/30 lg:p-8">
+				<div className="rounded-2xl border border-blue-400/20 bg-linear-to-br from-blue-950/90 to-black/90 p-5 shadow-card-xl lg:p-8">
 					<div className="mb-4 flex items-center justify-between">
 						<span className="rounded-full border border-blue-400/40 bg-black/40 px-3 py-1 text-xxs uppercase tracking-em-20 text-blue-200">
 							Featured Player
@@ -91,7 +91,7 @@ export default function Component_PlayersGrid() {
 					</div>
 				</div>
 
-				<div className="rounded-2xl border border-blue-400/20 bg-black/55 p-5 shadow-xl shadow-black/30 lg:p-6">
+				<div className="rounded-2xl border border-blue-400/20 bg-black/55 p-5 shadow-card-xl lg:p-6">
 					<p className="text-xxs uppercase tracking-em-18 text-blue-200/80">Player Search</p>
 					<input
 						type="text"
@@ -142,7 +142,7 @@ export default function Component_PlayersGrid() {
 
 			<div className={`grid grid-cols-1 players gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:grid-cols-4`}>
 				{filteredPlayers.map((player) => (
-					<div key={player.slug} className={`group flex flex-col overflow-hidden rounded-xl border border-blue-400/20 bg-black/45 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/35`}>
+					<div key={player.slug} className={`group flex flex-col overflow-hidden rounded-xl border border-blue-400/20 bg-black/45 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/35 hover:shadow-card-lg`}>
 						<div className="relative aspect-square overflow-hidden">
 							<Image
 								src={`/football/everton/${player.slug}.webp`}

@@ -12,6 +12,7 @@ export default function HERO_PREMIER_LEAGUE () {
                       alt="English Premier League Logo"
                       width={192}
                       height={81}
+                      loading="eager"
                     />
                 </Link>
             </div>
