@@ -224,9 +224,9 @@ export default async function ClubPage({ params }) {
 								<Image
 									src={logoSrc}
 									alt={club.teamName}
-									width={120}
-									height={120}
-									className="h-24 w-auto"
+									width={240}
+									height={240}
+									className="h-24 w-auto lg:h-48"
 								/>
 							</div>
 							<h1 className="mt-4 text-xl md:text-3xl font-bold tracking-tight">{club.teamName}</h1>

@@ -65,7 +65,7 @@ export default function Page_EnglishPremierLeague () {
 	return (
 		<div className={`${globalPageStyles} bg-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
-			<main className="w-full text-epl">
+			<main className="w-full text-epl max-md:pb-12">
 				<PremierLeagueHero />
 				<div className={globalWrapperFixedWidth}>
 					<H1 
