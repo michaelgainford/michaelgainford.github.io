@@ -97,19 +97,6 @@ export default function Component_HomePageIntro() {
 					</div>
 					</div>
 
-					<div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 sm:rounded-[1.25rem] sm:p-6 lg:min-h-55">
-					<p className="text-xxs uppercase tracking-em-18 text-slate-500 sm:text-xs sm:tracking-em-35">
-						What You Can Expect
-					</p>
-					<div className="mt-4 space-y-4 text-xs leading-6 tracking-normal text-slate-400 sm:text-sm sm:leading-7 sm:tracking-wide">
-							<p>
-								Featured work that changes as the site grows, rather than a static landing page.
-							</p>
-							<p>
-								A mix of original projects, experiments, and curated references that are actually useful during development.
-							</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>

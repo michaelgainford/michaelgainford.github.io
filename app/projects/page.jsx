@@ -33,7 +33,7 @@ export default function Page_Projects() {
 					classes_margin={`!md:-mt-4 mb-12`}
 					classes_other={``}
 				/>
-				<div className="w-[calc(100%+5vw)] self-start sm:w-full">
+				<div className="w-full self-start">
 					<ProjectsGrid />
 				</div>
 			</main>

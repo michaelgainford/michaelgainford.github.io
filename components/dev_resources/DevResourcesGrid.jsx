@@ -195,7 +195,7 @@ export default function Component_DevResourcesGrid() {
         {filteredResources.map((resource, index) => (
           <article
             key={`${resource.slug}-${resource.name}-${index}`}
-            className="group flex h-full flex-col overflow-hidden rounded-xl border border-teal-500/20 bg-black/45 p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-teal-300/40 hover:shadow-card-lg"
+            className="group flex h-full flex-col overflow-visible rounded-xl border border-teal-500/20 bg-black/45 p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-teal-300/40 hover:shadow-card-lg"
           >
             <div className="mb-3 flex min-h-9 items-center justify-between gap-3">
               <h3 className="text-base font-semibold text-slate-100">{resource.name}</h3>
