@@ -1,34 +1,20 @@
 import Link from "next/link";
-import IconCodepen from "./IconCodepen";
 import IconGithub from "./IconGithub";
 import IconLinkedIn from "./IconLinkedIn";
-import IconX from "./IconTwitter";
 
 const IconsSocialsData = [
 	{
 		id: 1,
-		icon: IconCodepen,
-		title: "Codepen",
-		href: "https://codepen.io/michaelgainford",
-	},
-	{
-		id: 2,
 		icon: IconGithub,
 		title: "GitHub",
 		href: "https://github.com/michaelgainford",
 	},
 	{
-		id: 3,
+		id: 2,
 		icon: IconLinkedIn,
 		title: "LinkedIn",
 		href: "https://www.linkedin.com/in/michael-gainford/",
-	},
-	{
-		id: 4,
-		icon: IconX,
-		title: "X",
-		href: "https://twitter.com/m1cha3lgainford",
-	},
+	}
 ];
 
 export default function ICONS_SKILLS({ heading, heading_styles }) {
@@ -43,7 +29,7 @@ export default function ICONS_SKILLS({ heading, heading_styles }) {
 			>
 				{heading}
 			</h2>
-			<div className="grid grid-cols-2 gap-4 lg:gap-8 @3xl:grid-cols-4 test">
+			<div className="grid grid-cols-2 gap-4 lg:gap-8">
 				{IconsSocialsData.map((icon, index) => (
 					<Link
 						key={index}

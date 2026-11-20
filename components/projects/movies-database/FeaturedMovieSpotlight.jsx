@@ -1,29 +1,12 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { getAverageMigacriticScore, watchedMovies } from "@/variables/ProjectMovies";
+import { featuredMovies, getAverageMigacriticScore, watchedMovies } from "@/variables/ProjectMovies";
 
 const ROTATION_INTERVAL = 6000;
 
 export default function Component_FeaturedMovieSpotlight() {
-	const featuredMovies = useMemo(() => {
-		const topRatedMovies = [...watchedMovies]
-			.map((movie) => ({
-				movie,
-				score: getAverageMigacriticScore(movie),
-			}))
-			.filter(({ score }) => score !== null)
-			.sort((a, b) => b.score - a.score)
-			.slice(0, 12)
-			.map(({ movie }) => movie);
-
-		if (topRatedMovies.length > 0) {
-			return topRatedMovies;
-		}
-
-		return watchedMovies.slice(0, 12);
-	}, []);
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [isPaused, setIsPaused] = useState(false);
 
@@ -37,14 +20,14 @@ export default function Component_FeaturedMovieSpotlight() {
 		}, ROTATION_INTERVAL);
 
 		return () => window.clearInterval(intervalId);
-	}, [featuredMovies.length, isPaused]);
+	}, [isPaused]);
 
 	const featuredMovie = featuredMovies[activeIndex] ?? watchedMovies[0];
 	const featuredMovieScore = getAverageMigacriticScore(featuredMovie);
 
 	return (
 		<div
-			className="mb-8 grid grid-cols-1 overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-950/70 shadow-card-xl lg:grid-cols-[200px_1fr] xl:mb-10"
+			className="grid grid-cols-1 overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-950/70 shadow-card-xl lg:order-first lg:grid-cols-[200px_minmax(0,1fr)]"
 			onMouseEnter={() => setIsPaused(true)}
 			onMouseLeave={() => setIsPaused(false)}
 		>
@@ -55,7 +38,7 @@ export default function Component_FeaturedMovieSpotlight() {
 					fill
 					className="object-cover"
 					sizes="200px"
-					priority
+					loading="eager"
 				/>
 				<div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
 				<div className="absolute left-4 top-4 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-xxs uppercase tracking-em-18 text-slate-300">

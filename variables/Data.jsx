@@ -2,7 +2,6 @@
   ICON IMPORTS
 *********************************/}
 import Icon_Batman from "@/components/icons/IconBatman";
-import Icon_Codepen from "@/components/icons/IconCodepen";
 import Icon_Deadpool from "@/components/icons/IconDeadpool";
 import Icon_IronMan from "@/components/icons/IconIronMan";
 import Icon_Earth from "@/components/icons/IconEarth";
@@ -17,7 +16,6 @@ import Icon_Pill from "@/components/icons/IconPill";
 import Icon_Planet from "@/components/icons/IconPlanet";
 import Icon_PremierLeagueSimple from "@/components/icons/IconPremierLeagueLogoSimple";
 import Icon_Quote from "@/components/icons/IconQuote";
-import Icon_Twitter from "@/components/icons/IconTwitter";
 
 
 {/********************************
@@ -379,11 +377,6 @@ const featuredProjects = dataForAllProjects.filter(project => project.projectSta
 *********************************/}
 const socials = [
   {
-    name: "Codepen",
-    href: "https://codepen.io/michaelgainford",
-    icon: Icon_Codepen
-  },
-  {
     name: "GitHub",
     href: "https://github.com/michaelgainford",
     icon: Icon_GitHub
@@ -392,11 +385,6 @@ const socials = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/michael-gainford/",
     icon: Icon_LinkedIn
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/m1cha3lgainford",
-    icon: Icon_Twitter
   }
 ]
 

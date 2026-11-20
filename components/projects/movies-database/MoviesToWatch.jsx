@@ -18,7 +18,7 @@ export default function Component_MoviesToWatch() {
 				
 				if (firstChild) {
 					const cardWidth = firstChild.offsetWidth;
-					const gap = parseInt(window.getComputedStyle(container).gap);
+					const gap = parseInt(window.getComputedStyle(container).columnGap);
 					setScrollWidth(cardWidth + gap);
 				}
 			}
@@ -89,9 +89,9 @@ export default function Component_MoviesToWatch() {
 				</svg>
 			</button>
 
-		<div ref={scrollContainerRef} className="min-h-25 movies-grid w-full flex flex-nowrap gap-4 max-sm:gap-y-6 xl:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
+		<div ref={scrollContainerRef} className="min-h-25 movies-grid w-full grid grid-flow-col auto-cols-max gap-x-4 gap-y-0 xl:gap-x-12 overflow-x-auto snap-x snap-mandatory no-scrollbar">
 			{unwatchedMovies.map((movie, id) => (
-			<a key={id} href={movie.imdb_url} target="_blank" rel="noreferrer" className="flex flex-col duration-300 ease-in-out cursor-pointer movie-card text-light_colour border border-slate-800/80 rounded-md bg-slate-950/80 group hover:bg-slate-900/85 snap-always snap-center shrink-0 w-36 overflow-hidden transition-all hover:border-slate-600/80">
+			<a key={id} href={movie.imdb_url} target="_blank" rel="noreferrer" className="grid row-span-3 grid-rows-subgrid gap-y-0 duration-300 ease-in-out cursor-pointer movie-card text-light_colour border border-slate-800/80 rounded-md bg-slate-950/80 group hover:bg-slate-900/85 snap-always snap-center shrink-0 w-36 overflow-hidden transition-all hover:border-slate-600/80">
 			<div className="w-full max-w-full movie-poster flex-shrink-0">
 				<Image 
 					src={failedImages.has(movie.image) ? PLACEHOLDER_IMAGE : movie.image} 
@@ -106,8 +106,8 @@ export default function Component_MoviesToWatch() {
 					}}
 				/>
 			</div>
-				<div className="w-full flex-1 flex flex-col movie-info">
-					<p className="movie-title bg-slate-950/70 w-full py-2 px-3 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 xl:group-hover:opacity-100 text-xs flex items-center justify-center line-clamp-3 text-center flex-1">
+				<div className="grid row-span-2 grid-rows-subgrid gap-y-0 w-full movie-info">
+					<p className="movie-title bg-slate-950/70 w-full py-2 px-3 group-hover:pt-2 ease-in-out duration-300 xl:opacity-50 xl:group-hover:opacity-100 text-xs flex items-center justify-center line-clamp-3 text-center">
 						{movie.title}
 					</p>
 					<div className="grid grid-cols-3 border-t border-slate-800/80 text-xxs tracking-wide uppercase text-slate-300 flex-shrink-0">

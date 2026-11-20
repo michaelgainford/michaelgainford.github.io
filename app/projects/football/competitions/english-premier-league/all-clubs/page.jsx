@@ -88,7 +88,7 @@ export default function Page_PremierLeagueAllClubs () {
 				</div>
 
 				<div className="min-h-75 w-full px-2 sm:px-4 md:px-8 py-2 sm:py-4">
-					<div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 max-sm:px-1 gap-3 sm:gap-4 xl:gap-10 justify-center">
+					<div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 max-sm:px-1 gap-3 sm:gap-4 xl:gap-10 justify-center">
 						{filteredClubs.map((Club) => {
 							const clubsDir = "/football/premier-league/club-logos";
 							let clubLogosDir = clubsDir + '/' + Club.clubLogoSlug + ".svg";
@@ -109,7 +109,8 @@ export default function Page_PremierLeagueAllClubs () {
 										}
 									/>
 									<p className={`text-xxs md:text-sm 2xl:text-base ${Club.currentPrem ? "text-brand-main font-bold" : "text-brand-main font-bold lg:text-gray-400 lg:font-normal"} text-center`}>
-										{Club.teamShortName ? Club.teamShortName : Club.teamName}
+										<span className="lg:hidden">{Club.teamShortName || Club.teamName}</span>
+										<span className="hidden lg:inline">{Club.teamName}</span>
 									</p>
 									<span className={`max-md:hidden absolute top-0 right-0 p-1 ${Club.currentPrem ? `bg-emerald-200/30` : `bg-transparent`} text-xxs font-bold tracking-wide`}>
 										{Club.currentPrem ? `Current` : (getLastSeason(Club) ? (

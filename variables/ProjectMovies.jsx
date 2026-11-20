@@ -31,6 +31,13 @@ const getAverageMigacriticScore = (movie) => {
 };
 
 const watchedMovies = DataForMoviesList.filter((movie) => movie.watched === true);
+const topRatedMovies = [...watchedMovies]
+	.map((movie) => ({ movie, score: getAverageMigacriticScore(movie) }))
+	.filter(({ score }) => score !== null)
+	.sort((a, b) => b.score - a.score)
+	.slice(0, 12)
+	.map(({ movie }) => movie);
+const featuredMovies = topRatedMovies.length > 0 ? topRatedMovies : watchedMovies.slice(0, 12);
 const watchedMoviesLength = watchedMovies.length;
 const unwatchedMovies = DataForMoviesList.filter((movie) => movie.watched === false);
 const unwatchedMoviesLength = unwatchedMovies.length;
@@ -40,6 +47,7 @@ const unwatchedMoviesLength = unwatchedMovies.length;
 *********************************/}
 export { 
 	DataForMoviesList,
+	featuredMovies,
 	getAverageMigacriticScore,
 	watchedMovies,
 	watchedMoviesLength,

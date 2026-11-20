@@ -4,7 +4,7 @@ import { premierLeagueHubUrl, premierLeagueLogoSvgPath } from '@/variables/Proje
 
 export default function HERO_PREMIER_LEAGUE () {
     return (
-        <div className="py-4 pb-8 mx-auto -mt-6 text-white lg:p-8 bg-epl-500 lg:pb-16 lg:mb-16 lg:-mt-16">
+        <div className="py-4 pb-8 mx-auto -mt-6 text-white lg:p-8 bg-epl-500 lg:pb-16 lg:-mt-16">
             <div className="flex justify-center h-auto mx-auto my-8 w-36 lg:w-48">
                 <Link href={premierLeagueHubUrl}>
                     <Image

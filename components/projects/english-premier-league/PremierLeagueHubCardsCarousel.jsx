@@ -99,7 +99,7 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 					type="button"
 					onClick={goToPreviousCard}
 					disabled={activeIndex === 0}
-					className="flex h-10 w-10 items-center justify-center rounded-full border border-epl-400 bg-white text-epl-700 transition-colors hover:bg-epl-700 hover:text-white active:bg-epl-700 active:text-white disabled:cursor-not-allowed disabled:border-slate-300 disabled:bg-slate-100 disabled:text-slate-400 disabled:opacity-100"
+					className="flex h-10 w-10 items-center justify-center rounded-full border border-epl-400 bg-white text-epl-700 transition-colors hover:bg-epl-700 hover:text-white hover:pointer-events-auto active:bg-epl-700 active:text-white disabled:cursor-not-allowed disabled:border-slate-300 disabled:bg-slate-100 disabled:text-slate-400 disabled:opacity-100"
 					aria-label="Go to previous card"
 				>
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
@@ -113,7 +113,7 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 					type="button"
 					onClick={goToNextCard}
 					disabled={activeIndex === blocks.length - 1}
-					className="flex h-10 w-10 items-center justify-center rounded-full border border-epl-400 bg-white text-epl-700 transition-colors hover:bg-epl-700 hover:text-white active:bg-epl-700 active:text-white disabled:cursor-not-allowed disabled:border-slate-300 disabled:bg-slate-100 disabled:text-slate-400 disabled:opacity-100"
+					className="flex h-10 w-10 items-center justify-center rounded-full border border-epl-400 bg-white text-epl-700 transition-colors hover:bg-epl-700 hover:text-white hover:pointer-events-auto active:bg-epl-700 active:text-white disabled:cursor-not-allowed disabled:border-slate-300 disabled:bg-slate-100 disabled:text-slate-400 disabled:opacity-100"
 					aria-label="Go to next card"
 				>
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
@@ -135,7 +135,6 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 						}}
 						className="snap-start shrink-0 min-w-full sm:min-w-[78%] lg:min-w-0 p-4 md:p-8 lg:p-0 lg:mx-2 lg:relative lg:overflow-hidden flex flex-col h-full gap-4 rounded-2xl group"
 					>
-						<h2 className="lg:hidden pl-2 text-sm leading-none border-l-4 border-amber-500 group-hover:border-epl-500 transition-colors duration-200">{block.title}</h2>
 						<div className="flex-1 flex flex-col justify-between lg:contents">
 							<div className="relative w-full mb-6 lg:mb-0 lg:order-1 aspect-[16/8.6] sm:aspect-video rounded-xl lg:rounded-none overflow-hidden">
 								<Image
@@ -147,7 +146,7 @@ export default function PremierLeagueHubCardsCarousel({ blocks, imageRoot, conta
 									priority={index < 2}
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-epl-700/80 via-epl-500/40 to-transparent pointer-events-none rounded-xl lg:rounded-none" />
-								<h2 className="hidden lg:block absolute bottom-4 left-8 right-8 z-10 !mb-0 text-3xl !normal-case !tracking-normal leading-tight text-white">{block.title}</h2>
+								<h2 className="absolute bottom-4 left-4 right-4 z-10 !mb-0 text-xl lg:left-8 lg:right-8 lg:text-3xl !normal-case !tracking-normal leading-tight text-white">{block.title}</h2>
 							</div>
 							<p className="lg:order-3 lg:mx-8 text-sm tracking-wide mb-4 lg:mb-0 line-clamp-4">{block.content}</p>
 							<div className="lg:order-4 lg:mx-8 lg:mb-8 flex justify-start mt-auto">
