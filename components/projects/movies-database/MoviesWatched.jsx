@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { useMemo, useRef, useState } from "react";
-import { getAverageMigacriticScore, watchedMovies } from "@/variables/ProjectMovies";
-const watchedMoviesScrollStyles = "max-xl:flex max-xl:flex-no-wrap max-xl:justify-start max-xl:overflow-x-scroll max-xl:snap-x max-xl:snap-mandatory";
-const watchedMoviesGridStyles = "xl:grid xl:gap-8 xl:grid-cols-4 xl:gap-8 xl:gap-12 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8 4xl:grid-cols-10 5xl:grid-cols-12";
-const watchedMoviesSharedStyles = "w-full gap-4 no-scrollbar";
+import { featuredMovies, getAverageMigacriticScore, watchedMovies } from "@/variables/ProjectMovies";
+const watchedMoviesScrollStyles = "max-xl:grid-flow-col max-xl:auto-cols-max max-xl:justify-start max-xl:overflow-x-scroll max-xl:snap-x max-xl:snap-mandatory";
+const watchedMoviesGridStyles = "xl:gap-x-12 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8 4xl:grid-cols-10 5xl:grid-cols-12";
+const watchedMoviesSharedStyles = "grid w-full gap-x-4 gap-y-0 no-scrollbar";
 const watchedMoviesCombinedStyles = `${watchedMoviesSharedStyles} ${watchedMoviesScrollStyles} ${watchedMoviesGridStyles}`;
 const numberFormatter = new Intl.NumberFormat("en-GB");
 const PLACEHOLDER_IMAGE = "/placeholder-files/square-template.webp";
@@ -125,7 +125,7 @@ export default function Component_MoviesWatched() {
 	};
 
 	return (
-		<section className="relative w-full max-w-full overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70 p-4 lg:p-6" id="watched-movies">
+		<section className="relative w-full max-w-full overflow-hidden rounded-xl bg-slate-950/70" id="watched-movies">
 			<div className="mb-5 flex flex-wrap items-center justify-between gap-4">
 				<h2 className="text-sm font-semibold uppercase tracking-em-18 text-slate-200 lg:text-base">Watched Movies</h2>
 				<div className="flex flex-wrap gap-2 text-xxs uppercase tracking-wide text-slate-300">
@@ -249,7 +249,7 @@ export default function Component_MoviesWatched() {
 					href={movie.imdb_url}
 					target="_blank"
 					rel="noreferrer"
-					className="flex w-52 shrink-0 flex-col items-center content-center duration-300 ease-in-out border cursor-pointer justify-items-center border-slate-800/80 text-light_colour group bg-slate-950/85 hover:bg-slate-900/85 xl:max-w-50 xl:w-auto 2xl:max-w-50 snap-always snap-center max-xl:mr-6 mb-8 relative before:pointer-events-none before:transform-gpu before:absolute before:left-0 before:top-0 before:-z-1 before:h-full before:w-full before:bg-slate-500/35 before:opacity-0 before:blur-[28px] before:transition-opacity before:content-[''] hover:before:opacity-100 rounded-sm overflow-hidden"
+					className="grid row-span-3 grid-rows-subgrid gap-y-0 w-52 shrink-0 duration-300 ease-in-out border cursor-pointer border-slate-800/80 text-light_colour group bg-slate-950/85 hover:bg-slate-900/85 xl:max-w-50 xl:w-auto 2xl:max-w-50 snap-always snap-center max-xl:mr-6 mb-8 relative before:pointer-events-none before:transform-gpu before:absolute before:left-0 before:top-0 before:-z-1 before:h-full before:w-full before:bg-slate-500/35 before:opacity-0 before:blur-[28px] before:transition-opacity before:content-[''] hover:before:opacity-100 rounded-sm overflow-hidden"
 				>
 					<div className="relative w-full max-w-full movie-poster bg-black aspect-2/3">
 						<Image 
@@ -258,6 +258,7 @@ export default function Component_MoviesWatched() {
 							alt={movie.title} 
 							height={300} 
 							width={200}
+							loading={movie.image === featuredMovies[0]?.image ? "eager" : "lazy"}
 							onError={() => {
 								if (!failedImages.has(movie.image)) {
 									setFailedImages(prev => new Set([...prev, movie.image]));
@@ -267,7 +268,7 @@ export default function Component_MoviesWatched() {
 						<span className="absolute left-2 top-2 rounded-sm bg-slate-950/85 px-2 py-1 text-xxs tracking-wide text-slate-300">{movie.year}</span>
 						<span className="absolute right-2 top-2 rounded-sm bg-slate-950/85 px-2 py-1 text-xxs tracking-wide text-slate-300">{movie.ageRating || "NR"}</span>
 					</div>
-					<div className="w-full transition-all duration-300 movie-info">
+					<div className="grid row-span-2 grid-rows-subgrid gap-y-0 w-full transition-all duration-300 movie-info">
 						<p className="movie-title bg-slate-950/70 w-full px-2 py-2 ease-in-out duration-300 text-center text-xs min-h-15 max-w-full flex items-center justify-center xl:text-sm line-clamp-2">{movie.title}</p>
 						<div className="grid grid-cols-2 text-xxs tracking-wide uppercase text-slate-300 border-t border-slate-800/70">
 							<span className="px-2 py-1 text-center border-r border-slate-800/70 truncate">{movie.genre}</span>

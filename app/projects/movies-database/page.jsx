@@ -34,26 +34,28 @@ export default function Page_MoviesDatabase() {
 					  other_classes="text-xs text-balance text-center leading-5 font-light md:text-sm md:mb-12 xl:pb-4"
 					/>
 
-					<div className="grid grid-cols-2 gap-2 mb-6 md:grid-cols-4">
-						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
-							<p className="text-xxs uppercase tracking-em-16 text-slate-400">Watched</p>
-							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{watchedMoviesLength}</p>
+					<div className="mb-8 grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] xl:mb-10">
+						<div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-2">
+							<div className="flex flex-col justify-center rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
+								<p className="text-xxs uppercase tracking-em-16 text-slate-400">Watched</p>
+								<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{watchedMoviesLength}</p>
+							</div>
+							<div className="flex flex-col justify-center rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
+								<p className="text-xxs uppercase tracking-em-16 text-slate-400">Watchlist</p>
+								<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{unwatchedMoviesLength}</p>
+							</div>
+							<div className="flex flex-col justify-center rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
+								<p className="text-xxs uppercase tracking-em-16 text-slate-400">Database</p>
+								<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{watchedMoviesLength + unwatchedMoviesLength}</p>
+							</div>
+							<div className="flex flex-col justify-center rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
+								<p className="text-xxs uppercase tracking-em-16 text-slate-400">Source</p>
+								<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">IMDb</p>
+							</div>
 						</div>
-						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
-							<p className="text-xxs uppercase tracking-em-16 text-slate-400">Watchlist</p>
-							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{unwatchedMoviesLength}</p>
-						</div>
-						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
-							<p className="text-xxs uppercase tracking-em-16 text-slate-400">Database</p>
-							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">{watchedMoviesLength + unwatchedMoviesLength}</p>
-						</div>
-						<div className="rounded-md border border-slate-800/80 bg-slate-900/60 p-3 text-center">
-							<p className="text-xxs uppercase tracking-em-16 text-slate-400">Source</p>
-							<p className="mt-1 text-sm font-semibold text-slate-200 lg:text-base">IMDb</p>
-						</div>
-					</div>
 
-					<FeaturedMovieSpotlight />
+						<FeaturedMovieSpotlight />
+					</div>
 
 					<div className="movies-mini-nav mb-8 max-sm:mt-4 xl:mb-10">
 						<div className="flex flex-wrap items-center justify-center gap-2.5">
