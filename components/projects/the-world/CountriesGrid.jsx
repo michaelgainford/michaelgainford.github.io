@@ -223,11 +223,12 @@ export default function Component_CountriesGrid() {
 							<div key={`compare-${country.country_code}`} className="rounded-lg border border-slate-200/20 bg-black/60 p-3">
 								<div className="mb-3 flex items-center gap-2">
 									<Image
-										className="rounded-sm border border-slate-300/30"
+										className="max-w-none shrink-0 rounded-sm border border-slate-300/30"
 										src={`/country-flags/${country.country_code}.svg`}
 										alt={`${country.country_name} flag`}
 										width={28}
-										height={20}
+										height={21}
+										style={{ width: 28, height: 21 }}
 									/>
 									<p className="truncate text-sm font-semibold uppercase tracking-wide text-slate-100">
 										{country.country_name}
@@ -255,11 +256,12 @@ export default function Component_CountriesGrid() {
 						<div className="mb-4 flex items-start justify-between gap-3">
 							<div className="flex min-w-0 items-center gap-3">
 								<Image
-									className="rounded-sm border border-slate-300/30"
+									className="max-w-none shrink-0 rounded-sm border border-slate-300/30"
 									src={`/country-flags/${country.country_code}.svg`}
 									alt={`${country.country_name} flag`}
 									width={32}
 									height={24}
+									style={{ width: 32, height: 24 }}
 									loading={index > 60 ? "lazy" : "eager"}
 								/>
 								<div className="min-w-0">
