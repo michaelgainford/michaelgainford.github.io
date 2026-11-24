@@ -6,7 +6,7 @@ import Button from "@/components/buttons/Button";
 export default function Component_FeaturedDevResources() {
 	return (
 		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 sm:rounded-3xl sm:p-5 lg:p-6">
-			<H2SectionHeader text="Featured Dev Resources" />
+			<H2SectionHeader text="Featured Dev Resources" className="max-sm:text-left max-sm:text-xxs max-sm:leading-normal max-sm:tracking-em-18 max-sm:text-slate-500" />
 			<div className="grid justify-center grid-cols-2 gap-3 sm:gap-4 md:gap-5 xl:gap-6">
 				{featuredResourcesSortedByName.map((resource, index) => (
 					<Link

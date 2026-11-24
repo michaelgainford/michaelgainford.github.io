@@ -6,7 +6,7 @@ import { featuredProjects } from "@/variables/Data";
 export default function Component_FeaturedProjects() {
 	return (
 		<div className="w-full rounded-xl border border-slate-800/80 bg-linear-to-br from-slate-950/70 via-slate-900/60 to-slate-950/70 p-4 projects-list sm:rounded-3xl sm:p-5 lg:p-6">
-			<H2SectionHeader text={`Featured Dev Projects`} />
+			<H2SectionHeader text={`Featured Dev Projects`} className="max-sm:text-left max-sm:text-xxs max-sm:leading-normal max-sm:tracking-em-18 max-sm:text-slate-500" />
 			{/* Featured Projects Grid */}
 			<div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 xl:gap-6">
 				{featuredProjects.map((project, index) => (
