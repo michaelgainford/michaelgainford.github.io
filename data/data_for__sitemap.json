@@ -16,7 +16,7 @@
 			"navigationMain": true,
 			"navigationFooterFirstList": true,
 			"navigationFooterSecondList": false,
-			"lastUpdated": "2026-04-05",
+			"lastUpdated": "2026-11-23",
 			"pageStyling": {
 				"border": "border-amber-500",
 				"background_colour": "bg-amber-500",
@@ -112,7 +112,7 @@
 			"mainNav": true,
 			"footerNav_1": true,
 			"footerNav_2": false,
-			"lastUpdated": "2026-04-05"
+			"lastUpdated": "2026-11-22"
 		},
 		{
 			"name": "English Premier League",
@@ -126,7 +126,7 @@
 			"mainNav": true,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2026-11-06"
+			"lastUpdated": "2026-11-22"
 		},
 		{
 			"name": "EPL - All Clubs",
@@ -140,7 +140,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-11-08"
+			"lastUpdated": "2026-11-22"
 		},
 		{
 			"name": "EPL - Premier League Records",
@@ -158,7 +158,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Aston Villa",
@@ -167,7 +167,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Barnsley",
@@ -176,7 +176,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Birmingham City",
@@ -185,7 +185,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Blackburn Rovers",
@@ -194,7 +194,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Blackpool",
@@ -203,7 +203,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Bolton Wanderers",
@@ -212,7 +212,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Bournemouth",
@@ -221,7 +221,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Bradford City",
@@ -230,7 +230,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Brentford",
@@ -239,7 +239,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Brighton & Hove Albion",
@@ -248,7 +248,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Burnley",
@@ -257,7 +257,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Cardiff City",
@@ -266,7 +266,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Charlton Athletic",
@@ -275,7 +275,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Chelsea",
@@ -284,7 +284,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Coventry City",
@@ -293,7 +293,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Crystal Palace",
@@ -302,7 +302,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Derby County",
@@ -311,7 +311,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Everton",
@@ -320,7 +320,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Fulham",
@@ -329,7 +329,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Huddersfield Town",
@@ -338,7 +338,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Hull City",
@@ -347,7 +347,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Ipswich Town",
@@ -356,7 +356,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Leeds United",
@@ -365,7 +365,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Leicester City",
@@ -374,7 +374,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Liverpool",
@@ -383,7 +383,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Luton Town",
@@ -392,7 +392,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Manchester City",
@@ -401,7 +401,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Manchester United",
@@ -410,7 +410,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Middlesbrough",
@@ -419,7 +419,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Newcastle United",
@@ -428,7 +428,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Norwich City",
@@ -437,7 +437,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Nottingham Forest",
@@ -446,7 +446,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Oldham Athletic",
@@ -455,7 +455,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Portsmouth",
@@ -464,7 +464,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Queens Park Rangers",
@@ -473,7 +473,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Reading",
@@ -482,7 +482,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Sheffield United",
@@ -491,7 +491,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Sheffield Wednesday",
@@ -500,7 +500,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Southampton",
@@ -509,7 +509,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Stoke City",
@@ -518,7 +518,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Sunderland",
@@ -527,7 +527,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Swansea City",
@@ -536,7 +536,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Swindon Town",
@@ -545,7 +545,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Tottenham Hotspur",
@@ -554,7 +554,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Watford",
@@ -563,7 +563,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - West Bromwich Albion",
@@ -572,7 +572,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - West Ham United",
@@ -581,7 +581,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Wigan Athletic",
@@ -590,7 +590,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Wimbledon",
@@ -599,7 +599,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Wolverhampton Wanderers",
@@ -608,7 +608,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-10-25"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - 100 Club",
@@ -617,7 +617,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": false,
-			"lastUpdated": "2026-11-06"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "EPL - Competition History",
@@ -739,7 +739,7 @@
 			"mainNav": false,
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2026-04-05"
+			"lastUpdated": "2026-11-22"
 		},
 		{
 			"name": "The Matrix",
@@ -842,7 +842,7 @@
 			"hover": "hover:bg-geography",
 			"footerNav_1": false,
 			"footerNav_2": true,
-			"lastUpdated": "2026-03-28"
+			"lastUpdated": "2026-11-23"
 		},
 		{
 			"name": "URL Concatenator",
@@ -872,7 +872,7 @@
 			"mainNav": true,
 			"footerNav_1": true,
 			"footerNav_2": false,
-			"lastUpdated": "2026-03-28"
+			"lastUpdated": "2026-11-22"
 		}
 	]
 }
