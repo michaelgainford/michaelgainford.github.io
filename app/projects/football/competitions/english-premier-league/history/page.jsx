@@ -459,7 +459,7 @@ export default function PAGE_PREMIER_LEAGUE_HISTORY () {
                     />
 				</div>
 				<div className={`${mainStyles}`}>
-                    <p className="text-sm lg:text-sm max-w-200">The Premier League was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League is the top tier of English football and is the most-watched sports league in the world. The league has been dominated by Manchester United (13) and Manchester City (8) with Chelsea (5), Arsenal (3), Liverpool (2), Leicester City (1) and Blackburn Rovers (1) being the only other clubs to win the title.</p>
+                    <p className="text-sm lg:text-sm max-w-200 pt-8">The Premier League was founded in 1992 when the clubs in the Football League First Division broke away from the Football League to form their own competition. The Premier League is the top tier of English football and is the most-watched sports league in the world. The league has been dominated by Manchester United (13) and Manchester City (8) with Chelsea (5), Arsenal (3), Liverpool (2), Leicester City (1) and Blackburn Rovers (1) being the only other clubs to win the title.</p>
 
                     <div className="seasons mt-16 w-full grid grid-cols-1 gap-8 lg:grid-cols-2">
                         {premierLeagueSeasonsData.map((season, index) => (

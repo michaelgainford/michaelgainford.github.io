@@ -71,7 +71,7 @@ export default function Page_EnglishPremierLeague () {
 					<H1 
 					  text="The Premier League"
 					  font_sizes="text-base lg:text-2xl!"
-					  other_classes="uppercase" 
+					  other_classes="uppercase lg:mt-8" 
 					/>
 					<PageIntro 
 					  text={pageIntroText} 
