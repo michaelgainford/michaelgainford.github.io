@@ -3,7 +3,7 @@ const sharedClasses = `pb-4 mb-0 text-xs tracking-widest text-left uppercase sm:
 export default function FOOTER_NAVLIST_HEADER({ text }) {
 	return (
 		<>
-		<h3 className={`${sharedClasses} sm:hidden`}>
+		<h3 className={`${sharedClasses} transition-colors duration-300 motion-reduce:transition-none sm:hidden`}>
 			{text}
 		</h3>
     	<h4 className={`${sharedClasses} max-sm:hidden`}>
