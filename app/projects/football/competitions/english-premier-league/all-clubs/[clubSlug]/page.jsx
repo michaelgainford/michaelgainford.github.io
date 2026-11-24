@@ -8,6 +8,14 @@ import ClubFinishesChart from "@/components/projects/english-premier-league/Club
 import PremierLeagueDataJSON from "@/data/data_for__englishpremierleague.json";
 import { globalPageStyles } from "@/variables/Styles";
 
+function DisclosureCaret() {
+	return (
+		<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="size-6 shrink-0 text-epl-700 transition-transform duration-200 group-open:rotate-180">
+			<path d="M6 9l6 6 6-6" />
+		</svg>
+	);
+}
+
 // Required for static export: generate all possible clubSlug params
 export async function generateStaticParams() {
 	const ClubsData = PremierLeagueDataJSON.Clubs;
@@ -193,6 +201,7 @@ export default async function ClubPage({ params }) {
 	const biggestWinRaw = leaguePerformance?.biggestWin ?? club.biggestWin ?? "N/A";
 	const biggestDefeatRaw = leaguePerformance?.biggestLoss ?? club.biggestLoss ?? "N/A";
 	const premierItems = [
+		{ label: "Current Premier League Team", value: club.currentPrem ? "Yes" : "No" },
 		{
 			label: "Seasons in Premier League",
 			value: (
@@ -208,35 +217,32 @@ export default async function ClubPage({ params }) {
 		{ label: "Relegations", value: relegations },
 		{ label: "Biggest Win", value: formatResultWithSeason(biggestWinRaw) },
 		{ label: "Biggest Defeat", value: formatResultWithSeason(biggestDefeatRaw) },
-		{ label: "Current Premier League Team", value: club.currentPrem ? "Yes" : "No" },
 	];
 
 	return (
-		<div className={`${globalPageStyles} bg-gradient-to-b from-slate-100 via-slate-50 to-white text-epl [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
+		<div className={`${globalPageStyles} bg-gradient-to-b from-slate-100 via-slate-50 to-white text-epl [&>header]:mb-0! [&>header]:bg-epl-500 [&>header]:text-white [&>footer]:bg-epl [&>footer]:text-white`}>
 			<Header />
 			<main className="w-full text-epl">
+				<section className="w-full bg-white">
+					<div className="flex flex-col items-center px-6 py-8 text-center lg:py-16">
+						<Image
+							src={logoSrc}
+							alt={club.teamName}
+							width={240}
+							height={240}
+							loading="eager"
+							className="size-24 object-contain lg:size-48"
+						/>
+						<h1 className="mt-4 text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight">{club.teamName}</h1>
+					</div>
+					<div className="h-1.5 w-full bg-gradient-to-r from-epl-500 via-amber-400 to-teal-400" />
+				</section>
 				<PremierLeagueBreadcrumbs trail={[{ label: "All Clubs", href: `${premierLeagueHubUrl}/all-clubs` }]} current={club.teamName} />
 				<div className="mx-auto w-full max-w-330 px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-					<div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden mb-8">
-						<div className="h-1.5 w-full bg-gradient-to-r from-epl-500 via-amber-400 to-teal-400" />
-						<div className="flex flex-col items-center px-6 py-8 text-center">
-							<div className="rounded-full border border-slate-200 bg-slate-50 p-4 shadow-sm">
-								<Image
-									src={logoSrc}
-									alt={club.teamName}
-									width={240}
-									height={240}
-									className="h-24 w-auto lg:h-48"
-								/>
-							</div>
-							<h1 className="mt-4 text-xl md:text-3xl font-bold tracking-tight">{club.teamName}</h1>
-						</div>
-					</div>
-
 					<details open className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
 						<summary className="flex cursor-pointer list-none items-center justify-between [&::-webkit-details-marker]:hidden">
 							<h2 className="text-lg font-bold text-epl-700">Club Information</h2>
-							<span className="text-xl font-bold text-epl-700 transition-transform duration-200 group-open:rotate-180">⌄</span>
+							<DisclosureCaret />
 						</summary>
 						<div className="mt-4">
 							<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -257,7 +263,7 @@ export default async function ClubPage({ params }) {
 					<details className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6 mb-6">
 						<summary className="flex cursor-pointer list-none items-center justify-between [&::-webkit-details-marker]:hidden">
 							<h2 className="text-lg font-bold text-epl-700">Stadium Information</h2>
-							<span className="text-xl font-bold text-epl-700 transition-transform duration-200 group-open:rotate-180">⌄</span>
+							<DisclosureCaret />
 						</summary>
 						<div className="mt-4">
 							<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -274,7 +280,7 @@ export default async function ClubPage({ params }) {
 					<details className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
 						<summary className="flex cursor-pointer list-none items-center justify-between [&::-webkit-details-marker]:hidden">
 							<h2 className="text-lg font-bold text-epl-700">Premier League Information</h2>
-							<span className="text-xl font-bold text-epl-700 transition-transform duration-200 group-open:rotate-180">⌄</span>
+							<DisclosureCaret />
 						</summary>
 						<div className="mt-4">
 							<ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -285,7 +291,7 @@ export default async function ClubPage({ params }) {
 									</li>
 								))}
 							</ul>
-							<ClubFinishesChart seasons={splitSeasonObject} clubName={club.teamName} />
+							<ClubFinishesChart seasons={splitSeasonObject} clubName={club.teamName} premierLeagueYears={premierLeagueYears} />
 						</div>
 					</details>
 				</div>

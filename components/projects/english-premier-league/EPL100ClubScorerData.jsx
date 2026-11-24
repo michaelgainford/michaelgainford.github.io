@@ -7,6 +7,24 @@ import Prem100ClubDataJSON from "@/data/data_for__englishpremierleague.json";
 
 const topScorersData = Prem100ClubDataJSON.Top_Scorers;
 
+function LastGoalClub({ name }) {
+	const clubName = name === "AFC Bournemouth" ? "Bournemouth" : name;
+	const club = Prem100ClubDataJSON.Clubs.find(
+		(item) => item.teamName === clubName && item.displayPage === true
+	);
+
+	if (!club) return name;
+
+	return (
+		<Link
+			href={`/projects/football/competitions/english-premier-league/all-clubs/${club.clubLogoSlug}`}
+			className="underline underline-offset-2 transition-colors hover:no-underline hover:text-epl"
+		>
+			{name}
+		</Link>
+	);
+}
+
 const calculateDaysAgo = (date) => {
 	const today = new Date();
 	const lastGoalDate = new Date(date);
@@ -162,6 +180,7 @@ export default function Component_EPL100ClubScorerData() {
 										src={playerImage}
 										alt={topScorer.playerName}
 										fill
+										loading={index < 5 ? "eager" : "lazy"}
 										sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
 									/>
 								</div>
@@ -206,7 +225,7 @@ export default function Component_EPL100ClubScorerData() {
 
 								<div className="mt-4 border-t border-slate-200 pt-3 text-xs leading-relaxed text-slate-700">
 									<p>
-										Last goal: {topScorer.playerLastGoalFor} vs {topScorer.playerLastGoalOpponent} on {new Date(topScorer.playerLastGoalDate).toLocaleDateString("en-GB")}
+										Last goal: <LastGoalClub name={topScorer.playerLastGoalFor} /> vs <LastGoalClub name={topScorer.playerLastGoalOpponent} /> on {new Date(topScorer.playerLastGoalDate).toLocaleDateString("en-GB")}
 									</p>
 									<p className="mt-1 text-slate-500">
 										{daysSinceLastGoal === 0

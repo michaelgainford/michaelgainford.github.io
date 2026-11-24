@@ -3823,7 +3823,7 @@
 			"playerApps": 288,
 			"playerGoals": 127,
 			"playerLastGoalFor": "Charlton Athletic",
-			"playerLastGoalOpponent": "Middlebrough",
+			"playerLastGoalOpponent": "Middlesbrough",
 			"playerLastGoalDate": "2007-01-13",
 			"playerCurrent": false,
 			"updated": "2024-12-01"
@@ -4159,13 +4159,13 @@
 			"playerClubs": [
 				"Manchester City (121)"
 			],
-			"playerApps": 142,
+			"playerApps": 143,
 			"playerGoals": 121,
 			"playerLastGoalFor": "Manchester City",
 			"playerLastGoalOpponent": "Aston Villa",
 			"playerLastGoalDate": "2026-10-24",
 			"playerCurrent": true,
-			"updated": "2026-11-08"
+			"updated": "2026-11-23"
 		}
 	]
 }

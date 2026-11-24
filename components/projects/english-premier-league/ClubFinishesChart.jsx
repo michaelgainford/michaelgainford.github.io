@@ -1,4 +1,6 @@
-import { premierLeagueYears } from "@/variables/ProjectPremierLeague";
+"use client";
+
+import { useState } from "react";
 
 const WIDTH = 900;
 const HEIGHT = 340;
@@ -6,10 +8,41 @@ const MARGIN = { top: 20, right: 20, bottom: 60, left: 40 };
 const PLOT_WIDTH = WIDTH - MARGIN.left - MARGIN.right;
 const PLOT_HEIGHT = HEIGHT - MARGIN.top - MARGIN.bottom;
 
-export default function ClubFinishesChart({ seasons, clubName }) {
+function formatPosition(position) {
+	const lastTwo = position % 100;
+	const suffix = lastTwo >= 11 && lastTwo <= 13
+		? "th"
+		: ({ 1: "st", 2: "nd", 3: "rd" }[position % 10] || "th");
+	return `${position}${suffix}`;
+}
+
+function getPointDetails(finish) {
+	const label = `${finish.year}: ${formatPosition(finish.position)}`;
+	const { W: won, D: drawn, L: lost, F: goalsFor, A: goalsAgainst } = finish.stats;
+	const isNumber = (value) => typeof value === "number" && Number.isFinite(value);
+	const recordAvailable = [won, drawn, lost].every(isNumber);
+	const goalsAvailable = [goalsFor, goalsAgainst].every(isNumber);
+	const value = (number) => isNumber(number) ? number : "N/A";
+	const stats = [
+		`Played: ${recordAvailable ? won + drawn + lost : "N/A"}`,
+		`Won: ${value(won)}`,
+		`Drawn: ${value(drawn)}`,
+		`Lost: ${value(lost)}`,
+		`Goals for: ${value(goalsFor)}`,
+		`Goals against: ${value(goalsAgainst)}`,
+		`Goal difference: ${goalsAvailable ? goalsFor - goalsAgainst : "N/A"}`,
+		`Points from results: ${recordAvailable ? won * 3 + drawn : "N/A"}`
+	];
+	return { label, stats };
+}
+
+export default function ClubFinishesChart({ seasons, clubName, premierLeagueYears }) {
+	const [hoveredIndex, setHoveredIndex] = useState(null);
+	const [focusedIndex, setFocusedIndex] = useState(null);
 	const finishes = premierLeagueYears.map((year, index) => {
-		const position = seasons?.[`season${index + 1}`]?.Pos;
-		return { year, position: typeof position === "number" && position > 0 ? position : null };
+		const stats = seasons?.[`season${index + 1}`];
+		const position = stats?.Pos;
+		return { year, stats, position: typeof position === "number" && position > 0 ? position : null };
 	});
 	const played = finishes.filter((finish) => finish.position !== null);
 	if (played.length === 0) return null;
@@ -33,6 +66,14 @@ export default function ClubFinishesChart({ seasons, clubName }) {
 	const yTicks = [1, 5, 10, 15, 20].filter((tick) => tick <= maxPosition);
 	if (!yTicks.includes(maxPosition)) yTicks.push(maxPosition);
 
+	const activeIndex = hoveredIndex ?? focusedIndex;
+	const activeFinish = activeIndex === null ? null : finishes[activeIndex];
+	const tooltip = activeFinish?.position != null ? {
+		x: Math.max(0, Math.min(WIDTH - 250, xFor(activeIndex) - 125)),
+		y: yFor(activeFinish.position) < 134 ? yFor(activeFinish.position) + 10 : yFor(activeFinish.position) - 134,
+		...getPointDetails(activeFinish)
+	} : null;
+
 	return (
 		<figure className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
 			<figcaption className="text-xs font-semibold uppercase tracking-wide text-slate-500">
@@ -41,7 +82,7 @@ export default function ClubFinishesChart({ seasons, clubName }) {
 			<div className="mt-3 overflow-x-auto">
 				<svg
 					viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-					role="img"
+					role="group"
 					aria-label={`Line graph of ${clubName}'s Premier League finishes by season, with 1st at the top`}
 					className="h-auto w-full min-w-160"
 				>
@@ -75,18 +116,49 @@ export default function ClubFinishesChart({ seasons, clubName }) {
 							strokeLinejoin="round"
 						/>
 					))}
-					{finishes.map((finish, index) =>
-						finish.position === null ? null : (
-							<circle
+					{finishes.map((finish, index) => {
+						if (finish.position === null) return null;
+
+						const x = xFor(index);
+						const y = yFor(finish.position);
+						const { label, stats } = getPointDetails(finish);
+
+						return (
+							<g
 								key={finish.year}
-								cx={xFor(index)}
-								cy={yFor(finish.position)}
-								r="4"
-								className={finish.position === 1 ? "fill-amber-400 stroke-epl-500" : "fill-epl-500"}
+								tabIndex={0}
+								role="img"
+								aria-label={`${label}. ${stats.join(", ")}`}
+								onMouseEnter={() => setHoveredIndex(index)}
+								onMouseLeave={() => setHoveredIndex(null)}
+								onFocus={() => setFocusedIndex(index)}
+								onBlur={() => setFocusedIndex(null)}
 							>
-								<title>{`${finish.year}: ${finish.position}`}</title>
-							</circle>
-						)
+								<circle cx={x} cy={y} r="10" fill="transparent" />
+								<circle
+									cx={x}
+									cy={y}
+									r="4"
+									className={finish.position === 1 ? "fill-amber-400 stroke-epl-500" : "fill-epl-500"}
+								/>
+							</g>
+						);
+					})}
+					{tooltip && (
+						<g className="pointer-events-none" aria-hidden="true">
+							<rect x={tooltip.x} y={tooltip.y} width="250" height="124" rx="4" className="fill-slate-900" />
+							<text x={tooltip.x + 125} y={tooltip.y + 15} textAnchor="middle" dominantBaseline="middle" className="fill-white text-xs">
+								{tooltip.label}
+							</text>
+							{tooltip.stats.slice(0, 7).map((stat, statIndex) => (
+								<text key={stat} x={tooltip.x + 10 + (statIndex % 2) * 120} y={tooltip.y + 36 + Math.floor(statIndex / 2) * 18} className="fill-slate-100 text-xxs-plus">
+									{stat}
+								</text>
+							))}
+							<text x={tooltip.x + 10} y={tooltip.y + 108} className="fill-slate-100 text-xxs-plus">
+								{tooltip.stats[7]}
+							</text>
+						</g>
 					)}
 				</svg>
 			</div>
