@@ -15,7 +15,7 @@
     "validate:dev-resources": "node scripts/validate-dev-resources.mjs"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.0.0-beta.6",
+    "@tailwindcss/postcss": "^4.3.5",
     "next": "^16.4.5",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
@@ -28,7 +28,7 @@
     "postcss": "^8.5.24",
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.8.0",
-    "tailwindcss": "^4.0.0-beta.6"
+    "tailwindcss": "^4.3.5"
   },
   "overrides": {
     "postcss": "^8.5.24",
